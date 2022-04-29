@@ -15,7 +15,7 @@ const Seo = ({ title, description }) => {
             <title>{realTitle}</title>
             <meta name="description" content={realDescription} />
             <meta property="og:title" content={realTitle} />
-            {/* <meta property="og:image" content={"/assets/images/logo-square.png"} /> */}
+            <meta property="og:image" content={"/assets/images/logo-square.png"} />
             <meta
                 property="og:url"
                 content={process.env.NEXT_PUBLIC_URL ?? "https://aminintichev.com"}

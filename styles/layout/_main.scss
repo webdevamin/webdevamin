@@ -1,0 +1,46 @@
+main {
+  section {
+    margin-bottom: 1.75rem;
+  }
+
+  h1,
+  .highlight {
+    text-align: center;
+  }
+
+  .hero {
+    @extend .squada_one_font;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 200;
+    }
+
+    .notice {
+      display: block;
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+      border-radius: 3px;
+      padding: 0.15rem 0.75rem;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0.045rem;
+      background-color: $gray-color;
+    }
+  }
+
+  h2 {
+    &::after {
+      content: '';
+      background-color: white;
+      width: 100px;
+    }
+  }
+
+  @include sm {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}

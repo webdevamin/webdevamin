@@ -1,0 +1,133 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 50;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 2.5rem 0;
+
+  .logo {
+    a {
+      font-size: 2.25rem;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .menu {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+
+    li {
+      a {
+        font-weight: 600;
+        border-bottom: 1px solid $white-color;
+        padding: 0.5rem;
+        display: block;
+      }
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px 10px;
+    border: 1px solid $theme-color-opacity;
+    color: $theme-color-opacity;
+    box-shadow: 4px 4px;
+    border-radius: 3px;
+    position: relative;
+    user-select: none;
+
+    .navicon {
+      background: white;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+
+      &::before,
+      &::after {
+        background: white;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+
+      &::before {
+        top: 5px;
+      }
+
+      &::after {
+        top: -5px;
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ .menu {
+      max-height: 240px;
+    }
+
+    &:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+
+    &:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    &:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .menu-icon:not(.steps) .navicon:before,
+    &:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+  }
+
+  @include sm {
+    .logo {
+      a {
+        font-size: 2.5rem;
+      }
+    }
+
+    li {
+      float: left;
+    }
+
+    .menu {
+      margin-top: 0;
+      align-items: baseline;
+      clear: none;
+      float: right;
+      max-height: none;
+      flex-direction: row;
+      width: auto;
+      gap: 2rem;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+  }
+}

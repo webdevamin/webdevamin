@@ -1,0 +1,32 @@
+h1,
+h2 {
+  @extend .squada_one_font;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+
+  @include sm {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+
+  @include sm {
+    font-size: 2.5rem;
+  }
+}
+
+a,
+p {
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+
+  @include sm {
+    font-size: 1.2rem;
+  }
+}
