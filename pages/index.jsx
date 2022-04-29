@@ -1,6 +1,7 @@
 import Seo from '../components/Seo'
 import Lottie from 'react-lottie-player';
 import lottieJson from '../public/assets/developer.json';
+import Typewriter from 'typewriter-effect';
 
 const Index = () => {
   return (
@@ -8,7 +9,15 @@ const Index = () => {
       <Seo />
       <section>
         <div className='hero'>
-          <h1>Amin Intichev</h1>
+          <h1>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('Amin Intichev')
+                  .changeDelay(50)
+                  .start();
+              }}
+            />
+          </h1>
           <span className='notice'>a.k.a. webdevamin</span>
         </div>
         <Lottie
@@ -23,12 +32,12 @@ const Index = () => {
       </section>
       <section className='content'>
         <h2>Who am I</h2>
-        <p>
+        <p className='text'>
           I make full fledged, state-of-art websites and apps with focus on
-          clients&rsquo; needs. Worked in various IT companies, possessing
-          advanced development knowledge.
+          your needs. Worked in various IT companies, possessing
+          advanced development knowledge. Any questions? Contact me on {' '}
+          <span className='highlight_sm'>amin.m.intichev@gmail.com</span>
         </p>
-        <p>Questions? Contact me: amin.m.intichev@gmail.com</p>
       </section>
     </main>
   )

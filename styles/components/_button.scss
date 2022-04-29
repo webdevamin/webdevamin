@@ -1,0 +1,11 @@
+button,
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.button_theme {
+  border: 1px solid transparent;
+  background-color: $theme-color-two-opacity;
+}

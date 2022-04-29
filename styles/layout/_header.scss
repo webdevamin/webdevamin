@@ -9,18 +9,28 @@ header {
 
   .logo {
     a {
+      @extend .squada_one_font;
       font-size: 2.25rem;
     }
   }
 
-  ul {
+  .right_a {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.4rem;
+    border: 1px solid $theme-color-opacity;
+    border-radius: 3px;
+    box-shadow: 4px 4px $theme-color-opacity;
+    // color: $theme-color-opacity;
+  }
+
+  .menu {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
-  }
-
-  .menu {
     margin-top: 1rem;
     width: 100%;
     display: flex;
@@ -29,13 +39,11 @@ header {
     max-height: 0;
     transition: max-height 0.2s ease-out;
 
-    li {
-      a {
-        font-weight: 600;
-        border-bottom: 1px solid $white-color;
-        padding: 0.5rem;
-        display: block;
-      }
+    a {
+      font-weight: 600;
+      border-bottom: 1px solid $white-color;
+      padding: 0.5rem;
+      display: block;
     }
   }
 

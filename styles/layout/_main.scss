@@ -30,14 +30,6 @@ main {
     }
   }
 
-  h2 {
-    &::after {
-      content: '';
-      background-color: white;
-      width: 100px;
-    }
-  }
-
   @include sm {
     h1 {
       font-size: 3.5rem;

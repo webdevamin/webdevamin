@@ -8,7 +8,10 @@ const Header = () => {
                     <a>AI</a>
                 </Link>
             </h1>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <Link href='/'>
+                <a className="right_a">NL</a>
+            </Link>
+            {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
                 <span className="navicon"></span>
             </label>
@@ -23,7 +26,7 @@ const Header = () => {
                         <a>Contact</a>
                     </Link>
                 </li>
-            </ul>
+            </ul> */}
         </header>
     );
 };
