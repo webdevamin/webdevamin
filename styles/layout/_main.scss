@@ -9,16 +9,17 @@ main {
   }
 
   .hero {
-    @extend .squada_one_font;
+    @extend .m_plus_font;
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 200;
+      font-size: 2rem;
+      font-weight: 700;
     }
 
     .notice {
       display: block;
       font-size: 0.95rem;
+      font-weight: 500;
       margin-top: 0.25rem;
       border-radius: 3px;
       padding: 0.15rem 0.75rem;
@@ -27,12 +28,6 @@ main {
       margin-right: auto;
       letter-spacing: 0.045rem;
       background-color: $gray-color;
-    }
-  }
-
-  @include sm {
-    h1 {
-      font-size: 3.5rem;
     }
   }
 }

@@ -39,19 +39,17 @@ body,
 
 .container {
   width: 90%;
+  max-width: 576px;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  //   min-height: 100vh;
-  //   min-height: -webkit-fill-available;
+  // min-height: 100vh;
+  // min-height: -webkit-fill-available;
 }
 
 .logo {
   @extend .squada_one_font;
   font-size: 2rem;
-
-  @include sm {
-    font-size: 2.5rem;
-  }
 }
 
 .highlight {
@@ -66,12 +64,7 @@ body,
 }
 
 .highlight_sm {
-  display: inline-block;
-  background-color: $gray-color;
-  color: $white-color;
-  margin-top: 0.1rem;
-  padding: 0.1rem 1.2rem 0.1rem 0.2rem;
-  border-radius: 3px;
+  color: $theme-color;
   font-weight: 500;
 }
 

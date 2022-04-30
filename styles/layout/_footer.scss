@@ -1,11 +1,29 @@
 footer {
-    margin-top: 3rem;
-    display: flex;
+  .button {
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .contact {
+    margin-top: 2rem;
 
     .social_links {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      div {
         display: flex;
-        gap: 1rem;
+        align-items: baseline;
+        gap: 0.75rem;
+
+        span {
+          font-weight: 500;
+          color: $theme-color;
+        }
+      }
     }
+  }
 }

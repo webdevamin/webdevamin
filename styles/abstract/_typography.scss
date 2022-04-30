@@ -1,15 +1,11 @@
 h1,
 h2 {
-  @extend .squada_one_font;
+  @extend .m_plus_font;
 }
 
 h1 {
   font-size: 2rem;
   margin: 0;
-
-  @include sm {
-    font-size: 3rem;
-  }
 }
 
 h2 {
@@ -24,10 +20,6 @@ h2 {
     background-color: $theme-color-opacity;
     height: 2px;
   }
-
-  @include sm {
-    font-size: 2.5rem;
-  }
 }
 
 a,
@@ -35,8 +27,4 @@ p {
   @extend .m_plus_font;
   font-size: 1rem;
   letter-spacing: 0.025rem;
-
-  @include sm {
-    font-size: 1.2rem;
-  }
 }
