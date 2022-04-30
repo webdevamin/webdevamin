@@ -1,5 +1,13 @@
+// Responsiveness
+
 @mixin md {
   @media (min-width: 976px) {
     @content;
   }
+}
+
+// Other
+
+@mixin transition($duration: 0.3s, $ease: ease-in-out) {
+  transition: $duration $ease;
 }

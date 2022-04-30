@@ -8,9 +8,18 @@ header {
   padding: 1.5rem 0 2.5rem 0;
 
   .logo {
+    @include transition;
+
+    &:hover {
+      transform: rotate(15deg);
+    }
     a {
       @extend .squada_one_font;
       font-size: 2.25rem;
+
+      @include md {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -20,10 +29,16 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     padding: 0.4rem;
-    border: 1px solid $theme-color-opacity;
+    border: 1px solid $theme-color;
     border-radius: 3px;
-    box-shadow: 4px 4px $theme-color-opacity;
-    // color: $theme-color-opacity;
+    box-shadow: 4px 4px $theme-color;
+    @include transition;
+
+    &:hover {
+      box-shadow: none;
+      background-color: $theme-color;
+      border-color: transparent;
+    }
   }
 
   .menu {

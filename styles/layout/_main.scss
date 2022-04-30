@@ -11,11 +11,6 @@ main {
   .hero {
     @extend .m_plus_font;
 
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
     .notice {
       display: block;
       font-size: 0.95rem;
@@ -28,6 +23,78 @@ main {
       margin-right: auto;
       letter-spacing: 0.045rem;
       background-color: $gray-color;
+    }
+  }
+
+  .about {
+    .button {
+      display: inline-flex;
+      padding: 0;
+
+      @include transition;
+
+      &:hover {
+        background-color: $theme-color-two;
+      }
+
+      a {
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .contact {
+    margin-top: 2rem;
+
+    .social_links {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      div {
+        display: flex;
+        align-items: baseline;
+        gap: 0.75rem;
+
+        a {
+          font-weight: 500;
+          
+          &:last-of-type {
+            &::after {
+              @include transition;
+              content: "";
+              display: block;
+              margin-top: 0.2rem;
+              background-color: $theme-color-two;
+              height: 1.5px;
+              width: 0px;
+            }
+
+            &:hover {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+
+          &:hover {
+            &:last-of-type {
+            }
+          }
+        }
+
+        &:hover {
+          svg {
+            @include transition;
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
   }
 }

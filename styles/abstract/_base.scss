@@ -33,7 +33,6 @@ a {
 html,
 body,
 #__next {
-  // height: -webkit-fill-available;
   background-color: $dark-color;
 }
 
@@ -43,8 +42,6 @@ body,
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  // min-height: 100vh;
-  // min-height: -webkit-fill-available;
 }
 
 .logo {
@@ -71,4 +68,10 @@ body,
 .text {
   text-align: justify;
   text-indent: 1rem;
+}
+
+@include md {
+  .container {
+    margin-top: 1rem;
+  }
 }
