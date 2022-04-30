@@ -1,0 +1,22 @@
+.not_found {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $theme-color;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .button {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+      text-transform: uppercase;
+  }
+}

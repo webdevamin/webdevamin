@@ -11,5 +11,22 @@ button,
 
 .button_theme {
   border: 1px solid transparent;
+  background-color: $theme-color-opacity;
+
+  @include transition;
+
+  &:hover {
+    background-color: $theme-color;
+  }
+}
+
+.button_theme_two {
+  border: 1px solid transparent;
   background-color: $theme-color-two-opacity;
+
+  @include transition;
+
+  &:hover {
+    background-color: $theme-color-two;
+  }
 }

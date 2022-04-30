@@ -1,15 +1,18 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+    const t = useTranslations('header');
+
     return (
         <header>
             <h1 className="logo">
-                <Link href='/'>
+                <Link href={'/'} locale={t('lang.link')}>
                     <a>AI</a>
                 </Link>
             </h1>
-            <Link href='/'>
-                <a className="right_a">NL</a>
+            <Link href={'/'} locale={t('lang.switchLangLink')}>
+                <a className="right_a">{t('lang.switchLangText')}</a>
             </Link>
         </header>
     );

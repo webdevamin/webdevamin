@@ -3,12 +3,12 @@ main {
     margin-bottom: 1.75rem;
   }
 
-  h1,
-  .highlight {
-    text-align: center;
-  }
-
   .hero {
+    h1,
+    .highlight {
+      text-align: center;
+    }
+
     @extend .m_plus_font;
 
     .notice {
@@ -31,14 +31,8 @@ main {
       display: inline-flex;
       padding: 0;
 
-      @include transition;
-
-      &:hover {
-        background-color: $theme-color-two;
-      }
-
       a {
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +48,7 @@ main {
       margin-top: 1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.3rem;
+      gap: 0.25rem;
 
       div {
         display: flex;
@@ -63,7 +57,7 @@ main {
 
         a {
           font-weight: 500;
-          
+
           &:last-of-type {
             &::after {
               @include transition;

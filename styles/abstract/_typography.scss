@@ -4,7 +4,12 @@
 
 h1 {
   font-size: 2rem;
+  font-weight: 800;
   margin: 0;
+
+  @include md {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
