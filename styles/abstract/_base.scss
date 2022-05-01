@@ -1,16 +1,17 @@
 .normal_font {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
 }
 
 .squada_one_font {
-  font-family: -apple-system, BlinkMacSystemFont, Squada One, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Squada One", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", cursive;
 }
 
 .m_plus_font {
-  font-family: -apple-system, BlinkMacSystemFont, "M PLUS Rounded 1c", Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "M PLUS Rounded 1c", -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue",
+    sans-serif;
 }
 
 html,
@@ -61,7 +62,7 @@ body,
 }
 
 .highlight_sm {
-  color: $theme-color;
+  color: $theme-color-c;
   font-weight: 500;
 }
 

@@ -47,45 +47,32 @@ main {
     .social_links {
       margin-top: 1rem;
       display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
 
       div {
-        display: flex;
+        display: inline-flex;
         align-items: baseline;
         gap: 0.75rem;
+        border-radius: 0.35rem;
+        height: fit-content;
+        background-color: $theme-color-three-opacity;
+        padding: 0.3rem 1rem;
 
         a {
+          color: $theme-color-three;
           font-weight: 500;
-
-          &:last-of-type {
-            &::after {
-              @include transition;
-              content: "";
-              display: block;
-              margin-top: 0.2rem;
-              background-color: $theme-color-two;
-              height: 1.5px;
-              width: 0px;
-            }
-
-            &:hover {
-              &::after {
-                width: 100%;
-              }
-            }
-          }
-
-          &:hover {
-            &:last-of-type {
-            }
-          }
         }
 
         &:hover {
           svg {
             @include transition;
             transform: rotate(360deg);
+          }
+
+          a {
+            @include transition;
+            color: $white-color;
           }
         }
       }

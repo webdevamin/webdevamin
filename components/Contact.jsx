@@ -15,7 +15,8 @@ const Contact = () => {
                 <div>
                     <Link href={'mailto:amin.m.intichev@gmail.com'}>
                         <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faEnvelope} size={'xl'} />
+                            <FontAwesomeIcon icon={faEnvelope} size={'xl'}
+                                aria-label="Contact by email" />
                         </a>
                     </Link>
                     <Link href={'mailto:amin.m.intichev@gmail.com'}>
@@ -27,7 +28,8 @@ const Contact = () => {
                 <div>
                     <Link href={'https://www.instagram.com/webdevamin/'}>
                         <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faInstagram} size={'xl'} />
+                            <FontAwesomeIcon icon={faInstagram} size={'xl'}
+                                aria-label="Contact by using Instagram" />
                         </a>
                     </Link>
                     <Link href={'https://www.instagram.com/webdevamin/'}>
@@ -39,7 +41,8 @@ const Contact = () => {
                 <div>
                     <Link href={'https://www.linkedin.com/in/amin-i-1072391b0/'}>
                         <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faLinkedin} size={'xl'} />
+                            <FontAwesomeIcon icon={faLinkedin} size={'xl'}
+                                aria-label="Contact by using LinkedIn" />
                         </a>
                     </Link>
                     <Link href={'https://www.linkedin.com/in/amin-i-1072391b0/'}>
@@ -51,7 +54,8 @@ const Contact = () => {
                 <div>
                     <Link href={'https://github.com/1chbinamin'}>
                         <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} size={'xl'} />
+                            <FontAwesomeIcon icon={faGithub} size={'xl'}
+                                aria-label="Check my GitHub profile" />
                         </a>
                     </Link>
                     <Link href={'https://github.com/1chbinamin'}>

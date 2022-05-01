@@ -31,4 +31,9 @@ p {
   @extend .m_plus_font;
   font-size: 1rem;
   letter-spacing: 0.025rem;
+  line-height: 1.45rem;
+
+  @include md {
+    line-height: 1.55rem;
+  }
 }
