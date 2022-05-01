@@ -5,7 +5,7 @@
   },
   "header": {
     "lang": {
-      "link": "",
+      "link": "en",
       "switchLangLink": "nl",
       "switchLangText": "NL"
     }
@@ -22,7 +22,10 @@
     }
   },
   "notFound": {
-      "text": "The requested page does not exist.",
-      "link": "To homepage"
+    "text": "The requested page does not exist.",
+    "link": "To homepage"
+  },
+  "error": {
+    "text": "Something went wrong with the server. Please try again later."
   }
 }

@@ -8,18 +8,17 @@ header {
   padding: 1.5rem 0 2.5rem 0;
 
   .logo {
+    @extend .squada_one_font;
+    font-size: 2.25rem;
+
+    @include md {
+      font-size: 3rem;
+    }
+
     @include transition;
 
     &:hover {
       transform: rotate(15deg);
-    }
-    a {
-      @extend .squada_one_font;
-      font-size: 2.25rem;
-
-      @include md {
-        font-size: 3rem;
-      }
     }
   }
 

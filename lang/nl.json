@@ -24,5 +24,8 @@
   "notFound": {
     "text": "Deze pagina bestaat niet.",
     "link": "Naar homepagina"
+  },
+  "error": {
+    "text": "Er ging iets mis met de server. Probeer het later opnieuw."
   }
 }

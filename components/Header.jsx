@@ -6,11 +6,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1 className="logo">
-                <Link href={'/'} locale={t('lang.link')}>
-                    <a>AI</a>
-                </Link>
-            </h1>
+            <h1 className="logo">AI</h1>
             <Link href={'/'} locale={t('lang.switchLangLink')}>
                 <a className="right_a">{t('lang.switchLangText')}</a>
             </Link>

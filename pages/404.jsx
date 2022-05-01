@@ -3,6 +3,7 @@ import Seo from '../components/Seo'
 import Lottie from 'react-lottie-player';
 import lottieJson from '../public/assets/404.json';
 import { useTranslations } from "next-intl";
+import Header from "../components/Header";
 
 const NotFound = () => {
     const t = useTranslations('notFound');
@@ -10,6 +11,7 @@ const NotFound = () => {
     return (
         <>
             <Seo />
+            <Header />
             <main className='not_found'>
                 <Lottie
                     animationData={lottieJson}

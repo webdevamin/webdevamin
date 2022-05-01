@@ -2,11 +2,13 @@ import Seo from '../components/Seo'
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Header from "../components/Header";
 
 const Index = () => {
   return (
     <>
       <Seo />
+      <Header />
       <main>
         <Hero />
         <About />

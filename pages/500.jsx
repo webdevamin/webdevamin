@@ -1,11 +1,10 @@
-import Link from 'next/link';
 import Seo from '../components/Seo'
 import Lottie from 'react-lottie-player';
-import lottieJson from '../public/assets/404.json';
+import lottieJson from '../public/assets/500.json';
 import { useTranslations } from "next-intl";
 
-const NotFound = () => {
-    const t = useTranslations('notFound');
+const Error = () => {
+    const t = useTranslations('error');
 
     return (
         <>
@@ -17,17 +16,12 @@ const NotFound = () => {
                     style={{ maxWidth: '500px', maxHeight: '500px', marginLeft: 'auto', marginRight: 'auto' }}
                 />
                 <p>{t('text')}</p>
-                <Link href={'/nl'}>
-                    <a className='button button_theme'>
-                        {t('link')}
-                    </a>
-                </Link>
             </main>
         </>
     )
 }
 
-export default NotFound;
+export default Error;
 
 export async function getStaticProps({ locale }) {
     return {
