@@ -4,6 +4,7 @@ import {
     faGithub,
     faInstagram,
     faLinkedin,
+    faFacebook
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,6 +34,19 @@ const Contact = () => {
                         </a>
                     </Link>
                     <Link href={'https://www.instagram.com/webdevamin/'}>
+                        <a rel="noreferrer" target='_blank'>
+                            webdevamin
+                        </a>
+                    </Link>
+                </div>
+                <div>
+                    <Link href={'https://www.facebook.com/webdevamin'}>
+                        <a rel="noreferrer" target='_blank'>
+                            <FontAwesomeIcon icon={faFacebook} size={'xl'}
+                                aria-label="Check my GitHub profile" />
+                        </a>
+                    </Link>
+                    <Link href={'https://www.facebook.com/webdevamin'}>
                         <a rel="noreferrer" target='_blank'>
                             webdevamin
                         </a>
