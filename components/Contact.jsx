@@ -66,15 +66,15 @@ const Contact = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link href={'https://github.com/1chbinamin'}>
+                    <Link href={'https://github.com/webdevamin'}>
                         <a rel="noreferrer" target='_blank'>
                             <FontAwesomeIcon icon={faGithub} size={'xl'}
                                 aria-label="Check my GitHub profile" />
                         </a>
                     </Link>
-                    <Link href={'https://github.com/1chbinamin'}>
+                    <Link href={'https://github.com/webdevamin'}>
                         <a rel="noreferrer" target='_blank'>
-                            1chbinamin
+                            webdevamin
                         </a>
                     </Link>
                 </div>
