@@ -43,7 +43,7 @@ const Contact = () => {
                     <Link href={'https://www.facebook.com/webdevamin'}>
                         <a rel="noreferrer" target='_blank'>
                             <FontAwesomeIcon icon={faFacebook} size={'xl'}
-                                aria-label="Check my GitHub profile" />
+                                aria-label="Contact by using Facebook" />
                         </a>
                     </Link>
                     <Link href={'https://www.facebook.com/webdevamin'}>
