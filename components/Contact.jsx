@@ -1,83 +1,32 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-    faInstagram,
-    faLinkedin,
-    faFacebook
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const Contact = () => {
+const Contact = ({ socials }) => {
     return (
         <section className="contact">
             <h2>Contact</h2>
             <div className="social_links">
-                <div>
-                    <Link href={'mailto:amin.m.intichev@gmail.com'}>
-                        <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faEnvelope} size={'xl'}
-                                aria-label="Contact by email" />
-                        </a>
-                    </Link>
-                    <Link href={'mailto:amin.m.intichev@gmail.com'}>
-                        <a rel="noreferrer" target='_blank'>
-                            amin.m.intichev@gmail.com
-                        </a>
-                    </Link>
-                </div>
-                <div>
-                    <Link href={'https://www.instagram.com/webdevamin/'}>
-                        <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faInstagram} size={'xl'}
-                                aria-label="Contact by using Instagram" />
-                        </a>
-                    </Link>
-                    <Link href={'https://www.instagram.com/webdevamin/'}>
-                        <a rel="noreferrer" target='_blank'>
-                            webdevamin
-                        </a>
-                    </Link>
-                </div>
-                <div>
-                    <Link href={'https://www.facebook.com/webdevamin'}>
-                        <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faFacebook} size={'xl'}
-                                aria-label="Contact by using Facebook" />
-                        </a>
-                    </Link>
-                    <Link href={'https://www.facebook.com/webdevamin'}>
-                        <a rel="noreferrer" target='_blank'>
-                            webdevamin
-                        </a>
-                    </Link>
-                </div>
-                <div>
-                    <Link href={'https://www.linkedin.com/in/amin-i-1072391b0/'}>
-                        <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faLinkedin} size={'xl'}
-                                aria-label="Contact by using LinkedIn" />
-                        </a>
-                    </Link>
-                    <Link href={'https://www.linkedin.com/in/amin-i-1072391b0/'}>
-                        <a rel="noreferrer" target='_blank'>
-                            Amin Intichev
-                        </a>
-                    </Link>
-                </div>
-                <div>
-                    <Link href={'https://github.com/webdevamin'}>
-                        <a rel="noreferrer" target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} size={'xl'}
-                                aria-label="Check my GitHub profile" />
-                        </a>
-                    </Link>
-                    <Link href={'https://github.com/webdevamin'}>
-                        <a rel="noreferrer" target='_blank'>
-                            webdevamin
-                        </a>
-                    </Link>
-                </div>
+                {
+                    socials.map((social) => {
+                        const { id, iconPrefix, icon, label, text, url } = social;
+
+                        return (
+                            <div key={id}>
+                                <Link href={url}>
+                                    <a rel="noreferrer" target='_blank'>
+                                        <FontAwesomeIcon icon={[iconPrefix, icon]} size={'xl'}
+                                            aria-label={label} />
+                                    </a>
+                                </Link>
+                                <Link href={url}>
+                                    <a rel="noreferrer" target='_blank'>
+                                        {text}
+                                    </a>
+                                </Link>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </section>
     )
