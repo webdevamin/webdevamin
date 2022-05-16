@@ -67,8 +67,8 @@ body,
 }
 
 .text {
-  text-align: justify;
   text-indent: 1rem;
+  word-spacing: 0.25rem;
 }
 
 @include md {

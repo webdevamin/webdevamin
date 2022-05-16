@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
-import Hero from './Hero';
 import { useRouter } from 'next/router';
 
 const Header = () => {
@@ -31,17 +30,17 @@ const Header = () => {
                     </div>
                 </div>
                 <ul className={active ? "menu open_menu" : "menu"}>
-                    <li>
-                        <Link href='/'>
-                            <a>{t('nav.home')}</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/blogs'>
-                            <a>{t('nav.blogs')}</a>
-                        </Link>
-                    </li>
-                </ul>
+                <li>
+                    <Link href='/'>
+                        <a>{t('nav.home')}</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href='/blogs'>
+                        <a>{t('nav.blogs')}</a>
+                    </Link>
+                </li>
+            </ul>
             </header>
         </>
     );
