@@ -7,6 +7,7 @@ header {
   z-index: 50;
   flex-wrap: wrap;
   padding-top: 1.5rem;
+  position: relative;
 
   .logo {
     @extend .squada_one_font;
@@ -55,6 +56,11 @@ header {
   }
 
   .menu {
+    position: absolute;
+    top: 4.5rem;
+    background-color: $theme-color-four;
+    border: 0px solid $white-color;
+    border-radius: 5px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -65,24 +71,37 @@ header {
     flex-direction: column;
     clear: both;
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
-    a {
-      font-weight: 600;
-      padding: 0.5rem;
-      display: block;
-      border-bottom: 1px solid $white-color;
+    li {
+      a {
+        font-weight: 600;
+        padding: 0.7rem 0 0.7rem 1.1rem;
+        display: block;
+        border-bottom: 1px solid $white-color;
 
-      @include transition;
+        @include transition;
 
-      &:hover {
-        color: $theme-color-two;
+        &:hover {
+          color: $theme-color-two;
+        }
       }
+
+      &:last-of-type {
+        a {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    @include md {
+      top: 5rem;
     }
   }
 
   .open_menu {
     max-height: 240px;
+    border: 1px solid $white-color;
   }
 
   .menu-icon {
