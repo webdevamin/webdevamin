@@ -1,19 +1,20 @@
 import Seo from '../components/Seo'
-import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Header from "../components/Header";
 import { gql, GraphQLClient } from 'graphql-request';
+import React from 'react';
+import Hero from '../components/Hero';
 
 const Index = ({ data }) => {
   return (
     <>
       <Seo />
       <Header />
+      <Hero />
       <main>
-        <Hero />
         <About />
-        <Contact socials={data.socials}/>
+        <Contact socials={data.socials} />
       </main>
     </>
   )
@@ -22,9 +23,7 @@ const Index = ({ data }) => {
 export default Index;
 
 export async function getStaticProps({ locale }) {
-  const client = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/cl30pogb60w7001z81zzp4xtw/master'
-  );
+  const client = new GraphQLClient(process.env.API_URL);
 
   const query = gql`
   query MyQuery($locale: [Locale!]!) {

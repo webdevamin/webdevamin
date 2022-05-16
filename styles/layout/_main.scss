@@ -3,29 +3,6 @@ main {
     margin-bottom: 1.75rem;
   }
 
-  .hero {
-    h1,
-    .highlight {
-      text-align: center;
-    }
-
-    @extend .m_plus_font;
-
-    .notice {
-      display: block;
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin-top: 0.25rem;
-      border-radius: 3px;
-      padding: 0.15rem 0.75rem;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-      letter-spacing: 0.045rem;
-      background-color: $gray-color;
-    }
-  }
-
   .about {
     .button {
       display: inline-flex;

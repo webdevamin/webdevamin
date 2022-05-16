@@ -2,20 +2,21 @@ import Seo from '../components/Seo'
 import Lottie from 'react-lottie-player';
 import lottieJson from '../public/assets/500.json';
 import { useTranslations } from "next-intl";
+import React from 'react';
 
 const Error = () => {
     const t = useTranslations('error');
 
     return (
         <>
-            <Seo />
-            <main className='not_found'>
+            <Seo title={t('title')} description={t('text')}/>
+            <main className='error'>
                 <Lottie
                     animationData={lottieJson}
                     play
                     style={{ maxWidth: '500px', maxHeight: '500px', marginLeft: 'auto', marginRight: 'auto' }}
                 />
-                <p>{t('text')}</p>
+                <h1>{t('text')}</h1>
             </main>
         </>
     )

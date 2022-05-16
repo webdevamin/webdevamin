@@ -1,13 +1,17 @@
 {
   "seo": {
     "title": "Software Developer from Bruges | Amin Intichev",
-    "description": "I make functional, state-of-art websites and apps with focus on your needs. ✓ User friendly, ✓ Professional, ✓ Comfort."
+    "description": "I make functional, robust websites and apps with focus on your needs. ✓ User friendly, ✓ Professional, ✓ Comfort."
   },
   "header": {
     "lang": {
       "link": "en",
       "switchLangLink": "nl",
       "switchLangText": "NL"
+    },
+    "nav": {
+      "home": "Home",
+      "blogs": "Blogs"
     }
   },
   "hero": {
@@ -15,17 +19,24 @@
   },
   "about": {
     "title": "Who am I",
-    "text": "I make full fledged, state-of-art websites and apps with focus on your needs. Worked in various IT companies, possessing advanced development knowledge. In case you have any questions or need a website or an app, don't hesitate to send me a message on",
+    "text": "I make functional, robust websites and apps with focus on your needs. Worked in various IT companies, possessing advanced development knowledge. In case you have any questions or need a website or an app, don't hesitate to send me a message on",
     "resume": {
       "link": "https://docs.google.com/document/d/e/2PACX-1vS9acAxKVHg0eN2LPo5EhQgrXGnL4XaucyoHbnFFiNYgQfGtczrHixNxVtLgU0vI1ILS9J6zflBfvZ4/pub",
       "text": "My resume"
     }
   },
   "notFound": {
+    "title": "Page not found",
     "text": "The requested page does not exist.",
     "link": "To homepage"
   },
   "error": {
+    "title": "Server error",
     "text": "Something went wrong with the server. Please try again later."
+  },
+  "blogs": {
+    "title": "Blogs",
+    "description": "Here you can see a list of interesting topics, stories and lessons about IT, development, career, freelance, etc. Click on any blog to read more about it.",
+    "noBlogs": "There are no blogs available at this moment. Come back again later."
   }
 }

@@ -1,13 +1,17 @@
 {
   "seo": {
     "title": "Software Ontwikkelaar uit Brugge | Amin Intichev",
-    "description": "Ik maak functionele, state-of-art websites en apps op maat met focus op jouw behoeften. ✓ Gebruiksvriendelijkheid, ✓ Professioneel, ✓ Comfort."
+    "description": "Ik maak functioneel, robuuste websites en apps op maat met focus op jouw behoeften. ✓ Gebruiksvriendelijkheid, ✓ Professioneel, ✓ Comfort."
   },
   "header": {
     "lang": {
       "link": "nl",
       "switchLangLink": "en",
       "switchLangText": "EN"
+    },
+    "nav": {
+      "home": "Home",
+      "blogs": "Blogs"
     }
   },
   "hero": {
@@ -15,17 +19,24 @@
   },
   "about": {
     "title": "Wie ben ik",
-    "text": "Ik maak functionele, state-of-art websites en apps op maat met focus op jouw behoeften. Gewerkt in verschillende IT-bedrijven met brede kennis in software ontwikkeling. Voor vragen of indien u een website of app nodig hebt, aarzel dan niet om contact met mij op te nemen via ",
+    "text": "Ik maak functioneel, robuuste websites en apps op maat met focus op jouw behoeften. Gewerkt in verschillende IT-bedrijven met brede kennis in software ontwikkeling. Voor vragen of indien u een website of app nodig hebt, aarzel dan niet om contact met mij op te nemen via ",
     "resume": {
       "link": "https://docs.google.com/document/d/e/2PACX-1vRBNW6Qx5boNDZps5K41-aQGBZPedj5fjr2FtgE_UicIvbMYS84To_k2bqbnKhqxPw5hxICaXkqYE3S/pub",
       "text": "Mijn CV"
     }
   },
   "notFound": {
+    "title": "Pagina niet gevonden",
     "text": "Deze pagina bestaat niet.",
     "link": "Naar homepagina"
   },
   "error": {
+    "title": "Server fout",
     "text": "Er ging iets mis met de server. Probeer het later opnieuw."
+  },
+  "blogs": {
+    "title": "Blogs",
+    "description": "Aanschouw een lijst met interessante onderwerpen, verhalen en lessen over IT, ontwikkeling, carrière, freelance, etc. Klik op een blog voor meer informatie.",
+    "noBlogs": "Momenteel zijn er geen blogs beschikbaar. Kom later nog eens terug."
   }
 }

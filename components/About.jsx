@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from "next-intl";
+import React from "react";
 
 const About = () => {
     const t = useTranslations('about');

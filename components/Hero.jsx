@@ -23,8 +23,8 @@ const Hero = () => {
             <Lottie
                 loop
                 animationData={lottieJson}
+                className="lottie"
                 play
-                style={{ maxWidth: '275px', maxHeight: '275px', marginLeft: 'auto', marginRight: 'auto' }}
             />
             <p className='highlight squada_one_font'>
                 {t('summary')}

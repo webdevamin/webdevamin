@@ -10,7 +10,7 @@ const NotFound = () => {
 
     return (
         <>
-            <Seo />
+            <Seo title={t('title')} description={t('text')}/>
             <Header />
             <main className='not_found'>
                 <Lottie

@@ -76,3 +76,15 @@ body,
     margin-top: 1rem;
   }
 }
+
+.lottie {
+  max-width: 235px;
+  max-height: 235px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md {
+    max-width: 275px;
+    max-height: 275px;
+  }
+}

@@ -1,11 +1,12 @@
 header {
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   z-index: 50;
   flex-wrap: wrap;
-  padding: 1.5rem 0 2.5rem 0;
+  padding-top: 1.5rem;
 
   .logo {
     @extend .squada_one_font;
@@ -22,19 +23,27 @@ header {
     }
   }
 
+  .h_button {
+    border-width: 2px;
+    border-radius: 3px;
+  }
+
+  .header_right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .right_a {
     font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     padding: 0.4rem;
-    border: 1px solid $theme-color;
-    border-radius: 3px;
-    box-shadow: 4px 4px $theme-color;
+    border: 2px solid $theme-color;
     @include transition;
 
     &:hover {
-      box-shadow: none;
       background-color: $theme-color;
       border-color: transparent;
     }
@@ -51,26 +60,40 @@ header {
     flex-direction: column;
     clear: both;
     max-height: 0;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-in-out;
 
     a {
       font-weight: 600;
       border-bottom: 1px solid $white-color;
       padding: 0.5rem;
       display: block;
+      @include transition;
+
+      &:hover {
+        color: $theme-color-two;
+      }
     }
+  }
+
+  .open_menu {
+    max-height: 240px;
   }
 
   .menu-icon {
     cursor: pointer;
     display: inline-block;
     padding: 18px 10px;
-    border: 1px solid $theme-color-opacity;
-    color: $theme-color-opacity;
-    box-shadow: 4px 4px;
+    border: 2px solid $theme-color-two;
+    color: $theme-color;
     border-radius: 3px;
     position: relative;
     user-select: none;
+    @include transition;
+
+    &:hover {
+      background-color: $theme-color-two;
+      border-color: transparent;
+    }
 
     .navicon {
       background: white;
@@ -103,10 +126,6 @@ header {
 
   .menu-btn {
     display: none;
-
-    &:checked ~ .menu {
-      max-height: 240px;
-    }
 
     &:checked ~ .menu-icon .navicon {
       background: transparent;
