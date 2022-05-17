@@ -5,16 +5,14 @@ import { useTranslations } from "next-intl";
 import React from 'react';
 import Hero from '../../components/Hero';
 
-const Blogs = () => {
-    return (
-        <p>Blogs available</p>
-    )
-}
-
-const NoBlogs = ({noBlogs}) => {
-    return (
-        <p>{noBlogs}</p>
-    )
+const Blogs = ({ blogs, t }) => {
+    if (blogs.length) {
+        return (
+            <p>Blogs available</p>
+        )
+    }
+    
+    return <p>{t('noBlogs')}</p>
 }
 
 const Index = ({ data }) => {
@@ -30,7 +28,7 @@ const Index = ({ data }) => {
                 <section>
                     <div className='content'>
                         <h2>{t('title')}</h2>
-                        {blogs.length ? <Blogs /> : <NoBlogs noBlogs={t('noBlogs')}/>}
+                        <Blogs blogs={blogs} t={t} />
                     </div>
                 </section>
             </main>
