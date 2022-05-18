@@ -39,8 +39,7 @@ body,
 
 .container {
   width: 90%;
-  max-width: 576px;
-  margin-bottom: 2rem;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,12 +68,6 @@ body,
 .text {
   text-indent: 1rem;
   word-spacing: 0.25rem;
-}
-
-@include md {
-  .container {
-    margin-top: 1rem;
-  }
 }
 
 .lottie {
