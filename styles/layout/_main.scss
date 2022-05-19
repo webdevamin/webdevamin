@@ -22,7 +22,8 @@ main {
     margin-top: 2rem;
 
     .social_links {
-      margin-top: 1rem;
+      @extend .mt;
+      
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;

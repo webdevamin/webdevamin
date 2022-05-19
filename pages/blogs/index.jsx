@@ -4,19 +4,33 @@ import { gql, GraphQLClient } from 'graphql-request';
 import { useTranslations } from "next-intl";
 import React from 'react';
 import Hero from '../../components/Hero';
+import Link from 'next/link';
 
 const Blogs = ({ blogs, t }) => {
     if (blogs.length) {
-        return (
-            <p>Blogs available</p>
-        )
+        const blog = blogs[0];
+
+        return Array.from(Array(10), () => {
+            const { id, image, slug, summary, title } = blog;
+
+            return (
+                <article key={id} className="card">
+                    <h3>{title}</h3>
+                    <p>{summary}</p>
+                    <Link href={'#'}>
+                        <a></a>
+                    </Link>
+                </article>
+            )
+        })
     }
-    
+
     return <p>{t('noBlogs')}</p>
 }
 
 const Index = ({ data }) => {
     const { blogs } = data;
+    console.log(blogs);
     const t = useTranslations('blogs');
 
     return (
@@ -28,7 +42,9 @@ const Index = ({ data }) => {
                 <section>
                     <div className='content'>
                         <h2>{t('title')}</h2>
-                        <Blogs blogs={blogs} t={t} />
+                        <section className='cards'>
+                            <Blogs blogs={blogs} t={t} />
+                        </section>
                     </div>
                 </section>
             </main>
@@ -44,17 +60,25 @@ export async function getStaticProps({ locale }) {
     const query = gql`
     query MyQuery($locale: [Locale!]!) {
         blogs(locales: $locale) {
+            id
             image {
-                id
-                url
+              id
+              url
             }
             slug
             summary
-            tags
+            tags(locales: $locale) {
+              id
+              name
+              slug
+            }
             title
+            content {
+              html
+            }
+          }
         }
-    }
-    `
+        `
 
     return {
         props: {
