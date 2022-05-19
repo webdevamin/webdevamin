@@ -8,7 +8,7 @@ import Hero from '../../components/Hero';
 const Blogs = ({ blogs, t }) => {
     if (blogs.length) {
         return (
-            <p>Blogs available</p>
+            <p>Blogs coming soon...</p>
         )
     }
     
@@ -45,14 +45,21 @@ export async function getStaticProps({ locale }) {
     query MyQuery($locale: [Locale!]!) {
         blogs(locales: $locale) {
             image {
-                id
-                url
+              id
+              url
             }
             slug
             summary
-            tags
+            tags(locales: $locale) {
+              id
+              name
+              slug
+            }
             title
-        }
+            content {
+              html
+            }
+          }
     }
     `
 
