@@ -1,4 +1,6 @@
 main {
+  @extend .mt-1_2;
+
   section {
     margin-bottom: 1.75rem;
   }
@@ -23,7 +25,7 @@ main {
 
     .social_links {
       @extend .mt;
-      
+
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;

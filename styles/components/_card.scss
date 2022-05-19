@@ -1,5 +1,27 @@
 .card {
-    border: 2px solid $theme-color-two;
-    padding: 1rem;
-    border-radius: 15px;
+  background-color: $dark-color-3;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 15px 15px 15px #00000061;
+
+  .top {
+    p {
+      @extend .mt-1_2;
+
+      font-size: 0.95rem;
+    }
+  }
+
+  .bot {
+    @extend .mt-3;
+
+    a {
+      @extend .radius-md;
+
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: $theme-color-two-opacity;
+      padding: 0.75rem 1.5rem;
+    }
+  }
 }

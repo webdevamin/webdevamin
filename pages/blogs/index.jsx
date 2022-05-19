@@ -8,18 +8,20 @@ import Link from 'next/link';
 
 const Blogs = ({ blogs, t }) => {
     if (blogs.length) {
-        const blog = blogs[0];
-
-        return Array.from(Array(10), () => {
-            const { id, image, slug, summary, title } = blog;
+        return blogs.map((blog) => {
+            const { id, slug, summary, title, tags } = blog;
 
             return (
                 <article key={id} className="card">
-                    <h3>{title}</h3>
-                    <p>{summary}</p>
-                    <Link href={'#'}>
-                        <a></a>
-                    </Link>
+                    <div className='top'>
+                        <h3>{title}</h3>
+                        <p>{summary}</p>
+                    </div>
+                    <div className='bot'>
+                        <Link href={'#'}>
+                            <a>Read more</a>
+                        </Link>
+                    </div>
                 </article>
             )
         })
@@ -60,10 +62,14 @@ export async function getStaticProps({ locale }) {
     const query = gql`
     query MyQuery($locale: [Locale!]!) {
         blogs(locales: $locale) {
-            id
             image {
               id
-              url
+              alt
+              image {
+                fileName
+                width
+                url
+              }
             }
             slug
             summary

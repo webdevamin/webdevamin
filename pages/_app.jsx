@@ -7,10 +7,10 @@ import { NextIntlProvider } from 'next-intl';
 
 import { library } from '@fortawesome/fontawesome-svg-core' //allows later to just use icon name to render-them
 import { faGithub, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faEye } from '@fortawesome/free-solid-svg-icons';
 
 config.autoAddCss = false;
-library.add(faGithub, faInstagram, faLinkedin, faFacebook, faEnvelope);
+library.add(faGithub, faInstagram, faLinkedin, faFacebook, faEnvelope, faEye);
 
 const MyApp = ({ Component, pageProps }) => {
   return (

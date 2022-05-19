@@ -2,10 +2,15 @@
   @extend .m_plus_font;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 800;
-  margin: 0;
 
   @include md {
     font-size: 2.5rem;
@@ -14,7 +19,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin: 0;
 
   &::after {
     content: "";
@@ -27,7 +31,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 0.75rem;
+    width: 50px;
+    background-color: $theme-color-three;
+    height: 3px;
+  }
 }
 
 a,
