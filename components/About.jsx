@@ -9,13 +9,11 @@ const About = () => {
 
     return (
         <section className='about'>
-            <div className='content'>
-                <h2>{t('title')}</h2>
-                <p className='text'>
-                    {t('text')} {' '}
-                    <span className='highlight_sm'>amin.m.intichev@gmail.com</span>
-                </p>
-            </div>
+            <h2>{t('title')}</h2>
+            <p className='text content'>
+                {t('text')} {' '}
+                <span className='highlight_sm'>amin.m.intichev@gmail.com</span>
+            </p>
             <div>
                 <div className="button button_theme_two">
                     <Link href={t('resume.link')}>

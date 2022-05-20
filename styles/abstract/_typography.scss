@@ -31,16 +31,22 @@ h2 {
 }
 
 h3 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
 
   &::after {
     content: "";
     display: block;
     margin-top: 0.75rem;
     width: 50px;
-    background-color: $theme-color-three;
-    height: 3px;
+    background-color: $theme-color-two-opacity;
+    height: 2px;
   }
+}
+
+p {
+  margin-bottom: 2rem;
 }
 
 a,

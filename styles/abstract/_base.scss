@@ -58,6 +58,7 @@ body,
   font-size: 0.95rem;
   color: $white-color;
   letter-spacing: 0rem;
+  margin-bottom: 3rem;
 }
 
 .highlight_sm {
@@ -80,4 +81,15 @@ body,
     max-width: 275px;
     max-height: 275px;
   }
+}
+
+.cards {
+  @extend .mt-1_2;
+
+  display: grid;
+  grid-gap: 1.75rem;
+}
+
+.content {
+  @extend .mt-1_2;
 }

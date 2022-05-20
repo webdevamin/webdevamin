@@ -11,3 +11,24 @@
 @mixin transition($duration: 0.3s, $ease: ease-in-out) {
   transition: $duration $ease;
 }
+
+@mixin neu(
+  $inset: false,
+  $h-offset: 12px,
+  $v-offset: 12px,
+  $blur: 24px,
+  $color-1,
+  $color-2
+) {
+  @if $inset {
+    box-shadow: inset $h-offset $v-offset $blur $color-1,
+      inset (-$h-offset) (-$v-offset) $blur $color-2;
+  } @else {
+    box-shadow: $h-offset $v-offset $blur $color-1,
+      (-$h-offset) (-$v-offset) $blur $color-2;
+  }
+}
+
+@mixin glow($blur: 30px, $spread: 3px, $color) {
+  box-shadow: 0 0 $blur $spread $color;
+}

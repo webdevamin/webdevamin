@@ -21,12 +21,20 @@ button,
 }
 
 .button_theme_two {
-  border: 1px solid transparent;
+  text-transform: uppercase;
   background-color: $theme-color-two-opacity;
 
   @include transition;
+  @include neu(false, 5px, 5px, 12px, $color-1: #0c0c0d, $color-2: #302e33);
 
   &:hover {
-    background-color: $theme-color-two;
+    @include glow($color: $theme-color-two-opacity);
   }
+}
+
+.button_with_icon {
+  display: flex;
+  width: fit-content;
+  align-items: baseline;
+  gap: 0.75rem;
 }

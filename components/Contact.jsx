@@ -5,7 +5,7 @@ const Contact = ({ socials }) => {
     return (
         <section className="contact">
             <h2>Contact</h2>
-            <div className="social_links">
+            <div className="content social_links">
                 {
                     socials.map((social) => {
                         const { id, iconPrefix, icon, label, text, url } = social;
