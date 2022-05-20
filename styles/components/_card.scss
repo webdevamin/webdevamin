@@ -1,0 +1,25 @@
+.card {
+  @extend .radius-lg;
+
+  margin-top: 0.75rem;
+  padding: 2.5rem;
+  background: $dark-color-grad;
+
+  @include neu(false, $color-1: #0c0c0d, $color-2: #302e33);
+
+  .top {
+    p {
+      @extend .mt-1_2;
+
+      font-size: 0.95rem;
+    }
+  }
+
+  .bot {
+    @extend .mt-2_2;
+
+    a {
+      padding: 0.65rem 1.5rem;
+    }
+  }
+}

@@ -25,34 +25,27 @@ header {
   }
 
   .h_button {
-    border-width: 2px;
-    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 42px;
     height: 42px;
+
+    padding: 0.4rem;
+
+    @extend .radius-md;
+    @include neu(false, 5px, 5px, 10px, $color-1: #0c0c0d, $color-2: #302e33);
+    @include transition;
+
+    &:hover {
+      @include neu(true, $color-1: #0c0c0d, $color-2: #302e33);
+    }
   }
 
   .header_right {
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
-
-  .right_a {
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    padding: 0.4rem;
-    border: 2px solid $theme-color;
-    @include transition;
-
-    &:hover {
-      background-color: $theme-color;
-      border-color: transparent;
-    }
   }
 
   .menu {
@@ -106,19 +99,10 @@ header {
 
   .menu-icon {
     cursor: pointer;
-    display: inline-block;
+    background: $dark-color-grad;
     padding: 18px 10px;
-    border: 2px solid $theme-color-two;
-    color: $theme-color;
-    border-radius: 3px;
     position: relative;
     user-select: none;
-    @include transition;
-
-    &:hover {
-      background-color: $theme-color-two;
-      border-color: transparent;
-    }
 
     .navicon {
       background: white;

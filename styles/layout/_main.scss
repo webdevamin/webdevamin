@@ -1,6 +1,13 @@
 main {
+  @extend .my-1_2;
+
   section {
     margin-bottom: 1.75rem;
+    background: $dark-color-grad;
+    padding: 3rem;
+
+    @extend .radius-lg;
+    @include neu(false, $color-1: #0c0c0d, $color-2: #302e33);
   }
 
   .about {
@@ -9,7 +16,7 @@ main {
       padding: 0;
 
       a {
-        padding: 0.4rem 1rem;
+        padding: 0.65rem 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,7 +29,6 @@ main {
     margin-top: 2rem;
 
     .social_links {
-      margin-top: 1rem;
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;

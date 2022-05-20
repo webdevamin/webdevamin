@@ -4,20 +4,41 @@ import { gql, GraphQLClient } from 'graphql-request';
 import { useTranslations } from "next-intl";
 import React from 'react';
 import Hero from '../../components/Hero';
+import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
-const Blogs = ({ blogs, t }) => {
+const Blogs = ({ blogs, t, g }) => {
     if (blogs.length) {
-        return (
-            <p>Blogs coming soon...</p>
-        )
+        return blogs.map((blog, index) => {
+            const { id, slug, summary, title, tags } = blog;
+
+            return (
+                <article key={index} className="card">
+                    <div className='top'>
+                        <h3>{title}</h3>
+                        <p>{summary}</p>
+                    </div>
+                    <div className='bot'>
+                        <Link href={"#"}>
+                            <a className='button button_theme_two button_with_icon'>
+                                <span>{g('comingSoon')}</span>
+                                <FontAwesomeIcon icon={faArrowRightLong} size={'xs'} />
+                            </a>
+                        </Link>
+                    </div>
+                </article>
+            )
+        })
     }
-    
+
     return <p>{t('noBlogs')}</p>
 }
 
 const Index = ({ data }) => {
     const { blogs } = data;
     const t = useTranslations('blogs');
+    const g = useTranslations('general');
 
     return (
         <>
@@ -25,12 +46,12 @@ const Index = ({ data }) => {
             <Header />
             <Hero />
             <main>
-                <section>
-                    <div className='content'>
-                        <h2>{t('title')}</h2>
-                        <Blogs blogs={blogs} t={t} />
+                <div className='content'>
+                    <h2>{t('title')}</h2>
+                    <div className='cards'>
+                        <Blogs blogs={blogs} t={t} g={g} />
                     </div>
-                </section>
+                </div>
             </main>
         </>
     )
@@ -46,7 +67,12 @@ export async function getStaticProps({ locale }) {
         blogs(locales: $locale) {
             image {
               id
-              url
+              alt
+              image {
+                fileName
+                width
+                url
+              }
             }
             slug
             summary
@@ -60,8 +86,8 @@ export async function getStaticProps({ locale }) {
               html
             }
           }
-    }
-    `
+        }
+        `
 
     return {
         props: {

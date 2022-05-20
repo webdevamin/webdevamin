@@ -1,4 +1,8 @@
 {
+  "general": {
+    "readMore": "Read more",
+    "comingSoon": "Coming soon"
+  },
   "seo": {
     "title": "Software Developer from Bruges | Amin Intichev",
     "description": "I make functional, robust websites and apps with focus on your needs. ✓ User friendly, ✓ Professional, ✓ Comfort."
