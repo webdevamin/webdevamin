@@ -34,11 +34,12 @@ header {
     padding: 0.4rem;
 
     @extend .radius-md;
-    @include neu(false, 5px, 5px, 10px, $color-1: #0c0c0d, $color-2: #302e33);
+
+    @include neu_dark(false, 5px, 10px);
     @include transition;
 
     &:hover {
-      @include neu(true, $color-1: #0c0c0d, $color-2: #302e33);
+      @include neu_dark(true);
     }
   }
 

@@ -1,29 +1,18 @@
 .hero {
-    width: 100%;
-    padding-top: 1.5rem;
+  width: 100%;
+  padding-top: 1.5rem;
 
-    h1,
-    .highlight {
-      text-align: center;
-    }
+  .lottie {
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 0.5rem 0 3.25rem 0;
 
-    .highlight {
-      @include neu(false, 5px, 5px, 12px, $color-1: #0c0c0d, $color-2: #302e33);
-    }
-
-    @extend .m_plus_font;
-
-    .notice {
-      display: block;
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin-top: 0.25rem;
-      border-radius: 3px;
-      padding: 0.15rem 0.75rem;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-      letter-spacing: 0.045rem;
-      background-color: $dark-color-2;
-    }
+    @include neu_dark;
   }
+
+  .highlight {
+    @include neu_dark(false, 5px, 12px);
+  }
+
+  @extend .m_plus_font;
+}

@@ -19,7 +19,12 @@
     }
   },
   "hero": {
-    "summary": "I'm a software developer from Bruges."
+    "summary": "I'm a software developer from Bruges.",
+    "welcome": "Welcome to my portfolio",
+    "iam": "Hello, I am Amin",
+    "role_one": "a web designer",
+    "role_two": "a web developer",
+    "role_three": "a software engineer"
   },
   "about": {
     "title": "Who am I",
