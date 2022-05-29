@@ -20,9 +20,9 @@ const Header = () => {
                 <h1 className="logo">AI</h1>
                 <div className="header_right">
                     <input className="menu-btn" type="checkbox" id="menu-btn" onClick={handleClick} />
-                    <label className="menu-icon h_button" htmlFor="menu-btn">
+                    {/* <label className="menu-icon h_button" htmlFor="menu-btn">
                         <span className="navicon"></span>
-                    </label>
+                    </label> */}
                     <div>
                         <Link href={pathname} locale={t('lang.switchLangLink')}>
                             <a className="right_a h_button">{t('lang.switchLangText')}</a>
