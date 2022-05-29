@@ -25,7 +25,7 @@ button,
   background-color: $theme-color-two-opacity;
 
   @include transition;
-  @include neu(false, 5px, 5px, 12px, $color-1: #0c0c0d, $color-2: #302e33);
+  @include neu_dark(false, 5px, 12px);
 
   &:hover {
     @include glow($color: $theme-color-two-opacity);

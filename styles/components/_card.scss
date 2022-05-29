@@ -5,7 +5,7 @@
   padding: 2.5rem;
   background: $dark-color-grad;
 
-  @include neu(false, $color-1: #0c0c0d, $color-2: #302e33);
+  @include neu_dark(false);
 
   .top {
     p {

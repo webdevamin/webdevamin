@@ -1,16 +1,20 @@
 main {
   @extend .my-1_2;
 
-  section {
+  .neu_section {
     margin-bottom: 1.75rem;
-    background: $dark-color-grad;
     padding: 3rem;
 
     @extend .radius-lg;
-    @include neu(false, $color-1: #0c0c0d, $color-2: #302e33);
+
+    @include neu_dark(false);
   }
 
   .about {
+    .Typewriter__wrapper {
+      color: $theme-color-c;
+    }
+    
     .button {
       display: inline-flex;
       padding: 0;

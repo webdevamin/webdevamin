@@ -19,7 +19,12 @@
     }
   },
   "hero": {
-    "summary": "Ik ben een software ontwikkelaar uit Brugge."
+    "summary": "Ik ben een software ontwikkelaar uit Brugge.",
+    "welcome": "Welkom op mijn portfolio",
+    "iam": "Hallo, Ik ben Amin",
+    "role_one": "een webdesigner",
+    "role_two": "een webontwikkelaar",
+    "role_three": "een software engineer"
   },
   "about": {
     "title": "Wie ben ik",

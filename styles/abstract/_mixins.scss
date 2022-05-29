@@ -12,20 +12,19 @@
   transition: $duration $ease;
 }
 
-@mixin neu(
+@mixin neu_dark(
   $inset: false,
-  $h-offset: 12px,
-  $v-offset: 12px,
-  $blur: 24px,
-  $color-1,
-  $color-2
+  $offset: 10px,
+  $blur: 20px,
 ) {
   @if $inset {
-    box-shadow: inset $h-offset $v-offset $blur $color-1,
-      inset (-$h-offset) (-$v-offset) $blur $color-2;
+    background: $dark-color-grad;
+    box-shadow: inset $offset $offset $blur #0c0c0d,
+      inset (-$offset) (-$offset) $blur #302e33;
   } @else {
-    box-shadow: $h-offset $v-offset $blur $color-1,
-      (-$h-offset) (-$v-offset) $blur $color-2;
+    background: $dark-color-grad;
+    box-shadow: $offset $offset $blur #0c0c0d,
+      (-$offset) (-$offset) $blur #302e33;
   }
 }
 
