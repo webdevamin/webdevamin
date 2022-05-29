@@ -7,6 +7,8 @@ import React from 'react';
 import Hero from '../components/Hero';
 
 const Index = ({ data }) => {
+  const {blogs, socials} = data;
+
   return (
     <>
       <Seo />
@@ -14,7 +16,7 @@ const Index = ({ data }) => {
       <Hero />
       <main>
         <About />
-        <Contact socials={data.socials} />
+        <Contact socials={socials} />
       </main>
     </>
   )
@@ -34,6 +36,28 @@ export async function getStaticProps({ locale }) {
       icon
       text
       url
+    }
+    blogs(locales: $locale) {
+      image {
+        id
+        alt
+        image {
+          fileName
+          width
+          url
+        }
+      }
+      slug
+      summary
+      tags(locales: $locale) {
+        id
+        name
+        slug
+      }
+      title
+      content {
+        html
+      }
     }
   }
   `
