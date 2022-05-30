@@ -22,9 +22,11 @@ header {
     &:hover {
       transform: rotate(15deg);
     }
+
   }
 
   .h_button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +37,11 @@ header {
 
     @extend .radius-md;
 
-    @include neu_dark(false, 5px, 10px);
+    @include neu(false, 4px, 8px);
     @include transition;
 
     &:hover {
-      @include neu_dark(true);
+      @include neu(true);
     }
   }
 
@@ -52,7 +54,7 @@ header {
   .menu {
     position: absolute;
     top: 4.5rem;
-    background-color: $theme-color-four;
+    background-color: $theme-color-two;
     border: 0px solid $white-color;
     border-radius: 5px;
     margin: 0;

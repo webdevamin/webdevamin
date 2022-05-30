@@ -11,12 +11,12 @@ main {
 
     @extend .radius-lg;
 
-    @include neu_dark(false);
+    @include neu(false);
   }
 
   .about {
     .Typewriter__wrapper {
-      color: $theme-color-c;
+      color: var(--theme);
     }
 
     .button {
@@ -29,6 +29,10 @@ main {
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+      }
+
+      span {
+        font-weight: 700;
       }
     }
   }
@@ -45,11 +49,12 @@ main {
         gap: 0.75rem;
         border-radius: 0.35rem;
         height: fit-content;
-        background-color: $theme-color-three-opacity;
         padding: 0.3rem 1rem;
 
+        @include neu(false, 3px, 7px);
+
         a {
-          color: $theme-color-three;
+          color: var(--theme_two);
           font-weight: 500;
         }
 
@@ -61,7 +66,6 @@ main {
 
           a {
             @include transition;
-            color: $white-color;
           }
         }
       }

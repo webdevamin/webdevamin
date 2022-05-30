@@ -28,13 +28,13 @@ a {
 
 * {
   box-sizing: border-box;
-  color: $white-color;
+  color: var(--foreground);
 }
 
 html,
 body,
 #__next {
-  background-color: $dark-color;
+  background-color: var(--background);
 }
 
 .container {
@@ -51,7 +51,7 @@ body,
 
 .highlight {
   @extend .m_plus_font;
-  background-color: $theme-color-opacity;
+  
   padding: 0.65rem 0.5rem;
   border-radius: 8px;
   font-weight: 600;
@@ -62,7 +62,7 @@ body,
 }
 
 .highlight_sm {
-  color: $theme-color-c;
+  color: var(--theme);
   font-weight: 500;
 }
 

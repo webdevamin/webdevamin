@@ -1,23 +1,33 @@
 $dark-color: #1e1d20;
-$dark-color-grad: linear-gradient(145deg, #201f22, #1b1a1d);
+$dark-color-grad: linear-gradient(145deg, #1b1a1d, #201f22);
 
 $dark-color-2: #2f2d32;
 
 $dark-color-3: #2e2d40;
 
-$light-color: #e0e0e0;
+$light-color: #dbdbdb;
 
 $white-color: #fff;
 $white-color-opacity: rgba(255, 255, 255, 0.785);
 
 $theme-color: #c000ca;
-$theme-color-c: #f200ff;
-$theme-color-opacity: #dc4fe377;
-
 $theme-color-two: #00b3ff;
-$theme-color-two-opacity: #00b3ff72;
 
-$theme-color-three: #81e6d9;
-$theme-color-three-opacity: rgba(129, 230, 217, 0.12);
+:root {
+  /* Your default theme */
+  --background: #dbdbdb;
+  --foreground: #1e1d20;
+  --theme: #c000ca;
+  --theme_two: #0092d0;
+  --neu_one: #bababa;
+  --neu_two: #fcfcfc;
+}
 
-$theme-color-four: #095a7c;
+[data-theme="dark"] {
+  --background: #1e1d20;
+  --foreground: #dbdbdb;
+  --theme: #f200ff;
+  --theme_two: #00b3ff;
+  --neu_one: #0c0c0d;
+  --neu_two: #302e33;
+}
