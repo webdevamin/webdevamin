@@ -29,7 +29,7 @@ const About = () => {
                 <span className='highlight_sm'>amin.m.intichev@gmail.com</span>
             </p>
             <div>
-                <div className="button button_theme_two">
+                <div className="button button_theme">
                     <Link href={t('resume.link')}>
                         <a rel="noreferrer" target='_blank'>
                             <span>{t('resume.text')}</span>

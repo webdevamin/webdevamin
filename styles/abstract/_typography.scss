@@ -26,7 +26,7 @@ h2 {
     display: block;
     margin-top: 0.75rem;
     width: 50px;
-    background-color: $theme-color-opacity;
+    background-color: var(--theme);
     height: 2px;
   }
 }
@@ -41,7 +41,6 @@ h3 {
     display: block;
     margin-top: 0.75rem;
     width: 50px;
-    background-color: $theme-color-two-opacity;
     height: 2px;
   }
 }
@@ -72,7 +71,7 @@ p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
-  color: $light-color;
+  color: var(--foreground);
   letter-spacing: 2px;
   font-size: 14px;
   margin-bottom: 20px;
@@ -81,6 +80,6 @@ p {
 .text {
   font-size: 16px;
   line-height: 28px;
-  color: $light-color;
+  color: var(--foreground);
   opacity: 0.9;
 }

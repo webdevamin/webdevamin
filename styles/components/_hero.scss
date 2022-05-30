@@ -7,11 +7,11 @@
     border-radius: 8px;
     margin: 0.5rem 0 3.25rem 0;
 
-    @include neu_dark;
+    @include neu;
   }
 
   .highlight {
-    @include neu_dark(false, 5px, 12px);
+    @include neu(false, 5px, 12px);
   }
 
   @extend .m_plus_font;
