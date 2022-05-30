@@ -49,7 +49,9 @@ const Header = () => {
     return (
         <>
             <header>
-                <h1 className="logo">AI</h1>
+                <Link href={'/'}>
+                    <a><h1 className="logo">AI</h1></a>
+                </Link>
                 <div className="header_right">
                     <input className="menu-btn" type="checkbox" id="menu-btn" onClick={handleClick} />
                     {/* <label className="menu-icon h_button" htmlFor="menu-btn">

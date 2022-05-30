@@ -10,19 +10,22 @@ header {
   position: relative;
 
   .logo {
+    font-size: 1.8rem;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
     @extend .squada_one_font;
-    font-size: 2.25rem;
-
-    @include md {
-      font-size: 3rem;
-    }
-
+    @include neu(false, 4px, 8px);
     @include transition;
 
     &:hover {
       transform: rotate(15deg);
+      @include neu(true, 4px, 8px);
     }
-
   }
 
   .h_button {
