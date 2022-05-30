@@ -16,7 +16,7 @@ const Seo = ({ title, description }) => {
             <meta property="og:image" content={"/images/og-image.png"} />
             <meta
                 property="og:url"
-                content={process.env.NEXT_PUBLIC_URL ?? "https://aminintichev.com"}
+                content={process.env.NEXT_PUBLIC_URL ?? "https://webdevamin.com"}
             />
             <meta property="og:description" content={realDescription} />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
