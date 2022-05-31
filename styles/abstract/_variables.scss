@@ -5,7 +5,7 @@ $dark-color-2: #2f2d32;
 
 $dark-color-3: #2e2d40;
 
-$light-color: #dbdbdb;
+$light-color: #e0e0e0;
 
 $white-color: #fff;
 $white-color-opacity: rgba(255, 255, 255, 0.785);
@@ -15,17 +15,17 @@ $theme-color-two: #00b3ff;
 
 :root {
   /* Your default theme */
-  --background: #dbdbdb;
+  --background: #e0e0e0;
   --foreground: #1e1d20;
   --theme: #c000ca;
   --theme_two: #0092d0;
-  --neu_one: #bababa;
-  --neu_two: #fcfcfc;
+  --neu_one: #bebebe;
+  --neu_two: #ffffff;
 }
 
 [data-theme="dark"] {
   --background: #1e1d20;
-  --foreground: #dbdbdb;
+  --foreground: #e0e0e0;
   --theme: #f200ff;
   --theme_two: #00b3ff;
   --neu_one: #0c0c0d;
