@@ -26,7 +26,6 @@ const About = () => {
             </div>
             <p className='text content'>
                 {t('text')} {' '}
-                <span className='highlight_sm'>amin.m.intichev@gmail.com</span>
             </p>
             <div>
                 <div className="button button_theme">
