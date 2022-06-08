@@ -54,9 +54,9 @@ const Header = () => {
                 </Link>
                 <div className="header_right">
                     <input className="menu-btn" type="checkbox" id="menu-btn" onClick={handleClick} />
-                    {/* <label className="menu-icon h_button" htmlFor="menu-btn">
+                    <label className="menu-icon h_button" htmlFor="menu-btn">
                         <span className="navicon"></span>
-                    </label> */}
+                    </label>
                     {renderThemeChanger()}
                     <div>
                         <Link href={pathname} locale={t('lang.switchLangLink')}>
