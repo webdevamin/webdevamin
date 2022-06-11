@@ -75,6 +75,11 @@ const Header = () => {
                             <a>{t('nav.blogs')}</a>
                         </Link>
                     </li>
+                    <li>
+                        <Link href='/faq'>
+                            <a>{t('nav.faq')}</a>
+                        </Link>
+                    </li>
                 </ul>
             </header>
         </>

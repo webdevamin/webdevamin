@@ -4,7 +4,7 @@
     "comingSoon": "Coming soon"
   },
   "seo": {
-    "title": "Software Developer from Bruges | Amin Intichev",
+    "title": "Software Developer from Bruges | Webdevamin",
     "description": "I make digital solutions to make your business appear online more effectively: websites, SEO, digital marketing and more with focus on your needs."
   },
   "header": {
@@ -15,7 +15,8 @@
     },
     "nav": {
       "home": "Home",
-      "blogs": "Blogs"
+      "blogs": "Blogs",
+      "faq": "FAQ"
     }
   },
   "hero": {
@@ -45,7 +46,13 @@
   },
   "blogs": {
     "title": "Blogs",
+    "title_two": "Skills, lessons and more",
     "description": "Here you can see a list of interesting topics, stories and lessons about IT, development, career, freelance, etc. Click on any blog to read more about it.",
     "noBlogs": "There are no blogs available at this moment. Come back again later."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "description": "Frequently asked questions listed here.",
+    "noFaq": "There are no frequently asked questions available at this moment. Come back again later."
   }
 }

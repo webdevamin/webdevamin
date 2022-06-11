@@ -5,6 +5,7 @@
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 
   &::after {
     content: "";
@@ -45,6 +47,11 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 p {
   margin-bottom: 2rem;
 }
@@ -63,7 +70,7 @@ p {
 
 .grand_title {
   font-size: 32px;
-  line-height: 40px;
+  line-height: 35px;
   font-weight: 700;
 }
 
@@ -82,4 +89,15 @@ p {
   line-height: 28px;
   color: var(--foreground);
   opacity: 0.9;
+}
+
+.title_underline {
+  &::after {
+    background-color: var(--theme);
+    content: "";
+    display: block;
+    margin-top: 1.5rem;
+    width: 50px;
+    height: 2px;
+  }
 }

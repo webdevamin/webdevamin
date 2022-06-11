@@ -4,7 +4,7 @@ import Head from "next/head";
 const Seo = ({ title, description }) => {
     const t = useTranslations('seo');
 
-    const realTitle = title ? `${title} | Amin Intichev` : t('title');
+    const realTitle = title ? `${title} | Webdevamin` : t('title');
     const realDescription = description ?? t('description');
 
     return (

@@ -15,10 +15,6 @@ main {
   }
 
   .about {
-    .Typewriter__wrapper {
-      color: var(--theme);
-    }
-
     .button {
       display: inline-flex;
       padding: 0;
@@ -50,7 +46,7 @@ main {
         border-radius: 0.35rem;
         height: fit-content;
         padding: 0.3rem 1rem;
-        
+
         @include neu(false, 3px, 7px);
 
         a {

@@ -2,6 +2,10 @@
   margin-top: 0;
 }
 
+.mt-0_5 {
+  margin-top: 0.5rem;
+}
+
 .mt {
   margin-top: 1rem;
 }
@@ -45,4 +49,8 @@
 
 .radius-lg {
   border-radius: 20px;
+}
+
+.theme_color {
+  color: var(--theme);
 }

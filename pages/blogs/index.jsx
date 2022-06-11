@@ -37,6 +37,7 @@ const Blogs = ({ blogs, t, g }) => {
 
 const Index = ({ data }) => {
     const { blogs } = data;
+
     const t = useTranslations('blogs');
     const g = useTranslations('general');
 
@@ -44,14 +45,12 @@ const Index = ({ data }) => {
         <>
             <Seo title={t('title')} description={t('description')} />
             <Header />
-            <Hero />
+            <Hero title={t('title')} titleTwo={t('title_two')} />
             <main>
-                <div className='content'>
-                    <h2>{t('title')}</h2>
-                    <div className='cards'>
-                        <Blogs blogs={blogs} t={t} g={g} />
-                    </div>
-                </div>
+                <section>
+                    {/* <Blogs blogs={blogs} t={t} g={g} /> */}
+                    <p>{t('noBlogs')}</p>
+                </section>
             </main>
         </>
     )

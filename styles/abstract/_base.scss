@@ -44,23 +44,6 @@ body,
   margin-right: auto;
 }
 
-.highlight {
-  @extend .m_plus_font;
-
-  padding: 0.65rem 0.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: $white-color;
-  letter-spacing: 0rem;
-  margin-bottom: 3rem;
-}
-
-.highlight_sm {
-  color: var(--theme);
-  font-weight: 500;
-}
-
 .lottie {
   @include md {
     max-width: 275px;
@@ -68,24 +51,12 @@ body,
   }
 }
 
-.cards {
-  @extend .mt-1_2;
-
-  display: grid;
-  grid-gap: 1.75rem;
-}
-
 .content {
   @extend .mt-1_2;
 }
 
-.notice {
-  display: inline-block;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-top: 1.25rem;
-  border-radius: 5px;
-  padding: 0.15rem 0.75rem;
-  letter-spacing: 0.045rem;
-  background-color: $dark-color-2;
+.group_content {
+  p {
+    @extend .mb;
+  }
 }

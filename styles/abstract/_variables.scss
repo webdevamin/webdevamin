@@ -1,22 +1,13 @@
-$dark-color: #1e1d20;
-$dark-color-grad: linear-gradient(145deg, #1b1a1d, #201f22);
-
-$dark-color-2: #2f2d32;
-
-$dark-color-3: #2e2d40;
-
-$light-color: #e0e0e0;
-
-$white-color: #fff;
-$white-color-opacity: rgba(255, 255, 255, 0.785);
-
 $theme-color: #c000ca;
 $theme-color-two: #00b3ff;
 
 :root {
   /* Your default theme */
   --background: #e0e0e0;
+  --background_two: #d2d2d2;
   --foreground: #1e1d20;
+  --foreground_two: #1e1d20ab;
+  --foreground_three: #3333331c;
   --theme: #ee5590;
   --theme_two: #0097ab;
   --neu_one: #bebebe;
@@ -25,8 +16,11 @@ $theme-color-two: #00b3ff;
 
 [data-theme="dark"] {
   --background: #1e1d20;
+  --background_two: #2f2d32;
   --foreground: #e0e0e0;
-  --theme: #F582AE;
+  --foreground_two: #e0e0e0b3;
+  --foreground_three: #e0e0e02b;
+  --theme: #f582ae;
   --theme_two: #8bd3dd;
   --neu_one: #0c0c0d;
   --neu_two: #302e33;

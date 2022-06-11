@@ -4,7 +4,7 @@
     "comingSoon": "Binnenkort beschikbaar"
   },
   "seo": {
-    "title": "Software Ontwikkelaar uit Brugge | Amin Intichev",
+    "title": "Software Ontwikkelaar uit Brugge | Webdevamin",
     "description": "Ik maak digitale oplossingen zodat uw bedrijf online effectiever verschijnt: websites, SEO, digital marketing en meer met focus op uw behoeften."
   },
   "header": {
@@ -15,7 +15,8 @@
     },
     "nav": {
       "home": "Home",
-      "blogs": "Blogs"
+      "blogs": "Blogs",
+      "faq": "FAQ"
     }
   },
   "hero": {
@@ -45,7 +46,13 @@
   },
   "blogs": {
     "title": "Blogs",
+    "title_two": "Skills, lessen en meer",
     "description": "Aanschouw een lijst met interessante onderwerpen, verhalen en lessen over IT, ontwikkeling, carrière, freelance, etc. Klik op een blog voor meer informatie.",
     "noBlogs": "Momenteel zijn er geen blogs beschikbaar. Kom later nog eens terug."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "description": "Veelgestelde vragen hier opgelijst.",
+    "noFaq": "Momenteel zijn er geen veelgestelde vragen beschikbaar. Kom later nog eens terug."
   }
 }
