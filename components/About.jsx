@@ -13,7 +13,7 @@ const About = () => {
                 {t('text')} {' '}
             </p>
             <div>
-                <div className="button button_theme">
+                <div className="button button_primary">
                     <Link href={t('resume.link')}>
                         <a rel="noreferrer" target='_blank'>
                             <span>{t('resume.text')}</span>

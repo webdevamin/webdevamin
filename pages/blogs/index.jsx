@@ -1,28 +1,41 @@
 import Seo from '../../components/Seo'
 import Header from "../../components/Header";
-import { gql, GraphQLClient } from 'graphql-request';
+import { GraphQLClient } from 'graphql-request';
 import { useTranslations } from "next-intl";
 import React from 'react';
 import Hero from '../../components/Hero';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
+import { GET_BLOGS } from "../../config/queries";
 
 const Blogs = ({ blogs, t, g }) => {
     if (blogs.length) {
         return blogs.map((blog, index) => {
-            const { id, slug, summary, title, tags } = blog;
+            const { title, tags, image, slug } = blog;
+            const { alt, img } = image;
 
             return (
                 <article key={index} className="card">
-                    <div className='top'>
-                        <h3>{title}</h3>
-                        <p>{summary}</p>
+                    <div className='left'>
+                        <Image src={img.url} alt={alt}
+                            width={150} height={150} className='radius-md' />
                     </div>
-                    <div className='bot'>
-                        <Link href={"#"}>
-                            <a className='button button_theme_two button_with_icon'>
-                                <span>{g('comingSoon')}</span>
+                    <div className="right">
+                        <div className='tags'>
+                            {
+                                tags.map((tag, index) => {
+                                    return (
+                                        <span key={index} className='tag'>{tag.name}</span>
+                                    )
+                                })
+                            }
+                        </div>
+                        <h3>{title}</h3>
+                        <Link href={`/blogs/${slug}`}>
+                            <a className='link'>
+                                <span>{g('readMore')}</span>
                                 <FontAwesomeIcon icon={faArrowRightLong} size={'xs'} />
                             </a>
                         </Link>
@@ -47,9 +60,8 @@ const Index = ({ data }) => {
             <Header />
             <Hero title={t('title')} titleTwo={t('title_two')} />
             <main>
-                <section>
-                    {/* <Blogs blogs={blogs} t={t} g={g} /> */}
-                    <p>{t('noBlogs')}</p>
+                <section className='mt-3'>
+                    <Blogs blogs={blogs} t={t} g={g} />
                 </section>
             </main>
         </>
@@ -61,39 +73,12 @@ export default Index;
 export async function getStaticProps({ locale }) {
     const client = new GraphQLClient(process.env.API_URL);
 
-    const query = gql`
-    query MyQuery($locale: [Locale!]!) {
-        blogs(locales: $locale) {
-            image {
-              id
-              alt
-              image {
-                fileName
-                width
-                url
-              }
-            }
-            slug
-            summary
-            tags(locales: $locale) {
-              id
-              name
-              slug
-            }
-            title
-            content {
-              html
-            }
-          }
-        }
-        `
-
     return {
         props: {
             // You can get the messages from anywhere you like. The recommended
             // pattern is to put them in JSON files separated by language and read
             // the desired one based on the `locale` received from Next.js.
-            data: await client.request(query, { locale: [locale] }),
+            data: await client.request(GET_BLOGS, { locale: [locale] }),
             messages: (await import(`../../lang/${locale}.json`)).default,
         }
     };

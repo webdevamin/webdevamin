@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+
+  .left {
+    flex-shrink: 0;
+  }
+
+  .right {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

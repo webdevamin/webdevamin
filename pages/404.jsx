@@ -20,7 +20,7 @@ const NotFound = () => {
                 />
                 <p>{t('text')}</p>
                 <Link href={'/'}>
-                    <a className='button button_theme'>
+                    <a className='button button_primary'>
                         {t('link')}
                     </a>
                 </Link>

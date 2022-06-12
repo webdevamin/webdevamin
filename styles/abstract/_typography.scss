@@ -35,16 +35,18 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  text-transform: uppercase;
   font-weight: 500;
+  margin-bottom: 0.75rem;
+  // color: var(--theme_two);
 
-  &::after {
-    content: "";
-    display: block;
-    margin-top: 0.75rem;
-    width: 50px;
-    height: 2px;
-  }
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   margin-top: 0.75rem;
+  //   width: 30px;
+  //   background-color: var(--theme_two);
+  //   height: 2px;
+  // }
 }
 
 h4 {
@@ -71,6 +73,12 @@ p {
 .grand_title {
   font-size: 32px;
   line-height: 35px;
+  font-weight: 700;
+}
+
+.large_title {
+  font-size: 26px;
+  line-height: 32px;
   font-weight: 700;
 }
 

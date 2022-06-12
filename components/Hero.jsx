@@ -9,7 +9,7 @@ const Hero = ({ title, titleTwo, intro }) => {
     const TitleTwo = () => {
         if (intro) {
             return (
-                <div className="grand_title mt-0_5 title_underline">
+                <div className="large_title mt-0_5 title_underline">
                     <Typewriter
                         options={{
                             strings: [h('role_one'), h('role_two'), h('role_three')],
@@ -24,7 +24,7 @@ const Hero = ({ title, titleTwo, intro }) => {
         }
 
         return (
-            <h1 className='grand_title theme_color mt-0_5 title_underline'>{titleTwo}</h1>
+            <h1 className='large_title theme_color mt-0_5 title_underline'>{titleTwo}</h1>
         )
     }
 

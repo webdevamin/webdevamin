@@ -1,0 +1,8 @@
+.tag {
+    text-transform: uppercase;
+    color: var(--foreground_two);
+    font-size: small;
+    padding: 0.25rem 1rem;
+
+    @include neu(false, 2px, 4px);
+}
