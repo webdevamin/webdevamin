@@ -39,6 +39,18 @@
   margin-bottom: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 5rem;
+}
+
+.mb-xl {
+  margin-bottom: 7rem;
+}
+
 .radius {
   border-radius: 5px;
 }
@@ -55,6 +67,14 @@
   color: var(--theme);
 }
 
+.primary_two_color {
+  color: var(--foreground_two);
+}
+
 .theme_bg_color {
   background-color: var(--theme);
+}
+
+.font_bold {
+  font-weight: 700;
 }

@@ -34,19 +34,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
-  // color: var(--theme_two);
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   margin-top: 0.75rem;
-  //   width: 30px;
-  //   background-color: var(--theme_two);
-  //   height: 2px;
-  // }
 }
 
 h4 {
@@ -55,7 +45,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 a,
@@ -71,15 +61,23 @@ p {
 }
 
 .grand_title {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 35px;
   font-weight: 700;
+
+  @include md {
+    font-size: 32px;
+  }
 }
 
 .large_title {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 32px;
   font-weight: 700;
+
+  @include md {
+    font-size: 26px;
+  }
 }
 
 .subtitle {

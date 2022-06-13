@@ -21,6 +21,17 @@ body {
   @extend .normal_font;
 }
 
+figure {
+  margin: 0;
+
+  figcaption {
+    position: absolute;
+    bottom: -28px;
+    color: var(--foreground_two);
+    font-size: 0.8rem;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -64,7 +75,6 @@ body,
 .tags {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -72,7 +82,6 @@ body,
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: fit-content;
   padding-bottom: 0.2rem;
   font-weight: 500;
 
@@ -85,4 +94,19 @@ body,
   path {
     color: var(--theme_two);
   }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 1rem;
+
+  @include md {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+
+.image_container {
+  position: relative;
+  height: 400px;
 }

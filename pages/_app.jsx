@@ -8,11 +8,12 @@ import { ThemeProvider } from 'next-themes';
 
 import { library } from '@fortawesome/fontawesome-svg-core' //allows later to just use icon name to render-them
 import { faGithub, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faEye, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faEye, faSun, faMoon, faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 config.autoAddCss = false;
+
 library.add(faGithub, faInstagram, faLinkedin, faFacebook, faEnvelope,
-  faEye, faSun, faMoon);
+  faEye, faSun, faMoon, faArrowLeftLong);
 
 const MyApp = ({ Component, pageProps }) => {
   return (

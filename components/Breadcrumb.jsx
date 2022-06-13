@@ -4,7 +4,7 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const About = () => {
+const Breadcrumb = () => {
     const t = useTranslations('about');
 
     return (
@@ -26,4 +26,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Breadcrumb;

@@ -8,41 +8,39 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import { GET_BLOGS } from "../../config/queries";
+import { GET_BLOGS_BY_LANG } from "../../config/queries";
 
 const Blogs = ({ blogs, t, g }) => {
     if (blogs.length) {
-        return blogs.map((blog, index) => {
-            const { title, tags, image, slug } = blog;
-            const { alt, img } = image;
+        return (
+            <section className="cards">
+                {
+                    blogs.map((blog, index) => {
+                        const { title, image, slug } = blog;
+                        const { alt, img } = image;
 
-            return (
-                <article key={index} className="card">
-                    <div className='left'>
-                        <Image src={img.url} alt={alt}
-                            width={150} height={150} className='radius-md' />
-                    </div>
-                    <div className="right">
-                        <div className='tags'>
-                            {
-                                tags.map((tag, index) => {
-                                    return (
-                                        <span key={index} className='tag'>{tag.name}</span>
-                                    )
-                                })
-                            }
-                        </div>
-                        <h3>{title}</h3>
-                        <Link href={`/blogs/${slug}`}>
-                            <a className='link'>
-                                <span>{g('readMore')}</span>
-                                <FontAwesomeIcon icon={faArrowRightLong} size={'xs'} />
-                            </a>
-                        </Link>
-                    </div>
-                </article>
-            )
-        })
+                        return (
+                            <article key={index} className="card">
+                                <div className='image_container'>
+                                    <Image src={img.url} alt={alt}
+                                        layout="fill" objectFit='cover'
+                                        className='radius-md' />
+                                </div>
+                                <div className='card_footer'>
+                                    <h3>{title}</h3>
+                                    <Link href={`/blogs/${slug}`}>
+                                        <a className='link'>
+                                            <span>{g('readMore')}</span>
+                                            <FontAwesomeIcon icon={faArrowRightLong} size={'xs'} />
+                                        </a>
+                                    </Link>
+                                </div>
+                            </article>
+                        )
+                    })
+                }
+            </section>
+        )
     }
 
     return <p>{t('noBlogs')}</p>
@@ -59,10 +57,13 @@ const Index = ({ data }) => {
             <Seo title={t('title')} description={t('description')} />
             <Header />
             <Hero title={t('title')} titleTwo={t('title_two')} />
-            <main>
-                <section className='mt-3'>
-                    <Blogs blogs={blogs} t={t} g={g} />
+            <main className='mb-lg'>
+                <section>
+                    <p className='text content'>
+                        {t('description')}
+                    </p>
                 </section>
+                <Blogs blogs={blogs} t={t} g={g} />
             </main>
         </>
     )
@@ -75,10 +76,7 @@ export async function getStaticProps({ locale }) {
 
     return {
         props: {
-            // You can get the messages from anywhere you like. The recommended
-            // pattern is to put them in JSON files separated by language and read
-            // the desired one based on the `locale` received from Next.js.
-            data: await client.request(GET_BLOGS, { locale: [locale] }),
+            data: await client.request(GET_BLOGS_BY_LANG, { locale: [locale] }),
             messages: (await import(`../../lang/${locale}.json`)).default,
         }
     };

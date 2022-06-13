@@ -1,5 +1,7 @@
 $theme-color: #c000ca;
 $theme-color-two: #00b3ff;
+$theme-color-two-light: #34a6b5;
+$light-color: #e0e0e0;
 
 :root {
   /* Your default theme */
@@ -9,7 +11,9 @@ $theme-color-two: #00b3ff;
   --foreground_two: #1e1d20ab;
   --foreground_three: #3333331c;
   --theme: #ee5590;
+  --theme_light: #ea7aa5;
   --theme_two: #0097ab;
+  --theme_two_light: #34a6b5;
   --neu_one: #bebebe;
   --neu_two: #ffffff;
 }
@@ -21,7 +25,9 @@ $theme-color-two: #00b3ff;
   --foreground_two: #e0e0e0b3;
   --foreground_three: #e0e0e02b;
   --theme: #f582ae;
-  --theme_two: #8bd3dd;
+  --theme_light: #f59ebf;
+  --theme_two: #0097ab;
+  --theme_two_light: #34a6b5;
   --neu_one: #0c0c0d;
   --neu_two: #302e33;
 }

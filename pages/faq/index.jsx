@@ -26,10 +26,10 @@ const ListOfFaqs = ({ faqs }) => {
                         return (
                             <div key={id} className='item' onClick={() => handleClick(index)}>
                                 <div className='title'>
-                                    <span className='icon'>{selected === index ? '-' : '+'}</span>
+                                    <span className='icon'>{selected === index || faqs.length >= 1 ? '-' : '+'}</span>
                                     <h4>{question}</h4>
                                 </div>
-                                <div className={selected === index ? 'content show' : 'content'}
+                                <div className={selected === index || faqs.length >= 1 ? 'content show' : 'content'}
                                     dangerouslySetInnerHTML={{ __html: answer.html }} />
                             </div>
                         )

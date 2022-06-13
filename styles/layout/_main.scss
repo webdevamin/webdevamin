@@ -1,9 +1,9 @@
 main {
-  @extend .my-1_2;
-
   section {
-    margin-top: 2rem;
+    @extend .mb-2;
   }
+  
+  @extend .my-1_2;
 
   .neu_section {
     margin-bottom: 1.75rem;
@@ -34,6 +34,8 @@ main {
   }
 
   .contact {
+    margin-top: 2rem;
+
     .social_links {
       display: flex;
       gap: 0.5rem;

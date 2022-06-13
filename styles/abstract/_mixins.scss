@@ -1,5 +1,11 @@
 // Responsiveness
 
+@mixin sm {
+  @media (min-width: 460px) {
+    @content;
+  }
+}
+
 @mixin md {
   @media (min-width: 976px) {
     @content;

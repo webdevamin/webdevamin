@@ -1,15 +1,21 @@
 .card {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
+  .image_container {
+    height: 200px;
 
-  .left {
-    flex-shrink: 0;
+    @include sm {
+      height: 300px;
+    }
+
+    @include md {
+      height: 200px;
+    }
   }
 
-  .right {
-    p {
-      margin-bottom: 0;
+  .card_footer {
+    margin-top: 0.75rem;
+
+    h3 {
+      margin-bottom: 0.5rem;
     }
   }
 }
