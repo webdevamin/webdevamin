@@ -5,12 +5,17 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
 
-const Header = () => {
+const getLink = (linksLocales, router) => {
+    return linksLocales.find((linkLocale) => {
+        return linkLocale.locale !== router.locale;
+    }).slug;
+}
+
+const Header = ({ linksLocales }) => {
     const router = useRouter();
-    const { pathname } = router;
-
+    const pathname = linksLocales ? getLink(linksLocales, router) : router.pathname;
     const t = useTranslations('header');
-
+    
     const [active, setActive] = useState(false);
     const [mounted, setMounted] = useState(false);
     const { systemTheme, theme, setTheme } = useTheme();
@@ -19,8 +24,7 @@ const Header = () => {
 
     useEffect(() => {
         setMounted(true);
-    }, [])
-
+    }, []);
 
     const renderThemeChanger = () => {
         if (!mounted) return null;

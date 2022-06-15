@@ -51,6 +51,9 @@
     "description": "Here you can see a list of interesting topics, stories and lessons about IT, development, career, freelance, etc. Click on any blog to read more about it.",
     "noBlogs": "There are no blogs available at this moment. Come back again later."
   },
+  "blog": {
+    "back": "Back to blogs"
+  },
   "faq": {
     "title": "Frequently asked questions",
     "description": "Frequently asked questions listed here.",

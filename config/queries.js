@@ -5,6 +5,7 @@ const GET_BLOG_SLUGS = gql`
     blogs {
       localizations(includeCurrent: true) {
         slug
+        locale
       }
     }
   }

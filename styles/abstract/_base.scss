@@ -110,3 +110,9 @@ body,
   position: relative;
   height: 400px;
 }
+
+.text_with_icon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}

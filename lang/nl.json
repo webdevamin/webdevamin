@@ -50,6 +50,9 @@
     "description": "Aanschouw een lijst met interessante onderwerpen, verhalen en lessen over IT, ontwikkeling, carrière, freelance, etc. Klik op een blog voor meer informatie.",
     "noBlogs": "Momenteel zijn er geen blogs beschikbaar. Kom later nog eens terug."
   },
+  "blog": {
+    "back": "Terug naar blogs"
+  },
   "faq": {
     "title": "Veelgestelde vragen",
     "description": "Veelgestelde vragen hier opgelijst.",

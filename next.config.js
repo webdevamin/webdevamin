@@ -6,7 +6,7 @@ const nextConfig = {
     defaultLocale: "en",
   },
   images: {
-    domains: ['media.graphassets.com'],
+    domains: ["media.graphassets.com"],
   },
 };
 
