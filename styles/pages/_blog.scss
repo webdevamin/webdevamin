@@ -19,6 +19,13 @@
       @extend .mt-2;
 
       .image_container {
+        position: relative;
+        z-index: 999;
+
+        img {
+          z-index: 999;
+        }
+
         height: 250px;
 
         @include sm {
@@ -42,7 +49,10 @@
           margin-bottom: 1rem;
 
           .info_right {
-            color: var(--foreground_two);
+            * {
+              color: var(--foreground_two);
+            }
+            
             font-weight: 500;
           }
         }
