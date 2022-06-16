@@ -18,6 +18,18 @@
     article {
       @extend .mt-2;
 
+      p {
+        text-align: justify;
+      }
+
+      a {
+        color: var(--theme_two);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .image_container {
         position: relative;
         z-index: 999;
@@ -52,14 +64,18 @@
             * {
               color: var(--foreground_two);
             }
-            
+
             font-weight: 500;
           }
         }
 
         .blog_text {
           .button {
-            gap: 0.75rem;
+            display: inline-block;
+
+            span {
+              padding-left: 0.75rem;
+            }
 
             span,
             svg,
