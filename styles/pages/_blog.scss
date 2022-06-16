@@ -20,13 +20,13 @@
 
       p {
         text-align: justify;
-      }
 
-      a {
-        color: var(--theme_two);
+        a {
+          color: var(--theme_two);
 
-        &:hover {
-          text-decoration: underline;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
