@@ -34,18 +34,18 @@ const Header = ({ linksLocales }) => {
         if (currentTheme === 'dark') {
             return (
                 <div>
-                    <a className="right_a h_button" onClick={() => setTheme('light')}>
+                    <span className="right_a h_button" onClick={() => setTheme('light')}>
                         <FontAwesomeIcon icon="fa-solid fa-sun" role={"button"} />
-                    </a>
+                    </span>
                 </div>
             )
         }
 
         return (
             <div>
-                <a className="right_a h_button" onClick={() => setTheme('dark')}>
+                <span className="right_a h_button" onClick={() => setTheme('dark')}>
                     <FontAwesomeIcon icon="fa-solid fa-moon" role={"button"} />
-                </a>
+                </span>
             </div>
         )
     }

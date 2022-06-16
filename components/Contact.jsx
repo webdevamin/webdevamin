@@ -13,7 +13,7 @@ const Contact = ({ socials }) => {
                         return (
                             <div key={id}>
                                 <Link href={url}>
-                                    <a rel="noreferrer" target='_blank'>
+                                    <a rel="noreferrer" target='_blank' aria-label={label}>
                                         <FontAwesomeIcon icon={[iconPrefix, icon]} size={'xl'}
                                             aria-label={label} />
                                     </a>
