@@ -120,6 +120,7 @@ code {
     Menlo, monospace;
   padding: 3px;
   border-radius: 4px;
-  border: 1px solid rgb(212, 212, 212);
-  background-color: rgb(212, 212, 212);
+  border: 1px solid var(--background_three);
+  background-color: var(--background_two);
+  font-size: 0.85rem;
 }

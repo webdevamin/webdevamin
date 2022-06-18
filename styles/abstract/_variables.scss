@@ -7,12 +7,13 @@ $light-color: #e0e0e0;
   /* Your default theme */
   --background: #e0e0e0;
   --background_two: #d2d2d2;
+  --background_three: #bebebe;
   --foreground: #1e1d20;
   --foreground_two: #1e1d20ab;
   --foreground_three: #3333331c;
-  --theme: #ee5590;
+  --theme: #ec4283;
   --theme_light: #ea7aa5;
-  --theme_two: #0097ab;
+  --theme_two: #007e8f;
   --theme_two_light: #34a6b5;
   --neu_one: #bebebe;
   --neu_two: #ffffff;
@@ -20,7 +21,8 @@ $light-color: #e0e0e0;
 
 [data-theme="dark"] {
   --background: #1e1d20;
-  --background_two: #2f2d32;
+  --background_two: #37343a;
+  --background_three: #3d3b3f;
   --foreground: #e0e0e0;
   --foreground_two: #e0e0e0b3;
   --foreground_three: #e0e0e02b;
