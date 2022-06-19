@@ -18,10 +18,16 @@
     article {
       @extend .mt-2;
 
-      p {
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .text {
         text-align: justify;
 
-        a {
+        a,
+        a > * {
           color: var(--theme_two);
 
           &:hover {
