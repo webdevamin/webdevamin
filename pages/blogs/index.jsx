@@ -24,7 +24,7 @@ const Blogs = ({ blogs, t, g }) => {
                                 <div className='image_container'>
                                     <Image src={img.url} alt={alt}
                                         layout="fill" objectFit='cover'
-                                        className='radius-md' />
+                                        className='radius-md' priority/>
                                 </div>
                                 <div className='card_footer'>
                                     <h3>{title}</h3>

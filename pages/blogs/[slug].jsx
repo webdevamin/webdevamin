@@ -69,16 +69,20 @@ export default Blog;
 export async function getStaticPaths() {
     const client = new GraphQLClient(process.env.API_URL);
     const data = await client.request(GET_BLOG_SLUGS);
-    const { localizations } = data.blogs[0];
+    const { blogs } = data;
 
-    const paths = localizations.map((localization) => {
-        return {
-            params: {
-                slug: localization.slug.toString(),
-            },
-            locale: localization.locale.toString(),
-        };
-    });
+    const paths = blogs.map((blog) => {
+        const { localizations } = blog;
+
+        return localizations.map((localization) => {
+            return {
+                params: {
+                    slug: localization.slug.toString(),
+                },
+                locale: localization.locale.toString(),
+            };
+        })
+    }).flat();
 
     return {
         paths,

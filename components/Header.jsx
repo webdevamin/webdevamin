@@ -13,6 +13,8 @@ const getLink = (linksLocales, router) => {
 
 const Header = ({ linksLocales }) => {
     const router = useRouter();
+    console.log(linksLocales);
+    console.log(router.pathname);
     const pathname = linksLocales ? getLink(linksLocales, router) : router.pathname;
     const t = useTranslations('header');
     
