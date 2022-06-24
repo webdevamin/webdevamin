@@ -132,6 +132,7 @@ code {
 }
 
 pre {
+  overflow: auto;
   position: relative;
   border: 1px solid var(--background_three);
   background-color: var(--background_two);

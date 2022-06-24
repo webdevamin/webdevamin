@@ -57,6 +57,7 @@
         margin-top: 3rem;
 
         .blog_info {
+          gap: 2.5rem;
           padding-bottom: 1rem;
           border-bottom: 1px solid var(--foreground_three);
           display: flex;
@@ -67,6 +68,10 @@
           .info_right {
             * {
               color: var(--foreground_two);
+            }
+
+            span {
+              min-width: 90px;
             }
 
             font-weight: 500;

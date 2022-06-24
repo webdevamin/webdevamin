@@ -9,7 +9,7 @@ const Header = ({ otherLang }) => {
     const router = useRouter();
     const pathname = otherLang ? otherLang.slug : router.pathname;
     const t = useTranslations('header');
-    
+
     const [active, setActive] = useState(false);
     const [mounted, setMounted] = useState(false);
     const { systemTheme, theme, setTheme } = useTheme();
