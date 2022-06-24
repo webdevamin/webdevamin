@@ -5,12 +5,6 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
 
-const getLink = (linksLocales, router) => {
-    return linksLocales.find((linkLocale) => {
-        return linkLocale.locale !== router.locale;
-    }).slug;
-}
-
 const Header = ({ otherLang }) => {
     const router = useRouter();
     const pathname = otherLang ? otherLang.slug : router.pathname;
