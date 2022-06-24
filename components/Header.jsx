@@ -11,11 +11,9 @@ const getLink = (linksLocales, router) => {
     }).slug;
 }
 
-const Header = ({ linksLocales }) => {
+const Header = ({ otherLang }) => {
     const router = useRouter();
-    console.log(linksLocales);
-    console.log(router.pathname);
-    const pathname = linksLocales ? getLink(linksLocales, router) : router.pathname;
+    const pathname = otherLang ? otherLang.slug : router.pathname;
     const t = useTranslations('header');
     
     const [active, setActive] = useState(false);

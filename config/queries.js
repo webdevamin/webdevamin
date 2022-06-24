@@ -4,6 +4,7 @@ const GET_BLOG_SLUGS = gql`
   query MyQuery() {
     blogs {
       localizations(includeCurrent: true) {
+        id
         slug
         locale
       }
@@ -47,6 +48,7 @@ const GET_BLOG_BY_SLUG = gql`
           id
         }
       }
+      id
       slug
       summary
       tags(locales: $locale) {

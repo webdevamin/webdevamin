@@ -7,20 +7,34 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from 'next/image';
 import { GET_BLOG_SLUGS, GET_BLOG_BY_SLUG } from "../../config/queries";
+import { useRouter } from 'next/router';
 
 const Blog = ({ data, links }) => {
-    const { localizations } = links.blogs[0];
+    const router = useRouter();
+    const { blogs } = links;
     const blog = data.blogs[0];
 
     const { title, summary, tags, image, content, date } = blog;
     const { img, alt } = image;
+    let blogOtherLang;
+
+    blogs.forEach((_blog) => {
+        const { localizations } = _blog;
+
+        const foundBlog = localizations.find((localization) => {
+            const { id, locale } = localization;
+            return id === blog.id && locale !== router.locale;
+        });
+
+        if (foundBlog) blogOtherLang = foundBlog;
+    });
 
     const b = useTranslations('blog');
 
     return (
         <div className='blog'>
             <Seo title={title} description={summary} />
-            <Header linksLocales={localizations} />
+            <Header otherLang={blogOtherLang} />
             <main className='mb-lg'>
                 <article>
                     <div className='blog_heading'>

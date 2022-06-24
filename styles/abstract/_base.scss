@@ -123,11 +123,12 @@ strong {
 code {
   font-family: "Source Code Pro", SFMono-Regular, Consolas, "Liberation Mono",
     Menlo, monospace;
-  padding: 3px;
+  padding: 0 7px 0 7px;
   border-radius: 4px;
   border: 1px solid var(--background_three);
   background-color: var(--background_two);
   font-size: 0.85rem;
+  display: inline-block;
 }
 
 pre {
