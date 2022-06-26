@@ -48,7 +48,7 @@ const Header = ({ otherLang }) => {
         <>
             <header>
                 <Link href={'/'}>
-                    <a><h1 className="logo">AI</h1></a>
+                    <a><h1 className="logo">Wa</h1></a>
                 </Link>
                 <div className="header_right">
                     <input className="menu-btn" type="checkbox" id="menu-btn" onClick={handleClick} />

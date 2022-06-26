@@ -10,13 +10,15 @@ header {
   position: relative;
 
   .logo {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
+    font-weight: 500;
     height: 42px;
     width: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    color: $theme-color;
 
     @extend .squada_one_font;
     @include neu(false, 4px, 8px);
