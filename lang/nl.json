@@ -5,7 +5,8 @@
   },
   "seo": {
     "title": "Software Ontwikkelaar uit België | Webdevamin",
-    "description": "Ik maak digitale oplossingen voor uw zaak: websites, apps, SEO, digital marketing en meer met focus op uw behoeften."
+    "description": "Ik maak digitale oplossingen voor uw zaak: websites, apps, SEO, digital marketing en meer met focus op uw behoeften.",
+    "imagePath": "/images/ogbanner-nl.png"
   },
   "header": {
     "lang": {

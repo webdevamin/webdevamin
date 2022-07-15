@@ -5,7 +5,8 @@
   },
   "seo": {
     "title": "Software Developer from Belgium | Webdevamin",
-    "description": "I provide digital solutions for your business: websites, apps, SEO, digital marketing and more with focus on your needs."
+    "description": "I provide digital solutions for your business: websites, apps, SEO, digital marketing and more with focus on your needs.",
+    "imagePath": "/images/ogbanner.png"
   },
 
   "header": {

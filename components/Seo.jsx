@@ -13,7 +13,7 @@ const Seo = ({ title, description }) => {
             <title>{realTitle}</title>
             <meta name="description" content={realDescription} />
             <meta property="og:title" content={realTitle} />
-            <meta property="og:image" content={"/images/og-image.png"} />
+            <meta property="og:image" content={t('imagePath')} />
             <meta
                 property="og:url"
                 content={process.env.NEXT_PUBLIC_URL ?? "https://webdevamin.com"}
@@ -21,6 +21,10 @@ const Seo = ({ title, description }) => {
             <meta property="og:description" content={realDescription} />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="alternate" hrefLang="nl"
+                href="https://webdevamin.com/nl" />
+            <link rel="alternate" hrefLang="en"
+                href="https://webdevamin.com/" />
         </Head>
     );
 };
