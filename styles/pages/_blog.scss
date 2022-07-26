@@ -96,8 +96,25 @@
 
           .blog_text_row {
             display: flex;
-            flex-direction: column-reverse;
             gap: 1rem;
+            flex-direction: column-reverse;
+
+            div {
+              a {
+                width: 100%;
+              }
+            }
+
+            @include sm {
+              flex-direction: row;
+              justify-content: space-between;
+
+              div {
+                a {
+                  width: auto;
+                }
+              }
+            }
           }
         }
       }
