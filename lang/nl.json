@@ -16,6 +16,7 @@
     },
     "nav": {
       "home": "Home",
+      "projects": "Projecten",
       "blogs": "Blogs",
       "faq": "FAQ"
     }
@@ -53,6 +54,16 @@
   },
   "blog": {
     "back": "Terug naar blogs"
+  },
+  "projects": {
+    "title": "Projecten",
+    "title_two": "Mijn werk en realisaties",
+    "description": "Een lijst met allerlei projecten die ik voltooid heb. Van simpele business websites naar administratie apps, food delivery en meer. Klik op een project voor meer informatie.",
+    "noProjects": "Momenteel zijn er geen projecten beschikbaar. Kom later nog eens terug."
+  },
+  "project": {
+    "back": "Terug naar projecten",
+    "link": "Bekijk project"
   },
   "faq": {
     "title": "Veelgestelde vragen",

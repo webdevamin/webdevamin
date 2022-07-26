@@ -4,17 +4,17 @@ import { GraphQLClient } from 'graphql-request';
 import { useTranslations } from "next-intl";
 import React from 'react';
 import Hero from '../../components/Hero';
-import { GET_BLOGS_BY_LANG } from "../../config/queries";
+import { GET_PROJECTS_BY_LANG } from "../../config/queries";
 import Card from '../../components/Card';
 
-const Blogs = ({ blogs, t }) => {
-    if (blogs.length) {
+const Projects = ({ projects, p }) => {
+    if (projects.length) {
         return (
             <section className="cards">
                 {
-                    blogs.map((blog, index) => {
+                    projects.map((project, index) => {
                         return (
-                            <Card key={index} item={blog} prefixLink={'/blogs/'} />
+                            <Card key={index} item={project} prefixLink={'/projects/'} />
                         )
                     })
                 }
@@ -22,25 +22,25 @@ const Blogs = ({ blogs, t }) => {
         )
     }
 
-    return <p>{t('noBlogs')}</p>
+    return <p>{p('noProjects')}</p>
 }
 
 const Index = ({ data }) => {
-    const { blogs } = data;
-    const t = useTranslations('blogs');
+    const { projects } = data;
+    const p = useTranslations('projects');
 
     return (
         <>
-            <Seo title={t('title')} description={t('description')} />
+            <Seo title={p('title')} description={p('description')} />
             <Header />
-            <Hero title={t('title')} titleTwo={t('title_two')} />
+            <Hero title={p('title')} titleTwo={p('title_two')} />
             <main className='mb-lg'>
                 <section>
                     <p className='text content'>
-                        {t('description')}
+                        {p('description')}
                     </p>
                 </section>
-                <Blogs blogs={blogs} t={t} />
+                <Projects projects={projects} p={p} />
             </main>
         </>
     )
@@ -53,7 +53,7 @@ export async function getStaticProps({ locale }) {
 
     return {
         props: {
-            data: await client.request(GET_BLOGS_BY_LANG, { locale: [locale] }),
+            data: await client.request(GET_PROJECTS_BY_LANG, { locale: [locale] }),
             messages: (await import(`../../lang/${locale}.json`)).default,
         }
     };

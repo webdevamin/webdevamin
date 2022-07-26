@@ -69,6 +69,11 @@ const Header = ({ otherLang }) => {
                         </Link>
                     </li>
                     <li>
+                        <Link href='/projects'>
+                            <a>{t('nav.projects')}</a>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href='/blogs'>
                             <a>{t('nav.blogs')}</a>
                         </Link>

@@ -17,6 +17,7 @@
     },
     "nav": {
       "home": "Home",
+      "projects": "Projects",
       "blogs": "Blogs",
       "faq": "FAQ"
     }
@@ -52,8 +53,15 @@
     "description": "Here you can see a list of interesting topics, stories and lessons about IT, development, career, freelance, etc. Click on any blog to read more about it.",
     "noBlogs": "There are no blogs available at this moment. Come back again later."
   },
-  "blog": {
-    "back": "Back to blogs"
+  "project": {
+    "back": "Back to projects",
+    "link": "Link to project"
+  },
+  "projects": {
+    "title": "Projects",
+    "title_two": "My work and achievements",
+    "description": "A list of all kinds of projects I've completed. From a simple business websites to food delivery applications, administration apps and more. Click on any projects to read more about it.",
+    "noProjects": "There are no projects available at this moment. Come back again later."
   },
   "faq": {
     "title": "Frequently asked questions",

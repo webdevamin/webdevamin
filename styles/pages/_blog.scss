@@ -57,7 +57,7 @@
         margin-top: 3rem;
 
         .blog_info {
-          gap: 2.5rem;
+          gap: 4.5rem;
           padding-bottom: 1rem;
           border-bottom: 1px solid var(--foreground_three);
           display: flex;
@@ -92,6 +92,12 @@
               font-weight: 500;
               font-size: 0.95rem;
             }
+          }
+
+          .blog_text_row {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1rem;
           }
         }
       }
