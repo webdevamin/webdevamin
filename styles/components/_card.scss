@@ -14,26 +14,8 @@
   .card_footer {
     margin-top: 0.75rem;
 
-    * {
-      text-align: center;
-    }
-
     h3 {
       margin-bottom: 0.5rem;
-    }
-
-    .link {
-      justify-content: center;
-    }
-
-    @include md {
-      * {
-        text-align: left;
-      }
-
-      .link {
-        justify-content: left;
-      }
     }
   }
 }
