@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-path {
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .clip-path-both {
+    clip-path: polygon(0 15vh, 100% 0, 100% 75%, 0 100%);
+    -webkit-clip-path: polygon(0 35%, 100% 0, 100% 75%, 0 100%);
+  }
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+html,
+body {
+  @apply bg-light;
+}
+
+#__next {
+  @apply h-full;
+}
+
+* {
+  @apply font_quicksand text-dark;
+}
+
+.font_quicksand {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+}
+
+.font_mohave {
+  font-family: "Mohave", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", cursive;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  @apply drop-shadow;
+}
+
+h1,
+h2,
+.h2 {
+  @apply font_mohave;
+}
+
+h1 {
+  @apply text-5xl mb-8 font-bold lg:text-6xl xl:text-7xl tracking-tight 
+  2xl:text-8xl;
+}
+
+h2,
+.h2 {
+  @apply text-4xl mb-5 font-bold md:text-5xl lg:text-6xl
+  xl:text-7xl 2xl:text-8xl 3xl:text-8xl lg:mb-4 uppercase lg:leading-tight
+  lg:tracking-tight xl:mb-9;
+}
+
+h3 {
+  @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl 
+  lg:mb-5 uppercase xl:mb-7;
+}
+
+p {
+  @apply mb-2 lg:text-lg lg:mb-3 lg:leading-8 opacity-80;
+}
+
+a,
+span {
+  @apply lg:text-lg;
+}
+
+p a {
+  @apply text-theme_darker font-semibold border-b-0 border-theme_darker hover:border-b-2;
+}
+
+.smaller_p {
+  @apply text-sm xl:text-base mb-0 opacity-80 leading-6;
+}
+
+.smaller_p * {
+  @apply text-sm xl:text-base mb-0 opacity-80 leading-6;
+}
+
+.lighter_text_lg * {
+  @apply opacity-90 xl:leading-8 2xl:leading-10 xl:text-xl 2xl:text-2xl;
+}
+
+.text_theme_all * {
+  @apply text-theme;
+}
+
+.text_theme_darker_all * {
+  @apply text-theme_darker;
+}
+
+.text_dark_all * {
+  @apply text-dark;
+}
+
+.text_light_all * {
+  @apply text-light;
+}
+
+.text_lg_white_semibold * {
+  @apply text-white font-bold md:text-lg 
+  lg:text-2xl lg:leading-9 opacity-100;
+}
+
+.container {
+  @apply w-10/12 max-w-8xl mx-auto;
+}
+
+.page_container {
+  @apply xl:w-11/12 xl:mx-auto;
+}
+
+.block_container {
+  @apply my-16 sm:my-20 md:my-28 xl:my-52;
+}
+
+.clamp_2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#accordion h2 {
+  @apply font_quicksand text-base lg:text-lg normal-case 
+  font-semibold mb-0;
+}
+
+#accordion > div,
+#accordion button {
+  @apply border-dark focus:ring-0 border-opacity-10;
+}
+
+#accordion button {
+  @apply p-4 lg:p-5;
+}
