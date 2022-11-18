@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
 import { GET_SERVER_ERRORPAGE } from '../graphql/queries';
 import { destructureSingleType } from '../utils/app'
@@ -17,12 +16,10 @@ const Error500 = ({ data }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <div className={`flex flex-col h-full md:block md:h-auto`}>
-                <Header />
-                <main className={`w-9/12 max-w-8xl m-auto text-center md:mt-48`}>
+            <div className={`flex flex-col h-full justify-center`}>
+                <main className={`w-9/12 max-w-8xl m-auto text-center`}>
                     <Image src={url} objectFit={objectFit}
-                        alt={alt}
-                        width={width} height={height} />
+                        alt={alt} width={width} height={height} />
                     <div className={`text-center my-14`}>
                         <h1 className={`text-4xl mb-5`}>
                             {title}

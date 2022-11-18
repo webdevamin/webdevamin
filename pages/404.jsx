@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
 import { GET_CLIENT_ERRORPAGE } from '../graphql/queries';
 import { destructureSingleType } from '../utils/app'
@@ -16,10 +15,9 @@ const Error404 = ({ data }) => {
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates}/>
-            <div className={`flex flex-col h-full md:block md:h-auto`}>
-                <Header />
-                <main className={`w-9/12 max-w-8xl m-auto text-center md:mt-48`}>
+            <Seo seo={seo} alternates={alternates} />
+            <div className={`flex flex-col h-full justify-center`}>
+                <main className={`w-9/12 max-w-8xl m-auto text-center`}>
                     <Image src={url} objectFit={objectFit}
                         alt={alt} width={width} height={height} />
                     <div className={`text-center my-14`}>

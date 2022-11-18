@@ -19,10 +19,9 @@ const Seo = ({ seo, alternates }) => {
             {
                 alternates.map((alternate, index) => {
                     const { hreflang, href } = alternate;
-                    const formattedHreflang = hreflang.replace(`_`, `-`);
 
                     return (
-                        <link rel="alternate" hrefLang={formattedHreflang}
+                        <link rel="alternate" hrefLang={hreflang}
                             href={href} key={index} />
                     )
                 })
