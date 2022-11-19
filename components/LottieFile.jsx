@@ -9,11 +9,9 @@ const LottieFile = ({ file, classes }) => {
     }, []);
 
     return (
-        <Lottie
-            lottieRef={lottieRef} loop
-            animationData={file}
+        <Lottie lottieRef={lottieRef} animationData={file} loop={false}
             className={`w-11/12 md:w-7/12 -mt-12 mb-10 mx-auto 
-        md:-mt-28 bg-transparent max-w-2xl ${classes}`}
+            md:-mt-28 bg-transparent max-w-2xl ${classes}`}
         />
     )
 }
