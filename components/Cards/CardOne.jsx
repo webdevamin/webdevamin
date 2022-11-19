@@ -8,7 +8,7 @@ const CardOne = ({ initial, title, bgColor, text, icon }) => {
     const iconRef = brands ? fab[name] : fas[name];
 
     return (
-        <article className={`shadow-xl border border-dark 
+        <article className={`shadow-md border border-dark 
         xl:border-opacity-10 border-opacity-20 rounded-2xl p-6 relative 
         flex-1 xl:flex xl:flex-row`}>
             {
