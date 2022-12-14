@@ -87,14 +87,6 @@ p a {
   @apply text-theme_darker font-semibold border-b-0 border-theme_darker hover:border-b-2;
 }
 
-.smaller_p {
-  @apply text-sm xl:text-base mb-0 opacity-80 leading-6;
-}
-
-.smaller_p * {
-  @apply text-sm xl:text-base mb-0 opacity-80 leading-6;
-}
-
 .lighter_text_lg * {
   @apply opacity-90 xl:leading-8 2xl:leading-10 xl:text-xl 2xl:text-2xl;
 }

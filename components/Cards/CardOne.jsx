@@ -28,12 +28,10 @@ const CardOne = ({ initial, title, bgColor, text, icon }) => {
                 )
             }
             <div className={`mt-7 md:mt-9 mb-4 text-center`}>
-                <h3 className={`text-lg xl:text-lg capitalize 
-                xl:mb-3`}>
+                <h3 className={`text-lg xl:text-lg capitalize xl:mb-4`}>
                     {title}
                 </h3>
-                <div className={`smaller_p`}
-                    dangerouslySetInnerHTML={{ __html: text }} />
+                <div dangerouslySetInnerHTML={{ __html: text }} />
             </div>
         </article>
     )

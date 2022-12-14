@@ -123,8 +123,7 @@ const About = ({ pageData, servicesData }) => {
                                                 {title}
                                             </Accordion.Title>
                                             <Accordion.Content>
-                                                <div className={`text-left text-sm 
-                                                lg:text-base smaller_p`}>
+                                                <div className={`text-left text-sm lg:text-base`}>
                                                     {text}
                                                 </div>
                                                 {

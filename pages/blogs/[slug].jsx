@@ -19,6 +19,16 @@ const Blog = ({ data }) => {
     const { blogs, contactblock, services, socials } = globalData;
     const button = [];
 
+    const breadcrumbs = [
+        {
+            name: `Blogs`,
+            href: `/blogs`
+        },
+        {
+            name: title
+        }
+    ];
+
     button.push({
         href: `#${slug}`,
         text: router.locale === `en` ? `Read` : `Lees`
@@ -39,7 +49,7 @@ const Blog = ({ data }) => {
                 pathname: `/blogs/[slug]`,
                 query: { slug: router.query.slug }
             }} />
-            <HeroTwo content={heroContent} socialsRaw={socials} />
+            <HeroTwo content={heroContent} socialsRaw={socials} breadcrumbs={breadcrumbs}/>
             <PageLayout>
                 <section id={slug} className={`block_container xl:w-10/12 
                 lg:max-w-6xl lg:mx-auto`}>

@@ -27,11 +27,12 @@ const renderButtonText = (loc, link) => {
 
 const Project = ({ data }) => {
     const router = useRouter();
+    const { locale } = router;
     const { data: projectData, globalData } = data;
 
     const projectForCurrentLang = destructureCollectionTypeObject(
         destructureCollectionType(projectData.projects).find(
-            (project) => project.attributes.locale === router.locale));
+            (project) => project.attributes.locale === locale));
 
     const { title, description, seo, slug,
         link, alt, imgTwo, technologies, descriptionText,
@@ -41,18 +42,28 @@ const Project = ({ data }) => {
 
     button.push({
         href: link || `#${slug}`,
-        text: renderButtonText(router.locale, link)
+        text: renderButtonText(locale, link)
     });
 
     const heroContent = {
         title, text: description, button, img: imgTwo, alt
     }
 
-    const longDescriptionTitle = router.locale === `en` ? `Description` : `Beschrijving`;
-    const longDescriptionSubtitle = router.locale === `en` ? `In details` : `In details`;
+    const longDescriptionTitle = locale === `en` ? `Description` : `Beschrijving`;
+    const longDescriptionSubtitle = locale === `en` ? `In details` : `In details`;
 
-    const technologiesTitle = router.locale === `en` ? `Technologies` : `Technologieën`;
-    const technologiesSubtitle = router.locale === `en` ? `For tech savvy` : `For tech savvy`;
+    const technologiesTitle = locale === `en` ? `Technologies` : `Technologieën`;
+    const technologiesSubtitle = locale === `en` ? `For tech savvy` : `For tech savvy`;
+
+    const breadcrumbs = [
+        {
+            name: (locale === `en` ? `Projects` : `Projecten`),
+            href: `/projects`
+        },
+        {
+            name: title
+        }
+    ];
 
     return (
         <div>
@@ -63,7 +74,8 @@ const Project = ({ data }) => {
                 query: { slug: router.query.slug }
             }} />
             <HeroOne content={heroContent} socialsRaw={socials}
-                externalLink={link ? true : false} disableImgSpace />
+                externalLink={link ? true : false} disableImgSpace
+                breadcrumbs={breadcrumbs} />
             <PageLayout>
                 <BlockLayoutTwo title={longDescriptionTitle} slug={slug}>
                     <div className={`md:basis-5/12`}>

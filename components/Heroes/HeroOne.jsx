@@ -9,9 +9,10 @@ import {
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
+import Breadcrumbs from '../Breadcrumbs';
 
 const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false,
-    smallerTitle, disableImgSpace }) => {
+    smallerTitle, disableImgSpace, breadcrumbs }) => {
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button, img } = content;
     const { href, text: buttonText } = button[0];
@@ -42,7 +43,7 @@ const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false
                     justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-theme h-[1px]`} />
                         <div className={`px-5 text-theme flex gap-5 
-                        text-opacity-70`}>
+                                text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
                                     const { href, icon, title } =
@@ -97,6 +98,14 @@ const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false
                 </div>
                 <span className={`w-64 block -mr-10 bg-dark h-[1px]`} />
             </div>
+            {
+                breadcrumbs && (
+                    <div className={`mt-12 md:mt-16 lg:mt-28 
+                    -mb-6 md:-mb-16 xl:-mb-30`}>
+                        <Breadcrumbs items={breadcrumbs} />
+                    </div>
+                )
+            }
         </div>
     )
 }
