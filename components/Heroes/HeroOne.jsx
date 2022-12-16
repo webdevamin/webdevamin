@@ -42,8 +42,7 @@ const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false
                     <div className={`mb-8 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-theme h-[1px]`} />
-                        <div className={`px-5 text-theme flex gap-5 
-                                text-opacity-70`}>
+                        <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
                                     const { href, icon, title } =
@@ -64,10 +63,10 @@ const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
-                            <div className={`lighter_text_lg`}
+                            <div className={`larger_p`}
                                 dangerouslySetInnerHTML={{ __html: text }} />
                         ) : (
-                            <div className={`lighter_text_lg`}>
+                            <div className={`larger_p`}>
                                 <p>{text}</p>
                             </div>
                         )

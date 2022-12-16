@@ -79,7 +79,8 @@ const Blogs = ({ pageData, blogsData }) => {
                             ${blogs.length >= 2 && `pr-[20%] w-screen flex`}`}>
                                     {
                                         blogs.map((blog, index) => {
-                                            const { title, img, slug, subtitle } =
+                                            console.log(blog)
+                                            const { title, img, slug, description } =
                                                 destructureCollectionTypeObject(blog);
                                             const { url, alt } = destructureImageComponent(img);
                                             const text = router.locale === `en` ? `Read more` : `Verder lezen`;
@@ -89,7 +90,7 @@ const Blogs = ({ pageData, blogsData }) => {
                                                     key={index} >
                                                     <a className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                                         <CardTwo imgUrl={url} title={title} text={text}
-                                                            subtitle={subtitle} slug={slug} alt={alt} />
+                                                            subtitle={description} slug={slug} alt={alt} />
                                                     </a>
                                                 </Link>
                                             )

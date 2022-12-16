@@ -25,16 +25,7 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false, breadcrum
                     lg:mb-9 xl:mb-10 2xl:mb-12 2xl:text-7xl 3xl:text-8xl`}>
                     {title}
                 </h1>
-                {
-                    (text.startsWith(`<`) && text.endsWith(`>`)) ? (
-                        <div className={`lighter_text_lg`}
-                            dangerouslySetInnerHTML={{ __html: text }} />
-                    ) : (
-                        <div className={`lighter_text_lg`}>
-                            <p>{text}</p>
-                        </div>
-                    )
-                }
+                <div dangerouslySetInnerHTML={{ __html: text }} />
                 <ButtonOne href={ctaLink || href} text={buttonText}
                     classes={`sm:px-28`} external={externalLink} />
             </div>

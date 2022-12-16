@@ -598,6 +598,7 @@ const GET_BLOGS = gql`
           }
           title
           slug
+          description
           img {
             image {
               data {

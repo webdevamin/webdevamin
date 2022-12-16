@@ -20,7 +20,7 @@ const CardOne = ({ initial, title, bgColor, text, icon }) => {
                         style={{ backgroundColor: `${bgColor}` }}>
                         {initial && <span>{initial}</span>}
                         {icon && (
-                            <div className={`text_light_all`}>
+                            <div>
                                 <FontAwesomeIcon icon={iconRef} />
                             </div>
                         )}
@@ -31,7 +31,8 @@ const CardOne = ({ initial, title, bgColor, text, icon }) => {
                 <h3 className={`text-lg xl:text-lg capitalize xl:mb-4`}>
                     {title}
                 </h3>
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <div dangerouslySetInnerHTML={{ __html: text }}
+                    className={`smaller_p`} />
             </div>
         </article>
     )
