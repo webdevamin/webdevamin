@@ -54,9 +54,9 @@ const Blog = ({ data }) => {
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
                 xl:w-10/12 lg:max-w-6xl lg:mx-auto`}>
-                    <div className={`mb-7`}>
+                    <div className={`mb-3 lg:mb-7`}>
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
-                    2xl:h-[calc(100vw/2.8)] mb-3 lg:mb-6`}>
+                    2xl:h-[calc(100vw/2.8)] mb-2 lg:mb-6`}>
                             <Image src={url} alt={alt} layout={`fill`}
                                 objectFit={`cover`} />
                         </div>
