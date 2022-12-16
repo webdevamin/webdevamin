@@ -42,7 +42,7 @@ const About = ({ pageData, servicesData }) => {
 
     return (
         <>
-            <Seo seo={seo } alternates={alternates}/>
+            <Seo seo={seo} alternates={alternates} />
             <Header />
             <HeroOne content={hero} socialsRaw={socials} />
             <PageLayout>

@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
-import LottieFile from '../LottieFile'
 import Icon from '../Icon'
 import {
     destructureCollectionType, destructureCollectionTypeObject,
@@ -11,7 +10,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import Breadcrumbs from '../Breadcrumbs';
 
-const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false,
+const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace, breadcrumbs }) => {
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button, img } = content;
@@ -25,13 +24,10 @@ const HeroOne = ({ content, socialsRaw, jsonMedia, ctaLink, externalLink = false
             md:flex md:flex-row-reverse md:justify-evenly 
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
             xl:px-40 2xl:px-50 md:pt-14`}>
-                {
-                    jsonMedia ? <LottieFile file={jsonMedia} /> :
-                        <div className={disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}>
-                            <Image src={url} width={width} height={height} priority
-                                alt={alt} objectFit={objectFit} className={`rounded-lg`} />
-                        </div>
-                }
+                <div className={disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}>
+                    <Image src={url} width={width} height={height} priority
+                        alt={alt} objectFit={objectFit} className={`rounded-lg`} />
+                </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 
                     ${smallerTitle && `text-3xl mb-8 

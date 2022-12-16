@@ -10,7 +10,7 @@ const ButtonThree = ({ href, text, noLink, color }) => {
             transition-all lg:mt-4 ${color || `text_theme_darker_all`}`}>
                 <span className={`text-sm lg:text-base uppercase 
                 drop-shadow-none flex items-center lg:gap-3 text_theme_all 
-                font-bold hover:gap-4 gap-2 hover:text_dark_all`}>
+                font-semibold hover:gap-4 gap-2 hover:text_dark_all`}>
                     {text}
                 </span>
                 <FontAwesomeIcon icon={fas["faArrowRight"]} />
@@ -21,7 +21,7 @@ const ButtonThree = ({ href, text, noLink, color }) => {
     return (
         <Link href={href}>
             <a className={`mt-3 flex items-center lg:gap-3 lg:text-base 
-            text-sm font-bold transition-all hover:gap-4 gap-2 drop-shadow-none
+            text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
              ${color || `text_theme_darker_all hover:text_dark_all`}`}>
                 <span className={`text-sm lg:text-base uppercase drop-shadow-none`}>
                     {text}

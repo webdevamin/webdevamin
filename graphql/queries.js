@@ -88,6 +88,19 @@ const GET_HOMEPAGE = gql`
           hero {
             title
             text
+            img {
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              objectFit
+              width
+              height
+              alt
+            }
             button {
               href
               text

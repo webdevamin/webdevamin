@@ -6,7 +6,7 @@ const ButtonTwo = ({ href, text, classes }) => {
         <Link href={href}>
             <a className={`p-3 relative before:ease-linear
             block sm:inline-block text-white bg-theme_dark border-2 
-            uppercase font-bold sm:p-4 before:absolute border-white
+            uppercase font-semibold sm:p-4 before:absolute border-white
             before:top-0 before:left-0 transition-all before:origin-left
             hover:before:bg-white before:bottom-0 before:right-0 
             before:-z-10 before:bg-theme_dark before:transition-all

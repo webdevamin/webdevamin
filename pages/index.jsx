@@ -10,7 +10,6 @@ import Footer from '../components/Layouts/Footer'
 import { GET_HOMEPAGE } from '../graphql/queries';
 import { getData } from '../graphql/api';
 import { destructureSingleType } from '../utils/app';
-import webdesignJson from '../public/json/webdesign.json';
 import HeroOne from '../components/Heroes/HeroOne';
 
 const Index = ({ pageData }) => {
@@ -30,10 +29,13 @@ const Index = ({ pageData }) => {
 
   return (
     <>
-      <Seo seo={seo } alternates={alternates}/>
-      <div className={`md:bg-banner_image md:bg-no-repeat`}>
+      <Seo seo={seo} alternates={alternates} />
+      <div className={`md:bg-banner_image md:bg-no-repeat 
+      md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 3xl:bg-[center_-3rem]`}>
         <Header />
-        <HeroOne content={hero} socialsRaw={socials} jsonMedia={webdesignJson} />
+        <div className={`xl:py-12`}>
+          <HeroOne content={hero} socialsRaw={socials} />
+        </div>
       </div>
       <PageLayout>
         <About content={about} />
