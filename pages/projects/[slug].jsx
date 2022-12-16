@@ -16,10 +16,6 @@ import Heading from '../../components/Heading';
 import Image from 'next/image';
 import HeroOne from '../../components/Heroes/HeroOne';
 import tabsImage from '../../public/images/tabs.svg';
-import {
-    FacebookShareButton,
-    FacebookIcon,
-} from 'next-share';
 
 const renderButtonText = (loc, link) => {
     if (loc === `en`) {

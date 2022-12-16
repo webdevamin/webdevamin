@@ -25,7 +25,7 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false, breadcrum
                     lg:mb-9 xl:mb-10 2xl:mb-12 2xl:text-7xl 3xl:text-8xl`}>
                     {title}
                 </h1>
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <div dangerouslySetInnerHTML={{ __html: text }} className={`larger_p`} />
                 <ButtonOne href={ctaLink || href} text={buttonText}
                     classes={`sm:px-28`} external={externalLink} />
             </div>
@@ -76,8 +76,7 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false, breadcrum
             </div>
             {
                 breadcrumbs && (
-                    <div className={`mt-14 md:mt-16 lg:mt-28 
-                    -mb-5 md:-mb-16 xl:-mb-40`}>
+                    <div className={`mt-14 md:mt-16 lg:mt-28 mb-7 md:mb-12 lg:mb-16`}>
                         <Breadcrumbs items={breadcrumbs} />
                     </div>
                 )

@@ -79,7 +79,6 @@ const Blogs = ({ pageData, blogsData }) => {
                             ${blogs.length >= 2 && `pr-[20%] w-screen flex`}`}>
                                     {
                                         blogs.map((blog, index) => {
-                                            console.log(blog)
                                             const { title, img, slug, description } =
                                                 destructureCollectionTypeObject(blog);
                                             const { url, alt } = destructureImageComponent(img);

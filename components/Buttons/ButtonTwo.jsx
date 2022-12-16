@@ -10,7 +10,7 @@ const ButtonTwo = ({ href, text, classes }) => {
             before:top-0 before:left-0 transition-all before:origin-left
             hover:before:bg-white before:bottom-0 before:right-0 
             before:-z-10 before:bg-theme_dark before:transition-all
-            before:scale-x-0 hover:before:scale-x-100 z-10 
+            before:scale-x-0 hover:before:scale-x-100 z-10 tracking-wider
             text-sm sm:text-base mt-7 hover:text-dark ease-linear 
             ${classes}`}>
                 {text}

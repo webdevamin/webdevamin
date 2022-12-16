@@ -11,7 +11,7 @@ const ButtonOne = ({ href, text, classes, wFit, external,
     hover:before:bg-dark before:bottom-0 before:right-0 
     before:-z-10 before:bg-theme before:transition-all
     before:scale-x-0 hover:before:scale-x-100 z-10 hover:text-white 
-    text-sm shadow-bold_r_md sm:text-base mt-7 
+    text-sm shadow-bold_r_md sm:text-base mt-7 tracking-wider
     ${wFit && `w-fit px-7 sm:px-12`}
     ${classes}`;
 

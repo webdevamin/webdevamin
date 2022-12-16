@@ -10,6 +10,7 @@ import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
 import HeroTwo from '../../components/Heroes/HeroTwo';
 import Image from 'next/image';
+import SocialShares from '../../components/SocialShares';
 
 const Blog = ({ data }) => {
     const router = useRouter();
@@ -49,17 +50,20 @@ const Blog = ({ data }) => {
                 pathname: `/blogs/[slug]`,
                 query: { slug: router.query.slug }
             }} />
-            <HeroTwo content={heroContent} socialsRaw={socials} breadcrumbs={breadcrumbs}/>
+            <HeroTwo content={heroContent} socialsRaw={socials} breadcrumbs={breadcrumbs} />
             <PageLayout>
-                <section id={slug} className={`block_container xl:w-10/12 
-                lg:max-w-6xl lg:mx-auto`}>
-                    <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
-                    2xl:h-[calc(100vw/3.2)] mb-7 lg:mb-14`}>
-                        <Image src={url} alt={alt} layout={`fill`}
-                            objectFit={`cover`}
-                            className={`rounded-lg xl:rounded-2xl`} />
+                <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
+                xl:w-10/12 lg:max-w-6xl lg:mx-auto`}>
+                    <div className={`mb-7`}>
+                        <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
+                    2xl:h-[calc(100vw/2.8)] mb-3 lg:mb-6`}>
+                            <Image src={url} alt={alt} layout={`fill`}
+                                objectFit={`cover`} />
+                        </div>
+                        <SocialShares url={seo.canonical} title={`Blog - ${title}`}
+                            description={description} imageUrl={url} />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: text }} />
+                    <div dangerouslySetInnerHTML={{ __html: text }} className={`blog_content`} />
                 </section>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} />
