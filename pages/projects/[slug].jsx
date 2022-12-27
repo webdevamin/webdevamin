@@ -55,18 +55,8 @@ const Project = ({ data }) => {
     const technologiesTitle = locale === `en` ? `Technologies` : `Technologieën`;
     const technologiesSubtitle = locale === `en` ? `For tech savvy` : `For tech savvy`;
 
-    const breadcrumbs = [
-        {
-            name: (locale === `en` ? `Projects` : `Projecten`),
-            href: `/projects`
-        },
-        {
-            name: title
-        }
-    ];
-
     return (
-        <div>
+        <>
             <Seo seo={{ title, description: description, canonical: seo.canonical }}
                 alternates={alternates} />
             <Header interpol={{
@@ -74,8 +64,7 @@ const Project = ({ data }) => {
                 query: { slug: router.query.slug }
             }} />
             <HeroOne content={heroContent} socialsRaw={socials}
-                externalLink={link ? true : false} disableImgSpace
-                breadcrumbs={breadcrumbs} />
+                externalLink={link ? true : false} disableImgSpace />
             <PageLayout>
                 <BlockLayoutTwo title={longDescriptionTitle} slug={slug}>
                     <div className={`md:basis-5/12`}>
@@ -116,7 +105,7 @@ const Project = ({ data }) => {
                 <Contact content={contactblock} />
                 <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} />
             </PageLayout>
-        </div>
+        </>
     )
 }
 

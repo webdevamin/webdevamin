@@ -27,7 +27,7 @@ export default async function handler(req, res) {
 
     const content = `<html><body><p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${cleanMessage}</p></body></html>`;
 
-    sendSmtpEmail.subject = `New portfolio message from ${email}`;
+    sendSmtpEmail.subject = `New portfolio message from ${name}`;
     sendSmtpEmail.htmlContent = content;
     sendSmtpEmail.sender = { name: name, email: email };
     sendSmtpEmail.to = [{ email: MAIL_TO, name: "Amin" }];

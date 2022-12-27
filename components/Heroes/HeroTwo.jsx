@@ -4,9 +4,8 @@ import Icon from '../Icon'
 import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import Breadcrumbs from '../Breadcrumbs';
 
-const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false, breadcrumbs }) => {
+const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button } = content;
     const { href, text: buttonText } = button[0];
@@ -74,13 +73,6 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false, breadcrum
                 </div>
                 <span className={`w-screen xl:w-4/12 block -mr-10 bg-dark h-[1px]`} />
             </div>
-            {
-                breadcrumbs && (
-                    <div className={`mt-14 md:mt-16 lg:mt-28 mb-7 md:mb-12 lg:mb-16`}>
-                        <Breadcrumbs items={breadcrumbs} />
-                    </div>
-                )
-            }
         </section>
     )
 }

@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <Analytics />
+      {process.env.NODE_ENV !== `development` && <Analytics />}
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>

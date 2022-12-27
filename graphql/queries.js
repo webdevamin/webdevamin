@@ -630,6 +630,77 @@ const GET_BLOGS = gql`
   }
 `;
 
+const GET_REGIONS = gql`
+  query Regions($locale: I18NLocaleCode) {
+    regions(locale: $locale) {
+      data {
+        id
+        attributes {
+          name
+          slug
+          seo {
+            title
+            description
+            canonical
+          }
+          alternates {
+            hreflang
+            href
+          }
+          hero {
+            title
+            text
+            button {
+              href
+              text
+              label
+            }
+            img {
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              width
+              height
+              alt
+              objectFit
+            }
+          }
+          contents {
+            title
+            subtitle
+            text
+            button {
+              href
+              text
+              label
+            }
+            slug
+            summary
+            img {
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              width
+              height
+              alt
+              objectFit
+            }
+            position
+          }
+        }
+      }
+    }
+  }
+`;
+
 const GET_PROJECT = gql`
   query Projects($locale: I18NLocaleCode, $slug: String) {
     projects(locale: $locale, filters: { slug: { eq: $slug } }) {
@@ -741,6 +812,78 @@ const GET_BLOG = gql`
   }
 `;
 
+const GET_REGION = gql`
+  query Regions($locale: I18NLocaleCode, $slug: String) {
+    regions(locale: $locale, filters: { slug: { eq: $slug } }) {
+      data {
+        id
+        attributes {
+          name
+          slug
+          seo {
+            title
+            description
+            canonical
+          }
+          alternates {
+            hreflang
+            href
+          }
+          hero {
+            title
+            text
+            button {
+              href
+              text
+              label
+            }
+            img {
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              width
+              height
+              alt
+              objectFit
+            }
+          }
+          contents {
+            title
+            subtitle
+            text
+            button {
+              href
+              text
+              label
+            }
+            slug
+            summary
+            img {
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              width
+              height
+              alt
+              objectFit
+            }
+            position
+          }
+          locale
+        }
+      }
+    }
+  }
+`;
+
 const GET_LOCALES = gql`
   query Locales {
     i18NLocales {
@@ -765,7 +908,9 @@ export {
   GET_SERVICES,
   GET_PROJECTS,
   GET_BLOGS,
+  GET_REGIONS,
   GET_PROJECT,
   GET_BLOG,
+  GET_REGION,
   GET_LOCALES,
 };

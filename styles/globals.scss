@@ -79,6 +79,10 @@ p,
   @apply mb-2 lg:text-lg lg:mb-3 lg:leading-8 opacity-80;
 }
 
+strong {
+  @apply font-medium;
+}
+
 .smaller_p {
   @apply mb-2 text-[15px] lg:text-[16px] leading-6 
   lg:mb-3 lg:leading-7 opacity-80;
@@ -162,17 +166,6 @@ p a {
   h2 {
     @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl 
     lg:mb-5 uppercase xl:mb-7 mt-8 xl:mt-10 font_quicksand;
-  }
-
-  strong {
-    @apply font-semibold;
-  }
-
-  & > p {
-    &,
-    strong {
-      @apply opacity-100;
-    }
   }
 }
 

@@ -30,7 +30,7 @@ const NoContent = ({ title, text, locale, imgOnly }) => {
                     <button type="button"
                         className={`p-3 relative before:ease-linear block 
                     sm:inline-block text-dark bg-theme uppercase 
-                    font-bold sm:p-4 before:absolute before:top-0 before:left-0 
+                    font-semibold sm:p-4 before:absolute before:top-0 before:left-0 
                     transition-all ease-linear sm:shadow-bold_r hover:shadow-zero 
                     before:origin-left hover:before:bg-dark before:bottom-0 
                     before:right-0 before:-z-10 before:bg-theme 
