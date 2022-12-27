@@ -1,6 +1,6 @@
 import React from 'react'
 import { getData } from '../../graphql/api';
-import { GET_REGIONS, GET_REGION } from '../../graphql/queries';
+import { GET_REGIONS, GET_REGION, GET_REGION_SLUGS } from '../../graphql/queries';
 import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent } from '../../utils/app';
 import { useRouter } from 'next/router';
 import Seo from '../../components/Seo';
@@ -14,7 +14,7 @@ import ButtonOne from '../../components/Buttons/ButtonOne';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
 
-const Region = ({ data }) => {
+const Region = ({ data, slugs }) => {
     const router = useRouter();
     const { locale } = router;
     const { data: regionData, globalData } = data;
@@ -29,10 +29,7 @@ const Region = ({ data }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header interpol={{
-                pathname: `/regions/[slug]`,
-                query: { slug: router.query.slug }
-            }} />
+            <Header dynamicLangRoutes={{ slugs, pathname: `/regions/[slug]` }} />
             <HeroOne content={hero} socialsRaw={socials} smallerTitle />
             <PageLayout>
                 {
@@ -45,7 +42,7 @@ const Region = ({ data }) => {
 
                         return (
                             position === `none` ? (
-                                <section className={`xl:mx-10 xl:text-center block_container`}>
+                                <section className={`xl:mx-28 xl:text-center block_container`} key={i}>
                                     <Heading title={title} subtitle={subtitle} />
                                     <div dangerouslySetInnerHTML={{ __html: text }} />
                                 </section>
@@ -111,9 +108,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
+
     const data = await getData(GET_REGION, params);
+    const slugs = destructureCollectionType((await getData(
+        GET_REGION_SLUGS, { locale: "all" }, false)).regions)
+        .map(slugRaw => slugRaw.attributes);
 
     return {
-        props: { data },
+        props: { data, slugs },
     }
 }

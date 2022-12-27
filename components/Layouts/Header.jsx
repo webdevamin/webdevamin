@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import nlImg from "../../public/images/nl.png";
 import enImg from "../../public/images/eng.png";
 
-const Header = ({ interpol }) => {
+const Header = ({ interpol, dynamicLangRoutes }) => {
     const router = useRouter();
     const { locale, pathname, locales } = router;
     const [active, setActive] = useState(false);
@@ -34,6 +34,16 @@ const Header = ({ interpol }) => {
             text: `Contact`
         },
     ];
+
+    const generateLocaleLinks = () => {
+        if (dynamicLangRoutes) {
+            const { slugs, pathname } = dynamicLangRoutes;
+            const { slug } = slugs.find(slugObj => slugObj.locale !== locale);
+
+            return { pathname: pathname, query: {slug} }
+        }
+        return interpol ? interpol : pathname
+    }
 
     return (
         <header className={`py-3 md:py-5 px-5 md:px-20 
@@ -93,7 +103,7 @@ const Header = ({ interpol }) => {
                 </ul>
                 <ul className={`flex items-center bg-transparent`}>
                     <li>
-                        <Link href={interpol ? interpol : pathname}
+                        <Link href={generateLocaleLinks()}
                             locale={locales.find(loc => loc !== locale)}>
                             <a className={`p-3 relative before:ease-linear 
                             uppercase sm:p-4 before:absolute 

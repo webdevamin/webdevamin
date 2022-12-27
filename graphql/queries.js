@@ -695,6 +695,7 @@ const GET_REGIONS = gql`
             }
             position
           }
+          locale
         }
       }
     }
@@ -884,6 +885,19 @@ const GET_REGION = gql`
   }
 `;
 
+const GET_REGION_SLUGS = gql`
+  query RegionSlug {
+    regions(locale: "all") {
+      data {
+        attributes {
+          slug
+          locale
+        }
+      }
+    }
+  }
+`;
+
 const GET_LOCALES = gql`
   query Locales {
     i18NLocales {
@@ -912,5 +926,6 @@ export {
   GET_PROJECT,
   GET_BLOG,
   GET_REGION,
+  GET_REGION_SLUGS,
   GET_LOCALES,
 };
