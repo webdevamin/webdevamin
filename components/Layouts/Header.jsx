@@ -40,7 +40,7 @@ const Header = ({ interpol, dynamicLangRoutes }) => {
             const { slugs, pathname } = dynamicLangRoutes;
             const { slug } = slugs.find(slugObj => slugObj.locale !== locale);
 
-            return `${pathname}${slug}`
+            return { pathname: pathname, query: {slug} }
         }
         return interpol ? interpol : pathname
     }
