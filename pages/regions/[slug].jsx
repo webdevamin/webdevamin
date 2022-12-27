@@ -29,7 +29,7 @@ const Region = ({ data, slugs }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header dynamicLangRoutes={{ slugs, pathname: `/regions/[slug]` }} />
+            <Header dynamicLangRoutes={{ slugs, pathname: `/regions/` }} />
             <HeroOne content={hero} socialsRaw={socials} smallerTitle />
             <PageLayout>
                 {
