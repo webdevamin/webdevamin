@@ -1,49 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link'
-import { useRouter } from 'next/router';
 import React, { useState } from 'react'
-import nlImg from "../../public/images/nl.png";
-import enImg from "../../public/images/eng.png";
+import { destructureImageComponent, destructureSingleType } from '../../utils/app';
 
-const Header = ({ interpol, dynamicLangRoutes }) => {
-    const router = useRouter();
-    const { locale, pathname, locales } = router;
+const Header = ({ nav, localepages }) => {
     const [active, setActive] = useState(false);
-
+    const { links } = destructureSingleType(nav);
     const handleClick = () => setActive(!active);
-
-    const links = [
-        {
-            href: `/`,
-            text: `Home`
-        },
-        {
-            href: `/about`,
-            text: locale === `en` ? `About` : `Over`
-        },
-        {
-            href: `/projects`,
-            text: locale === `en` ? `Projects` : `Projecten`
-        },
-        {
-            href: `/blogs`,
-            text: `Blogs`
-        },
-        {
-            href: `/contact`,
-            text: `Contact`
-        },
-    ];
-
-    const generateLocaleLinks = () => {
-        if (dynamicLangRoutes) {
-            const { slugs, pathname } = dynamicLangRoutes;
-            const { slug } = slugs.find(slugObj => slugObj.locale !== locale);
-
-            return { pathname: pathname, query: {slug} }
-        }
-        return interpol ? interpol : pathname
-    }
 
     return (
         <header className={`py-3 md:py-5 px-5 md:px-20 
@@ -102,29 +65,34 @@ const Header = ({ interpol, dynamicLangRoutes }) => {
                     }
                 </ul>
                 <ul className={`flex items-center bg-transparent`}>
-                    <li>
-                        <Link href={generateLocaleLinks()}
-                            locale={locales.find(loc => loc !== locale)}>
-                            <a className={`p-3 relative before:ease-linear 
-                            uppercase sm:p-4 before:absolute 
-                            before:top-0 before:left-0 transition-all 
-                            ease-linear hover:shadow-zero before:origin-left
-                            before:bottom-0 before:right-0 
-                            before:-z-10 before:transition-all
-                            before:scale-x-0 hover:before:scale-x-100 z-10 
-                            text-sm sm:text-base w-[42px] h-[42px] 
-                            sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
-                            flex justify-center items-center sm:flex mt-0`}>
-                                {locale === `en` ? (
-                                    <Image src={nlImg} layout={`fill`} alt={`Nederlands`}
-                                        objectFit={`contain`} />
-                                ) : (
-                                    <Image src={enImg} layout={`fill`} alt={`English`}
-                                        objectFit={`contain`} />
-                                )}
-                            </a>
-                        </Link>
-                    </li>
+                    {
+                        localepages.map((localepage, i) => {
+                            const { locale_link, href, locale } = localepage;
+                            const { name, flag } =
+                                destructureSingleType(locale_link);
+                            const { url } = destructureImageComponent(flag);
+
+                            return (
+                                <li key={i}>
+                                    <Link href={href} locale={locale}>
+                                        <a className={`p-3 relative before:ease-linear 
+                                    uppercase sm:p-4 before:absolute 
+                                    before:top-0 before:left-0 transition-all 
+                                    ease-linear hover:shadow-zero before:origin-left
+                                    before:bottom-0 before:right-0 
+                                    before:-z-10 before:transition-all
+                                    before:scale-x-0 hover:before:scale-x-100 z-10 
+                                    text-sm sm:text-base w-[42px] h-[42px] 
+                                    sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
+                                    flex justify-center items-center sm:flex mt-0`}>
+                                            <Image src={url} layout={`fill`} alt={name}
+                                                objectFit={`contain`} />
+                                        </a>
+                                    </Link>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </nav>
         </header>

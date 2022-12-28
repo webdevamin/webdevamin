@@ -4,6 +4,33 @@ import { gql } from "@apollo/client";
 
 const GET_GLOBAL = gql`
   query Global($locale: I18NLocaleCode) {
+    localePages {
+      data {
+        attributes {
+          name
+          flag {
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+          }
+          locale
+        }
+      }
+    }
+    navigation(locale: $locale) {
+      data {
+        attributes {
+          links {
+            text
+            href
+          }
+        }
+      }
+    }
     blogs(
       locale: $locale
       filters: { showcase: { eq: true } }
@@ -76,6 +103,26 @@ const GET_HOMEPAGE = gql`
     homepage(locale: $locale) {
       data {
         attributes {
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
+          }
           alternates {
             href
             hreflang
@@ -192,6 +239,26 @@ const GET_ABOUTPAGE = gql`
             href
             hreflang
           }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
+          }
           seo {
             title
             description
@@ -294,6 +361,26 @@ const GET_PROJECTSPAGE = gql`
             href
             hreflang
           }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
+          }
           seo {
             title
             description
@@ -345,6 +432,26 @@ const GET_BLOGSPAGE = gql`
           alternates {
             href
             hreflang
+          }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
           }
           seo {
             title
@@ -401,6 +508,26 @@ const GET_CONTACTPAGE = gql`
           alternates {
             href
             hreflang
+          }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
           }
           seo {
             title
@@ -712,6 +839,26 @@ const GET_PROJECT = gql`
             href
             hreflang
           }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
+          }
           seo {
             title
             description
@@ -782,6 +929,26 @@ const GET_BLOG = gql`
             href
             hreflang
           }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
+          }
           seo {
             title
             description
@@ -825,6 +992,26 @@ const GET_REGION = gql`
             title
             description
             canonical
+          }
+          localepages {
+            locale_link {
+              data {
+                attributes {
+                  name
+                  flag {
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            href
+            locale
           }
           alternates {
             hreflang

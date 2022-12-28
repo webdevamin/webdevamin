@@ -36,8 +36,8 @@ const Project = ({ data }) => {
 
     const { title, description, seo, slug,
         link, alt, imgTwo, technologies, descriptionText,
-        technologiesText, alternates } = projectForCurrentLang;
-    const { blogs, contactblock, services, socials } = globalData;
+        technologiesText, alternates, localepages } = projectForCurrentLang;
+    const { blogs, contactblock, services, socials, navigation } = globalData;
     const button = [];
 
     button.push({
@@ -59,10 +59,7 @@ const Project = ({ data }) => {
         <>
             <Seo seo={{ title, description: description, canonical: seo.canonical }}
                 alternates={alternates} />
-            <Header interpol={{
-                pathname: `/projects/[slug]`,
-                query: { slug: router.query.slug }
-            }} />
+            <Header nav={navigation} localepages={localepages} />
             <HeroOne content={heroContent} socialsRaw={socials}
                 externalLink={link ? true : false} disableImgSpace />
             <PageLayout>

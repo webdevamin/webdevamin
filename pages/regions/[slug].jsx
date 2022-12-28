@@ -14,7 +14,7 @@ import ButtonOne from '../../components/Buttons/ButtonOne';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
 
-const Region = ({ data, slugs }) => {
+const Region = ({ data }) => {
     const router = useRouter();
     const { locale } = router;
     const { data: regionData, globalData } = data;
@@ -23,13 +23,13 @@ const Region = ({ data, slugs }) => {
         destructureCollectionType(regionData.regions).find(
             (region) => region.attributes.locale === locale));
 
-    const { seo, hero, alternates, contents } = regionForCurrentLang;
-    const { blogs, contactblock, services, socials } = globalData;
+    const { seo, hero, alternates, contents, localepages } = regionForCurrentLang;
+    const { blogs, contactblock, services, navigation, socials } = globalData;
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header dynamicLangRoutes={{ slugs, pathname: `/regions/[slug]` }} />
+            <Header nav={navigation} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials} smallerTitle />
             <PageLayout>
                 {

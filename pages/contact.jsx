@@ -22,10 +22,10 @@ const Contact = ({ pageData }) => {
     const [afterSubmit, setAfterSubmit] = useState(null);
 
     const { data, globalData } = pageData;
-    const { blogs, services, socials } = globalData;
+    const { blogs, services, socials, navigation } = globalData;
     const { contactpage } = data;
 
-    const { seo, alternates, hero, form: formBlock, successMessage,
+    const { seo, alternates, hero, localepages, form: formBlock, successMessage,
         clientErrorMessage, serverErrorMessage }
         = destructureSingleType(contactpage);
 
@@ -81,7 +81,7 @@ const Contact = ({ pageData }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header />
+            <Header nav={navigation} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`block_container sm:text-center`}>

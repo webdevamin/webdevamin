@@ -18,9 +18,10 @@ import NoContent from '../../components/NoContent';
 const Blogs = ({ pageData, blogsData }) => {
     const router = useRouter();
     const { data, globalData } = pageData;
-    const { blogs: blogsGlobal, socials, contactblock, services: servicesGlobal } = globalData;
+    const { blogs: blogsGlobal, socials, contactblock, navigation,
+        services: servicesGlobal } = globalData;
     const { blogspage } = data;
-    const { seo, alternates, hero, top, all, noBlogs } = destructureSingleType(blogspage);
+    const { seo, alternates, hero, localepages, top, all, noBlogs } = destructureSingleType(blogspage);
     const { title, text } = noBlogs;
     const blogs = destructureCollectionType(blogsData.blogs);
     const topBlogs = blogs.filter((blog) => {
@@ -29,7 +30,7 @@ const Blogs = ({ pageData, blogsData }) => {
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates}/>
+            <Seo seo={seo} alternates={alternates} />
             {
                 blogs.length ? (
                     <>
@@ -40,7 +41,7 @@ const Blogs = ({ pageData, blogsData }) => {
                             <section id={top.slug} className={`flex flex-col md:flex-row-reverse 
                 md:items-center md:gap-10 block_container ${blogs.length < 5 && `hidden`}`}>
                                 <div className={`md:text-center md:basis-3/12`}>
-                                    <Heading title={top.title} subtitle={top.subtitle} />
+                                    <Heading title={top.title} subtitle={top.subtitle} nav={navigation} localepages={localepages} />
                                 </div>
                                 <div className={`md:basis-9/12`}>
                                     <Carousel indicators={false}>

@@ -17,10 +17,11 @@ import ButtonOne from '../components/Buttons/ButtonOne';
 
 const About = ({ pageData, servicesData }) => {
     const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, services: servicesGlobal } = globalData;
+    const { blogs, socials, contactblock, services: servicesGlobal, navigation } = globalData;
     const { aboutpage } = data;
     const services = destructureCollectionType(servicesData.services);
-    const { seo, alternates, hero, expertise, who, why, what } = destructureSingleType(aboutpage);
+    const { seo, alternates, localepages, hero, expertise, who, why, what }
+        = destructureSingleType(aboutpage);
 
     const { title: xpTitle, subtitle: xpSubtitle, slug: xpSlug } = expertise;
 
@@ -43,7 +44,7 @@ const About = ({ pageData, servicesData }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header />
+            <Header nav={navigation} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials} />
             <PageLayout>
                 <BlockLayoutOne title={xpSlug}>

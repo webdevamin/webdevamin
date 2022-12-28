@@ -16,8 +16,8 @@ const Blog = ({ data }) => {
     const router = useRouter();
     const { data: blogData, globalData } = data;
     const blog = destructureCollectionTypeObject(destructureCollectionType(blogData.blogs)[0]);
-    const { title, description, seo, alternates, slug, img, date, text } = blog;
-    const { blogs, contactblock, services, socials } = globalData;
+    const { title, description, localepages, seo, alternates, slug, img, date, text } = blog;
+    const { blogs, contactblock, navigation, services, socials } = globalData;
     const button = [];
 
     button.push({
@@ -36,10 +36,7 @@ const Blog = ({ data }) => {
         <div>
             <Seo seo={{ title, description: description, canonical: seo.canonical }}
                 alternates={alternates} />
-            <Header interpol={{
-                pathname: `/blogs/[slug]`,
-                query: { slug: router.query.slug }
-            }} />
+            <Header nav={navigation} localepages={localepages} />
             <HeroTwo content={heroContent} socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
