@@ -19,7 +19,7 @@ const Blogs = ({ pageData, blogsData }) => {
     const router = useRouter();
     const { data, globalData } = pageData;
     const { blogs: blogsGlobal, socials, contactblock, navigation,
-        services: servicesGlobal } = globalData;
+        services: servicesGlobal, regions } = globalData;
     const { blogspage } = data;
     const { seo, alternates, hero, localepages, top, all, noBlogs } = destructureSingleType(blogspage);
     const { title, text } = noBlogs;
@@ -101,7 +101,7 @@ const Blogs = ({ pageData, blogsData }) => {
                             </section>
                             <Contact content={contactblock} />
                             <Footer servicesRaw={servicesGlobal} blogsRaw={blogsGlobal}
-                                socialsRaw={socials} />
+                                socialsRaw={socials} regionsRaw={regions}/>
                         </PageLayout>
                     </>
                 ) : <NoContent title={title} text={text} locale={router.locale} wholePage />

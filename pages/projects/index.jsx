@@ -17,7 +17,7 @@ import HeroOne from '../../components/Heroes/HeroOne';
 const Projects = ({ pageData, projectsData }) => {
     const router = useRouter();
     const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, navigation, services: servicesGlobal } = globalData;
+    const { blogs, socials, contactblock, navigation, services: servicesGlobal, regions } = globalData;
     const { projectspage } = data;
     const { seo, alternates, localepages, hero, top, all } = destructureSingleType(projectspage);
 
@@ -29,7 +29,7 @@ const Projects = ({ pageData, projectsData }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header nav={navigation} localepages={localepages}/>
+            <Header nav={navigation} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials}
                 ctaLink={projects.length < 5 ? `#${all.slug}` : `#${top.slug}`} />
             <PageLayout>
@@ -95,7 +95,7 @@ const Projects = ({ pageData, projectsData }) => {
                 </section>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
-                    socialsRaw={socials} />
+                    socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

@@ -17,7 +17,7 @@ import ButtonOne from '../components/Buttons/ButtonOne';
 
 const About = ({ pageData, servicesData }) => {
     const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, services: servicesGlobal, navigation } = globalData;
+    const { blogs, socials, contactblock, services: servicesGlobal, navigation, regions } = globalData;
     const { aboutpage } = data;
     const services = destructureCollectionType(servicesData.services);
     const { seo, alternates, localepages, hero, expertise, who, why, what }
@@ -145,7 +145,7 @@ const About = ({ pageData, servicesData }) => {
                     </div>
                 </BlockLayoutOne>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs} socialsRaw={socials} />
+                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions}/>
             </PageLayout>
         </>
     )

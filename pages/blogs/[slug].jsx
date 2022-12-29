@@ -17,7 +17,7 @@ const Blog = ({ data }) => {
     const { data: blogData, globalData } = data;
     const blog = destructureCollectionTypeObject(destructureCollectionType(blogData.blogs)[0]);
     const { title, description, localepages, seo, alternates, slug, img, date, text } = blog;
-    const { blogs, contactblock, navigation, services, socials } = globalData;
+    const { blogs, contactblock, navigation, services, socials, regions } = globalData;
     const button = [];
 
     button.push({
@@ -53,7 +53,7 @@ const Blog = ({ data }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }} className={`blog_content`} />
                 </section>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} />
+                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </div>
     )

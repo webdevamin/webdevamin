@@ -1,6 +1,6 @@
 import React from 'react'
 import { getData } from '../../graphql/api';
-import { GET_REGIONS, GET_REGION, GET_REGION_SLUGS } from '../../graphql/queries';
+import { GET_REGIONS, GET_REGION } from '../../graphql/queries';
 import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent } from '../../utils/app';
 import { useRouter } from 'next/router';
 import Seo from '../../components/Seo';
@@ -24,7 +24,7 @@ const Region = ({ data }) => {
             (region) => region.attributes.locale === locale));
 
     const { seo, hero, alternates, contents, localepages } = regionForCurrentLang;
-    const { blogs, contactblock, services, navigation, socials } = globalData;
+    const { blogs, navigation, services, socials, regions, contactblock } = globalData;
 
     return (
         <>
@@ -79,7 +79,7 @@ const Region = ({ data }) => {
                     })
                 }
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} />
+                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )
@@ -108,13 +108,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-
     const data = await getData(GET_REGION, params);
-    const slugs = destructureCollectionType((await getData(
-        GET_REGION_SLUGS, { locale: "all" }, false)).regions)
-        .map(slugRaw => slugRaw.attributes);
 
     return {
-        props: { data, slugs },
+        props: { data },
     }
 }

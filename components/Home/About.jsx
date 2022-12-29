@@ -42,8 +42,8 @@ const About = ({ content }) => {
 
                                     return (
                                         <ButtonOne href={hrefButton} text={textButton}
-                                            classes={`w-full md:w-auto 
-                                        lg:w-auto sm:px-14 mt-0`} key={index} />
+                                            classes={`w-full md:w-auto lg:w-auto sm:px-14 mt-0`}
+                                            key={index} outline={index % 2 !== 0 ? true : false} />
                                     )
                                 })
                             }

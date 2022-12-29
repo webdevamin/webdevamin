@@ -7,17 +7,18 @@ import { useRouter } from 'next/router';
 import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app'
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ servicesRaw, blogsRaw, socialsRaw }) => {
+const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
     const router = useRouter();
     const { locale } = router;
 
     const services = destructureCollectionType(servicesRaw);
     const blogs = destructureCollectionType(blogsRaw);
     const socials = destructureCollectionType(socialsRaw);
+    const regions = destructureCollectionType(regionsRaw);
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
-        relative md:p-12 z-20`}>
+        relative md:p-12 z-30`}>
             <div className={`justify-between gap-10 sm:gap-12 grid 
             grid-cols-2 md:gap-16 md:flex max-w-8xl mx-auto lg:px-16`}>
                 <div className={`text_light_all`}>
@@ -176,6 +177,29 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw }) => {
                         <ButtonThree href={`/blogs`} color={`text_theme_all`}
                             text={locale === `en` ? `More blogs` : `Meer blogs`} />
                     </div>
+                </div>
+                <div className={`text_light_all`}>
+                    <h2 className={`text-xl mb-2`}>
+                        {locale === `en` ? `Regions` : `Regio's`}
+                    </h2>
+                    <ul>
+                        {
+                            regions.map((region, index) => {
+                                const { name, showcase, slug } = destructureCollectionTypeObject(region);
+
+                                return (
+                                    <li className={`pt-2 ${!showcase && `hidden`}`} key={index}>
+                                        <Link href={`/regions/${slug}`}>
+                                            <a className={`lg:text-base transition-all 
+                                            hover:text-theme`}>
+                                                {name}
+                                            </a>
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </footer>

@@ -37,7 +37,7 @@ const Project = ({ data }) => {
     const { title, description, seo, slug,
         link, alt, imgTwo, technologies, descriptionText,
         technologiesText, alternates, localepages } = projectForCurrentLang;
-    const { blogs, contactblock, services, socials, navigation } = globalData;
+    const { blogs, contactblock, services, socials, navigation, regions } = globalData;
     const button = [];
 
     button.push({
@@ -100,7 +100,7 @@ const Project = ({ data }) => {
                     </div>
                 </BlockLayoutTwo>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} />
+                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

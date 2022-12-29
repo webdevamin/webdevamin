@@ -22,7 +22,7 @@ const Contact = ({ pageData }) => {
     const [afterSubmit, setAfterSubmit] = useState(null);
 
     const { data, globalData } = pageData;
-    const { blogs, services, socials, navigation } = globalData;
+    const { blogs, services, socials, navigation, regions } = globalData;
     const { contactpage } = data;
 
     const { seo, alternates, hero, localepages, form: formBlock, successMessage,
@@ -127,7 +127,7 @@ const Contact = ({ pageData }) => {
                     </div>
                 </section>
                 <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} />
+                    socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

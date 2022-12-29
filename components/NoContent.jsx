@@ -32,11 +32,11 @@ const NoContent = ({ title, text, locale, imgOnly }) => {
                     sm:inline-block text-dark bg-theme uppercase 
                     font-semibold sm:p-4 before:absolute before:top-0 before:left-0 
                     transition-all ease-linear sm:shadow-bold_r hover:shadow-zero 
-                    before:origin-left hover:before:bg-dark before:bottom-0 
+                    before:origin-left before:bottom-0 
                     before:right-0 before:-z-10 before:bg-theme 
                     before:transition-all before:scale-x-0 hover:before:scale-x-100 
-                    z-10 hover:text-white text-sm shadow-bold_r_md 
-                    sm:text-base mt-7 w-full sm:w-fit sm:px-20`}
+                    z-10 text-sm shadow-bold_r_md sm:text-base mt-7 w-full sm:w-fit 
+                    sm:px-20 border-2 border-dark`}
                         onClick={() => router.back()}>
                         {locale === `en` ? `Go Back` : `Keer terug`}
                     </button>
