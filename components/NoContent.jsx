@@ -1,16 +1,15 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router';
 import React from 'react'
-import voidImg from "../public/images/void.svg";
+import blogPostImg from "../public/images/blog-post.svg";
 
 const NoContent = ({ title, text, locale, imgOnly }) => {
     const router = useRouter();
 
     if (imgOnly) {
         return (
-            <Image src={voidImg} objectFit={`cover`}
-                alt={locale === `en` ? `Person looking at the void.` :
-                    `Persoon die naar de leegte kijkt.`} width={360} height={378} />
+            <Image src={blogPostImg} objectFit={`cover`}
+                alt={`Blog post`} width={381} height={359} />
         )
     }
 
@@ -18,9 +17,8 @@ const NoContent = ({ title, text, locale, imgOnly }) => {
         <div className={`flex flex-col h-full justify-center`}>
             <main className={`w-9/12 max-w-8xl m-auto text-center`}>
                 <div className={`pt-7 px-5 sm:pt-4 sm:px-2`}>
-                    <Image src={voidImg} objectFit={`cover`}
-                        alt={locale === `en` ? `Person looking at the void.` :
-                            `Persoon die naar de leegte kijkt.`} width={360} height={378} />
+                    <Image src={blogPostImg} objectFit={`cover`}
+                        alt={`Blog post`} width={381} height={359} />
                 </div>
                 <div className={`text-center my-14`}>
                     <h1 className={`text-4xl mb-5`}>
