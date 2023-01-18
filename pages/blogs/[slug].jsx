@@ -40,12 +40,12 @@ const Blog = ({ data }) => {
             <HeroTwo content={heroContent} socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
-                xl:w-10/12 lg:max-w-6xl lg:mx-auto`}>
-                    <div className={`mb-3 lg:mb-7`}>
+                xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-6 md:mt-24 xl:mt-32`}>
+                    <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
-                    2xl:h-[calc(100vw/2.8)] mb-2 lg:mb-6`}>
+                    2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
                             <Image src={url} alt={alt} layout={`fill`}
-                                objectFit={`cover`} />
+                                objectFit={`cover`} className={`rounded-xl`}/>
                         </div>
                         <SocialShares url={seo.canonical} title={`Blog - ${title}`}
                             description={description} imageUrl={url} />
@@ -82,7 +82,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
     const data = await getData(GET_BLOG, params);
-
+    
     return {
         props: { data },
     }

@@ -34,7 +34,7 @@ const Blogs = ({ pageData, blogsData }) => {
             {
                 blogs.length ? (
                     <>
-                        <Header />
+                        <Header nav={navigation} localepages={localepages}/>
                         <HeroOne content={hero} socialsRaw={socials}
                             ctaLink={blogs.length < 5 ? `#${all.slug}` : `#${top.slug}`} />
                         <PageLayout>

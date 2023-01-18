@@ -760,6 +760,7 @@ const GET_BLOGS = gql`
           }
           text
           showcase
+          locale
         }
       }
     }
