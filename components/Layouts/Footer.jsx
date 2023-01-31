@@ -134,11 +134,11 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
                     items-center sm:block`}>
                         {
                             services.map((service, index) => {
-                                const { title } = destructureCollectionTypeObject(service);
+                                const { title, showcase } = destructureCollectionTypeObject(service);
 
                                 return (
                                     <li className={`pt-2`} key={index}>
-                                        <span className={`lg:text-base`}>
+                                        <span className={`lg:text-base ${!showcase && `hidden`}`}>
                                             {title}
                                         </span>
                                     </li>
