@@ -52,7 +52,7 @@ const About = ({ pageData, servicesData }) => {
                         <Heading title={xpTitle} subtitle={xpSubtitle} />
                     </div>
                     <div className={`grid grid-cols-1 lg:grid-cols-2 mt-16 
-                    xl:mt-0 gap-11 lg:flex-row lg:gap-12`}>
+                    xl:mt-0 gap-11 lg:flex-row lg:gap-16`}>
                         {
                             services.map((serviceRaw, index) => {
                                 const { title, text, backgroundColor, icon } =
