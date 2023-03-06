@@ -33,39 +33,6 @@ const Projects = ({ pageData, projectsData }) => {
             <HeroOne content={hero} socialsRaw={socials}
                 ctaLink={projects.length < 5 ? `#${all.slug}` : `#${top.slug}`} />
             <PageLayout>
-                <section id={top.slug} className={`flex flex-col md:flex-row-reverse 
-                md:items-center md:gap-10 block_container ${projects.length < 5 && `hidden`}`}>
-                    <div className={`md:text-center md:basis-3/12`}>
-                        <Heading title={top.title} subtitle={top.subtitle} />
-                    </div>
-                    <div className={`md:basis-9/12`}>
-                        <Carousel indicators={false}>
-                            {
-                                topProjects.map((topProject, index) => {
-                                    const { img, slug } = destructureCollectionTypeObject(topProject);
-                                    const { url, alt } = destructureImageComponent(img);
-
-                                    return (
-                                        <Link href={`/projects/${slug}`} key={index}>
-                                            <a>
-                                                <article key={index} className={`relative`}>
-                                                    <div className={`relative h-[calc(100vw/1.75)] 
-                                                    sm:h-[calc(100vw/1.75)] md:h-[calc(100vw/2.4)] 
-                                                    lg:h-[calc(100vw/2.6)] xl:h-[calc(100vw/2.8)] 
-                                                    2xl:h-[calc(100vw/3)] max-h-[600px]`}>
-                                                        <Image src={url} layout={`fill`}
-                                                            alt={alt} className={`rounded-xl`}
-                                                            objectFit={`cover`} />
-                                                    </div>
-                                                </article>
-                                            </a>
-                                        </Link>
-                                    )
-                                })
-                            }
-                        </Carousel>
-                    </div>
-                </section>
                 <section id={all.slug} className={`block_container`}>
                     <Heading title={all.title} subtitle={all.subtitle} />
                     <div className={`overflow-x-auto overscroll-x-contain gap-6 
