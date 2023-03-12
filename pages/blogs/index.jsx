@@ -1,12 +1,13 @@
 import Header from '../../components/Layouts/Header'
 import { getData } from '../../graphql/api';
 import { GET_BLOGS, GET_BLOGSPAGE } from '../../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent, destructureSingleType } from '../../utils/app';
+import {
+    destructureCollectionType, destructureCollectionTypeObject,
+    destructureImageComponent, destructureSingleType
+} from '../../utils/app';
 import Seo from '../../components/Seo';
 import PageLayout from '../../components/Layouts/PageLayout';
-import { Carousel } from 'flowbite-react';
 import Heading from '../../components/Heading';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Contact from '../../components/Contact';
@@ -17,16 +18,15 @@ import NoContent from '../../components/NoContent';
 
 const Blogs = ({ pageData, blogsData }) => {
     const router = useRouter();
+
     const { data, globalData } = pageData;
     const { blogs: blogsGlobal, socials, contactblock, navigation,
         services: servicesGlobal, regions } = globalData;
     const { blogspage } = data;
     const { seo, alternates, hero, localepages, top, all, noBlogs } = destructureSingleType(blogspage);
     const { title, text } = noBlogs;
+
     const blogs = destructureCollectionType(blogsData.blogs);
-    const topBlogs = blogs.filter((blog) => {
-        return blog.attributes.showcase
-    });
 
     return (
         <>
@@ -36,7 +36,7 @@ const Blogs = ({ pageData, blogsData }) => {
                     <>
                         <Header nav={navigation} localepages={localepages} />
                         <HeroOne content={hero} socialsRaw={socials}
-                            ctaLink={blogs.length < 5 ? `#${all.slug}` : `#${top.slug}`} />
+                            ctaLink={all.slug} />
                         <PageLayout>
                             <section id={all.slug} className={`block_container`}>
                                 <Heading title={all.title} subtitle={all.subtitle} />

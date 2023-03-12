@@ -1,12 +1,13 @@
 import Header from '../../components/Layouts/Header'
 import { getData } from '../../graphql/api';
 import { GET_PROJECTS, GET_PROJECTSPAGE } from '../../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent, destructureSingleType } from '../../utils/app';
+import {
+    destructureCollectionType, destructureCollectionTypeObject,
+    destructureImageComponent, destructureSingleType
+} from '../../utils/app';
 import Seo from '../../components/Seo';
 import PageLayout from '../../components/Layouts/PageLayout';
-import { Carousel } from 'flowbite-react';
 import Heading from '../../components/Heading';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Contact from '../../components/Contact';
@@ -16,22 +17,20 @@ import HeroOne from '../../components/Heroes/HeroOne';
 
 const Projects = ({ pageData, projectsData }) => {
     const router = useRouter();
+
     const { data, globalData } = pageData;
     const { blogs, socials, contactblock, navigation, services: servicesGlobal, regions } = globalData;
     const { projectspage } = data;
     const { seo, alternates, localepages, hero, top, all } = destructureSingleType(projectspage);
 
     const projects = destructureCollectionType(projectsData.projects);
-    const topProjects = projects.filter((project) => {
-        return project.attributes.showcase
-    });
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
             <Header nav={navigation} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials}
-                ctaLink={projects.length < 5 ? `#${all.slug}` : `#${top.slug}`} />
+                ctaLink={all.slug} />
             <PageLayout>
                 <section id={all.slug} className={`block_container`}>
                     <Heading title={all.title} subtitle={all.subtitle} />
