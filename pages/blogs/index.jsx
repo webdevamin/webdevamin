@@ -23,7 +23,7 @@ const Blogs = ({ pageData, blogsData }) => {
     const { blogs: blogsGlobal, socials, contactblock, navigation,
         services: servicesGlobal, regions } = globalData;
     const { blogspage } = data;
-    const { seo, alternates, hero, localepages, top, all, noBlogs } = destructureSingleType(blogspage);
+    const { seo, alternates, hero, localepages, all, noBlogs } = destructureSingleType(blogspage);
     const { title, text } = noBlogs;
 
     const blogs = destructureCollectionType(blogsData.blogs);
@@ -36,7 +36,7 @@ const Blogs = ({ pageData, blogsData }) => {
                     <>
                         <Header nav={navigation} localepages={localepages} />
                         <HeroOne content={hero} socialsRaw={socials}
-                            ctaLink={all.slug} />
+                            ctaLink={`#${all.slug}`} />
                         <PageLayout>
                             <section id={all.slug} className={`block_container`}>
                                 <Heading title={all.title} subtitle={all.subtitle} />
