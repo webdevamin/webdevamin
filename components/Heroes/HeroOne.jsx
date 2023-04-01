@@ -45,7 +45,7 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                                     cursor={true}
                                     speed={20}
                                 />
-                            ) : ({ parsedTitle })
+                            ) : (parsedTitle)
                         }
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
