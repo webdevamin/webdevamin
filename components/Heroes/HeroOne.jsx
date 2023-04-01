@@ -3,11 +3,13 @@ import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
 import {
     destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent
+    destructureImageComponent,
+    getJsonString,
 } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace }) => {
@@ -15,6 +17,8 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
     const { title, text, button, img } = content;
     const { href, text: buttonText } = button[0];
     const { url, objectFit, width, height, alt } = destructureImageComponent(img);
+
+    const parsedTitle = getJsonString(title);
 
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] 
@@ -32,7 +36,17 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                     ${smallerTitle && `text-3xl mb-8 
                     font-bold lg:text-4xl xl:text-5xl tracking-tight 
                     2xl:text-6xl`}`}>
-                        {title}
+                        {
+                            (Array.isArray(parsedTitle)) ? (
+                                <TypeAnimation
+                                    sequence={parsedTitle}
+                                    wrapper="div"
+                                    className='font_mohave'
+                                    cursor={true}
+                                    speed={20}
+                                />
+                            ) : ({ parsedTitle })
+                        }
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>

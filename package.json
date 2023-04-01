@@ -24,6 +24,7 @@
     "next-sitemap": "^3.1.32",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-type-animation": "^3.0.1",
     "sharp": "^0.31.2",
     "sib-api-v3-sdk": "^8.4.2"
   },

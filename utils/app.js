@@ -1,3 +1,11 @@
+// General app related
+
+const getJsonString = (string) => {
+  try { return JSON.parse(string) }
+  catch (error) { return string; }
+}
+
+
 // Formatting/destructuring data from Strapi
 
 const destructureSingleType = (singleType) => {
@@ -40,4 +48,5 @@ export {
   destructureCollectionTypeObject,
   destructureImageComponent,
   destructureLocales,
+  getJsonString
 };
