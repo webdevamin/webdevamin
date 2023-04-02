@@ -43,7 +43,7 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                                     wrapper="div"
                                     className='font_mohave'
                                     cursor={true}
-                                    speed={20}
+                                    speed={60}
                                 />
                             ) : (parsedTitle)
                         }
