@@ -34,7 +34,7 @@ const About = ({ content }) => {
                             <div dangerouslySetInnerHTML={{ __html: text }} />
                         </div>
                         <div className={`mt-8 flex-col sm:flex-row lg:mt-10 xl:mt-12 flex 
-                        gap-5 sm:justify-center sm:mt-9 lg:w-full 
+                        gap-4 sm:justify-center sm:mt-9 lg:w-full 
                         lg:gap-7 md:justify-start xl:gap-8`}>
                             {
                                 button.map((btn, index) => {
@@ -43,6 +43,7 @@ const About = ({ content }) => {
                                     return (
                                         <ButtonOne href={hrefButton} text={textButton}
                                             classes={`w-full md:w-auto lg:w-auto sm:px-14 mt-0`}
+                                            noMargin={true}
                                             key={index} outline={index % 2 !== 0 ? true : false} />
                                     )
                                 })

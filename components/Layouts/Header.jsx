@@ -9,32 +9,30 @@ const Header = ({ nav, localepages }) => {
     const handleClick = () => setActive(!active);
 
     return (
-        <header className={`py-3 md:py-5 px-5 md:px-20 
+        <header className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center fixed w-full top-0 z-50 bg-light`}>
             <Image src={`/images/logo-dark.png`} width={55} height={55}
                 alt={`My logo but with light background and dark font`} />
             <nav className={`text-white text-lg tracking-widest flex 
-            gap-4 md:gap-20 relative items-center bg-transparent`}>
-                <div className={`block md:hidden`}>
+            gap-4 lg:gap-20 relative items-center bg-transparent`}>
+                <div className={`block lg:hidden`}>
                     <input className={`menu-btn hidden`}
                         type="checkbox" id="menu-btn" onClick={handleClick} />
                     <label className={`relative select-none cursor-pointer 
                     flex justify-center items-center rounded-xl
                     w-11 h-11 p-2.5 border border-dark`}
                         htmlFor="menu-btn">
-                        <span className={`bg-dark h-[2px] relative 
-                        transition-all w-5 before:bg-dark before:block 
-                        before:top-[5px] after:-top-[5px]
-                        before:h-full before:absolute before:transition-all
-                        before:w-full after:bg-dark after:h-full 
-                        after:absolute after:transition-all
-                        after:w-full ${active && `before:-rotate-90 rotate-45
-                        before:top-[0.5px] after:top-0`}`} />
+                        <span className={`bg-dark h-[1.75px] relative 
+                        transition-all w-6 after:bg-dark after:block 
+                        after:h-full after:absolute after:transition-all 
+                        after:w-full ${active ? `rotate-45 after:-rotate-90 
+                        after:top-[0.5px] bottom-[0px]` 
+                        : `after:top-[8px] bottom-[2.5px]`}`} />
                     </label>
                 </div>
                 <ul className={`absolute bg-light top-16 right-0 w-64 text-base
-                shadow-2xl rounded-lg transition-all ease-linear z-50 max-h-min
-                md:static md:flex md:rounded-none md:w-auto md:gap-8 lg:gap-10 
+                shadow-2xl lg:shadow-none rounded-lg transition-all ease-linear z-50 max-h-min
+                lg:static lg:flex lg:rounded-none lg:w-auto lg:gap-14 
                 items-center ${active ? `max-h-96` : `max-h-0`}`}>
                     {
                         links.map((link, index) => {
@@ -44,11 +42,11 @@ const Header = ({ nav, localepages }) => {
                             return (
                                 <li key={index} className={`bg-transparent z-50`}>
                                     <Link href={href}>
-                                        <a className={`w-full transition-all md:block
-                                        py-3 px-8 md:py-0 md:px-0 border-theme 
-                                        ease-linear md:border-none relative 
+                                        <a className={`w-full transition-all lg:block
+                                        py-3 px-8 lg:py-0 lg:px-0 border-theme 
+                                        ease-linear lg:border-none relative 
                                         after:transition-all after:ease-linear
-                                        after:h-0 after:w-0 after:hidden after:md:inline
+                                        after:h-0 after:w-0 after:hidden after:lg:inline
                                         hover:text-theme hover:after:h-1 
                                         hover:after:w-1 hover:after:rounded-full 
                                         hover:after:bg-theme hover:after:absolute 
