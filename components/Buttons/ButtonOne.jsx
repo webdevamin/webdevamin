@@ -13,7 +13,7 @@ const ButtonOne = ({ href, text, classes, wFit, external,
     shadow-bold_r_md sm:text-base tracking-wider
     ${noMargin ? `mt-0` : `mt-7`}
     ${wFit && `w-fit px-7 sm:px-12`}
-    ${classes} ${outline ? `text-dark border md:border-2 border-dark` :
+    ${classes} ${outline ? `text-dark border md:border-2 border-dark bg-light` :
             `text-dark bg-theme border md:border-2 border-dark`}`;
 
     if (external) {

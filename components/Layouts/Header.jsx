@@ -12,7 +12,7 @@ const Header = ({ nav, localepages }) => {
         <header className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center fixed w-full top-0 z-50 bg-light`}>
             <Image src={`/images/logo-dark.png`} width={55} height={55}
-                alt={`My logo but with light background and dark font`} />
+                alt={`Logo`} />
             <nav className={`text-white text-lg tracking-widest flex 
             gap-4 lg:gap-20 relative items-center bg-transparent`}>
                 <div className={`block lg:hidden`}>
@@ -20,7 +20,7 @@ const Header = ({ nav, localepages }) => {
                         type="checkbox" id="menu-btn" onClick={handleClick} />
                     <label className={`relative select-none cursor-pointer 
                     flex justify-center items-center rounded-xl
-                    w-11 h-11 p-2.5 border border-dark`}
+                    w-11 h-11 p-2.5 pb-[11px] border border-dark`}
                         htmlFor="menu-btn">
                         <span className={`bg-dark h-[1.75px] relative 
                         transition-all w-6 after:bg-dark after:block 

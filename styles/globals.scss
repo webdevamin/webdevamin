@@ -58,7 +58,7 @@ h2,
 }
 
 h1 {
-  @apply text-5xl mb-9 font-bold lg:text-6xl xl:text-7xl tracking-tight 
+  @apply text-5xl mb-9 md:mb-6 font-bold md:text-6xl xl:text-7xl tracking-tight 
   2xl:text-8xl;
 }
 

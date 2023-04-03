@@ -15,7 +15,6 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace }) => {
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button, img } = content;
-    const { href, text: buttonText } = button[0];
     const { url, objectFit, width, height, alt } = destructureImageComponent(img);
 
     const parsedTitle = getJsonString(title);
@@ -80,8 +79,20 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                             </div>
                         )
                     }
-                    <ButtonOne href={ctaLink || href} text={buttonText}
-                        classes={`sm:px-20 mt-8`} external={externalLink} />
+                    <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
+                        {
+                            button.map((btn, index) => {
+                                const { href, text } = btn;
+                                const isOdd = index % 2 !== 0 ? true : false;
+
+                                return (
+                                    <ButtonOne key={index} href={ctaLink || href} text={text}
+                                        outline={isOdd} noMargin
+                                        classes={`sm:px-14 md:text-center`} external={externalLink} />
+                                )
+                            })
+                        }
+                    </div>
                 </section>
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
