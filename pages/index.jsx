@@ -11,6 +11,7 @@ import { GET_HOMEPAGE } from '../graphql/queries';
 import { getData } from '../graphql/api';
 import { destructureSingleType } from '../utils/app';
 import HeroOne from '../components/Heroes/HeroOne';
+import Hero from '../components/Home/Hero'
 
 const Index = ({ pageData }) => {
   const { data, globalData } = pageData;
@@ -34,9 +35,7 @@ const Index = ({ pageData }) => {
       <div className={`md:bg-banner_image md:bg-no-repeat 
       md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 3xl:bg-[center_-3rem]`}>
         <Header nav={navigation} localepages={localepages} />
-        <div className={`xl:py-12`}>
-          <HeroOne content={hero} socialsRaw={socials} />
-        </div>
+        <Hero content={hero} socialsRaw={socials} />
       </div>
       <PageLayout>
         <About content={about} />
