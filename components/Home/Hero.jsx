@@ -30,7 +30,7 @@ const Hero = ({ content, socialsRaw }) => {
                         alt={alt} objectFit={objectFit} className={`rounded-lg`} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
-                    <h1 className={`bg-transparent opacity-100`}>
+                    <h1 className={`bg-transparent opacity-100 xl:mb-9`}>
                         {
                             (Array.isArray(parsedTitle)) ? (
                                 <TypeAnimation
