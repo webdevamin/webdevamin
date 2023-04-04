@@ -3,7 +3,10 @@ import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
 import { getData } from '../graphql/api';
 import { GET_ABOUTPAGE, GET_SERVICES } from '../graphql/queries'
-import { destructureCollectionType, destructureCollectionTypeObject, destructureSingleType, destructureImageComponent } from '../utils/app';
+import {
+    destructureCollectionType, destructureCollectionTypeObject,
+    destructureSingleType, destructureImageComponent
+} from '../utils/app';
 import PageLayout from '../components/Layouts/PageLayout'
 import BlockLayoutOne from '../components/Layouts/BlockLayoutOne';
 import Heading from '../components/Heading';
@@ -17,7 +20,8 @@ import ButtonOne from '../components/Buttons/ButtonOne';
 
 const About = ({ pageData, servicesData }) => {
     const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, services: servicesGlobal, navigation, regions } = globalData;
+    const { blogs, socials, contactblock, services: servicesGlobal,
+        navigation, regions } = globalData;
     const { aboutpage } = data;
     const services = destructureCollectionType(servicesData.services);
     const { seo, alternates, localepages, hero, expertise, who, why, what }
@@ -58,13 +62,15 @@ const About = ({ pageData, servicesData }) => {
                                 const { title, text, backgroundColor, icon } =
                                     destructureCollectionTypeObject(serviceRaw);
 
-                                return <CardOne title={title} bgColor={backgroundColor}
+                                return <CardOne title={title}
+                                    bgColor={backgroundColor}
                                     key={index} text={text} icon={icon} />
                             })
                         }
                     </div>
                 </BlockLayoutOne>
-                <BlockLayoutTwo title={whoTitle} slug={whoSlug} contentClasses={`xl:flex-row-reverse`}>
+                <BlockLayoutTwo title={whoTitle} slug={whoSlug}
+                    contentClasses={`xl:flex-row-reverse`}>
                     <div className={`mb-8 md:mb-0 md:basis-10/12 xl:mr-8`}>
                         <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
                             {whoTitle}
@@ -82,8 +88,8 @@ const About = ({ pageData, servicesData }) => {
                             {whoSummary}
                         </h3>
                         <div dangerouslySetInnerHTML={{ __html: whoText }} />
-                        <ButtonOne href={whoButton[0].href} text={whoButton[0].text}
-                            wFit external />
+                        <ButtonOne href={whoButton[0].href}
+                            text={whoButton[0].text} wFit external />
                     </div>
                 </BlockLayoutTwo>
                 <BlockLayoutTwo title={whyTitle} slug={whySlug} position={`right`}>
@@ -111,7 +117,8 @@ const About = ({ pageData, servicesData }) => {
                         <Heading title={whatTitle} subtitle={whatSubtitle} />
                         <div dangerouslySetInnerHTML={{ __html: whatText }} />
                     </div>
-                    <div id={`accordion`} className={`w-full mt-10 lg:mt-12 xl:mt-0`}>
+                    <div id={`accordion`} className={`w-full mt-10 
+                    lg:mt-12 xl:mt-0`}>
                         <Accordion>
                             {
                                 subBlock.map((block, index) => {
@@ -145,7 +152,8 @@ const About = ({ pageData, servicesData }) => {
                     </div>
                 </BlockLayoutOne>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions}/>
+                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
+                    socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

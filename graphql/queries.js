@@ -98,6 +98,7 @@ const GET_GLOBAL = gql`
           button {
             href
             text
+            external
           }
         }
       }
@@ -160,6 +161,7 @@ const GET_HOMEPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           about {
@@ -182,6 +184,7 @@ const GET_HOMEPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           projects {
@@ -191,6 +194,7 @@ const GET_HOMEPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           blogs {
@@ -200,6 +204,7 @@ const GET_HOMEPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           testimonials {
@@ -293,6 +298,7 @@ const GET_ABOUTPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           expertise {
@@ -323,6 +329,7 @@ const GET_ABOUTPAGE = gql`
             button {
               href
               text
+              external
             }
           }
           why {
@@ -414,6 +421,7 @@ const GET_PROJECTSPAGE = gql`
             button {
               href
               text
+              external
             }
             slug
           }
@@ -486,6 +494,7 @@ const GET_BLOGSPAGE = gql`
             button {
               href
               text
+              external
             }
             slug
           }
@@ -562,6 +571,7 @@ const GET_CONTACTPAGE = gql`
             button {
               href
               text
+              external
             }
             slug
           }
@@ -625,6 +635,7 @@ const GET_CLIENT_ERRORPAGE = gql`
             button {
               href
               text
+              external
             }
           }
         }
@@ -666,6 +677,7 @@ const GET_SERVER_ERRORPAGE = gql`
             button {
               href
               text
+              external
             }
           }
         }
@@ -791,6 +803,7 @@ const GET_REGIONS = gql`
               href
               text
               label
+              external
             }
             img {
               image {
@@ -814,6 +827,7 @@ const GET_REGIONS = gql`
               href
               text
               label
+              external
             }
             slug
             summary
@@ -837,6 +851,31 @@ const GET_REGIONS = gql`
       }
     }
   }
+`;
+
+const GET_TECHS = gql`
+query Techs {
+  teches {
+    data {
+      attributes {
+        name
+        img {
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+          objectFit
+          width
+          height
+          alt
+        }
+      }
+    }
+  }
+}
 `;
 
 const GET_PROJECT = gql`
@@ -1034,6 +1073,7 @@ const GET_REGION = gql`
               href
               text
               label
+              external
             }
             img {
               image {
@@ -1057,6 +1097,7 @@ const GET_REGION = gql`
               href
               text
               label
+              external
             }
             slug
             summary
@@ -1107,6 +1148,7 @@ export {
   GET_PROJECTS,
   GET_BLOGS,
   GET_REGIONS,
+  GET_TECHS,
   GET_PROJECT,
   GET_BLOG,
   GET_REGION,
