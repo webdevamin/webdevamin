@@ -45,13 +45,7 @@ const Header = ({ nav, localepages }) => {
                                         <a className={`w-full transition-all lg:block
                                         py-3 px-8 lg:py-0 lg:px-0 border-theme 
                                         ease-linear lg:border-none relative 
-                                        after:transition-all after:ease-linear
-                                        after:h-0 after:w-0 after:hidden after:lg:inline
-                                        hover:text-theme hover:after:h-1 
-                                        hover:after:w-1 hover:after:rounded-full 
-                                        hover:after:bg-theme hover:after:absolute 
-                                        hover:after:left-1/2 font-semibold
-                                        hover:after:top-8 bg-transparent
+                                        hover:text-theme font-semibold bg-transparent
                                         ${active ? `block` : `hidden`}
                                         ${isLast ? `border-none` : `border-b`}`}>
                                             {text}
