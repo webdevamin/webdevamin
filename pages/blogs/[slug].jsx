@@ -15,7 +15,7 @@ import SocialShares from '../../components/SocialShares';
 const Blog = ({ data }) => {
     const router = useRouter();
     const { data: blogData, globalData } = data;
-    const blog = destructureCollectionTypeObject(destructureCollectionType(blogData.blogs)[0]);
+    const blog = destructureCollectionTypeObject(blogData.blogs, true);
     const { title, description, localepages, seo, alternates, slug, img, date, text } = blog;
     const { blogs, contactblock, navigation, services, socials, regions } = globalData;
     const button = [];
@@ -45,7 +45,7 @@ const Blog = ({ data }) => {
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
                     2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
                             <Image src={url} alt={alt} layout={`fill`}
-                                objectFit={`cover`} className={`rounded-xl`}/>
+                                objectFit={`cover`} className={`rounded-xl`} />
                         </div>
                         <SocialShares url={seo.canonical} title={`Blog - ${title}`}
                             description={description} imageUrl={url} />
@@ -82,7 +82,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
     const data = await getData(GET_BLOG, params);
-    
+
     return {
         props: { data },
     }

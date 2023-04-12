@@ -14,8 +14,8 @@ const Header = ({ nav, localepages }) => {
             <Image src={`/images/logo-dark.png`} width={55} height={55}
                 alt={`Logo`} />
             <nav className={`text-white text-lg tracking-widest flex 
-            gap-4 lg:gap-20 relative items-center bg-transparent`}>
-                <div className={`block lg:hidden`}>
+            gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent`}>
+                <div className={`block xl:hidden`}>
                     <input className={`menu-btn hidden`}
                         type="checkbox" id="menu-btn" onClick={handleClick} />
                     <label className={`relative select-none cursor-pointer 
@@ -31,8 +31,8 @@ const Header = ({ nav, localepages }) => {
                     </label>
                 </div>
                 <ul className={`absolute bg-light top-16 right-0 w-64 text-base
-                shadow-2xl lg:shadow-none rounded-lg transition-all ease-linear z-50 max-h-min
-                lg:static lg:flex lg:rounded-none lg:w-auto lg:gap-14 
+                shadow-2xl xl:shadow-none rounded-lg transition-all ease-linear z-50 max-h-min
+                xl:static xl:flex xl:rounded-none xl:w-auto xl:gap-14 
                 items-center ${active ? `max-h-96` : `max-h-0`}`}>
                     {
                         links.map((link, index) => {
@@ -42,9 +42,9 @@ const Header = ({ nav, localepages }) => {
                             return (
                                 <li key={index} className={`bg-transparent z-50`}>
                                     <Link href={href}>
-                                        <a className={`w-full transition-all lg:block
-                                        py-3 px-8 lg:py-0 lg:px-0 border-theme 
-                                        ease-linear lg:border-none relative 
+                                        <a className={`w-full transition-all xl:block
+                                        py-3 px-8 xl:py-0 xl:px-0 border-theme 
+                                        ease-linear xl:border-none relative 
                                         hover:text-theme font-semibold bg-transparent
                                         ${active ? `block` : `hidden`}
                                         ${isLast ? `border-none` : `border-b`}`}>

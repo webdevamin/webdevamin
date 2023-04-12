@@ -688,6 +688,92 @@ const GET_SERVER_ERRORPAGE = gql`
 
 // Collection data
 
+const GET_PAGE = gql`
+query Pages($locale: I18NLocaleCode, $slug: String) {
+  pages(locale: $locale, filters: { slug: { eq: $slug } }) {
+    data {
+      attributes {
+        title
+        seo {
+          title
+          description
+          canonical
+        }
+        alternates {
+          hreflang
+          href
+        }
+        localepages {
+          locale_link {
+            data {
+              attributes {
+                name
+                flag {
+                  image {
+                    data {
+                      attributes {
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        blocks {
+          __typename
+          ... on ComponentLayoutsBlockNormalMedium {
+            title
+            slug
+            subtitle
+            text
+            img {
+              objectFit
+              width
+              height
+              alt
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+          ... on ComponentLayoutsBlockNormal {
+            title
+            slug
+            subtitle
+            text
+            img {
+              objectFit
+              width
+              height
+              alt
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+          ... on ComponentLayoutsBlockNormalSmall {
+            title
+            slug
+            subtitle
+            text
+          }
+        }
+      }
+    }
+  }
+}
+`;
+
 const GET_SERVICES = gql`
   query Services($locale: I18NLocaleCode) {
     services(locale: $locale) {
@@ -851,6 +937,21 @@ const GET_REGIONS = gql`
       }
     }
   }
+`;
+
+const GET_TESTIMONIALS = gql`
+query Pages($locale: I18NLocaleCode) {
+  testimonials(locale: $locale) {
+    data {
+      attributes {
+        name
+        letter
+        review
+        backgroundColor
+      }
+    }
+  }
+}
 `;
 
 const GET_TECHS = gql`
@@ -1144,10 +1245,12 @@ export {
   GET_CONTACTPAGE,
   GET_CLIENT_ERRORPAGE,
   GET_SERVER_ERRORPAGE,
+  GET_PAGE,
   GET_SERVICES,
   GET_PROJECTS,
   GET_BLOGS,
   GET_REGIONS,
+  GET_TESTIMONIALS,
   GET_TECHS,
   GET_PROJECT,
   GET_BLOG,

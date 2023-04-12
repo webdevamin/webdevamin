@@ -31,8 +31,11 @@ const destructureCollectionType = (collectionType) => {
   return collectionType.data;
 };
 
-const destructureCollectionTypeObject = (object) => {
-  return object.attributes;
+const destructureCollectionTypeObject = (data, first) => {
+  console.log(data)
+  return first ?
+    (destructureCollectionType(data))[0].attributes
+    : data.attributes;
 };
 
 const destructureLocales = (object) => {

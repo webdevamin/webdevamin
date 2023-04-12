@@ -7,33 +7,30 @@ import PageLayout from '../components/Layouts/PageLayout'
 import Blogs from '../components/Home/Blogs'
 import Contact from '../components/Contact'
 import Footer from '../components/Layouts/Footer'
-import { GET_HOMEPAGE, GET_TECHS } from '../graphql/queries';
+import {
+  GET_TECHS, GET_PAGE, GET_PROJECTS, GET_BLOGS,
+  GET_TESTIMONIALS
+} from '../graphql/queries';
 import { getData } from '../graphql/api';
-import { destructureSingleType, 
-  destructureCollectionType } from '../utils/app';
+import { destructureSingleType, destructureCollectionType, destructureCollectionTypeObject } from '../utils/app';
 import Hero from '../components/Home/Hero'
 
-const Index = ({ pageData, techData }) => {
+const Index = ({ pageData, projectsData, blogsData,
+  testimonialsData, techData }) => {
   const { data, globalData } = pageData;
-  const { blogs, navigation, services, socials,
-    regions, contactblock } = globalData;
-  const { homepage, projects, testimonials } = data;
+  const projects = destructureCollectionType(projectsData.projects);
+  const blogs = destructureCollectionType(blogsData.blogs);
+  const testimonials = destructureCollectionType(testimonialsData.testimonials);
   const techs = destructureCollectionType(techData.teches);
+  const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
-  const {
-    seo,
-    alternates,
-    localepages,
-    hero,
-    about,
-    projects: projectsHomepage,
-    blogs: blogsHomepage,
-    testimonials: testimonialsHomepage,
-  } = destructureSingleType(homepage);
+  const { blogsGlobal, navigation, services, socials,
+    regions, contactblock } = globalData;
+  const { seo, blocks, alternates, localepages } = page;
 
   return (
     <>
-      <Seo seo={seo} alternates={alternates} />
+      {/* <Seo seo={seo} alternates={alternates} />
       <div className={`md:bg-banner_image md:bg-no-repeat 
       md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 
       3xl:bg-[center_-3rem]`}>
@@ -41,14 +38,14 @@ const Index = ({ pageData, techData }) => {
         <Hero content={hero} socialsRaw={socials} />
       </div>
       <PageLayout>
-        <About content={about} techs={techs}/>
+        <About content={about} techs={techs} />
         <Projects content={projectsHomepage} data={projects} />
         <Blogs content={blogsHomepage} data={blogs} />
         <Testimonials content={testimonialsHomepage} data={testimonials} />
         <Contact content={contactblock} />
         <Footer servicesRaw={services} blogsRaw={blogs}
           socialsRaw={socials} regionsRaw={regions} />
-      </PageLayout>
+      </PageLayout> */}
     </>
   )
 }
@@ -56,10 +53,13 @@ const Index = ({ pageData, techData }) => {
 export default Index
 
 export async function getStaticProps({ locale }) {
-  const pageData = await getData(GET_HOMEPAGE, { locale: [locale] });
+  const pageData = await getData(GET_PAGE, { "slug": "home", "locale": [locale] });
+  const projectsData = await getData(GET_PROJECTS, { locale: [locale] }, false);
+  const blogsData = await getData(GET_BLOGS, { locale: [locale] }, false);
+  const testimonialsData = await getData(GET_TESTIMONIALS, { locale: [locale] }, false);
   const techData = await getData(GET_TECHS, { locale: [locale] }, false);
 
   return {
-    props: { pageData, techData },
+    props: { pageData, projectsData, blogsData, testimonialsData, techData },
   }
 }

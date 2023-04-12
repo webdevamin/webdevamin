@@ -111,6 +111,19 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
                             </Link>
                         </li>
                         <li className={`pt-2`}>
+                            <Link href={`/pricing`}>
+                                <a className={`flex items-center gap-1`}>
+                                    <div className={`w-6 h-5 flex items-center 
+                                justify-start`}>
+                                        <Icon icon={fas["faMoneyBill"]} size={`sm`} />
+                                    </div>
+                                    <span className={`lg:text-base transition-all hover:text-theme`}>
+                                        {locale === `en` ? `Pricing` : `Prijzen`}
+                                    </span>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={`pt-2`}>
                             <Link href={`/contact`}>
                                 <a className={`flex items-center gap-1`}>
                                     <div className={`w-6 h-5 flex items-center 
