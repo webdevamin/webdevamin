@@ -12,7 +12,7 @@ import {
   GET_TESTIMONIALS
 } from '../graphql/queries';
 import { getData } from '../graphql/api';
-import { destructureSingleType, destructureCollectionType, destructureCollectionTypeObject } from '../utils/app';
+import { destructureCollectionType, destructureCollectionTypeObject } from '../utils/app';
 import Hero from '../components/Home/Hero'
 
 const Index = ({ pageData, projectsData, blogsData,
@@ -24,28 +24,36 @@ const Index = ({ pageData, projectsData, blogsData,
   const techs = destructureCollectionType(techData.teches);
   const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
-  const { blogsGlobal, navigation, services, socials,
+  const { blogsGlobal, pages, services, socials,
     regions, contactblock } = globalData;
   const { seo, blocks, alternates, localepages } = page;
 
   return (
     <>
-      {/* <Seo seo={seo} alternates={alternates} />
+      <Seo seo={seo} alternates={alternates} />
       <div className={`md:bg-banner_image md:bg-no-repeat 
       md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 
       3xl:bg-[center_-3rem]`}>
-        <Header nav={navigation} localepages={localepages} />
-        <Hero content={hero} socialsRaw={socials} />
+        <Header pages={pages} localepages={localepages} />
+        <Hero content={blocks.find(block => block.slug === `hero`)} socialsRaw={socials} />
       </div>
       <PageLayout>
-        <About content={about} techs={techs} />
-        <Projects content={projectsHomepage} data={projects} />
-        <Blogs content={blogsHomepage} data={blogs} />
-        <Testimonials content={testimonialsHomepage} data={testimonials} />
-        <Contact content={contactblock} />
+        <About content={blocks.find(block => block.slug === `about`)}
+          techs={techs} />
+
+        <Projects content={blocks.find(block => block.slug === `projects`)}
+          data={projects} />
+
+        <Blogs content={blocks.find(block => block.slug === `blogs`)}
+          data={blogs} />
+
+        <Testimonials content={blocks.find(block => block.slug === `testimonials`)}
+          data={testimonials} />
+
+        {/* <Contact content={contactblock} />
         <Footer servicesRaw={services} blogsRaw={blogs}
-          socialsRaw={socials} regionsRaw={regions} />
-      </PageLayout> */}
+          socialsRaw={socials} regionsRaw={regions} /> */}
+      </PageLayout>
     </>
   )
 }

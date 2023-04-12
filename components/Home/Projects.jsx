@@ -3,14 +3,12 @@ import BlockLayoutTwo from '../Layouts/BlockLayoutTwo'
 import { Carousel } from "flowbite-react";
 import Slide from '../Slide';
 import {
-    destructureCollectionType,
     destructureCollectionTypeObject,
     destructureImageComponent,
 } from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
 
 const Projects = ({ content, data }) => {
-    const projects = destructureCollectionType(data);
     const { title, text, button, slug } = content;
     const { href, text: buttonText } = button[0];
 
@@ -24,7 +22,7 @@ const Projects = ({ content, data }) => {
             <div className={`mt-10 md:mt-0 md:basis-7/12`}>
                 <Carousel indicators={false}>
                     {
-                        projects.map((project, index) => {
+                        data.map((project, index) => {
                             const { img } =
                                 destructureCollectionTypeObject(project);
                             const { url, alt } = destructureImageComponent(img);

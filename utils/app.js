@@ -5,7 +5,6 @@ const getJsonString = (string) => {
   catch (error) { return string; }
 }
 
-
 // Formatting/destructuring data from Strapi
 
 const destructureSingleType = (singleType) => {
@@ -32,7 +31,6 @@ const destructureCollectionType = (collectionType) => {
 };
 
 const destructureCollectionTypeObject = (data, first) => {
-  console.log(data)
   return first ?
     (destructureCollectionType(data))[0].attributes
     : data.attributes;

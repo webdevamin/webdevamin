@@ -21,13 +21,11 @@ const GET_GLOBAL = gql`
         }
       }
     }
-    navigation(locale: $locale) {
+    pages(locale: $locale) {
       data {
         attributes {
-          links {
-            text
-            href
-          }
+          title
+          href
         }
       }
     }
@@ -694,6 +692,8 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
     data {
       attributes {
         title
+        href
+        slug
         seo {
           title
           description
@@ -704,6 +704,8 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
           href
         }
         localepages {
+          locale
+          href
           locale_link {
             data {
               attributes {
@@ -747,6 +749,12 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
             slug
             subtitle
             text
+            button {
+              href
+              text
+              label
+              external
+            }
             img {
               objectFit
               width

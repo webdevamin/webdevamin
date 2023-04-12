@@ -4,12 +4,12 @@ import CardOne from '../Cards/CardOne'
 import BlockLayoutOne from '../Layouts/BlockLayoutOne'
 
 const Testimonials = ({ content, data }) => {
-    const testimonials = destructureCollectionType(data);
-    const { title, text } = content;
+    // const { title, text } = content;
 
+    console.log(content)
     return (
         <BlockLayoutOne title={`testimonials`}>
-            <div className={`xl:flex-1`}>
+            {/* <div className={`xl:flex-1`}>
                 <h2>
                     {title}
                 </h2>
@@ -18,7 +18,7 @@ const Testimonials = ({ content, data }) => {
             <div className={`mt-16 xl:mt-0 flex flex-col gap-12 
                 lg:flex-row lg:gap-5`}>
                 {
-                    testimonials.map((testimonial, index) => {
+                    data.map((testimonial, index) => {
                         const { letter, name, backgroundColor, review } =
                             destructureCollectionTypeObject(testimonial);
 
@@ -28,7 +28,7 @@ const Testimonials = ({ content, data }) => {
                         )
                     })
                 }
-            </div>
+            </div> */}
         </BlockLayoutOne>
     )
 }

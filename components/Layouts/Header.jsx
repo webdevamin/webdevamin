@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { destructureImageComponent, destructureSingleType } from '../../utils/app';
+import { destructureImageComponent, destructureSingleType, destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
 
-const Header = ({ nav, localepages }) => {
+const Header = ({ pages, localepages }) => {
     const [active, setActive] = useState(false);
-    const { links } = destructureSingleType(nav);
+    const links = destructureCollectionType(pages)
     const handleClick = () => setActive(!active);
 
     return (
@@ -26,8 +26,8 @@ const Header = ({ nav, localepages }) => {
                         transition-all w-6 after:bg-dark after:block 
                         after:h-full after:absolute after:transition-all 
                         after:w-full ${active ? `rotate-45 after:-rotate-90 
-                        after:top-[0.5px] bottom-[0px]` 
-                        : `after:top-[8px] bottom-[2.5px]`}`} />
+                        after:top-[0.5px] bottom-[0px]`
+                                : `after:top-[8px] bottom-[2.5px]`}`} />
                     </label>
                 </div>
                 <ul className={`absolute bg-light top-16 right-0 w-64 text-base
@@ -36,7 +36,7 @@ const Header = ({ nav, localepages }) => {
                 items-center ${active ? `max-h-96` : `max-h-0`}`}>
                     {
                         links.map((link, index) => {
-                            const { href, text } = link;
+                            const { href, title } = destructureCollectionTypeObject(link);
                             const isLast = index === links.length - 1;
 
                             return (
@@ -48,7 +48,7 @@ const Header = ({ nav, localepages }) => {
                                         hover:text-theme font-semibold bg-transparent
                                         ${active ? `block` : `hidden`}
                                         ${isLast ? `border-none` : `border-b`}`}>
-                                            {text}
+                                            {title}
                                         </a>
                                     </Link>
                                 </li>
@@ -60,10 +60,8 @@ const Header = ({ nav, localepages }) => {
                     {
                         localepages.map((localepage, i) => {
                             const { locale_link, href, locale } = localepage;
-                            const { name, flag } =
-                                destructureSingleType(locale_link);
+                            const { name, flag } = destructureSingleType(locale_link);
                             const { url } = destructureImageComponent(flag);
-
                             return (
                                 <li key={i}>
                                     <Link href={href} locale={locale}>

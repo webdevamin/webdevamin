@@ -3,7 +3,6 @@ import BlockLayoutTwo from '../Layouts/BlockLayoutTwo'
 import { Carousel } from "flowbite-react";
 import Slide from '../Slide';
 import {
-    destructureCollectionType,
     destructureCollectionTypeObject,
     destructureImageComponent,
 } from '../../utils/app';
@@ -14,7 +13,6 @@ import { useRouter } from 'next/router';
 
 const Blogs = ({ content, data }) => {
     const router = useRouter();
-    const blogs = destructureCollectionType(data);
     const { title, text, button, slug } = content;
     const { href, text: buttonText } = button[0];
 
@@ -27,9 +25,9 @@ const Blogs = ({ content, data }) => {
             </div>
             <div className={`mt-10 gap-6 h-auto md:hidden overflow-x-auto 
             overscroll-x-contain 
-            ${blogs.length > 1 ? `flex pr-20 w-screen pb-4` : `block`}`}>
+            ${data.length > 1 ? `flex pr-20 w-screen pb-4` : `block`}`}>
                 {
-                    blogs.map((blog, index) => {
+                    data.map((blog, index) => {
                         const { title, img, date } =
                             destructureCollectionTypeObject(blog);
                         const { url, alt } = destructureImageComponent(img);
@@ -54,12 +52,12 @@ const Blogs = ({ content, data }) => {
                 }
             </div>
             <div className={`mt-10 md:flex md:mt-0 
-            ${blogs.length ? `md:basis-7/12 hidden` : `md:basis-5/12 px-10 md:p-0`}`}>
+            ${data.length ? `md:basis-7/12 hidden` : `md:basis-5/12 px-10 md:p-0`}`}>
                 {
-                    blogs.length ? (
+                    data.length ? (
                         <Carousel indicators={false} className={`relative`}>
                             {
-                                blogs.map((blog, index) => {
+                                data.map((blog, index) => {
                                     const { title, img } =
                                         destructureCollectionTypeObject(blog);
                                     const { url, alt } = destructureImageComponent(img);
