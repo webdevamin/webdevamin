@@ -21,7 +21,11 @@ const GET_GLOBAL = gql`
         }
       }
     }
-    pages(locale: $locale) {
+    pages(
+      locale: $locale
+      sort: "sort:asc"
+      filters: { hide_link: { eq: false } }
+    ) {
       data {
         attributes {
           title
@@ -693,6 +697,8 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
       attributes {
         title
         href
+        sort
+        hide_link
         slug
         seo {
           title
@@ -749,6 +755,7 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
             slug
             subtitle
             text
+            summary
             button {
               href
               text
@@ -774,6 +781,17 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
             slug
             subtitle
             text
+          }
+          ... on ComponentLayoutsBlockSmallWithSubBlocks {
+            title
+            slug
+            subtitle
+            text
+            subblocks {
+              title
+              text
+              slug
+            }
           }
         }
       }

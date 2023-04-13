@@ -17,17 +17,17 @@ import Hero from '../components/Home/Hero'
 
 const Index = ({ pageData, projectsData, blogsData,
   testimonialsData, techData }) => {
-  const { data, globalData } = pageData;
+  const { globalData } = pageData;
   const projects = destructureCollectionType(projectsData.projects);
   const blogs = destructureCollectionType(blogsData.blogs);
   const testimonials = destructureCollectionType(testimonialsData.testimonials);
   const techs = destructureCollectionType(techData.teches);
   const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
-  const { blogsGlobal, pages, services, socials,
+  const { blogs: blogsGlobal, pages, services, socials,
     regions, contactblock } = globalData;
   const { seo, blocks, alternates, localepages } = page;
-
+  
   return (
     <>
       <Seo seo={seo} alternates={alternates} />
@@ -35,24 +35,21 @@ const Index = ({ pageData, projectsData, blogsData,
       md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 
       3xl:bg-[center_-3rem]`}>
         <Header pages={pages} localepages={localepages} />
-        <Hero content={blocks.find(block => block.slug === `hero`)} socialsRaw={socials} />
+        <Hero content={blocks.find(block => block.slug === `hero`)}
+         socialsRaw={socials} />
       </div>
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)}
           techs={techs} />
-
         <Projects content={blocks.find(block => block.slug === `projects`)}
           data={projects} />
-
         <Blogs content={blocks.find(block => block.slug === `blogs`)}
           data={blogs} />
-
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)}
           data={testimonials} />
-
-        {/* <Contact content={contactblock} />
-        <Footer servicesRaw={services} blogsRaw={blogs}
-          socialsRaw={socials} regionsRaw={regions} /> */}
+        <Contact content={contactblock} />
+        <Footer servicesRaw={services} blogsRaw={blogsGlobal}
+          socialsRaw={socials} regionsRaw={regions} />
       </PageLayout>
     </>
   )

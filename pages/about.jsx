@@ -2,10 +2,10 @@ import HeroOne from '../components/Heroes/HeroOne'
 import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
 import { getData } from '../graphql/api';
-import { GET_ABOUTPAGE, GET_SERVICES } from '../graphql/queries'
+import { GET_SERVICES, GET_PAGE } from '../graphql/queries';
 import {
     destructureCollectionType, destructureCollectionTypeObject,
-    destructureSingleType, destructureImageComponent
+    destructureImageComponent
 } from '../utils/app';
 import PageLayout from '../components/Layouts/PageLayout'
 import BlockLayoutOne from '../components/Layouts/BlockLayoutOne';
@@ -19,37 +19,38 @@ import Footer from '../components/Layouts/Footer';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
 const About = ({ pageData, servicesData }) => {
-    const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, services: servicesGlobal,
-        navigation, regions } = globalData;
-    const { aboutpage } = data;
+    const { globalData } = pageData;
+    const page = destructureCollectionTypeObject(pageData.data.pages, true);
+    const { seo, blocks, alternates, localepages } = page;
     const services = destructureCollectionType(servicesData.services);
-    const { seo, alternates, localepages, hero, expertise, who, why, what }
-        = destructureSingleType(aboutpage);
 
-    const { title: xpTitle, subtitle: xpSubtitle, slug: xpSlug } = expertise;
+    const { blogs, socials, contactblock,
+        services: servicesGlobal, regions, pages } = globalData;
+
+    const { title: xpTitle, subtitle: xpSubtitle, slug: xpSlug } = blocks[1];
 
     const { title: whoTitle, text: whoText, slug: whoSlug,
         img: whoImg, button: whoButton,
-        summary: whoSummary } = who;
+        summary: whoSummary } = blocks[2];
 
     const { url: whoUrl, objectFit: whoObjFit, width: whoWidth,
         height: whoHeight, alt: whoAlt } = destructureImageComponent(whoImg);
 
     const { title: whyTitle, text: whyText,
-        img: whyImg, slug: whySlug, summary: whySummary } = why;
+        img: whyImg, slug: whySlug, summary: whySummary } = blocks[3];
 
     const { url: whyUrl, objectFit: whyObjFit, width: whyWidth,
         height: whyHeight, alt: whyAlt } = destructureImageComponent(whyImg);
 
     const { title: whatTitle, subtitle: whatSubtitle,
-        text: whatText, subBlock, slug: whatSlug } = what;
+        text: whatText, subblocks, slug: whatSlug } = blocks[4];
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
-            <HeroOne content={hero} socialsRaw={socials} />
+            <Header pages={pages} localepages={localepages} />
+            <HeroOne content={blocks.find(block => block.slug === `hero`)}
+                socialsRaw={socials} />
             <PageLayout>
                 <BlockLayoutOne title={xpSlug}>
                     <div className={`text-center`}>
@@ -121,9 +122,8 @@ const About = ({ pageData, servicesData }) => {
                     lg:mt-12 xl:mt-0`}>
                         <Accordion>
                             {
-                                subBlock.map((block, index) => {
-                                    const { title, text, image, alt } = block;
-                                    const { url } = destructureSingleType(image)
+                                subblocks.map((subblock, index) => {
+                                    const { title, text, image } = subblock;
 
                                     return (
                                         <Accordion.Panel key={index}>
@@ -134,15 +134,6 @@ const About = ({ pageData, servicesData }) => {
                                                 <div className={`text-left text-sm lg:text-base`}>
                                                     {text}
                                                 </div>
-                                                {
-                                                    url && (
-                                                        <div className={`mt-8`}>
-                                                            <Image src={url} alt={alt}
-                                                                objectFit={`cover`}
-                                                                width={700} height={300} />
-                                                        </div>
-                                                    )
-                                                }
                                             </Accordion.Content>
                                         </Accordion.Panel>
                                     )
@@ -162,7 +153,7 @@ const About = ({ pageData, servicesData }) => {
 export default About
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_ABOUTPAGE, { locale: [locale] });
+    const pageData = await getData(GET_PAGE, { "slug": "about", "locale": [locale] });
     const servicesData = await getData(GET_SERVICES, { locale: [locale] }, false);
 
     return {
