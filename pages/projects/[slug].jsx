@@ -37,7 +37,7 @@ const Project = ({ data }) => {
     const { title, description, seo, slug,
         link, alt, imgTwo, technologies, descriptionText,
         technologiesText, alternates, localepages } = projectForCurrentLang;
-    const { blogs, contactblock, services, socials, navigation, regions } = globalData;
+    const { blogs, contactblock, services, socials, pages, regions } = globalData;
     const button = [];
 
     button.push({
@@ -59,7 +59,7 @@ const Project = ({ data }) => {
         <>
             <Seo seo={{ title, description: description, canonical: seo.canonical }}
                 alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
+            <Header pages={pages} localepages={localepages} />
             <HeroOne content={heroContent} socialsRaw={socials}
                 externalLink={link ? true : false} disableImgSpace />
             <PageLayout>

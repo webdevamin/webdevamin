@@ -1,7 +1,8 @@
 import React from 'react'
 import { getData } from '../../graphql/api';
 import { GET_REGIONS, GET_REGION } from '../../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent } from '../../utils/app';
+import { destructureCollectionType, destructureCollectionTypeObject, 
+    destructureImageComponent } from '../../utils/app';
 import { useRouter } from 'next/router';
 import Seo from '../../components/Seo';
 import Header from '../../components/Layouts/Header';
@@ -24,12 +25,12 @@ const Region = ({ data }) => {
             (region) => region.attributes.locale === locale));
 
     const { seo, hero, alternates, contents, localepages } = regionForCurrentLang;
-    const { blogs, navigation, services, socials, regions, contactblock } = globalData;
+    const { blogs, pages, services, socials, regions, contactblock } = globalData;
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
+            <Header pages={pages} localepages={localepages} />
             <HeroOne content={hero} socialsRaw={socials} smallerTitle />
             <PageLayout>
                 {
@@ -37,12 +38,14 @@ const Region = ({ data }) => {
                         const { title, slug, summary, text, subtitle,
                             position, img, button } = content;
 
-                        const { url, objectFit, width, height, alt } = destructureImageComponent(img);
+                        const { url, objectFit, width, height, alt } 
+                        = destructureImageComponent(img);
                         const { href, text: buttonText } = button[0] || {};
 
                         return (
                             position === `none` ? (
-                                <section className={`xl:mx-28 xl:text-center block_container`} key={i}>
+                                <section className={`xl:mx-28 xl:text-center 
+                                block_container`} key={i}>
                                     <Heading title={title} subtitle={subtitle} />
                                     <div dangerouslySetInnerHTML={{ __html: text }} />
                                 </section>
@@ -69,7 +72,8 @@ const Region = ({ data }) => {
                                         <div dangerouslySetInnerHTML={{ __html: text }} />
                                         {
                                             button && (
-                                                <ButtonOne href={href} text={buttonText} wFit />
+                                                <ButtonOne href={href} 
+                                                text={buttonText} wFit />
                                             )
                                         }
                                     </div>
@@ -79,7 +83,8 @@ const Region = ({ data }) => {
                     })
                 }
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
+                <Footer servicesRaw={services} blogsRaw={blogs} 
+                socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

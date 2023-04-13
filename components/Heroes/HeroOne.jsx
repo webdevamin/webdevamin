@@ -85,11 +85,14 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                                 const { href, text } = btn;
                                 const isOdd = index % 2 !== 0 ? true : false;
 
-                                return (
-                                    <ButtonOne key={index} href={ctaLink || href} text={text}
-                                        outline={isOdd} noMargin
-                                        classes={`sm:px-14 md:text-center`} external={externalLink} />
-                                )
+                                if (href) {
+                                    return (
+                                        <ButtonOne key={index} href={ctaLink || href}
+                                            text={text} outline={isOdd} noMargin
+                                            external={externalLink}
+                                            classes={`sm:px-14 md:text-center`} />
+                                    )
+                                }
                             })
                         }
                     </div>

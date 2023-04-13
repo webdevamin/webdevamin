@@ -3,7 +3,8 @@ import Header from '../../components/Layouts/Header';
 import Seo from '../../components/Seo';
 import { getData } from '../../graphql/api';
 import { GET_BLOG, GET_BLOGS } from '../../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent } from '../../utils/app';
+import { destructureCollectionType, destructureCollectionTypeObject, 
+    destructureImageComponent } from '../../utils/app';
 import { useRouter } from 'next/router';
 import PageLayout from '../../components/Layouts/PageLayout';
 import Contact from '../../components/Contact';
@@ -17,7 +18,7 @@ const Blog = ({ data }) => {
     const { data: blogData, globalData } = data;
     const blog = destructureCollectionTypeObject(blogData.blogs, true);
     const { title, description, localepages, seo, alternates, slug, img, date, text } = blog;
-    const { blogs, contactblock, navigation, services, socials, regions } = globalData;
+    const { blogs, contactblock, pages, services, socials, regions } = globalData;
     const button = [];
 
     button.push({
@@ -36,7 +37,7 @@ const Blog = ({ data }) => {
         <div>
             <Seo seo={{ title, description: description, canonical: seo.canonical }}
                 alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
+            <Header pages={pages} localepages={localepages} />
             <HeroTwo content={heroContent} socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 

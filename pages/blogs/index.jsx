@@ -1,9 +1,9 @@
 import Header from '../../components/Layouts/Header'
 import { getData } from '../../graphql/api';
-import { GET_BLOGS, GET_BLOGSPAGE } from '../../graphql/queries';
+import { GET_BLOGS, GET_PAGE } from '../../graphql/queries';
 import {
     destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent, destructureSingleType
+    destructureImageComponent
 } from '../../utils/app';
 import Seo from '../../components/Seo';
 import PageLayout from '../../components/Layouts/PageLayout';
@@ -19,13 +19,16 @@ import NoContent from '../../components/NoContent';
 const Blogs = ({ pageData, blogsData }) => {
     const router = useRouter();
 
-    const { data, globalData } = pageData;
-    const { blogs: blogsGlobal, socials, contactblock, navigation,
-        services: servicesGlobal, regions } = globalData;
-    const { blogspage } = data;
-    const { seo, alternates, hero, localepages, all, noBlogs } = destructureSingleType(blogspage);
-    const { title, text } = noBlogs;
+    const { globalData } = pageData;
+    const page = destructureCollectionTypeObject(pageData.data.pages, true);
+    const { seo, blocks, alternates, localepages } = page;
+    const { blogs: globalBlogs, pages, services, socials,
+        regions, contactblock } = globalData;
 
+    const { title: titleHeading, subtitle: subtitleHeading,
+        slug: slugHeading } = blocks[1];
+
+    const { title: titleNoContent, text: textNoContent } = blocks[2];
     const blogs = destructureCollectionType(blogsData.blogs);
 
     return (
@@ -34,12 +37,12 @@ const Blogs = ({ pageData, blogsData }) => {
             {
                 blogs.length ? (
                     <>
-                        <Header nav={navigation} localepages={localepages} />
-                        <HeroOne content={hero} socialsRaw={socials}
-                            ctaLink={`#${all.slug}`} />
+                        <Header pages={pages} localepages={localepages} />
+                        <HeroOne content={blocks.find(block => block.slug === `hero`)}
+                            socialsRaw={socials} ctaLink={`#${slugHeading}`} />
                         <PageLayout>
-                            <section id={all.slug} className={`block_container`}>
-                                <Heading title={all.title} subtitle={all.subtitle} />
+                            <section id={slugHeading} className={`block_container`}>
+                                <Heading title={titleHeading} subtitle={subtitleHeading} />
                                 <div className={`overflow-x-auto overscroll-x-contain gap-6 
                             pb-6 md:pb-0 md:pr-0 md:w-full md:grid 
                             md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 
@@ -66,11 +69,12 @@ const Blogs = ({ pageData, blogsData }) => {
                                 </div>
                             </section>
                             <Contact content={contactblock} />
-                            <Footer servicesRaw={servicesGlobal} blogsRaw={blogsGlobal}
+                            <Footer servicesRaw={services} blogsRaw={globalBlogs}
                                 socialsRaw={socials} regionsRaw={regions} />
                         </PageLayout>
                     </>
-                ) : <NoContent title={title} text={text} locale={router.locale} wholePage />
+                ) : <NoContent title={titleNoContent} text={textNoContent}
+                    locale={router.locale} wholePage />
             }
         </>
     )
@@ -79,7 +83,7 @@ const Blogs = ({ pageData, blogsData }) => {
 export default Blogs
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_BLOGSPAGE, { locale: [locale] });
+    const pageData = await getData(GET_PAGE, { "slug": "blogs", "locale": [locale] });
     const blogsData = await getData(GET_BLOGS, { locale: [locale] }, false);
 
     return {

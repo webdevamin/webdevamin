@@ -1,9 +1,9 @@
 import Header from '../../components/Layouts/Header'
 import { getData } from '../../graphql/api';
-import { GET_PROJECTS, GET_PROJECTSPAGE } from '../../graphql/queries';
+import { GET_PAGE, GET_PROJECTS } from '../../graphql/queries';
 import {
     destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent, destructureSingleType
+    destructureImageComponent
 } from '../../utils/app';
 import Seo from '../../components/Seo';
 import PageLayout from '../../components/Layouts/PageLayout';
@@ -18,22 +18,26 @@ import HeroOne from '../../components/Heroes/HeroOne';
 const Projects = ({ pageData, projectsData }) => {
     const router = useRouter();
 
-    const { data, globalData } = pageData;
-    const { blogs, socials, contactblock, navigation, services: servicesGlobal, regions } = globalData;
-    const { projectspage } = data;
-    const { seo, alternates, localepages, hero, all } = destructureSingleType(projectspage);
+    const { globalData } = pageData;
+    const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
+    const { blogs, pages, services, socials,
+        regions, contactblock } = globalData;
+
+    const { seo, blocks, alternates, localepages } = page;
     const projects = destructureCollectionType(projectsData.projects);
 
+    const { slug, subtitle, title } = blocks[1];
+    
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
-            <HeroOne content={hero} socialsRaw={socials}
-                ctaLink={`#${all.slug}`} />
+            <Header pages={pages} localepages={localepages} />
+            <HeroOne content={blocks.find(block => block.slug === `hero`)}
+                socialsRaw={socials} ctaLink={`#${slug}`} />
             <PageLayout>
-                <section id={all.slug} className={`block_container`}>
-                    <Heading title={all.title} subtitle={all.subtitle} />
+                <section id={slug} className={`block_container`}>
+                    <Heading title={title} subtitle={subtitle} />
                     <div className={`overflow-x-auto overscroll-x-contain gap-6 
                     pb-6 md:pb-0 md:pr-0 md:w-full md:grid 
                     md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 
@@ -60,7 +64,7 @@ const Projects = ({ pageData, projectsData }) => {
                     </div>
                 </section>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
+                <Footer servicesRaw={services} blogsRaw={blogs}
                     socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
@@ -70,7 +74,7 @@ const Projects = ({ pageData, projectsData }) => {
 export default Projects
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_PROJECTSPAGE, { locale: [locale] });
+    const pageData = await getData(GET_PAGE, { "slug": "projects", "locale": [locale] });
     const projectsData = await getData(GET_PROJECTS, { locale: [locale] }, false);
 
     return {

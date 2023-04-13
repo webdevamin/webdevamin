@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { destructureImageComponent, destructureSingleType, destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
+import { destructureImageComponent, destructureSingleType, 
+    destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
 
 const Header = ({ pages, localepages }) => {
     const [active, setActive] = useState(false);

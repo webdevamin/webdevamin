@@ -1,8 +1,8 @@
 import Header from '../components/Layouts/Header'
 import PageLayout from '../components/Layouts/PageLayout'
 import { getData } from '../graphql/api';
-import { GET_CONTACTPAGE } from '../graphql/queries';
-import { destructureSingleType } from '../utils/app';
+import { GET_PAGE } from '../graphql/queries';
+import { destructureCollectionTypeObject } from '../utils/app';
 import Seo from '../components/Seo';
 import Heading from '../components/Heading';
 import { useRouter } from 'next/router';
@@ -18,18 +18,18 @@ const initForm = {
 
 const Contact = ({ pageData }) => {
     const router = useRouter();
+
     const [form, setForm] = useState(initForm);
     const [afterSubmit, setAfterSubmit] = useState(null);
 
-    const { data, globalData } = pageData;
-    const { blogs, services, socials, navigation, regions } = globalData;
-    const { contactpage } = data;
+    const { globalData } = pageData;
+    const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
-    const { seo, alternates, hero, localepages, form: formBlock, successMessage,
-        clientErrorMessage, serverErrorMessage }
-        = destructureSingleType(contactpage);
+    const { blogs, pages, services, socials, regions } = globalData;
 
-    const { title, subtitle, slug, text } = formBlock;
+    const { seo, blocks, alternates, localepages } = page;
+
+    const { title, slug, subtitle, text } = blocks[4];
 
     const formTexts = {
         name: router.locale === `en` ? `Name` : `Naam`,
@@ -41,13 +41,13 @@ const Contact = ({ pageData }) => {
     const initAfterSubmit = (code) => {
         switch (code) {
             case 400:
-                setAfterSubmit(clientErrorMessage);
+                setAfterSubmit(blocks.find(block => block.title === `clienterror`));
                 break;
             case 500:
-                setAfterSubmit(serverErrorMessage);
+                setAfterSubmit(blocks.find(block => block.title === `servererror`));
                 break;
             default:
-                setAfterSubmit(successMessage);
+                setAfterSubmit(blocks.find(block => block.title === `success`));
                 break;
         }
     }
@@ -81,8 +81,9 @@ const Contact = ({ pageData }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header nav={navigation} localepages={localepages} />
-            <HeroOne content={hero} socialsRaw={socials} />
+            <Header pages={pages} localepages={localepages} />
+            <HeroOne content={blocks.find(block => block.slug === `hero`)}
+                socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`block_container sm:text-center`}>
                     <Heading title={title} subtitle={subtitle} />
@@ -136,7 +137,7 @@ const Contact = ({ pageData }) => {
 export default Contact
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_CONTACTPAGE, { locale: [locale] });
+    const pageData = await getData(GET_PAGE, { "slug": "contact", "locale": [locale] });
 
     return {
         props: { pageData },
