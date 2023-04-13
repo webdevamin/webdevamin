@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Seo from '../components/Seo'
-import { GET_SERVER_ERRORPAGE } from '../graphql/queries';
+import { GET_PAGE } from '../graphql/queries';
 import { destructureSingleType } from '../utils/app'
 import { getData } from '../graphql/api';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
-const Error500 = ({ data }) => {
-    const { seo, alternates, block } = destructureSingleType(data.serverErrorpage);
-    const { title, text, img, button } = block;
+const Error500 = ({ pageData }) => {
+    const { seo, blocks, alternates } = pageData.pages.data[0].attributes;
+    const { button, img, text, title } = blocks[0];
     const { href, text: buttonText } = button[0];
     const { image, width, height, objectFit, alt } = img;
     const { url } = destructureSingleType(image);
@@ -37,9 +37,11 @@ const Error500 = ({ data }) => {
 export default Error500
 
 export async function getStaticProps({ locale }) {
-    const data = await getData(GET_SERVER_ERRORPAGE, { locale: [locale] }, false);
+    const pageData = await getData(GET_PAGE,
+        { "slug": "server-error", "locale": [locale] },
+        false);
 
     return {
-        props: { data },
+        props: { pageData },
     }
 }
