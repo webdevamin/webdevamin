@@ -24,7 +24,8 @@ const GET_GLOBAL = gql`
     pages(
       locale: $locale
       sort: "sort:asc"
-      filters: { hide_link: { eq: false } }
+      filters: { hide_link: { eq: false } }, 
+      pagination: { limit: 100 }
     ) {
       data {
         attributes {
@@ -36,7 +37,8 @@ const GET_GLOBAL = gql`
     blogs(
       locale: $locale
       filters: { showcase: { eq: true } }
-      sort: "date:desc"
+      sort: "date:desc", 
+      pagination: { limit: 100 }
     ) {
       data {
         attributes {
@@ -59,7 +61,7 @@ const GET_GLOBAL = gql`
         }
       }
     }
-    services(locale: $locale) {
+    services(locale: $locale, pagination: { limit: 100 }) {
       data {
         attributes {
           title
@@ -71,7 +73,7 @@ const GET_GLOBAL = gql`
         }
       }
     }
-    socials {
+    socials(pagination: { limit: 100 }) {
       data {
         attributes {
           title
@@ -83,7 +85,7 @@ const GET_GLOBAL = gql`
         }
       }
     }
-    regions(locale: $locale) {
+    regions(locale: $locale, pagination: { limit: 100 }) {
       data {
         attributes {
           name
@@ -233,7 +235,7 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
 
 const GET_SERVICES = gql`
   query Services($locale: I18NLocaleCode) {
-    services(locale: $locale) {
+    services(locale: $locale, pagination: { limit: 100 }) {
       data {
         attributes {
           title
@@ -252,7 +254,7 @@ const GET_SERVICES = gql`
 
 const GET_PROJECTS = gql`
   query Projects($locale: I18NLocaleCode) {
-    projects(locale: $locale) {
+    projects(locale: $locale, pagination: { limit: 100 }) {
       data {
         id
         attributes {
@@ -288,7 +290,7 @@ const GET_PROJECTS = gql`
 
 const GET_BLOGS = gql`
   query Blogs($locale: I18NLocaleCode) {
-    blogs(locale: $locale) {
+    blogs(locale: $locale, pagination: { limit: 100 }) {
       data {
         attributes {
           alternates {
@@ -324,7 +326,7 @@ const GET_BLOGS = gql`
 
 const GET_REGIONS = gql`
   query Regions($locale: I18NLocaleCode) {
-    regions(locale: $locale) {
+    regions(locale: $locale, pagination: { limit: 100 }) {
       data {
         id
         attributes {
@@ -398,7 +400,7 @@ const GET_REGIONS = gql`
 
 const GET_TESTIMONIALS = gql`
 query Pages($locale: I18NLocaleCode) {
-  testimonials(locale: $locale) {
+  testimonials(locale: $locale, pagination: { limit: 100 }) {
     data {
       attributes {
         name
@@ -413,7 +415,7 @@ query Pages($locale: I18NLocaleCode) {
 
 const GET_TECHS = gql`
 query Techs {
-  teches {
+  teches(pagination: { limit: 100 }) {
     data {
       attributes {
         name
