@@ -153,7 +153,7 @@ const Services = ({ pageData, servicesData }) => {
 export default Services
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_PAGE, { "slug": "about", "locale": [locale] });
+    const pageData = await getData(GET_PAGE, { "slug": "services", "locale": [locale] });
     const servicesData = await getData(GET_SERVICES, { locale: [locale] }, false);
 
     return {
