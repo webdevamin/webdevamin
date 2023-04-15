@@ -18,7 +18,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Layouts/Footer';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
-const About = ({ pageData, servicesData }) => {
+const Services = ({ pageData, servicesData }) => {
     const { globalData } = pageData;
     const page = destructureCollectionTypeObject(pageData.data.pages, true);
     const { seo, blocks, alternates, localepages } = page;
@@ -150,7 +150,7 @@ const About = ({ pageData, servicesData }) => {
     )
 }
 
-export default About
+export default Services
 
 export async function getStaticProps({ locale }) {
     const pageData = await getData(GET_PAGE, { "slug": "about", "locale": [locale] });

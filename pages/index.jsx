@@ -27,7 +27,7 @@ const Index = ({ pageData, projectsData, blogsData,
   const { blogs: blogsGlobal, pages, services, socials,
     regions, contactblock } = globalData;
   const { seo, blocks, alternates, localepages } = page;
-  
+
   return (
     <>
       <Seo seo={seo} alternates={alternates} />
@@ -36,7 +36,7 @@ const Index = ({ pageData, projectsData, blogsData,
       3xl:bg-[center_-3rem]`}>
         <Header pages={pages} localepages={localepages} />
         <Hero content={blocks.find(block => block.slug === `hero`)}
-         socialsRaw={socials} />
+          socialsRaw={socials} />
       </div>
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)}
