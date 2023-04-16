@@ -438,6 +438,21 @@ query Techs {
 }
 `;
 
+const GET_TYPES = gql`
+query Types($locale: I18NLocaleCode) {
+  types(locale: $locale, pagination: { limit: 100 }, sort: "sort:asc"){
+    data {
+      attributes {
+        name
+        sort
+        bgColor
+        color
+      }
+    }
+  }
+}
+`;
+
 const GET_PROJECT = gql`
   query Projects($locale: I18NLocaleCode, $slug: String) {
     projects(locale: $locale, filters: { slug: { eq: $slug } }) {
@@ -702,6 +717,7 @@ export {
   GET_PROJECTS,
   GET_BLOGS,
   GET_REGIONS,
+  GET_TYPES,
   GET_TESTIMONIALS,
   GET_TECHS,
   GET_PROJECT,

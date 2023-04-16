@@ -9,19 +9,21 @@ import Contact from '../components/Contact'
 import Footer from '../components/Layouts/Footer'
 import {
   GET_TECHS, GET_PAGE, GET_PROJECTS, GET_BLOGS,
-  GET_TESTIMONIALS
+  GET_TESTIMONIALS,
+  GET_TYPES
 } from '../graphql/queries';
 import { getData } from '../graphql/api';
 import { destructureCollectionType, destructureCollectionTypeObject } from '../utils/app';
 import Hero from '../components/Home/Hero'
 
 const Index = ({ pageData, projectsData, blogsData,
-  testimonialsData, techData }) => {
+  testimonialsData, techData, typesData }) => {
   const { globalData } = pageData;
   const projects = destructureCollectionType(projectsData.projects);
   const blogs = destructureCollectionType(blogsData.blogs);
   const testimonials = destructureCollectionType(testimonialsData.testimonials);
   const techs = destructureCollectionType(techData.teches);
+  const types = destructureCollectionType(typesData.types);
   const page = destructureCollectionTypeObject(pageData.data.pages, true);
 
   const { blogs: blogsGlobal, pages, services, socials,
@@ -36,7 +38,7 @@ const Index = ({ pageData, projectsData, blogsData,
       3xl:bg-[center_-3rem]`}>
         <Header pages={pages} localepages={localepages} />
         <Hero content={blocks.find(block => block.slug === `hero`)}
-          socialsRaw={socials} />
+          socialsRaw={socials} types={types}/>
       </div>
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)}
@@ -63,8 +65,9 @@ export async function getStaticProps({ locale }) {
   const blogsData = await getData(GET_BLOGS, { locale: [locale] }, false);
   const testimonialsData = await getData(GET_TESTIMONIALS, { locale: [locale] }, false);
   const techData = await getData(GET_TECHS, { locale: [locale] }, false);
+  const typesData = await getData(GET_TYPES, { locale: [locale] }, false);
 
   return {
-    props: { pageData, projectsData, blogsData, testimonialsData, techData },
+    props: { pageData, projectsData, blogsData, testimonialsData, techData, typesData },
   }
 }

@@ -10,8 +10,9 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import Marquee from "react-fast-marquee";
 
-const Hero = ({ content, socialsRaw }) => {
+const Hero = ({ content, socialsRaw, types }) => {
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button, img } = content;
     const { url, objectFit, width, height, alt } = destructureImageComponent(img);
@@ -75,6 +76,26 @@ const Hero = ({ content, socialsRaw }) => {
                             </div>
                         )
                     }
+                    <Marquee gradient={false} className={`mt-5 max-w-2xl marque 
+                    lg:mt-8 lg:mb-14`} pauseOnHover>
+                        {
+                            types.map((type, i) => {
+                                const { name, bgColor, color }
+                                    = destructureCollectionTypeObject(type);
+
+                                return (
+                                    <span key={i} className={`font-semibold rounded-xl 
+                                    px-5 py-1 mr-4 shadow my-1 ${!color && `text-dark`}`}
+                                        style={{
+                                            backgroundColor: `${bgColor}`,
+                                            color: `${color}`
+                                        }}>
+                                        {name}
+                                    </span>
+                                )
+                            })
+                        }
+                    </Marquee>
                     <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
                         {
                             button.map((btn, index) => {
