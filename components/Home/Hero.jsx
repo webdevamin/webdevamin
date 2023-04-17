@@ -80,16 +80,12 @@ const Hero = ({ content, socialsRaw, types }) => {
                     lg:mt-8 lg:mb-14`} pauseOnHover>
                         {
                             types.map((type, i) => {
-                                const { name, bgColor, color }
-                                    = destructureCollectionTypeObject(type);
+                                const { name } = destructureCollectionTypeObject(type);
 
                                 return (
-                                    <span key={i} className={`font-semibold rounded-xl 
-                                    px-5 py-1 mr-4 shadow my-1 ${!color && `text-dark`}`}
-                                        style={{
-                                            backgroundColor: `${bgColor}`,
-                                            color: `${color}`
-                                        }}>
+                                    <span key={i} className={`font-medium rounded-xl 
+                                    px-5 py-1 mr-4 my-1 shadow text-dark border 
+                                    border-dark border-opacity-5`}>
                                         {name}
                                     </span>
                                 )
