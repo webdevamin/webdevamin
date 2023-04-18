@@ -77,15 +77,15 @@ const Hero = ({ content, socialsRaw, types }) => {
                         )
                     }
                     <Marquee gradient={false} className={`mt-5 max-w-2xl marque 
-                    lg:mt-8 lg:mb-14`} pauseOnHover>
+                    lg:mt-8 lg:mb-14 pb-3 pt-3`} pauseOnHover>
                         {
                             types.map((type, i) => {
                                 const { name } = destructureCollectionTypeObject(type);
 
                                 return (
                                     <span key={i} className={`font-medium rounded-xl 
-                                    px-5 py-1 mr-4 my-1 shadow text-dark border 
-                                    border-dark border-opacity-5`}>
+                                    px-5 py-1 mr-4 my-1 text-dark bg-light 
+                                    shadow-[6px_6px_12px_#d4d4d4,-6px_-6px_12px_#ffffff]`}>
                                         {name}
                                     </span>
                                 )

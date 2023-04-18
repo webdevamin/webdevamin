@@ -33,13 +33,9 @@ const Index = ({ pageData, projectsData, blogsData,
   return (
     <>
       <Seo seo={seo} alternates={alternates} />
-      <div className={`md:bg-banner_image md:bg-no-repeat 
-      md:bg-[center] md:bg-contain 2xl:bg-[center_-2rem] 
-      3xl:bg-[center_-3rem]`}>
-        <Header pages={pages} localepages={localepages} />
-        <Hero content={blocks.find(block => block.slug === `hero`)}
-          socialsRaw={socials} types={types}/>
-      </div>
+      <Header pages={pages} localepages={localepages} />
+      <Hero content={blocks.find(block => block.slug === `hero`)}
+        socialsRaw={socials} types={types} />
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)}
           techs={techs} />

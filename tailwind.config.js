@@ -43,9 +43,6 @@ module.exports = {
         bold_l: "-10px 10px",
         zero: "0px 0px",
       },
-      backgroundImage: {
-        banner_image: "url('/images/bg_banner.jpg')",
-      },
     },
   },
   plugins: [require("flowbite/plugin")],
