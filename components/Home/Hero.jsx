@@ -85,7 +85,7 @@ const Hero = ({ content, socialsRaw, types }) => {
                                 return (
                                     <span key={i} className={`font-medium rounded-xl 
                                     px-5 py-1 mr-4 my-1 text-dark bg-light 
-                                    shadow-[6px_6px_12px_#d4d4d4,-6px_-6px_12px_#ffffff]`}>
+                                    shadow-[2px_2px_4px_#d4d4d4,-2px_-2px_4px_#ffffff]`}>
                                         {name}
                                     </span>
                                 )
