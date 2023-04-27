@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Heading = ({ title, subtitle, titleClasses, split, noSubtitle }) => {
     const { ref, inView } = useInView({
-        threshold: 1, triggerOnce: false
+        threshold: 0, triggerOnce: false
     });
 
     if (noSubtitle) {
@@ -25,7 +25,7 @@ const Heading = ({ title, subtitle, titleClasses, split, noSubtitle }) => {
             ${!inView && `opacity-40 translate-y-10`}`} ref={ref}>
                 {split[0]}
                 <div className={`xl:mt-2 2xl:mt-3 3xl:mt-4 
-    inline-block lg:block font_mohave`}>
+                inline-block lg:block font_mohave`}>
                     &{split[1]}
                 </div>
             </h2>

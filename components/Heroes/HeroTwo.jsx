@@ -4,13 +4,8 @@ import Icon from '../Icon'
 import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import { useInView } from 'react-intersection-observer';
 
 const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
-    const { ref, inView } = useInView({
-        threshold: 1, triggerOnce: false
-    });
-
     const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
     const { title, text, button } = content;
     const { href, text: buttonText } = button[0];
@@ -26,10 +21,7 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
                 </div>
                 <h1 className={`bg-transparent opacity-100 text-4xl mb-7 
                     font-bold lg:text-5xl xl:text-6xl tracking-tight 
-                    transition-all duration-500 ease-linear
-                    lg:mb-9 xl:mb-10 2xl:mb-12 2xl:text-7xl 3xl:text-8xl 
-                    ${inView && `is-visible opacity-100 translate-y-0`}
-                    ${!inView && `opacity-40 translate-y-10`}`} ref={ref}>
+                    lg:mb-9 xl:mb-10 2xl:mb-12 2xl:text-7xl 3xl:text-8xl`}>
                     {title}
                 </h1>
                 <div dangerouslySetInnerHTML={{ __html: text }} className={`larger_p`} />
