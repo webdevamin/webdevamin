@@ -2,6 +2,7 @@ import React from 'react'
 import { destructureSingleType } from '../utils/app';
 import ButtonTwo from './Buttons/ButtonTwo'
 import BlockLayoutThree from './Layouts/BlockLayoutThree'
+import Heading from './Heading';
 
 const Contact = ({ content }) => {
     const { title, text, button } = destructureSingleType(content);
@@ -11,9 +12,7 @@ const Contact = ({ content }) => {
         <BlockLayoutThree title={`contact`}>
             <div className={`text-center max-w-2xl mx-auto`}>
                 <div>
-                    <h2 className={`text-white`}>
-                        {title}
-                    </h2>
+                    <Heading title={title} noSubtitle titleClasses={`text-white`} />
                     <div className={`text_lg_white_semibold`}
                         dangerouslySetInnerHTML={{ __html: text }} />
                 </div>

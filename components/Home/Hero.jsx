@@ -76,8 +76,8 @@ const Hero = ({ content, socialsRaw, types }) => {
                             </div>
                         )
                     }
-                    <Marquee gradient={false} className={`mt-5 max-w-2xl marque 
-                    lg:mt-8 lg:mb-14 pb-3 pt-3`} pauseOnHover>
+                    <Marquee gradient={false} className={`mt-3 max-w-2xl marque 
+                    lg:mt-5 lg:mb-10 py-3`} pauseOnHover>
                         {
                             types.map((type, i) => {
                                 const { name } = destructureCollectionTypeObject(type);
@@ -92,7 +92,7 @@ const Hero = ({ content, socialsRaw, types }) => {
                             })
                         }
                     </Marquee>
-                    <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
+                    <div className={`flex flex-col gap-4 lg:flex-row mt-7 lg:mt-10`}>
                         {
                             button.map((btn, index) => {
                                 const { href, text } = btn;

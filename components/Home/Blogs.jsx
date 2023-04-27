@@ -10,6 +10,7 @@ import Image from 'next/image';
 import ButtonOne from '../Buttons/ButtonOne';
 import NoContent from '../NoContent';
 import { useRouter } from 'next/router';
+import Heading from '../Heading';
 
 const Blogs = ({ content, data }) => {
     const router = useRouter();
@@ -19,7 +20,7 @@ const Blogs = ({ content, data }) => {
     return (
         <BlockLayoutTwo title={title} slug={slug} position={`right`}>
             <div className={`md:basis-5/12`}>
-                <h2>{title}</h2>
+                <Heading title={title} noSubtitle />
                 <div dangerouslySetInnerHTML={{ __html: text }} />
                 <ButtonOne href={href} text={buttonText} wFit />
             </div>

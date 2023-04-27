@@ -7,6 +7,7 @@ import {
     destructureImageComponent,
 } from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
+import Heading from '../Heading';
 
 const Projects = ({ content, data }) => {
     const { title, text, button, slug } = content;
@@ -15,7 +16,7 @@ const Projects = ({ content, data }) => {
     return (
         <BlockLayoutTwo title={title} slug={slug}>
             <div className={`md:basis-5/12`}>
-                <h2>{title}</h2>
+                <Heading noSubtitle title={title} />
                 <div dangerouslySetInnerHTML={{ __html: text }} />
                 <ButtonOne href={href} text={buttonText} wFit />
             </div>

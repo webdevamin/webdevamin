@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import React from 'react'
-import { destructureImageComponent, destructureCollectionTypeObject } from '../../utils/app';
+import {
+    destructureImageComponent,
+    destructureCollectionTypeObject
+} from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
+import Heading from '../Heading';
 
 const About = ({ content, techs }) => {
     const { title, text, subtitle, img, button } = content;
@@ -15,13 +19,7 @@ const About = ({ content, techs }) => {
             lg:justify-between xl:justify-evenly`}>
                 <div className={`mb-0 lg:self-start lg:pt-24 md:mb-4 
                 xl:pt-32 2xl:pt-44 2xl:text-right md:ml-3 lg:ml-0 lg:mb-0`}>
-                    <h2 className={`lg:mb-0`}>
-                        {splitTitle[0]}
-                        <div className={`xl:mt-2 2xl:mt-3 3xl:mt-4 
-                    inline-block lg:block font_mohave`}>
-                            &{splitTitle[1]}
-                        </div>
-                    </h2>
+                    <Heading split={[splitTitle[0], splitTitle[1]]} />
                     <div className={`hidden lg:flex gap-x-5 gap-y-3 mt-6 
                     justify-center md:justify-start 2xl:justify-end 
                     flex-wrap 2xl:mt-10 2xl:gap-x-6 2xl:gap-y-3`}>

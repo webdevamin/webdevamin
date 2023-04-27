@@ -42,7 +42,7 @@ module.exports = {
         bold_r_md: "7px 7px",
         bold_l: "-10px 10px",
         zero: "0px 0px",
-      },
+      }
     },
   },
   plugins: [require("flowbite/plugin")],

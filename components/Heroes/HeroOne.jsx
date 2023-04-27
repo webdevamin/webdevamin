@@ -10,6 +10,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import HeroHeading from './HeroHeading';
 
 const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace }) => {
@@ -31,22 +32,7 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                         alt={alt} objectFit={objectFit} className={`rounded-lg`} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
-                    <h1 className={`bg-transparent opacity-100 
-                    ${smallerTitle && `text-3xl mb-8 
-                    font-bold lg:text-4xl xl:text-5xl tracking-tight 
-                    2xl:text-6xl`}`}>
-                        {
-                            (Array.isArray(parsedTitle)) ? (
-                                <TypeAnimation
-                                    sequence={parsedTitle}
-                                    wrapper="div"
-                                    className='font_mohave'
-                                    cursor={true}
-                                    speed={60}
-                                />
-                            ) : (parsedTitle)
-                        }
-                    </h1>
+                    <HeroHeading title={parsedTitle} smallerTitle={smallerTitle}/>
                     <div className={`mb-8 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-theme h-[1px]`} />

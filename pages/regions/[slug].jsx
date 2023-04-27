@@ -1,8 +1,10 @@
 import React from 'react'
 import { getData } from '../../graphql/api';
 import { GET_REGIONS, GET_REGION } from '../../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, 
-    destructureImageComponent } from '../../utils/app';
+import {
+    destructureCollectionType, destructureCollectionTypeObject,
+    destructureImageComponent
+} from '../../utils/app';
 import { useRouter } from 'next/router';
 import Seo from '../../components/Seo';
 import Header from '../../components/Layouts/Header';
@@ -38,8 +40,8 @@ const Region = ({ data }) => {
                         const { title, slug, summary, text, subtitle,
                             position, img, button } = content;
 
-                        const { url, objectFit, width, height, alt } 
-                        = destructureImageComponent(img);
+                        const { url, objectFit, width, height, alt }
+                            = destructureImageComponent(img);
                         const { href, text: buttonText } = button[0] || {};
 
                         return (
@@ -53,18 +55,18 @@ const Region = ({ data }) => {
                                 <BlockLayoutTwo key={i} position={position}
                                     title={title} slug={slug}>
                                     <div className={`mb-8 md:mb-0 md:basis-10/12 xl:mr-8`}>
-                                        <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
-                                            {title}
-                                        </h2>
+                                        <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
+                                            <Heading title={title} />
+                                        </div>
                                         <Image src={url}
                                             objectFit={objectFit} alt={alt}
                                             width={width} height={height} />
                                     </div>
                                     <div className={`md:w-full 
                                     ${position === `right` ? `xl:ml-8` : `xl:mr-8`}`}>
-                                        <h2 className={`hidden md:block`}>
-                                            {title}
-                                        </h2>
+                                        <div className={`hidden md:block`}>
+                                            <Heading title={title} />
+                                        </div>
                                         <h3 className={`text-base sm:text-lg md:mb-4 
                                         md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
                                             {summary}
@@ -72,8 +74,8 @@ const Region = ({ data }) => {
                                         <div dangerouslySetInnerHTML={{ __html: text }} />
                                         {
                                             button && (
-                                                <ButtonOne href={href} 
-                                                text={buttonText} wFit />
+                                                <ButtonOne href={href}
+                                                    text={buttonText} wFit />
                                             )
                                         }
                                     </div>
@@ -83,8 +85,8 @@ const Region = ({ data }) => {
                     })
                 }
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} 
-                socialsRaw={socials} regionsRaw={regions} />
+                <Footer servicesRaw={services} blogsRaw={blogs}
+                    socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>
     )

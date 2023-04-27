@@ -17,8 +17,13 @@ const Blog = ({ data }) => {
     const router = useRouter();
     const { data: blogData, globalData } = data;
     const blog = destructureCollectionTypeObject(blogData.blogs, true);
-    const { title, description, localepages, seo, alternates, slug, img, date, text } = blog;
-    const { blogs, contactblock, pages, services, socials, regions } = globalData;
+
+    const { title, description, localepages, seo, alternates, 
+        slug, img, date, text } = blog;
+
+    const { blogs, contactblock, pages, services, 
+        socials, regions } = globalData;
+        
     const button = [];
 
     button.push({
@@ -45,7 +50,7 @@ const Blog = ({ data }) => {
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
                     2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
-                            <Image src={url} alt={alt} layout={`fill`}
+                            <Image src={url} alt={alt} layout={`fill`} priority
                                 objectFit={`cover`} className={`rounded-xl`} />
                         </div>
                         <SocialShares url={seo.canonical} title={`Blog - ${title}`}

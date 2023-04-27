@@ -74,16 +74,16 @@ const Services = ({ pageData, servicesData }) => {
                     contentClasses={`xl:flex-row-reverse`}>
                     <div className={`mb-8 md:mb-0 md:basis-10/12 xl:mr-8`}>
                         <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
-                            {whoTitle}
+                            <Heading title={whoTitle} />
                         </h2>
                         <Image src={whoUrl}
                             objectFit={whoObjFit} alt={whoAlt}
                             width={whoWidth} height={whoHeight} />
                     </div>
                     <div className={`md:w-full`}>
-                        <h2 className={`hidden md:block`}>
-                            {whoTitle}
-                        </h2>
+                        <div className={`hidden md:block`}>
+                            <Heading title={whoTitle} />
+                        </div>
                         <h3 className={`text-base sm:text-lg md:mb-4 
                         md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
                             {whoSummary}
@@ -95,17 +95,17 @@ const Services = ({ pageData, servicesData }) => {
                 </BlockLayoutTwo>
                 <BlockLayoutTwo title={whyTitle} slug={whySlug} position={`right`}>
                     <div className={`mb-8 md:mb-0 md:basis-10/12`}>
-                        <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
-                            {whyTitle}
-                        </h2>
+                        <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
+                            <Heading title={whoTitle} />
+                        </div>
                         <Image src={whyUrl}
                             objectFit={whyObjFit} alt={whyAlt}
                             width={whyWidth} height={whyHeight} />
                     </div>
                     <div className={`md:w-full xl:ml-8`}>
-                        <h2 className={`hidden md:block`}>
-                            {whyTitle}
-                        </h2>
+                        <div className={`hidden md:block`}>
+                            <Heading title={whoTitle} />
+                        </div>
                         <h3 className={`text-base sm:text-lg md:mb-4 
                         md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
                             {whySummary}
@@ -123,7 +123,7 @@ const Services = ({ pageData, servicesData }) => {
                         <Accordion>
                             {
                                 subblocks.map((subblock, index) => {
-                                    const { title, text, image } = subblock;
+                                    const { title, text } = subblock;
 
                                     return (
                                         <Accordion.Panel key={index}>
