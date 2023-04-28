@@ -96,7 +96,7 @@ const Services = ({ pageData, servicesData }) => {
                 <BlockLayoutTwo title={whyTitle} slug={whySlug} position={`right`}>
                     <div className={`mb-8 md:mb-0 md:basis-10/12`}>
                         <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
-                            <Heading title={whoTitle} />
+                            <Heading title={whyTitle} />
                         </div>
                         <Image src={whyUrl}
                             objectFit={whyObjFit} alt={whyAlt}
@@ -104,7 +104,7 @@ const Services = ({ pageData, servicesData }) => {
                     </div>
                     <div className={`md:w-full xl:ml-8`}>
                         <div className={`hidden md:block`}>
-                            <Heading title={whoTitle} />
+                            <Heading title={whyTitle} />
                         </div>
                         <h3 className={`text-base sm:text-lg md:mb-4 
                         md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
