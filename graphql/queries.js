@@ -270,6 +270,7 @@ const GET_PROJECTS = gql`
           title
           slug
           description
+          sort
           img {
             image {
               data {
@@ -407,6 +408,7 @@ query Pages($locale: I18NLocaleCode) {
         letter
         review
         backgroundColor
+        stars
       }
     }
   }

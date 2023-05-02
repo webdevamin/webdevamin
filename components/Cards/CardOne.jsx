@@ -2,8 +2,12 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
+import starsImage from '../../public/images/star.png';
+import { useRouter } from 'next/router';
 
-const CardOne = ({ initial, title, bgColor, text, icon }) => {
+const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
+    const router = useRouter();
     const { name, brands } = icon || {};
     const iconRef = brands ? fab[name] : fas[name];
 
@@ -28,9 +32,19 @@ const CardOne = ({ initial, title, bgColor, text, icon }) => {
                 )
             }
             <div className={`mt-7 md:mt-6 mb-4 text-center`}>
-                <h3 className={`text-lg xl:text-lg capitalize xl:mb-4`}>
+                <h3 className={`text-lg xl:text-lg capitalize mb-0`}>
                     {title}
                 </h3>
+                <div className={`mb-2 lg:mb-3 lg:mt-1`}>
+                    {
+                        [...Array(count)].map((num, i) => {
+                            return <Image src={starsImage} width={11} height={11}
+                                objectFit={`cover`} alt={router.locale === `en` ?
+                                    `${count} stars review` :
+                                    `${count} sterren review`} key={i} />
+                        })
+                    }
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: text }}
                     className={`smaller_p`} />
             </div>

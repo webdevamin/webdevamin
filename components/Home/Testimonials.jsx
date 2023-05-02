@@ -16,12 +16,12 @@ const Testimonials = ({ content, data }) => {
                 lg:flex-row lg:gap-5`}>
                 {
                     data.map((testimonial, index) => {
-                        const { letter, name, backgroundColor, review } =
+                        const { letter, name, backgroundColor, review, stars } =
                             destructureCollectionTypeObject(testimonial);
 
                         return (
                             <CardOne initial={letter} title={name} bgColor={backgroundColor}
-                                text={review} key={index} />
+                                text={review} key={index} count={stars} />
                         )
                     })
                 }

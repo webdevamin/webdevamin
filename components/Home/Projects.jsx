@@ -13,6 +13,10 @@ const Projects = ({ content, data }) => {
     const { title, text, button, slug } = content;
     const { href, text: buttonText } = button[0];
 
+    const projects = data.filter((project) => {
+        return destructureCollectionTypeObject(project).showcase;
+    });
+
     return (
         <BlockLayoutTwo title={title} slug={slug}>
             <div className={`md:basis-5/12`}>
@@ -23,7 +27,7 @@ const Projects = ({ content, data }) => {
             <div className={`mt-10 md:mt-0 md:basis-7/12`}>
                 <Carousel indicators={false}>
                     {
-                        data.map((project, index) => {
+                        projects.map((project, index) => {
                             const { img } =
                                 destructureCollectionTypeObject(project);
                             const { url, alt } = destructureImageComponent(img);
