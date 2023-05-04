@@ -38,10 +38,15 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
                 <div className={`mb-2 lg:mb-3 lg:mt-1`}>
                     {
                         [...Array(count)].map((num, i) => {
-                            return <Image src={starsImage} width={11} height={11}
-                                objectFit={`cover`} alt={router.locale === `en` ?
-                                    `${count} stars review` :
-                                    `${count} sterren review`} key={i} />
+                            return (
+                                <div key={i}
+                                    className={`${!count ? `hidden` : `inline`}`}>
+                                    <Image src={starsImage} width={11} height={11}
+                                        objectFit={`cover`} alt={router.locale === `en` ?
+                                            `${count} stars review` :
+                                            `${count} sterren review`} />
+                                </div>
+                            )
                         })
                     }
                 </div>
