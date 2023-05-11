@@ -15,7 +15,7 @@ const Seo = ({ seo, alternates }) => {
             <meta property="og:title" content={`${title} | Webdevamin`} />
             <meta property="og:image" content={`${locale === `nl` ?
                 `/images/ogbanner-nl.png` : `/images/ogbanner.png`}`} />
-            <meta property="og:url" content={process.env.NEXT_PUBLIC_URL} />
+            <meta property="og:url" content={canonical} />
             <meta property="og:description" content={description} />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
