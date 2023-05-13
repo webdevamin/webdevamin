@@ -91,7 +91,8 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                 <BlockLayoutOne title={title}>
                     <div>
                         <Heading title={title} subtitle={subtitle} />
-                        <div dangerouslySetInnerHTML={{ __html: description }} />
+                        <div dangerouslySetInnerHTML={{ __html: description }}
+                            className={`p`} />
                     </div>
                     <div id={`accordion`} className={`w-full mt-10 
                     lg:mt-12 xl:mt-0`}>
