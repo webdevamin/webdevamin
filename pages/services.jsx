@@ -2,11 +2,8 @@ import HeroOne from '../components/Heroes/HeroOne'
 import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
 import { getData } from '../graphql/api';
-import { GET_SERVICES, GET_PAGE } from '../graphql/queries';
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent
-} from '../utils/app';
+import { GET_SERVICES, GET_PAGE, GET_SERVICE_DETAILS, GET_SERVICE_DETAILS_BLOCK } from '../graphql/queries';
+import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent, destructureSingleType } from '../utils/app';
 import PageLayout from '../components/Layouts/PageLayout'
 import BlockLayoutOne from '../components/Layouts/BlockLayoutOne';
 import Heading from '../components/Heading';
@@ -18,7 +15,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Layouts/Footer';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
-const Services = ({ pageData, servicesData }) => {
+const Services = ({ pageData, servicesData,
+    serviceDetailsData, serviceDetailsBlockData }) => {
     const { globalData } = pageData;
     const page = destructureCollectionTypeObject(pageData.data.pages, true);
     const { seo, blocks, alternates, localepages } = page;
@@ -42,8 +40,8 @@ const Services = ({ pageData, servicesData }) => {
     const { url: whyUrl, objectFit: whyObjFit, width: whyWidth,
         height: whyHeight, alt: whyAlt } = destructureImageComponent(whyImg);
 
-    const { title: whatTitle, subtitle: whatSubtitle,
-        text: whatText, subblocks, slug: whatSlug } = blocks[4];
+    const { title, subtitle, description } = destructureSingleType(serviceDetailsBlockData.serviceDetailsBlock);
+    const serviceDetails = destructureCollectionType(serviceDetailsData.serviceDetails);
 
     return (
         <>
@@ -113,17 +111,17 @@ const Services = ({ pageData, servicesData }) => {
                         <div dangerouslySetInnerHTML={{ __html: whyText }} />
                     </div>
                 </BlockLayoutTwo>
-                <BlockLayoutOne title={whatSlug}>
+                <BlockLayoutOne title={title}>
                     <div>
-                        <Heading title={whatTitle} subtitle={whatSubtitle} />
-                        <div dangerouslySetInnerHTML={{ __html: whatText }} />
+                        <Heading title={title} subtitle={subtitle} />
+                        <div dangerouslySetInnerHTML={{ __html: description }} />
                     </div>
                     <div id={`accordion`} className={`w-full mt-10 
                     lg:mt-12 xl:mt-0`}>
                         <Accordion>
                             {
-                                subblocks.map((subblock, index) => {
-                                    const { title, text } = subblock;
+                                serviceDetails.map((serviceDetail, index) => {
+                                    const { title, description } = serviceDetail.attributes;
 
                                     return (
                                         <Accordion.Panel key={index}>
@@ -132,7 +130,7 @@ const Services = ({ pageData, servicesData }) => {
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <div className={`text-left text-sm lg:text-base`}>
-                                                    {text}
+                                                    {description}
                                                 </div>
                                             </Accordion.Content>
                                         </Accordion.Panel>
@@ -155,8 +153,13 @@ export default Services
 export async function getStaticProps({ locale }) {
     const pageData = await getData(GET_PAGE, { "slug": "services", "locale": [locale] });
     const servicesData = await getData(GET_SERVICES, { locale: [locale] }, false);
+    const serviceDetailsData = await getData(GET_SERVICE_DETAILS, { locale: [locale] }, false);
+    const serviceDetailsBlockData = await getData(GET_SERVICE_DETAILS_BLOCK, { locale: [locale] }, false);
 
     return {
-        props: { pageData, servicesData },
+        props: {
+            pageData, servicesData, serviceDetailsData,
+            serviceDetailsBlockData
+        },
     }
 }

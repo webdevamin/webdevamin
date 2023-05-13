@@ -202,7 +202,6 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
             title
             slug
             subtitle
-            text
           }
           ... on ComponentLayoutsBlockSmallWithSubBlocks {
             title
@@ -434,6 +433,20 @@ query Techs {
           height
           alt
         }
+      }
+    }
+  }
+}
+`;
+
+const GET_SERVICE_DETAILS = gql`
+query ServiceDetails($locale: I18NLocaleCode) {
+  serviceDetails(locale: $locale, pagination: { limit: 100 }, sort: "sort:asc") {
+    data {
+      attributes {
+        title
+        description
+        sort
       }
     }
   }
@@ -712,6 +725,22 @@ const GET_LOCALES = gql`
   }
 `;
 
+// Single Types
+
+const GET_SERVICE_DETAILS_BLOCK = gql`
+query ServiceDetailsBlock($locale: I18NLocaleCode) {
+  serviceDetailsBlock(locale: $locale) {
+    data {
+      attributes {
+        title
+        subtitle
+        description
+      }
+    }
+  }
+}
+`;
+
 export {
   GET_GLOBAL,
   GET_PAGE,
@@ -722,8 +751,10 @@ export {
   GET_TYPES,
   GET_TESTIMONIALS,
   GET_TECHS,
+  GET_SERVICE_DETAILS,
   GET_PROJECT,
   GET_BLOG,
   GET_REGION,
   GET_LOCALES,
+  GET_SERVICE_DETAILS_BLOCK
 };
