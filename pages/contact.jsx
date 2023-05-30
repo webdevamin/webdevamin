@@ -120,10 +120,9 @@ const Contact = ({ pageData }) => {
                                     border-opacity-25 sm:py-3 bg-slate-50`} />
                                 </label>
                             </div>
-                            <div>
-                                <ButtonOne input={{ value: formTexts.send }}
-                                    classes={`w-full mt-10 sm:mt-12`} />
-                            </div>
+                            <ButtonOne input={{ value: formTexts.send }}
+                                classes={`w-full sm:w-1/3 md:w-1/4 mt-10 sm:mt-12 
+                                sm:flex sm:justify-center`} />
                         </form>
                     </div>
                 </section>
