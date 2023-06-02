@@ -2,7 +2,6 @@ import '../styles/globals.scss'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Head from "next/head";
-import { Analytics } from '@vercel/analytics/react';
 import Script from "next/script"
 import * as fbq from "../utils/fbpixel";
 import { useRouter } from 'next/router';
@@ -61,7 +60,6 @@ function MyApp({ Component, pageProps }) {
           fbq('init', ${fbq.FB_PIXEL_ID});`,
         }}></Script>
       <Component {...pageProps} />
-      {process.env.NODE_ENV !== `development` && <Analytics />}
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
