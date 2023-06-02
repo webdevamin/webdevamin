@@ -28,22 +28,28 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-SMV41VQ81Z`} />
-      <Script
-        id='google-analytics'
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-SMV41VQ81Z', {
-            page_path: window.location.pathname,
-          });
-          `,
-        }}>
-      </Script>
+      {
+        process.env.NODE_ENV !== "development" && (
+          <>
+            <Script strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=G-SMV41VQ81Z`} />
+            <Script
+              id='google-analytics'
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-SMV41VQ81Z', {
+                  page_path: window.location.pathname,
+                });
+                `,
+              }}>
+            </Script>
+          </>
+        )
+      }
       <Script
         id='fb-pixel'
         strategy='afterInteractive'
