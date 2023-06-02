@@ -59,7 +59,8 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                                     const iconRef = brands ? fab[name] : fas[name];
 
                                     return (
-                                        <a key={index} href={href} rel="noreferrer"
+                                        <a key={index} href={href}
+                                            rel="noreferrer nofollow"
                                             target="_blank" aria-label={title}>
                                             <Icon icon={iconRef} size={`xl`} />
                                         </a>
@@ -110,7 +111,8 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
-                                <a key={index} href={href} rel="noreferrer"
+                                <a key={index} href={href}
+                                    rel="noreferrer nofollow"
                                     target="_blank" aria-label={title}>
                                     <Icon icon={iconRef} size={`2xl`} />
                                 </a>

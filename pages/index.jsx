@@ -47,7 +47,7 @@ const Index = ({ pageData, projectsData, blogsData,
           data={testimonials} />
         <Contact content={contactblock} />
         <Footer servicesRaw={services} blogsRaw={blogsGlobal}
-          socialsRaw={socials} regionsRaw={regions} />
+          socialsRaw={socials} regionsRaw={regions} followExternalLinks/>
       </PageLayout>
     </>
   )

@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app'
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
+const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw, followExternalLinks }) => {
     const router = useRouter();
     const { locale } = router;
 
@@ -36,7 +36,8 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
                                 return (
                                     <li className={`pt-2`} key={index}>
                                         <a href={href}
-                                            rel="noreferrer" target="_blank"
+                                            rel={`${followExternalLinks ? `noreferrer` :
+                                                `noreferrer nofollow`}`} target="_blank"
                                             className={`lg:text-base`}>
                                             <div className={`flex items-center gap-1`}>
                                                 <div className={`w-6 h-5 flex items-center justify-start`}>
@@ -148,7 +149,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw }) => {
                     </ul>
                     <div className={`md:mt-4`}>
                         <ButtonThree href={`/about`} color={`text_theme_all`}
-                            text={locale === `en` ? `About me` : `Over mij`} />
+                            text={locale === `en` ? `Read more` : `Meer weten`} />
                     </div>
                 </div>
                 <div className={`col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>
