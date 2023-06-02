@@ -36,8 +36,8 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw, followExternalL
                                 return (
                                     <li className={`pt-2`} key={index}>
                                         <a href={href}
-                                            rel={`${followExternalLinks ? `noreferrer` :
-                                                `noreferrer nofollow`}`} target="_blank"
+                                            rel={`${followExternalLinks ? `noopener noreferrer` :
+                                                `noopener noreferrer nofollow`}`} target="_blank"
                                             className={`lg:text-base`}>
                                             <div className={`flex items-center gap-1`}>
                                                 <div className={`w-6 h-5 flex items-center justify-start`}>
