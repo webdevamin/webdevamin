@@ -46,7 +46,7 @@ const Index = ({ pageData, projectsData, blogsData,
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)}
           data={testimonials} />
         <Contact content={contactblock} />
-        <Footer servicesRaw={services} blogsRaw={blogsGlobal}
+        <Footer servicesRaw={services} blogsRaw={blogsGlobal} pagesRaw={pages}
           socialsRaw={socials} regionsRaw={regions} followExternalLinks/>
       </PageLayout>
     </>

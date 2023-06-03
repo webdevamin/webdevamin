@@ -7,7 +7,8 @@ import { useRouter } from 'next/router';
 import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app'
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw, followExternalLinks }) => {
+const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
+    followExternalLinks, pagesRaw }) => {
     const router = useRouter();
     const { locale } = router;
 
@@ -15,7 +16,8 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw, followExternalL
     const blogs = destructureCollectionType(blogsRaw);
     const socials = destructureCollectionType(socialsRaw);
     const regions = destructureCollectionType(regionsRaw);
-
+    const pages = destructureCollectionType(pagesRaw);
+    
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
         relative md:p-12 z-30`}>
@@ -59,71 +61,28 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw, followExternalL
                         Links
                     </h2>
                     <ul>
-                        <li className={`pt-2`}>
-                            <Link href={`/`}>
-                                <a className={`flex items-center gap-1`}>
-                                    <div className={`w-6 h-5 flex items-center 
-                                justify-start`}>
-                                        <Icon icon={fas["faHouse"]} size={`sm`} />
-                                    </div>
-                                    <span className={`lg:text-base transition-all hover:text-theme`}>
-                                        Home
-                                    </span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={`pt-2`}>
-                            <Link href={`/services`}>
-                                <a className={`flex items-center gap-1`}>
-                                    <div className={`w-6 h-5 flex items-center 
-                                justify-start`}>
-                                        <Icon icon={fas["faCircleUser"]} size={`sm`} />
-                                    </div>
-                                    <span className={`lg:text-base transition-all hover:text-theme`}>
-                                        {locale === `en` ? `Services` : `Diensten`}
-                                    </span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={`pt-2`}>
-                            <Link href={`/projects`}>
-                                <a className={`flex items-center gap-1`}>
-                                    <div className={`w-6 h-5 flex items-center 
-                                justify-start`}>
-                                        <Icon icon={fas["faImage"]} size={`sm`} />
-                                    </div>
-                                    <span className={`lg:text-base transition-all hover:text-theme`}>
-                                        {locale === `en` ? `Projects` : `Projecten`}
-                                    </span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={`pt-2`}>
-                            <Link href={`/blogs`}>
-                                <a className={`flex items-center gap-1`}>
-                                    <div className={`w-6 h-5 flex items-center 
-                                justify-start`}>
-                                        <Icon icon={fas["faBookmark"]} size={`sm`} />
-                                    </div>
-                                    <span className={`lg:text-base transition-all hover:text-theme`}>
-                                        Blogs
-                                    </span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={`pt-2`}>
-                            <Link href={`/contact`}>
-                                <a className={`flex items-center gap-1`}>
-                                    <div className={`w-6 h-5 flex items-center 
-                                justify-start`}>
-                                        <Icon icon={fas["faAddressBook"]} size={`sm`} />
-                                    </div>
-                                    <span className={`lg:text-base transition-all hover:text-theme`}>
-                                        Contact
-                                    </span>
-                                </a>
-                            </Link>
-                        </li>
+                        {
+                            pages.map((page, i) => {
+                                const { href, icon, title } = destructureCollectionTypeObject(page);
+
+                                return (
+                                    <li className={`pt-2`} key={i}>
+                                        <Link href={href}>
+                                            <a className={`flex items-center gap-1`}>
+                                                <div className={`w-6 h-5 flex items-center 
+                                        justify-start`}>
+                                                    <Icon icon={fas[icon]} size={`sm`} />
+                                                </div>
+                                                <span className={`lg:text-base transition-all 
+                                                hover:text-theme`}>
+                                                    {title}
+                                                </span>
+                                            </a>
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
                 <div className={`col-span-2 sm:col-span-1 border-t border-b hidden

@@ -31,6 +31,7 @@ const GET_GLOBAL = gql`
         attributes {
           title
           href
+          icon
         }
       }
     }

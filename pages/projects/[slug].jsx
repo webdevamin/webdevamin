@@ -100,7 +100,8 @@ const Project = ({ data }) => {
                     </div>
                 </BlockLayoutTwo>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
+                <Footer servicesRaw={services} blogsRaw={blogs} 
+                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
             </PageLayout>
         </>
     )

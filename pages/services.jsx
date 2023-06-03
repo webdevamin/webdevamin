@@ -143,7 +143,7 @@ const Services = ({ pageData, servicesData,
                 </BlockLayoutOne>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} />
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
             </PageLayout>
         </>
     )

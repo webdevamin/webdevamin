@@ -126,7 +126,7 @@ const Contact = ({ pageData }) => {
                         </form>
                     </div>
                 </section>
-                <Footer servicesRaw={services} blogsRaw={blogs}
+                <Footer servicesRaw={services} blogsRaw={blogs} pagesRaw={pages}
                     socialsRaw={socials} regionsRaw={regions} />
             </PageLayout>
         </>

@@ -70,7 +70,7 @@ const Blogs = ({ pageData, blogsData }) => {
                             </section>
                             <Contact content={contactblock} />
                             <Footer servicesRaw={services} blogsRaw={globalBlogs}
-                                socialsRaw={socials} regionsRaw={regions} />
+                                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
                         </PageLayout>
                     </>
                 ) : <NoContent title={titleNoContent} text={textNoContent}

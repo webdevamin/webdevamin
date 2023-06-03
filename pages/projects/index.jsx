@@ -65,7 +65,7 @@ const Projects = ({ pageData, projectsData }) => {
                 </section>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} />
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
             </PageLayout>
         </>
     )

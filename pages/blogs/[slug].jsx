@@ -59,7 +59,8 @@ const Blog = ({ data }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }} className={`blog_content`} />
                 </section>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} socialsRaw={socials} regionsRaw={regions} />
+                <Footer servicesRaw={services} blogsRaw={blogs} 
+                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
             </PageLayout>
         </div>
     )
