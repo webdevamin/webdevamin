@@ -50,14 +50,15 @@ const Hero = ({ content, socialsRaw, types }) => {
                         <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
-                                    const { href, icon, title } =
+                                    const { href, icon, title, hideFromHeader } =
                                         destructureCollectionTypeObject(social);
                                     const { name, brands } = icon;
                                     const iconRef = brands ? fab[name] : fas[name];
 
                                     return (
                                         <a key={index} href={href} rel="noreferrer"
-                                            target="_blank" aria-label={title}>
+                                            target="_blank" aria-label={title}
+                                            className={`${hideFromHeader && `hidden`}`}>
                                             <Icon icon={iconRef} size={`xl`} />
                                         </a>
                                     )
@@ -114,14 +115,15 @@ const Hero = ({ content, socialsRaw, types }) => {
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
                         socials.map((social, index) => {
-                            const { href, icon, title } =
+                            const { href, icon, title, hideFromHeader } =
                                 destructureCollectionTypeObject(social);
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
                                 <a key={index} href={href} rel="noreferrer"
-                                    target="_blank" aria-label={title}>
+                                    target="_blank" aria-label={title}
+                                    className={`${hideFromHeader && `hidden`}`}>
                                     <Icon icon={iconRef} size={`2xl`} />
                                 </a>
                             )

@@ -35,13 +35,14 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
                         text-opacity-70`}>
                     {
                         socials.map((social, index) => {
-                            const { href, icon } =
+                            const { href, icon, hideFromHeader } =
                                 destructureCollectionTypeObject(social);
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
                                 <a key={index} href={href} rel="noreferrer nofollow"
+                                    className={`${hideFromHeader && `hidden`}`}
                                     target="_blank">
                                     <Icon icon={iconRef} size={`xl`} />
                                 </a>
@@ -57,13 +58,14 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
                         socials.map((social, index) => {
-                            const { href, icon } =
+                            const { href, icon, hideFromHeader } =
                                 destructureCollectionTypeObject(social);
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
                                 <a key={index} href={href} rel="noreferrer nofollow"
+                                    className={`${hideFromHeader && `hidden`}`}
                                     target="_blank">
                                     <Icon icon={iconRef} size={`2xl`} />
                                 </a>

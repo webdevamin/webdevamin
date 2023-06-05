@@ -53,13 +53,14 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                         <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
-                                    const { href, icon, title } =
+                                    const { href, icon, title, hideFromHeader } =
                                         destructureCollectionTypeObject(social);
                                     const { name, brands } = icon;
                                     const iconRef = brands ? fab[name] : fas[name];
 
                                     return (
                                         <a key={index} href={href}
+                                            className={`${hideFromHeader && `hidden`}`}
                                             rel="noreferrer nofollow"
                                             target="_blank" aria-label={title}>
                                             <Icon icon={iconRef} size={`xl`} />
@@ -105,13 +106,14 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
                         socials.map((social, index) => {
-                            const { href, icon, title } =
+                            const { href, icon, title, hideFromHeader } =
                                 destructureCollectionTypeObject(social);
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
                                 <a key={index} href={href}
+                                    className={`${hideFromHeader && `hidden`}`}
                                     rel="noreferrer nofollow"
                                     target="_blank" aria-label={title}>
                                     <Icon icon={iconRef} size={`2xl`} />

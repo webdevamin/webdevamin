@@ -79,6 +79,8 @@ const GET_GLOBAL = gql`
         attributes {
           title
           href
+          hideFromHeader
+          hideFromFooter
           icon {
             name
             brands

@@ -17,7 +17,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
     const socials = destructureCollectionType(socialsRaw);
     const regions = destructureCollectionType(regionsRaw);
     const pages = destructureCollectionType(pagesRaw);
-    
+
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
         relative md:p-12 z-30`}>
@@ -30,13 +30,13 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     <ul>
                         {
                             socials.map((social, index) => {
-                                const { href, icon, title } =
+                                const { href, icon, title, hideFromFooter } =
                                     destructureCollectionTypeObject(social);
                                 const { name, brands } = icon;
                                 const iconRef = brands ? fab[name] : fas[name];
 
                                 return (
-                                    <li className={`pt-2`} key={index}>
+                                    <li className={`pt-2 ${hideFromFooter && `hidden`}`} key={index}>
                                         <a href={href}
                                             rel={`${followExternalLinks ? `noopener noreferrer` :
                                                 `noopener noreferrer nofollow`}`} target="_blank"
