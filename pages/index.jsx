@@ -13,7 +13,10 @@ import {
   GET_TYPES
 } from '../graphql/queries';
 import { getData } from '../graphql/api';
-import { destructureCollectionType, destructureCollectionTypeObject } from '../utils/app';
+import {
+  destructureCollectionType,
+  destructureCollectionTypeObject
+} from '../utils/app';
 import Hero from '../components/Home/Hero'
 
 const Index = ({ pageData, projectsData, blogsData,
@@ -28,6 +31,7 @@ const Index = ({ pageData, projectsData, blogsData,
 
   const { blogs: blogsGlobal, pages, services, socials,
     regions, contactblock } = globalData;
+
   const { seo, blocks, alternates, localepages } = page;
 
   return (
@@ -47,7 +51,7 @@ const Index = ({ pageData, projectsData, blogsData,
           data={testimonials} />
         <Contact content={contactblock} />
         <Footer servicesRaw={services} blogsRaw={blogsGlobal} pagesRaw={pages}
-          socialsRaw={socials} regionsRaw={regions} followExternalLinks/>
+          socialsRaw={socials} regionsRaw={regions} followExternalLinks />
       </PageLayout>
     </>
   )
@@ -64,6 +68,9 @@ export async function getStaticProps({ locale }) {
   const typesData = await getData(GET_TYPES, { locale: [locale] }, false);
 
   return {
-    props: { pageData, projectsData, blogsData, testimonialsData, techData, typesData },
+    props: {
+      pageData, projectsData, blogsData, testimonialsData,
+      techData, typesData
+    },
   }
 }

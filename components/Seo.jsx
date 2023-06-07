@@ -1,11 +1,17 @@
 import React from 'react'
 import Head from "next/head";
 import { useRouter } from 'next/router';
+import { destructureSingleType } from '../utils/app';
 
 const Seo = ({ seo, alternates }) => {
-    const { title, description, canonical } = seo;
+    const { title, description, canonical, image: img } = seo;
     const router = useRouter();
     const { locale } = router;
+    const { url: imageUrl } = destructureSingleType(img);
+
+    const defaultImage = imageUrl || (locale === `nl` ?
+        `/images/ogbanner-nl.png` :
+        `/images/ogbanner.png`);
 
     return (
         <Head>
@@ -13,8 +19,9 @@ const Seo = ({ seo, alternates }) => {
             <title>{`${title} | Webdevamin`}</title>
             <meta name="description" content={description} />
             <meta property="og:title" content={`${title} | Webdevamin`} />
-            <meta property="og:image" content={`${locale === `nl` ?
-                `/images/ogbanner-nl.png` : `/images/ogbanner.png`}`} />
+            <meta property="og:image" content={defaultImage} />
+            <meta property='og:image:width' content='1200' />
+            <meta property='og:image:height' content='630' />
             <meta property="og:url" content={canonical} />
             <meta property="og:description" content={description} />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

@@ -129,6 +129,13 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
           title
           description
           canonical
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
         }
         alternates {
           hreflang
@@ -268,6 +275,13 @@ const GET_PROJECTS = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           title
           slug
@@ -304,6 +318,13 @@ const GET_BLOGS = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           title
           slug
@@ -339,6 +360,13 @@ const GET_REGIONS = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           alternates {
             hreflang
@@ -505,6 +533,13 @@ const GET_PROJECT = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           title
           slug
@@ -595,6 +630,13 @@ const GET_BLOG = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           title
           slug
@@ -634,6 +676,13 @@ const GET_REGION = gql`
             title
             description
             canonical
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
           }
           localepages {
             locale_link {
