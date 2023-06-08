@@ -128,6 +128,8 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
         seo {
           title
           description
+          ogTitle
+          ogDescription
           canonical
           image {
             data {
@@ -274,6 +276,8 @@ const GET_PROJECTS = gql`
           seo {
             title
             description
+            ogTitle
+            ogDescription
             canonical
             image {
               data {
@@ -317,6 +321,8 @@ const GET_BLOGS = gql`
           seo {
             title
             description
+            ogTitle
+            ogDescription
             canonical
             image {
               data {
@@ -359,6 +365,8 @@ const GET_REGIONS = gql`
           seo {
             title
             description
+            ogTitle
+            ogDescription
             canonical
             image {
               data {
@@ -532,6 +540,8 @@ const GET_PROJECT = gql`
           seo {
             title
             description
+            ogTitle
+            ogDescription
             canonical
             image {
               data {
@@ -630,6 +640,8 @@ const GET_BLOG = gql`
             title
             description
             canonical
+            ogTitle
+            ogDescription
             image {
               data {
                 attributes {
@@ -675,6 +687,8 @@ const GET_REGION = gql`
           seo {
             title
             description
+            ogTitle
+            ogDescription
             canonical
             image {
               data {
