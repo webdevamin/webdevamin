@@ -57,8 +57,7 @@ const Project = ({ data }) => {
 
     return (
         <>
-            <Seo seo={{ title, description: description, canonical: seo.canonical }}
-                alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} />
             <Header pages={pages} localepages={localepages} />
             <HeroOne content={heroContent} socialsRaw={socials}
                 externalLink={link ? true : false} disableImgSpace />

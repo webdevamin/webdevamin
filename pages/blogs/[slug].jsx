@@ -42,8 +42,7 @@ const Blog = ({ data }) => {
 
     return (
         <div>
-            <Seo seo={{ title, description: description, canonical: seo.canonical }}
-                alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} />
             <Header pages={pages} localepages={localepages} />
             <HeroTwo content={heroContent} socialsRaw={socials} />
             <PageLayout>
