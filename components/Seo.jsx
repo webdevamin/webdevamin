@@ -18,6 +18,10 @@ const Seo = ({ seo, alternates }) => {
     const defaultOgTitle = ogTitle || title;
     const defaultOgDescription = ogDescription || description;
 
+    const altLocales = alternates.filter((altLocale) => {
+        return altLocale.hreflang !== locale;
+    });
+
     return (
         <Head>
             <meta charSet="utf-8" />
@@ -28,6 +32,7 @@ const Seo = ({ seo, alternates }) => {
             <meta property='og:image:width' content='1200' />
             <meta property='og:image:height' content='630' />
             <meta property="og:url" content={canonical} />
+            <meta property="og:locale" content={locale} />
             <meta property="og:description" content={defaultOgDescription} />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,6 +44,14 @@ const Seo = ({ seo, alternates }) => {
                     return (
                         <link rel="alternate" hrefLang={hreflang}
                             href={href} key={index} />
+                    )
+                })
+            }
+            {
+                altLocales.map((altLocale, i) => {
+                    return (
+                        <meta property="og:locale:alternate" key={i}
+                            content={altLocale.hreflang} />
                     )
                 })
             }

@@ -66,6 +66,7 @@ const Header = ({ pages, localepages }) => {
                                 const { locale_link, href, locale } = localepage;
                                 const { name, flag } = destructureSingleType(locale_link);
                                 const { url } = destructureImageComponent(flag);
+                                
                                 return (
                                     <li key={i}>
                                         <Link href={href} locale={locale}>
