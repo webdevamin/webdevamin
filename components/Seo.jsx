@@ -29,8 +29,8 @@ const Seo = ({ seo, alternates }) => {
             <meta name="description" content={description} />
             <meta property="og:title" content={`${defaultOgTitle} | Webdevamin`} />
             <meta property="og:image" content={defaultImage} />
-            <meta property='og:image:width' content='1200' />
-            <meta property='og:image:height' content='630' />
+            <meta property='og:image:width' content='4800' />
+            <meta property='og:image:height' content='2520' />
             <meta property="og:url" content={canonical} />
             <meta property="og:locale" content={locale} />
             <meta property="og:description" content={defaultOgDescription} />
