@@ -22,6 +22,14 @@ const Seo = ({ seo, alternates }) => {
         return altLocale.hreflang !== locale;
     });
 
+    const alternatesWithoutEnglish = alternates.filter((alternate) => {
+        return alternate.hreflang !== `en`;
+    });
+
+    const alternateEnglish = alternates.find((alternate) => {
+        return alternate.hreflang === `en`;
+    });
+
     return (
         <Head>
             <meta charSet="utf-8" />
@@ -37,21 +45,24 @@ const Seo = ({ seo, alternates }) => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="canonical" href={canonical} />
+            <link rel="alternate" href={alternateEnglish.href} hreflang="x-default" />
             {
-                alternates.map((alternate, index) => {
+                alternatesWithoutEnglish.map((alternate) => {
                     const { hreflang, href } = alternate;
 
                     return (
                         <link rel="alternate" hrefLang={hreflang}
-                            href={href} key={index} />
+                            href={href} key={href} />
                     )
                 })
             }
             {
-                altLocales.map((altLocale, i) => {
+                altLocales.map((altLocale) => {
+                    const { hreflang } = altLocale;
+
                     return (
-                        <meta property="og:locale:alternate" key={i}
-                            content={altLocale.hreflang} />
+                        <meta property="og:locale:alternate" key={hreflang}
+                            content={hreflang} />
                     )
                 })
             }
