@@ -45,7 +45,7 @@ const Seo = ({ seo, alternates }) => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="canonical" href={canonical} />
-            <link rel="alternate" href={alternateEnglish.href} hreflang="x-default" />
+            <link rel="alternate" href={alternateEnglish.href} hrefLang="x-default" />
             {
                 alternatesWithoutEnglish.map((alternate) => {
                     const { hreflang, href } = alternate;
