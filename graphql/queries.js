@@ -231,6 +231,12 @@ query Pages($locale: I18NLocaleCode, $slug: String) {
             slug
             subtitle
           }
+          ... on ComponentLayoutsBlockNormalMedium {
+            title
+            slug
+            subtitle
+            text
+          }
           ... on ComponentElementsAlert {
             title
             text
@@ -347,6 +353,7 @@ const GET_BLOGS = gql`
           }
           text
           showcase
+          dev
           locale
         }
       }

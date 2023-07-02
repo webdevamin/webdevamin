@@ -26,7 +26,7 @@ const Blogs = ({ pageData, blogsData }) => {
         regions, contactblock } = globalData;
 
     const { title: titleHeading, subtitle: subtitleHeading,
-        slug: slugHeading } = blocks[1];
+        slug: slugHeading, text: textHeading } = blocks[2];
 
     const { title: titleNoContent, text: textNoContent } = blocks[2];
     const blogs = destructureCollectionType(blogsData.blogs);
@@ -43,13 +43,15 @@ const Blogs = ({ pageData, blogsData }) => {
                         <PageLayout>
                             <section id={slugHeading} className={`block_container`}>
                                 <Heading title={titleHeading} subtitle={subtitleHeading} />
+                                <div dangerouslySetInnerHTML={{ __html: textHeading }}
+                                    className={`${textHeading ? `pb-6` : `hidden`}`} />
                                 <div className={`overflow-x-auto overscroll-x-contain gap-6 
                             pb-6 md:pb-0 md:pr-0 md:w-full md:grid 
                             md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 
                             ${blogs.length >= 2 && `pr-[20%] w-screen flex`}`}>
                                     {
                                         blogs.map((blog, index) => {
-                                            const { title, img, slug, description } =
+                                            const { title, img, slug, description, dev } =
                                                 destructureCollectionTypeObject(blog);
                                             const { url, alt } = destructureImageComponent(img);
                                             const text = router.locale === `en` ? `Read more` : `Verder lezen`;
@@ -59,7 +61,8 @@ const Blogs = ({ pageData, blogsData }) => {
                                                     key={index} >
                                                     <a className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                                         <CardTwo imgUrl={url} title={title} text={text}
-                                                            subtitle={description} slug={slug} alt={alt} />
+                                                            subtitle={description} slug={slug} alt={alt}
+                                                            badge={dev && { bText: `dev` }} />
                                                     </a>
                                                 </Link>
                                             )
@@ -70,7 +73,7 @@ const Blogs = ({ pageData, blogsData }) => {
                             </section>
                             <Contact content={contactblock} />
                             <Footer servicesRaw={services} blogsRaw={globalBlogs}
-                                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
+                                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
                         </PageLayout>
                     </>
                 ) : <NoContent title={titleNoContent} text={textNoContent}
