@@ -28,13 +28,13 @@ const Projects = ({ pageData, projectsData }) => {
     const projects = destructureCollectionType(projectsData.projects);
 
     const { slug, subtitle, title } = blocks[1];
-    
+
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pages} localepages={localepages} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
-                socialsRaw={socials} ctaLink={`#${slug}`} />
+                socialsRaw={socials} />
             <PageLayout>
                 <section id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
@@ -65,7 +65,7 @@ const Projects = ({ pageData, projectsData }) => {
                 </section>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
             </PageLayout>
         </>
     )

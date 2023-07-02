@@ -86,7 +86,7 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                             button.map((btn, index) => {
                                 const { href, text } = btn;
                                 const isOdd = index % 2 !== 0 ? true : false;
-
+                                
                                 if (href) {
                                     return (
                                         <ButtonOne key={index} href={ctaLink || href}
