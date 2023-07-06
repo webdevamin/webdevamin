@@ -15,8 +15,12 @@ const Header = ({ pages, localepages }) => {
         <header className={`fixed w-full top-0 z-50 bg-light`}>
             <div className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center`}>
-                <Image src={`/images/logo-dark.png`} width={55} height={55}
-                    alt={`Logo`} />
+                <Link href={`/`}>
+                    <a>
+                        <Image src={`/images/logo-dark.png`} width={55} height={55}
+                            alt={`Logo`} />
+                    </a>
+                </Link>
                 <nav className={`text-white text-lg tracking-widest flex 
             gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent`}>
                     <div className={`block xl:hidden`}>
@@ -66,7 +70,7 @@ const Header = ({ pages, localepages }) => {
                                 const { locale_link, href, locale } = localepage;
                                 const { name, flag } = destructureSingleType(locale_link);
                                 const { url } = destructureImageComponent(flag);
-                                
+
                                 return (
                                     <li key={i}>
                                         <Link href={href} locale={locale}>
