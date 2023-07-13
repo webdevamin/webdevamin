@@ -88,7 +88,8 @@ const Contact = ({ pageData }) => {
                 <section id={slug} className={`block_container sm:text-center`}>
                     <Heading title={title} subtitle={subtitle} />
                     <div className={`mt-7 sm:mt-10 xl:mt-16 max-w-4xl mx-auto`}>
-                        <div dangerouslySetInnerHTML={{ __html: text }} />
+                        <div dangerouslySetInnerHTML={{ __html: text }}
+                            className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
                         {
                             afterSubmit && (
                                 <Alert text={afterSubmit.text} classes={`mt-7 md:mt-10`}

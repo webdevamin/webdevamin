@@ -138,17 +138,17 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                             text={locale === `en` ? `More blogs` : `Meer blogs`} />
                     </div>
                 </div>
-                <div className={`text_light_all`}>
+                <div className={`text_light_all col-span-2`}>
                     <h2 className={`text-xl mb-2`}>
                         {locale === `en` ? `Regions` : `Regio's`}
                     </h2>
-                    <ul>
+                    <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         {
                             regions.map((region, index) => {
                                 const { name, showcase, slug } = destructureCollectionTypeObject(region);
 
                                 return (
-                                    <li className={`pt-2 ${!showcase && `hidden`}`} key={index}>
+                                    <li className={`pt-1 sm:pt-2 ${!showcase && `hidden`}`} key={index}>
                                         <Link href={`/regions/${slug}`}>
                                             <a className={`lg:text-base transition-all 
                                             hover:text-theme`}>

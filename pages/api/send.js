@@ -1,5 +1,10 @@
 const SibApiV3Sdk = require("sib-api-v3-sdk");
 
+/*
+TODO: i.p.v. MAIL_TO variable te gebruken misschien beter 
+uit Strapi gebruiken om 1 bron te hanteren
+*/
+
 const { MAIL_API_KEY, MAIL_TO } = process.env;
 
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
