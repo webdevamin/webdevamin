@@ -13,7 +13,7 @@ const Slide = ({ image, title }) => {
                     alt={alt}
                     objectFit={`cover`} className={`rounded-xl`} />
             </div>
-            <h3 className={`leading-6 absolute left-0 right-0 m-auto 
+            {/* <h3 className={`leading-6 absolute left-0 right-0 m-auto 
             backdrop-blur-sm bg-dark/50 w-fit 
             text-center text-light rounded-2xl 
             top-1/2 text-xs px-4 py-1 mt-[12%] 
@@ -21,7 +21,7 @@ const Slide = ({ image, title }) => {
             xl:text-base xl:px-6 xl:py-3 xl:mt-[13%] 
             2xl:mt-24 ${title ? `block` : `hidden`}`}>
                 {title}
-            </h3>
+            </h3> */}
         </article>
     )
 }
