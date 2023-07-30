@@ -59,15 +59,14 @@ const Blogs = ({ content, data }) => {
                         <Carousel indicators={false} className={`relative`}>
                             {
                                 data.map((blog, index) => {
-                                    const { title, img } =
-                                        destructureCollectionTypeObject(blog);
+                                    const { img } = destructureCollectionTypeObject(blog);
                                     const { url, alt } = destructureImageComponent(img);
 
                                     return (
                                         <Slide key={index} image={{
                                             src: url,
                                             alt: alt
-                                        }} title={title} />
+                                        }} />
                                     )
                                 })
                             }
