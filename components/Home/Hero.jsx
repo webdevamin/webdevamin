@@ -32,17 +32,13 @@ const Hero = ({ content, socialsRaw, types }) => {
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 xl:mb-9`}>
-                        {
-                            (Array.isArray(parsedTitle)) ? (
-                                <TypeAnimation
-                                    sequence={parsedTitle}
-                                    wrapper="div"
-                                    className='font_mohave'
-                                    cursor={true}
-                                    speed={60}
-                                />
-                            ) : (parsedTitle)
-                        }
+                        <TypeAnimation
+                            sequence={[parsedTitle]}
+                            wrapper="div"
+                            className='font_mohave'
+                            cursor={true}
+                            speed={60}
+                        />
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
