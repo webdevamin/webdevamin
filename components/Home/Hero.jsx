@@ -37,7 +37,7 @@ const Hero = ({ content, socialsRaw, types }) => {
                             wrapper="div"
                             className='font_mohave'
                             cursor={true}
-                            speed={60}
+                            speed={1}
                         />
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
