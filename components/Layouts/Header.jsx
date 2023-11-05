@@ -16,10 +16,7 @@ const Header = ({ pages, localepages }) => {
             <div className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center`}>
                 <Link href={`/`}>
-                    <a>
-                        <Image src={`/images/logo-dark.png`} width={55} height={55}
-                            alt={`Logo`} />
-                    </a>
+                    <Image src={`/images/logo-dark.png`} width={55} height={55} alt={`Logo`} />
                 </Link>
                 <nav className={`text-white text-lg tracking-widest flex 
             gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent`}>
@@ -49,15 +46,13 @@ const Header = ({ pages, localepages }) => {
 
                                 return (
                                     <li key={index} className={`bg-transparent z-50`}>
-                                        <Link href={href}>
-                                            <a className={`w-full transition-all xl:block
+                                        <Link href={href} className={`w-full transition-all xl:block
                                         py-3 px-8 xl:py-0 xl:px-0 border-theme 
                                         ease-linear xl:border-none relative 
                                         hover:text-theme font-semibold bg-transparent
                                         ${active ? `block` : `hidden`}
                                         ${isLast ? `border-none` : `border-b`}`}>
-                                                {title}
-                                            </a>
+                                            {title}
                                         </Link>
                                     </li>
                                 )
@@ -73,8 +68,7 @@ const Header = ({ pages, localepages }) => {
 
                                 return (
                                     <li key={i}>
-                                        <Link href={href} locale={locale}>
-                                            <a className={`p-3 relative before:ease-linear 
+                                        <Link href={href} locale={locale} className={`p-3 relative before:ease-linear 
                                     uppercase sm:p-4 before:absolute 
                                     before:top-0 before:left-0 transition-all 
                                     ease-linear hover:shadow-zero before:origin-left
@@ -84,9 +78,8 @@ const Header = ({ pages, localepages }) => {
                                     text-sm sm:text-base w-[42px] h-[42px] 
                                     sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
                                     flex justify-center items-center sm:flex mt-0`}>
-                                                <Image src={url} layout={`fill`} alt={name}
-                                                    objectFit={`contain`} />
-                                            </a>
+                                            <Image src={url} layout={`fill`} alt={name}
+                                                objectFit={`contain`} />
                                         </Link>
                                     </li>
                                 )

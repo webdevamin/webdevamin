@@ -33,10 +33,8 @@ const ButtonOne = ({ href, text, classes, wFit, external,
     }
 
     return (
-        <Link href={href}>
-            <a className={allClasses}>
-                {text}
-            </a>
+        <Link href={href} className={allClasses}>
+            {text}
         </Link>
     )
 }

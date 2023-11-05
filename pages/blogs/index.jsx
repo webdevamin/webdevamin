@@ -57,13 +57,10 @@ const Blogs = ({ pageData, blogsData }) => {
                                             const text = router.locale === `en` ? `Read more` : `Verder lezen`;
 
                                             return (
-                                                <Link href={`/blogs/${slug}`}
-                                                    key={index} >
-                                                    <a className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
-                                                        <CardTwo imgUrl={url} title={title} text={text}
-                                                            subtitle={description} slug={slug} alt={alt}
-                                                            badge={dev && { bText: `dev` }} />
-                                                    </a>
+                                                <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                                    <CardTwo imgUrl={url} title={title} text={text}
+                                                        subtitle={description} slug={slug} alt={alt}
+                                                        badge={dev && { bText: `dev` }} />
                                                 </Link>
                                             )
 

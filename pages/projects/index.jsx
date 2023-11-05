@@ -51,11 +51,9 @@ const Projects = ({ pageData, projectsData }) => {
 
                                 return (
                                     <Link href={`/projects/${slug}`}
-                                        key={index} >
-                                        <a className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
-                                            <CardTwo imgUrl={url} title={title} text={text}
-                                                subtitle={description} slug={slug} alt={alt} />
-                                        </a>
+                                        key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                        <CardTwo imgUrl={url} title={title} text={text}
+                                            subtitle={description} slug={slug} alt={alt} />
                                     </Link>
                                 )
 

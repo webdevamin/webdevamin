@@ -19,15 +19,13 @@ const ButtonThree = ({ href, text, noLink, color }) => {
     }
 
     return (
-        <Link href={href}>
-            <a className={`mt-3 flex items-center lg:gap-3 lg:text-base 
-            text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
-             ${color || `text_theme_darker_all hover:text_dark_all`}`}>
-                <span className={`text-sm lg:text-base uppercase drop-shadow-none`}>
-                    {text}
-                </span>
-                <FontAwesomeIcon icon={fas["faArrowRight"]} />
-            </a>
+        <Link href={href} className={`mt-3 flex items-center lg:gap-3 lg:text-base 
+        text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
+         ${color || `text_theme_darker_all hover:text_dark_all`}`}>
+            <span className={`text-sm lg:text-base uppercase drop-shadow-none`}>
+                {text}
+            </span>
+            <FontAwesomeIcon icon={fas["faArrowRight"]} />
         </Link>
     )
 }

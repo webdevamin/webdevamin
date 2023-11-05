@@ -67,17 +67,15 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
 
                                 return (
                                     <li className={`pt-2`} key={i}>
-                                        <Link href={href}>
-                                            <a className={`flex items-center gap-1`}>
-                                                <div className={`w-6 h-5 flex items-center 
+                                        <Link href={href} className={`flex items-center gap-1`}>
+                                            <div className={`w-6 h-5 flex items-center 
                                         justify-start`}>
-                                                    <Icon icon={fas[icon]} size={`sm`} />
-                                                </div>
-                                                <span className={`lg:text-base transition-all 
+                                                <Icon icon={fas[icon]} size={`sm`} />
+                                            </div>
+                                            <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>
-                                                    {title}
-                                                </span>
-                                            </a>
+                                                {title}
+                                            </span>
                                         </Link>
                                     </li>
                                 )
@@ -122,11 +120,9 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
 
                                 return (
                                     <li className={`pt-2`} key={index}>
-                                        <Link href={`/blogs/${slug}`}>
-                                            <a className={`lg:text-base transition-all 
+                                        <Link href={`/blogs/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
-                                                {title}
-                                            </a>
+                                            {title}
                                         </Link>
                                     </li>
                                 )
@@ -149,11 +145,9 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
 
                                 return (
                                     <li className={`pt-1 sm:pt-2 ${!showcase && `hidden`}`} key={index}>
-                                        <Link href={`/regions/${slug}`}>
-                                            <a className={`lg:text-base transition-all 
+                                        <Link href={`/regions/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
-                                                {name}
-                                            </a>
+                                            {name}
                                         </Link>
                                     </li>
                                 )

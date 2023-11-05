@@ -1,41 +1,95 @@
-const SibApiV3Sdk = require("sib-api-v3-sdk");
+export const config = {
+  runtime: "edge",
+};
 
 const { MAIL_API_KEY, MAIL_TO } = process.env;
 
-let defaultClient = SibApiV3Sdk.ApiClient.instance;
-let apiKey = defaultClient.authentications["api-key"];
-
-apiKey.apiKey = MAIL_API_KEY;
-
-export default async function handler(req, res) {
+export default async function handler(req) {
   try {
-    const { body, method } = req;
-    const { name, email, message } = body;
+    const { method } = req;
+    const { name, email, message } = await req.json();
 
     if (method !== `POST`) {
-      return res.status(400).json({ code: 400 });
+      return new Response(
+        JSON.stringify('Method not allowed.'),
+        {
+          status: 400,
+          headers: {
+            'content-type': 'application/json'
+          }
+        }
+      );
     }
 
     if (!name || !email || !message) {
-      return res.status(400).json({ code: 400 });
+      return new Response(
+        JSON.stringify('Please fill in the form correctly.'),
+        {
+          status: 400,
+          headers: {
+            'content-type': 'application/json'
+          }
+        }
+      );
     }
 
     const cleanMessage = message.replace(/(<([^>]+)>)/gi, "");
+    const apiUrl = 'https://api.brevo.com/v3/smtp/email';
 
-    let apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
-    let sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    const emailData = {
+      sender: {
+        name: name,
+        email: email,
+      },
+      to: [
+        {
+          email: MAIL_TO,
+          name: "Amin",
+        },
+      ],
+      subject: `New portfolio message from ${name}`,
+      htmlContent: `<html><body><p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${cleanMessage}</p></body></html>`,
+    };
 
-    const content = `<html><body><p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${cleanMessage}</p></body></html>`;
+    const headers = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'Api-Key': MAIL_API_KEY,
+    };
 
-    sendSmtpEmail.subject = `New portfolio message from ${name}`;
-    sendSmtpEmail.htmlContent = content;
-    sendSmtpEmail.sender = { name: name, email: email };
-    sendSmtpEmail.to = [{ email: MAIL_TO, name: "Amin" }];
+    const res = await fetch(apiUrl, {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(emailData),
+    });
 
-    await apiInstance.sendTransacEmail(sendSmtpEmail);
+    if (!res.ok) throw new Error();
+    else await res.json();
 
-    res.status(200).json({ code: 200 });
+    return new Response(
+      JSON.stringify(`Bedankt! Uw bericht werd successvol verstuurd. Wij houden u zo snel mogelijk op hoogte!`),
+      {
+        status: 200,
+        headers: {
+          'content-type': 'application/json'
+        }
+      }
+    );
   } catch (err) {
-    res.status(500).json({ code: 500 });
+    console.error(err);
+
+    if (err.message) {
+      console.error(err.message)
+    }
+
+    return new Response(
+      JSON.stringify('Er ging iets mis met de website. Probeer het later opnieuw.'),
+      {
+        status: 500,
+        headers: {
+          'content-type': 'application/json'
+        }
+      }
+    );
   }
 }
