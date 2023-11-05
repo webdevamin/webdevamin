@@ -51,8 +51,10 @@ const Blog = ({ data }) => {
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
                         2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
-                            <Image src={url} alt={alt} layout={`fill`} priority
-                                objectFit={`cover`} className={`rounded-xl`} />
+                            <Image
+                                src={url} fill={true} alt={alt} className={`rounded-xl`}
+                                style={{ objectFit: `cover` }} priority={true}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                         <SocialShares url={seo.canonical} title={`Blog - ${title}`}
                             description={description} imageUrl={url} />

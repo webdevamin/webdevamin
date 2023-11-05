@@ -16,7 +16,10 @@ const Header = ({ pages, localepages }) => {
             <div className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center`}>
                 <Link href={`/`}>
-                    <Image src={`/images/logo-dark.png`} width={55} height={55} alt={`Logo`} />
+                    <Image
+                        src={`/images/logo-dark.png`} width={55} height={55}
+                        className={`rounded-lg`} priority={true} alt={`Logo`}
+                    />
                 </Link>
                 <nav className={`text-white text-lg tracking-widest flex 
             gap-4 lg:gap-5 xl:gap-20 relative items-center bg-transparent`}>
@@ -78,8 +81,11 @@ const Header = ({ pages, localepages }) => {
                                     text-sm sm:text-base w-[42px] h-[42px] 
                                     sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
                                     flex justify-center items-center sm:flex mt-0`}>
-                                            <Image src={url} layout={`fill`} alt={name}
-                                                objectFit={`contain`} />
+                                            <Image
+                                                src={url} fill={true} alt={name}
+                                                style={{ objectFit: `contain` }}
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            />
                                         </Link>
                                     </li>
                                 )

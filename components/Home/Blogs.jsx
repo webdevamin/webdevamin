@@ -36,8 +36,11 @@ const Blogs = ({ content, data }) => {
                         return (
                             <article key={index} className={`min-w-[75vw] sm:min-w-[53vw]`}>
                                 <div className={`relative h-[calc(100vw/2.1)] sm:h-[calc(100vw/3)]`}>
-                                    <Image src={url} layout={`fill`} alt={alt}
-                                        objectFit={`cover`} className={`rounded-xl`} />
+                                    <Image
+                                        src={url} fill={true} className={`rounded-xl`}
+                                        alt={alt} style={{ objectFit: `cover` }} 
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    />
                                 </div>
                                 <div className={`p-2 lg:p-1`}>
                                     <span className={`text-theme text-xs font-bold`}>

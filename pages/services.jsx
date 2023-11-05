@@ -74,9 +74,9 @@ const Services = ({ pageData, servicesData,
                         <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
                             <Heading title={whoTitle} />
                         </h2>
-                        <Image src={whoUrl}
-                            objectFit={whoObjFit} alt={whoAlt}
-                            width={whoWidth} height={whoHeight} />
+                        <Image
+                            src={whoUrl} width={whoWidth} height={whoHeight} alt={whoAlt}
+                            style={{ objectFit: whoObjFit }} />
                     </div>
                     <div className={`md:w-full`}>
                         <div className={`hidden md:block`}>
@@ -96,9 +96,9 @@ const Services = ({ pageData, servicesData,
                         <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
                             <Heading title={whyTitle} />
                         </div>
-                        <Image src={whyUrl}
-                            objectFit={whyObjFit} alt={whyAlt}
-                            width={whyWidth} height={whyHeight} />
+                        <Image
+                            src={whyUrl} width={whyWidth} height={whyHeight} alt={whyAlt}
+                            style={{ objectFit: whyObjFit }} />
                     </div>
                     <div className={`md:w-full xl:ml-8`}>
                         <div className={`hidden md:block`}>
@@ -143,7 +143,7 @@ const Services = ({ pageData, servicesData,
                 </BlockLayoutOne>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
             </PageLayout>
         </>
     )

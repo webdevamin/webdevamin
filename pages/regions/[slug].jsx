@@ -62,9 +62,9 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                                         <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
                                             <Heading title={title} />
                                         </div>
-                                        <Image src={url}
-                                            objectFit={objectFit} alt={alt}
-                                            width={width} height={height} />
+                                        <Image
+                                            src={url} width={width} height={height}
+                                            alt={alt} style={{ objectFit: objectFit }} />
                                     </div>
                                     <div className={`md:w-full 
                                     ${position === `right` ? `xl:ml-8` : `xl:mr-8`}`}>
@@ -120,7 +120,7 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                 </BlockLayoutOne>
                 <Contact content={contactblock} />
                 <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
             </PageLayout>
         </>
     )

@@ -31,8 +31,9 @@ const About = ({ content, techs }) => {
 
                                 return (
                                     <div className={`w-12 2xl:w-16`} key={i}>
-                                        <Image src={url}
-                                            alt={alt} width={width} height={height} />
+                                        <Image
+                                            src={url} alt={alt} width={width}
+                                            height={height} />
                                     </div>
                                 )
                             })
@@ -42,9 +43,11 @@ const About = ({ content, techs }) => {
                 <div className={`mt-1 sm:mt-3 md:mt-2 lg:mt-0 xl:w-full 
                 lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl`}>
                     <div>
-                        <Image src={url} width={width} height={height}
-                            objectFit={objectFit} priority
-                            alt={alt} />
+                        <Image
+                            src={url} priority={true}
+                            width={width} height={height}
+                            alt={alt} style={{ objectFit: objectFit }}
+                        />
                     </div>
                     <article className={`mt-4 ml-3`}>
                         <div>
@@ -60,8 +63,10 @@ const About = ({ content, techs }) => {
 
                                         return (
                                             <div className={`w-9`} key={i}>
-                                                <Image src={url}
-                                                    alt={alt} width={width} height={height} />
+                                                <Image
+                                                    src={url} width={width}
+                                                    height={height} alt={alt}
+                                                />
                                             </div>
                                         )
                                     })

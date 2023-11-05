@@ -27,8 +27,11 @@ const Hero = ({ content, socialsRaw, types }) => {
         md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
         xl:px-40 2xl:px-50 md:pt-14`}>
                 <div className={`p-5 lg:p-0`}>
-                    <Image src={url} width={width} height={height} priority
-                        alt={alt} objectFit={objectFit} className={`rounded-lg`} />
+                    <Image
+                        src={url} width={width} height={height}
+                        className={`rounded-lg`} priority={true}
+                        alt={alt} style={{ objectFit: objectFit }}
+                    />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 xl:mb-9`}>

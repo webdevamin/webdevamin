@@ -9,9 +9,14 @@ const Slide = ({ image, title }) => {
             <div className={`relative h-[calc(100vw/1.75)] 
         md:h-[calc(100vw/3.5)] xl:h-[calc(100vw/4.20)] 
         2xl:h-[calc(100vw/4.2)] max-h-[427px]`}>
-                <Image src={src} layout={`fill`}
+                <Image
+                    src={src}
+                    fill={true}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt={alt}
-                    objectFit={`cover`} className={`rounded-xl`} />
+                    style={{ objectFit: "cover" }}
+                    className={`rounded-xl`}
+                />
             </div>
             <h3 className={`leading-6 absolute left-0 right-0 m-auto 
             backdrop-blur-sm bg-dark/50 w-fit 

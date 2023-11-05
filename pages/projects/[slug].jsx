@@ -69,10 +69,12 @@ const Project = ({ data }) => {
                         <div dangerouslySetInnerHTML={{ __html: descriptionText }} />
                     </div>
                     <div className={`mt-10 md:mt-0 md:basis-6/12 hidden md:block`}>
-                        <Image src={tabsImage} width={456} height={408}
-                            objectFit={`cover`} alt={router.locale === `en` ?
+                        <Image
+                            src={tabsImage} width={456} height={408}
+                            alt={router.locale === `en` ?
                                 `Tabs with information about individuals.` :
-                                `Tabs met informatie over individuen.`} />
+                                `Tabs met informatie over individuen.`}
+                            style={{ objectFit: `cover` }} />
                     </div>
                 </BlockLayoutTwo>
                 <BlockLayoutTwo title={technologiesTitle} position={`right`}>
@@ -90,8 +92,9 @@ const Project = ({ data }) => {
 
                                 return (
                                     <div key={i} className={`flex items-center justify-center`}>
-                                        <Image src={url} width={width} height={height}
-                                            alt={alt} objectFit={objectFit} />
+                                        <Image
+                                            src={url} width={width} height={height}
+                                            alt={alt} style={{ objectFit: objectFit }} />
                                     </div>
                                 )
                             })
@@ -99,8 +102,8 @@ const Project = ({ data }) => {
                     </div>
                 </BlockLayoutTwo>
                 <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs} 
-                socialsRaw={socials} regionsRaw={regions} pagesRaw={pages}/>
+                <Footer servicesRaw={services} blogsRaw={blogs}
+                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
             </PageLayout>
         </>
     )

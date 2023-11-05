@@ -18,8 +18,10 @@ const Error500 = ({ pageData }) => {
             <Seo seo={seo} alternates={alternates} />
             <div className={`flex flex-col h-full justify-center`}>
                 <main className={`w-9/12 max-w-8xl m-auto text-center`}>
-                    <Image src={url} objectFit={objectFit}
-                        alt={alt} width={width} height={height} />
+                    <Image
+                        src={url} width={width} height={height} alt={alt}
+                        style={{ objectFit: objectFit }} priority={true}
+                    />
                     <div className={`text-center my-14`}>
                         <h1 className={`text-4xl mb-5`}>
                             {title}
