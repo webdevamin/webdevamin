@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["res.cloudinary.com"],
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'res.cloudinary.com',
+    }],
   },
   i18n: {
     // These are all the locales you want to support in

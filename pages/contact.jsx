@@ -71,10 +71,17 @@ const Contact = ({ pageData }) => {
             body: JSON.stringify(form)
         }
 
-        const response = await fetch(`/api/send`, options);
-        const result = await response.json();
+        try {
+            const res = await fetch(`/api/send`, options);
 
-        initAfterSubmit(result.code);
+            if (!res.ok) initAfterSubmit(res.status);
+            else await res.json();
+
+            initAfterSubmit(res.status);
+        } catch (error) {
+            console.error(error)
+        }
+
         setForm(initForm);
     }
 
@@ -99,7 +106,7 @@ const Contact = ({ pageData }) => {
                         <form onSubmit={handleSubmit} className={`mt-7 md:mt-10`}>
                             <div className='flex flex-col gap-3 sm:gap-4'>
                                 <label>
-                                    <input type="text" maxLength="30" 
+                                    <input type="text" maxLength="30"
                                         name='name' placeholder={formTexts.name}
                                         value={form.name} onChange={handleChange}
                                         className={`w-full rounded border-dark 
