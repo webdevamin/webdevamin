@@ -106,7 +106,7 @@ const Contact = ({ pageData }) => {
                         <form onSubmit={handleSubmit} className={`mt-7 md:mt-10`}>
                             <div className='flex flex-col gap-3 sm:gap-4'>
                                 <label>
-                                    <input type="text" maxLength="30"
+                                    <input type="text" maxLength="30" required
                                         name='name' placeholder={formTexts.name}
                                         value={form.name} onChange={handleChange}
                                         className={`w-full rounded border-dark 
