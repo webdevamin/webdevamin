@@ -70,11 +70,11 @@ const Project = ({ data }) => {
                             subtitle={longDescriptionSubtitle} />
                         <div dangerouslySetInnerHTML={{ __html: descriptionText }} />
                     </div>
-                    <div className={`mt-10 md:mt-0 md:basis-6/12 hidden md:block`}>
+                    <div className={`mt-10 md:mt-0 md:basis-6/12`}>
                         {
                             (imgThree && imgThree.image) ? (
                                 <Image
-                                    src={image.data.attributes.url} width={width} height={height} alt={altImgThree} style={{ objectFit: objectFit }} />
+                                    src={image.data.attributes.url} width={width} height={height} alt={altImgThree} style={{ objectFit: objectFit }} className={`h-[28rem] sm:h-[34rem] lg:h-auto`}/>
                             ) : (
                                 <Image
                                     src={tabsImage} width={456} height={408}
