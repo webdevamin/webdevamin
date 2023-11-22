@@ -605,6 +605,19 @@ const GET_PROJECT = gql`
             height
             alt
           }
+          imgThree {
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            objectFit
+            width
+            height
+            alt
+          }
           link
           showcase
           locale

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BlockLayoutTwo = ({ children, title, slug, position, contentClasses }) => {
+const BlockLayoutTwo = ({ children, title, slug, position, contentClasses, noPadding = false }) => {
     return (
         <div {...slug && { id: slug }} className={`block_container 
-        relative z-30 xl:w-screen xl:left-[calc(-50vw+50%)] xl:py-20`}>
+        relative z-30 xl:w-screen xl:left-[calc(-50vw+50%)] ${!noPadding && `xl:py-20`}`}>
             <div className={`hidden absolute -z-10 bg-theme
             -translate-y-1/2 top-2/4 h-[115%] xl:flex shadow-2xl
             items-center flex-col justify-center 

@@ -35,7 +35,7 @@ const Project = ({ data }) => {
             (project) => project.attributes.locale === locale));
 
     const { title, description, seo, slug,
-        link, alt, imgTwo, technologies, descriptionText,
+        link, alt, imgTwo, imgThree, technologies, descriptionText,
         technologiesText, alternates, localepages } = projectForCurrentLang;
     const { blogs, contactblock, services, socials, pages, regions } = globalData;
     const button = [];
@@ -48,6 +48,8 @@ const Project = ({ data }) => {
     const heroContent = {
         title, text: description, button, img: imgTwo, alt
     }
+
+    const { image, alt: altImgThree, width, height, objectFit } = imgThree || {};
 
     const longDescriptionTitle = locale === `en` ? `Description` : `Beschrijving`;
     const longDescriptionSubtitle = locale === `en` ? `In details` : `In details`;
@@ -62,19 +64,26 @@ const Project = ({ data }) => {
             <HeroOne content={heroContent} socialsRaw={socials}
                 externalLink={link ? true : false} disableImgSpace />
             <PageLayout>
-                <BlockLayoutTwo title={longDescriptionTitle} slug={slug}>
+                <BlockLayoutTwo title={longDescriptionTitle} slug={slug} noPadding={true}>
                     <div className={`md:basis-5/12`}>
                         <Heading title={longDescriptionTitle}
                             subtitle={longDescriptionSubtitle} />
                         <div dangerouslySetInnerHTML={{ __html: descriptionText }} />
                     </div>
                     <div className={`mt-10 md:mt-0 md:basis-6/12 hidden md:block`}>
-                        <Image
-                            src={tabsImage} width={456} height={408}
-                            alt={router.locale === `en` ?
-                                `Tabs with information about individuals.` :
-                                `Tabs met informatie over individuen.`}
-                            style={{ objectFit: `cover` }} />
+                        {
+                            (imgThree && imgThree.image) ? (
+                                <Image
+                                    src={image.data.attributes.url} width={width} height={height} alt={altImgThree} style={{ objectFit: objectFit }} />
+                            ) : (
+                                <Image
+                                    src={tabsImage} width={456} height={408}
+                                    alt={router.locale === `en` ?
+                                        `Tabs with information about individuals.` :
+                                        `Tabs met informatie over individuen.`}
+                                    style={{ objectFit: `cover` }} />
+                            )
+                        }
                     </div>
                 </BlockLayoutTwo>
                 <BlockLayoutTwo title={technologiesTitle} position={`right`}>
