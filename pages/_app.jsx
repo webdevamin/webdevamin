@@ -6,38 +6,48 @@ import Script from "next/script"
 import * as fbq from "../utils/fbpixel";
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { getCookie } from 'cookies-next';
+import useConsentStore from "../utils/store";
 
 config.autoAddCss = false
+const key = `wda-consent`;
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const { consent } = useConsentStore();
+  const consentCookie = getCookie(key);
 
   useEffect(() => {
-    fbq.pageview();
-
-    const handleRouteChange = () => {
+    if (consent || consentCookie) {
       fbq.pageview();
-    }
 
-    router.events.on(`routeChangeComplete`, handleRouteChange);
+      const handleRouteChange = () => {
+        fbq.pageview();
+      }
 
-    return () => {
-      router.events.off(`routeChangeComplete`, handleRouteChange);
+      router.events.on(`routeChangeComplete`, handleRouteChange);
+
+      return () => {
+        router.events.off(`routeChangeComplete`, handleRouteChange);
+      }
     }
-  }, [router.events]);
+  }, [router.events, consent, consentCookie]);
 
   return (
     <>
       {
-        process.env.NODE_ENV !== "development" && (
+        (consent || consentCookie) && (
           <>
-            <Script strategy="afterInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=G-SMV41VQ81Z`} />
-            <Script
-              id='google-analytics'
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
+            {
+              process.env.NODE_ENV !== "development" && (
+                <>
+                  <Script strategy="afterInteractive"
+                    src={`https://www.googletagmanager.com/gtag/js?id=G-SMV41VQ81Z`} />
+                  <Script
+                    id='google-analytics'
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                      __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
@@ -45,16 +55,16 @@ function MyApp({ Component, pageProps }) {
                   page_path: window.location.pathname,
                 });
                 `,
-              }}>
-            </Script>
-          </>
-        )
-      }
-      <Script
-        id='fb-pixel'
-        strategy='afterInteractive'
-        dangerouslySetInnerHTML={{
-          __html: `
+                    }}>
+                  </Script>
+                </>
+              )
+            }
+            <Script
+              id='fb-pixel'
+              strategy='afterInteractive'
+              dangerouslySetInnerHTML={{
+                __html: `
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -64,7 +74,10 @@ function MyApp({ Component, pageProps }) {
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', ${fbq.FB_PIXEL_ID});`,
-        }}></Script>
+              }}></Script>
+          </>
+        )
+      }
       <Component {...pageProps} />
       <Head>
         <link rel="icon" href="/favicon.ico" />
