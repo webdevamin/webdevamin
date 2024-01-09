@@ -9,7 +9,7 @@ const CookieConsent = () => {
     const router = useRouter();
     const { locale } = router;
 
-    const { consent, enable } = useConsentStore();
+    const { enable } = useConsentStore();
     const [showConsent, setShowConsent] = useState(false);
 
     useEffect(() => {
@@ -36,9 +36,9 @@ const CookieConsent = () => {
     if (!showConsent) return null;
 
     return (
-        <section className='fixed bottom-0 left-1/2 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/3 max-w-2xl min-w-xs py-15 p-6 bg-light border-t-2 border-dark flex flex-col items-center justify-center transform -translate-x-1/2 z-50'>
-            <p className='text-dark text-center font-medium text-sm'>{text}</p>
-            <div className="flex mt-3 w-full gap-3">
+        <section className='fixed bottom-0 left-1/2 w-full py-15 p-6 bg-light border-t-2 border-dark flex flex-col items-center justify-center transform -translate-x-1/2 z-50'>
+            <p className='text-dark text-center font-medium text-sm max-w-4xl'>{text}</p>
+            <div className="flex mt-3 w-full gap-3 max-w-lg">
                 <button onClick={acceptConsent} className='text-white bg-dark
             w-full rounded border-2 border-dark text-sm py-2 font-bold'>{acceptBtn}</button>
                 <button onClick={declineConsent} className='text-dark font-bold 
