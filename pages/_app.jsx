@@ -6,7 +6,7 @@ import Script from "next/script"
 import * as fbq from "../utils/fbpixel";
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { getCookie } from 'cookies-next';
+import Cookies from 'js-cookie';
 import useConsentStore from "../utils/store";
 
 config.autoAddCss = false
@@ -15,28 +15,24 @@ const key = `wda-consent`;
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { consent } = useConsentStore();
-  const consentCookie = getCookie(key);
 
   useEffect(() => {
-    if (consent || consentCookie) {
+    if (consent === 'enable' || Cookies.get(key) === 'enable') {
       fbq.pageview();
 
-      const handleRouteChange = () => {
-        fbq.pageview();
-      }
-
+      const handleRouteChange = () => fbq.pageview();
       router.events.on(`routeChangeComplete`, handleRouteChange);
 
       return () => {
         router.events.off(`routeChangeComplete`, handleRouteChange);
       }
     }
-  }, [router.events, consent, consentCookie]);
+  }, [router.events, consent]);
 
   return (
     <>
       {
-        (consent || consentCookie) && (
+        (consent === 'enable' || Cookies.get(key) === 'enable') && (
           <>
             {
               process.env.NODE_ENV !== "development" && (
