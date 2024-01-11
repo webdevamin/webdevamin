@@ -5,6 +5,9 @@ import Cookies from 'js-cookie';
 
 const key = `wda-consent`;
 
+const expirationDate = new Date();
+expirationDate.setFullYear(expirationDate.getFullYear() + 1);
+
 const CookieConsent = () => {
     const router = useRouter();
     const { locale } = router;
@@ -22,13 +25,19 @@ const CookieConsent = () => {
     const text = locale === `en` ? `This website uses data collection to enhance the browsing experience. You can decline to disable these features.` : `Deze website maakt gebruik van gegevensverzameling voor een verbeterde browse-ervaring. U kunt ervoor kiezen dit uit te schakelen door te weigeren.`;
 
     const acceptConsent = () => {
-        Cookies.set(key, 'enable');
+        Cookies.set(key, 'enable', {
+            expires: expirationDate,
+        });
+
         setHideConsent(true)
         update('enable');
     }
 
     const declineConsent = () => {
-        Cookies.set(key, 'disable');
+        Cookies.set(key, 'disable', {
+            expires: expirationDate,
+        });
+
         setHideConsent(true)
         update('disable');
     }
