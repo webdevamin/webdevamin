@@ -15,7 +15,7 @@ const PageLayout = ({ children }) => {
             absolute top-0 right-0 z-20`} />
                 </main>
             </div>
-            <CookieConsent />
+            {/* <CookieConsent /> */}
         </>
     )
 }

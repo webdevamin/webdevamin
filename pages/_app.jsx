@@ -16,22 +16,22 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { consent } = useConsentStore();
 
-  useEffect(() => {
-    if (consent === 'enable' || Cookies.get(key) === 'enable') {
-      fbq.pageview();
+  // useEffect(() => {
+  //   if (consent === 'enable' || Cookies.get(key) === 'enable') {
+  //     fbq.pageview();
 
-      const handleRouteChange = () => fbq.pageview();
-      router.events.on(`routeChangeComplete`, handleRouteChange);
+  //     const handleRouteChange = () => fbq.pageview();
+  //     router.events.on(`routeChangeComplete`, handleRouteChange);
 
-      return () => {
-        router.events.off(`routeChangeComplete`, handleRouteChange);
-      }
-    }
-  }, [router.events, consent]);
+  //     return () => {
+  //       router.events.off(`routeChangeComplete`, handleRouteChange);
+  //     }
+  //   }
+  // }, [router.events, consent]);
 
   return (
     <>
-      {
+      {/* {
         (consent === 'enable' || Cookies.get(key) === 'enable') && (
           <>
             {
@@ -73,7 +73,7 @@ function MyApp({ Component, pageProps }) {
               }}></Script>
           </>
         )
-      }
+      } */}
       <Component {...pageProps} />
       <Head>
         <link rel="icon" href="/favicon.ico" />
