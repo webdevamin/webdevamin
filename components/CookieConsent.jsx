@@ -22,7 +22,7 @@ const CookieConsent = () => {
     const acceptBtn = locale === `en` ? `Accept` : `Akkoord`;
     const declineBtn = locale === `en` ? `Decline` : `Weigeren`;
 
-    const text = locale === `en` ? `This website uses data collection to enhance the browsing experience. You can decline to disable these features.` : `Deze website maakt gebruik van gegevensverzameling voor een verbeterde browse-ervaring. U kunt ervoor kiezen dit uit te schakelen door te weigeren.`;
+    const text = locale === `en` ? `This website uses data collection to enhance the browsing experience.` : `Deze website maakt gebruik van gegevensverzameling voor een beterde browse-ervaring.`;
 
     const acceptConsent = () => {
         Cookies.set(key, 'enable', {

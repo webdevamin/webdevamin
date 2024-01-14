@@ -22,7 +22,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
         relative md:p-12 z-30`}>
             <div className={`justify-between gap-10 sm:gap-12 grid 
-            grid-cols-2 md:gap-16 md:flex max-w-8xl mx-auto lg:px-16`}>
+            grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-16 xl:flex max-w-8xl mx-auto lg:px-16`}>
                 <div className={`text_light_all`}>
                     <h2 className={`text-xl mb-2`}>
                         Socials
@@ -134,7 +134,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                             text={locale === `en` ? `More blogs` : `Meer blogs`} />
                     </div>
                 </div>
-                <div className={`text_light_all col-span-2`}>
+                <div className={`text_light_all`}>
                     <h2 className={`text-xl mb-2`}>
                         {locale === `en` ? `Regions` : `Regio's`}
                     </h2>
@@ -153,6 +153,18 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                                 )
                             })
                         }
+                    </ul>
+                </div>
+                <div className={`text_light_all`}>
+                    <h2 className={`text-xl mb-2`}>
+                        {locale === `en` ? `Misc` : `Overige`}
+                    </h2>
+                    <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
+                        <li className={`pt-1 sm:pt-2`}>
+                            <Link href={`/policy`} className={`lg:text-base transition-all hover:text-theme`}>
+                                Privacy policy
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

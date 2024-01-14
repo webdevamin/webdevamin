@@ -1,15 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import {
-    destructureImageComponent, destructureSingleType,
-    destructureCollectionType, destructureCollectionTypeObject
-} from '../../utils/app';
+import { destructureImageComponent, destructureSingleType, destructureCollectionType, destructureCollectionTypeObject, getAltLocales } from '../../utils/app';
 
-const Header = ({ pages, localepages }) => {
+const HeaderNew = ({ pages, localepages, currentLocale }) => {
     const [active, setActive] = useState(false);
     const links = destructureCollectionType(pages)
-    
+    const altLocales = getAltLocales(currentLocale);
+
     const handleClick = () => setActive(!active);
 
     return (
@@ -65,10 +63,11 @@ const Header = ({ pages, localepages }) => {
                     </ul>
                     <ul className={`flex items-center bg-transparent`}>
                         {
-                            localepages.map((localepage, i) => {
-                                const { locale_link, href, locale } = localepage;
-                                const { name, flag } = destructureSingleType(locale_link);
-                                const { url } = destructureImageComponent(flag);
+                            altLocales.map((altLocale, i) => {
+                                // const { locale_link, href, locale } = localepage;
+                                // const { name, flag } = destructureSingleType(locale_link);
+                                // const { url } = destructureImageComponent(flag);
+                                const {name,locale,flag} = altLocale;
 
                                 return (
                                     <li key={i}>
@@ -83,7 +82,7 @@ const Header = ({ pages, localepages }) => {
                                     sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
                                     flex justify-center items-center sm:flex mt-0`}>
                                             <Image
-                                                src={url} fill={true} alt={name}
+                                                src={flag} fill={true} alt={name}
                                                 style={{ objectFit: `contain` }}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />
@@ -99,4 +98,4 @@ const Header = ({ pages, localepages }) => {
     )
 }
 
-export default Header
+export default HeaderNew

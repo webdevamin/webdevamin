@@ -58,20 +58,21 @@ h2,
 }
 
 h1 {
-  @apply text-5xl mb-9 md:mb-6 font-bold md:text-6xl xl:text-7xl tracking-tight 
-  2xl:text-8xl;
+  @apply text-5xl mb-9 md:mb-6 font-bold md:text-6xl xl:text-7xl tracking-tight 2xl:text-8xl;
 }
 
 h2,
 .h2 {
-  @apply text-4xl mb-5 font-bold md:text-5xl lg:text-6xl
-  xl:text-7xl 2xl:text-8xl 3xl:text-8xl lg:mb-4 uppercase lg:leading-tight
-  lg:tracking-tight xl:mb-9;
+  @apply text-4xl mb-5 font-bold md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-8xl lg:mb-4 uppercase lg:leading-tight lg:tracking-tight xl:mb-9;
 }
 
 h3 {
-  @apply text-lg sm:text-xl mb-3 font-semibold lg:text-2xl xl:text-3xl 
-  lg:mb-5 uppercase xl:mb-7;
+  @apply text-lg sm:text-xl mb-3 font-semibold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7;
+}
+
+h4,
+.h4 {
+  @apply text-2xl mb-4 font-semibold md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl lg:mb-3 lg:leading-tight lg:tracking-tight xl:mb-8;
 }
 
 p,
@@ -84,8 +85,7 @@ strong {
 }
 
 .smaller_p {
-  @apply mb-2 text-[15px] lg:text-[16px] leading-6 
-  lg:mb-3 lg:leading-7 opacity-80;
+  @apply mb-2 text-[15px] lg:text-[16px] leading-6 lg:mb-3 lg:leading-7 opacity-80;
 }
 
 .larger_p,
@@ -119,8 +119,7 @@ p a {
 }
 
 .text_lg_white_semibold * {
-  @apply text-white font-bold md:text-lg 
-  lg:text-2xl lg:leading-9 opacity-100;
+  @apply text-white font-bold md:text-lg lg:text-2xl lg:leading-9 opacity-100;
 }
 
 .container {
@@ -144,12 +143,12 @@ p a {
 
 #accordion {
   h2 {
-    @apply font_quicksand text-base lg:text-lg normal-case 
-    font-semibold mb-0;
+    @apply font_quicksand text-base lg:text-lg normal-case font-semibold mb-0;
   }
 }
 
 #accordion {
+
   div,
   button {
     @apply border-dark focus:ring-0 border-opacity-10;
@@ -164,20 +163,16 @@ p a {
 
 .blog_content {
   h2 {
-    @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl 
-    lg:mb-5 uppercase xl:mb-7 mt-8 xl:mt-10 font_quicksand;
+    @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7 mt-8 xl:mt-10 font_quicksand;
   }
 }
 
 .social_shares {
-  @apply flex justify-center items-center 
-  gap-1 md:gap-1.5 xl:absolute xl:-left-7 
-  xl:top-[5%] xl:gap-1.5 xl:flex-col xl:z-40;
+  @apply flex justify-center items-center gap-1 md:gap-1.5 xl:absolute xl:-left-7 xl:top-[5%] xl:gap-1.5 xl:flex-col xl:z-40;
 
   button {
-    & > svg {
-      @apply w-[35px] sm:w-[38px] transition-all 
-      hover:scale-110 md:w-[42px] xl:w-[54px] xl:h-auto;
+    &>svg {
+      @apply w-[35px] sm:w-[38px] transition-all hover:scale-110 md:w-[42px] xl:w-[54px] xl:h-auto;
     }
   }
 }

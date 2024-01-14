@@ -1,0 +1,18 @@
+{
+    "seo": {
+        "title": "Privacy policy",
+        "description": "Lees onze privacy policy",
+        "canonical": "https://webdevamin.com/nl/policy"
+    },
+    "alternates": [
+        {
+            "hreflang": "x-default",
+            "href": "https://webdevamin.com/policy"
+        },
+        {
+            "hreflang": "nl",
+            "href": "https://webdevamin.com/nl/policy"
+        }
+    ],
+    "altLocale": "https://webdevamin.com/policy"
+}
