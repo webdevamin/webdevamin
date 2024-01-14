@@ -162,7 +162,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         <li className={`pt-1 sm:pt-2`}>
                             <Link href={`/policy`} className={`lg:text-base transition-all hover:text-theme`}>
-                                Privacy policy
+                            {locale === `en` ? `Privacy policy` : `Privacybeleid`}
                             </Link>
                         </li>
                     </ul>

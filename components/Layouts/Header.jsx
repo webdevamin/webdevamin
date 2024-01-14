@@ -47,9 +47,9 @@ const Header = ({ pages, localepages }) => {
                             links.map((link, index) => {
                                 const { href, title } = destructureCollectionTypeObject(link);
                                 const isLast = index === links.length - 1;
-
+                                
                                 return (
-                                    <li key={index} className={`bg-transparent z-50`}>
+                                    <li key={index} className={`bg-transparent z-50 ${href == '/policy' && `hidden`}`}>
                                         <Link href={href} className={`w-full transition-all xl:block
                                         py-3 px-8 xl:py-0 xl:px-0 border-theme 
                                         ease-linear xl:border-none relative 

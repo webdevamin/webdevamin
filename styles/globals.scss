@@ -167,6 +167,31 @@ p a {
   }
 }
 
+#policy {
+
+  h3,
+  h3>strong {
+    @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-5 mt-8 xl:mt-10 font_quicksand;
+  }
+
+  a,
+  p {
+    @apply lg:text-xl;
+  }
+
+  p {
+    @apply mb-2 lg:mb-3 lg:leading-8 opacity-80;
+  }
+
+  ul {
+    @apply list-disc pl-8;
+
+    li {
+      @apply lg:text-xl lg:leading-8 opacity-80;
+    }
+  }
+}
+
 .social_shares {
   @apply flex justify-center items-center gap-1 md:gap-1.5 xl:absolute xl:-left-7 xl:top-[5%] xl:gap-1.5 xl:flex-col xl:z-40;
 
