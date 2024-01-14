@@ -1,5 +1,3 @@
-import locales from "./locales";
-
 // General app related
 
 const getJsonString = (string) => {
@@ -45,12 +43,6 @@ const destructureLocales = (object) => {
   return locales;
 };
 
-const getAltLocales = (currentLocale) => {
-  return locales.filter((l) => {
-    return l.locale != currentLocale;
-  })
-}
-
 export {
   destructureSingleType,
   destructureCollectionType,
@@ -58,5 +50,4 @@ export {
   destructureImageComponent,
   destructureLocales,
   getJsonString,
-  getAltLocales
 };

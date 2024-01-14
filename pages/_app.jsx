@@ -8,7 +8,6 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Cookies from 'js-cookie';
 import useConsentStore from "../utils/store";
-import { appWithTranslation } from 'next-i18next';
 
 config.autoAddCss = false
 const key = `wda-consent`;
@@ -83,4 +82,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default appWithTranslation(MyApp)
+export default MyApp
