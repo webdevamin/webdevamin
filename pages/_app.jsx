@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Cookies from 'js-cookie';
 import useConsentStore from "../utils/store";
+import { NextIntlClientProvider } from 'next-intl';
 
 config.autoAddCss = false
 const key = `wda-consent`;
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps }) {
   }, [router.events, consent]);
 
   return (
-    <>
+    <NextIntlClientProvider locale={router.locale} timeZone='Europe/Brussels' messages={pageProps.messages}>
       {
         (consent === 'enable' || Cookies.get(key) === 'enable') && (
           <>
@@ -78,7 +79,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </>
+    </NextIntlClientProvider>
   )
 }
 

@@ -1,0 +1,60 @@
+{
+    "seo": {
+        "title": "Projects: websites, apps, and more",
+        "description": "Top projects such as e-commerce, business websites, real-time administration apps, etc. Web design, web development, logo design.",
+        "canonical": "https://webdevamin.com/en/projects",
+        "image": "https://bucket.webdevamin.com/projects.jpg",
+        "ogTitle": "Projects: websites, apps, and more",
+        "ogDescription": "Top projects such as e-commerce, business websites, real-time administration apps, etc. Web design, web development, logo design."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/projects",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/projects",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/projects",
+            "locale": "nl"
+        }
+    ],
+    "title": "Projects",
+    "slug": "projects",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Projects",
+            "slug": "hero",
+            "text": "<p>Example projects such as e-commerce, business websites, real-time administration apps, etc. Web design, web development, logo design.</p>",
+            "button": [
+                {
+                    "href": "#overview",
+                    "text": "View projects",
+                    "external": false
+                },
+                {
+                    "href": "/contact",
+                    "text": "Free quote",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/launch.svg",
+                "alt": "Person launching a spaceship from a computer.",
+                "width": 503,
+                "height": 342,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Overview",
+            "slug": "overview",
+            "subtitle": "Achievements"
+        }
+    ]
+}

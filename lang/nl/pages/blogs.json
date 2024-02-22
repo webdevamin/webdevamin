@@ -1,0 +1,56 @@
+{
+    "seo": {
+        "title": "Blogs over verschillende onderwerpen",
+        "description": "Interessante topics, verhalen en gidsen over IT, development, webdesign, freelance en meer.",
+        "canonical": "https://webdevamin.com/nl/blogs",
+        "image": "https://bucket.webdevamin.com/blogs_nl.jpg",
+        "ogTitle": "Blogs over verschillende onderwerpen",
+        "ogDescription": "Interessante topics, verhalen en gidsen over IT, development, webdesign, freelance en meer."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/blogs",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/blogs",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/blogs",
+            "locale": "en"
+        }
+    ],
+    "title": "Blogs",
+    "slug": "blogs",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Blogs",
+            "slug": "hero",
+            "text": "<p>Interessante topics, verhalen en gidsen over IT, development, webdesign, freelance en meer.</p>",
+            "button": [
+                {
+                    "href": "#top",
+                    "text": "Bekijk blogs",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/blogging.svg",
+                "alt": "Staande persoon schrijft een blog.",
+                "width": 400,
+                "height": 402,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Overzicht",
+            "slug": "overview",
+            "subtitle": "Een lijst",
+            "text": "<p>Blogs met het label '<strong>dev</strong>' zijn specifiek bedoeld voor webontwikkelaars en webdesigners. Deze blogs verdiepen zich in technische concepten en zijn vaak gevuld met specifiek jargon dat voor een gewone gebruiker onbegrijpelijk kan zijn.</p>"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "flag": "https://bucket.webdevamin.com/nl.png",
+        "alt": "Dutch flag",
+        "lang": "nl"
+    },
+    {
+        "flag": "https://bucket.webdevamin.com/eng.png",
+        "alt": "English flag",
+        "lang": "en"
+    }
+]

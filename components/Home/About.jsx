@@ -1,15 +1,10 @@
 import Image from 'next/image';
-import React from 'react'
-import {
-    destructureImageComponent,
-    destructureCollectionTypeObject
-} from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
 import Heading from '../Heading';
 
-const About = ({ content, techs }) => {
+const About = ({ content }) => {
     const { title, text, subtitle, img, button } = content;
-    const { url, alt, objectFit, width, height } = destructureImageComponent(img);
+    const { src, alt } = img;
     const splitTitle = title.split(`&`);
 
     return (
@@ -23,54 +18,27 @@ const About = ({ content, techs }) => {
                     <div className={`hidden lg:flex gap-x-5 gap-y-3 mt-6 
                     justify-center md:justify-start 2xl:justify-end 
                     flex-wrap 2xl:mt-10 2xl:gap-x-6 2xl:gap-y-3`}>
-                        {
-                            techs.map((techRaw, i) => {
-                                const { img } = destructureCollectionTypeObject(techRaw);
-                                const { url, alt, width, height } =
-                                    destructureImageComponent(img);
-
-                                return (
-                                    <div className={`w-12 2xl:w-16`} key={i}>
-                                        <Image
-                                            src={url} alt={alt} width={width}
-                                            height={height} />
-                                    </div>
-                                )
-                            })
-                        }
+                        <Image src={`https://bucket.webdevamin.com/nextjs.svg`} width={70} height={70} alt={`Next.js logo`} />
+                        <Image src={`https://bucket.webdevamin.com/nodejs.svg`} width={70} height={70} alt={`Node.js logo`} />
+                        <Image src={`https://bucket.webdevamin.com/laravel.svg`} width={70} height={70} alt={`Laravel logo`} />
+                        <Image src={`https://bucket.webdevamin.com/wordpress.svg`} width={70} height={70} alt={`Wordpress logo`} />
                     </div>
                 </div>
                 <div className={`mt-1 sm:mt-3 md:mt-2 lg:mt-0 xl:w-full 
                 lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl`}>
                     <div>
-                        <Image
-                            src={url} priority={true}
-                            width={width} height={height}
-                            alt={alt} style={{ objectFit: objectFit }}
-                        />
+                        <Image src={src} priority={true} width={836} height={483} alt={alt} style={{ objectFit: "contain" }} />
                     </div>
                     <article className={`mt-4 ml-3`}>
                         <div>
                             <h3>{subtitle}</h3>
-                            <div className={`flex lg:hidden gap-x-5 gap-y-2 mt-5 
+                            <div className={`flex lg:hidden gap-x-4 gap-y-2 mt-5 
                             lg:mt-10 justify-center md:justify-start 
                             mb-4 sm:mb-6 flex-wrap`}>
-                                {
-                                    techs.map((techRaw, i) => {
-                                        const { img } = destructureCollectionTypeObject(techRaw);
-                                        const { url, alt, width, height } =
-                                            destructureImageComponent(img);
-
-                                        return (
-                                            <div className={`w-9`} key={i}>
-                                                <Image
-                                                    src={url} width={width}
-                                                    height={height} alt={alt}
-                                                />
-                                            </div>
-                                        )
-                                    })
-                                }
+                                <Image src={`https://bucket.webdevamin.com/nextjs.svg`} width={30} height={30} alt={`Next.js logo`} />
+                                <Image src={`https://bucket.webdevamin.com/nodejs.svg`} width={30} height={30} alt={`Node.js logo`} />
+                                <Image src={`https://bucket.webdevamin.com/laravel.svg`} width={30} height={30} alt={`Laravel logo`} />
+                                <Image src={`https://bucket.webdevamin.com/wordpress.svg`} width={30} height={30} alt={`Wordpress logo`} />
                             </div>
                             <div dangerouslySetInnerHTML={{ __html: text }} />
                         </div>

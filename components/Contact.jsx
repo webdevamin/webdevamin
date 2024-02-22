@@ -1,11 +1,9 @@
-import React from 'react'
-import { destructureSingleType } from '../utils/app';
 import ButtonTwo from './Buttons/ButtonTwo'
 import BlockLayoutThree from './Layouts/BlockLayoutThree'
 import Heading from './Heading';
 
 const Contact = ({ content }) => {
-    const { title, text, button } = destructureSingleType(content);
+    const { title, text, button } = content;
     const { href, text: buttonText } = button;
 
     return (
@@ -13,8 +11,7 @@ const Contact = ({ content }) => {
             <div className={`text-center max-w-2xl mx-auto`}>
                 <div>
                     <Heading title={title} noSubtitle titleClasses={`text-white`} />
-                    <div className={`text_lg_white_semibold`}
-                        dangerouslySetInnerHTML={{ __html: text }} />
+                    <p className={`text-white font-bold md:text-lg lg:text-2xl lg:leading-9 opacity-100`}>{text}</p>
                 </div>
                 <ButtonTwo href={href} text={buttonText}
                     classes={`sm:w-fit px-7 sm:px-12 md:px-20`} />

@@ -1,0 +1,98 @@
+{
+    "seo": {
+        "title": "Services: making websites and more",
+        "description": "Freelance website builder, web developer, and logo designer from Belgium. Learn more about myself and discover how I can assist you.",
+        "canonical": "https://webdevamin.com/services",
+        "image": "https://bucket.webdevamin.com/services.jpg",
+        "ogTitle": "My services: what do I offer",
+        "ogDescription": "Freelance website builder, web developer, and logo designer from Belgium. Learn more about myself and discover how I can assist you."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/services",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/services",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/services",
+            "locale": "nl"
+        }
+    ],
+    "title": "Services",
+    "slug": "services",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Services",
+            "slug": "hero",
+            "subtitle": "Specialties, etc.",
+            "text": "<p>Freelance website builder, web developer, and logo designer from Belgium. Learn more about myself and discover how I can assist you.</p>",
+            "button": [
+                {
+                    "href": "#expertise",
+                    "text": "Read more",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/avatar.svg",
+                "alt": "Male avatar image.",
+                "width": 485,
+                "height": 485,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "My expertise",
+            "slug": "expertise",
+            "subtitle": "Skills"
+        },
+        {
+            "title": "Who am I",
+            "subtitle": "Bio",
+            "summary": "Web designer | Web developer | Logo Design",
+            "slug": "who",
+            "text": "<p>Freelance <strong>website builder</strong> and <strong>logo designer</strong> from <strong>Belgium</strong>. With a bachelor's degree in Software Engineering and years of professional work experience, I deliver tailor-made <strong>digital solutions</strong> focusing on your business' needs. I perform various roles: web designer, web developer, logo designer, etc.</p>",
+            "button": [
+                {
+                    "href": "https://docs.google.com/document/d/e/2PACX-1vTTs0T9BMUNrrYu1zKw0jvR5fcTTqCVgWoAQrVKzQw9NKJdYETfgsFIUbZ16kvSBc9rnAeJEk_McsEw/pub",
+                    "text": "My CV",
+                    "external": true
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/profile.svg",
+                "alt": "Person presenting profile information."
+            }
+        },
+        {
+            "title": "Why me",
+            "subtitle": "Selling points",
+            "summary": "Freelance | Web design | Logo | Affordable",
+            "slug": "why",
+            "text": "<p>I am a <strong>freelancer/self-employed</strong> with my own <strong>web agency</strong>. This means that unlike a software agency/company, I am your sole person to communicate and work with. I provide various types of digital solutions. Whether it's simple business websites, administration apps with login systems, food delivery apps, webshops, etc., with excellent SEO scores. In other words, anything that needs to appear on the screen online/offline, I complete it. A digital solution doesn't necessarily have to be 'a business website'. Ultimately, with the right technologies behind my back, <strong>hosting can be extremely cheap or even free</strong>.</p>",
+            "button": [
+                {
+                    "href": "https://docs.google.com/document/d/e/2PACX-1vTTs0T9BMUNrrYu1zKw0jvR5fcTTqCVgWoAQrVKzQw9NKJdYETfgsFIUbZ16kvSBc9rnAeJEk_McsEw/pub",
+                    "text": "My CV",
+                    "external": true
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/why.svg",
+                "alt": "Enormous green question mark with decoration."
+            }
+        },
+        {
+            "title": "List of options",
+            "subtitle": "Services",
+            "slug": "what",
+            "text": "<p>An overview of the most commonly requested services that clients typically ask to implement in their digital solution(s). Of course, there are many more.</p>"
+        }
+    ]
+}

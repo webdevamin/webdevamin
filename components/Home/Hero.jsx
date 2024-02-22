@@ -1,37 +1,23 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent,
-    getJsonString,
-} from '../../utils/app';
+import { getJsonString, } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-import Marquee from "react-fast-marquee";
+import Marquee from 'react-fast-marquee';
 
-const Hero = ({ content, socialsRaw, types }) => {
-    const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
-    const { title, text, button, img } = content;
-    const { url, objectFit, width, height, alt } = destructureImageComponent(img);
+const Hero = ({ content, socials }) => {
+    const { title, text, button, img, types } = content;
+    const { src, alt } = img;
 
     const parsedTitle = getJsonString(title);
-
     return (
-        <div className={`p-10 bg-transparent max-w-[2250px] 
-    mx-auto mt-20 pb-0 xl:py-16`} id={`hero`}>
-            <div className={`text-white text-center bg-transparent
-        md:flex md:flex-row-reverse md:justify-evenly 
-        md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
-        xl:px-40 2xl:px-50 md:pt-14`}>
+        <div className={`p-10 bg-transparent max-w-[2250px] mx-auto mt-20 pb-0 xl:py-16`} id={`hero`}>
+            <div className={`text-white text-center bg-transparent md:flex md:flex-row-reverse md:justify-evenly md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 xl:px-40 2xl:px-50 md:pt-14`}>
                 <div className={`p-5 lg:p-0`}>
-                    <Image
-                        src={url} width={width} height={height}
-                        className={`rounded-lg`} priority={true}
-                        alt={alt} style={{ objectFit: objectFit }}
-                    />
+                    <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 xl:mb-9`}>
@@ -49,8 +35,7 @@ const Hero = ({ content, socialsRaw, types }) => {
                         <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
-                                    const { href, icon, title, hideFromHeader } =
-                                        destructureCollectionTypeObject(social);
+                                    const { href, icon, title, hideFromHeader } = social;
                                     const { name, brands } = icon;
                                     const iconRef = brands ? fab[name] : fas[name];
 
@@ -80,13 +65,11 @@ const Hero = ({ content, socialsRaw, types }) => {
                     lg:mt-5 lg:mb-10 py-3`} pauseOnHover>
                         {
                             types.map((type, i) => {
-                                const { name } = destructureCollectionTypeObject(type);
-
                                 return (
                                     <span key={i} className={`font-medium rounded-xl 
                                     px-5 py-1 mr-4 my-1 text-dark bg-light 
                                     shadow-[2px_2px_4px_#d4d4d4,-2px_-2px_4px_#ffffff]`}>
-                                        {name}
+                                        {type}
                                     </span>
                                 )
                             })
@@ -94,12 +77,12 @@ const Hero = ({ content, socialsRaw, types }) => {
                     </Marquee>
                     <div className={`flex flex-col gap-4 lg:flex-row mt-7 lg:mt-10`}>
                         {
-                            button.map((btn, index) => {
+                            button.map((btn, i) => {
                                 const { href, text } = btn;
-                                const isOdd = index % 2 !== 0 ? true : false;
+                                const isOdd = i % 2 !== 0 ? true : false;
 
                                 return (
-                                    <ButtonOne key={index} href={href} text={text}
+                                    <ButtonOne key={i} href={href} text={text}
                                         outline={isOdd} noMargin
                                         classes={`sm:px-14 md:text-center`} />
                                 )
@@ -114,8 +97,7 @@ const Hero = ({ content, socialsRaw, types }) => {
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
                         socials.map((social, index) => {
-                            const { href, icon, title, hideFromHeader } =
-                                destructureCollectionTypeObject(social);
+                            const { href, icon, title, hideFromHeader } = social;
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 

@@ -1,0 +1,56 @@
+{
+    "seo": {
+        "title": "Blogs on Various Topics",
+        "description": "Interesting topics, stories, and guides on IT, development, web design, freelancing, and more.",
+        "canonical": "https://webdevamin.com/blogs",
+        "image": "https://bucket.webdevamin.com/blogs.jpg",
+        "ogTitle": "Blogs on Various Topics",
+        "ogDescription": "Interesting topics, stories, and guides on IT, development, web design, freelancing, and more."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/blogs",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/blogs",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/blogs",
+            "locale": "nl"
+        }
+    ],
+    "title": "Blogs",
+    "slug": "blogs",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Blogs",
+            "slug": "hero",
+            "text": "<p>Interesting topics, stories, and guides on IT, development, web design, freelancing, and more.</p>",
+            "button": [
+                {
+                    "href": "#top",
+                    "text": "View Blogs",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/blogging.svg",
+                "alt": "Person writing a blog.",
+                "width": 400,
+                "height": 402,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Overview",
+            "slug": "overview",
+            "subtitle": "A List",
+            "text": "<p>Blogs labeled '<strong>dev</strong>' are specifically for web developers and designers. These blogs delve into technical concepts and are often filled with jargon that may be incomprehensible to the average user.</p>"
+        }
+    ]
+}

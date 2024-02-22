@@ -1,0 +1,122 @@
+[
+    {
+        "seo": {
+            "title": "How to hire a reliable web designer",
+            "ogTitle": "Hiring a reliable web designer",
+            "description": "Discover the important factors before hiring a web designer or web developer you can trust. Find your ideal professional.",
+            "ogDescription": "Discover the important factors before hiring a web designer or web developer you can trust. Find your ideal professional.",
+            "canonical": "https://webdevamin.com/blogs/how-to-hire-webdesigner",
+            "image": "https://bucket.webdevamin.com/find_a_webdesigner.jpg"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/blogs/how-to-hire-webdesigner",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/blogs/hoe-webdesigner-inhuren",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/blogs/hoe-webdesigner-inhuren",
+                "locale": "nl"
+            }
+        ],
+        "locale": "en",
+        "title": "How to hire a reliable web designer",
+        "description": "Discover the important factors before hiring a web designer or web developer you can trust. Find your ideal professional.",
+        "slug": "how-to-hire-webdesigner",
+        "text": "<p>You have just started your business and realize it does not have a website or web application to showcase your business and/or automate your processes. You can learn web design and build a website or app yourself, or hire a professional who specializes in it. Before you jump right into it, you need to find a professional web designer (or developer) whom you can trust. Someone who is good at this and knows what they are doing. In this blog, I will list a few factors to help you decide if you have found a reliable professional and how to contact them. Please note, it does not mean that every factor listed must be fulfilled.</p><h2>Check their website</h2><p>First and foremost, you should pay attention to their website. It is expected from a web designer or a web developer since they do not need anyone else to do it for them. The website should look both professional and accessible on all modern devices. Whether it's smartphones or desktops. Also, check for reviews from their clients. Normally, you would learn some details about their professional life. Such as tools or technologies they use to develop digital solutions like websites, webshops, CRMs, and more. Some developers or web designers might specialize in programming languages and frameworks to develop large-scale, custom applications, while others might focus on platforms like WordPress to build mediocre websites.</p><h2>Check their Google My Business profile</h2><p>When you search for something via Google Search, like 'coffee shop near me', you might see a result with a map on your screen. Furthermore, you could see reviews, name, and address of each business listed in the results. This is called Google My Business. It comes in handy if you want to know the location, service area, and customer reviews. However, in most cases, Google My Business provides less information than a website.</p><h2>Projects developed</h2><p>Try to find out if they have developed websites or apps. This will give you practical examples to assess the experience of the developer or web designer. Normally, you can view previous projects on their website. They should not necessarily be for clients. You should also consider their hobby projects. With some technical background, you might also discover which technologies they had used for each project.</p><h2>Existing clients</h2><p>This requires some effort. You need to look up the contact information of existing clients, such as phone number and/or email address, to get their opinion on the services of the developer. It can be an e-commerce online store, CRM, mobile app, a simple business website, etc. Usually, you can find their names somewhere on the website of the web developer or web designer (if they have one) and if you are lucky, you might also find their contact details.</p><h2>Check their CV</h2><p>Their CV contains essential information about their professional background. Such as the number of years of experience they have, whether they possess a degree and/or certificate, and other relevant details. Inspecting their CV can provide valuable information if you want to know the necessary qualifications and expertise of the web designer or web developer.</p><h2>Use Google Search</h2><p>Lastly, you can use Google Search to find more information about the (company) name of a web designer. See if they are using social media platforms like Facebook or LinkedIn. Maybe there are other links in Google search results that make the web designer or developer more reliable? Or the opposite? Try to gather as much information as possible before deciding to get started and request a quote.</p><h2>Conclusion</h2><p>These are, in my opinion, the top six relevant sources to consider whether the selected professional is reliable or not. In fact, Google Search alone is enough to find out the background of the web designer or web developer.</p>",
+        "showcase": true,
+        "dev": false,
+        "img": {
+            "src": "https://bucket.webdevamin.com/blog_find_a_webdesigner.png",
+            "alt": "Title 'How to hire a reliable web designer or developer' with an illustration of a person in front of his laptop.",
+            "width": 1920,
+            "height": 1109,
+            "objectFit": "cover"
+        }
+    },
+    {
+        "seo": {
+            "title": "Website vs web application",
+            "ogTitle": "Website vs web application",
+            "description": "Read the differences between a website and a web application. When should you have one or the other. Learn the important features and use cases for both.",
+            "ogDescription": "Read the differences between a website and a web application. When should you have one or the other. Learn the important features and use cases for both.",
+            "canonical": "https://webdevamin.com/blogs/website-vs-webapplication",
+            "image": "https://bucket.webdevamin.com/website_vs_webapp.jpg"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/blogs/website-vs-webapplication",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/blogs/website-vs-webapplicatie",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/blogs/website-vs-webapplicatie",
+                "locale": "nl"
+            }
+        ],
+        "locale": "en",
+        "title": "Website vs web application",
+        "description": "Read the differences between a website and a web application. When should you have one or the other. Learn the important features and use cases for both.",
+        "slug": "website-vs-webapplication",
+        "text": "<p>Some of my clients asked me what the differences are between a website and a web application. After giving the same answer, I decided to create this blog to help readers understand the differences. However, it is important to mention the 2 common properties first before we proceed with the differences: both are accessible via a web browser, e.g. Chrome, Firefox and both are considered as 'software'.</p><h2>Website</h2><p>A website (or site) is a collection of various web pages typically used to convey information to the public through a web browser such as Google Chrome and Firefox. They can be used to share information about a company, organization, or individual, often allowing users to learn more about a particular subject. It typically has a homepage, which is the initial point of contact to the website and other pages such as informational pages, contact pages, blogs.</p><p>A website is generally <strong>static</strong>, meaning the content displayed on each page does not change unless someone modifies the source code of the site and thus manipulates the content. They are usually built using programming languages and markup tools like HTML, CSS, and JavaScript. The content you see on a website is typically not stored anywhere else.</p><h2>Web Application</h2><p>A web application, also known as a web app, is software that, like a website, is accessible via a web browser. However, unlike websites, web applications are <strong>dynamic and interactive for changes and user inputs</strong> (user input). In other words, web apps do something based on user input, for example: storing the entered fields in a database, sending data somewhere as SMS or email, etc. Therefore, they are often used for specific tasks such as online banking, social networks, and webshops. <strong>Databases are often used</strong> to store and retrieve data in web apps developed using programming languages like JavaScript, Python, and PHP.</p><p><strong>Complexity</strong> is also an important aspect. Websites are generally <strong>less complex</strong> because they are focused on providing information. They do not require extensive programming or database work and knowledge. Web apps, on the other hand, are <strong>usually more complex</strong> because they are designed for something else and often require a lot of programming and database work. Content management systems, also known as CMS, like WordPress, Joomla, etc. are widely used in designing and developing websites as they enable a non-technical user to create and/or update their website. Web applications are usually written by <strong>experienced software developers</strong> using frameworks and programming languages.</p><h2>Hosting</h2><p>Websites are usually <strong>hosted on web servers</strong>. A web server is an internet-connected computer where website files are hosted while for web apps, it usually happens on <strong>web application servers</strong>. They are servers specifically intended for hosting web applications online. It is often <strong>cheaper to develop and maintain sites</strong>. Hosting web applications, on the other hand, can be more expensive and generally requires the services of an experienced software developer.</p>",
+        "showcase": true,
+        "dev": false,
+        "img": {
+            "src": "https://bucket.webdevamin.com/blog_website_vs_webapp.png",
+            "alt": "An illustrated computer screen with text on the right side 'Differences between website and web application'.",
+            "width": 1920,
+            "height": 1109,
+            "objectFit": "cover"
+        }
+    },
+    {
+        "seo": {
+            "title": "VAT exemption as international not worth it",
+            "ogTitle": "VAT exemption international disadvantageous",
+            "description": "Discover why opting for VAT exemption can be problematic for your international business activities.",
+            "ogDescription": "Discover why opting for VAT exemption can be problematic for your international business activities.",
+            "canonical": "https://webdevamin.com/blogs/vat-exemption-not-worth-it",
+            "image": "https://bucket.webdevamin.com/vat_exemption_trouble.jpg"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/blogs/vat-exemption-not-worth-it",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/blogs/btw-vrijstelling-nadelig",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/blogs/btw-vrijstelling-nadelig",
+                "locale": "nl"
+            }
+        ],
+        "locale": "en",
+        "title": "VAT exemption as international not worth it",
+        "description": "Discover why opting for VAT exemption can be problematic for your international business activities.",
+        "slug": "vat-exemption-not-worth-it",
+        "text": "<p style='margin-left:0px;'>This blog is more suitable for <strong>freelancers residing in Belgium</strong> as some of the terms and concepts mentioned may not be applicable in your country.</p><p style='margin-left:0px;'>After I started freelancing, I opted for VAT exemption. This means you do not need to include VAT tax on your invoices and send them to your clients. At first, I thought it was nice to have less administrative work. Unfortunately, over time, I realized it was exactly the opposite. Especially since my clients and suppliers can come from anywhere in the world. So in this blog, you will discover why VAT exemption can be disadvantageous if you are <strong>a Belgian citizen working internationally</strong> providing and purchasing services worldwide outside Belgium. Note that some of the concepts mentioned here may only be applicable to freelancers in Belgium. I have very little knowledge about corporations. So terms like 'special VAT return' may not be applicable in your country.</p><h2 style='margin-left:0px;'>Special VAT Return</h2><p>When you, as a self-employed professional, purchase a service from a supplier within another EU country outside Belgium, you will notice that the supplier does not mention VAT on the invoice. This is because your company is registered in another EU country, and somewhere in the account settings of the app/website where the invoice comes from, you have filled in your VAT number. The supplier expects you to handle the VAT tax yourself. This is called <strong>VAT reverse charge</strong>. As a result, you are obliged to file a special VAT return. As an international freelancer who can work anywhere in the world, for example, a web designer who buys digital services, this scenario often occurs, making your administration more complicated. Most people would advise you to hire an accountant, which is understandable, but most accountants will increase the costs for each submitted special VAT return.</p><p>In Belgium, <strong>submitting special VAT returns is strongly discouraged</strong>. You can avoid them by contacting the support team of the purchased service and mentioning that you are exempt from VAT. They should rectify the invoice by including the VAT tax anyway. This way, you receive an invoice with VAT, like a private individual. This process can take a long time, especially if you have multiple international suppliers. It is possible that they may refuse your request. If no alternative is possible, you have no choice but to submit special VAT returns.</p><p>It is important to note that the <strong>tax authorities are very strict</strong> about this. In Belgium, you can receive fines starting from €1000 if you do not submit special VAT returns on time. What makes it even more annoying is that for each quarter, for each intra-Community acquisition, you must file a new VAT return.</p><h2 style='margin-left:0px;'>Everything becomes more expensive</h2><p style='margin-left:0px;'>Although you do not charge VAT to your clients, most of them do charge VAT to you. The rule for freelancers who have opted for VAT exemption is that <strong>you cannot reclaim this VAT</strong>. This makes everything more expensive for you. Additionally, your invoices without VAT may be less appealing to clients who are VAT liable. They prefer an invoice with VAT, so they can reclaim it later.</p><h2 style='margin-left:0px;'>Switching to VAT liable</h2><p style='margin-left:0px;'>VAT exemption can only be requested by professionals who have an income of less than €25,000 per year. This income threshold can be low for most freelancers. For starters, it usually poses no problem. However, at some point, you will reach the threshold and <strong>be obliged to switch to VAT liable</strong> if you take your self-employed work seriously.</p><p style='margin-left:0px;'>Given the points mentioned earlier, you may come to the conclusion that it is not worth opting for VAT exemption if you work internationally and have suppliers from all over the world. You will have to regularly submit multiple special VAT returns, which can come with the risk of fines. Even if you work part-time, I still recommend starting as VAT liable since this is the default setting for self-employed individuals in Belgium and has no negative consequences if you handle your work correctly.</p>",
+        "showcase": true,
+        "dev": false,
+        "img": {
+            "src": "https://bucket.webdevamin.com/blog_vat_exemption_trouble.png",
+            "alt": "A label with 'VAT' written on it, with text on the right mentioning: 'VAT exemption as an international is very troublesome'.",
+            "width": 1920,
+            "height": 1109,
+            "objectFit": "cover"
+        }
+    }
+]

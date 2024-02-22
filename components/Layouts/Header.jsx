@@ -1,15 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import {
-    destructureImageComponent, destructureSingleType,
-    destructureCollectionType, destructureCollectionTypeObject
-} from '../../utils/app';
 
-const Header = ({ pages, localepages }) => {
+const Header = ({ pages, alternateLangs, locales }) => {
+    const nonHiddenPages = pages.filter(p => !p.hideFromHeader);
     const [active, setActive] = useState(false);
-    const links = destructureCollectionType(pages)
-    
+
     const handleClick = () => setActive(!active);
 
     return (
@@ -18,7 +14,7 @@ const Header = ({ pages, localepages }) => {
         flex justify-between items-center`}>
                 <Link href={`/`}>
                     <Image
-                        src={`/images/logo-dark.png`} width={55} height={55}
+                        src={`/images/logo-light.png`} width={48} height={48}
                         className={`rounded-lg`} priority={true} alt={`Logo`}
                     />
                 </Link>
@@ -44,12 +40,12 @@ const Header = ({ pages, localepages }) => {
                 xl:static xl:flex xl:rounded-none xl:w-auto xl:gap-14 
                 items-center ${active ? `max-h-96` : `max-h-0`}`}>
                         {
-                            links.map((link, index) => {
-                                const { href, title } = destructureCollectionTypeObject(link);
-                                const isLast = index === links.length - 1;
-                                
+                            nonHiddenPages.map((page, i) => {
+                                const { href, title } = page;
+                                const isLast = i === nonHiddenPages.length - 1;
+
                                 return (
-                                    <li key={index} className={`bg-transparent z-50 ${href == '/policy' && `hidden`}`}>
+                                    <li key={i} className={`bg-transparent z-50 ${href == '/policy' && `hidden`}`}>
                                         <Link href={href} className={`w-full transition-all xl:block
                                         py-3 px-8 xl:py-0 xl:px-0 border-theme 
                                         ease-linear xl:border-none relative 
@@ -65,10 +61,14 @@ const Header = ({ pages, localepages }) => {
                     </ul>
                     <ul className={`flex items-center bg-transparent`}>
                         {
-                            localepages.map((localepage, i) => {
-                                const { locale_link, href, locale } = localepage;
-                                const { name, flag } = destructureSingleType(locale_link);
-                                const { url } = destructureImageComponent(flag);
+                            alternateLangs.map((alternateLang, i) => {
+                                const { href, locale } = alternateLang;
+
+                                const localeLink = locales.find((loc) => {
+                                    return loc.lang == locale;
+                                })
+
+                                const { flag, alt } = localeLink;
 
                                 return (
                                     <li key={i}>
@@ -83,7 +83,7 @@ const Header = ({ pages, localepages }) => {
                                     sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
                                     flex justify-center items-center sm:flex mt-0`}>
                                             <Image
-                                                src={url} fill={true} alt={name}
+                                                src={flag} fill={true} alt={alt}
                                                 style={{ objectFit: `contain` }}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />

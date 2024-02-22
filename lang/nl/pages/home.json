@@ -1,0 +1,154 @@
+{
+    "seo": {
+        "title": "Betaalbare Webdesigner & Webdeveloper Brugge",
+        "description": "Ik versterk uw bedrijf met betaalbare websites of apps met focus op uw behoeften: webdesign, webdevelopment en meer. Freelance webbureau uit Brugge, België.",
+        "canonical": "https://webdevamin.com/nl",
+        "ogTitle": "Webdesigner & Webdeveloper Brugge",
+        "ogDescription": "Ik versterk uw bedrijf met betaalbare websites of apps met focus op uw behoeften: webdesign, webdevelopment en meer. Freelance webbureau uit Brugge, België.",
+        "image": "https://bucket.webdevamin.com/home_nl.jpg"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/",
+            "locale": "en"
+        }
+    ],
+    "blocks": [
+        {
+            "title": "Webdevamin",
+            "slug": "hero",
+            "text": "Ik versterk uw zaak met betaalbare, op maat gemaakte website, webapplicatie en/of digitale marketing met een focus op uw behoeften: webdesign, webdevelopment en meer. Zelfstandig webbureau uit Brugge, België. Contacteer me voor een gratis offerte.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Gratis offerte",
+                    "label": "Naar contact pagina",
+                    "external": false
+                },
+                {
+                    "href": "#about",
+                    "text": "Lees meer",
+                    "label": "Meer lezen",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/developer.svg",
+                "alt": "Ontwikkelaar werkt op zijn computer."
+            },
+            "types": [
+                "Business website",
+                "Afspraken- en reservatie systeem",
+                "Administratie systeem",
+                "E-commerce / webshop",
+                "CRM",
+                "En veel meer..."
+            ]
+        },
+        {
+            "title": "Diensten & tech",
+            "subtitle": "Webdesign | Webbouwer | SEO",
+            "slug": "about",
+            "text": "<p>Ik ben een <strong>freelancer </strong>gespecialiseerd in <strong>webdesign</strong>, <strong>web development</strong>,<strong> SEO </strong>en <strong>digital marketing</strong>. Ik ontwikkel digitale oplossingen op maat met een focus op uw behoeften bv. business website, applicatie voor administratieve doeleinden, webshops, CRM's, etc. noem maar op. Alles wat op het scherm moet verschijnen om de efficiëntie van uw zaak te verbeteren en/of meer klanten aan te trekken en uiteindelijk meer opbrengsten te genereren. Uw <strong>professioneel website bouwer en webdesigner</strong> uit <strong>Brugge</strong> helpt u graag verder.</p>",
+            "button": [
+                {
+                    "href": "https://docs.google.com/document/d/e/2PACX-1vTkRGHOPEtuK0Hu_pIAUD9DWQE9QCJoPPrpYKDzOApbtIHZ5q5xKqBaoJuFuWeUAx5fG-ABjC8X7AeM/pub",
+                    "text": "Mijn CV",
+                    "label": "Naar CV pagina",
+                    "external": true
+                },
+                {
+                    "href": "/services",
+                    "text": "Mijn diensten",
+                    "label": "Naar 'mijn diensten'",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/about.jpg",
+                "alt": "Workstation met 2 monitors en een smartphone."
+            }
+        },
+        {
+            "title": "Projecten",
+            "subtitle": "",
+            "slug": "projects",
+            "text": "<p>Aanschouw projecten op verschillende niveaus. Ik zet prestaties en SEO bovenaan de ranglijst. Het maakt niet uit of het om een eenvoudig <strong>webdesign </strong>of complex <strong>webdevelopment</strong> gaat.</p>",
+            "button": [
+                {
+                    "href": "/projects",
+                    "text": "Bekijk projecten",
+                    "label": "Naar projecten pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
+            "title": "Blogs",
+            "subtitle": "",
+            "slug": "blogs",
+            "text": "<p>Aanschouw interessante onderwerpen, verhalen en tips over IT, <strong>development</strong>, <strong>webdesign</strong>, <strong>freelance </strong>en meer.</p>",
+            "button": [
+                {
+                    "href": "/blogs",
+                    "text": "Bekijk blogs",
+                    "label": "Naar blogs pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
+            "title": "Beoordelingen",
+            "subtitle": "testimonials",
+            "slug": "testimonials",
+            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A'>Google My Business profiel</a>.</p>",
+            "testimonials": [
+                {
+                    "letter": "A",
+                    "name": "Alexi",
+                    "stars": "5",
+                    "review": "Very professional, friendly, good prices definitely recommended.",
+                    "backgroundColor": "rgb(168 85 247)"
+                },
+                {
+                    "letter": "N",
+                    "name": "Natan Hongenaert",
+                    "stars": "5",
+                    "review": "Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.",
+                    "backgroundColor": "rgb(6 182 212)"
+                },
+                {
+                    "letter": "R",
+                    "name": "Robert Chen",
+                    "stars": "5",
+                    "review": "Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.",
+                    "backgroundColor": "rgb(236 72 153)"
+                }
+            ]
+        },
+        {
+            "title": "Contact",
+            "subtitle": "",
+            "slug": "contact",
+            "text": "<p>Heeft u vragen? Of heeft u misschien behoefte aan een website, logo-ontwerp of iets anders? Aarzel dan niet om contact met mij op te nemen.</p>",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Contacteer mij",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ]
+        }
+    ]
+}

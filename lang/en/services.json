@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Web Design",
+        "showcase": true,
+        "backgroundColor": "rgb(59 130 246)",
+        "text": "<p>Ensuring that your website or web application becomes visible on Google (or any search engines like DuckDuckGo) search results to attract more users with social media platforms, content marketing, web analytics, and more.</p>",
+        "icon": {
+            "name": "faPalette",
+            "brands": false
+        }
+    },
+    {
+        "title": "Web Development",
+        "showcase": true,
+        "backgroundColor": "rgb(16 185 129)",
+        "text": "<p>All kinds of web applications with databases such as webshops, administrative apps, and more. Everything you need to streamline your business.</p>",
+        "icon": {
+            "name": "faCode",
+            "brands": false
+        }
+    },
+    {
+        "title": "Logo Design",
+        "showcase": true,
+        "backgroundColor": "rgb(238 239 70)",
+        "text": "<p>I design simple and/or custom logos for your business. With a focus on uniqueness, I ensure that your company and your brand are accurately represented. Graphic design is a big hit.</p>",
+        "icon": {
+            "name": "faPenFancy",
+            "brands": false
+        }
+    },
+    {
+        "title": "SEO & Marketing",
+        "showcase": true,
+        "backgroundColor": "rgb(99 102 241)",
+        "text": "<p>Ensuring that your website or web application becomes visible on Google (or any search engines like DuckDuckGo) search results to attract more users with social media platforms, content marketing, web analytics, and more.</p>",
+        "icon": {
+            "name": "faBullhorn",
+            "brands": false
+        }
+    }
+]

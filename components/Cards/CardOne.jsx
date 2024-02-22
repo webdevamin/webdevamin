@@ -35,25 +35,26 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
                 <h3 className={`text-lg xl:text-lg capitalize mb-0`}>
                     {title}
                 </h3>
-                <div className={`mb-4 mt-1.5 lg:mt-2 flex justify-center`}>
-                    {
-                        [...Array(count)].map((num, i) => {
-                            return (
-                                <div key={i}
-                                    className={`${!count ? `hidden` : `inline`}`}>
-                                    <Image
-                                        src={starsImage}
-                                        width={11} height={11}
-                                        alt={router.locale === `en` ?
-                                            `${count} stars review` :
-                                            `${count} sterren review`}
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+                {
+                    count && (
+                        <div className={`mb-4 mt-1.5 lg:mt-2 flex justify-center`}>
+                            {
+                                [...Array(parseInt(count))].map((num, i) => {
+                                    return (
+                                        <div key={i} className={`${!count ? `hidden` : `inline`}`}><Image
+                                            src={starsImage}
+                                            width={11} height={11}
+                                            alt={router.locale === `en` ?
+                                                `${count} stars review` :
+                                                `${count} sterren review`}
+                                            style={{ objectFit: "cover" }} />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )
+                }
                 <div dangerouslySetInnerHTML={{ __html: text }}
                     className={`smaller_p`} />
             </div>

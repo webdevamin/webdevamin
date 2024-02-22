@@ -1,0 +1,153 @@
+{
+    "seo": {
+        "title": "Web Designer & Developer from Belgium",
+        "description": "I empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
+        "canonical": "https://webdevamin.com",
+        "ogTitle": "Web Design & Developer from Belgium",
+        "ogDescription": "I empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
+        "image": "https://bucket.webdevamin.com/home.jpg"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/",
+            "locale": "nl"
+        }
+    ],
+    "blocks": [
+        {
+            "title": "Webdevamin",
+            "slug": "hero",
+            "text": "I empower your business with state-of-the-art digital solutions, such as websites, web applications, and digital marketing, with a focus on your specific needs, including web design, web development, and more.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "contact",
+                    "label": "To contact page",
+                    "external": false
+                },
+                {
+                    "href": "#about",
+                    "text": "Read more",
+                    "label": "To about page",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/developer.svg",
+                "alt": "Developer working in front of his computer."
+            },
+            "types": [
+                "Business website",
+                "Booking & reservation system",
+                "Administration system",
+                "E-commerce",
+                "CRM",
+                "And much more..."
+            ]
+        },
+        {
+            "title": "Services & tech",
+            "subtitle": "Web Designer | Web Developer | SEO",
+            "slug": "about",
+            "text": "<p>As a professional <strong>freelancer</strong> specialized in <strong>web design</strong>, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p>",
+            "button": [
+                {
+                    "href": "https://docs.google.com/document/d/e/2PACX-1vTTs0T9BMUNrrYu1zKw0jvR5fcTTqCVgWoAQrVKzQw9NKJdYETfgsFIUbZ16kvSBc9rnAeJEk_McsEw/pub",
+                    "text": "My resume",
+                    "label": "My resume",
+                    "external": true
+                },
+                {
+                    "href": "/services",
+                    "text": "My services",
+                    "label": "To services page.",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/about.jpg",
+                "alt": "Workstation with 2 monitors and a keyboard."
+            }
+        },
+        {
+            "title": "Projects",
+            "slug": "projects",
+            "text": "<p>A glimpse of realizations I've developed so far. Taking care of every need of my clients. Bringing performance and SEO on top of the charts. It doesn't matter whether it is about a simple business website or a live complex e-commerce webshop. Click the button to see my projects.</p>",
+            "button": [
+                {
+                    "href": "/projects",
+                    "text": "See projects",
+                    "label": "To projects page",
+                    "external": false
+                }
+            ]
+        },
+        {
+            "title": "Blogs",
+            "subtitle": "",
+            "slug": "blogs",
+            "text": "<p>Interesting topics, stories, and guides about IT, development, freelance, and more.</p>",
+            "button": [
+                {
+                    "href": "/blogs",
+                    "text": "See blogs",
+                    "label": "To blogs page",
+                    "external": false
+                }
+            ]
+        },
+        {
+            "title": "Testimonials",
+            "subtitle": "testimonials",
+            "slug": "testimonials",
+            "text": "<p>Satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions. For more reviews, check my <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A'>Google My Business profile</a>",
+            "testimonials": [
+                {
+                    "letter": "A",
+                    "name": "Alexi",
+                    "stars": "5",
+                    "review": "Very professional, friendly, good prices definitely recommended.",
+                    "backgroundColor": "rgb(168 85 247)"
+                },
+                {
+                    "letter": "N",
+                    "name": "Natan Hongenaert",
+                    "stars": "5",
+                    "review": "Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.",
+                    "backgroundColor": "rgb(6 182 212)"
+                },
+                {
+                    "letter": "R",
+                    "name": "Robert Chen",
+                    "stars": "5",
+                    "review": "Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.",
+                    "backgroundColor": "rgb(236 72 153)"
+                }
+            ]
+        },
+        {
+            "title": "Contact",
+            "subtitle": "",
+            "slug": "contact",
+            "text": "<p>Questions/comments? Need a website, logo or something else? Don't hesitate to contact me.</p>",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Contact me",
+                    "label": "To contact page",
+                    "external": false
+                }
+            ]
+        }
+    ]
+}

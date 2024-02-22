@@ -1,0 +1,711 @@
+[
+    {
+        "seo": {
+            "title": "Gympouch",
+            "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
+            "canonical": "https://webdevamin.com/nl/projects/gympouch",
+            "image": "https://bucket.webdevamin.com/gympouch.jpg",
+            "ogTitle": "Gympouch",
+            "ogDescription": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/gympouch",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/gympouch",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/gympouch",
+                "locale": "en"
+            }
+        ],
+        "title": "Gympouch",
+        "slug": "gympouch",
+        "locale": "nl",
+        "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
+            "alt": "Dashboard pagina en detail pagina van Gympouch applicatie."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/gympouch_alpha.png",
+            "alt": "Dashboard pagina en detail pagina van Gympouch applicatie.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Deze applicatie is ontwikkeld voor een personal coach om afspraken van zijn klanten te beheren. Een potentiële klant stuurt hem een SMS om zijn/haar sessies te registreren. De coach maakt een nieuwe afspraak aan in de app.</p><p>Daarnaast kan de trainer de vooruitgang van zijn klanten loggen en bepalen wat zijn/haar volgende sessies kunnen zijn. Ook logt hij de huidige en totale prijs.</p><p>Er is ook een map geïntegreerd om aan te tonen waar de sessie zich plaatsvindt. Klikt men er op, wordt een standaard Map applicatie geopend die ingebed is in zijn smartphone. Bekende voorbeelden zijn Apple Maps en Google Maps. Een route wordt aangemaakt van zijn huidige locatie naar het bestemmingsadres waar de training zich zal bevinden.</p><p>Ten slotte wordt er op de startpagina een weekoverzicht getoond. Dit om de coach te laten weten hoeveel sessies hij tijdens de periode voltooid heeft en meer.</p><p>Deze app is niet voor het publiek bedoeld. Enkel voor de coach (administrator).</p>",
+        "technologiesText": "<p>Next.js (React.js) voor frontend ontwikkeling met Node.js serverless backend. Firebase integratie voor real-time database. Ten slotte is de app gedeployed/gehost op Vercel.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Node.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/nodejs.svg",
+                    "width": 115,
+                    "height": 127,
+                    "alt": "Node.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Firebase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/firebase.svg",
+                    "width": 115,
+                    "height": 158,
+                    "alt": "Firebase",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "seo": {
+            "title": "My Admin",
+            "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
+            "canonical": "https://webdevamin.com/nl/projects/my-admin",
+            "image": "https://bucket.webdevamin.com/my_admin.jpg",
+            "ogTitle": "My Admin",
+            "ogDescription": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/my-admin",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/my-admin",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/my-admin",
+                "locale": "en"
+            }
+        ],
+        "title": "My Admin",
+        "slug": "my-admin",
+        "locale": "nl",
+        "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
+            "alt": "Login en dashboard pagina van My Admin applicatie."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/myadmin_alpha.png",
+            "alt": "Login en dashboard pagina van My Admin applicatie.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een admin applicatie voor klanten. Wat u op de afbeelding hierboven ziet is een algemene layout. Wat betekent dat voor elke klant het overzicht beetje verschillend kan zijn, maar het idee is in principe hetzelfde: klanten een overzichtelijke dashboard bezorgen met data verbonden met hun aparte website/webapplicatie. Een voorbeeld is Restaurant China Brugge. De eigenaar heeft deze admin app om data op zijn restaurant website (bedoeld voor gewone gebruikers) te wijzigen.</p><p>Daarnaast is het mogelijk om deze als standalone app op een mobiel apparaat te installeren. Hierdoor wordt het onderweg toegankelijker.</p><p>Telkens als er een nieuwe data binnenkomt, ontvangt de eigenaar een notificatie bericht aan de bovenkant van zijn/haar smartphone. Zelfs als de app gesloten is. Dit noemen we web push notification.</p>",
+        "technologiesText": "<p>Next.js (React.js) werd voor frontend ontwikkeling gebruikt met serverless Node.js backend code. Firebase integratie voor real-time database. Ten slotte werd de app op Vercel gehost/gedeployed.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Node.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/nodejs.svg",
+                    "width": 115,
+                    "height": 127,
+                    "alt": "Node.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Firebase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/firebase.svg",
+                    "width": 115,
+                    "height": 158,
+                    "alt": "Firebase",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "seo": {
+            "title": "Bakiji Construct",
+            "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
+            "canonical": "https://webdevamin.com/nl/projects/bakiji-construct",
+            "image": "https://bucket.webdevamin.com/bakiji.jpg",
+            "ogTitle": "Bakiji Construct",
+            "ogDescription": "Een business website voor een bouwbedrijf met algemene info en een contactformulier."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/bakiji-construct",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/bakiji-construct",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/bakiji-construct",
+                "locale": "en"
+            }
+        ],
+        "title": "Bakiji Construct",
+        "slug": "bakiji-construct",
+        "locale": "nl",
+        "link": "https://bakiji-construct.be",
+        "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
+            "alt": "Landing pagina van Bakiji Construct website."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/bakiji_construct_alpha.png",
+            "alt": "Landing pagina van Bakiji Construct website.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een business website voor een bouwbedrijf. Het bevat één pagina met noodzakelijke informatie over het bedrijf, contact details, gallerij en een formulier indien u een mail wil versturen.</p>",
+        "technologiesText": "<p>Een statische website met HTML, CSS en Javascript met Parcel om alles te bundelen voor productie. Er is geen backend code bij betrokken. Gedeployed op Netlify. Voor een functioneel contactformulier wordt Netlify Forms gebruikt.</p>",
+        "technologies": [
+            {
+                "name": "HTML",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/html.svg",
+                    "width": 115,
+                    "height": 132,
+                    "alt": "HTML",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Javascript",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "width": 115,
+                    "height": 132,
+                    "alt": "Javascript",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Netlify",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/netlify.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Netlify",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "seo": {
+            "title": "Solaris",
+            "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
+            "canonical": "https://webdevamin.com/nl/projects/solaris",
+            "image": "https://bucket.webdevamin.com/solaris.png",
+            "ogTitle": "Solaris",
+            "ogDescription": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/solaris",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/solaris",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/solaris",
+                "locale": "en"
+            }
+        ],
+        "title": "Solaris",
+        "slug": "solaris",
+        "locale": "nl",
+        "link": "https://solarisinsurance.org",
+        "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/solaris_alpha.png",
+            "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/solaris_alpha.png",
+            "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop.",
+            "width": 900,
+            "height": 460,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een webapplicatie voor een verzekeringsbureau in de Verenigde Staten. Gebruikers kunnen er meer informatie over lezen: hun missie, visie en doelen. Er zijn drie formulieren beschikbaar in de app die users gebruik van kunnen maken. Eerst en vooral het contactformulier indien gebruikers vragen of opmerkingen hebben. De tweede is het agents formulier. Dit is bedoeld voor bedrijven die een partnerschap met mijn klant willen aangaan. Ten slotte het offerteformulier. Dit is voor gebruikers die met mijn klant over offertes willen bespreken. Nadat ze het offerteformulier hebben ingediend, worden ze doorgestuurd naar een live videovergadering om hun problemen uit te leggen.</p><p>Voor elke indiening van een formulier ontvangt de klant een pushmelding in Slack. Ze kunnen dus eenvoudig een antwoord naar hun potentiële klanten sturen of deelnemen aan de live videovergadering door op een bepaalde videogesprek-URL te klikken.</p><p>Deze app is mogelijk een lopend project.</p>",
+        "technologiesText": "<p>Frontend: Next.js (React.js), Backend: Node.js, Deployment: Cloudflare.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Node.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "width": 115,
+                    "height": 127,
+                    "alt": "Node.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 115,
+                    "height": 38,
+                    "alt": "Cloudflare",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "locale": "nl",
+        "seo": {
+            "title": "Restaurant China Brugge",
+            "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
+            "canonical": "https://webdevamin.com/nl/projects/restaurant-china-brugge",
+            "image": "https://bucket.webdevamin.com/restaurant_china.jpg",
+            "ogTitle": "Restaurant China Brugge",
+            "ogDescription": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/restaurant-china-brugge",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/restaurant-china-brugge",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/restaurant-china-brugge",
+                "locale": "en"
+            }
+        ],
+        "title": "Restaurant China Brugge",
+        "slug": "restaurant-china-brugge",
+        "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
+        "showcase": false,
+        "img": {
+            "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
+            "alt": "Landing pagina van Restaurant China Brugge website."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/restaurantchina_alpha.png",
+            "alt": "Landing pagina van Restaurant China Brugge website.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een business website voor een restaurant in Brugge. Het bevat één pagina met noodzakelijke informatie over het restaurant, contact details, galerij, beoordelingen en een formulier indien gebruikers tafels willen reserveren.</p><p>Voor elke reservatie wordt de data naar een aparte applicatie verstuurd die enkel door de administrator bediend kan worden. Daarnaast krijgt hij een SMS bericht met de gegevens van de gebruiker die op een reserveer knopje geklikt heeft. Hierdoor kan de admin tafels voorbereiden voor de bezoekers.</p>",
+        "technologiesText": "<p>Next.js (React.js) voor frontend development met Node.js serverless voor backend. De backend dient om formulier data te valideren en door te sturen naar een aparte applicatie voor de admin. Firebase integratie voor real-time database. Voor SMS werd Twilio als derde partij service gekozen. Ten slotte is de app op Netlify gedeployed.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Node.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "width": 115,
+                    "height": 127,
+                    "alt": "Node.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Firebase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/firebase.svg",
+                    "width": 115,
+                    "height": 158,
+                    "alt": "Firebase",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Twilio",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/twilio.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Twilio",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Netlify",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/netlify.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Netlify",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "locale": "nl",
+        "seo": {
+            "title": "Turpal Sushi Tielt",
+            "description": "Food delivery webapplicatie voor een sushi restaurant in België.",
+            "canonical": "https://webdevamin.com/nl/projects/turpal-sushi-tielt",
+            "image": "https://bucket.webdevamin.com/turpalsushi.jpg",
+            "ogTitle": "Turpal Sushi Tielt",
+            "ogDescription": "Food delivery webapplicatie voor een sushi restaurant in België."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/turpal-sushi-tielt",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/turpal-sushi-tielt",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/turpal-sushi-tielt",
+                "locale": "en"
+            }
+        ],
+        "title": "Turpal Sushi Tielt",
+        "slug": "turpal-sushi-tielt",
+        "description": "Food delivery webapplicatie voor een sushi restaurant in België.",
+        "showcase": false,
+        "img": {
+            "src": "https://bucket.webdevamin.com/turpalsushi_portfolio.png",
+            "alt": "Landing pagina, checkout pagina en een bevestiging pagina van Turpal Sushi Tielt webapp."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/turpalsushi_alpha.png",
+            "alt": "Landing pagina, checkout pagina en een bevestiging pagina van Turpal Sushi Tielt webapp.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een food delivery webapplicatie voor een restaurant in België. Gebruikers kunnen allerlei menu items aan hun winkelwagen toevoegen en bestellen. De eigenaar van het restaurant ontvangt een pushmelding met noodzakelijke informatie van de klant zoals adres, bestelde menu items, etc. op zijn smartphone voor elk succesvolle bestelling.</p>",
+        "technologiesText": "<p>Next.js (React.js) frontend. Laravel backend. Deployment, storage en realtime database met AWS. Mollie voor betalingsdienst.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Laravel",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/laravel.svg",
+                    "width": 115,
+                    "height": 118,
+                    "alt": "Laravel",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "AWS",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/aws.svg",
+                    "width": 115,
+                    "height": 67,
+                    "alt": "AWS",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Mollie",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/mollie.svg",
+                    "width": 115,
+                    "height": 34,
+                    "alt": "Mollie",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "locale": "nl",
+        "seo": {
+            "title": "Black Wood",
+            "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
+            "canonical": "https://webdevamin.com/nl/projects/black-wood",
+            "image": "https://bucket.webdevamin.com/og.png",
+            "ogTitle": "Black Wood",
+            "ogDescription": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/black-wood",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/black-wood",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/black-wood",
+                "locale": "en"
+            }
+        ],
+        "title": "Black Wood",
+        "slug": "black-wood",
+        "link": "https://black-wood.be",
+        "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
+            "alt": "Startpagina van Black Wood website."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
+            "alt": "De hero section van de Black Wood-website getoond op 3 apparaten: mobiel, tablet en desktop.",
+            "width": 900,
+            "height": 460,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een website ontwikkeld voor een bouwbedrijf in België. Het biedt noodzakelijke informatie zoals de locatie van het bedrijf, de diensten, specialiteiten en voorbeelden van gerealiseerde projecten.</p><p>Op de website zijn drie aparte offerteformulieren beschikbaar die gebruikers kunnen gebruiken: één voor algemeen renovatiewerk, een ander voor raaminstallatie en een derde voor terrasprojecten. Na het indienen van elk formulier wordt een mail naar de eigenaren van het bedrijf gestuurd.</p><p>Voor eventuele aanvullende vragen of opmerkingen kunnen gebruikers een standaard contactformulier gebruiken om rechtstreeks contact op te nemen met de eigenaren voor zaken die niet met offertes te maken hebben.</p>",
+        "technologiesText": "<p>Frontend is ontwikkeld met Next.js, terwijl de backend gebruik maakt van Edge functions. Deployment gebeurt via Cloudflare Pages.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Edge Functions",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/lambda.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Edge Functions",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 115,
+                    "height": 38,
+                    "alt": "Cloudflare",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "locale": "nl",
+        "seo": {
+            "title": "Verhuisdienst Liftservice",
+            "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
+            "canonical": "https://webdevamin.com/projects/verhuisdienst-liftservice",
+            "image": "https://bucket.webdevamin.com/verhuisdienst-portfolio-og.jpg",
+            "ogTitle": "Verhuisdienst Liftservice",
+            "ogDescription": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/verhuisdienst-liftservice",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/verhuisdienst-liftservice",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/verhuisdienst-liftservice",
+                "locale": "en"
+            }
+        ],
+        "title": "Verhuisdienst Liftservice",
+        "slug": "verhuisdienst-liftservice",
+        "link": "https://verhuisdienst-liftservice.be",
+        "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
+            "alt": "Een landingspagina van de website van Verhuisdienst Liftservice, zichtbaar op zowel desktop- als mobiele weergaven."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio-alpha.png",
+            "alt": "Een landingspagina van de website van Verhuisdienst Liftservice, zichtbaar op zowel desktop- als mobiele weergaven.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij, een 'Over ons' sectie, en een formulier waarmee gebruikers een offerte kunnen aanvragen bij de eigenaar van het bedrijf via e-mail.</p>",
+        "technologiesText": "<p>Deze statische website is gebouwd met behulp van Next.js. Het omvat integratie met een mailprovider genaamd 'Resend', waardoor gebruikers offerteformulieren kunnen indienen met behulp van Next.js Edge Functions, die vervolgens als e-mails naar de eigenaar van het bedrijf worden verzonden. De website is ingezet op Netlify via GitHub-integratie.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Next.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Edge Functions",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/lambda.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Edge Functions",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 115,
+                    "height": 38,
+                    "alt": "Cloudflare",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "locale": "nl",
+        "seo": {
+            "title": "Pasta Maria",
+            "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
+            "canonical": "https://webdevamin.com/projects/pastamaria",
+            "image": "https://bucket.webdevamin.com/pastamaria-portfolio-og.jpg",
+            "ogTitle": "Pasta Maria",
+            "ogDescription": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/pastamaria",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/pastamaria",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/pastamaria",
+                "locale": "en"
+            }
+        ],
+        "title": "Pasta Maria",
+        "slug": "pastamaria",
+        "link": "https://pastamaria.be",
+        "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
+            "alt": "Een landingspagina van de website van Pasta Maria, zichtbaar op zowel desktop- als mobiele weergaven."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/pastamaria-portfolio-alpha.png",
+            "alt": "Een landingspagina van de website van Pasta Maria, zichtbaar op zowel desktop- als mobiele weergaven.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een zakelijke website voor een Italiaans restaurant met algemene informatie, een menu, een 'Over ons' sectie, en een sectie waar gebruikers een offerte kunnen aanvragen via e-mail.</p>",
+        "technologiesText": "<p>Deze statische website is gebouwd met behulp van React.js en is gedeployed via Cloudflare. De website is handmatig geüpload als een volledig bestand naar Cloudflare, zonder gebruik te maken van CI/CD via Github of een vergelijkbaar systeem.</p>",
+        "technologies": [
+            {
+                "name": "React.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/react.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "React.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 115,
+                    "height": 38,
+                    "alt": "Cloudflare",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    }
+]

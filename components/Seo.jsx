@@ -1,34 +1,20 @@
 import React from 'react'
 import Head from "next/head";
 import { useRouter } from 'next/router';
-import { destructureSingleType } from '../utils/app';
 
 const Seo = ({ seo, alternates }) => {
-    const { title, description, canonical, image: img,
+    const { title, description, canonical, image,
         ogTitle, ogDescription } = seo;
 
     const router = useRouter();
     const { locale } = router;
-    const { url: imageUrl } = destructureSingleType(img);
 
-    const defaultImage = imageUrl || (locale === `nl` ?
+    const defaultImage = image || (locale === `nl` ?
         `/images/ogbanner-nl.png` :
         `/images/ogbanner.png`);
 
     const defaultOgTitle = ogTitle || title;
     const defaultOgDescription = ogDescription || description;
-
-    const altLocales = alternates.filter((altLocale) => {
-        return altLocale.hreflang !== locale;
-    });
-
-    const alternatesWithoutEnglish = alternates.filter((alternate) => {
-        return alternate.hreflang !== `en`;
-    });
-
-    const alternateEnglish = alternates.find((alternate) => {
-        return alternate.hreflang === `en`;
-    });
 
     return (
         <Head>
@@ -45,24 +31,12 @@ const Seo = ({ seo, alternates }) => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="canonical" href={canonical} />
-            <link rel="alternate" href={alternateEnglish.href} hrefLang="x-default" />
             {
-                alternatesWithoutEnglish.map((alternate) => {
-                    const { hreflang, href } = alternate;
+                alternates.map((alternate, i) => {
+                    const { href, hreflang } = alternate;
 
                     return (
-                        <link rel="alternate" hrefLang={hreflang}
-                            href={href} key={href} />
-                    )
-                })
-            }
-            {
-                altLocales.map((altLocale) => {
-                    const { hreflang } = altLocale;
-
-                    return (
-                        <meta property="og:locale:alternate" key={hreflang}
-                            content={hreflang} />
+                        <link key={href} rel="alternate" href={href} hrefLang={hreflang} />
                     )
                 })
             }

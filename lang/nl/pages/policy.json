@@ -1,0 +1,56 @@
+{
+    "seo": {
+        "title": "Privacybeleid",
+        "description": "Lees ons privacybeleid",
+        "canonical": "https://webdevamin.com/nl/policy",
+        "ogTitle": "Privacybeleid",
+        "ogDescription": "Lees ons privacybeleid"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/policy",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/policy",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/policy",
+            "locale": "en"
+        }
+    ],
+    "title": "Privacybeleid",
+    "slug": "policy",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Privacybeleid",
+            "slug": "hero",
+            "text": "<p>Lees ons privacybeleid om te begrijpen hoe we jouw gegevens verzamelen en wat we ermee doen.</p>",
+            "button": [
+                {
+                    "href": "#policy",
+                    "text": "Meer lezen",
+                    "label": "Naar beleid sectie",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/gdpr.svg",
+                "alt": "Persoon met een GDPR vlag.",
+                "width": 485,
+                "height": 429,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Privacybeleid",
+            "slug": "policy",
+            "subtitle": "Data & cookies",
+            "text": "<p style='margin-left:0'>Webdevamin, een freelance webbureau gevestigd in Brugge, België, exploiteert de website <a href='https://webdevamin.com/nl'>https://webdevamin.com/nl</a> (hierna aangeduid als 'Webdevamin' of 'de website'). Als aanbieder van digitale oplossingen voor zowel B2C als B2B stellen we uw privacybescherming voorop. Deze pagina beschrijft ons beleid met betrekking tot de verzameling, het gebruik en de openbaarmaking van persoonlijke gegevens wanneer u onze website gebruikt, evenals de keuzes die voor u beschikbaar zijn met betrekking tot die gegevens.<h3 style='margin-left:0'><strong>Welke Gegevens Verzamelen We</strong></h3><p style='margin-left:0'>In het streven naar het leveren van op maat gemaakte digitale oplossingen verzamelen we de volgende informatie:<ul><li><strong>Persoonlijke Gegevens:</strong> Staat, stad, land.<li><strong>Gebruiksgegevens:</strong> Apparaatinformatie en andere gegevens verzameld door Google Analytics en Facebook Pixels.</ul><h3 style='margin-left:0'><strong>Hoe Verzamelen We Uw Gegevens</strong></h3><p style='margin-left:0'>We maken gebruik van Google Analytics en Facebook Pixels om automatisch informatie te verzamelen, waardoor we een beter inzicht krijgen in gebruikersinteracties voor verbeterde doelgroepselectie en marketinganalyse. Voor gedetailleerde informatie over de gegevensverzamelingspraktijken kunt u de privacybeleidsregels van Google Analytics (<a href='https://policies.google.com/privacy'>https://policies.google.com/privacy</a>) en Facebook (<a href='https://www.facebook.com/policy.php'>https://www.facebook.com/policy.php</a>) raadplegen.<h3 style='margin-left:0'><strong>Hoe Zullen We Uw Gegevens Gebruiken</strong></h3><p style='margin-left:0'>De verzamelde gegevens dienen de volgende doeleinden:<ul><li>Het verfijnen van doelgroepen voor onze digitale oplossingen.<li>Het analyseren van gegevens voor verbeterde marketingstrategieën.</ul><h3 style='margin-left:0'><strong>Hoe Bewaren We Uw Gegevens</strong></h3><p style='margin-left:0'>Voor uw veiligheid worden persoonlijke gegevens niet rechtstreeks op onze servers opgeslagen. Google Analytics en Facebook behandelen de opslag van gegevens in overeenstemming met hun respectievelijke privacybeleidsregels.<h3 style='margin-left:0'><strong>Wat Zijn Uw Rechten inzake Gegevensbescherming</strong></h3><p style='margin-left:0'>Als gebruiker heeft u het recht om:<ul><li>Geïnformeerd te worden over de verwerking van uw gegevens.<li>Uw persoonlijke gegevens niet laten volgen (door het weigeren van cookies en gegevensverzameling, zie sectie hieronder).</ul><h3 style='margin-left:0'><strong>Wat Zijn Cookies</strong></h3><p style='margin-left:0'>Cookies zijn kleine bestanden die door websites op uw apparaat worden geplaatst om uw browsegeschiedenis bij te houden.<h3 style='margin-left:0'><strong>Welke Soorten Cookies Gebruiken We</strong></h3><p style='margin-left:0'>We gebruiken:<ul><li>Analytische/prestatiecookies en gegevensverzameling (Google Analytics).<li>Gerichte cookies en gegevensverzameling (Facebook Pixels).</ul><h3 style='margin-left:0'><strong>Hoe Beheert U Uw Cookies</strong></h3><p style='margin-left:0'>U heeft de keuze om uw cookievoorkeuren te beheren door uw browserinstellingen aan te passen. Raadpleeg de helpsectie van uw browser voor gedetailleerde instructies.<h3 style='margin-left:0'><strong>Privacybeleid van Andere Websites</strong></h3><p style='margin-left:0'>Ons privacybeleid is uitsluitend van toepassing op onze website. Als u op links klikt die naar andere websites leiden, bekijk dan hun respectievelijke privacybeleidsregels.<h3 style='margin-left:0'><strong>Cookies en Gegevensverzameling Weigeren</strong></h3><p style='margin-left:0'>Gebruikers hebben de mogelijkheid om cookies en gegevensverzameling door Google Analytics en Facebook Pixel te weigeren door te klikken op de 'Weigeren' knop op de cookie-toestemmingsbanner (cookie consent banner).<h3 style='margin-left:0'><strong>Wijzigingen in Ons Privacybeleid</strong></h3><p style='margin-left:0'>We kunnen ons privacybeleid periodiek bijwerken, waarbij wijzigingen worden gecommuniceerd door de publicatie van een bijgewerkt beleid op deze pagina.<h3 style='margin-left:0'><strong>Hoe Neemt U Contact met Ons Op</strong></h3><p style='margin-left:0'>Voor vragen over dit privacybeleid of om uw rechten inzake gegevensbescherming uit te oefenen, neem contact met ons op via amin@webdevamin.com of bezoek onze <a href='https://webdevamin.com/nl/contact'>contactpagina</a>.<p style='margin-left:0'>Dit privacybeleid is van kracht vanaf 14 januari 2024.</p>"
+        }
+    ]
+}

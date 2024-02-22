@@ -1,17 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Seo from '../components/Seo'
-import { GET_PAGE } from '../graphql/queries';
-import { destructureSingleType } from '../utils/app'
-import { getData } from '../graphql/api';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
 const Error500 = ({ pageData }) => {
-    const { seo, blocks, alternates } = pageData.pages.data[0].attributes;
-    const { button, img, text, title } = blocks[0];
-    const { href, text: buttonText } = button[0];
-    const { image, width, height, objectFit, alt } = img;
-    const { url } = destructureSingleType(image);
+    const { seo, alternates, blocks } = pageData;
+    const { title, text, button, image } = blocks[0];
+    const { href, text: btnText } = button[0];
+    const { src, alt, width, height, objectFit } = image;
 
     return (
         <>
@@ -19,7 +15,7 @@ const Error500 = ({ pageData }) => {
             <div className={`flex flex-col h-full justify-center`}>
                 <main className={`w-9/12 max-w-8xl m-auto flex flex-col items-center gap-1 md:gap-6`}>
                     <Image
-                        src={url} width={width} height={height} alt={alt}
+                        src={src} width={width} height={height} alt={alt}
                         style={{ objectFit: objectFit }} priority={true}
                     />
                     <div className={`text-center my-14`}>
@@ -27,7 +23,7 @@ const Error500 = ({ pageData }) => {
                             {title}
                         </h1>
                         <div dangerouslySetInnerHTML={{ __html: text }} />
-                        <ButtonOne href={href} text={buttonText}
+                        <ButtonOne href={href} text={btnText}
                             classes={`w-fit px-16 sm:px-16 mx-auto`} />
                     </div>
                 </main>
@@ -39,11 +35,9 @@ const Error500 = ({ pageData }) => {
 export default Error500
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_PAGE,
-        { "slug": "server-error", "locale": [locale] },
-        false);
-
     return {
-        props: { pageData },
+        props: {
+            pageData: (await import(`../lang/${locale}/pages/500.json`)).default,
+        },
     }
 }

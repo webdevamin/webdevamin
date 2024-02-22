@@ -1,0 +1,41 @@
+{
+    "seo": {
+        "title": "Er ging iets mis",
+        "description": "Er ging iets mis met de website. Kom later eens terug.",
+        "canonical": "https://webdevamin.com/nl/500",
+        "ogTitle": "Er ging iets mis",
+        "ogDescription": "Er ging iets mis met de website. Kom later eens terug."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/500",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/500",
+            "hreflang": "nl"
+        }
+    ],
+    "title": "ServerError",
+    "blocks": [
+        {
+            "title": "Yikes, ik ben weg",
+            "slug": "hero",
+            "text": "<p>Er ging iets mis met de website. Ondertussen zal het zo snel mogelijk opgelost worden. Kom later eens terug.</p>",
+            "button": [
+                {
+                    "href": "/",
+                    "text": "Naar homepagina",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/500.svg",
+                "alt": "Een bug knipt de draad tussen de server en de desktop computer.",
+                "width": 540,
+                "height": 337,
+                "objectFit": "cover"
+            }
+        }
+    ]
+}
