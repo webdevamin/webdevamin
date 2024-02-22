@@ -1,11 +1,6 @@
-import React from 'react'
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo'
 import { Carousel } from "flowbite-react";
 import Slide from '../Slide';
-import {
-    destructureCollectionTypeObject,
-    destructureImageComponent,
-} from '../../utils/app';
 import Image from 'next/image';
 import ButtonOne from '../Buttons/ButtonOne';
 import NoContent from '../NoContent';
@@ -28,17 +23,15 @@ const Blogs = ({ content, data }) => {
             overscroll-x-contain 
             ${data.length > 1 ? `flex pr-20 w-screen pb-4` : `block`}`}>
                 {
-                    data.map((blog, index) => {
-                        const { title, img, date } =
-                            destructureCollectionTypeObject(blog);
-                        const { url, alt } = destructureImageComponent(img);
+                    data.map((blog, i) => {
+                        const { title, img: { src, alt }, date } = blog;
 
                         return (
-                            <article key={index} className={`min-w-[75vw] sm:min-w-[53vw]`}>
+                            <article key={i} className={`min-w-[75vw] sm:min-w-[53vw]`}>
                                 <div className={`relative h-[calc(100vw/2.1)] sm:h-[calc(100vw/3)]`}>
                                     <Image
-                                        src={url} fill={true} className={`rounded-xl`}
-                                        alt={alt} style={{ objectFit: `cover` }} 
+                                        src={src} fill={true} className={`rounded-xl`}
+                                        alt={alt} style={{ objectFit: `cover` }}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
                                 </div>
@@ -61,15 +54,11 @@ const Blogs = ({ content, data }) => {
                     data.length ? (
                         <Carousel indicators={false} className={`relative`}>
                             {
-                                data.map((blog, index) => {
-                                    const { img } = destructureCollectionTypeObject(blog);
-                                    const { url, alt } = destructureImageComponent(img);
+                                data.map((blog, i) => {
+                                    const { img: { src, alt } } = blog;
 
                                     return (
-                                        <Slide key={index} image={{
-                                            src: url,
-                                            alt: alt
-                                        }} />
+                                        <Slide key={i} src={src} alt={alt} />
                                     )
                                 })
                             }

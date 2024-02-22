@@ -1,12 +1,6 @@
 import React from 'react'
 import Header from '../../components/Layouts/Header';
 import Seo from '../../components/Seo';
-import { getData } from '../../graphql/api';
-import { GET_BLOG, GET_BLOGS } from '../../graphql/queries';
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent
-} from '../../utils/app';
 import { useRouter } from 'next/router';
 import PageLayout from '../../components/Layouts/PageLayout';
 import Contact from '../../components/Contact';
@@ -15,16 +9,13 @@ import HeroTwo from '../../components/Heroes/HeroTwo';
 import Image from 'next/image';
 import SocialShares from '../../components/SocialShares';
 
-const Blog = ({ data }) => {
+const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, blogData }) => {
     const router = useRouter();
-    const { data: blogData, globalData } = data;
-    const blog = destructureCollectionTypeObject(blogData.blogs, true);
 
-    const { title, description, localepages, seo, alternates,
-        slug, img, date, text } = blog;
+    const { seo, alternates, alternateLangs, title,
+        description, slug, text, img } = blogData;
 
-    const { blogs, contactblock, pages, services,
-        socials, regions } = globalData;
+    const { src, alt } = img;
 
     const button = [];
 
@@ -34,17 +25,15 @@ const Blog = ({ data }) => {
     });
 
     const heroContent = {
-        title, text: description, button,
-        image: destructureImageComponent(img, 'thumbnail'), date
+        title, text: description, button, image: img, alt
     }
-
-    const { url, alt } = destructureImageComponent(img);
 
     return (
         <div>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pages} localepages={localepages} />
-            <HeroTwo content={heroContent} socialsRaw={socials} />
+            <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
+            content, socialsRaw, ctaLink, externalLink = false
+            <HeroTwo content={heroContent} socials={socialsData} />
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
                 xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
@@ -52,19 +41,19 @@ const Blog = ({ data }) => {
                         <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
                         2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
                             <Image
-                                src={url} fill={true} alt={alt} className={`rounded-xl`}
+                                src={src} fill={true} alt={alt} className={`rounded-xl`}
                                 style={{ objectFit: `cover` }} priority={true}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                         <SocialShares url={seo.canonical} title={`Blog - ${title}`}
-                            description={description} imageUrl={url} />
+                            description={description} imageUrl={src} />
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: text }}
                         className={`blog_content`} />
                 </section>
-                <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
+                <Contact content={contactBlockData} />
+                <Footer services={servicesData} blogs={blogsData}
+                    socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </div>
     )
@@ -73,11 +62,13 @@ const Blog = ({ data }) => {
 export default Blog
 
 export async function getStaticPaths() {
-    const blogs =
-        destructureCollectionType((await getData(GET_BLOGS, { locale: "all" }, false)).blogs);
+    const blogsDataNl = (await import(`../../lang/nl/blogs.json`)).default;
+    const blogsDataEn = (await import(`../../lang/en/blogs.json`)).default;
 
-    const paths = blogs.map((blogRaw) => {
-        const { locale, slug } = destructureCollectionTypeObject(blogRaw);
+    const blogsAllLocales = blogsDataNl.concat(blogsDataEn);
+
+    const paths = blogsAllLocales.map((blogRaw) => {
+        const { locale, slug } = blogRaw;
 
         return {
             params: { slug }, locale
@@ -92,9 +83,25 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-    const data = await getData(GET_BLOG, params);
+    const blogsData = (await import(`../../lang/${locale}/blogs.json`)).default;
+
+    const blogData = blogsData.find((p) => {
+        return p.slug === params.slug;
+    });
 
     return {
-        props: { data },
+        props: {
+            // Global data
+            localesData: (await import(`../../lang/${locale}/locales.json`)).default,
+            socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
+            blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
+            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
+            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
+            pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
+            contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
+            // End global data
+
+            blogData
+        }
     }
 }

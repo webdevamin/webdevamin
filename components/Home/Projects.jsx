@@ -1,11 +1,6 @@
-import React from 'react'
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo'
 import { Carousel } from "flowbite-react";
 import Slide from '../Slide';
-import {
-    destructureCollectionTypeObject,
-    destructureImageComponent,
-} from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
 import Heading from '../Heading';
 
@@ -14,7 +9,7 @@ const Projects = ({ content, data }) => {
     const { href, text: buttonText } = button[0];
 
     const projects = data.filter((project) => {
-        return destructureCollectionTypeObject(project).showcase;
+        return project.showcase;
     });
 
     return (
@@ -27,17 +22,10 @@ const Projects = ({ content, data }) => {
             <div className={`mt-10 md:mt-0 md:basis-7/12`}>
                 <Carousel indicators={false}>
                     {
-                        projects.map((project, index) => {
-                            const { img } =
-                                destructureCollectionTypeObject(project);
-                            const { url, alt } = destructureImageComponent(img);
+                        projects.map((project, i) => {
+                            const { img: { src, alt } } = project;
 
-                            return (
-                                <Slide key={index} image={{
-                                    src: url,
-                                    alt: alt
-                                }} />
-                            )
+                            return <Slide key={i} src={src} alt={alt} />
                         })
                     }
                 </Carousel>

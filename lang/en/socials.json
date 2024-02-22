@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Email",
+        "href": "mailto:amin@webdevamin.com",
+        "icon": {
+            "name": "faEnvelope",
+            "brands": false
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": true
+    },
+    {
+        "title": "Facebook",
+        "href": "https://www.facebook.com/a.webdevamin",
+        "icon": {
+            "name": "faFacebookF",
+            "brands": true
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": false
+    },
+    {
+        "title": "Instagram",
+        "href": "https://www.instagram.com/webdevamin",
+        "icon": {
+            "name": "faInstagram",
+            "brands": true
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": false
+    },
+    {
+        "title": "Google",
+        "href": "https://goo.gl/maps/KuPJhuTuNv2rK7RNA",
+        "icon": {
+            "name": "faGoogle",
+            "brands": true
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": false
+    },
+    {
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/company/webdevamin",
+        "icon": {
+            "name": "faLinkedinIn",
+            "brands": true
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": false
+    },
+    {
+        "title": "GitHub",
+        "href": "https://github.com/webdevamin",
+        "icon": {
+            "name": "faGithub",
+            "brands": true
+        },
+        "hideFromHeader": false,
+        "hideFromFooter": false
+    }
+]

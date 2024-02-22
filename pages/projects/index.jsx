@@ -1,10 +1,4 @@
 import Header from '../../components/Layouts/Header'
-import { getData } from '../../graphql/api';
-import { GET_PAGE, GET_PROJECTS } from '../../graphql/queries';
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent
-} from '../../utils/app';
 import Seo from '../../components/Seo';
 import PageLayout from '../../components/Layouts/PageLayout';
 import Heading from '../../components/Heading';
@@ -15,44 +9,36 @@ import Footer from '../../components/Layouts/Footer';
 import CardTwo from '../../components/Cards/CardTwo';
 import HeroOne from '../../components/Heroes/HeroOne';
 
-const Projects = ({ pageData, projectsData }) => {
+const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, projectsData, pageData }) => {
     const router = useRouter();
 
-    const { globalData } = pageData;
-    const page = destructureCollectionTypeObject(pageData.data.pages, true);
-
-    const { blogs, pages, services, socials,
-        regions, contactblock } = globalData;
-
-    const { seo, blocks, alternates, localepages } = page;
-    const projects = destructureCollectionType(projectsData.projects);
-
-    const { slug, subtitle, title } = blocks[1];
+    const { seo, alternates, alternateLangs, title, blocks } = pageData;
+    const { subtitle, slug, text } = blocks[1];
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pages} localepages={localepages} />
+            <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
-                socialsRaw={socials} />
+                socials={socialsData} />
             <PageLayout>
                 <section id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
+                    <p className='max-w-5xl'>{text}</p>
                     <div className={`overflow-x-auto overscroll-x-contain gap-6 
                     pb-6 md:pb-0 md:pr-0 md:w-full md:grid 
                     md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 
-                    ${projects.length >= 2 && `pr-[20%] w-screen flex`}`}>
+                    ${projectsData.length >= 2 && `pr-[20%] w-screen flex`}`}>
                         {
-                            projects.map((project, index) => {
-                                const { title, img, slug, description } =
-                                    destructureCollectionTypeObject(project);
-                                const { url, alt } = destructureImageComponent(img);
+                            projectsData.map((project, i) => {
+                                const { title, img, slug, description } = project;
+                                const { src, alt } = img;
                                 const text = router.locale === `en` ? `Read more` : `Verder lezen`;
 
                                 return (
                                     <Link href={`/projects/${slug}`}
-                                        key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
-                                        <CardTwo imgUrl={url} title={title} text={text}
+                                        key={i} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                        <CardTwo imgUrl={src} title={title} text={text}
                                             subtitle={description} slug={slug} alt={alt} />
                                     </Link>
                                 )
@@ -61,9 +47,9 @@ const Projects = ({ pageData, projectsData }) => {
                         }
                     </div>
                 </section>
-                <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
+                <Contact content={contactBlockData} />
+                <Footer services={servicesData} blogs={blogsData} pages={pagesData}
+                    socials={socialsData} regions={regionsData} followExternalLinks />
             </PageLayout>
         </>
     )
@@ -72,10 +58,20 @@ const Projects = ({ pageData, projectsData }) => {
 export default Projects
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_PAGE, { "slug": "projects", "locale": [locale] });
-    const projectsData = await getData(GET_PROJECTS, { locale: [locale] }, false);
-
     return {
-        props: { pageData, projectsData },
+        props: {
+            // Global data
+            localesData: (await import(`../../lang/${locale}/locales.json`)).default,
+            socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
+            blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
+            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
+            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
+            pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
+            contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
+            // End global data
+
+            projectsData: (await import(`../../lang/${locale}/projects.json`)).default,
+            pageData: (await import(`../../lang/${locale}/pages/projects.json`)).default,
+        },
     }
 }

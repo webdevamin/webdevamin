@@ -1,22 +1,13 @@
-import React from 'react'
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Icon from './../Icon'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app'
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
-    followExternalLinks, pagesRaw }) => {
+const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks }) => {
     const router = useRouter();
     const { locale } = router;
-
-    const services = destructureCollectionType(servicesRaw);
-    const blogs = destructureCollectionType(blogsRaw);
-    const socials = destructureCollectionType(socialsRaw);
-    const regions = destructureCollectionType(regionsRaw);
-    const pages = destructureCollectionType(pagesRaw);
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
@@ -29,14 +20,13 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     </h2>
                     <ul>
                         {
-                            socials.map((social, index) => {
-                                const { href, icon, title, hideFromFooter } =
-                                    destructureCollectionTypeObject(social);
+                            socials.map((social, i) => {
+                                const { href, icon, title, hideFromFooter } = social;
                                 const { name, brands } = icon;
                                 const iconRef = brands ? fab[name] : fas[name];
 
                                 return (
-                                    <li className={`pt-2 ${hideFromFooter && `hidden`}`} key={index}>
+                                    <li className={`pt-2 ${hideFromFooter && `hidden`}`} key={i}>
                                         <a href={href}
                                             rel={`${followExternalLinks ? `noopener noreferrer` :
                                                 `noopener noreferrer nofollow`}`} target="_blank"
@@ -63,10 +53,10 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     <ul>
                         {
                             pages.map((page, i) => {
-                                const { href, icon, title } = destructureCollectionTypeObject(page);
+                                const { href, icon, title, hideFromHeader } = page;
 
                                 return (
-                                    <li className={`pt-2`} key={i}>
+                                    <li className={`pt-2 ${hideFromHeader && `hidden`}`} key={i}>
                                         <Link href={href} className={`flex items-center gap-1`}>
                                             <div className={`w-6 h-5 flex items-center 
                                         justify-start`}>
@@ -91,11 +81,11 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     <ul className={`text_light_all grid grid-cols-2 gap-x-7 
                     items-center sm:block`}>
                         {
-                            services.map((service, index) => {
-                                const { title, showcase } = destructureCollectionTypeObject(service);
+                            services.map((service, i) => {
+                                const { title, showcase } = service;
 
                                 return (
-                                    <li className={`pt-2`} key={index}>
+                                    <li className={`pt-2`} key={i}>
                                         <span className={`lg:text-base ${!showcase && `hidden`}`}>
                                             {title}
                                         </span>
@@ -115,11 +105,11 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     </h2>
                     <ul className={`text_light_all`}>
                         {
-                            blogs.map((blog, index) => {
-                                const { title, slug } = destructureCollectionTypeObject(blog);
+                            blogs.map((blog, i) => {
+                                const { title, slug } = blog;
 
                                 return (
-                                    <li className={`pt-2`} key={index}>
+                                    <li className={`pt-2`} key={i}>
                                         <Link href={`/blogs/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
                                             {title}
@@ -140,11 +130,11 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     </h2>
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         {
-                            regions.map((region, index) => {
-                                const { name, showcase, slug } = destructureCollectionTypeObject(region);
+                            regions.map((region, i) => {
+                                const { name, showcase, slug } = region;
 
                                 return (
-                                    <li className={`pt-1 sm:pt-2 ${!showcase && `hidden`}`} key={index}>
+                                    <li className={`pt-1 sm:pt-2 ${!showcase && `hidden`}`} key={i}>
                                         <Link href={`/regions/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
                                             {name}
@@ -162,7 +152,7 @@ const Footer = ({ servicesRaw, blogsRaw, socialsRaw, regionsRaw,
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         <li className={`pt-1 sm:pt-2`}>
                             <Link href={`/policy`} className={`lg:text-base transition-all hover:text-theme`}>
-                            {locale === `en` ? `Privacy policy` : `Privacybeleid`}
+                                {locale === `en` ? `Privacy policy` : `Privacybeleid`}
                             </Link>
                         </li>
                     </ul>

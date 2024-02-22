@@ -1,12 +1,6 @@
 import React from 'react'
 import Header from '../../components/Layouts/Header';
 import Seo from '../../components/Seo';
-import { getData } from '../../graphql/api';
-import { GET_PROJECT, GET_PROJECTS } from '../../graphql/queries';
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent,
-} from '../../utils/app';
 import { useRouter } from 'next/router';
 import PageLayout from '../../components/Layouts/PageLayout';
 import BlockLayoutTwo from '../../components/Layouts/BlockLayoutTwo';
@@ -25,19 +19,14 @@ const renderButtonText = (loc, link) => {
     return link ? `Bezoek project` : `Lees meer`;
 }
 
-const Project = ({ data }) => {
+const Project = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, projectData }) => {
     const router = useRouter();
     const { locale } = router;
-    const { data: projectData, globalData } = data;
-
-    const projectForCurrentLang = destructureCollectionTypeObject(
-        destructureCollectionType(projectData.projects).find(
-            (project) => project.attributes.locale === locale));
 
     const { title, description, seo, slug,
         link, alt, imgTwo, imgThree, technologies, descriptionText,
-        technologiesText, alternates, localepages } = projectForCurrentLang;
-    const { blogs, contactblock, services, socials, pages, regions } = globalData;
+        technologiesText, alternates, alternateLangs } = projectData;
+
     const button = [];
 
     button.push({
@@ -46,7 +35,7 @@ const Project = ({ data }) => {
     });
 
     const heroContent = {
-        title, text: description, button, img: imgTwo, alt
+        title, text: description, button, image: imgTwo, alt
     }
 
     const { image, alt: altImgThree, width, height, objectFit } = imgThree || {};
@@ -60,8 +49,8 @@ const Project = ({ data }) => {
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pages} localepages={localepages} />
-            <HeroOne content={heroContent} socialsRaw={socials}
+            <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
+            <HeroOne content={heroContent} socials={socialsData}
                 externalLink={link ? true : false} disableImgSpace />
             <PageLayout>
                 <BlockLayoutTwo title={longDescriptionTitle} slug={slug} noPadding={true}>
@@ -74,7 +63,7 @@ const Project = ({ data }) => {
                         {
                             (imgThree && imgThree.image) ? (
                                 <Image
-                                    src={image.data.attributes.url} width={width} height={height} alt={altImgThree} style={{ objectFit: objectFit }} className={`h-[28rem] sm:h-[34rem] lg:h-auto`}/>
+                                    src={image.data.attributes.url} width={width} height={height} alt={altImgThree} style={{ objectFit: objectFit }} className={`h-[28rem] sm:h-[34rem] lg:h-auto`} />
                             ) : (
                                 <Image
                                     src={tabsImage} width={456} height={408}
@@ -96,13 +85,12 @@ const Project = ({ data }) => {
                     md:mt-0 md:basis-6/12`}>
                         {
                             technologies.map((tech, i) => {
-                                const { url, width, height, objectFit, alt } =
-                                    destructureImageComponent(tech.image);
+                                const { src, width, height, objectFit, alt } = tech.image;
 
                                 return (
                                     <div key={i} className={`flex items-center justify-center`}>
                                         <Image
-                                            src={url} width={width} height={height}
+                                            src={src} width={width} height={height}
                                             alt={alt} style={{ objectFit: objectFit }} />
                                     </div>
                                 )
@@ -110,9 +98,9 @@ const Project = ({ data }) => {
                         }
                     </div>
                 </BlockLayoutTwo>
-                <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
+                <Contact content={contactBlockData} />
+                <Footer services={servicesData} blogs={blogsData}
+                    socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </>
     )
@@ -121,12 +109,13 @@ const Project = ({ data }) => {
 export default Project
 
 export async function getStaticPaths() {
-    const projects =
-        destructureCollectionType((await getData(
-            GET_PROJECTS, { locale: "all" }, false)).projects);
+    const projectsDataNl = (await import(`../../lang/nl/projects.json`)).default;
+    const projectsDataEn = (await import(`../../lang/en/projects.json`)).default;
 
-    const paths = projects.map((projectRaw) => {
-        const { locale, slug } = destructureCollectionTypeObject(projectRaw);
+    const projectsAllLocales = projectsDataNl.concat(projectsDataEn);
+
+    const paths = projectsAllLocales.map((projectRaw) => {
+        const { locale, slug } = projectRaw;
 
         return {
             params: { slug }, locale
@@ -141,9 +130,25 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-    const data = await getData(GET_PROJECT, params);
+    const projectsData = (await import(`../../lang/${locale}/projects.json`)).default;
+
+    const projectData = projectsData.find((p) => {
+        return p.slug === params.slug;
+    });
 
     return {
-        props: { data },
+        props: {
+            // Global data
+            localesData: (await import(`../../lang/${locale}/locales.json`)).default,
+            socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
+            blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
+            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
+            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
+            pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
+            contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
+            // End global data
+
+            projectData
+        },
     }
 }

@@ -1,0 +1,74 @@
+{
+    "seo": {
+        "title": "Contact Me: Quote & Inquiries",
+        "description": "Questions/comments? Or do you need a website, logo design, or something else? Feel free to contact me. Same-day response!",
+        "canonical": "https://webdevamin.com/contact",
+        "image": "https://bucket.webdevamin.com/contact.jpg",
+        "ogTitle": "Contact Me: Quote & Inquiries",
+        "ogDescription": "Questions/comments? Or do you need a website, logo design, or something else? Feel free to contact me. Same-day response!"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/contact",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/contact",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/contact",
+            "locale": "nl"
+        }
+    ],
+    "title": "Contact",
+    "slug": "contact",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Contact",
+            "slug": "hero",
+            "text": "<p>Questions/comments? Or are you here to request a free quote for a website, logo design, or something else? Feel free to contact me via the form below. You'll get your answer on the same day.</p>",
+            "button": [
+                {
+                    "href": "#contact",
+                    "text": "To contact form",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/contact.svg",
+                "alt": "Person sitting on the couch taking a selfie with mountains in the background.",
+                "width": 499,
+                "height": 371,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "success",
+            "color": "white",
+            "backgroundColor": "#00c485",
+            "text": "Thank you, your message has been sent. If everything is filled in correctly, I'll get back to you."
+        },
+        {
+            "title": "clienterror",
+            "color": "white",
+            "backgroundColor": "#ff4654",
+            "text": "Please fill in all fields correctly."
+        },
+        {
+            "title": "servererror",
+            "color": "white",
+            "backgroundColor": "#ff4654",
+            "text": "Something went wrong with the website. Please try again later."
+        },
+        {
+            "title": "Contact Form",
+            "slug": "contact",
+            "subtitle": "Keep in touch",
+            "text": "<p>You can <a href='mailto:amin@webdevamin.com'>click here</a> to send me an email message via your standard email client, or fill in the fields below.</p>"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "seo": {
+        "title": "Contacteer me: offerte & vragen",
+        "description": "Vragen/opmerkingen? Of heeft u een website, logo design of iets anders nodig? Aarzel dan niet om contact met mij op te nemen. Dezelfde dag antwoord!",
+        "canonical": "https://webdevamin.com/nl/contact",
+        "image": "https://bucket.webdevamin.com/contact_nl.jpg",
+        "ogTitle": "Contacteer me: offerte & vragen",
+        "ogDescription": "Vragen/opmerkingen? Of heeft u een website, logo design of iets anders nodig? Aarzel dan niet om contact met mij op te nemen. Dezelfde dag antwoord!"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/contact",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/contact",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/contact",
+            "locale": "en"
+        }
+    ],
+    "title": "Contact",
+    "slug": "contact",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Contact",
+            "slug": "hero",
+            "text": "<p>Vragen/opmerkingen? Of bent u hier om een gratis offerte aan te vragen voor een website, logo design of iets anders? Aarzel dan niet om contact met mij op te nemen via het onderstaande formulier. Op dezelfde dag krijgt u uw antwoord.</p>",
+            "button": [
+                {
+                    "href": "#contact",
+                    "text": "Naar formulier",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/contact.svg",
+                "alt": "Persoon zit op de bank en maakt een selfie met bergen op het achtergrond.",
+                "width": 499,
+                "height": 371,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "success",
+            "color": "white",
+            "backgroundColor": "#00c485",
+            "text": "Bedankt, uw bericht werd verstuurd. Indien alles correct ingevuld is, geef ik u wel een seintje."
+        },
+        {
+            "title": "clienterror",
+            "color": "white",
+            "backgroundColor": "#ff4654",
+            "text": "Gelieve alle velden correct in te vullen."
+        },
+        {
+            "title": "servererror",
+            "color": "white",
+            "backgroundColor": "#ff4654",
+            "text": "Er ging iets mis met de website. Probeer het later opnieuw."
+        },
+        {
+            "title": "Contactformulier",
+            "slug": "contact",
+            "subtitle": "Keep in touch",
+            "text": "<p>U kunt <a href='mailto:amin@webdevamin.com'>hier</a> klikken om mij een e-mailbericht te sturen via uw standaard e-mailclient, oftewel vult u de velden hieronder in.</p>"
+        }
+    ]
+}

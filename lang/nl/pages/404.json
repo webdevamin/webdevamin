@@ -1,0 +1,41 @@
+{
+    "seo": {
+        "title": "Pagina niet gevonden",
+        "description": "Deze pagina bestaat niet. Keer terug naar de homepagina.",
+        "canonical": "https://webdevamin.com/nl/404",
+        "ogTitle": "Pagina niet gevonden",
+        "ogDescription": "Deze pagina bestaat niet. Keer terug naar de homepagina."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/404",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/404",
+            "hreflang": "nl"
+        }
+    ],
+    "title": "ClientError",
+    "blocks": [
+        {
+            "title": "Whoops, verdwaald?",
+            "slug": "hero",
+            "text": "<p>Het lijkt er op dat deze pagina niet bestaat. Keer terug naar de homepagina.</p>",
+            "button": [
+                {
+                    "href": "/",
+                    "text": "Naar homepagina",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/404.svg",
+                "alt": "Decoratie nummer 404 met bergen op het achtergrond.",
+                "width": 540,
+                "height": 385,
+                "objectFit": "cover"
+            }
+        }
+    ]
+}

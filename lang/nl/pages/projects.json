@@ -1,0 +1,61 @@
+{
+    "seo": {
+        "title": "Projecten: websites, apps en meer",
+        "description": "Top projecten zoals e-commerce, business websites, real-time administratie apps, etc. Webdesign, web development, logo ontwerp.",
+        "canonical": "https://webdevamin.com/nl/projects",
+        "image": "https://bucket.webdevamin.com/projects_nl.jpg",
+        "ogTitle": "Projecten: websites, apps en meer",
+        "ogDescription": "Top projecten zoals e-commerce, business websites, real-time administratie apps, etc. Webdesign, web development, logo ontwerp."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/projects",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/projects",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/projects",
+            "locale": "en"
+        }
+    ],
+    "title": "Projecten",
+    "slug": "projects",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Projecten",
+            "slug": "hero",
+            "text": "<p>Top projecten zoals e-commerce, business websites, real-time administratie apps, etc. Webdesign, web development, logo ontwerp.</p>",
+            "button": [
+                {
+                    "href": "#overview",
+                    "text": "Bekijk projecten",
+                    "external": false
+                },
+                {
+                    "href": "/contact",
+                    "text": "Gratis offerte",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/launch.svg",
+                "alt": "Persoon lanceert een ruimteschip vanuit een computer.",
+                "width": 503,
+                "height": 342,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Overzicht",
+            "slug": "overview",
+            "subtitle": "Realisaties",
+            "text": "Hier zijn voorbeelden van websites en webapplicaties die ontwikkeld zijn voor mijn klanten. Niet alles is zichtbaar. Als u meer projecten wilt zien, check mijn social media profielen."
+        }
+    ]
+}

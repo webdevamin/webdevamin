@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Home",
+        "href": "/",
+        "icon": "faHouse"
+    },
+    {
+        "title": "Services",
+        "href": "/services",
+        "icon": "faCircleUser"
+    },
+    {
+        "title": "Projects",
+        "href": "/projects",
+        "icon": "faImage"
+    },
+    {
+        "title": "Blogs",
+        "href": "/blogs",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Contact",
+        "href": "/contact",
+        "icon": "faAddressBook"
+    },
+    {
+        "title": "Privacy policy",
+        "href": "/policy",
+        "icon": null,
+        "hideFromHeader": true
+    }
+]

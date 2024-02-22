@@ -118,10 +118,6 @@ p a {
   @apply text-light;
 }
 
-.text_lg_white_semibold * {
-  @apply text-white font-bold md:text-lg lg:text-2xl lg:leading-9 opacity-100;
-}
-
 .container {
   @apply w-10/12 max-w-8xl mx-auto;
 }

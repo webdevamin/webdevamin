@@ -1,12 +1,4 @@
 import React from 'react'
-import { getData } from '../../graphql/api';
-import { GET_REGIONS, GET_REGION, GET_SERVICE_DETAILS, GET_SERVICE_DETAILS_BLOCK } from '../../graphql/queries';
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent,
-    destructureSingleType
-} from '../../utils/app';
-import { useRouter } from 'next/router';
 import Seo from '../../components/Seo';
 import Header from '../../components/Layouts/Header';
 import HeroOne from '../../components/Heroes/HeroOne';
@@ -20,32 +12,22 @@ import Footer from '../../components/Layouts/Footer';
 import BlockLayoutOne from '../../components/Layouts/BlockLayoutOne';
 import { Accordion } from 'flowbite-react';
 
-const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
-    const router = useRouter();
-    const { locale } = router;
-    const { data: regionData, globalData } = data;
-    const { title, subtitle, description } = destructureSingleType(serviceDetailsBlockData.serviceDetailsBlock);
-    const serviceDetails = destructureCollectionType(serviceDetailsData.serviceDetails);
-    const regionForCurrentLang = destructureCollectionTypeObject(
-        destructureCollectionType(regionData.regions).find(
-            (region) => region.attributes.locale === locale));
-
-    const { seo, hero, alternates, contents, localepages } = regionForCurrentLang;
-    const { blogs, pages, services, socials, regions, contactblock } = globalData;
+const Region = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, serviceDetailsData, serviceDetailsBlockData, regionData }) => {
+    const { seo, alternates, alternateLangs, hero, contents } = regionData;
+    const { title, subtitle, description } = serviceDetailsBlockData;
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pages} localepages={localepages} />
-            <HeroOne content={hero} socialsRaw={socials} smallerTitle />
+            <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
+            <HeroOne content={hero} socials={socialsData} smallerTitle />
             <PageLayout>
                 {
                     contents.map((content, i) => {
                         const { title, slug, summary, text, subtitle,
                             position, img, button } = content;
 
-                        const { url, objectFit, width, height, alt }
-                            = destructureImageComponent(img);
+                        const { src, objectFit, width, height, alt } = img;
                         const { href, text: buttonText } = button[0] || {};
 
                         return (
@@ -63,7 +45,7 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                                             <Heading title={title} />
                                         </div>
                                         <Image
-                                            src={url} width={width} height={height}
+                                            src={src} width={width} height={height}
                                             alt={alt} style={{ objectFit: objectFit }} />
                                     </div>
                                     <div className={`md:w-full 
@@ -98,11 +80,11 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                     lg:mt-12 xl:mt-0`}>
                         <Accordion>
                             {
-                                serviceDetails.map((serviceDetail, index) => {
-                                    const { title, description } = serviceDetail.attributes;
+                                serviceDetailsData.map((serviceDetail, i) => {
+                                    const { title, description } = serviceDetail;
 
                                     return (
-                                        <Accordion.Panel key={index}>
+                                        <Accordion.Panel key={i}>
                                             <Accordion.Title>
                                                 {title}
                                             </Accordion.Title>
@@ -118,9 +100,9 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
                         </Accordion>
                     </div>
                 </BlockLayoutOne>
-                <Contact content={contactblock} />
-                <Footer servicesRaw={services} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
+                <Contact content={contactBlockData} />
+                <Footer services={servicesData} blogs={blogsData}
+                    socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </>
     )
@@ -129,12 +111,13 @@ const Region = ({ data, serviceDetailsData, serviceDetailsBlockData }) => {
 export default Region
 
 export async function getStaticPaths() {
-    const regions =
-        destructureCollectionType((await getData(
-            GET_REGIONS, { locale: "all" }, false)).regions);
+    const regionsDataNl = (await import(`../../lang/nl/regions.json`)).default;
+    const regionsDataEn = (await import(`../../lang/en/regions.json`)).default;
 
-    const paths = regions.map((regionRaw) => {
-        const { locale, slug } = destructureCollectionTypeObject(regionRaw);
+    const regionsAllLocales = regionsDataNl.concat(regionsDataEn);
+
+    const paths = regionsAllLocales.map((regionRaw) => {
+        const { locale, slug } = regionRaw;
 
         return {
             params: { slug }, locale
@@ -149,11 +132,27 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-    const data = await getData(GET_REGION, params);
-    const serviceDetailsData = await getData(GET_SERVICE_DETAILS, { locale: [locale] }, false);
-    const serviceDetailsBlockData = await getData(GET_SERVICE_DETAILS_BLOCK, { locale: [locale] }, false);
+    const regionsData = (await import(`../../lang/${locale}/regions.json`)).default;
+
+    const regionData = regionsData.find((p) => {
+        return p.slug === params.slug;
+    });
 
     return {
-        props: { data, serviceDetailsData, serviceDetailsBlockData },
+        props: {
+            // Global data
+            localesData: (await import(`../../lang/${locale}/locales.json`)).default,
+            socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
+            blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
+            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
+            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
+            pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
+            contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
+            // End global data
+
+            serviceDetailsData: (await import(`../../lang/${locale}/serviceDetails.json`)).default,
+            serviceDetailsBlockData: (await import(`../../lang/${locale}/serviceDetailsBlock.json`)).default,
+            regionData,
+        },
     }
 }

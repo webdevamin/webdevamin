@@ -1,21 +1,16 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
-import {
-    destructureCollectionType, destructureCollectionTypeObject,
-    destructureImageComponent,
-    getJsonString,
-} from '../../utils/app';
+import { getJsonString, } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
-const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
+const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace }) => {
-    const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
-    const { title, text, button, img } = content;
-    const { url, objectFit, width, height, alt } = destructureImageComponent(img);
+    const { title, text, button, image } = content;
+    const { src: url, objectFit, width, height, alt } = image;
 
     const parsedTitle = getJsonString(title);
 
@@ -56,14 +51,14 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                         <span className={`w-64 block bg-theme h-[1px]`} />
                         <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
                             {
-                                socials.map((social, index) => {
+                                socials.map((social, i) => {
                                     const { href, icon, title, hideFromHeader } =
-                                        destructureCollectionTypeObject(social);
+                                        social;
                                     const { name, brands } = icon;
                                     const iconRef = brands ? fab[name] : fas[name];
 
                                     return (
-                                        <a key={index} href={href}
+                                        <a key={i} href={href}
                                             className={`${hideFromHeader && `hidden`}`}
                                             rel="noreferrer nofollow"
                                             target="_blank" aria-label={title}>
@@ -87,13 +82,13 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                     }
                     <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
                         {
-                            button.map((btn, index) => {
+                            button.map((btn, i) => {
                                 const { href, text } = btn;
-                                const isOdd = index % 2 !== 0 ? true : false;
+                                const isOdd = i % 2 !== 0 ? true : false;
 
                                 if (href) {
                                     return (
-                                        <ButtonOne key={index} href={ctaLink || href}
+                                        <ButtonOne key={i} href={ctaLink || href}
                                             text={text} outline={isOdd} noMargin
                                             external={externalLink}
                                             classes={`sm:px-14 md:text-center`} />
@@ -109,14 +104,13 @@ const HeroOne = ({ content, socialsRaw, ctaLink, externalLink = false,
                 <span className={`w-64 block bg-dark h-[1px]`} />
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
-                        socials.map((social, index) => {
-                            const { href, icon, title, hideFromHeader } =
-                                destructureCollectionTypeObject(social);
+                        socials.map((social, i) => {
+                            const { href, icon, title, hideFromHeader } = social;
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
-                                <a key={index} href={href}
+                                <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
                                     rel="noreferrer nofollow"
                                     target="_blank" aria-label={title}>

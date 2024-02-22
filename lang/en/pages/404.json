@@ -1,0 +1,41 @@
+{
+    "seo": {
+        "title": "Page not found",
+        "description": "This page does not exist. Return to the homepage.",
+        "canonical": "https://webdevamin.com/404",
+        "ogTitle": "Page not found",
+        "ogDescription": "This page does not exist. Return to the homepage."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/404",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/404",
+            "hreflang": "nl"
+        }
+    ],
+    "title": "ClientError",
+    "blocks": [
+        {
+            "title": "Whoops, lost?",
+            "slug": "hero",
+            "text": "<p>It seems like this page does not exist. Return to the homepage.</p>",
+            "button": [
+                {
+                    "href": "/",
+                    "text": "To homepage",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/404.svg",
+                "alt": "Decoration number 404 with mountains in the background.",
+                "width": 540,
+                "height": 385,
+                "objectFit": "cover"
+            }
+        }
+    ]
+}

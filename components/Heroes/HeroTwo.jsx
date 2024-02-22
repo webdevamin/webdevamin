@@ -1,12 +1,10 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
-import { destructureCollectionType, destructureCollectionTypeObject } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
-const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
-    const socials = socialsRaw ? destructureCollectionType(socialsRaw) : null;
+const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
     const { title, text, button } = content;
     const { href, text: buttonText } = button[0];
 
@@ -34,14 +32,13 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
                 <div className={`px-5 text-theme flex gap-5 
                         text-opacity-70`}>
                     {
-                        socials.map((social, index) => {
-                            const { href, icon, hideFromHeader } =
-                                destructureCollectionTypeObject(social);
+                        socials.map((social, i) => {
+                            const { href, icon, hideFromHeader } = social
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
-                                <a key={index} href={href} rel="noreferrer nofollow"
+                                <a key={i} href={href} rel="noreferrer nofollow"
                                     className={`${hideFromHeader && `hidden`}`}
                                     target="_blank">
                                     <Icon icon={iconRef} size={`xl`} />
@@ -57,14 +54,13 @@ const HeroTwo = ({ content, socialsRaw, ctaLink, externalLink = false }) => {
                 <span className={`w-screen xl:w-4/12 block bg-dark h-[1px]`} />
                 <div className={`px-10 text-theme flex gap-8`}>
                     {
-                        socials.map((social, index) => {
-                            const { href, icon, hideFromHeader } =
-                                destructureCollectionTypeObject(social);
+                        socials.map((social, i) => {
+                            const { href, icon, hideFromHeader } = social
                             const { name, brands } = icon;
                             const iconRef = brands ? fab[name] : fas[name];
 
                             return (
-                                <a key={index} href={href} rel="noreferrer nofollow"
+                                <a key={i} href={href} rel="noreferrer nofollow"
                                     className={`${hideFromHeader && `hidden`}`}
                                     target="_blank">
                                     <Icon icon={iconRef} size={`2xl`} />

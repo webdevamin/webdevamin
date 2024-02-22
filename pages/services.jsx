@@ -1,9 +1,6 @@
 import HeroOne from '../components/Heroes/HeroOne'
 import Header from '../components/Layouts/Header'
 import Seo from '../components/Seo'
-import { getData } from '../graphql/api';
-import { GET_SERVICES, GET_PAGE, GET_SERVICE_DETAILS, GET_SERVICE_DETAILS_BLOCK } from '../graphql/queries';
-import { destructureCollectionType, destructureCollectionTypeObject, destructureImageComponent, destructureSingleType } from '../utils/app';
 import PageLayout from '../components/Layouts/PageLayout'
 import BlockLayoutOne from '../components/Layouts/BlockLayoutOne';
 import Heading from '../components/Heading';
@@ -15,15 +12,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Layouts/Footer';
 import ButtonOne from '../components/Buttons/ButtonOne';
 
-const Services = ({ pageData, servicesData,
-    serviceDetailsData, serviceDetailsBlockData }) => {
-    const { globalData } = pageData;
-    const page = destructureCollectionTypeObject(pageData.data.pages, true);
-    const { seo, blocks, alternates, localepages } = page;
-    const services = destructureCollectionType(servicesData.services);
-
-    const { blogs, socials, contactblock,
-        services: servicesGlobal, regions, pages } = globalData;
+const Services = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, pageData, serviceDetailsData }) => {
+    const { seo, alternates, alternateLangs, title, blocks } = pageData;
 
     const { title: xpTitle, subtitle: xpSubtitle, slug: xpSlug } = blocks[1];
 
@@ -31,24 +21,21 @@ const Services = ({ pageData, servicesData,
         img: whoImg, button: whoButton,
         summary: whoSummary } = blocks[2];
 
-    const { url: whoUrl, objectFit: whoObjFit, width: whoWidth,
-        height: whoHeight, alt: whoAlt } = destructureImageComponent(whoImg);
+    const { src: whoUrl, alt: whoAlt } = whoImg;
 
     const { title: whyTitle, text: whyText,
         img: whyImg, slug: whySlug, summary: whySummary } = blocks[3];
 
-    const { url: whyUrl, objectFit: whyObjFit, width: whyWidth,
-        height: whyHeight, alt: whyAlt } = destructureImageComponent(whyImg);
+    const { src: whyUrl, alt: whyAlt } = whyImg;
 
-    const { title, subtitle, description } = destructureSingleType(serviceDetailsBlockData.serviceDetailsBlock);
-    const serviceDetails = destructureCollectionType(serviceDetailsData.serviceDetails);
+    const { title: whatTitle, subtitle: whatSubtitle, text: whatText } = blocks[4];
 
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pages} localepages={localepages} />
+            <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
-                socialsRaw={socials} />
+                socials={socialsData} />
             <PageLayout>
                 <BlockLayoutOne title={xpSlug}>
                     <div className={`text-center`}>
@@ -57,13 +44,12 @@ const Services = ({ pageData, servicesData,
                     <div className={`grid grid-cols-1 lg:grid-cols-2 mt-16 
                     xl:mt-0 gap-11 lg:flex-row lg:gap-16`}>
                         {
-                            services.map((serviceRaw, index) => {
-                                const { title, text, backgroundColor, icon } =
-                                    destructureCollectionTypeObject(serviceRaw);
+                            servicesData.map((service, i) => {
+                                const { title, text, backgroundColor, icon } = service;
 
                                 return <CardOne title={title}
                                     bgColor={backgroundColor}
-                                    key={index} text={text} icon={icon} />
+                                    key={i} text={text} icon={icon} />
                             })
                         }
                     </div>
@@ -75,8 +61,8 @@ const Services = ({ pageData, servicesData,
                             <Heading title={whoTitle} />
                         </h2>
                         <Image
-                            src={whoUrl} width={whoWidth} height={whoHeight} alt={whoAlt}
-                            style={{ objectFit: whoObjFit }} />
+                            src={whoUrl} width={700} height={400} alt={whoAlt}
+                            style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={`md:w-full`}>
                         <div className={`hidden md:block`}>
@@ -97,8 +83,8 @@ const Services = ({ pageData, servicesData,
                             <Heading title={whyTitle} />
                         </div>
                         <Image
-                            src={whyUrl} width={whyWidth} height={whyHeight} alt={whyAlt}
-                            style={{ objectFit: whyObjFit }} />
+                            src={whyUrl} width={562} height={396} alt={whyAlt}
+                            style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={`md:w-full xl:ml-8`}>
                         <div className={`hidden md:block`}>
@@ -113,19 +99,19 @@ const Services = ({ pageData, servicesData,
                 </BlockLayoutTwo>
                 <BlockLayoutOne title={title}>
                     <div>
-                        <Heading title={title} subtitle={subtitle} />
-                        <div dangerouslySetInnerHTML={{ __html: description }}
+                        <Heading title={whatTitle} subtitle={whatSubtitle} />
+                        <div dangerouslySetInnerHTML={{ __html: whatText }}
                             className={`p`} />
                     </div>
                     <div id={`accordion`} className={`w-full mt-10 
                     lg:mt-12 xl:mt-0`}>
                         <Accordion>
                             {
-                                serviceDetails.map((serviceDetail, index) => {
-                                    const { title, description } = serviceDetail.attributes;
+                                serviceDetailsData.map((serviceDetail, i) => {
+                                    const { title, description } = serviceDetail;
 
                                     return (
-                                        <Accordion.Panel key={index}>
+                                        <Accordion.Panel key={i}>
                                             <Accordion.Title>
                                                 {title}
                                             </Accordion.Title>
@@ -141,9 +127,9 @@ const Services = ({ pageData, servicesData,
                         </Accordion>
                     </div>
                 </BlockLayoutOne>
-                <Contact content={contactblock} />
-                <Footer servicesRaw={servicesGlobal} blogsRaw={blogs}
-                    socialsRaw={socials} regionsRaw={regions} pagesRaw={pages} />
+                <Contact content={contactBlockData} />
+                <Footer services={servicesData} blogs={blogsData}
+                    socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </>
     )
@@ -152,15 +138,20 @@ const Services = ({ pageData, servicesData,
 export default Services
 
 export async function getStaticProps({ locale }) {
-    const pageData = await getData(GET_PAGE, { "slug": "services", "locale": [locale] });
-    const servicesData = await getData(GET_SERVICES, { locale: [locale] }, false);
-    const serviceDetailsData = await getData(GET_SERVICE_DETAILS, { locale: [locale] }, false);
-    const serviceDetailsBlockData = await getData(GET_SERVICE_DETAILS_BLOCK, { locale: [locale] }, false);
-
     return {
         props: {
-            pageData, servicesData, serviceDetailsData,
-            serviceDetailsBlockData
+            // Global data
+            localesData: (await import(`../lang/${locale}/locales.json`)).default,
+            socialsData: (await import(`../lang/${locale}/socials.json`)).default,
+            blogsData: (await import(`../lang/${locale}/blogs.json`)).default,
+            servicesData: (await import(`../lang/${locale}/services.json`)).default,
+            regionsData: (await import(`../lang/${locale}/regions.json`)).default,
+            pagesData: (await import(`../lang/${locale}/pages.json`)).default,
+            contactBlockData: (await import(`../lang/${locale}/contactBlock.json`)).default,
+            // End global data
+
+            pageData: (await import(`../lang/${locale}/pages/services.json`)).default,
+            serviceDetailsData: (await import(`../lang/${locale}/serviceDetails.json`)).default,
         },
     }
 }

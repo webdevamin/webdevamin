@@ -7,51 +7,27 @@ import PageLayout from '../components/Layouts/PageLayout'
 import Blogs from '../components/Home/Blogs'
 import Contact from '../components/Contact'
 import Footer from '../components/Layouts/Footer'
-import {
-  GET_TECHS, GET_PAGE, GET_PROJECTS, GET_BLOGS,
-  GET_TESTIMONIALS,
-  GET_TYPES
-} from '../graphql/queries';
-import { getData } from '../graphql/api';
-import {
-  destructureCollectionType,
-  destructureCollectionTypeObject
-} from '../utils/app';
 import Hero from '../components/Home/Hero'
 
-const Index = ({ pageData, projectsData, blogsData,
-  testimonialsData, techData, typesData }) => {
-  const { globalData } = pageData;
-  const projects = destructureCollectionType(projectsData.projects);
-  const blogs = destructureCollectionType(blogsData.blogs);
-  const testimonials = destructureCollectionType(testimonialsData.testimonials);
-  const techs = destructureCollectionType(techData.teches);
-  const types = destructureCollectionType(typesData.types);
-  const page = destructureCollectionTypeObject(pageData.data.pages, true);
-
-  const { blogs: blogsGlobal, pages, services, socials,
-    regions, contactblock } = globalData;
-
-  const { seo, blocks, alternates, localepages } = page;
+const Index = ({ localesData, blogsData, servicesData, socialsData, regionsData, projectsData, pagesData, contactBlockData, pageData }) => {
+  const { seo, alternates, alternateLangs, blocks } = pageData;
 
   return (
     <>
       <Seo seo={seo} alternates={alternates} />
-      <Header pages={pages} localepages={localepages} />
+      <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
       <Hero content={blocks.find(block => block.slug === `hero`)}
-        socialsRaw={socials} types={types} />
+        socials={socialsData} />
       <PageLayout>
-        <About content={blocks.find(block => block.slug === `about`)}
-          techs={techs} />
+        <About content={blocks.find(block => block.slug === `about`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)}
-          data={projects} />
+          data={projectsData} />
         <Blogs content={blocks.find(block => block.slug === `blogs`)}
-          data={blogs} />
-        <Testimonials content={blocks.find(block => block.slug === `testimonials`)}
-          data={testimonials} />
-        <Contact content={contactblock} />
-        <Footer servicesRaw={services} blogsRaw={blogsGlobal} pagesRaw={pages}
-          socialsRaw={socials} regionsRaw={regions} followExternalLinks />
+          data={blogsData} />
+        <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
+        <Contact content={contactBlockData} />
+        <Footer services={servicesData} blogs={blogsData} pages={pagesData}
+          socials={socialsData} regions={regionsData} followExternalLinks />
       </PageLayout>
     </>
   )
@@ -60,17 +36,20 @@ const Index = ({ pageData, projectsData, blogsData,
 export default Index
 
 export async function getStaticProps({ locale }) {
-  const pageData = await getData(GET_PAGE, { "slug": "home", "locale": [locale] });
-  const projectsData = await getData(GET_PROJECTS, { locale: [locale] }, false);
-  const blogsData = await getData(GET_BLOGS, { locale: [locale] }, false);
-  const testimonialsData = await getData(GET_TESTIMONIALS, { locale: [locale] }, false);
-  const techData = await getData(GET_TECHS, { locale: [locale] }, false);
-  const typesData = await getData(GET_TYPES, { locale: [locale] }, false);
-
   return {
     props: {
-      pageData, projectsData, blogsData, testimonialsData,
-      techData, typesData
+      // Global data
+      localesData: (await import(`../lang/${locale}/locales.json`)).default,
+      socialsData: (await import(`../lang/${locale}/socials.json`)).default,
+      blogsData: (await import(`../lang/${locale}/blogs.json`)).default,
+      servicesData: (await import(`../lang/${locale}/services.json`)).default,
+      regionsData: (await import(`../lang/${locale}/regions.json`)).default,
+      pagesData: (await import(`../lang/${locale}/pages.json`)).default,
+      contactBlockData: (await import(`../lang/${locale}/contactBlock.json`)).default,
+      // End global data
+      
+      projectsData: (await import(`../lang/${locale}/projects.json`)).default,
+      pageData: (await import(`../lang/${locale}/pages/home.json`)).default,
     },
   }
 }

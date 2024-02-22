@@ -1,0 +1,56 @@
+{
+    "seo": {
+        "title": "Privacy Policy",
+        "description": "Read our privacy policy",
+        "canonical": "https://webdevamin.com/policy",
+        "ogTitle": "Privacy Policy",
+        "ogDescription": "Read our privacy policy"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/policy",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/policy",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/policy",
+            "locale": "nl"
+        }
+    ],
+    "title": "Privacy Policy",
+    "slug": "policy",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Privacy Policy",
+            "slug": "hero",
+            "text": "<p>Read our privacy policy to understand how we collect your data and what we do with it.</p>",
+            "button": [
+                {
+                    "href": "#policy",
+                    "text": "Read More",
+                    "label": "To policy section",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/gdpr.svg",
+                "alt": "Person with a GDPR flag.",
+                "width": 485,
+                "height": 429,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Privacy Policy",
+            "slug": "policy",
+            "subtitle": "Data & Cookies",
+            "text": "<p style='margin-left:0'>Webdevamin, a freelance web agency based in Bruges, Belgium, operates the website <a href='https://webdevamin.com/nl'>https://webdevamin.com/nl</a> (hereinafter referred to as 'Webdevamin' or 'the website'). As a provider of digital solutions for both B2C and B2B, we prioritize your privacy protection. This page describes our policy regarding the collection, use, and disclosure of personal data when you use our website, as well as the choices available to you regarding that data.<h3 style='margin-left:0'><strong>What Data Do We Collect</strong></h3><p style='margin-left:0'>In our pursuit of delivering tailor-made digital solutions, we collect the following information:<ul><li><strong>Personal Data:</strong> State, city, country.<li><strong>Usage Data:</strong> Device information and other data collected by Google Analytics and Facebook Pixels.</ul><h3 style='margin-left:0'><strong>How Do We Collect Your Data</strong></h3><p style='margin-left:0'>We utilize Google Analytics and Facebook Pixels to automatically collect information, enabling us to gain better insights into user interactions for enhanced audience targeting and marketing analysis. For detailed information about data collection practices, please refer to the privacy policies of Google Analytics (<a href='https://policies.google.com/privacy'>https://policies.google.com/privacy</a>) and Facebook (<a href='https://www.facebook.com/policy.php'>https://www.facebook.com/policy.php</a>).<h3 style='margin-left:0'><strong>How Will We Use Your Data</strong></h3><p style='margin-left:0'>The data collected serves the following purposes:<ul><li>Refining audiences for our digital solutions.<li>Analysing data for improved marketing strategies.</ul><h3 style='margin-left:0'><strong>How Do We Store Your Data</strong></h3><p style='margin-left:0'>For your security, personal data is not stored directly on our servers. Google Analytics and Facebook handle data storage in accordance with their respective privacy policies.<h3 style='margin-left:0'><strong>What Are Your Data Protection Rights</strong></h3><p style='margin-left:0'>As a user, you have the right to:<ul><li>Be informed about the processing of your data.<li>Opt out of having your personal data tracked (by refusing cookies and data collection, see section below).</ul><h3 style='margin-left:0'><strong>What Are Cookies</strong></h3><p style='margin-left:0'>Cookies are small files placed by websites on your device to track your browsing history.<h3 style='margin-left:0'><strong>What Types of Cookies Do We Use</strong></h3><p style='margin-left:0'>We use:<ul><li>Analytical/performance cookies and data collection (Google Analytics).<li>Targeted cookies and data collection (Facebook Pixels).</ul><h3 style='margin-left:0'><strong>How to Manage Your Cookies</strong></h3><p style='margin-left:0'>You have the choice to manage your cookie preferences by adjusting your browser settings. Refer to the help section of your browser for detailed instructions.<h3 style='margin-left:0'><strong>Privacy Policy of Other Websites</strong></h3><p style='margin-left:0'>Our privacy policy applies solely to our website. If you click on links leading to other websites, please review their respective privacy policies.<h3 style='margin-left:0'><strong>Rejecting Cookies and Data Collection</strong></h3><p style='margin-left:0'>Users have the option to reject cookies and data collection by Google Analytics and Facebook Pixel by clicking the 'Reject' button on the cookie consent banner.<h3 style='margin-left:0'><strong>Changes to Our Privacy Policy</strong></h3><p style='margin-left:0'>We may update our privacy policy periodically, with changes communicated through the publication of an updated policy on this page.<h3 style='margin-left:0'><strong>How to Contact Us</strong></h3><p style='margin-left:0'>For questions about this privacy policy or to exercise your data protection rights, please contact us at amin@webdevamin.com or visit our <a href='https://webdevamin.com/nl/contact'>contact page</a>.<p style='margin-left:0'>This privacy policy is effective from January 14, 2024.</p>"
+        }
+    ]
+}
