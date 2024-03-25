@@ -24,7 +24,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
             <PageLayout>
                 <section id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
-                    <p className='max-w-5xl'>{text}</p>
+                    <p>{text}</p>
                     <div className={`overflow-x-auto overscroll-x-contain gap-6 
                     pb-6 md:pb-0 md:pr-0 md:w-full md:grid 
                     md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 
