@@ -707,5 +707,112 @@
                 }
             }
         ]
+    },
+    {
+        "locale": "en",
+        "seo": {
+            "title": "Webleadr",
+            "description": "A SaaS platform where users can generate leads by finding businesses from all over the world that do not have websites and analyzing existing websites.",
+            "canonical": "https://webdevamin.com/projects/webleadr",
+            "image": "https://bucket.webdevamin.com/webleadr-portfolio-og.jpg",
+            "ogTitle": "Webleadr",
+            "ogDescription": "A SaaS platform where users can generate leads by finding businesses from all over the world that do not have websites and analyzing existing websites."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/webleadr",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/webleadr",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/webleadr",
+                "locale": "nl"
+            }
+        ],
+        "title": "Webleadr",
+        "slug": "webleadr",
+        "link": "https://webleadr.com",
+        "description": "A SaaS platform where users can generate leads by finding businesses from all over the world that do not have websites and analyzing existing websites.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
+            "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/webleadr-portfolio-alpha.png",
+            "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page.",
+            "width": 892,
+            "height": 628,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>My first SaaS developed for the public: Webleadr. A platform where users such as web designers, developers, SEO specialists, etc., can find businesses from all over the world that do not have websites and convert them into leads. Or analyze existing business websites to determine if improvements are needed.</p><p>This is done by selecting a region on a world map and using filters to refine the search results. For example, you want to find only hairdressers or dentists in the Ghent region. The region selection is done using a drag-and-drop feature on a world map. Contacting businesses is done with just one click of a button.</p><p>There are also other useful features, such as the ability to export the businesses in your dashboard to a CSV file.</p><p>This is an ongoing project and it is constantly being expanded.</p>",
+        "technologiesText": "<p>There are many technologies and third parties involved. The core web framework used is Next.js, which in turn is connected to Supabase as a backend as a service. More specifically, the latter is used as a database and authentication helper. Sending and receiving emails, e.g., for registration and password reset, is done with Resend. Cloudflare is used for deployment and domain management.</p><p>The most interesting is Paddle. It is a Merchant of Record. In other words, it is a service that not only handles payments and orders, but also invoicing, VAT, and more. This can be a great help, especially if the application is aimed at both B2C and B2B. Finally, Sentry is used to monitor and debug errors and logs in general.</p>",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "Nextjs.js",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Supabase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "Supabase",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 100,
+                    "height": 33,
+                    "alt": "Cloudflare",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Paddle",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/paddle.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "Paddle",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Resend",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/resend.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "Resend",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Sentry",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/sentry.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "Sentry",
+                    "objectFit": "cover"
+                }
+            }
+        ]
     }
 ]
