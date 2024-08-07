@@ -181,7 +181,7 @@
         "locale": "nl",
         "link": "https://bakiji-construct.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
-        "showcase": true,
+        "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
             "alt": "Landing pagina van Bakiji Construct website."
@@ -258,7 +258,7 @@
         "locale": "nl",
         "link": "https://solarisinsurance.org",
         "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
-        "showcase": true,
+        "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/solaris_alpha.png",
             "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop."
@@ -810,6 +810,83 @@
                     "width": 100,
                     "height": 100,
                     "alt": "Sentry",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "seo": {
+            "title": "William Projecten",
+            "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
+            "canonical": "https://webdevamin.com/nl/projects/williamprojecten",
+            "image": "https://bucket.webdevamin.com/williamprojecten-portfolio-og.jpg",
+            "ogTitle": "William Projecten",
+            "ogDescription": "Een business website voor een bouwbedrijf met algemene info en een contactformulier."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/williamprojecten",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/williamprojecten",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/williamprojecten",
+                "locale": "en"
+            }
+        ],
+        "title": "William Projecten",
+        "slug": "williamprojecten",
+        "locale": "nl",
+        "link": "https://williamprojecten.be",
+        "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
+            "alt": "Landing pagina van William Projecten website."
+        },
+        "imgTwo": {
+            "src": "https://bucket.webdevamin.com/williamprojecten-portfolio-alpha.png",
+            "alt": "Landing pagina van William Projecten website.",
+            "width": 852,
+            "height": 600,
+            "objectFit": "cover"
+        },
+        "descriptionText": "<p>Een business website voor een bouwbedrijf. Het bevat één pagina met noodzakelijke informatie over het bedrijf, contact details, FAQ sectie, gallerij en een formulier indien u een mail wil versturen.</p>",
+        "technologiesText": "<p>Een statische website met HTML, CSS en Javascript. Er is geen backend code bij betrokken. Gedeployed op Cloudflare.</p>",
+        "technologies": [
+            {
+                "name": "HTML",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/html.svg",
+                    "width": 115,
+                    "height": 132,
+                    "alt": "HTML",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Javascript",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "width": 115,
+                    "height": 132,
+                    "alt": "Javascript",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "width": 115,
+                    "height": 115,
+                    "alt": "Cloudflare",
                     "objectFit": "cover"
                 }
             }
