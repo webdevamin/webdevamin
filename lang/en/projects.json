@@ -845,7 +845,7 @@
         "locale": "en",
         "link": "https://williamprojecten.be",
         "description": "A business website for a construction company with general information and a contact form.",
-        "showcase": false,
+        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
             "alt": "Landing page of William Projecten website."
