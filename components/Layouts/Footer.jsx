@@ -95,7 +95,7 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                         }
                     </ul>
                     <div className={`md:mt-4`}>
-                        <ButtonThree href={`/about`} color={`text_theme_all`}
+                        <ButtonThree href={`/services`} color={`text_theme_all`}
                             text={locale === `en` ? `Read more` : `Meer weten`} />
                     </div>
                 </div>
