@@ -38,8 +38,7 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
                 xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 
-                        2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
+                        <div className={`relative h-[calc(100vw/2)] xl:h-[calc(100vw/2.7)] 2xl:h-[calc(100vw/2.8)] mb-3 md:mb-5 lg:mb-6`}>
                             <Image
                                 src={src} fill={true} alt={alt} className={`rounded-xl ${border && `border shadow lg:shadow-xl`}`}
                                 style={{ objectFit: `cover` }} priority={true}

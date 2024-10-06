@@ -2,19 +2,17 @@ import React from 'react'
 import Image from 'next/image';
 import ButtonThree from '../Buttons/ButtonThree';
 
-const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border }) => {
+const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border, type }) => {
     const { bText, bgColor, color } = badge || {};
 
     return (
         <article>
-            <div className={`relative h-[calc(100vw/2)] 
-        sm:h-[calc(100vw/3)] md:h-[calc(100vw/3.75)] 
-        xl:h-[calc(100vw/6)] 3xl:h-[calc(100vw/6.5)] rounded-xl`}>
+            <div className={`relative rounded-xl w-full ${type === `project` ? `pt-[70%]` : `pt-[58.25%]`}`}>
                 <Image
                     src={imgUrl}
                     fill={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt={alt} className={`rounded-xl ${border && `border shadow`}`}
+                    alt={alt} className={`rounded-xl absolute top-0 left-0 w-full h-full ${border && `border shadow`}`}
                     style={{ objectFit: "cover" }}
                 />
             </div>

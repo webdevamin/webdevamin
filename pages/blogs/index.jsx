@@ -42,7 +42,7 @@ const Blogs = ({ localesData, socialsData, blogsData, servicesData, regionsData,
                                     <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                         <CardTwo imgUrl={src} title={title} text={text}
                                             subtitle={description} slug={slug} alt={alt}
-                                            badge={dev && { bText: `dev` }} border={border} />
+                                            badge={dev && { bText: `dev` }} border={border} type={`blog`}/>
                                     </Link>
                                 )
 
