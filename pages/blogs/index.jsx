@@ -34,7 +34,7 @@ const Blogs = ({ localesData, socialsData, blogsData, servicesData, regionsData,
                             ${blogsData.length >= 2 && `pr-[20%] w-screen flex`}`}>
                         {
                             blogsData.map((blog, index) => {
-                                const { title, img, slug, description, dev } = blog;
+                                const { title, img, slug, description, dev, border } = blog;
                                 const { src, alt } = img;
                                 const text = router.locale === `en` ? `Read more` : `Verder lezen`;
 
@@ -42,7 +42,7 @@ const Blogs = ({ localesData, socialsData, blogsData, servicesData, regionsData,
                                     <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                         <CardTwo imgUrl={src} title={title} text={text}
                                             subtitle={description} slug={slug} alt={alt}
-                                            badge={dev && { bText: `dev` }} />
+                                            badge={dev && { bText: `dev` }} border={border} />
                                     </Link>
                                 )
 

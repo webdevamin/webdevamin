@@ -84,6 +84,14 @@ strong {
   @apply font-medium;
 }
 
+figure {
+  @apply inline-block text-center;
+
+  figcaption {
+    @apply pt-2 sm:pt-2.5 text-center text-xs sm:text-sm text-gray-600;
+  }
+}
+
 .smaller_p {
   @apply mb-2 text-[15px] lg:text-[16px] leading-6 lg:mb-3 lg:leading-7 opacity-80;
 }

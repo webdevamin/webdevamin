@@ -712,11 +712,11 @@
         "locale": "nl",
         "seo": {
             "title": "Webleadr",
-            "description": "Een SaaS-platform waar gebruikers leads kunnen genereren door bedrijven van over de hele wereld te vinden die geen websites hebben en bestaande websites kunnen analyseren.",
+            "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
             "canonical": "https://webdevamin.com/projects/webleadr",
             "image": "https://bucket.webdevamin.com/webleadr-portfolio-og.jpg",
             "ogTitle": "Webleadr",
-            "ogDescription": "Een SaaS-platform waar gebruikers leads kunnen genereren door bedrijven van over de hele wereld te vinden die geen websites hebben en bestaande websites kunnen analyseren."
+            "ogDescription": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken."
         },
         "alternates": [
             {
@@ -737,7 +737,7 @@
         "title": "Webleadr",
         "slug": "webleadr",
         "link": "https://webleadr.com",
-        "description": "Een SaaS-platform waar gebruikers leads kunnen genereren door bedrijven van over de hele wereld te vinden die geen websites hebben en bestaande websites kunnen analyseren.",
+        "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
         "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
@@ -750,8 +750,8 @@
             "height": 628,
             "objectFit": "cover"
         },
-        "descriptionText": "<p>Mijn eerste SaaS-ontwikkeling voor het publiek: Webleadr. Een platform waar gebruikers zoals webdesigners, developers, SEO-specialisten, etc. bedrijven van over de hele wereld kunnen vinden die nog geen websites hebben, en deze kunnen omzetten naar leads. Ook kunnen bestaande websites van bedrijven worden geanalyseerd om te bepalen of er verbeteringen nodig zijn.</p><p>Dit gebeurt door een regio op een wereldkaart te selecteren en filters te gebruiken om de zoekresultaten te verfijnen. Bijvoorbeeld: u wilt alleen kappers of tandartsen vinden in de regio Gent. De regiokeuze gebeurt met behulp van een drag-and-drop functie op een wereldkaart. Contact opnemen met bedrijven kan met één klik op een knop.</p><p>Er zijn ook andere handige functies, zoals de mogelijkheid om de bedrijven in uw dashboard naar een CSV-bestand te exporteren.</p><p>Dit is een lopend project en wordt voortdurend uitgebreid.</p>",
-        "technologiesText": "<p>Er zijn heel wat technologieën en derde partijen aan gekoppeld. Het core web framework dat wordt gebruikt is Next.js, dat op zijn beurt is gekoppeld aan Supabase als een backend as a service. Supabase wordt specifiek gebruikt als database en authenticatiehulp. Het verzenden en ontvangen van e-mails, bijvoorbeeld voor registratie en wachtwoordherstel, gebeurt met Resend. Voor deployment en domeinbeheer wordt Cloudflare gebruikt.</p><p>Het meest interessante is Paddle, een Merchant of Record. Dit is een dienst die niet alleen zorgt voor betalingen en bestellingen, maar ook voor facturering, BTW en meer, wat een grote hulp kan zijn, vooral als de applicatie zowel op B2C als B2B is gericht. Ten slotte wordt Sentry gebruikt om errors en logs in het algemeen te monitoren en te debuggen.</p>",
+        "descriptionText": "<p>Webleadr is een platform dat professionals helpt om moeiteloos webdesignklanten als leads van overal ter wereld te verwerven. Het vindt ook bedrijven zonder websites of die afhankelijk zijn van externe platforms zoals Facebook-pagina's of boekingssites in plaats van ware websites. Dit vermijdt de moeite om handmatig potentiële klanten te zoeken op Google Maps, Yelp of andere platforms. Je kunt bijvoorbeeld lokale tandartsen vinden die geen website hebben of gebruikmaken van externe sites, en ze met slechts één klik contacteren.</p>",
+        "technologiesText": "<p>Er zijn heel wat technologieën en derde partijen aan gekoppeld. Het core web framework dat wordt gebruikt is Next.js, dat op zijn beurt is gekoppeld aan Supabase als een backend as a service. Supabase wordt specifiek gebruikt als database en authenticatiehulp. Het verzenden en ontvangen van e-mails, bijvoorbeeld voor registratie en wachtwoordherstel, gebeurt met Resend. Er is ook een feature die aangedreven wordt door een door OpenAI API, die bedrijfswebsites evalueert op basis van hun URL om te bepalen of ze echte ware websites zijn of slechts externe diensten. Voor deployment en domeinbeheer wordt Cloudflare gebruikt.</p><p>Het meest interessante is Paddle, een Merchant of Record. Dit is een dienst die niet alleen zorgt voor betalingen en bestellingen, maar ook voor facturering, BTW en meer, wat een grote hulp kan zijn, vooral als de applicatie zowel op B2C als B2B is gericht. Ten slotte wordt Sentry gebruikt om errors en logs in het algemeen te monitoren en te debuggen.</p>",
         "technologies": [
             {
                 "name": "Next.js",
@@ -770,6 +770,16 @@
                     "width": 100,
                     "height": 100,
                     "alt": "Supabase",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "name": "OpenAI",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/openai.svg",
+                    "width": 100,
+                    "height": 100,
+                    "alt": "OpenAI",
                     "objectFit": "cover"
                 }
             },

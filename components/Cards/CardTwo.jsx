@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import ButtonThree from '../Buttons/ButtonThree';
 
-const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge }) => {
+const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border }) => {
     const { bText, bgColor, color } = badge || {};
 
     return (
@@ -14,7 +14,7 @@ const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge }) => {
                     src={imgUrl}
                     fill={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt={alt} className={`rounded-xl`}
+                    alt={alt} className={`rounded-xl ${border && `border shadow`}`}
                     style={{ objectFit: "cover" }}
                 />
             </div>
