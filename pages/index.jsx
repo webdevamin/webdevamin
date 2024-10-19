@@ -9,13 +9,13 @@ import Contact from '../components/Contact'
 import Footer from '../components/Layouts/Footer'
 import Hero from '../components/Home/Hero'
 
-const Index = ({ localesData, blogsData, servicesData, socialsData, regionsData, projectsData, pagesData, contactBlockData, pageData }) => {
+const Index = ({ localesData, blogsData, servicesData, socialsData, regionsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
   const { seo, alternates, alternateLangs, blocks } = pageData;
 
   return (
     <>
       <Seo seo={seo} alternates={alternates} />
-      <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
+      <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)}
         socials={socialsData} />
       <PageLayout>
@@ -45,9 +45,10 @@ export async function getStaticProps({ locale }) {
       servicesData: (await import(`../lang/${locale}/services.json`)).default,
       regionsData: (await import(`../lang/${locale}/regions.json`)).default,
       pagesData: (await import(`../lang/${locale}/pages.json`)).default,
+      heroBannerData: (await import(`../lang/${locale}/heroBanner.json`)).default,
       contactBlockData: (await import(`../lang/${locale}/contactBlock.json`)).default,
       // End global data
-      
+
       projectsData: (await import(`../lang/${locale}/projects.json`)).default,
       pageData: (await import(`../lang/${locale}/pages/home.json`)).default,
     },

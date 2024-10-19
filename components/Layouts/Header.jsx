@@ -1,15 +1,34 @@
 import Image from 'next/image';
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { Alert } from "flowbite-react";
+import useStore from '../../utils/store';
+import { useState } from 'react';
+import Icon from '../Icon';
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
-const Header = ({ pages, alternateLangs, locales }) => {
+const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
     const nonHiddenPages = pages.filter(p => !p.hideFromHeader);
+    const { content } = heroBannerData || {};
+
     const [active, setActive] = useState(false);
+    const isAlertVisible = useStore((state) => state.isAlertVisible);
+    const hideAlert = useStore((state) => state.hideAlert);
+
+    const InfoIcon = () => {
+        return <Icon icon={fas[`faCircleInfo`]} size={`lg`} />
+    }
 
     const handleClick = () => setActive(!active);
 
+    console.log(content)
     return (
         <header className={`fixed w-full top-0 z-50 bg-light`}>
+            <div className={`text-center m-1.5 md:m-3 ${(!isAlertVisible || !content) && `hidden`}`}>
+                <Alert onDismiss={hideAlert} icon={InfoIcon}>
+                    <span className='ml-3 font-medium' dangerouslySetInnerHTML={{ __html: content }}>
+                    </span>
+                </Alert>
+            </div>
             <div className={`py-3 lg:py-5 px-5 lg:px-20 
         flex justify-between items-center`}>
                 <Link href={`/`}>

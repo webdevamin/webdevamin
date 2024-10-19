@@ -1,8 +1,11 @@
 import { create } from 'zustand'
 
-const useConsentStore = create((set) => ({
+const useStore = create((set) => ({
     consent: '',
-    update: () => set((state) => ({ consent: state.consent }))
+    isAlertVisible: true,
+
+    update: () => set((state) => ({ consent: state.consent })),
+    hideAlert: () => set({ isAlertVisible: false }),
 }));
 
-export default useConsentStore;
+export default useStore;

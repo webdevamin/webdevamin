@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import useConsentStore from "../utils/store";
+import useStore from "../utils/store";
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 
@@ -14,7 +14,7 @@ const CookieConsent = () => {
     const { locale } = router;
 
     const [hideConsent, setHideConsent] = useState(true);
-    const { update } = useConsentStore();
+    const { update } = useStore();
 
     useEffect(() => {
         if (!Cookies.get(key)) setHideConsent(false);
