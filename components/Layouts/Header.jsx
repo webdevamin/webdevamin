@@ -20,12 +20,11 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
 
     const handleClick = () => setActive(!active);
 
-    console.log(content)
     return (
         <header className={`fixed w-full top-0 z-50 bg-light`}>
             <div className={`text-center m-1.5 md:m-3 ${(!isAlertVisible || !content) && `hidden`}`}>
                 <Alert onDismiss={hideAlert} icon={InfoIcon}>
-                    <span className='ml-3 font-medium' dangerouslySetInnerHTML={{ __html: content }}>
+                    <span className='ml-3 mr-1 font-medium block' dangerouslySetInnerHTML={{ __html: content }}>
                     </span>
                 </Alert>
             </div>
