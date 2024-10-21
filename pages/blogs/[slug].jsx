@@ -32,7 +32,6 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
         <div>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
-            content, socialsRaw, ctaLink, externalLink = false
             <HeroTwo content={heroContent} socials={socialsData} />
             <PageLayout>
                 <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
