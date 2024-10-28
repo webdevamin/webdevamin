@@ -32,7 +32,7 @@ const Seo = ({ seo, alternates }) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="canonical" href={canonical} />
             {
-                alternates.map((alternate, i) => {
+                alternates.map((alternate) => {
                     const { href, hreflang } = alternate;
 
                     return (

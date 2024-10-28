@@ -7,7 +7,33 @@
     {
         "title": "Diensten",
         "href": "/services",
-        "icon": "faCircleUser"
+        "icon": "faCircleUser",
+        "subs": [
+            {
+                "title": "Webdesign",
+                "href": "/services/webdesign"
+            },
+            {
+                "title": "Webdevelopment",
+                "href": "/services/webdevelopment"
+            },
+            {
+                "title": "Webhosting",
+                "href": "/services/webhosting"
+            },
+            {
+                "title": "SEO",
+                "href": "/services/seo"
+            },
+            {
+                "title": "Laravel developer",
+                "href": "/services/laravel"
+            },
+            {
+                "title": "Logo design",
+                "href": "/services/logo"
+            }
+        ]
     },
     {
         "title": "Projecten",
