@@ -205,3 +205,15 @@ p a {
     }
   }
 }
+
+.header_navbar {
+  ul {
+    @apply md:flex-row md:items-center md:justify-center md:gap-8 xl:gap-10;
+  }
+
+  .dropdown_wrapper {
+    button {
+      @apply py-3 px-8 md:p-0 w-full;
+    }
+  }
+}
