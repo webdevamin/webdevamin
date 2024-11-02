@@ -34,7 +34,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                 const { href, title, subs } = page;
                                 const isLast = i === nonHiddenPages.length - 1;
                                 const isSubsPresent = subs && subs.length > 0;
-                                const pageLocale = locale !== `en` ? `/${locale}/${href}` : `/${href}`;
+                                const pageLocale = locale !== `en` ? `${locale}${href}` : `${href}`;
 
                                 return (
                                     <div key={i}>
@@ -49,7 +49,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                                 const { title, href } = sub;
 
                                                                 return (
-                                                                    <Dropdown.Item key={i} href={href}>{title}</Dropdown.Item>
+                                                                    <Dropdown.Item key={i} href={pageLocale}>{title}</Dropdown.Item>
                                                                 )
                                                             })
                                                         }
