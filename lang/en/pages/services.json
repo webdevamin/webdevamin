@@ -50,7 +50,49 @@
         {
             "title": "My expertise",
             "slug": "expertise",
-            "subtitle": "Skills"
+            "subtitle": "Skills",
+            "services": [
+                {
+                    "title": "Webdesign",
+                    "showcase": true,
+                    "backgroundColor": "rgb(59 130 246)",
+                    "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
+                    "icon": {
+                        "name": "faPalette",
+                        "brands": false
+                    }
+                },
+                {
+                    "title": "Webdevelopment",
+                    "showcase": true,
+                    "backgroundColor": "rgb(16 185 129)",
+                    "text": "<p>Allerlei soorten webapplicaties met databases zoals webshops, administratie apps en meer. Alles wat u nodig heeft om uw zaak te vergemakkelijken.</p>",
+                    "icon": {
+                        "name": "faCode",
+                        "brands": false
+                    }
+                },
+                {
+                    "title": "Logo Ontwerp",
+                    "showcase": true,
+                    "backgroundColor": "rgb(238 239 70)",
+                    "text": "<p>Ik ontwerp simpel en/of aangepast logo voor uw zaak. Met toepassing op uniciteit zorg ik er voor dat uw bedrijf en uw merk juist vertegenwoordigen. Grafisch ontwerp is een grote hit.</p>",
+                    "icon": {
+                        "name": "faPenFancy",
+                        "brands": false
+                    }
+                },
+                {
+                    "title": "SEO & marketing",
+                    "showcase": true,
+                    "backgroundColor": "rgb(99 102 241)",
+                    "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
+                    "icon": {
+                        "name": "faBullhorn",
+                        "brands": false
+                    }
+                }
+            ]
         },
         {
             "title": "Who am I",
@@ -92,7 +134,54 @@
             "title": "List of options",
             "subtitle": "Services",
             "slug": "what",
-            "text": "<p>An overview of the most commonly requested services that clients typically ask to implement in their digital solution(s). Of course, there are many more.</p>"
+            "text": "<p>An overview of the most commonly requested services that clients typically ask to implement in their digital solution(s). Of course, there are many more.</p>",
+            "serviceDetails": [
+                {
+                    "title": "Excellent Performance & Best Practices",
+                    "sort": 1,
+                    "description": "Your website(s) or web application(s) will have an excellent score when it comes to performance, speed, accessibility, and best practices."
+                },
+                {
+                    "title": "Mobile Friendly & Responsive",
+                    "sort": 2,
+                    "description": "Your solution(s) will be displayed correctly on every device, whether it's a smartphone, tablet, laptop, etc."
+                },
+                {
+                    "title": "Excellent SEO & Visibility",
+                    "sort": 3,
+                    "description": "During the development of your app(s), I ensure excellent SEO to optimize your business on various search engines such as Google, Bing, DuckDuckGo, and more. Eventually, I will provide you with an overview of digital marketing to further increase the visibility of your business if you wish. Of course, this is at no cost."
+                },
+                {
+                    "title": "Hosting Included & Very Affordable",
+                    "sort": 4,
+                    "description": "Hosting is straightforward; I take care of it. With extensive knowledge of software engineering, hosting will be very affordable or even free depending on the size and requirements of your app(s)."
+                },
+                {
+                    "title": "Hybrid Web App & Mobile",
+                    "sort": 5,
+                    "description": "Your web app/website can also be installed as a standalone app on the home screen of your smartphone. Great, isn't it?"
+                },
+                {
+                    "title": "Various Integrations & Third Parties",
+                    "sort": 6,
+                    "description": "Sending notifications/emails/SMS messages for every new customer you receive. Or maybe you need a separate mobile app to see how many users visited your website. Or to find out in real-time who ordered what. The possibilities are endless. This task is not intended for a web designer but for a software developer or engineer. This is my niche."
+                },
+                {
+                    "title": "Maintenance & Expansion",
+                    "sort": 7,
+                    "description": "Do you need improvements or new features in your website/app that I developed for you? Let me handle it further. You don't have to bother yourself by finding someone else. I ensure that your app can continue to grow."
+                },
+                {
+                    "title": "Graphic Logo Design",
+                    "sort": 8,
+                    "description": "If you don't have a logo for your business, I am your suitable candidate. I create both simple and professional logos to ensure your uniqueness."
+                },
+                {
+                    "title": "Digital Marketing",
+                    "sort": 9,
+                    "description": "I ensure that your business gets regular customer traffic through social media platforms, content marketing, web analytics, and research. I offer the most suitable methods based on your niche, profession, and location."
+                }
+            ]
         }
     ]
 }

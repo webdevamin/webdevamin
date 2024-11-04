@@ -8,6 +8,7 @@ import ButtonThree from '../Buttons/ButtonThree';
 const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks }) => {
     const router = useRouter();
     const { locale } = router;
+    const isServiceAPage = services[0].seo;
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
@@ -81,17 +82,31 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                     <ul className={`text_light_all grid grid-cols-2 gap-x-7 
                     items-center sm:block`}>
                         {
-                            services.map((service, i) => {
-                                const { title, showcase } = service;
+                            isServiceAPage ? (
+                                services.map((service, i) => {
+                                    const { titleTwo, showcase, slug } = service;
 
-                                return (
-                                    <li className={`pt-2`} key={i}>
-                                        <span className={`lg:text-base ${!showcase && `hidden`}`}>
-                                            {title}
-                                        </span>
-                                    </li>
-                                )
-                            })
+                                    return (
+                                        <li className={`pt-2`} key={i}>
+                                            <Link href={`/services/${slug}`} className={`lg:text-base ${!showcase && `hidden`}`}>
+                                                {titleTwo}
+                                            </Link>
+                                        </li>
+                                    )
+                                })
+                            ) : (
+                                services.map((service, i) => {
+                                    const { title, showcase } = service;
+
+                                    return (
+                                        <li className={`pt-2`} key={i}>
+                                            <span className={`lg:text-base ${!showcase && `hidden`}`}>
+                                                {title}
+                                            </span>
+                                        </li>
+                                    )
+                                })
+                            )
                         }
                     </ul>
                     <div className={`md:mt-4`}>

@@ -5,36 +5,27 @@ import { useRouter } from 'next/router';
 import PageLayout from '../../components/Layouts/PageLayout';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
-import HeroTwo from '../../components/Heroes/HeroTwo';
 import Image from 'next/image';
 import SocialShares from '../../components/SocialShares';
+import HeroOne from '../../components/Heroes/HeroOne';
 
-const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, blogData }) => {
+const Service = ({ localesData, socialsData, servicesData, serviceData, regionsData, pagesData, contactBlockData, blogsData }) => {
     const router = useRouter();
 
-    const { seo, alternates, alternateLangs, title,
-        description, slug, text, img, border } = blogData;
-
-    const { src, alt } = img;
-
-    const button = [];
-
-    button.push({
-        href: `#${slug}`,
-        text: router.locale === `en` ? `Read` : `Lees`
-    });
+    const { seo, alternates, alternateLangs, titleTwo,
+        description, button, img } = serviceData;
 
     const heroContent = {
-        title, text: description, button, image: img, alt
+        title: titleTwo, text: description, button, image: img
     }
 
     return (
         <div>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
-            <HeroTwo content={heroContent} socials={socialsData} />
+            <HeroOne content={heroContent} socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
+                {/* <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
                 xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
@@ -50,7 +41,7 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
                         <div dangerouslySetInnerHTML={{ __html: text }}
                             className={`blog_content`} />
                     </div>
-                </section>
+                </section> */}
                 <Contact content={contactBlockData} />
                 <Footer services={servicesData} blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
@@ -59,16 +50,17 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
     )
 }
 
-export default Blog
+export default Service
 
 export async function getStaticPaths() {
-    const blogsDataNl = (await import(`../../lang/nl/blogs.json`)).default;
-    const blogsDataEn = (await import(`../../lang/en/blogs.json`)).default;
+    const servicesDataNl = (await import(`../../lang/nl/services.json`)).default;
+    // const blogsDataEn = (await import(`../../lang/en/services.json`)).default;
 
-    const blogsAllLocales = blogsDataNl.concat(blogsDataEn);
+    // const blogsAllLocales = blogsDataNl.concat(blogsDataEn);
+    const servicesAllLocales = servicesDataNl
 
-    const paths = blogsAllLocales.map((blogRaw) => {
-        const { locale, slug } = blogRaw;
+    const paths = servicesAllLocales.map((serviceRaw) => {
+        const { locale, slug } = serviceRaw;
 
         return {
             params: { slug }, locale
@@ -83,9 +75,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-    const blogsData = (await import(`../../lang/${locale}/blogs.json`)).default;
+    const servicesData = (await import(`../../lang/${locale}/services.json`)).default;
 
-    const blogData = blogsData.find((p) => {
+    const serviceData = servicesData.find((p) => {
         return p.slug === params.slug;
     });
 
@@ -101,7 +93,7 @@ export async function getStaticProps({ locale, params }) {
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data
 
-            blogData
+            serviceData
         }
     }
 }

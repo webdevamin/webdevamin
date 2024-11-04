@@ -14,7 +14,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "flowbite": "^2.5.2",
     "flowbite-react": "^0.10.2",
     "js-cookie": "^3.0.5",
     "next": "^14.0.1",

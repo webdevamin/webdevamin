@@ -1,105 +1,143 @@
-import React from 'react'
-import Header from '../../components/Layouts/Header';
-import Seo from '../../components/Seo';
-import { useRouter } from 'next/router';
-import PageLayout from '../../components/Layouts/PageLayout';
+import HeroOne from '../../components/Heroes/HeroOne'
+import Header from '../../components/Layouts/Header'
+import Seo from '../../components/Seo'
+import PageLayout from '../../components/Layouts/PageLayout'
+import BlockLayoutOne from '../../components/Layouts/BlockLayoutOne';
+import Heading from '../../components/Heading';
+import CardOne from '../../components/Cards/CardOne';
+import Image from 'next/image';
+import BlockLayoutTwo from '../../components/Layouts/BlockLayoutTwo';
+import { Accordion } from 'flowbite-react';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
-import HeroTwo from '../../components/Heroes/HeroTwo';
-import Image from 'next/image';
-import SocialShares from '../../components/SocialShares';
+import ButtonOne from '../../components/Buttons/ButtonOne';
 
-// -- Keywords to include --
-// Webdesign:
-// - Betaalbare webdesigner
-// - Goedkoop website maken
-// - Webbouwer
-// - Webbureau
-// - Website laten maken (prijs)
-// - Webdesign bedrijf
-// - Webdesigner Brugge
-// - Brugge
+const Services = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, pageData }) => {
+    const { seo, alternates, alternateLangs, title, blocks } = pageData;
 
-const Services = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, blogData }) => {
-    const router = useRouter();
+    const { title: xpTitle, subtitle: xpSubtitle, slug: xpSlug } = blocks[1];
 
-    const { seo, alternates, alternateLangs, title,
-        description, slug, text, img, border } = blogData;
+    const { title: whoTitle, text: whoText, slug: whoSlug,
+        img: whoImg, button: whoButton,
+        summary: whoSummary } = blocks[2];
 
-    const { src, alt } = img;
+    const { src: whoUrl, alt: whoAlt } = whoImg;
 
-    const button = [];
+    const { title: whyTitle, text: whyText,
+        img: whyImg, slug: whySlug, summary: whySummary } = blocks[3];
 
-    button.push({
-        href: `#${slug}`,
-        text: router.locale === `en` ? `Read` : `Lees`
-    });
+    const { src: whyUrl, alt: whyAlt } = whyImg;
 
-    const heroContent = {
-        title, text: description, button, image: img, alt
-    }
+    const { title: whatTitle, subtitle: whatSubtitle, text: whatText, serviceDetails } = blocks[4];
 
     return (
-        <div>
+        <>
             <Seo seo={seo} alternates={alternates} />
-            <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
-            <HeroTwo content={heroContent} socials={socialsData} />
+            <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
+            <HeroOne content={blocks.find(block => block.slug === `hero`)}
+                socials={socialsData} />
             <PageLayout>
-                <section id={`webdesign`} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
-                xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
-                    <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
-                            <Image
-                                src={src} fill={true} alt={alt} className={`rounded-xl ${border && `border shadow lg:shadow-xl`}`}
-                                style={{ objectFit: `cover` }} priority={true}
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                <BlockLayoutOne title={xpSlug}>
+                    <div className={`text-center`}>
+                        <Heading title={xpTitle} subtitle={xpSubtitle} />
+                    </div>
+                    <div className={`grid grid-cols-1 lg:grid-cols-2 mt-16 
+                    xl:mt-0 gap-11 lg:flex-row lg:gap-16`}>
+                        {
+                            servicesData.map((service, i) => {
+                                const { title, text, backgroundColor, icon } = service;
+
+                                return <CardOne title={title}
+                                    bgColor={backgroundColor}
+                                    key={i} text={text} icon={icon} />
+                            })
+                        }
+                    </div>
+                </BlockLayoutOne>
+                <BlockLayoutTwo title={whoTitle} slug={whoSlug}
+                    contentClasses={`xl:flex-row-reverse`}>
+                    <div className={`mb-8 md:mb-0 md:basis-10/12 xl:mr-8`}>
+                        <h2 className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
+                            <Heading title={whoTitle} />
+                        </h2>
+                        <Image
+                            src={whoUrl} width={700} height={400} alt={whoAlt}
+                            style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={`md:w-full`}>
+                        <div className={`hidden md:block`}>
+                            <Heading title={whoTitle} />
                         </div>
-                        <SocialShares url={seo.canonical} title={`Blog - ${title}`}
-                            description={description} imageUrl={src} />
+                        <h3 className={`text-base sm:text-lg md:mb-4 
+                        md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
+                            {whoSummary}
+                        </h3>
+                        <div dangerouslySetInnerHTML={{ __html: whoText }} />
+                        <ButtonOne href={whoButton[0].href}
+                            text={whoButton[0].text} wFit external />
                     </div>
-                    <div className="blog_content">
-                        <div dangerouslySetInnerHTML={{ __html: text }}
-                            className={`blog_content`} />
+                </BlockLayoutTwo>
+                <BlockLayoutTwo title={whyTitle} slug={whySlug} position={`right`}>
+                    <div className={`mb-8 md:mb-0 md:basis-10/12`}>
+                        <div className={`mb-7 md:mb-4 xl:mb-8 md:hidden`}>
+                            <Heading title={whyTitle} />
+                        </div>
+                        <Image
+                            src={whyUrl} width={562} height={396} alt={whyAlt}
+                            style={{ objectFit: 'cover' }} />
                     </div>
-                </section>
+                    <div className={`md:w-full xl:ml-8`}>
+                        <div className={`hidden md:block`}>
+                            <Heading title={whyTitle} />
+                        </div>
+                        <h3 className={`text-base sm:text-lg md:mb-4 
+                        md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
+                            {whySummary}
+                        </h3>
+                        <div dangerouslySetInnerHTML={{ __html: whyText }} />
+                    </div>
+                </BlockLayoutTwo>
+                <BlockLayoutOne title={title}>
+                    <div>
+                        <Heading title={whatTitle} subtitle={whatSubtitle} />
+                        <div dangerouslySetInnerHTML={{ __html: whatText }}
+                            className={`p`} />
+                    </div>
+                    <div id={`accordion`} className={`w-full mt-10 
+                    lg:mt-12 xl:mt-0`}>
+                        <Accordion>
+                            {
+                                serviceDetails.map((serviceDetail, i) => {
+                                    const { title, description } = serviceDetail;
+
+                                    return (
+                                        <Accordion.Panel key={i}>
+                                            <Accordion.Title>
+                                                {title}
+                                            </Accordion.Title>
+                                            <Accordion.Content>
+                                                <div className={`text-left text-sm lg:text-base`}>
+                                                    {description}
+                                                </div>
+                                            </Accordion.Content>
+                                        </Accordion.Panel>
+                                    )
+                                })
+                            }
+                        </Accordion>
+                    </div>
+                </BlockLayoutOne>
                 <Contact content={contactBlockData} />
                 <Footer services={servicesData} blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
-        </div>
+        </>
     )
 }
 
 export default Services
 
-export async function getStaticPaths() {
-    const blogsDataNl = (await import(`../../lang/nl/blogs.json`)).default;
-    const blogsDataEn = (await import(`../../lang/en/blogs.json`)).default;
-
-    const blogsAllLocales = blogsDataNl.concat(blogsDataEn);
-
-    const paths = blogsAllLocales.map((blogRaw) => {
-        const { locale, slug } = blogRaw;
-
-        return {
-            params: { slug }, locale
-        }
-    });
-
-    return {
-        paths,
-        fallback: false,
-    };
-};
-
-export async function getStaticProps({ locale, params }) {
-    params.locale = [locale];
-    const blogsData = (await import(`../../lang/${locale}/blogs.json`)).default;
-
-    const blogData = blogsData.find((p) => {
-        return p.slug === params.slug;
-    });
-
+export async function getStaticProps({ locale }) {
     return {
         props: {
             // Global data
@@ -112,7 +150,7 @@ export async function getStaticProps({ locale, params }) {
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data
 
-            blogData
-        }
+            pageData: (await import(`../../lang/${locale}/pages/services.json`)).default,
+        },
     }
 }

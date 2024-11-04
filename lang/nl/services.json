@@ -1,42 +1,53 @@
 [
     {
-        "title": "Webdesign",
+        "seo": {
+            "title": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
+            "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
+            "canonical": "https://webdevamin.com/nl/projects/gympouch",
+            "image": "https://bucket.webdevamin.com/gympouch.jpg",
+            "ogTitle": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
+            "ogDescription": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/gympouch",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/gympouch",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/gympouch",
+                "locale": "en"
+            }
+        ],
+        "title": "Professioneel webdesign",
+        "titleTwo": "Webdesign",
+        "slug": "webdesign",
+        "locale": "nl",
         "showcase": true,
-        "backgroundColor": "rgb(59 130 246)",
-        "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
-        "icon": {
-            "name": "faPalette",
-            "brands": false
-        }
-    },
-    {
-        "title": "Webdevelopment",
-        "showcase": true,
-        "backgroundColor": "rgb(16 185 129)",
-        "text": "<p>Allerlei soorten webapplicaties met databases zoals webshops, administratie apps en meer. Alles wat u nodig heeft om uw zaak te vergemakkelijken.</p>",
-        "icon": {
-            "name": "faCode",
-            "brands": false
-        }
-    },
-    {
-        "title": "Logo Ontwerp",
-        "showcase": true,
-        "backgroundColor": "rgb(238 239 70)",
-        "text": "<p>Ik ontwerp simpel en/of aangepast logo voor uw zaak. Met toepassing op uniciteit zorg ik er voor dat uw bedrijf en uw merk juist vertegenwoordigen. Grafisch ontwerp is een grote hit.</p>",
-        "icon": {
-            "name": "faPenFancy",
-            "brands": false
-        }
-    },
-    {
-        "title": "SEO & marketing",
-        "showcase": true,
-        "backgroundColor": "rgb(99 102 241)",
-        "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
-        "icon": {
-            "name": "faBullhorn",
-            "brands": false
-        }
+        "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
+        "img": {
+            "src": "https://bucket.webdevamin.com/desktop-browser.png",
+            "alt": "Desktop met browser illustratie.",
+            "width": 503,
+            "height": 342,
+            "objectFit": "cover"
+        },
+        "button": [
+            {
+                "href": "/contact",
+                "text": "Gratis offerte",
+                "external": false
+            },
+            {
+                "href": "#about",
+                "text": "Meer lezen",
+                "external": false
+            }
+        ]
     }
 ]

@@ -48,6 +48,8 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                             subs.map((sub, i) => {
                                                                 const { title, href } = sub;
 
+                                                                const pageLocale = locale !== `en` ? `/${locale}${href}` : `/${href}`;
+
                                                                 return (
                                                                     <Dropdown.Item key={i} href={pageLocale}>{title}</Dropdown.Item>
                                                                 )
