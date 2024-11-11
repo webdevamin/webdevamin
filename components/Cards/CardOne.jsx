@@ -32,7 +32,7 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
                 )
             }
             <div className={`mt-7 md:mt-6 mb-4 text-center`}>
-                <h3 className={`text-lg xl:text-lg capitalize mb-0`}>
+                <h3 className={`text-lg xl:text-lg capitalize mb-3`}>
                     {title}
                 </h3>
                 {

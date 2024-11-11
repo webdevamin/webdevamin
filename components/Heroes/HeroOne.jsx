@@ -11,8 +11,6 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     smallerTitle, disableImgSpace }) => {
     const { title, text, button, image } = content;
     const { src: url, objectFit, width, height, alt } = image;
-
-    console.log(button)
     const parsedTitle = getJsonString(title);
 
     return (

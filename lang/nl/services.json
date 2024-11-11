@@ -3,18 +3,18 @@
         "seo": {
             "title": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
             "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
-            "canonical": "https://webdevamin.com/nl/projects/gympouch",
-            "image": "https://bucket.webdevamin.com/gympouch.jpg",
+            "canonical": "https://webdevamin.com/nl/services/webdesign",
+            "image": "https://bucket.webdevamin.com/webdesign_og_nl.jpg",
             "ogTitle": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
             "ogDescription": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!"
         },
         "alternates": [
             {
-                "href": "https://webdevamin.com/projects/gympouch",
+                "href": "https://webdevamin.com/services/webdesign",
                 "hreflang": "x-default"
             },
             {
-                "href": "https://webdevamin.com/nl/projects/gympouch",
+                "href": "https://webdevamin.com/nl/services/webdesign",
                 "hreflang": "nl"
             }
         ],
@@ -29,11 +29,11 @@
         "slug": "webdesign",
         "locale": "nl",
         "showcase": true,
-        "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
+        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Vraag nu een gratis offerte aan of lees meer over hoe ik u van dienst kan zijn!",
         "img": {
-            "src": "https://bucket.webdevamin.com/desktop-browser.png",
+            "src": "https://bucket.webdevamin.com/webdesign.png",
             "alt": "Desktop met browser illustratie.",
-            "width": 503,
+            "width": 780,
             "height": 342,
             "objectFit": "cover"
         },
@@ -47,6 +47,86 @@
                 "href": "#about",
                 "text": "Meer lezen",
                 "external": false
+            }
+        ],
+        "contents": [
+            {
+                "component": "block-normal",
+                "title": "Waarom webdesign",
+                "slug": "why",
+                "subtitle": "Meer klanten, branding & efficiëntie",
+                "position": "left",
+                "text": "<p>De meeste startende bedrijven hebben geen website. Maar wat is een website precies, en wat is het nut ervan? Een website, gemaakt door een webdesigner of -ontwikkelaar, fungeert als <strong>digitaal vastgoed op het internet</strong>. Hiermee kun je makkelijker gevonden worden en vergroot je je klantenbereik. Het is bedoeld om je <strong>bedrijf te promoten, zowel administratief als commercieel</strong>, afhankelijk van je doelen.</p><p>Wil je klanten aantrekken en hen eenvoudig een offerte laten aanvragen? Met een website kunnen klanten een formulier invullen, waarna jij de aanvraag per e-mail, sms of WhatsApp ontvangt. Dit is slechts een van de vele opties. Een ander voorbeeld is een contactformulier voor vragen van potentiële klanten. Ook kun je een klein CRM-systeem integreren voor klant-, gebruikers- of medewerkersbeheer, zodat je alles eenvoudig organiseert.</p><p>Kortom, een website is digitaal vastgoed op het internet dat je vindbaarheid vergroot en diverse manieren biedt om contact te maken en je bedrijf te versterken. Ongeveer 70% van de bedrijven heeft een website, en potentiële klanten zijn <strong>minder geneigd om uw klant te worden als ze ontdekken dat uw bedrijf geen website heeft</strong>.</p>",
+                "buttons": [
+                    {
+                        "href": "/projects",
+                        "text": "Bekijk Projecten"
+                    }
+                ],
+                "img": {
+                    "src": "https://bucket.webdevamin.com/webdesign-about.jpeg",
+                    "alt": "Een computer in een kantoorruimte.",
+                    "width": 780,
+                    "height": 342
+                }
+            },
+            {
+                "component": "block-cards",
+                "title": "Webdesign process",
+                "slug": "process",
+                "subtitle": "Stap per stap",
+                "position": "right",
+                "text": "<p>Een professioneel website laten maken duurt maar 2-3 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
+                "items": [
+                    {
+                        "title": "1. Design keuze",
+                        "body": "<p>We beginnen met het kiezen van het ontwerp voor uw website. Hierbij zijn er drie mogelijkheden: <strong>1.</strong> Ik selecteer een ontwerp dat het beste past bij uw website en niche <strong>2.</strong> U kiest zelf een ontwerp uit een lijst die ik u zal toesturen <strong>3.</strong> Ik creëer een volledig maatwerkontwerp, geheel gebaseerd op uw wensen</p>",
+                        "backgroundColor": "rgb(59 130 246)",
+                        "icon": {
+                            "name": "faPalette",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "2. Domeinnaam aanschaffen",
+                        "body": "<p>U kiest een domeinnaam, die kan eindigen op een extensie naar keuze, zoals .be of .com. Zodra u uw keuze heeft gemaakt, schaft u de domeinnaam aan met mijn hulp. Dit stelt mij in staat om deze vervolgens te koppelen aan de website die ik voor u zal ontwikkelen. Een domeinnaam kost doorgaans slechts ongeveer €15 per jaar</p>",
+                        "backgroundColor": "rgb(16 185 129)",
+                        "icon": {
+                            "name": "faPenFancy",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "3. Ontwikkelen website",
+                        "body": "<p>In deze fase ontwikkel ik uw website op basis van de twee hierboven genoemde vereisten. Gemiddeld duurt dit proces ongeveer 2 tot 3 dagen. Afwijkingen kunnen voorkomen, maar zijn uitzonderlijk.</p>",
+                        "backgroundColor": "rgb(238 239 70)",
+                        "icon": {
+                            "name": "faCode",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "4. Finale",
+                        "body": "<p>Uw website is ontwikkeld en gekoppeld aan de door u aangeschafte domeinnaam. Ik plaats de website online, en voilà, uw site is klaar! Wilt u nog wijzigingen aanbrengen? Geen probleem, ik zorg daar graag voor en kunt u mij altijd contacteren voor uitbreiding!</p>",
+                        "backgroundColor": "rgb(99 102 241)",
+                        "icon": {
+                            "name": "faBullhorn",
+                            "brands": false
+                        }
+                    }
+                ]
+            },
+            {
+                "component": "block-cols",
+                "title": "Prijzen",
+                "slug": "pricing",
+                "subtitle": "$ op $$$",
+                "position": "right",
+                "text": "<p>Als u een goedkoop website wil laten maken, u bent op het juiste adres. Een agency die niet onder een zelfstandige valt vraagt al makkelijk gemiddeld meer dan €1,500 om een sterke, zakelijke website te laten maken. Dit exclusief met hoge maandelijke kosten! Voor</p>",
+                "side":{
+                    "type": "card",
+                    "title": "€570"
+                }
             }
         ]
     }

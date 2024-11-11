@@ -1,19 +1,15 @@
 import React from 'react'
 import Header from '../../components/Layouts/Header';
 import Seo from '../../components/Seo';
-import { useRouter } from 'next/router';
 import PageLayout from '../../components/Layouts/PageLayout';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
-import Image from 'next/image';
-import SocialShares from '../../components/SocialShares';
 import HeroOne from '../../components/Heroes/HeroOne';
+import { componentMapper } from '../../utils/app';
 
 const Service = ({ localesData, socialsData, servicesData, serviceData, regionsData, pagesData, contactBlockData, blogsData }) => {
-    const router = useRouter();
-
     const { seo, alternates, alternateLangs, titleTwo,
-        description, button, img } = serviceData;
+        description, button, img, contents } = serviceData;
 
     const heroContent = {
         title: titleTwo, text: description, button, image: img
@@ -25,23 +21,12 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroOne content={heroContent} socials={socialsData} />
             <PageLayout>
-                {/* <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
-                xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
-                    <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
-                            <Image
-                                src={src} fill={true} alt={alt} className={`rounded-xl ${border && `border shadow lg:shadow-xl`}`}
-                                style={{ objectFit: `cover` }} priority={true}
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                        </div>
-                        <SocialShares url={seo.canonical} title={`Blog - ${title}`}
-                            description={description} imageUrl={src} />
-                    </div>
-                    <div className="blog_content">
-                        <div dangerouslySetInnerHTML={{ __html: text }}
-                            className={`blog_content`} />
-                    </div>
-                </section> */}
+                {
+                    contents.map((content, i) => {
+                        const ComponentToRender = componentMapper[content.component];
+                        return <ComponentToRender key={i} content={content} />
+                    })
+                }
                 <Contact content={contactBlockData} />
                 <Footer services={servicesData} blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
@@ -87,7 +72,7 @@ export async function getStaticProps({ locale, params }) {
             localesData: (await import(`../../lang/${locale}/locales.json`)).default,
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
-            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
+            servicesData,
             regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
