@@ -1,16 +1,17 @@
 import React from 'react'
 import { Card } from "flowbite-react";
+import ButtonThree from './Buttons/ButtonThree';
 
 const Pricing = () => {
     return (
-        <Card className='max-w-sm'>
-            <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+        <Card className='max-w-sm rounded-none text-dark bg-light shadow-bold_r_md md:shadow-bold_r_lg border md:border-2 border-dark pb-3'>
+            <h3 className="text-theme_darker mb-1">Gemiddelde prijs</h3>
             <div className="flex items-baseline text-gray-900 dark:text-white">
-                <span className="text-3xl font-semibold">$</span>
-                <span className="text-5xl font-extrabold tracking-tight">49</span>
-                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                <span className="text-xl lg:text-3xl font-semibold">€</span>
+                <span className="text-3xl lg:text-5xl font-extrabold tracking-tight">590</span>
+                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">excl. BTW</span>
             </div>
-            <ul className="my-7 space-y-5">
+            <ul className="my-5 lg:my-7 space-y-5">
                 <li className="flex space-x-3">
                     <svg
                         className="h-5 w-5 shrink-0 text-cyan-600 dark:text-cyan-500"
@@ -24,7 +25,7 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Inleiding</span>
                 </li>
                 <li className="flex space-x-3">
                     <svg
@@ -39,8 +40,8 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                        20GB Cloud storage
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                        Over ons
                     </span>
                 </li>
                 <li className="flex space-x-3">
@@ -56,9 +57,9 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Diensten</span>
                 </li>
-                <li className="flex space-x-3 line-through decoration-gray-500">
+                <li className="flex space-x-3 decoration-gray-500">
                     <svg
                         className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
                         fill="currentColor"
@@ -71,9 +72,9 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Galerij/Projecten</span>
                 </li>
-                <li className="flex space-x-3 line-through decoration-gray-500">
+                <li className="flex space-x-3 decoration-gray-500">
                     <svg
                         className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
                         fill="currentColor"
@@ -86,9 +87,9 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500">API Access</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Offerte aanvraag formulier en/of contactformulier</span>
                 </li>
-                <li className="flex space-x-3 line-through decoration-gray-500">
+                <li className="flex space-x-3 decoration-gray-500">
                     <svg
                         className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
                         fill="currentColor"
@@ -101,9 +102,9 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Links naar je sociale media platformen</span>
                 </li>
-                <li className="flex space-x-3 line-through decoration-gray-500">
+                <li className="flex space-x-3 decoration-gray-500">
                     <svg
                         className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
                         fill="currentColor"
@@ -116,15 +117,10 @@ const Pricing = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <span className="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Footer (slot)</span>
                 </li>
             </ul>
-            <button
-                type="button"
-                className="inline-flex w-full justify-center rounded-lg bg-cyan-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
-            >
-                Choose plan
-            </button>
+            <ButtonThree href={`/contact`} text={`Gratis offerte aanvragen`} classes={`underline underline-offset-8 decoration-theme_darker`} />
         </Card>
     )
 }

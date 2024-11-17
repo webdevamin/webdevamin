@@ -122,10 +122,17 @@
                 "slug": "pricing",
                 "subtitle": "$ op $$$",
                 "position": "right",
-                "text": "<p>Als u een goedkoop website wil laten maken, u bent op het juiste adres. Een agency die niet onder een zelfstandige valt vraagt al makkelijk gemiddeld meer dan €1,500 om een sterke, zakelijke website te laten maken. Dit exclusief met hoge maandelijke kosten! Voor</p>",
-                "side":{
-                    "type": "card",
-                    "title": "€570"
+                "text": "<p>Als u een betaalbare website wilt laten maken, bent u bij mij aan het juiste adres. Een bureau dat niet onder een zelfstandige valt, rekent al snel gemiddeld meer dan €1.500 voor het ontwikkelen van een professionele, zakelijke website – en dat is exclusief de hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts ongeveer €590 excl. btw voor het laten maken van een eenvoudige maar krachtige een-pagina-website. Hier vindt u de inhoudsecties die standaard bij de website zijn inbegrepen:</p>",
+                "buttons": [
+                    {
+                        "href": "/projects/williamprojecten",
+                        "text": "Voorbeeld website €590"
+                    }
+                ],
+                "side": {
+                    "component": "pricing",
+                    "title": "€590",
+                    "cta": "Vraag gratis offerte aan"
                 }
             }
         ]
