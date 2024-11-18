@@ -1,7 +1,7 @@
 [
     {
         "seo": {
-            "title": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
+            "title": "Professionele Website Laten Maken | Professioneel Webdesign Brugge",
             "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
             "canonical": "https://webdevamin.com/nl/services/webdesign",
             "image": "https://bucket.webdevamin.com/webdesign_og_nl.jpg",
@@ -41,11 +41,6 @@
             {
                 "href": "/contact",
                 "text": "Gratis offerte",
-                "external": false
-            },
-            {
-                "href": "#about",
-                "text": "Meer lezen",
                 "external": false
             }
         ],
@@ -122,7 +117,7 @@
                 "slug": "pricing",
                 "subtitle": "$ op $$$",
                 "position": "right",
-                "text": "<p>Als u een betaalbare website wilt laten maken, bent u bij mij aan het juiste adres. Een bureau dat niet onder een zelfstandige valt, rekent al snel gemiddeld meer dan €1.500 voor het ontwikkelen van een professionele, zakelijke website – en dat is exclusief de hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts ongeveer €590 excl. btw voor het laten maken van een eenvoudige maar krachtige een-pagina-website. Hier vindt u de inhoudsecties die standaard bij de website zijn inbegrepen:</p>",
+                "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €1.500 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€590 excl. btw voor een eenvoudige maar krachtige een-pagina-website</strong>: Een typische zakelijke site die elke professional nodig heeft, compleet met alle essentiële secties. Hierbij vindt u een overzicht van de inhoudsecties die standaard bij de website inbegrepen zijn of klik op een knop hieronder om een voorbeeldproject te bekijken met dezelfde prijs.</p>",
                 "buttons": [
                     {
                         "href": "/projects/williamprojecten",

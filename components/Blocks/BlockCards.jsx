@@ -15,7 +15,7 @@ const BlockCards = ({ content }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }}
                         className={`p`} />
                 </div>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 mt-20 xl:mt-6 gap-5 lg:flex-row lg:gap-x-10 lg:gap-y-14 text-center`}>
+                <div className={`grid grid-cols-1 lg:grid-cols-2 mt-20 xl:mt-6 gap-14 lg:flex-row lg:gap-x-10 lg:gap-y-14 text-center`}>
                     {
                         items.map((item, i) => {
                             const { title, body, backgroundColor, icon } = item;
