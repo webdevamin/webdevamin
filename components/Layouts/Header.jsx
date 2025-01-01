@@ -43,7 +43,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                 <div className={`dropdown_wrapper w-full transition-all xl:block lg:text-lg border-theme 
                                             ease-linear md:border-none relative 
                                             hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`}`}>
-                                                    <Dropdown inline label={(<span className='pr-1'>Diensten</span>)} className='rounded-xl font-semibold z-[9999]'>
+                                                    <Dropdown inline label={(<span className='pr-1'>{title}</span>)} className='rounded-xl font-semibold z-[9999] full_width'>
                                                         {
                                                             subs.map((sub, i) => {
                                                                 const { title, href } = sub;

@@ -29,7 +29,7 @@
         "slug": "webdesign",
         "locale": "nl",
         "showcase": true,
-        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Vraag nu een gratis offerte aan of lees meer over hoe ik u van dienst kan zijn!",
+        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen, vraag direct een gratis offerte aan, of ontdek hoe ik u van dienst kan zijn!",
         "img": {
             "src": "https://bucket.webdevamin.com/webdesign.png",
             "alt": "Desktop met browser illustratie.",
@@ -38,6 +38,11 @@
             "objectFit": "cover"
         },
         "button": [
+            {
+                "href": "/pricing",
+                "text": "Bekijk prijzen",
+                "external": false
+            },
             {
                 "href": "/contact",
                 "text": "Gratis offerte",
@@ -75,7 +80,7 @@
                 "items": [
                     {
                         "title": "1. Design keuze",
-                        "body": "<p>We beginnen met het kiezen van het ontwerp voor uw website. Hierbij zijn er drie mogelijkheden: <strong>1.</strong> Ik selecteer een ontwerp dat het beste past bij uw website en niche <strong>2.</strong> U kiest zelf een ontwerp uit een lijst die ik u zal toesturen <strong>3.</strong> Ik creëer een volledig maatwerkontwerp, geheel gebaseerd op uw wensen</p>",
+                        "body": "<p>We beginnen met het kiezen van het ontwerp voor uw website. Er zijn drie mogelijkheden: ik selecteer een ontwerp dat het beste past bij uw website en niche, u kiest zelf een ontwerp uit een lijst die ik u zal toesturen, of ik creëer een volledig maatwerkontwerp, geheel gebaseerd op uw wensen. Als u kiest voor een abonnement bij mij, ontvangt u daarnaast ook een <strong>gratis logo</strong>.</p>",
                         "backgroundColor": "rgb(59 130 246)",
                         "icon": {
                             "name": "faPalette",
@@ -83,17 +88,8 @@
                         }
                     },
                     {
-                        "title": "2. Domeinnaam aanschaffen",
-                        "body": "<p>U kiest een domeinnaam, die kan eindigen op een extensie naar keuze, zoals .be of .com. Zodra u uw keuze heeft gemaakt, schaft u de domeinnaam aan met mijn hulp. Dit stelt mij in staat om deze vervolgens te koppelen aan de website die ik voor u zal ontwikkelen. Een domeinnaam kost doorgaans slechts ongeveer €15 per jaar</p>",
-                        "backgroundColor": "rgb(16 185 129)",
-                        "icon": {
-                            "name": "faPenFancy",
-                            "brands": false
-                        }
-                    },
-                    {
                         "title": "3. Ontwikkelen website",
-                        "body": "<p>In deze fase ontwikkel ik uw website op basis van de twee hierboven genoemde vereisten. Gemiddeld duurt dit proces ongeveer 2 tot 3 dagen. Afwijkingen kunnen voorkomen, maar zijn uitzonderlijk.</p>",
+                        "body": "<p>In deze fase ontwikkel ik uw website, inclusief uitstekende SEO, op basis van de twee hierboven genoemde vereisten. Gemiddeld duurt dit proces ongeveer vijf dagen. Afwijkingen kunnen voorkomen, maar zijn uitzonderlijk.</p>",
                         "backgroundColor": "rgb(238 239 70)",
                         "icon": {
                             "name": "faCode",
@@ -101,8 +97,17 @@
                         }
                     },
                     {
+                        "title": "2. Aanschaffing domeinnaam, hosting, etc.",
+                        "body": "<p>U kiest een domeinnaam, die kan eindigen op een extensie naar keuze, zoals .be of .com. Daarnaast is hosting nodig, wat maandelijkse kosten met zich meebrengt. Alle noodzakelijke aanschaffingen, zoals de domeinnaam en hosting, worden door mij geregeld als u een abonnement bij mij afsluit; daarvoor hoeft u niets te doen en niets voor betalen. Ik verzorg tevens de facturatie voor dergelijke zaken. U blijft altijd de eigenaar, ik fungeer als beheerder.</p>",
+                        "backgroundColor": "rgb(16 185 129)",
+                        "icon": {
+                            "name": "faPenFancy",
+                            "brands": false
+                        }
+                    },
+                    {
                         "title": "4. Finale",
-                        "body": "<p>Uw website is ontwikkeld en gekoppeld aan de door u aangeschafte domeinnaam. Ik plaats de website online, en voilà, uw site is klaar! Wilt u nog wijzigingen aanbrengen? Geen probleem, ik zorg daar graag voor en kunt u mij altijd contacteren voor uitbreiding!</p>",
+                        "body": "<p>Uw website is ontwikkeld en gekoppeld aan de door u aangeschafte domeinnaam. Ik zet de website online en voilà, uw site is klaar! Daarnaast zorg ik ervoor dat uw website altijd bijgewerkt wordt en onderhoud krijgt indien u voor een abonnement kiesten bied ik daarnaast 24/7 support aan voor alle vragen of opmerkingen die u heeft. Wilt u nog wijzigingen aanbrengen? Geen probleem, ik zorg daar graag voor en u kunt mij altijd contacteren voor uitbreidingen!</p>",
                         "backgroundColor": "rgb(99 102 241)",
                         "icon": {
                             "name": "faBullhorn",
@@ -113,20 +118,25 @@
             },
             {
                 "component": "block-cols",
-                "title": "Prijzen",
+                "title": "Prijs",
                 "slug": "pricing",
-                "subtitle": "$ op $$$",
+                "subtitle": "Standaard abonnement",
                 "position": "right",
-                "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €1.500 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€590 excl. btw voor een eenvoudige maar krachtige een-pagina-website</strong>: Een typische zakelijke site die elke professional nodig heeft, compleet met alle essentiële secties. Hierbij vindt u een overzicht van de inhoudsecties die standaard bij de website inbegrepen zijn of klik op een knop hieronder om een voorbeeldproject te bekijken met dezelfde prijs.</p>",
+                "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €3.000 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€49 excl. BTW of €44 per maand indien u voor een jaarlijkse abonnement kiest, voor een krachtige, op maat gemaakte website</strong> die elke professional nodig heeft, compleet met alle essentiële secties. Bekijk een voorbeeld van een website met dit abonnement door op de onderstaande knop te drukken.</p>",
+                "miscLink": {
+                    "textMisc": "Heeft u een andere oplossing nodig, zoals een website met meer functies, een zware webapplicatie, webshop, etc, neem contact op voor een offerte op maat of ",
+                    "linkText": "bekijk alle prijzen hier",
+                    "link": "/pricing"
+                },
                 "buttons": [
                     {
                         "href": "/projects/williamprojecten",
-                        "text": "Voorbeeld website €590"
+                        "text": "Voorbeeld website"
                     }
                 ],
                 "side": {
                     "component": "pricing",
-                    "title": "€590",
+                    "title": "€49",
                     "cta": "Vraag gratis offerte aan"
                 }
             }

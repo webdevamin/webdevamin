@@ -6,7 +6,7 @@ import { CheckMarkIcon } from './SvgIcons';
 const Pricing = () => {
     return (
         <Card className='rounded-none text-dark bg-light shadow-bold_r_md md:shadow-bold_r_lg border md:border-2 border-dark pb-3'>
-            <h3 className="text-theme_darker mb-1">Gemiddelde prijs</h3>
+            <h3 className="text-theme_darker mb-1"></h3>
             <div className="flex items-baseline text-gray-900 dark:text-white">
                 <span className="text-xl lg:text-3xl font-semibold">€</span>
                 <span className="text-3xl lg:text-5xl font-extrabold tracking-tight">590</span>

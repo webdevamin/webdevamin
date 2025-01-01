@@ -215,6 +215,10 @@ p a {
     button {
       @apply py-3 px-8 md:p-0 w-full;
     }
+
+    .full_width {
+      @apply min-w-max !important;
+    }
   }
 }
 
