@@ -26,6 +26,7 @@
         ],
         "title": "Gympouch",
         "slug": "gympouch",
+        "type": "webapp",
         "locale": "nl",
         "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
         "showcase": true,
@@ -101,6 +102,7 @@
             }
         ],
         "title": "My Admin",
+        "type": "webapp",
         "slug": "my-admin",
         "locale": "nl",
         "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
@@ -178,6 +180,7 @@
         ],
         "title": "Bakiji Construct",
         "slug": "bakiji-construct",
+        "type": "website",
         "locale": "nl",
         "link": "https://bakiji-construct.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
@@ -255,6 +258,7 @@
         ],
         "title": "Solaris",
         "slug": "solaris",
+        "type": "webapp",
         "locale": "nl",
         "link": "https://solarisinsurance.org",
         "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
@@ -333,6 +337,7 @@
         ],
         "title": "Restaurant China Brugge",
         "slug": "restaurant-china-brugge",
+        "type": "website",
         "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
         "showcase": false,
         "img": {
@@ -404,92 +409,6 @@
     {
         "locale": "nl",
         "seo": {
-            "title": "Turpal Sushi Tielt",
-            "description": "Food delivery webapplicatie voor een sushi restaurant in België.",
-            "canonical": "https://webdevamin.com/nl/projects/turpal-sushi-tielt",
-            "image": "https://bucket.webdevamin.com/turpalsushi.jpg",
-            "ogTitle": "Turpal Sushi Tielt",
-            "ogDescription": "Food delivery webapplicatie voor een sushi restaurant in België."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/turpal-sushi-tielt",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/turpal-sushi-tielt",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/turpal-sushi-tielt",
-                "locale": "en"
-            }
-        ],
-        "title": "Turpal Sushi Tielt",
-        "slug": "turpal-sushi-tielt",
-        "description": "Food delivery webapplicatie voor een sushi restaurant in België.",
-        "showcase": false,
-        "img": {
-            "src": "https://bucket.webdevamin.com/turpalsushi_portfolio.png",
-            "alt": "Landing pagina, checkout pagina en een bevestiging pagina van Turpal Sushi Tielt webapp."
-        },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/turpalsushi_alpha.png",
-            "alt": "Landing pagina, checkout pagina en een bevestiging pagina van Turpal Sushi Tielt webapp.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>Een food delivery webapplicatie voor een restaurant in België. Gebruikers kunnen allerlei menu items aan hun winkelwagen toevoegen en bestellen. De eigenaar van het restaurant ontvangt een pushmelding met noodzakelijke informatie van de klant zoals adres, bestelde menu items, etc. op zijn smartphone voor elk succesvolle bestelling.</p>",
-        "technologiesText": "<p>Next.js (React.js) frontend. Laravel backend. Deployment, storage en realtime database met AWS. Mollie voor betalingsdienst.</p>",
-        "technologies": [
-            {
-                "name": "Next.js",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Laravel",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/laravel.svg",
-                    "width": 115,
-                    "height": 118,
-                    "alt": "Laravel",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "AWS",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/aws.svg",
-                    "width": 115,
-                    "height": 67,
-                    "alt": "AWS",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Mollie",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/mollie.svg",
-                    "width": 115,
-                    "height": 34,
-                    "alt": "Mollie",
-                    "objectFit": "cover"
-                }
-            }
-        ]
-    },
-    {
-        "locale": "nl",
-        "seo": {
             "title": "Black Wood",
             "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
             "canonical": "https://webdevamin.com/nl/projects/black-wood",
@@ -515,6 +434,7 @@
         ],
         "title": "Black Wood",
         "slug": "black-wood",
+        "type": "website",
         "link": "https://black-wood.be",
         "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
         "showcase": true,
@@ -592,6 +512,7 @@
         ],
         "title": "Verhuisdienst Liftservice",
         "slug": "verhuisdienst-liftservice",
+        "type": "website",
         "link": "https://verhuisdienst-liftservice.be",
         "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
         "showcase": true,
@@ -669,6 +590,7 @@
         ],
         "title": "Pasta Maria",
         "slug": "pastamaria",
+        "type": "website",
         "link": "https://pastamaria.be",
         "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
         "showcase": true,
@@ -736,6 +658,7 @@
         ],
         "title": "Webleadr",
         "slug": "webleadr",
+        "type": "saas",
         "link": "https://webleadr.com",
         "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
         "showcase": true,
@@ -852,6 +775,7 @@
         ],
         "title": "William Projecten",
         "slug": "williamprojecten",
+        "type": "website",
         "locale": "nl",
         "link": "https://williamprojecten.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",

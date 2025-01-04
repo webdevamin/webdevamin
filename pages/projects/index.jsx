@@ -31,7 +31,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
                     ${projectsData.length >= 2 && `pr-[20%] w-screen flex`}`}>
                         {
                             projectsData.map((project, i) => {
-                                const { title, img, slug, description,border } = project;
+                                const { title, img, slug, description, border } = project;
                                 const { src, alt } = img;
                                 const text = router.locale === `en` ? `Read more` : `Verder lezen`;
 
@@ -39,7 +39,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
                                     <Link href={`/projects/${slug}`}
                                         key={i} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                         <CardTwo imgUrl={src} title={title} text={text}
-                                            subtitle={description} slug={slug} alt={alt} border={border} type={`project`}/>
+                                            subtitle={description} slug={slug} alt={alt} border={border} type={`project`} />
                                     </Link>
                                 )
 

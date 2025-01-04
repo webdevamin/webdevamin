@@ -2,11 +2,11 @@
     {
         "seo": {
             "title": "Professionele Website Laten Maken | Professioneel Webdesign Brugge",
-            "description": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!",
+            "description": "Een professionele website laten maken? Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Bekijk de prijzen en neem contact op!",
             "canonical": "https://webdevamin.com/nl/services/webdesign",
             "image": "https://bucket.webdevamin.com/webdesign_og_nl.jpg",
             "ogTitle": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
-            "ogDescription": "Een professionele website laten maken? Zoek niet verder! Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Vraag nu een offerte aan!"
+            "ogDescription": "Een professionele website laten maken? Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Bekijk de prijzen en neem contact op!"
         },
         "alternates": [
             {
@@ -39,13 +39,13 @@
         },
         "button": [
             {
-                "href": "/pricing",
-                "text": "Bekijk prijzen",
+                "href": "#pricing",
+                "text": "Bekijk prijs",
                 "external": false
             },
             {
                 "href": "/contact",
-                "text": "Gratis offerte",
+                "text": "Neem contact op",
                 "external": false
             }
         ],
@@ -76,7 +76,7 @@
                 "slug": "process",
                 "subtitle": "Stap per stap",
                 "position": "right",
-                "text": "<p>Een professioneel website laten maken duurt maar 2-3 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
+                "text": "<p>Een professioneel website laten maken duurt maar ongeveer 5 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
                 "items": [
                     {
                         "title": "1. Design keuze",
@@ -122,19 +122,90 @@
                 "slug": "pricing",
                 "subtitle": "Standaard abonnement",
                 "position": "right",
-                "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €3.000 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€49 excl. BTW of €44 per maand indien u voor een jaarlijkse abonnement kiest, voor een krachtige, op maat gemaakte website</strong> die elke professional nodig heeft, compleet met alle essentiële secties. Bekijk een voorbeeld van een website met dit abonnement door op de onderstaande knop te drukken.</p>",
+                "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €3.000 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€49 excl. BTW of €44 per maand indien u voor een jaarlijkse abonnement kiest, voor een krachtige, op maat gemaakte website</strong> die elke professional nodig heeft, compleet met alle essentiële secties.</p>",
                 "miscLink": {
                     "textMisc": "Heeft u een andere oplossing nodig, zoals een website met meer functies, een zware webapplicatie, webshop, etc, neem contact op voor een offerte op maat of ",
                     "linkText": "bekijk alle prijzen hier",
                     "link": "/pricing"
                 },
+                "side": "pricing"
+            },
+            {
+                "component": "block-timeline",
+                "title": "Voorbeeld website",
+                "slug": "what",
+                "subtitle": "Secties & functionaliteiten",
+                "position": "right",
+                "text": "Hieronder vindt u een overzicht van voorbeeldsecties en functionaliteiten die inbegrepen zijn bij een abonnement voor een professionele website. Deze onderdelen zijn essentieel voor elke zakelijke website en dragen bij aan het promoten van uw bedrijf en het aantrekken van klanten. U kunt de secties en functionaliteiten naar wens aanpassen om perfect aan te sluiten bij uw behoeften.",
+                "items": [
+                    {
+                        "title": "Inleiding (Hero)",
+                        "description": "Een inleiding (of een 'hero') is de eerste sectie die bezoekers zien wanneer ze uw website openen. Hierin staat een korte beschrijving van uw bedrijf en de diensten die u aanbiedt."
+                    },
+                    {
+                        "title": "Over ons",
+                        "description": "In de over ons-sectie vertelt u meer over uw bedrijf, de geschiedenis, de missie en visie, en de mensen die er werken."
+                    },
+                    {
+                        "title": "Diensten",
+                        "description": "In de diensten-sectie beschrijft u de diensten die u aanbiedt, met eventueel een prijslijst en een contactformulier."
+                    },
+                    {
+                        "title": "Galerij/Realisaties",
+                        "description": "In deze gedeelte toont u projecten die u in het verleden heeft gedaan, met foto's, video's en klantbeoordelingen."
+                    },
+                    {
+                        "title": "Prijzen",
+                        "description": "In de prijzen-sectie toont u de prijzen van uw diensten, eventueel met kortingen en promoties."
+                    },
+                    {
+                        "title": "Klantenbeoordelingen",
+                        "description": "In de klantenbeoordelingen-sectie toont u beoordelingen van uw gekozen klanten die uw diensten hebben gebruikt. U kiest zelf welke."
+                    },
+                    {
+                        "title": "Contactformulier",
+                        "description": "In de contactformulier-sectie staat uw contactgegevens, zoals uw adres, telefoonnummer, e-mailadres en een contactformulier waarop je gebruikers vragen kunnen stellen en/of offerte kunnen aanvragen. Waardoor u een mail en/of SMS ontvangt."
+                    },
+                    {
+                        "title": "Footer",
+                        "description": "De footer is het onderste gedeelte van uw website, waarin u uw contactgegevens, bedrijfsgegevens, links naar sociale media en meer plaatst."
+                    }
+                ],
                 "buttons": [
                     {
                         "href": "/projects/williamprojecten",
                         "text": "Voorbeeld website"
                     }
-                ],
-                "side": "pricing"
+                ]
+            },
+            {
+                "component": "block-accordion",
+                "title": "Veelgestelde vragen",
+                "slug": "faq",
+                "subtitle": "Vragen & antwoorden",
+                "text": "Hieronder vindt u een lijst met veelgestelde vragen over webdesign en websites. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
+                "items": [
+                    {
+                        "title": "Wat is webdesign?",
+                        "description": "Webdesign is het proces van het maken van websites. Het omvat verschillende aspecten, zoals webpagina-indeling, inhoudsproductie en grafisch ontwerp. Hoewel de term webdesign doorgaans wordt gebruikt voor het ontwerpen van websites voor desktops, omvat het ook het ontwerpen van websites voor mobiele apparaten."
+                    },
+                    {
+                        "title": "Wat is een website?",
+                        "description": "Een website is een verzameling webpagina's en gerelateerde inhoud die wordt geïdentificeerd door een gemeenschappelijk domeinnaam en wordt gepubliceerd op ten minste één webserver. Een website kan bestaan uit tekst, afbeeldingen, video's en andere digitale bronnen."
+                    },
+                    {
+                        "title": "Wat is SEO?",
+                        "description": "SEO staat voor zoekmachineoptimalisatie. Het is het proces van het verbeteren van de kwaliteit en kwantiteit van websiteverkeer naar een website of een webpagina van zoekmachines. SEO richt zich op onbetaalde resultaten in plaats van direct verkeer of betaald verkeer."
+                    },
+                    {
+                        "title": "Wat is een domeinnaam?",
+                        "description": "Een domeinnaam is een unieke naam die wordt gebruikt om een IP-adres te identificeren op internet. Een domeinnaam is een adres waarmee mensen uw website kunnen vinden op het internet."
+                    },
+                    {
+                        "title": "Wat is hosting?",
+                        "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun website of webpagina op internet te plaatsen. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken."
+                    }
+                ]
             }
         ]
     }

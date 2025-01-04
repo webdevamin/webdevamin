@@ -145,23 +145,18 @@ p a {
   overflow: hidden;
 }
 
-#accordion {
+#accordion, .accordion {
   h2 {
     @apply font_quicksand text-base lg:text-lg normal-case font-semibold mb-0;
   }
-}
 
-#accordion {
+  button {
+    @apply p-4 lg:p-5;
+  }
 
   div,
   button {
     @apply border-dark focus:ring-0 border-opacity-10;
-  }
-}
-
-#accordion {
-  button {
-    @apply p-4 lg:p-5;
   }
 }
 

@@ -13,7 +13,7 @@ const BlockCols = ({ content, sideData }) => {
 
     return (
         <BlockLayoutTwo title={title} slug={slug} contentClasses={`xl:flex-row-reverse`}>
-            <div className={`md:w-full flex flex-col md:flex-row gap-16 md:gap-20`}>
+            <div className={`md:w-full flex flex-col md:flex-row gap-10 md:gap-20`}>
                 <div className='md:w-7/12'>
                     <Heading title={title} />
                     <h3 className={`text-base sm:text-lg md:mb-4 md:mt-6 xl:text-xl 2xl:text-2xl 2xl:mb-6`}>
@@ -26,24 +26,28 @@ const BlockCols = ({ content, sideData }) => {
                             <p>{textMisc}<Link href={link}>{linkText}</Link></p>
                         )
                     }
-                    <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-12 l:gap-6`}>
-                        {
-                            buttons.map((btn, i) => {
-                                const { href, text } = btn;
-                                const isOdd = i % 2 !== 0 ? true : false;
+                    {
+                        (buttons && buttons.length >= 1) && (
+                            <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-12 l:gap-6`}>
+                                {
+                                    buttons.map((btn, i) => {
+                                        const { href, text } = btn;
+                                        const isOdd = i % 2 !== 0 ? true : false;
 
-                                if (href) {
-                                    return (
-                                        <ButtonOne key={i} href={href}
-                                            text={text} outline={isOdd} noMargin classes={`sm:px-14 text-center`} />
-                                    )
+                                        if (href) {
+                                            return (
+                                                <ButtonOne key={i} href={href}
+                                                    text={text} outline={isOdd} noMargin classes={`sm:px-14 text-center`} />
+                                            )
+                                        }
+                                    })
                                 }
-                            })
-                        }
-                    </div>
+                            </div>
+                        )
+                    }
                 </div>
                 <div className='md:w-6/12 md:mr-5'>
-                    <ComponentToRenderSide data={sideData}/>
+                    <ComponentToRenderSide data={sideData} />
                 </div>
             </div>
         </BlockLayoutTwo>

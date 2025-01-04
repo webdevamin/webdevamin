@@ -12,9 +12,9 @@ const Pricing = ({ data }) => {
             <div className="flex flex-col items-baseline text-gray-900 dark:text-white">
                 <div>
                     <span className="text-lg lg:text-xl font-semibold pr-1">€</span>
-                    <span className="text-2xl lg:text-3xl font-extrabold tracking-tight">{main}</span>
+                    <span className="text-xl lg:text-3xl font-extrabold tracking-tight">{main}</span>
                 </div>
-                <span className={`text-lg font-medium text-gray-500 dark:text-gray-400 my-1 lg:my-2`}>{mid}</span>
+                <span className={`text-lg font-medium text-gray-500 dark:text-gray-400 lg:my-1`}>{mid}</span>
                 <div>
                     <span className="text-lg lg:text-xl font-semibold pr-1">€</span>
                     <span className="text-xl lg:text-3xl font-extrabold tracking-tight pr-2 lg:pr-3">{first}</span>
