@@ -134,11 +134,7 @@
                         "text": "Voorbeeld website"
                     }
                 ],
-                "side": {
-                    "component": "pricing",
-                    "title": "€49",
-                    "cta": "Vraag gratis offerte aan"
-                }
+                "side": "pricing"
             }
         ]
     }

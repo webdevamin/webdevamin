@@ -1,62 +1,62 @@
 import React from 'react'
-import { Card } from "flowbite-react";
+import { Card, Popover, Tooltip } from "flowbite-react";
 import ButtonThree from './Buttons/ButtonThree';
-import { CheckMarkIcon } from './SvgIcons';
+import { CheckMarkIcon, MessageCircleQuestionIcon } from './SvgIcons';
 
-const Pricing = () => {
+const Pricing = ({ data }) => {
+    const { webdesign: { content, items } } = data;
+    const { main, mid, mainTwo: { first, second }, sub, footer: { text, src } } = content;
+
     return (
-        <Card className='rounded-none text-dark bg-light shadow-bold_r_md md:shadow-bold_r_lg border md:border-2 border-dark pb-3'>
-            <h3 className="text-theme_darker mb-1"></h3>
-            <div className="flex items-baseline text-gray-900 dark:text-white">
-                <span className="text-xl lg:text-3xl font-semibold">€</span>
-                <span className="text-3xl lg:text-5xl font-extrabold tracking-tight">590</span>
-                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">excl. BTW</span>
+        <Card className='rounded-2xl text-dark bg-transparent shadow-md border border-dark p-3 xl:border-opacity-20 border-opacity-30'>
+            <div className="flex flex-col items-baseline text-gray-900 dark:text-white">
+                <div>
+                    <span className="text-lg lg:text-xl font-semibold pr-1">€</span>
+                    <span className="text-2xl lg:text-3xl font-extrabold tracking-tight">{main}</span>
+                </div>
+                <span className={`text-lg font-medium text-gray-500 dark:text-gray-400 my-1 lg:my-2`}>{mid}</span>
+                <div>
+                    <span className="text-lg lg:text-xl font-semibold pr-1">€</span>
+                    <span className="text-xl lg:text-3xl font-extrabold tracking-tight pr-2 lg:pr-3">{first}</span>
+                    <span className="text-lg lg:text-xl font-semibold mt-1 lg:mt-2 text-theme_darker">{second}</span>
+                </div>
+                <span className="ml-1 font-normal text-gray-500 dark:text-gray-400 mt-1 lg:mt-2">{sub}</span>
             </div>
             <ul className="my-5 lg:my-7 space-y-5">
-                <li className="flex space-x-3">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Inleiding</span>
-                </li>
-                <li className="flex space-x-3">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                        Over ons
-                    </span>
-                </li>
-                <li className="flex space-x-3">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Diensten</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Galerij/Projecten</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Offerte aanvraag formulier en/of contactformulier</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Links naar je sociale media platformen</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Footer (slot)</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Over 1 week zichtbaar op Google resultaten</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Domeinnaam koppeling</span>
-                </li>
-                <li className="flex space-x-3 decoration-gray-500">
-                    <CheckMarkIcon />
-                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500">Website online plaatsen (hosten)</span>
-                </li>
+                {
+                    items.map((item, i) => {
+                        const { title, details } = item;
+
+                        return (
+                            <li key={i} className="flex justify-between gap-x-5 items-center">
+                                <div className="flex space-x-3">
+                                    <CheckMarkIcon />
+                                    <span className="text-sm lg:text-base font-normal leading-tight text-gray-500 dark:text-gray-400" dangerouslySetInnerHTML={{ __html: title }} />
+                                </div>
+                                <div className='md:hidden'>
+                                    <Popover aria-labelledby={`?`}
+                                        content={
+                                            <div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+                                                <div className="px-3 py-2">
+                                                    <p>{details}</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    >
+                                        <div className='w-[18px] h-[18px] cursor-pointer'><MessageCircleQuestionIcon /></div>
+                                    </Popover>
+                                </div>
+                                <div className='hidden md:block cursor-pointer'>
+                                    <Tooltip content={details} style='light'>
+                                        <MessageCircleQuestionIcon />
+                                    </Tooltip>
+                                </div>
+                            </li>
+                        )
+                    })
+                }
             </ul>
-            <ButtonThree href={`/contact`} text={`Gratis offerte aanvragen`} classes={`underline underline-offset-8 decoration-theme_darker`} />
+            <ButtonThree href={src} text={text} classes={`underline underline-offset-8 decoration-theme_darker`} />
         </Card>
     )
 }

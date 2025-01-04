@@ -3,13 +3,12 @@ import Heading from '../Heading';
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import { componentMapper } from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
-import { Alert } from 'flowbite-react';
 import Link from 'next/link';
 
 // Horizontal stacked view with 2 columns. Other side is another component that can be rendered on choice
-const BlockCols = ({ content }) => {
+const BlockCols = ({ content, sideData }) => {
     const { title, slug, text, subtitle, side, buttons, miscLink } = content;
-    const ComponentToRenderSide = componentMapper[side.component];
+    const ComponentToRenderSide = componentMapper[side];
     const { textMisc, linkText, link } = miscLink || {};
 
     return (
@@ -21,7 +20,7 @@ const BlockCols = ({ content }) => {
                         {subtitle}
                     </h3>
                     <div dangerouslySetInnerHTML={{ __html: text }}
-                        className={`p mt-10`} />
+                        className={`p mt-5 lg:mt-10`} />
                     {
                         miscLink && (
                             <p>{textMisc}<Link href={link}>{linkText}</Link></p>
@@ -43,8 +42,8 @@ const BlockCols = ({ content }) => {
                         }
                     </div>
                 </div>
-                <div className='md:w-5/12 md:mr-5'>
-                    <ComponentToRenderSide content={side} />
+                <div className='md:w-6/12 md:mr-5'>
+                    <ComponentToRenderSide data={sideData}/>
                 </div>
             </div>
         </BlockLayoutTwo>

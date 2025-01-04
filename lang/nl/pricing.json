@@ -1,0 +1,63 @@
+{
+    "webdesign": {
+        "content": {
+            "main": "49/maand",
+            "mid": "of",
+            "mainTwo": {
+                "first": "44/maand",
+                "second": "indien jaarlijks"
+            },
+            "sub": "excl. BTW",
+            "footer": {
+                "text": "Laat uw website maken",
+                "src": "/contact"
+            }
+        },
+        "items": [
+            {
+                "title": "Uitstekende weergave op alle apparaten",
+                "details": "Uw website zal er goed uitzien op alle apparaten zoals smartphones, tablets en computers."
+            },
+            {
+                "title": "Levenslang <strong>GRATIS</strong> hosting",
+                "details": "U hoeft nooit te betalen voor hosting. Ik regel alles voor u. Hosting: online plaatsen van uw website."
+            },
+            {
+                "title": "Levenslang <strong>GRATIS</strong> domeinnaam",
+                "details": "U hoeft nooit te betalen voor domeinnaam. Ik regel alles voor u. Domeinnaam: uw website adres (bv. www.uwbedrijf.be)"
+            },
+            {
+                "title": "Levenslang <strong>GRATIS</strong> onderhoud en updates",
+                "details": "Ik zorg er altijd voor dat uw website up-to-date is en blijft zodat het altijd uitstekend functioneert. U hoeft zich geen zorgen te maken over updates of onderhoud."
+            },
+            {
+                "title": "Uitstekend SEO op uw website, <strong>GRATIS</strong>",
+                "details": "Ik zorg ervoor dat uw website goed scoort in Google zodat u meer bezoekers krijgt. SEO: zoekmachine optimalisatie. Dit is belangrijk voor uw website om gevonden te worden in Google en andere zoekmachines."
+            },
+            {
+                "title": "<strong>GRATIS</strong> logo",
+                "details": "Je leest het goed! Bij een abonnement ontvangt u een gratis logo uit mijn collectie, volledig afgestemd op uw wensen."
+            },
+            {
+                "title": "<strong>Administratie & facturen</strong> door mij geregeld",
+                "details": "Ik regel alle administratie en facturatie voor u, zoals de website, hosting en domeinnaam. U hoeft zich nergens zorgen over te maken."
+            },
+            {
+                "title": "<strong>24/7</strong> support",
+                "details": "Heeft u vragen of opmerkingen? U kunt mij altijd contacteren. Ik help u graag verder zonder kosten."
+            },
+            {
+                "title": "Jaarlijks betalen? <strong>Geen opstartkosten</strong>!",
+                "details": "Yup, u leest het goed! Geen opstartkosten bij jaarlijkse betaling. U betaalt enkel voor het abonnement zelf."
+            },
+            {
+                "title": "In ongeveer <strong>5 dagen</strong> klaar",
+                "details": "Uw website is klaar in ongeveer 5 dagen."
+            },
+            {
+                "title": "Niet tevreden? <strong>30 dagen geld terug</strong>",
+                "details": "Bent u niet tevreden? Geen probleem, u krijgt uw geld terug binnen 30 dagen."
+            }
+        ]
+    }
+}

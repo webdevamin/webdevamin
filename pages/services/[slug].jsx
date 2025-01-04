@@ -7,7 +7,7 @@ import Footer from '../../components/Layouts/Footer';
 import HeroOne from '../../components/Heroes/HeroOne';
 import { componentMapper } from '../../utils/app';
 
-const Service = ({ localesData, socialsData, servicesData, serviceData, regionsData, pagesData, contactBlockData, blogsData }) => {
+const Service = ({ localesData, socialsData, servicesData, serviceData, regionsData, pagesData, contactBlockData, blogsData, pricingData }) => {
     const { seo, alternates, alternateLangs, titleTwo,
         description, button, img, contents } = serviceData;
 
@@ -24,7 +24,7 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
                 {
                     contents.map((content, i) => {
                         const ComponentToRender = componentMapper[content.component];
-                        return <ComponentToRender key={i} content={content} />
+                        return <ComponentToRender key={i} content={content} sideData={pricingData} />
                     })
                 }
                 <Contact content={contactBlockData} />
@@ -61,6 +61,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
     const servicesData = (await import(`../../lang/${locale}/services.json`)).default;
+    const pricingData = (await import(`../../lang/${locale}/pricing.json`)).default;
 
     const serviceData = servicesData.find((p) => {
         return p.slug === params.slug;
@@ -78,7 +79,7 @@ export async function getStaticProps({ locale, params }) {
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data
 
-            serviceData
+            serviceData, pricingData
         }
     }
 }
