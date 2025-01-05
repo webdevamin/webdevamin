@@ -15,7 +15,7 @@ const BlockAccordion = ({ content }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }} className='p' />
                 </section>
                 <div className='mt-8 lg:mt-10 accordion'>
-                    <Accordion>
+                    <Accordion className='text-left'>
                         {
                             items.map((item, i) => {
                                 const { title, description } = item;
@@ -24,7 +24,7 @@ const BlockAccordion = ({ content }) => {
                                     <Accordion.Panel key={i}>
                                         <Accordion.Title>{title}</Accordion.Title>
                                         <Accordion.Content>
-                                            <p className="mb-2 text-gray-500 dark:text-gray-400">{description}</p>
+                                            <p className="mb-2 text-gray-500 dark:text-gray-400" dangerouslySetInnerHTML={{ __html: description }} />
                                         </Accordion.Content>
                                     </Accordion.Panel>
                                 )

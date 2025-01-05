@@ -29,7 +29,7 @@
         "slug": "webdesign",
         "locale": "nl",
         "showcase": true,
-        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen, vraag direct een gratis offerte aan, of ontdek hoe ik u van dienst kan zijn!",
+        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen en neem contact op. Of vraag direct een gratis offerte aan indien u voor een eenmalige betaling opteert. Ontdek hoe ik u van dienst kan zijn!",
         "img": {
             "src": "https://bucket.webdevamin.com/webdesign.png",
             "alt": "Desktop met browser illustratie.",
@@ -77,6 +77,11 @@
                 "subtitle": "Stap per stap",
                 "position": "right",
                 "text": "<p>Een professioneel website laten maken duurt maar ongeveer 5 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
+                "textTwo": {
+                    "textTwoContent": "Wil je je bestaande website vernieuwen? ",
+                    "textTwoLinkContent": "Bekijk hier hoe ik u van dienst kan zijn",
+                    "textTwolinkHref": "/services/website-vernieuwen"
+                },
                 "items": [
                     {
                         "title": "1. Design keuze",
@@ -186,24 +191,28 @@
                 "text": "Hieronder vindt u een lijst met veelgestelde vragen over webdesign en websites. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
                 "items": [
                     {
-                        "title": "Wat is webdesign?",
-                        "description": "Webdesign is het proces van het maken van websites. Het omvat verschillende aspecten, zoals webpagina-indeling, inhoudsproductie en grafisch ontwerp. Hoewel de term webdesign doorgaans wordt gebruikt voor het ontwerpen van websites voor desktops, omvat het ook het ontwerpen van websites voor mobiele apparaten."
+                        "title": "Wat is de gemiddelde prijs om een website te laten maken?",
+                        "description": "De gemiddelde prijs voor het laten maken van een website varieert sterk, afhankelijk van de complexiteit van het project, de functionaliteiten die u nodig heeft en de ervaring van de webdesigner. Gelukkig betaalt u bij mij slechts <strong>€49 excl. BTW of €44 per maand</strong> indien u voor een jaarlijks abonnement kiest. Het brengt veel voordelen met zich mee, zoals een <strong>gratis domeinnaam, hosting, onderhoud en support</strong>."
                     },
                     {
-                        "title": "Wat is een website?",
-                        "description": "Een website is een verzameling webpagina's en gerelateerde inhoud die wordt geïdentificeerd door een gemeenschappelijk domeinnaam en wordt gepubliceerd op ten minste één webserver. Een website kan bestaan uit tekst, afbeeldingen, video's en andere digitale bronnen."
+                        "title": "Kan ik een offerte aanvragen om een website te laten maken?",
+                        "description": "Zeker, maar waarom? Als u weet dat u voor een professionele website slechts €49 per maand excl. BTW of €44 per maand betaalt indien u voor een jaarlijkse abonnement opteert? Prijs weet je dus al. U kunt direct een <strong>abonnement afsluiten door contact met mij op te nemen</strong> en uw website binnen circa. 5 dagen online hebben. Uiteraard kunt u ook contact opnemen voor meer informatie."
+                    },
+                    {
+                        "title": "Hoeveel bedragen de opstartkosten?",
+                        "description": "Indien u voor een jaarlijkse abonnement kiest, <strong>betaalt u geen opstartkosten</strong>. U betaalt enkel €530 per jaar (€44 per maand). Indien u voor een maandelijks abonnement kiest, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
                     },
                     {
                         "title": "Wat is SEO?",
-                        "description": "SEO staat voor zoekmachineoptimalisatie. Het is het proces van het verbeteren van de kwaliteit en kwantiteit van websiteverkeer naar een website of een webpagina van zoekmachines. SEO richt zich op onbetaalde resultaten in plaats van direct verkeer of betaald verkeer."
+                        "description": "SEO staat voor zoekmachineoptimalisatie. Het is het proces van het <strong>verbeteren van de kwaliteit en kwantiteit van websiteverkeer</strong> naar een website of een webpagina van zoekmachines. SEO richt zich op onbetaalde resultaten in plaats van direct verkeer of betaald verkeer. Dit is iets wat ik standaard in mijn websites verwerk."
                     },
                     {
                         "title": "Wat is een domeinnaam?",
-                        "description": "Een domeinnaam is een unieke naam die wordt gebruikt om een IP-adres te identificeren op internet. Een domeinnaam is een adres waarmee mensen uw website kunnen vinden op het internet."
+                        "description": "Een domeinnaam is een unieke naam die wordt gebruikt om een IP-adres te identificeren op internet. Een domeinnaam is een <strong>adres waarmee mensen uw website kunnen vinden op het internet</strong>. Ik regel de domeinnaam voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
                     },
                     {
                         "title": "Wat is hosting?",
-                        "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun website of webpagina op internet te plaatsen. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken."
+                        "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun <strong>website of webpagina op internet te plaatsen</strong>. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken. Ik regel de hosting voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
                     }
                 ]
             }
