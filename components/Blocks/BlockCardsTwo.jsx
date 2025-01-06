@@ -14,14 +14,14 @@ const BlockCardsTwo = ({ content }) => {
                     <Heading title={title} subtitle={subtitle} />
                     <div dangerouslySetInnerHTML={{ __html: text }} className='p' />
                 </section>
-                <div className='mt-8 lg:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='mt-8 lg:mt-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4'>
                     {
                         items.map((item, i) => {
                             const { title, description } = item;
 
                             return (
-                                <Card key={i} className="max-w-sm bg-transparent card_two">
-                                    <h5 className="text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                <Card key={i} className="bg-transparent card_two">
+                                    <h5 className="text-xl xl:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         {title}
                                     </h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400">
