@@ -1,10 +1,10 @@
 import React from 'react'
-import { Timeline } from "flowbite-react";
+import { Card } from "flowbite-react";
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import Heading from '../Heading';
 import ButtonOne from '../Buttons/ButtonOne';
 
-const BlockTimeline = ({ content }) => {
+const BlockCardsTwo = ({ content }) => {
     const { title, text, slug, subtitle, position, items, buttons } = content;
 
     return (
@@ -14,22 +14,23 @@ const BlockTimeline = ({ content }) => {
                     <Heading title={title} subtitle={subtitle} />
                     <div dangerouslySetInnerHTML={{ __html: text }} className='p' />
                 </section>
-                <div className='mt-8 lg:mt-10'>
-                    <Timeline>
-                        {
-                            items.map((item, i) => {
-                                return (
-                                    <Timeline.Item key={i}>
-                                        <Timeline.Point />
-                                        <Timeline.Content>
-                                            <Timeline.Title className='normal-case mb-2 lg:text-xl'>{item.title}</Timeline.Title>
-                                            <Timeline.Body className='p text-gray-600'>{item.description}</Timeline.Body>
-                                        </Timeline.Content>
-                                    </Timeline.Item>
-                                )
-                            })
-                        }
-                    </Timeline>
+                <div className='mt-8 lg:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+                    {
+                        items.map((item, i) => {
+                            const { title, description } = item;
+
+                            return (
+                                <Card key={i} className="max-w-sm bg-transparent card_two">
+                                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        {title}
+                                    </h5>
+                                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                                        {description}
+                                    </p>
+                                </Card>
+                            )
+                        })
+                    }
                 </div>
                 {
                     (buttons && buttons.length >= 1) && (
@@ -55,4 +56,4 @@ const BlockTimeline = ({ content }) => {
     )
 }
 
-export default BlockTimeline
+export default BlockCardsTwo;

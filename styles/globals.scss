@@ -145,7 +145,8 @@ p a {
   overflow: hidden;
 }
 
-#accordion, .accordion {
+#accordion,
+.accordion {
   h2 {
     @apply font_quicksand text-base lg:text-lg normal-case font-semibold mb-0;
   }
@@ -228,5 +229,13 @@ p a {
 
   svg {
     @apply md:h-6 w-6;
+  }
+}
+
+.card_two {
+  @apply bg-transparent rounded-2xl text-dark shadow-md border border-dark p-3 xl:border-opacity-20 border-opacity-30;
+
+  >div {
+    @apply justify-start;
   }
 }

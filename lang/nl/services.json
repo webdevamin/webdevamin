@@ -136,7 +136,7 @@
                 "side": "pricing"
             },
             {
-                "component": "block-timeline",
+                "component": "block-cards-two",
                 "title": "Voorbeeld website",
                 "slug": "what",
                 "subtitle": "Secties & functionaliteiten",
@@ -144,35 +144,35 @@
                 "text": "Hieronder vindt u een overzicht van voorbeeldsecties en functionaliteiten die inbegrepen zijn bij een abonnement voor een professionele website. Deze onderdelen zijn essentieel voor elke zakelijke website en dragen bij aan het promoten van uw bedrijf en het aantrekken van klanten. U kunt de secties en functionaliteiten naar wens aanpassen om perfect aan te sluiten bij uw behoeften.",
                 "items": [
                     {
-                        "title": "Inleiding (Hero)",
+                        "title": "1. Inleiding (Hero)",
                         "description": "Een inleiding (of een 'hero') is de eerste sectie die bezoekers zien wanneer ze uw website openen. Hierin staat een korte beschrijving van uw bedrijf en de diensten die u aanbiedt."
                     },
                     {
-                        "title": "Over ons",
+                        "title": "2. Over ons",
                         "description": "In de over ons-sectie vertelt u meer over uw bedrijf, de geschiedenis, de missie en visie, en de mensen die er werken."
                     },
                     {
-                        "title": "Diensten",
+                        "title": "3. Diensten",
                         "description": "In de diensten-sectie beschrijft u de diensten die u aanbiedt, met eventueel een prijslijst en een contactformulier."
                     },
                     {
-                        "title": "Galerij/Realisaties",
+                        "title": "4. Galerij/Realisaties",
                         "description": "In deze gedeelte toont u projecten die u in het verleden heeft gedaan, met foto's, video's en klantbeoordelingen."
                     },
                     {
-                        "title": "Prijzen",
+                        "title": "5. Prijzen",
                         "description": "In de prijzen-sectie toont u de prijzen van uw diensten, eventueel met kortingen en promoties."
                     },
                     {
-                        "title": "Klantenbeoordelingen",
+                        "title": "6. Klantenbeoordelingen",
                         "description": "In de klantenbeoordelingen-sectie toont u beoordelingen van uw gekozen klanten die uw diensten hebben gebruikt. U kiest zelf welke."
                     },
                     {
-                        "title": "Contactformulier",
+                        "title": "7. Contactformulier",
                         "description": "In de contactformulier-sectie staat uw contactgegevens, zoals uw adres, telefoonnummer, e-mailadres en een contactformulier waarop je gebruikers vragen kunnen stellen en/of offerte kunnen aanvragen. Waardoor u een mail en/of SMS ontvangt."
                     },
                     {
-                        "title": "Footer",
+                        "title": "8. Footer",
                         "description": "De footer is het onderste gedeelte van uw website, waarin u uw contactgegevens, bedrijfsgegevens, links naar sociale media en meer plaatst."
                     }
                 ],
