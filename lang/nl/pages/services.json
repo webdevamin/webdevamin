@@ -1,11 +1,11 @@
 {
     "seo": {
-        "title": "Diensten: website laten maken en meer",
-        "description": "Freelance websitebouwer, webdeveloper en logo ontwerper uit Brugge, België. Lees meer over mezelf en ontdek hoe ik u van dienst kan zijn.",
+        "title": "Alle diensten: website laten maken en meer",
+        "description": "Bekijk alle diensten die ik aanbied: webdesign, webdevelopment, SEO en meer. Neem contact op met mij voor een gratis offerte of kies een abonnement!",
         "canonical": "https://webdevamin.com/nl/services",
         "image": "https://bucket.webdevamin.com/services_nl.jpg",
         "ogTitle": "Mijn diensten: wat bied ik aan",
-        "ogDescription": "Freelance websitebouwer, webdeveloper en logo ontwerper uit Brugge, België. Lees meer over mezelf en ontdek hoe ik u van dienst kan zijn."
+        "ogDescription": "Bekijk alle diensten die ik aanbied: webdesign, webdevelopment, SEO en meer. Neem contact op met mij voor een gratis offerte of kies een abonnement!"
     },
     "alternates": [
         {
@@ -26,162 +26,31 @@
     "title": "Diensten",
     "slug": "services",
     "hide_link": false,
-    "blocks": [
-        {
-            "title": "Diensten",
-            "slug": "hero",
-            "subtitle": "Specialiteiten, etc.",
-            "text": "<p>Freelance websitebouwer, webdeveloper en logo-ontwerper uit Brugge, België. Lees meer over mezelf en ontdek hoe ik u van dienst kan zijn.</p>",
-            "button": [
-                {
-                    "href": "#expertise",
-                    "text": "Lees meer",
-                    "external": false
-                }
-            ],
-            "image": {
-                "src": "https://bucket.webdevamin.com/avatar.svg",
-                "alt": "Mannelijk avatar afbeelding.",
-                "width": 485,
-                "height": 485,
-                "objectFit": "cover"
+    "hero": {
+        "title": "Diensten",
+        "text": "Bekijk alle diensten die ik aanbied: webdesign, webdevelopment, SEO en meer. Neem contact op met mij voor een gratis offerte of om een abonnement te kiezen!",
+        "image": {
+            "src": "https://bucket.webdevamin.com/services.png",
+            "alt": "Roze illustratie van een werkplek met computer, planten, lamp en kantooraccessoires in minimalistische ontwerpstijl",
+            "width": 500,
+            "height": 500,
+            "objectFit": "cover"
+        },
+        "button": [
+            {
+                "text": "Neem contact op",
+                "href": "/contact"
+            },
+            {
+                "text": "Bekijk prijzen",
+                "href": "/pricing"
             }
-        },
-        {
-            "title": "Mijn expertise",
-            "slug": "expertise",
-            "subtitle": "Skills",
-            "services": [
-                {
-                    "title": "Webdesign",
-                    "showcase": true,
-                    "backgroundColor": "rgb(59 130 246)",
-                    "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
-                    "icon": {
-                        "name": "faPalette",
-                        "brands": false
-                    }
-                },
-                {
-                    "title": "Webdevelopment",
-                    "showcase": true,
-                    "backgroundColor": "rgb(16 185 129)",
-                    "text": "<p>Allerlei soorten webapplicaties met databases zoals webshops, administratie apps en meer. Alles wat u nodig heeft om uw zaak te vergemakkelijken.</p>",
-                    "icon": {
-                        "name": "faCode",
-                        "brands": false
-                    }
-                },
-                {
-                    "title": "Logo Ontwerp",
-                    "showcase": true,
-                    "backgroundColor": "rgb(238 239 70)",
-                    "text": "<p>Ik ontwerp simpel en/of aangepast logo voor uw zaak. Met toepassing op uniciteit zorg ik er voor dat uw bedrijf en uw merk juist vertegenwoordigen. Grafisch ontwerp is een grote hit.</p>",
-                    "icon": {
-                        "name": "faPenFancy",
-                        "brands": false
-                    }
-                },
-                {
-                    "title": "SEO & marketing",
-                    "showcase": true,
-                    "backgroundColor": "rgb(99 102 241)",
-                    "text": "<p>Er voor zorgen dat uw website of webapplicatie zichtbaar wordt op Google (of eender welke search engines zoals DuckDuckGo) zoekresultaten om meer gebruikers aan te trekken met social media platformen, contentmarketing, webanalyse en meer.</p>",
-                    "icon": {
-                        "name": "faBullhorn",
-                        "brands": false
-                    }
-                }
-            ]
-        },
-        {
-            "title": "Wie ben ik",
-            "subtitle": "Bio",
-            "summary": "Webdesigner | Webdeveloper | Logo Ontwerp",
-            "slug": "who",
-            "text": "<p>Freelance <strong>website bouwer</strong> en <strong>logo designer</strong> uit <strong>Brugge</strong>, <strong>West-Vlaanderen</strong>. Met een bachelor diploma in Software Engineering en jarenlange professionele werkervaring, lever ik op maat gemaakte<strong> digitale oplossingen</strong> met focus op uw behoeften. Ik oefen verschillende rollen uit: webdesigner, web developer, logo ontwerper en meer.</p>",
-            "button": [
-                {
-                    "href": "https://docs.google.com/document/d/e/2PACX-1vTkRGHOPEtuK0Hu_pIAUD9DWQE9QCJoPPrpYKDzOApbtIHZ5q5xKqBaoJuFuWeUAx5fG-ABjC8X7AeM/pub",
-                    "text": "Mijn CV",
-                    "external": true
-                }
-            ],
-            "img": {
-                "src": "https://bucket.webdevamin.com/profile.svg",
-                "alt": "Persoon presenteert profiel informatie."
-            }
-        },
-        {
-            "title": "Waarom mij",
-            "subtitle": "Selling points",
-            "summary": "Freelance | Webdesign | Logo | Goedkoop",
-            "slug": "why",
-            "text": "<p>Ik ben een <strong>freelancer/zelfstandige</strong> met een eigen <strong>webbureau</strong>. Dat betekent dat in tegenstelling tot een softwarebureau/bedrijf, ik uw enige persoon ben met wie u communiceert en werkt. Ik bezorg verschillende soorten digitale oplossingen. Het maakt niet uit of het om simpele business websites gaat, administratie apps met inlogsysteem, food delivery apps, webshops, etc. met een uitstekende SEO score. Met andere woorden, alles wat op het scherm online/offline moet verschijnen, werk ik af. Een digitale oplossing hoeft niet noodzakelijk “een business website” te zijn. Uiteindelijk, met de juiste technologieën achter mijn rug kan <strong>hosting spotgoedkoop of zelfs gratis</strong> zijn.</p>",
-            "button": [
-                {
-                    "href": "https://docs.google.com/document/d/e/2PACX-1vTkRGHOPEtuK0Hu_pIAUD9DWQE9QCJoPPrpYKDzOApbtIHZ5q5xKqBaoJuFuWeUAx5fG-ABjC8X7AeM/pub",
-                    "text": "Mijn CV",
-                    "external": true
-                }
-            ],
-            "img": {
-                "src": "https://bucket.webdevamin.com/why.svg",
-                "alt": "Enorm, groene vraagteken met decoratie."
-            }
-        },
-        {
-            "title": "Lijst met opties",
-            "subtitle": "Services",
-            "slug": "what",
-            "text": "<p>Een overzicht van de meest gebruikte services die klanten doorgaans vragen om in hun digitale oplossing(en) te implementeren. Uiteraard zijn er veel meer.</p>",
-            "serviceDetails": [
-                {
-                    "title": "Uitstekende prestaties & practices",
-                    "sort": 1,
-                    "description": "Your website(s) or web application(s) will have an excellent score when it comes to performance, speed, accessibility and best practices."
-                },
-                {
-                    "title": "Mobile friendly & responsive",
-                    "sort": 2,
-                    "description": "Uw oplossing(en) worden correct weergegeven op elk apparaat. Of het nu gaat om een smartphone, tablet, laptop, enz."
-                },
-                {
-                    "title": "Uitstekende SEO & zichtbaarheid",
-                    "sort": 3,
-                    "description": "Tijdens het ontwikkelen van uw app(s), zorg ik voor uitstekende SEO om uw bedrijf te optimaliseren op verschillende zoekmachines zoals Google, Bing, DuckDuckGo en meer. Uiteindelijk zal ik u een overzicht bezorgen met digital marketing, om de zichtbaarheid van je bedrijf nog verder te vergroten indien u het wenst. Uiteraard dit zonder kosten."
-                },
-                {
-                    "title": "Hosting inbegrepen & spotgoedkoop",
-                    "sort": 4,
-                    "description": "Hosting is eenvoudig, daar zorg ik voor. Met uitgebreide kennis van software engineering, zal hosting spotgoedkoop worden of zelfs gratis afhankelijk van de grootte en vereisten van uw app(s)."
-                },
-                {
-                    "title": "Hybrid webapp & mobile",
-                    "sort": 5,
-                    "description": "Uw webapp/website kan ook als standalone app op het startscherm van uw smartphone geïnstalleerd worden. Geweldig toch?"
-                },
-                {
-                    "title": "Verschillende integraties & derde partijen",
-                    "sort": 6,
-                    "description": "Notificaties/mails/SMS-berichten verzenden voor elke nieuwe klant die u ontvangt. Of misschien heeft u een afzonderlijke mobiele app nodig om te zien hoeveel gebruikers uw website bezocht hebben. Of real-time te weten komen wie wat besteld heeft. De mogelijkheden zijn eindeloos. Deze klus is niet voor een webdesigner bedoeld, maar voor een software developer of een engineer. Dit is mijn niche."
-                },
-                {
-                    "title": "Onderhoud & uitbreiding",
-                    "sort": 7,
-                    "description": "Heeft u verbeteringen of nieuwe functionaliteiten in uw website/app nodig die ik voor u ontwikkeld heb? Laat mij het verder afhandelen. Je hoeft jezelf niet te bemoeien door iemand anders te gaan zoeken. Ik zorg ervoor dat uw app verder kan blijven groeien."
-                },
-                {
-                    "title": "Grafisch logo ontwerp",
-                    "sort": 8,
-                    "description": "Indien u geen logo voor uw zaak hebt, ben ik wel uw geschikte kandidaat. I maak zowel simpele als professionele logo's om uw uniciteit te garanderen."
-                },
-                {
-                    "title": "Digital marketing",
-                    "sort": 9,
-                    "description": "Ik zorg er voor dat uw zaak een regelmatig klantenverkeer krijgt via sociale mediaplatforms, contentmarketing, webanalyse en onderzoek. Ik bied de meest geschikte methoden aan op basis van uw niche, beroep en locatie."
-                }
-            ]
-        }
-    ]
+        ]
+    },
+    "content": {
+        "title": "One-in-all arsenaal",
+        "subtitle": "Uitstekende kwaliteit",
+        "text": "Van vakkundig gemaakte websites tot geavanceerde SEO-strategieën en geavanceerde webontwikkelingsoplossingen, presenteer ik een buitengewone verzameling expertise die is ontworpen om uw online aanwezigheid naar ongekende hoogten te tillen. Stap binnen in een wereld waar uw digitale ambities werkelijkheid worden."
+    },
+    "serviceLinkBtnText": "Lees meer"
 }

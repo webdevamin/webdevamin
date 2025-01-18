@@ -14,24 +14,9 @@
                 "href": "/services/webdesign"
             },
             {
-                "title": "Webdevelopment",
-                "href": "/services/webdevelopment"
-            },
-            {
-                "title": "Webhosting",
-                "href": "/services/webhosting"
-            },
-            {
-                "title": "SEO",
-                "href": "/services/seo"
-            },
-            {
-                "title": "Laravel developer",
-                "href": "/services/laravel"
-            },
-            {
-                "title": "Logo design",
-                "href": "/services/logo"
+                "borderTop": true,
+                "title": "Toon alle diensten",
+                "href": "/services"
             }
         ]
     },

@@ -34,7 +34,6 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                 const { href, title, subs } = page;
                                 const isLast = i === nonHiddenPages.length - 1;
                                 const isSubsPresent = subs && subs.length > 0;
-                                const pageLocale = locale !== `en` ? `${locale}${href}` : `${href}`;
 
                                 return (
                                     <div key={i}>
@@ -43,22 +42,24 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                 <div className={`dropdown_wrapper w-full transition-all xl:block lg:text-lg border-theme 
                                             ease-linear md:border-none relative 
                                             hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`}`}>
-                                                    <Dropdown inline label={(<span className='pr-1'>{title}</span>)} className='rounded-xl font-semibold z-[9999] full_width'>
+                                                    <Dropdown key={i} inline label={(<span className='pr-1'>{title}</span>)} className='rounded-xl font-semibold z-[9999] full_width'>
                                                         {
                                                             subs.map((sub, i) => {
-                                                                const { title, href } = sub;
-
-                                                                const pageLocale = locale !== `en` ? `/${locale}${href}` : `/${href}`;
+                                                                const { title, href, borderTop } = sub;
+                                                                const pageLocale = locale !== `en` ? `/${locale}${href}` : `${href}`;
 
                                                                 return (
-                                                                    <Dropdown.Item key={i} href={pageLocale}>{title}</Dropdown.Item>
+                                                                    <div key={i}>
+                                                                        <Dropdown.Divider className={`${borderTop ? `block` : `hidden`}`} />
+                                                                        <Dropdown.Item key={i} href={pageLocale}>{title}</Dropdown.Item>
+                                                                    </div>
                                                                 )
                                                             })
                                                         }
                                                     </Dropdown>
                                                 </div>
                                             ) : (
-                                                <Link href={pageLocale} className={`block md:p-0 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
+                                                <Link href={`/${locale}${href}`} className={`block md:p-0 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
                                                     {title}
                                                 </Link>
                                             )

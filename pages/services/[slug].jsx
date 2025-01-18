@@ -16,7 +16,7 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
     }
 
     return (
-        <div>
+        <>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroOne content={heroContent} socials={socialsData} />
@@ -31,7 +31,7 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
                 <Footer services={servicesData} blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
-        </div>
+        </>
     )
 }
 
@@ -39,10 +39,9 @@ export default Service
 
 export async function getStaticPaths() {
     const servicesDataNl = (await import(`../../lang/nl/services.json`)).default;
-    // const blogsDataEn = (await import(`../../lang/en/services.json`)).default;
+    const servicesDataEn = (await import(`../../lang/en/services.json`)).default;
 
-    // const blogsAllLocales = blogsDataNl.concat(blogsDataEn);
-    const servicesAllLocales = servicesDataNl
+    const servicesAllLocales = servicesDataNl.concat(servicesDataEn);
 
     const paths = servicesAllLocales.map((serviceRaw) => {
         const { locale, slug } = serviceRaw;
@@ -60,12 +59,26 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     params.locale = [locale];
-    const servicesData = (await import(`../../lang/${locale}/services.json`)).default;
-    const pricingData = (await import(`../../lang/${locale}/pricing.json`)).default;
 
-    const serviceData = servicesData.find((p) => {
-        return p.slug === params.slug;
-    });
+    let servicesData = (await import(`../../lang/${locale}/services.json`)).default;
+    const pricingData = (await import(`../../lang/${locale}/prices.json`)).default;
+
+    // Filter services that have SEO data
+    servicesData = servicesData.filter((p) => p.seo !== undefined);
+
+    if (!servicesData.length) {
+        return {
+            notFound: true
+        }
+    }
+
+    const serviceData = servicesData.find((p) => p.slug === params.slug);
+    
+    if (!serviceData) {
+        return {
+            notFound: true
+        }
+    }
 
     return {
         props: {

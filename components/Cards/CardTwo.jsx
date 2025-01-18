@@ -18,16 +18,15 @@ const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border, type
             </div>
             <div className={`mt-4 ml-1`}>
                 <h3 className={`mb-2 sm:mb-3 text-base lg:text-lg`}>
-                    <span>{title}</span>
                     {
                         badge && (
-                            <span className={`text-xs sm:text-sm rounded px-1 py-0.5 ml-3
-                            ${bgColor || `bg-cyan-500`} 
+                            <span className={`text-xs sm:text-sm rounded px-1.5 mr-3 py-0.5 ${bgColor || `bg-theme_dark`} 
                             ${color || `text-white`}`}>
                                 {bText}
                             </span>
                         )
                     }
+                    <span>{title}</span>
                 </h3>
                 <p className={`text-base clamp_2`}>{subtitle}</p>
                 <ButtonThree href={`/projects/${slug}`}

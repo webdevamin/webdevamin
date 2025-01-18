@@ -19,8 +19,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
         <>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-            <HeroOne content={blocks.find(block => block.slug === `hero`)}
-                socials={socialsData} />
+            <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
                 <section id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />

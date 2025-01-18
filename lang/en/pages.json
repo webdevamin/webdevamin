@@ -7,7 +7,18 @@
     {
         "title": "Services",
         "href": "/services",
-        "icon": "faCircleUser"
+        "icon": "faCircleUser",
+        "subs": [
+            {
+                "title": "Web design",
+                "href": "/services/webdesign"
+            },
+            {
+                "borderTop": true,
+                "title": "Show all services",
+                "href": "/services"
+            }
+        ]
     },
     {
         "title": "Projects",

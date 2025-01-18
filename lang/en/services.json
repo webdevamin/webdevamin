@@ -1,42 +1,273 @@
 [
     {
-        "title": "Web Design",
+        "seo": {
+            "title": "Professional Website Creation | Professional Web Design",
+            "description": "Need a professional website? Get your business website created with high-quality web design and SEO! View pricing and get in touch!",
+            "canonical": "https://webdevamin.com/services/webdesign",
+            "image": "https://bucket.webdevamin.com/webdesign_og.jpg",
+            "ogTitle": "Professional Website Creation | Affordable Web Design",
+            "ogDescription": "Need a professional website? Get your business website created with high-quality web design and SEO! View pricing and get in touch!"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/services/webdesign",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/services/webdesign",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/nl/services/webdesign",
+                "locale": "nl"
+            }
+        ],
+        "title": "Professional web design",
+        "titleTwo": "Web Design",
+        "slug": "webdesign",
+        "includeBtn": true,
+        "locale": "en",
         "showcase": true,
-        "backgroundColor": "rgb(59 130 246)",
-        "text": "<p>Ensuring that your website or web application becomes visible on Google (or any search engines like DuckDuckGo) search results to attract more users with social media platforms, content marketing, web analytics, and more.</p>",
-        "icon": {
-            "name": "faPalette",
-            "brands": false
-        }
+        "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription prices and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
+        "shortDescription": "Need a professional website? I offer affordable and <strong>state-of-the-art web design services</strong>. <strong>Attract more customers and strengthen your business</strong> with a custom-made business website that exists on the internet.",
+        "img": {
+            "src": "https://bucket.webdevamin.com/webdesign.png",
+            "alt": "Desktop with browser illustration.",
+            "width": 780,
+            "height": 342,
+            "objectFit": "cover"
+        },
+        "button": [
+            {
+                "href": "#pricing",
+                "text": "View pricing",
+                "external": false
+            },
+            {
+                "href": "/contact",
+                "text": "Contact me",
+                "external": false
+            }
+        ],
+        "contents": [
+            {
+                "component": "block-normal",
+                "title": "Why web design",
+                "slug": "why",
+                "subtitle": "More customers, branding & efficiency",
+                "position": "left",
+                "text": "<p>Most starting businesses don't have a website. But what exactly is a website, and what's its purpose? A website, created by a web designer or developer, acts as <strong>digital real estate on the internet</strong>. This makes it easier to be found and increases your customer reach throughout the internet. It's meant to <strong>promote your business, both administratively and commercially</strong>, depending on your goals.</p><p>Want to attract customers and let them easily request a quote? With a website, customers can fill out a form, after which you receive the request by email, SMS, or WhatsApp. This is just one of many options. Another example is a contact form for potential customer inquiries. You can also integrate a small CRM system for customer, user, or employee management, making everything easily organized.</p><p>In short, a website is digital real estate on the internet that increases your findability and offers various ways to make contact and strengthen your business. About 70% of businesses have a website, and potential customers are <strong>less likely to become your customer if they discover your business doesn't have a website</strong>.</p>",
+                "buttons": [
+                    {
+                        "href": "/projects",
+                        "text": "View Projects"
+                    }
+                ],
+                "img": {
+                    "src": "https://bucket.webdevamin.com/webdesign-about.jpeg",
+                    "alt": "A computer in an office space.",
+                    "width": 780,
+                    "height": 342
+                }
+            },
+            {
+                "component": "block-cards",
+                "title": "Web design process",
+                "slug": "process",
+                "subtitle": "Step by step",
+                "position": "right",
+                "text": "<p>Getting a professional website made takes only about 5 days. Here you'll find a step-by-step explanation of my approach to developing your site with excellent SEO. There may be variations, but what's described below gives a general overview of the process.</p>",
+                "textTwo": {
+                    "textTwoContent": "Want to renew your existing website? ",
+                    "textTwoLinkContent": "See how I can help you here",
+                    "textTwolinkHref": "/services/website-renewal"
+                },
+                "items": [
+                    {
+                        "title": "1. Design choice",
+                        "body": "<p>We start by choosing the design for your website. There are three possibilities: I select a design that best fits your website and niche, you choose a design yourself from a list I'll send you, or I create a completely custom design, entirely based on your wishes. If you choose a subscription with me, you'll also receive a <strong>free logo</strong>.</p>",
+                        "backgroundColor": "rgb(59 130 246)",
+                        "icon": {
+                            "name": "faPalette",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "3. Website development",
+                        "body": "<p>In this phase, I develop your website, including excellent SEO, based on the two requirements mentioned above. On average, this process takes about five days. Variations can occur but are exceptional.</p>",
+                        "backgroundColor": "rgb(238 239 70)",
+                        "icon": {
+                            "name": "faCode",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "2. Domain name, hosting, etc. acquisition",
+                        "body": "<p>You choose a domain name, which can end with an extension of your choice, such as .com or .co.uk. Additionally, hosting is needed, which involves monthly costs. All necessary purchases, such as the domain name and hosting, are handled by me if you take out a subscription with me; you don't have to do anything or pay anything for that. I also take care of invoicing for such matters. You always remain the owner, I act as manager.</p>",
+                        "backgroundColor": "rgb(16 185 129)",
+                        "icon": {
+                            "name": "faPenFancy",
+                            "brands": false
+                        }
+                    },
+                    {
+                        "title": "4. Final stage",
+                        "body": "<p>Your website is developed and linked to your purchased domain name. I put the website online and voilà, your site is ready! Additionally, I ensure your website is always updated and maintained if you choose a subscription, and I offer 24/7 support for any questions or comments you have. Want to make changes? No problem, I'm happy to take care of that, and you can always contact me for expansions!</p>",
+                        "backgroundColor": "rgb(99 102 241)",
+                        "icon": {
+                            "name": "faBullhorn",
+                            "brands": false
+                        }
+                    }
+                ]
+            },
+            {
+                "component": "block-cols",
+                "title": "Pricing",
+                "slug": "pricing",
+                "subtitle": "Standard subscription",
+                "position": "right",
+                "text": "<p>If you want an <strong>affordable website</strong>, you've come to the right place. Large agencies quickly charge more than €3,000 for developing a professional, business website – and that's often excluding high monthly costs!</p><p>With me, you only pay <strong>€49 excl. VAT or €44 per month if you choose an annual subscription, for a powerful, custom-made website</strong> that every professional needs, complete with all essential sections.</p>",
+                "miscLink": {
+                    "textMisc": "Need a different solution, such as a website with more features, a heavy web application, web shop, etc., get in touch for a custom quote or ",
+                    "linkText": "view all prices here",
+                    "link": "/pricing"
+                },
+                "side": "pricing"
+            },
+            {
+                "component": "block-cards-two",
+                "title": "Example website",
+                "slug": "what",
+                "subtitle": "Example Sections & functionalities",
+                "position": "right",
+                "text": "<p>Below you'll find an overview of example sections and functionalities included with a subscription for a professional website. These components are essential for any business website and contribute to promoting your business and attracting customers. <strong>You can customize the sections and functionalities to perfectly match your needs.</strong></p>",
+                "items": [
+                    {
+                        "title": "1. Introduction (Hero)",
+                        "description": "An introduction (or 'hero') is the first section visitors see when they open your website. It contains a brief description of your business and the services you offer."
+                    },
+                    {
+                        "title": "2. About us",
+                        "description": "In the about us section, you tell more about your company, its history, mission and vision, and the people who work there."
+                    },
+                    {
+                        "title": "3. Services",
+                        "description": "In the services section, you describe the services you offer, possibly with a price list and contact form."
+                    },
+                    {
+                        "title": "4. Gallery/Portfolio",
+                        "description": "In this section, you show projects you've done in the past, with photos, videos, and customer reviews."
+                    },
+                    {
+                        "title": "5. Pricing",
+                        "description": "In the pricing section, you show the prices of your services, possibly with discounts and promotions."
+                    },
+                    {
+                        "title": "6. Customer reviews",
+                        "description": "In the customer reviews section, you show reviews from your chosen customers who have used your services. You choose which ones to display."
+                    },
+                    {
+                        "title": "7. Contact form",
+                        "description": "In the contact form section, you'll find your contact details, such as your address, phone number, email address, and a contact form where users can ask questions and/or request quotes. You'll receive notifications by email and/or SMS."
+                    },
+                    {
+                        "title": "8. Footer",
+                        "description": "The footer is the bottom section of your website, where you place your contact details, company information, social media links, and more."
+                    }
+                ],
+                "buttons": [
+                    {
+                        "href": "/projects/williamprojecten",
+                        "text": "View example website"
+                    }
+                ]
+            },
+            {
+                "component": "block-accordion",
+                "title": "Frequently Asked Questions",
+                "slug": "faq",
+                "subtitle": "Questions & answers",
+                "text": "Below you'll find a list of frequently asked questions about web design and websites. If you have another question, don't hesitate to contact me.",
+                "items": [
+                    {
+                        "title": "What's the average price to have a website made?",
+                        "description": "The average price for having a website made varies greatly, depending on the project's complexity, the functionalities you need, and the web designer's experience. Fortunately, with me, you only pay <strong>€49 excl. VAT or €44 per month</strong> if you choose an annual subscription. It comes with many benefits, such as a <strong>free domain name, hosting, maintenance, and support</strong>."
+                    },
+                    {
+                        "title": "Can I request a quote to have a website made?",
+                        "description": "Sure, but why? When you know that for a professional website, you only pay €49 per month excl. VAT or €44 per month if you opt for an annual subscription? So you already know the price. You can <strong>start a subscription immediately by contacting me</strong> and have your website online in about 5 days. Of course, you can also contact me for more information."
+                    },
+                    {
+                        "title": "What are the startup costs?",
+                        "description": "If you choose an annual subscription, <strong>you pay no startup costs</strong>. You only pay €530 per year (€44 per month). If you choose a monthly subscription, you pay a <strong>one-time fee of €180</strong> for startup costs excl. VAT."
+                    },
+                    {
+                        "title": "What is SEO?",
+                        "description": "SEO stands for Search Engine Optimization. It's the process of <strong>improving the quality and quantity of website traffic</strong> to a website or web page from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I implement as standard in my websites."
+                    },
+                    {
+                        "title": "What is a domain name?",
+                        "description": "A domain name is a unique name used to identify an IP address on the internet. A domain name is an <strong>address through which people can find your website on the internet</strong>. I handle the domain name for you and cover the costs. You don't need to worry about this."
+                    },
+                    {
+                        "title": "What is hosting?",
+                        "description": "Web hosting is a service that allows businesses and individuals to <strong>place their website or web page on the internet</strong>. A web host, or web hosting service provider, is a company that provides the technologies and services needed for the website or web page to be viewed on the internet. I handle the hosting for you and cover the costs. You don't need to worry about this."
+                    }
+                ]
+            }
+        ]
     },
     {
         "title": "Web Development",
-        "showcase": true,
-        "backgroundColor": "rgb(16 185 129)",
-        "text": "<p>All kinds of web applications with databases such as webshops, administrative apps, and more. Everything you need to streamline your business.</p>",
-        "icon": {
-            "name": "faCode",
-            "brands": false
-        }
+        "slug": "webdevelopment",
+        "shortDescription": "Have a professional <strong>custom web application</strong> developed for your business to automate and optimize business processes, such as: CRM, ERP, reservation system, SaaS, etc. Whether you need small business tools or complex enterprise solutions - I always focus on usability, scalability and security. The result? <strong>Time savings, increased customer reach and profit for your business</strong>."
+    },
+    {
+        "title": "E-commerce",
+        "slug": "ecommerce",
+        "shortDescription": "Start <strong>selling online</strong> with a secure and user-friendly <strong>e-commerce website</strong> for your business. With a modern design that perfectly fits your growth."
+    },
+    {
+        "title": "Web Hosting",
+        "slug": "webhosting",
+        "shortDescription": "During the development of your website, I take full care of <strong>domain name and hosting</strong> if you choose a subscription. You become the rightful owner of both services, while <strong>I manage the technical aspects</strong>. Furthermore, I also handle <strong>all administrative tasks and invoices</strong> for both the domain name and hosting. The costs are covered by me."
+    },
+    {
+        "title": "SEO",
+        "slug": "seo",
+        "shortDescription": "When developing your website, I pay extra attention to <strong>SEO (Search Engine Optimization)</strong>. By applying advanced SEO techniques, I <strong>improve your website's visibility in search engines like Google</strong>. This leads to <strong>more organic traffic to your website</strong>, resulting in higher revenue and better results for your business."
+    },
+    {
+        "title": "Laravel Developer",
+        "slug": "laravel-developer",
+        "shortDescription": "With my extensive expertise in Laravel, a leading open-source PHP framework, I develop <strong>powerful and scalable websites and web applications</strong> for any type of project. From simple websites to complex enterprise solutions."
+    },
+    {
+        "title": "Website Renewal",
+        "slug": "website-renewal",
+        "shortDescription": "Is your current website outdated or not delivering sufficient results? Then it's time for a renewal. With a modern, affordable website, you can achieve <strong>better results immediately</strong>. When renewing your website, we can keep your existing domain name or register a new one. A professional website redesign will <strong>significantly strengthen your online visibility and reach</strong>."
     },
     {
         "title": "Logo Design",
-        "showcase": true,
-        "backgroundColor": "rgb(238 239 70)",
-        "text": "<p>I design simple and/or custom logos for your business. With a focus on uniqueness, I ensure that your company and your brand are accurately represented. Graphic design is a big hit.</p>",
-        "icon": {
-            "name": "faPenFancy",
-            "brands": false
-        }
+        "slug": "graphic-design",
+        "shortDescription": "Strengthen your business identity with a <strong>professional logo</strong> for effective branding and marketing. When choosing a website subscription, you receive a <strong>free logo design</strong>."
     },
     {
-        "title": "SEO & Marketing",
-        "showcase": true,
-        "backgroundColor": "rgb(99 102 241)",
-        "text": "<p>Ensuring that your website or web application becomes visible on Google (or any search engines like DuckDuckGo) search results to attract more users with social media platforms, content marketing, web analytics, and more.</p>",
-        "icon": {
-            "name": "faBullhorn",
-            "brands": false
-        }
+        "title": "Freelance Web Designer",
+        "slug": "freelance-webdesigner",
+        "shortDescription": "Need an affordable freelance web designer? As an experienced freelance website designer, I create <strong>custom responsive websites</strong> with modern designs that drive results. Specializing in <strong>small business web design</strong>, focused on user experience and SEO. Get a professional website that converts visitors into customers."
+    },
+    {
+        "title": "Freelance Web Developer",
+        "slug": "freelance-webdeveloper",
+        "shortDescription": "As a freelance web developer from Belgium, I've been developing <strong>custom websites and web applications since 2019</strong> using modern technologies like PHP, Laravel, Next.js, and Node.js. I deliver <strong>high-quality code</strong> that meets the latest web standards and security guidelines. With my technical expertise, I help make your project successful, regardless of your location."
+    },
+    {
+        "title": "SaaS",
+        "slug": "saas",
+        "shortDescription": "A real powerhouse in terms of software. As a <strong>professional software developer</strong>, I help you develop scalable cloud-based software that <strong>automates your business processes</strong>. With expertise in modern technologies like Laravel, Next.js, and Node.js, I create secure, user-friendly SaaS applications that perfectly align with your business goals. From <strong>subscription systems</strong> to <strong>complete business software</strong> - I deliver custom SaaS solutions that help grow your business."
     }
 ]
