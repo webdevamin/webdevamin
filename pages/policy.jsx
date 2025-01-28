@@ -17,7 +17,7 @@ const Policy = ({ localesData, socialsData, blogsData, servicesData, regionsData
             <PageLayout>
                 <section id={slug1} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
-                    <div className={`mt-7 sm:mt-10 xl:mt-16 lg:w-10/12`}>
+                    <div className={`mt-7 sm:mt-16 xl:mt-24 lg:w-10/12`}>
                         <div dangerouslySetInnerHTML={{ __html: text }}
                             className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
                     </div>
