@@ -27,7 +27,10 @@
         "title": "Professioneel webdesign",
         "titleTwo": "Webdesign",
         "slug": "webdesign",
-        "includeBtn": true,
+        "detailBtn": {
+            "href": "/services/webdesign",
+            "text": "Naar webdesign"
+        },
         "locale": "nl",
         "showcase": true,
         "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen en neem contact op. Of vraag direct een gratis offerte aan indien u voor een eenmalige betaling opteert. Ontdek hoe ik u van dienst kan zijn!",
@@ -227,7 +230,7 @@
     },
     {
         "title": "E-commerce webshop",
-        "slug": "webshop", 
+        "slug": "webshop",
         "shortDescription": "Start met <strong>online verkopen</strong> met een veilige en gebruiksvriendelijke <strong>e-commerce webshop</strong> voor uw bedrijf. Met een modern design dat perfect bij uw groei past."
     },
     {

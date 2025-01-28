@@ -6,7 +6,7 @@ import ButtonOne from '../Buttons/ButtonOne';
 import ButtonThree from '../Buttons/ButtonThree';
 
 const BlockAccordion = ({ content }) => {
-    const { title, text, subtitle, position, items, buttons, itemBtnText } = content;
+    const { title, text, subtitle, position, items, buttons } = content;
 
     return (
         <BlockLayoutOne title={title} includeMaxWidth={false} textCenter={false}>
@@ -23,9 +23,9 @@ const BlockAccordion = ({ content }) => {
                     <Accordion className='text-left'>
                         {
                             items.map((item, i) => {
-                                const { title, shortDescription, description, includeBtn, slug } = item;
+                                const { title, shortDescription, description, detailBtn, slug } = item;
                                 const text = shortDescription || description;
-
+                                console.log(detailBtn);
                                 return (
                                     <Accordion.Panel key={i}>
                                         <Accordion.Title>{title}</Accordion.Title>
@@ -40,9 +40,9 @@ const BlockAccordion = ({ content }) => {
                                                     {text}
                                                 </p>
                                             )}
-                                            {(itemBtnText && includeBtn) && (
+                                            {detailBtn && (
                                                 <div className={`mt-4`}>
-                                                    <ButtonThree href={`/services/${slug}`} text={itemBtnText} outline={true} />
+                                                    <ButtonThree href={detailBtn.href} text={detailBtn.text} />
                                                 </div>
                                             )}
                                         </Accordion.Content>

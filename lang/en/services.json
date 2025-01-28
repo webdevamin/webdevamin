@@ -27,7 +27,10 @@
         "title": "Professional web design",
         "titleTwo": "Web Design",
         "slug": "webdesign",
-        "includeBtn": true,
+        "detailBtn": {
+            "href": "/services/webdesign",
+            "text": "To web design"
+        },
         "locale": "en",
         "showcase": true,
         "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription prices and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
