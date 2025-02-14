@@ -25,7 +25,7 @@ const BlockCardsTwo = ({ content }) => {
 
                             return (
                                 <Card key={i} className="bg-transparent card_two">
-                                    <h3 className="text-xl xl:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    <h3 className="text-xl xl:text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-1">
                                         {title}
                                     </h3>
                                     <p className="font-normal text-gray-700 dark:text-gray-400">

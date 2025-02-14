@@ -111,7 +111,7 @@
             "title": "Beoordelingen",
             "subtitle": "testimonials",
             "slug": "testimonials",
-            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A'>Google My Business profiel</a>.</p>",
+            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
             "testimonials": [
                 {
                     "letter": "A",

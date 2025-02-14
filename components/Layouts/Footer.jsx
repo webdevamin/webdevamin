@@ -87,8 +87,8 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                                     const { titleTwo, showcase, slug } = service;
 
                                     return (
-                                        <li className={`pt-2`} key={i}>
-                                            <Link href={`/services/${slug}`} className={`lg:text-base ${!showcase && `hidden`}`}>
+                                        <li className={`pt-2 ${!showcase && `hidden`}`} key={i}>
+                                            <Link href={`/services/${slug}`} className={`lg:text-base`}>
                                                 {titleTwo}
                                             </Link>
                                         </li>
@@ -136,7 +136,7 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                     </ul>
                     <div className={`md:mt-4`}>
                         <ButtonThree href={`/blogs`} color={`text_theme_all`}
-                            text={locale === `en` ? `More blogs` : `Meer blogs`} />
+                            text={locale === `en` ? `All blogs` : `Alle blogs`} />
                     </div>
                 </div>
                 <div className={`text_light_all`}>

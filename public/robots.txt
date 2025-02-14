@@ -2,6 +2,11 @@
 User-agent: *
 Allow: /
 
+# Disallow
+Disallow: /api/
+Disallow: /404
+Disallow: /500
+
 # Host
 Host: https://webdevamin.com
 

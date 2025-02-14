@@ -280,51 +280,61 @@
     {
         "title": "Web Development",
         "slug": "webdevelopment",
+        "showcase": false,
         "shortDescription": "<p>Have a professional <strong>custom web application</strong> developed for your business to automate and optimize business processes, such as: CRM, ERP, reservation system, SaaS, etc. Whether you need small business tools or complex enterprise solutions - I always focus on usability, scalability and security. The result? <strong>Time savings, increased customer reach and profit for your business</strong>.</p>"
     },
     {
         "title": "E-commerce",
+        "showcase": false,
         "slug": "ecommerce",
         "shortDescription": "<p>Start <strong>selling online</strong> with a secure and user-friendly <strong>e-commerce website</strong> for your business. With a modern design that perfectly fits your growth.</p>"
     },
     {
         "title": "Web Hosting",
         "slug": "webhosting",
+        "showcase": false,
         "shortDescription": "<p>During the development of your website, I take full care of <strong>domain name and hosting</strong> if you choose a subscription. You become the rightful owner of both services, while <strong>I manage the technical aspects</strong>. Furthermore, I also handle <strong>all administrative tasks and invoices</strong> for both the domain name and hosting. The costs are covered by me.</p>"
     },
     {
         "title": "SEO",
         "slug": "seo",
+        "showcase": false,
         "shortDescription": "<p>When developing your website, I pay extra attention to <strong>SEO (Search Engine Optimization)</strong>. By applying advanced SEO techniques, I <strong>improve your website's visibility in search engines like Google</strong>. This leads to <strong>more organic traffic to your website</strong>, resulting in higher revenue and better results for your business.</p>"
     },
     {
         "title": "Laravel Developer",
         "slug": "laravel-developer",
+        "showcase": false,
         "shortDescription": "<p>With my extensive expertise in Laravel, a leading open-source PHP framework, I develop <strong>powerful and scalable websites and web applications</strong> for any type of project. From simple websites to complex enterprise solutions.</p>"
     },
     {
         "title": "Website Renewal",
         "slug": "website-renewal",
+        "showcase": false,
         "shortDescription": "<p>Is your current website outdated or not delivering sufficient results? Then it's time for a renewal. With a modern, affordable website, you can achieve <strong>better results immediately</strong>. When renewing your website, we can keep your existing domain name or register a new one. A professional website redesign will <strong>significantly strengthen your online visibility and reach</strong>.</p>"
     },
     {
         "title": "Logo Design",
         "slug": "graphic-design",
+        "showcase": false,
         "shortDescription": "<p>Strengthen your business identity with a <strong>professional logo</strong> for effective branding and marketing. When choosing a website subscription, you receive a <strong>free logo design</strong>.</p>"
     },
     {
         "title": "Freelance Web Designer",
         "slug": "freelance-webdesigner",
+        "showcase": false,
         "shortDescription": "<p>Need an affordable freelance web designer? As an experienced freelance website designer, I create <strong>custom responsive websites</strong> with modern designs that drive results. Specializing in <strong>small business web design</strong>, focused on user experience and SEO. Get a professional website that converts visitors into customers.</p>"
     },
     {
         "title": "Freelance Web Developer",
         "slug": "freelance-webdeveloper",
+        "showcase": false,
         "shortDescription": "<p>As a freelance web developer from Belgium, I've been developing <strong>custom websites and web applications since 2019</strong> using modern technologies like PHP, Laravel, Next.js, and Node.js. I deliver <strong>high-quality code</strong> that meets the latest web standards and security guidelines. With my technical expertise, I help make your project successful, regardless of your location.</p>"
     },
     {
         "title": "SaaS",
         "slug": "saas",
+        "showcase": false,
         "shortDescription": "<p><p>A real powerhouse in terms of software. As a <strong>professional software developer</strong>, I help you develop scalable cloud-based software that <strong>automates your business processes</strong>. With expertise in modern technologies like Laravel, Next.js, and Node.js, I create secure, user-friendly SaaS applications that perfectly align with your business goals. From <strong>subscription systems</strong> to <strong>complete business software</strong> - I deliver custom SaaS solutions that help grow your business.</p></p>"
     }
 ]

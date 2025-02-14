@@ -277,51 +277,61 @@
     {
         "title": "Webdevelopment",
         "slug": "webdevelopment",
+        "showcase": false,
         "shortDescription": "Laat een professionele <strong>webapplicatie op maat</strong> ontwikkelen voor uw bedrijf om bedrijfsprocessen te automatiseren en optimaliseren, zoals: CRM, ERP, reservatiesysteem, SaaS, etc. Of u nu kleine bedrijfstools of complexe enterprise-oplossingen nodig heeft - ik focus altijd op gebruiksgemak, schaalbaarheid en veiligheid. Het resultaat? <strong>Tijdsbesparing, meer klantenbereik en winst voor uw bedrijf</strong>."
     },
     {
         "title": "E-commerce webshop",
         "slug": "webshop",
+        "showcase": false,
         "shortDescription": "Start met <strong>online verkopen</strong> met een veilige en gebruiksvriendelijke <strong>e-commerce webshop</strong> voor uw bedrijf. Met een modern design dat perfect bij uw groei past."
     },
     {
         "title": "Webhosting",
+        "showcase": false,
         "slug": "webhosting",
         "shortDescription": "Bij de ontwikkeling van uw website neem ik de volledige zorg voor <strong>domeinnaam en hosting</strong> op mij indien u voor een abonnement kiest. U wordt de rechtmatige eigenaar van beide diensten, terwijl <strong>ik de technische aspecten beheer</strong>. Daarnaast verzorg ik ook <strong>alle administratieve taken en facturen</strong> voor zowel de domeinnaam als hosting. De kosten worden door mij gedragen."
     },
     {
         "title": "SEO",
         "slug": "seo",
+        "showcase": false,
         "shortDescription": "Bij de ontwikkeling van uw website besteed ik extra aandacht aan <strong>SEO (zoekmachineoptimalisatie)</strong>. Door geavanceerde SEO-technieken toe te passen, <strong>verbeter ik de zichtbaarheid van uw website in zoekmachines zoals Google</strong>. Dit leidt tot <strong>meer organisch verkeer naar uw website</strong>, wat resulteert in een hogere omzet en betere resultaten voor uw bedrijf."
     },
     {
         "title": "Laravel developer",
+        "showcase": false,
         "slug": "laravel-developer",
         "shortDescription": "Met mijn uitgebreide expertise in Laravel, een toonaangevend open-source PHP-framework, ontwikkel ik <strong>krachtige en schaalbare websites en webapplicaties</strong> voor elk type project. Van eenvoudige websites tot complexe enterprise-oplossingen."
     },
     {
         "title": "Website vernieuwen",
         "slug": "website-vernieuwen",
+        "showcase": false,
         "shortDescription": "Is uw huidige website verouderd of levert deze onvoldoende resultaten op? Dan is het tijd voor een vernieuwing. Met een moderne, betaalbare website kunt u <strong>direct betere resultaten behalen</strong>. Bij het vernieuwen van uw website kunnen we uw bestaande domeinnaam behouden of een nieuwe registreren. Een professionele website redesign zal <strong>uw online zichtbaarheid en bereik aanzienlijk versterken</strong>."
     },
     {
         "title": "Logo design",
         "slug": "logo-design",
+        "showcase": false,
         "shortDescription": "Versterk uw bedrijfsidentiteit met een <strong>professioneel logo</strong> voor effectieve branding en marketing. Bij het kiezen van een website abonnement ontvangt u een <strong>gratis logo ontwerp</strong>."
     },
     {
         "title": "Freelance webdesigner",
         "slug": "freelance-webdesigner",
+        "showcase": false,
         "shortDescription": "Zoekt u een betaalbare freelance webdesigner? Als ervaren freelance website designer creëer ik <strong>responsive websites op maat</strong> met moderne designs die resultaat opleveren. Gespecialiseerd in <strong>webdesign voor kleine bedrijven</strong>, gericht op gebruikerservaring en SEO. Krijg een professionele website die bezoekers omzet in klanten."
     },
     {
         "title": "Freelance webdeveloper",
         "slug": "freelance-webdeveloper",
+        "showcase": false,
         "shortDescription": "Als freelance webdeveloper uit België ontwikkel ik sinds 2019 <strong>websites en webapplicaties op maat</strong> met moderne technologieën zoals PHP, Laravel, Next.js en Node.js. Ik lever <strong>hoogwaardige code</strong> die voldoet aan de nieuwste webstandaarden en veiligheidsrichtlijnen. Met mijn technische expertise help ik uw project succesvol te maken, ongeacht uw locatie."
     },
     {
         "title": "SaaS",
         "slug": "saas",
+        "showcase": false,
         "shortDescription": "Een echte krachtpatser op het gebied van software. Als <strong>professionele software ontwikkelaar</strong> help ik u bij het ontwikkelen van schaalbare cloud-based software die <strong>uw bedrijfsprocessen automatiseert</strong>. Met expertise in moderne technologieën zoals Laravel, Next.js en Node.js, creëer ik veilige, gebruiksvriendelijke SaaS-applicaties die perfect aansluiten bij uw bedrijfsdoelen. Van <strong>abonnementsystemen</strong> tot <strong>complete bedrijfssoftware</strong> - ik lever SaaS-oplossingen op maat die uw onderneming helpen groeien."
     }
 ]
