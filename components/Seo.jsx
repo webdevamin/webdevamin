@@ -24,7 +24,7 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) =
             }
             <title>{includeCompanyName ? `${title} | Webdevamin` : title}</title>
             <meta name="description" content={description} />
-            <meta property="og:title" content={`${defaultOgTitle} | Webdevamin`} />
+            <meta property="og:title" content={includeCompanyName ? `${defaultOgTitle} | Webdevamin` : defaultOgTitle} />
             <meta property="og:image" content={defaultImage} />
             <meta property='og:image:width' content='1200' />
             <meta property='og:image:height' content='630' />
