@@ -3,12 +3,16 @@ import { Card } from "flowbite-react";
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import Heading from '../Heading';
 import ButtonOne from '../Buttons/ButtonOne';
+import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 
 const BlockCardsTwo = ({ content }) => {
-    const { title, text, slug, subtitle, position, items, buttons } = content;
+    const { title, text, slug, subtitle, position, items, buttons, layout } = content;
+    const { name, position: layoutPosition } = layout || {};
+    const isBlockLayoutTwo = name === `block-layout-two`;
+    const Layout = isBlockLayoutTwo ? BlockLayoutTwo : BlockLayoutOne;
 
     return (
-        <BlockLayoutTwo position={position} title={title} slug={slug}>
+        <Layout position={layoutPosition} title={title} slug={slug} textCenter={false} includeMaxWidth={false}>
             <div className='4xl:pr-5 4xl:pl-12'>
                 <section className={`flex flex-col 4xl:px-0 ${position === `right` ? `4xl:justify-end 4xl:items-end 4xl:text-right` : `max-w-6xl`}`}>
                     <Heading title={title} subtitle={subtitle} />
@@ -21,9 +25,9 @@ const BlockCardsTwo = ({ content }) => {
 
                             return (
                                 <Card key={i} className="bg-transparent card_two">
-                                    <h5 className="text-xl xl:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    <h3 className="text-xl xl:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         {title}
-                                    </h5>
+                                    </h3>
                                     <p className="font-normal text-gray-700 dark:text-gray-400">
                                         {description}
                                     </p>
@@ -52,7 +56,7 @@ const BlockCardsTwo = ({ content }) => {
                     )
                 }
             </div>
-        </BlockLayoutTwo>
+        </Layout>
     )
 }
 

@@ -14,7 +14,7 @@ const Index = ({ localesData, blogsData, servicesData, socialsData, regionsData,
 
   return (
     <>
-      <Seo seo={seo} alternates={alternates} />
+      <Seo seo={seo} alternates={alternates} includeCompanyName />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)}
         socials={socialsData} />

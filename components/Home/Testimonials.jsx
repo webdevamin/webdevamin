@@ -6,7 +6,7 @@ const Testimonials = ({ content }) => {
     const { title, text, testimonials } = content;
 
     return (
-        <BlockLayoutOne title={`testimonials`}>
+        <BlockLayoutOne slug={`testimonials`}>
             <div className={`xl:flex-1`}>
                 <Heading title={title} noSubtitle />
                 <div dangerouslySetInnerHTML={{ __html: text }} />

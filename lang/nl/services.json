@@ -1,12 +1,12 @@
 [
     {
         "seo": {
-            "title": "Professionele Website Laten Maken | Professioneel Webdesign Brugge",
-            "description": "Een professionele website laten maken? Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Bekijk de prijzen en neem contact op!",
+            "title": "Professionele Website Laten Maken | Vanaf €44/m All-In-One",
+            "description": "Een professionele website laten maken vanaf €44/maand met all-in-one-pakket? Laat je zakelijke website maken met webdesign, SEO, gratis upgrades en onderhoud! Bekijk de prijzen en neem contact op!",
             "canonical": "https://webdevamin.com/nl/services/webdesign",
             "image": "https://bucket.webdevamin.com/webdesign_og_nl.jpg",
-            "ogTitle": "Professionele Website Laten Maken | Betaalbare Webdesign Brugge",
-            "ogDescription": "Een professionele website laten maken? Laat je zakelijke website maken met webdesign en SEO van uitstekende kwaliteit! Bekijk de prijzen en neem contact op!"
+            "ogTitle": "Professionele Website Laten Maken | Vanaf €44/m All-In-One",
+            "ogDescription": "Een professionele website laten maken vanaf €44/maand met all-in-one-pakket? Laat je zakelijke website maken met webdesign, SEO, gratis upgrades en onderhoud! Bekijk de prijzen en neem contact op!"
         },
         "alternates": [
             {
@@ -36,7 +36,7 @@
         "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen en neem contact op. Of vraag direct een gratis offerte aan indien u voor een eenmalige betaling opteert. Ontdek hoe ik u van dienst kan zijn!",
         "shortDescription": "Een professionele website laten maken? Ik bied betaalbare en <strong>state-of-the-art webdesign diensten</strong>. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website die op het internet staat.",
         "img": {
-            "src": "https://bucket.webdevamin.com/webdesign.png",
+            "src": "https://bucket.webdevamin.com/webdesign.webp",
             "alt": "Desktop met browser illustratie.",
             "width": 780,
             "height": 342,
@@ -69,7 +69,7 @@
                     }
                 ],
                 "img": {
-                    "src": "https://bucket.webdevamin.com/webdesign-about.jpeg",
+                    "src": "https://bucket.webdevamin.com/webdesign-about.webp",
                     "alt": "Een computer in een kantoorruimte.",
                     "width": 780,
                     "height": 342
@@ -77,16 +77,11 @@
             },
             {
                 "component": "block-cards",
-                "title": "Webdesign process",
+                "title": "Webdesign proces",
                 "slug": "process",
                 "subtitle": "Stap per stap",
                 "position": "right",
                 "text": "<p>Een professioneel website laten maken duurt maar ongeveer 5 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
-                "textTwo": {
-                    "textTwoContent": "Wil je je bestaande website vernieuwen? ",
-                    "textTwoLinkContent": "Bekijk hier hoe ik u van dienst kan zijn",
-                    "textTwolinkHref": "/services/website-vernieuwen"
-                },
                 "items": [
                     {
                         "title": "1. Design keuze",
@@ -127,25 +122,81 @@
                 ]
             },
             {
+                "component": "block-accordion",
+                "title": "Voordelen website",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "left"
+                },
+                "slug": "advantages",
+                "subtitle": "Opgesomd voor uw zaak",
+                "text": "Hieronder vindt u een overzicht van de belangrijkste voordelen van een website. Uw website is een belangrijk deel van uw merkidentiteit en wordt dag en nacht bereikbaar voor potentiële klanten.",
+                "items": [
+                    {
+                        "title": "24/7 Online Zichtbaarheid",
+                        "description": "Uw bedrijf is dag en nacht bereikbaar voor potentiële klanten. U mist geen enkele kans op nieuwe klanten, zelfs buiten kantooruren. Mensen kunnen uw diensten en producten ontdekken wanneer het hen uitkomt."
+                    },
+                    {
+                        "title": "Potentiële Klanten Meer Geneigd om Zaken Met U Te Doen",
+                        "description": "Ongeveer 70% van de bedrijven heeft een website. Zonder website komt u minder professioneel over en zijn potentiële klanten minder geneigd om zaken met u te doen. Een <strong>professionele website versterkt uw merkidentiteit</strong> en geloofwaardigheid."
+                    },
+                    {
+                        "title": "Efficiënte Klantenservice",
+                        "description": "Automatische afhandeling van veelgestelde vragen via FAQ-secties. Klanten kunnen eenvoudig contact opnemen via contactformulieren en offerte-aanvragen kunnen 24/7 binnenkomen via uw website."
+                    },
+                    {
+                        "title": "Verbeterde Marketing & Vindbaarheid",
+                        "description": "Uw bedrijf wordt <strong>beter vindbaar in Google</strong> en andere zoekmachines. U bereikt een veel groter publiek dan alleen via lokale marketing en heeft de mogelijkheid om uw expertise te tonen via blog posts en portfolio."
+                    },
+                    {
+                        "title": "Bedrijfsprocessen Optimaliseren",
+                        "description": "Automatisering van administratieve taken, integratie met CRM-systemen voor klantenbeheer en efficiënte verwerking van aanvragen en opdrachten. Dit zorgt voor <strong>aanzienlijke tijdsbesparing</strong> in uw dagelijkse werkzaamheden."
+                    },
+                    {
+                        "title": "Kosteneffectief",
+                        "description": "Een website is een eenmalige investering met langdurige voordelen. U heeft lagere marketingkosten vergeleken met traditionele reclame en bespaart op personeelskosten door geautomatiseerde processen."
+                    },
+                    {
+                        "title": "Concurrentievoordeel",
+                        "description": "U blijft niet achter bij uw concurrenten die wel online aanwezig zijn. Met een <strong>moderne, professionele website</strong> kunt u zich onderscheiden en direct inspelen op marktontwikkelingen en trends."
+                    },
+                    {
+                        "title": "Meetbare Resultaten",
+                        "description": "Krijg inzicht in bezoekersgedrag en statistieken. U kunt uw marketingcampagnes optimaliseren en data-gedreven beslissingen maken voor uw bedrijf op basis van concrete cijfers."
+                    },
+                    {
+                        "title": "Flexibiliteit & Schaalbaarheid",
+                        "description": "Uw website groeit mee met uw bedrijf en is eenvoudig aan te passen aan nieuwe diensten of producten. Er is altijd de mogelijkheid tot <strong>uitbreiding met extra functionaliteiten</strong> wanneer uw bedrijf daarom vraagt."
+                    },
+                    {
+                        "title": "Klantvertrouwen Opbouwen",
+                        "description": "Transparante communicatie over uw diensten en prijzen. Testimonials en recensies kunnen direct getoond worden, wat zorgt voor een <strong>professionele presentatie van uw bedrijfswaarden</strong> en missie."
+                    }
+                ]
+            },
+            {
                 "component": "block-cols",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "right"
+                },
                 "title": "Prijs",
                 "slug": "pricing",
                 "subtitle": "Standaard abonnement",
-                "position": "right",
+                "position": "left",
                 "text": "<p>Als u een <strong>betaalbare website</strong> wilt laten maken, bent u bij mij aan het juiste adres. Grote bureaus rekenen al snel meer dan €3.000 voor het ontwikkelen van een professionele, zakelijke website – en dat is vaak exclusief hoge maandelijkse kosten!</p><p>Bij mij betaalt u slechts <strong>€49 excl. BTW of €44 per maand indien u voor een jaarlijkse abonnement kiest, voor een krachtige, op maat gemaakte website</strong> die elke professional nodig heeft, compleet met alle essentiële secties.</p>",
-                "miscLink": {
-                    "textMisc": "Heeft u een andere oplossing nodig, zoals een website met meer functies, een zware webapplicatie, webshop, etc, neem contact op voor een offerte op maat of ",
-                    "linkText": "bekijk alle prijzen hier",
-                    "link": "/pricing"
-                },
                 "side": "pricing"
             },
             {
                 "component": "block-cards-two",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "left"
+                },
                 "title": "Voorbeeld website",
                 "slug": "what",
                 "subtitle": "Voorbeeldsecties & functionaliteiten",
-                "position": "right",
+                "position": "left",
                 "text": "<p>Hieronder vindt u een overzicht van voorbeeldsecties en functionaliteiten die inbegrepen zijn bij een abonnement voor een professionele website. Deze onderdelen zijn essentieel voor elke zakelijke website en dragen bij aan het promoten van uw bedrijf en het aantrekken van klanten. <strong>U kunt de secties en functionaliteiten naar wens aanpassen om perfect aan te sluiten bij uw behoeften.</strong></p>",
                 "items": [
                     {

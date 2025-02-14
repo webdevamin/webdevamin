@@ -4,15 +4,19 @@ import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import { componentMapper } from '../../utils/app';
 import ButtonOne from '../Buttons/ButtonOne';
 import Link from 'next/link';
+import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 
 // Horizontal stacked view with 2 columns. Other side is another component that can be rendered on choice
 const BlockCols = ({ content, sideData }) => {
-    const { title, slug, text, subtitle, side, buttons, miscLink } = content;
+    const { title, slug, text, subtitle, side, buttons, miscLink, layout } = content;
+    const { name, position: layoutPosition } = layout || {};
     const ComponentToRenderSide = componentMapper[side];
     const { textMisc, linkText, link } = miscLink || {};
+    const isBlockLayoutTwo = name === `block-layout-two`;
+    const Layout = isBlockLayoutTwo ? BlockLayoutTwo : BlockLayoutOne;
 
     return (
-        <BlockLayoutTwo title={title} slug={slug} contentClasses={`xl:flex-row-reverse`}>
+        <Layout title={title} slug={slug} contentClasses={`xl:flex-row-reverse`} position={layoutPosition} includeMaxWidth={false} textCenter={false}>
             <div className={`md:w-full flex flex-col md:flex-row gap-10 md:gap-20`}>
                 <div className='md:w-7/12'>
                     <Heading title={title} />
@@ -22,7 +26,7 @@ const BlockCols = ({ content, sideData }) => {
                     <div dangerouslySetInnerHTML={{ __html: text }}
                         className={`p mt-5 lg:mt-10`} />
                     {
-                        miscLink && (
+                        (textMisc && linkText && link) && (
                             <p>{textMisc}<Link href={link}>{linkText}</Link></p>
                         )
                     }
@@ -50,7 +54,7 @@ const BlockCols = ({ content, sideData }) => {
                     <ComponentToRenderSide data={sideData} />
                 </div>
             </div>
-        </BlockLayoutTwo>
+        </Layout>
     )
 }
 

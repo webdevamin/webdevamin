@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
-import starsImage from '../../public/images/star.png';
+import starsImage from '../../public/images/star.webp';
 import { useRouter } from 'next/router';
 
 const CardOne = ({ initial, title, bgColor, text, icon, count }) => {

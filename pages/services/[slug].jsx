@@ -73,7 +73,7 @@ export async function getStaticProps({ locale, params }) {
     }
 
     const serviceData = servicesData.find((p) => p.slug === params.slug);
-    
+
     if (!serviceData) {
         return {
             notFound: true

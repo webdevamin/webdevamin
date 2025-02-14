@@ -23,7 +23,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                 <Navbar fluid className='bg-transparent p-4'>
                     <Link href={`/`}>
                         <Image
-                            src={`/images/logo-light.png`} width={46} height={46}
+                            src={`/images/logo-light.webp`} width={46} height={46}
                             className={`rounded-lg`} priority={true} alt={`Logo`}
                         />
                     </Link>

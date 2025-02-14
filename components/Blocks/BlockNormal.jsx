@@ -17,7 +17,7 @@ const BlockNormal = ({ content }) => {
                     className={`p mt-10`} />
                 <div className={`flex flex-col gap-4 lg:flex-row`}>
                     {
-                        buttons.map((btn, i) => {
+                        (buttons && buttons.length > 0) && buttons.map((btn, i) => {
                             const { href, text } = btn;
                             const isOdd = i % 2 !== 0 ? true : false;
 

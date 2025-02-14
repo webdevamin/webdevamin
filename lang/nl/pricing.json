@@ -1,0 +1,145 @@
+{
+    "seo": {
+        "title": "Prijzen - Webdevelopment Abonnementen",
+        "description": "Ontdek onze flexibele webdevelopment abonnementen. Transparante prijzen, geen verborgen kosten. Kies het plan dat bij uw bedrijf past.",
+        "canonical": "https://webdevamin.com/nl/pricing",
+        "ogTitle": "Webdevelopment Abonnementen",
+        "ogDescription": "Vind het perfecte webdevelopment abonnement voor uw bedrijf"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/pricing",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/nl/pricing",
+            "hreflang": "nl"
+        }
+    ],
+    "data": [
+        {
+            "title": "Transparante Prijzen",
+            "subtitle": "Kies Uw Plan",
+            "slug": "hero",
+            "text": "Krijg professionele webdevelopment diensten met onze flexibele abonnementen. Geen verborgen kosten, op elk moment opzegbaar.",
+            "image": {
+                "src": "/images/pricing.svg",
+                "alt": "Prijsplannen illustratie",
+                "width": 485,
+                "height": 429,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Abonnementen",
+            "slug": "pricing",
+            "subtitle": "Maandelijkse of jaarlijkse facturering",
+            "yearlyDiscount": "20% korting op jaarlijkse facturering",
+            "plans": [
+                {
+                    "name": "Basic",
+                    "popular": false,
+                    "description": "Perfect voor kleine bedrijven die online willen starten",
+                    "priceMonthly": 79,
+                    "priceYearly": 759,
+                    "features": [
+                        "Tot 5 pagina's",
+                        "Maandelijkse content updates",
+                        "Basis SEO optimalisatie",
+                        "Mobiel responsive design",
+                        "SSL certificaat",
+                        "Basis analytics"
+                    ],
+                    "button": {
+                        "text": "Start Nu",
+                        "href": "/contact"
+                    }
+                },
+                {
+                    "name": "Professional",
+                    "popular": true,
+                    "description": "Ideaal voor groeiende bedrijven die meer features nodig hebben",
+                    "priceMonthly": 149,
+                    "priceYearly": 1429,
+                    "features": [
+                        "Tot 10 pagina's",
+                        "Wekelijkse content updates",
+                        "Geavanceerde SEO optimalisatie",
+                        "Mobiel responsive design",
+                        "SSL certificaat",
+                        "Geavanceerde analytics",
+                        "Prioriteit support",
+                        "Blog integratie",
+                        "Social media integratie"
+                    ],
+                    "button": {
+                        "text": "Start Nu",
+                        "href": "/contact"
+                    }
+                },
+                {
+                    "name": "Enterprise",
+                    "popular": false,
+                    "description": "Voor gevestigde bedrijven die premium support nodig hebben",
+                    "priceMonthly": 299,
+                    "priceYearly": 2869,
+                    "features": [
+                        "Onbeperkt aantal pagina's",
+                        "Dagelijkse content updates",
+                        "Premium SEO optimalisatie",
+                        "Mobiel responsive design",
+                        "SSL certificaat",
+                        "Premium analytics",
+                        "24/7 prioriteit support",
+                        "Blog integratie",
+                        "Social media integratie",
+                        "E-commerce integratie",
+                        "Custom features",
+                        "Maandelijks prestatierapport"
+                    ],
+                    "button": {
+                        "text": "Start Nu",
+                        "href": "/contact"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Veelgestelde Vragen",
+            "slug": "faq",
+            "subtitle": "Algemene vragen over onze abonnementen",
+            "items": [
+                {
+                    "title": "Wat is inbegrepen in de maandelijkse kosten?",
+                    "text": "Uw abonnement omvat doorlopend onderhoud, regelmatige updates, hosting, beveiligingsupdates en technische ondersteuning op basis van uw gekozen plan."
+                },
+                {
+                    "title": "Kan ik mijn plan upgraden of downgraden?",
+                    "text": "Ja, u kunt uw plan op elk moment wijzigen. Het nieuwe tarief wordt naar rato berekend op basis van uw factureringscyclus."
+                },
+                {
+                    "title": "Welke betaalmethoden accepteert u?",
+                    "text": "We accepteren alle belangrijke creditcards, bankoverschrijvingen en PayPal. Betalingen worden veilig verwerkt via Stripe."
+                },
+                {
+                    "title": "Is er een minimale contractperiode?",
+                    "text": "Nee, onze abonnementen zijn maand-tot-maand of jaar-tot-jaar zonder langetermijnverplichting. U kunt op elk moment opzeggen."
+                },
+                {
+                    "title": "Wat als ik extra features nodig heb?",
+                    "text": "We kunnen elk plan aanpassen met extra features. Neem contact met ons op om uw specifieke wensen te bespreken."
+                }
+            ]
+        },
+        {
+            "title": "Nog Vragen?",
+            "slug": "contact",
+            "subtitle": "Neem contact op",
+            "text": "Neem contact met ons op voor een offerte op maat of om uw specifieke wensen te bespreken.",
+            "button": {
+                "text": "Contact Opnemen",
+                "href": "/contact"
+            }
+        }
+    ]
+}

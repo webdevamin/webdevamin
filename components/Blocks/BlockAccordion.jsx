@@ -1,15 +1,19 @@
 import React from 'react'
 import { Accordion } from "flowbite-react";
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
+import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import Heading from '../Heading';
 import ButtonOne from '../Buttons/ButtonOne';
 import ButtonThree from '../Buttons/ButtonThree';
 
 const BlockAccordion = ({ content }) => {
-    const { title, text, subtitle, position, items, buttons } = content;
+    const { title, text, subtitle, position, items, buttons, layout, slug } = content;
+    const { name, position: layoutPosition } = layout || {};
+    const isBlockLayoutTwo = name === `block-layout-two`;
+    const Layout = isBlockLayoutTwo ? BlockLayoutTwo : BlockLayoutOne;
 
     return (
-        <BlockLayoutOne title={title} includeMaxWidth={false} textCenter={false}>
+        <Layout title={title} slug={slug} includeMaxWidth={false} textCenter={false} position={layoutPosition}>
             <div className={`4xl:pr-5 4xl:pl-12`}>
                 {
                     (title && subtitle && text) && (
@@ -19,24 +23,24 @@ const BlockAccordion = ({ content }) => {
                         </section>
                     )
                 }
-                <div className='mt-8 lg:mt-10 accordion'>
-                    <Accordion className='text-left'>
+                <div className='mt-8 lg:mt-10 accordion w-full'>
+                    <Accordion className='text-left w-full min-w-full'>
                         {
                             items.map((item, i) => {
                                 const { title, shortDescription, description, detailBtn, slug } = item;
                                 const text = shortDescription || description;
-                                console.log(detailBtn);
+
                                 return (
                                     <Accordion.Panel key={i}>
                                         <Accordion.Title>{title}</Accordion.Title>
-                                        <Accordion.Content>
+                                        <Accordion.Content className="w-full">
                                             {text.includes('<') ? (
                                                 <div
-                                                    className="mb-2 text-gray-500 dark:text-gray-400"
+                                                    className="mb-2 text-gray-500 dark:text-gray-400 w-full"
                                                     dangerouslySetInnerHTML={{ __html: text }}
                                                 />
                                             ) : (
-                                                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                                                <p className="mb-2 text-gray-500 dark:text-gray-400 w-full">
                                                     {text}
                                                 </p>
                                             )}
@@ -72,7 +76,7 @@ const BlockAccordion = ({ content }) => {
                     )
                 }
             </div>
-        </BlockLayoutOne>
+        </Layout>
     )
 }
 

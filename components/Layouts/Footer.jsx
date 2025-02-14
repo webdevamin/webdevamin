@@ -111,7 +111,7 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                     </ul>
                     <div className={`md:mt-4`}>
                         <ButtonThree href={`/services`} color={`text_theme_all`}
-                            text={locale === `en` ? `Read more` : `Meer weten`} />
+                            text={locale === `en` ? `All services` : `Alle diensten`} />
                     </div>
                 </div>
                 <div className={`col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>

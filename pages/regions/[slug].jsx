@@ -14,7 +14,7 @@ import { Accordion } from 'flowbite-react';
 
 const Region = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, serviceDetailsData, serviceDetailsBlockData, regionData }) => {
     const { seo, alternates, alternateLangs, hero, contents } = regionData;
-    const { title, subtitle, description } = serviceDetailsBlockData;
+    const { title, subtitle, description, slug } = serviceDetailsBlockData;
 
     return (
         <>
@@ -70,7 +70,7 @@ const Region = ({ localesData, socialsData, blogsData, servicesData, regionsData
                         )
                     })
                 }
-                <BlockLayoutOne title={title}>
+                <BlockLayoutOne slug={slug}>
                     <div>
                         <Heading title={title} subtitle={subtitle} />
                         <div dangerouslySetInnerHTML={{ __html: description }}

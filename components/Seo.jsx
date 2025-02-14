@@ -2,7 +2,7 @@ import React from 'react'
 import Head from "next/head";
 import { useRouter } from 'next/router';
 
-const Seo = ({ seo, alternates }) => {
+const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) => {
     const { title, description, canonical, image,
         ogTitle, ogDescription } = seo;
 
@@ -19,7 +19,10 @@ const Seo = ({ seo, alternates }) => {
     return (
         <Head>
             <meta charSet="utf-8" />
-            <title>{`${title} | Webdevamin`}</title>
+            {
+                (noIndex) && <meta name="robots" content="noindex,nofollow" />
+            }
+            <title>{includeCompanyName ? `${title} | Webdevamin` : title}</title>
             <meta name="description" content={description} />
             <meta property="og:title" content={`${defaultOgTitle} | Webdevamin`} />
             <meta property="og:image" content={defaultImage} />

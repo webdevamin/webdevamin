@@ -29,14 +29,14 @@
         "slug": "webdesign",
         "detailBtn": {
             "href": "/services/webdesign",
-            "text": "To web design"
+            "text": "About web design"
         },
         "locale": "en",
         "showcase": true,
-        "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription prices and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
-        "shortDescription": "Need a professional website? I offer affordable and <strong>state-of-the-art web design services</strong>. <strong>Attract more customers and strengthen your business</strong> with a custom-made business website that exists on the internet.",
+        "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription price and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
+        "shortDescription": "<p>Need a professional website? I offer affordable and <strong>state-of-the-art web design services</strong>. <strong>Attract more customers and strengthen your business</strong> with a custom-made business website that exists on the internet.</p>",
         "img": {
-            "src": "https://bucket.webdevamin.com/webdesign.png",
+            "src": "https://bucket.webdevamin.com/webdesign.webp",
             "alt": "Desktop with browser illustration.",
             "width": 780,
             "height": 342,
@@ -69,7 +69,7 @@
                     }
                 ],
                 "img": {
-                    "src": "https://bucket.webdevamin.com/webdesign-about.jpeg",
+                    "src": "https://bucket.webdevamin.com/webdesign-about.webp",
                     "alt": "A computer in an office space.",
                     "width": 780,
                     "height": 342
@@ -82,11 +82,6 @@
                 "subtitle": "Step by step",
                 "position": "right",
                 "text": "<p>Getting a professional website made takes only about 5 days. Here you'll find a step-by-step explanation of my approach to developing your site with excellent SEO. There may be variations, but what's described below gives a general overview of the process.</p>",
-                "textTwo": {
-                    "textTwoContent": "Want to renew your existing website? ",
-                    "textTwoLinkContent": "See how I can help you here",
-                    "textTwolinkHref": "/services/website-renewal"
-                },
                 "items": [
                     {
                         "title": "1. Design choice",
@@ -127,25 +122,84 @@
                 ]
             },
             {
+                "component": "block-accordion",
+                "title": "Website Benefits",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "left"
+                },
+                "slug": "advantages",
+                "subtitle": "Key Business Advantages",
+                "text": "<p>Discover the essential benefits of having a professional website. Your website serves as a powerful digital asset, working 24/7 to enhance your brand identity and reach potential customers.</p>",
+                "items": [
+                    {
+                        "title": "24/7 Online Presence & Accessibility",
+                        "description": "<p>Your business remains accessible to potential customers around the clock. Never miss an opportunity for new clients, even outside business hours. Customers can discover your services and products at their convenience, maximizing your business potential.</p>"
+                    },
+                    {
+                        "title": "Professional Branding & Credibility",
+                        "description": "<p>Over 70% of businesses have a website today. Without one, you risk appearing less credible to potential clients. A <strong>professional website enhances your brand identity</strong> and establishes trust in your industry.</p>"
+                    },
+                    {
+                        "title": "Efficient Customer Service Solutions",
+                        "description": "<p>Streamline customer support with automated FAQ sections. Enable seamless communication through contact forms, and receive quote requests 24/7 through your website, improving customer satisfaction and response times.</p>"
+                    },
+                    {
+                        "title": "Enhanced Digital Marketing & SEO",
+                        "description": "<p>Achieve <strong>higher visibility in Google</strong> and other search engines. Reach a broader audience beyond local marketing, and showcase your expertise through engaging blog posts and portfolio displays.</p>"
+                    },
+                    {
+                        "title": "Business Process Optimization",
+                        "description": "<p>Automate administrative tasks, integrate CRM systems for customer management, and process inquiries efficiently. Experience <strong>significant time savings</strong> in your daily operations through smart automation.</p>"
+                    },
+                    {
+                        "title": "Cost-Effective Business Solution",
+                        "description": "<p>A website is a one-time investment with long-term benefits. Reduce marketing costs compared to traditional advertising and save on operational expenses through automated business processes.</p>"
+                    },
+                    {
+                        "title": "Competitive Market Advantage",
+                        "description": "<p>Stay ahead of competitors in the digital landscape. Stand out with a <strong>modern, professional website</strong> that allows you to quickly adapt to market trends and industry developments.</p>"
+                    },
+                    {
+                        "title": "Measurable Business Analytics",
+                        "description": "<p>Gain valuable insights through visitor behavior analytics and statistics. Optimize your marketing campaigns and make data-driven business decisions based on concrete metrics and performance data.</p>"
+                    },
+                    {
+                        "title": "Scalability & Future-Proof Growth",
+                        "description": "<p>Your website grows with your business and adapts easily to new services or products. Maintain flexibility with <strong>expandable functionality</strong> that evolves as your business requirements change.</p>"
+                    },
+                    {
+                        "title": "Trust Building & Credibility",
+                        "description": "<p>Provide transparent communication about your services and pricing. Display testimonials and reviews that showcase a <strong>professional presentation of your business values</strong> and mission to build lasting customer relationships.</p>"
+                    }
+                ]
+            },
+            {
                 "component": "block-cols",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "right"
+                },
                 "title": "Pricing",
                 "slug": "pricing",
                 "subtitle": "Standard subscription",
                 "position": "right",
-                "text": "<p>If you want an <strong>affordable website</strong>, you've come to the right place. Large agencies quickly charge more than €3,000 for developing a professional, business website – and that's often excluding high monthly costs!</p><p>With me, you only pay <strong>€49 excl. VAT or €44 per month if you choose an annual subscription, for a powerful, custom-made website</strong> that every professional needs, complete with all essential sections.</p>",
+                "text": "<p>If you want an <strong>affordable website</strong>, you've come to the right place. Large agencies quickly charge more than €6,000 for developing a professional, business website – and that's often excluding high monthly costs!</p><p>With me, you only pay <strong>€69 excl. VAT or €64 per month</strong> if you choose an annual subscription, for a powerful, custom-made website</strong> that every professional needs, complete with all essential sections plus many features in between.</p>",
                 "miscLink": {
-                    "textMisc": "Need a different solution, such as a website with more features, a heavy web application, web shop, etc., get in touch for a custom quote or ",
-                    "linkText": "view all prices here",
-                    "link": "/pricing"
+                    "textMisc": "Need a different solution, such as a website with more features, a heavy web application, web shop, etc., get in touch for a custom quote."
                 },
                 "side": "pricing"
             },
             {
                 "component": "block-cards-two",
                 "title": "Example website",
+                "layout": {
+                    "name": "block-layout-two",
+                    "position": "left"
+                },
                 "slug": "what",
                 "subtitle": "Example Sections & functionalities",
-                "position": "right",
+                "position": "left",
                 "text": "<p>Below you'll find an overview of example sections and functionalities included with a subscription for a professional website. These components are essential for any business website and contribute to promoting your business and attracting customers. <strong>You can customize the sections and functionalities to perfectly match your needs.</strong></p>",
                 "items": [
                     {
@@ -197,27 +251,27 @@
                 "items": [
                     {
                         "title": "What's the average price to have a website made?",
-                        "description": "The average price for having a website made varies greatly, depending on the project's complexity, the functionalities you need, and the web designer's experience. Fortunately, with me, you only pay <strong>€49 excl. VAT or €44 per month</strong> if you choose an annual subscription. It comes with many benefits, such as a <strong>free domain name, hosting, maintenance, and support</strong>."
+                        "description": "<p>The average price for having a website made varies greatly, depending on the project's complexity, the functionalities you need, and the web designer's experience. Fortunately, with me, you only pay <strong>€69 excl. VAT or €64 per month</strong> if you choose an annual subscription. It comes with many benefits, such as a <strong>free domain name, hosting, maintenance, and support</strong>.</p>"
                     },
                     {
                         "title": "Can I request a quote to have a website made?",
-                        "description": "Sure, but why? When you know that for a professional website, you only pay €49 per month excl. VAT or €44 per month if you opt for an annual subscription? So you already know the price. You can <strong>start a subscription immediately by contacting me</strong> and have your website online in about 5 days. Of course, you can also contact me for more information."
+                        "description": "<p>Sure, but why? When you know that for a professional website, you only pay €69 excl. VAT or €64 per month if you opt for an annual subscription? So you already know the price. You can <strong>start a subscription immediately by contacting me</strong> and have your website online in about 5 days. Of course, you can also contact me for more information.</p>"
                     },
                     {
                         "title": "What are the startup costs?",
-                        "description": "If you choose an annual subscription, <strong>you pay no startup costs</strong>. You only pay €530 per year (€44 per month). If you choose a monthly subscription, you pay a <strong>one-time fee of €180</strong> for startup costs excl. VAT."
+                        "description": "<p>If you choose an annual subscription, <strong>there are no startup costs</strong>. You only pay €64 per month excl. VAT. If you choose a monthly subscription, you pay a <strong>one-time setup fee of around €200</strong> excl. VAT.</p>"
                     },
                     {
                         "title": "What is SEO?",
-                        "description": "SEO stands for Search Engine Optimization. It's the process of <strong>improving the quality and quantity of website traffic</strong> to a website or web page from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I implement as standard in my websites."
+                        "description": "<p>SEO stands for Search Engine Optimization. It's the process of <strong>improving the quality and quantity of website traffic</strong> to a website or web page from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I implement as standard in my websites.</p>"
                     },
                     {
                         "title": "What is a domain name?",
-                        "description": "A domain name is a unique name used to identify an IP address on the internet. A domain name is an <strong>address through which people can find your website on the internet</strong>. I handle the domain name for you and cover the costs. You don't need to worry about this."
+                        "description": "<p>A domain name is a unique name used to identify an IP address on the internet. A domain name is an <strong>address through which people can find your website on the internet</strong>. I handle the domain name for you and cover the costs. You don't need to worry about this.</p>"
                     },
                     {
                         "title": "What is hosting?",
-                        "description": "Web hosting is a service that allows businesses and individuals to <strong>place their website or web page on the internet</strong>. A web host, or web hosting service provider, is a company that provides the technologies and services needed for the website or web page to be viewed on the internet. I handle the hosting for you and cover the costs. You don't need to worry about this."
+                        "description": "<p>Web hosting is a service that allows businesses and individuals to <strong>place their website or web page on the internet</strong>. A web host, or web hosting service provider, is a company that provides the technologies and services needed for the website or web page to be viewed on the internet. I handle the hosting for you and cover the costs. You don't need to worry about this.</p>"
                     }
                 ]
             }
@@ -226,51 +280,51 @@
     {
         "title": "Web Development",
         "slug": "webdevelopment",
-        "shortDescription": "Have a professional <strong>custom web application</strong> developed for your business to automate and optimize business processes, such as: CRM, ERP, reservation system, SaaS, etc. Whether you need small business tools or complex enterprise solutions - I always focus on usability, scalability and security. The result? <strong>Time savings, increased customer reach and profit for your business</strong>."
+        "shortDescription": "<p>Have a professional <strong>custom web application</strong> developed for your business to automate and optimize business processes, such as: CRM, ERP, reservation system, SaaS, etc. Whether you need small business tools or complex enterprise solutions - I always focus on usability, scalability and security. The result? <strong>Time savings, increased customer reach and profit for your business</strong>.</p>"
     },
     {
         "title": "E-commerce",
         "slug": "ecommerce",
-        "shortDescription": "Start <strong>selling online</strong> with a secure and user-friendly <strong>e-commerce website</strong> for your business. With a modern design that perfectly fits your growth."
+        "shortDescription": "<p>Start <strong>selling online</strong> with a secure and user-friendly <strong>e-commerce website</strong> for your business. With a modern design that perfectly fits your growth.</p>"
     },
     {
         "title": "Web Hosting",
         "slug": "webhosting",
-        "shortDescription": "During the development of your website, I take full care of <strong>domain name and hosting</strong> if you choose a subscription. You become the rightful owner of both services, while <strong>I manage the technical aspects</strong>. Furthermore, I also handle <strong>all administrative tasks and invoices</strong> for both the domain name and hosting. The costs are covered by me."
+        "shortDescription": "<p>During the development of your website, I take full care of <strong>domain name and hosting</strong> if you choose a subscription. You become the rightful owner of both services, while <strong>I manage the technical aspects</strong>. Furthermore, I also handle <strong>all administrative tasks and invoices</strong> for both the domain name and hosting. The costs are covered by me.</p>"
     },
     {
         "title": "SEO",
         "slug": "seo",
-        "shortDescription": "When developing your website, I pay extra attention to <strong>SEO (Search Engine Optimization)</strong>. By applying advanced SEO techniques, I <strong>improve your website's visibility in search engines like Google</strong>. This leads to <strong>more organic traffic to your website</strong>, resulting in higher revenue and better results for your business."
+        "shortDescription": "<p>When developing your website, I pay extra attention to <strong>SEO (Search Engine Optimization)</strong>. By applying advanced SEO techniques, I <strong>improve your website's visibility in search engines like Google</strong>. This leads to <strong>more organic traffic to your website</strong>, resulting in higher revenue and better results for your business.</p>"
     },
     {
         "title": "Laravel Developer",
         "slug": "laravel-developer",
-        "shortDescription": "With my extensive expertise in Laravel, a leading open-source PHP framework, I develop <strong>powerful and scalable websites and web applications</strong> for any type of project. From simple websites to complex enterprise solutions."
+        "shortDescription": "<p>With my extensive expertise in Laravel, a leading open-source PHP framework, I develop <strong>powerful and scalable websites and web applications</strong> for any type of project. From simple websites to complex enterprise solutions.</p>"
     },
     {
         "title": "Website Renewal",
         "slug": "website-renewal",
-        "shortDescription": "Is your current website outdated or not delivering sufficient results? Then it's time for a renewal. With a modern, affordable website, you can achieve <strong>better results immediately</strong>. When renewing your website, we can keep your existing domain name or register a new one. A professional website redesign will <strong>significantly strengthen your online visibility and reach</strong>."
+        "shortDescription": "<p>Is your current website outdated or not delivering sufficient results? Then it's time for a renewal. With a modern, affordable website, you can achieve <strong>better results immediately</strong>. When renewing your website, we can keep your existing domain name or register a new one. A professional website redesign will <strong>significantly strengthen your online visibility and reach</strong>.</p>"
     },
     {
         "title": "Logo Design",
         "slug": "graphic-design",
-        "shortDescription": "Strengthen your business identity with a <strong>professional logo</strong> for effective branding and marketing. When choosing a website subscription, you receive a <strong>free logo design</strong>."
+        "shortDescription": "<p>Strengthen your business identity with a <strong>professional logo</strong> for effective branding and marketing. When choosing a website subscription, you receive a <strong>free logo design</strong>.</p>"
     },
     {
         "title": "Freelance Web Designer",
         "slug": "freelance-webdesigner",
-        "shortDescription": "Need an affordable freelance web designer? As an experienced freelance website designer, I create <strong>custom responsive websites</strong> with modern designs that drive results. Specializing in <strong>small business web design</strong>, focused on user experience and SEO. Get a professional website that converts visitors into customers."
+        "shortDescription": "<p>Need an affordable freelance web designer? As an experienced freelance website designer, I create <strong>custom responsive websites</strong> with modern designs that drive results. Specializing in <strong>small business web design</strong>, focused on user experience and SEO. Get a professional website that converts visitors into customers.</p>"
     },
     {
         "title": "Freelance Web Developer",
         "slug": "freelance-webdeveloper",
-        "shortDescription": "As a freelance web developer from Belgium, I've been developing <strong>custom websites and web applications since 2019</strong> using modern technologies like PHP, Laravel, Next.js, and Node.js. I deliver <strong>high-quality code</strong> that meets the latest web standards and security guidelines. With my technical expertise, I help make your project successful, regardless of your location."
+        "shortDescription": "<p>As a freelance web developer from Belgium, I've been developing <strong>custom websites and web applications since 2019</strong> using modern technologies like PHP, Laravel, Next.js, and Node.js. I deliver <strong>high-quality code</strong> that meets the latest web standards and security guidelines. With my technical expertise, I help make your project successful, regardless of your location.</p>"
     },
     {
         "title": "SaaS",
         "slug": "saas",
-        "shortDescription": "A real powerhouse in terms of software. As a <strong>professional software developer</strong>, I help you develop scalable cloud-based software that <strong>automates your business processes</strong>. With expertise in modern technologies like Laravel, Next.js, and Node.js, I create secure, user-friendly SaaS applications that perfectly align with your business goals. From <strong>subscription systems</strong> to <strong>complete business software</strong> - I deliver custom SaaS solutions that help grow your business."
+        "shortDescription": "<p><p>A real powerhouse in terms of software. As a <strong>professional software developer</strong>, I help you develop scalable cloud-based software that <strong>automates your business processes</strong>. With expertise in modern technologies like Laravel, Next.js, and Node.js, I create secure, user-friendly SaaS applications that perfectly align with your business goals. From <strong>subscription systems</strong> to <strong>complete business software</strong> - I deliver custom SaaS solutions that help grow your business.</p></p>"
     }
 ]

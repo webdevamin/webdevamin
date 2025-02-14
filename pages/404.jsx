@@ -11,7 +11,7 @@ const Error404 = ({ pageData }) => {
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} noIndex />
             <div className={`flex flex-col h-full justify-center`}>
                 <main className={`w-9/12 max-w-8xl m-auto flex flex-col items-center gap-1 md:gap-6`}>
                     <Image
