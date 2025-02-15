@@ -8,9 +8,9 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
 const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
-    smallerTitle, disableImgSpace }) => {
+    smallerTitle }) => {
     const { title, text, button, image } = content;
-    const { src: url, objectFit, width, height, alt } = image;
+    const { src: url, objectFit, width, height, alt, disableImgSpace = false } = image;
     const parsedTitle = getJsonString(title);
 
     return (

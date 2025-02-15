@@ -40,7 +40,8 @@
             "alt": "Desktop with browser illustration.",
             "width": 780,
             "height": 342,
-            "objectFit": "cover"
+            "objectFit": "cover",
+            "disableImgSpace": true
         },
         "button": [
             {

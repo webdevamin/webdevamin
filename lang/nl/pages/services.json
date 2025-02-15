@@ -34,7 +34,8 @@
             "alt": "Roze illustratie van een werkplek met computer, planten, lamp en kantooraccessoires in minimalistische ontwerpstijl",
             "width": 500,
             "height": 500,
-            "objectFit": "cover"
+            "objectFit": "cover",
+            "disableImgSpace": true
         },
         "button": [
             {

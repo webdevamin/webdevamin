@@ -74,8 +74,7 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                         }
                     </ul>
                 </div>
-                <div className={`col-span-2 sm:col-span-1 border-t border-b hidden
-                border-t-white border-b-white py-8 sm:py-0 sm:border-none sm:block`}>
+                <div className={`col-span-2 sm:col-span-1 border-t border-b border-t-white border-b-white py-8 sm:py-0 sm:border-none`}>
                     <h2 className={`text-xl mb-2 text-light`}>
                         {locale === `en` ? `Services` : `Diensten`}
                     </h2>
@@ -114,7 +113,7 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                             text={locale === `en` ? `All services` : `Alle diensten`} />
                     </div>
                 </div>
-                <div className={`col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>
+                <div className={`border-b border-b-white sm:border-none pb-8 sm:py-0 col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>
                     <h2 className={`text-xl mb-2 text-light`}>
                         {locale === `en` ? `Latest blogs` : `Laatste blogs`}
                     </h2>

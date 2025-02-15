@@ -34,7 +34,8 @@
             "alt": "Pink illustration of a workspace with computer, plants, lamp and office accessories in minimalist design style",
             "width": 500,
             "height": 500,
-            "objectFit": "cover"
+            "objectFit": "cover",
+            "disableImgSpace": true
         },
         "button": [
             {

@@ -221,6 +221,10 @@ p a {
 .alert_component {
   >div {
     @apply justify-between gap-2 md:gap-5;
+
+    button {
+      @apply bg-transparent;
+    }
   }
 
   a {
