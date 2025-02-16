@@ -31,9 +31,16 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) =
             <meta property="og:url" content={canonical} />
             <meta property="og:locale" content={locale} />
             <meta property="og:description" content={defaultOgDescription} />
+            <meta property="og:site_name" content="Webdevamin" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="canonical" href={canonical} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@webdevamin" />
+            <meta name="twitter:creator" content="@webdevamin" />
+            <meta name="twitter:title" content={includeCompanyName ? `${defaultOgTitle} | Webdevamin` : defaultOgTitle} />
+            <meta name="twitter:description" content={defaultOgDescription} />
+            <meta name="twitter:image" content={defaultImage} />
             {
                 alternates.map((alternate) => {
                     const { href, hreflang } = alternate;
