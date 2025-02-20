@@ -1,10 +1,10 @@
 {
     "seo": {
         "title": "Web Designer & Developer from Belgium",
-        "description": "I empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
+        "description": "Empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
         "canonical": "https://webdevamin.com",
         "ogTitle": "Web Design & Developer from Belgium",
-        "ogDescription": "I empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
+        "ogDescription": "Empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
         "image": "https://bucket.webdevamin.com/home.jpg"
     },
     "alternates": [
@@ -27,7 +27,7 @@
         {
             "title": "Webdevamin",
             "slug": "hero",
-            "text": "I empower your business with state-of-the-art digital solutions, such as websites, web applications, and digital marketing, with a focus on your specific needs, including web design, web development, and more.",
+            "text": "Empower your business with state-of-the-art digital solutions, such as websites, web applications, and digital marketing, with a focus on your specific needs, including web design, web development, and more.",
             "button": [
                 {
                     "href": "/contact",
