@@ -81,27 +81,15 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                     <ul className={`text_light_all grid grid-cols-2 gap-x-7 
                     items-center sm:block`}>
                         {
-                            isServiceAPage ? (
+                            isServiceAPage && (
                                 services.map((service, i) => {
                                     const { titleTwo, showcase, slug } = service;
 
                                     return (
                                         <li className={`pt-2 ${!showcase && `hidden`}`} key={i}>
-                                            <Link href={`/services/${slug}`} className={`lg:text-base`}>
+                                            <Link href={`/services/${slug}`} className={`lg:text-base transition-all hover:text-theme`}>
                                                 {titleTwo}
                                             </Link>
-                                        </li>
-                                    )
-                                })
-                            ) : (
-                                services.map((service, i) => {
-                                    const { title, showcase } = service;
-
-                                    return (
-                                        <li className={`pt-2`} key={i}>
-                                            <span className={`lg:text-base ${!showcase && `hidden`}`}>
-                                                {title}
-                                            </span>
                                         </li>
                                     )
                                 })
