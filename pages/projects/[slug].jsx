@@ -48,7 +48,7 @@ const Project = ({ localesData, socialsData, blogsData, servicesData, regionsDat
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} includeCompanyName />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroOne content={heroContent} socials={socialsData}
                 externalLink={link ? true : false} disableImgSpace />

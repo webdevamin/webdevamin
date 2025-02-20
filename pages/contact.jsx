@@ -78,7 +78,7 @@ const Contact = ({ localesData, socialsData, blogsData, servicesData, regionsDat
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} includeCompanyName />
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
                 socials={socialsData} />

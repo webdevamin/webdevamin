@@ -17,7 +17,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
 
     return (
         <>
-            <Seo seo={seo} alternates={alternates} />
+            <Seo seo={seo} alternates={alternates} includeCompanyName />
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
