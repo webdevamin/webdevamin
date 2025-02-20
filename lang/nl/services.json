@@ -36,12 +36,12 @@
         "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen en neem contact op. Of vraag direct een gratis offerte aan indien u voor een eenmalige betaling opteert. Ontdek hoe ik u van dienst kan zijn!",
         "shortDescription": "Een professionele website laten maken? Ik bied betaalbare en <strong>state-of-the-art webdesign diensten</strong>. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website die op het internet staat.",
         "img": {
-            "src": "https://bucket.webdevamin.com/webdesign.webp",
-            "alt": "Desktop met browser illustratie.",
-            "width": 780,
-            "height": 342,
+            "src": "https://bucket.webdevamin.com/webdesign.svg",
+            "alt": "Een persoon die ’s avonds in het donker op de computer werkt.",
+            "width": 450,
+            "height": 450,
             "objectFit": "cover",
-            "disableImgSpace": true
+            "disableImgSpace": false
         },
         "button": [
             {

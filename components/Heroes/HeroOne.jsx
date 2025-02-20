@@ -20,13 +20,18 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
             md:flex md:flex-row-reverse md:justify-evenly 
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
             xl:px-40 2xl:px-50 md:pt-14`}>
-                <div className={disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}>
-                    <Image
-                        src={url} priority={true}
-                        width={width} height={height}
-                        alt={alt} className={`rounded-lg`}
-                        style={{ objectFit: objectFit }}
-                    />
+                <div className={`flex items-center justify-center ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
+                    <div className="relative max-w-[500px] mx-auto">
+                        <Image
+                            src={url}
+                            priority={true}
+                            width={width}
+                            height={height}
+                            alt={alt}
+                            className="rounded-lg h-auto"
+                            style={{ objectFit: objectFit }}
+                        />
+                    </div>
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 

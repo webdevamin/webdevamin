@@ -36,12 +36,12 @@
         "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription price and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
         "shortDescription": "<p>Need a professional website? I offer affordable and <strong>state-of-the-art web design services</strong>. <strong>Attract more customers and strengthen your business</strong> with a custom-made business website that exists on the internet.</p>",
         "img": {
-            "src": "https://bucket.webdevamin.com/webdesign.webp",
-            "alt": "Desktop with browser illustration.",
-            "width": 780,
-            "height": 342,
+            "src": "https://bucket.webdevamin.com/webdesign.svg",
+            "alt": "Person working in front of their computer during the night.",
+            "width": 450,
+            "height": 450,
             "objectFit": "cover",
-            "disableImgSpace": true
+            "disableImgSpace": false
         },
         "button": [
             {
