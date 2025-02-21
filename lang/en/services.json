@@ -33,8 +33,8 @@
         },
         "locale": "en",
         "showcase": true,
-        "description": "Need a professional website? I offer affordable and state-of-the-art web design services. Attract more customers and strengthen your business with a custom-made business website. Check the subscription price and get in touch. Or request a free quote directly if you opt for a one-time payment. Discover how I can be of service!",
-        "shortDescription": "<p>Need a professional website? I offer affordable and <strong>state-of-the-art web design services</strong>. <strong>Attract more customers and strengthen your business</strong> with a custom-made business website that exists on the internet.</p>",
+        "description": "Strengthen your business and attract more customers with a professional website starting from €64/month with an all-in-one package. Check the subscription prices and get in touch. If you prefer a one-time payment, you can directly request a free quote.",
+        "shortDescription": "<p>Transform your business with a <strong>professional, custom-made website</strong>. Starting from €64/month, get a complete web presence that <strong>attracts customers and strengthens your brand</strong>.</p>",
         "img": {
             "src": "https://bucket.webdevamin.com/webdesign.svg",
             "alt": "Person working in front of their computer during the night.",
@@ -62,7 +62,7 @@
                 "slug": "why",
                 "subtitle": "More customers, branding & efficiency",
                 "position": "left",
-                "text": "<p>Most starting businesses don't have a website. But what exactly is a website, and what's its purpose? A website, created by a web designer or developer, acts as <strong>digital real estate on the internet</strong>. This makes it easier to be found and increases your customer reach throughout the internet. It's meant to <strong>promote your business, both administratively and commercially</strong>, depending on your goals.</p><p>Want to attract customers and let them easily request a quote? With a website, customers can fill out a form, after which you receive the request by email, SMS, or WhatsApp. This is just one of many options. Another example is a contact form for potential customer inquiries. You can also integrate a small CRM system for customer, user, or employee management, making everything easily organized.</p><p>In short, a website is digital real estate on the internet that increases your findability and offers various ways to make contact and strengthen your business. About 70% of businesses have a website, and potential customers are <strong>less likely to become your customer if they discover your business doesn't have a website</strong>.</p>",
+                "text": "<p>A website acts as your <strong>digital real estate on the internet</strong>, making your business easily discoverable and expanding your customer reach. It's designed to <strong>promote your business both administratively and commercially</strong>, adapting to your specific goals.</p><p>From automated quote requests to integrated CRM systems, your website streamlines customer interactions through forms, email, SMS, or WhatsApp. This digital presence is crucial - with 70% of businesses already online, <strong>potential customers are significantly more likely to choose businesses with a professional website</strong>.</p>",
                 "buttons": [
                     {
                         "href": "/projects",
@@ -82,11 +82,11 @@
                 "slug": "process",
                 "subtitle": "Step by step",
                 "position": "right",
-                "text": "<p>Getting a professional website made takes only about 5 days. Here you'll find a step-by-step explanation of my approach to developing your site with excellent SEO. There may be variations, but what's described below gives a general overview of the process.</p>",
+                "text": "<p>Your professional website can be ready in just 5 days. Here's our streamlined process:</p>",
                 "items": [
                     {
                         "title": "1. Design choice",
-                        "body": "<p>We start by choosing the design for your website. There are three possibilities: I select a design that best fits your website and niche, you choose a design yourself from a list I'll send you, or I create a completely custom design, entirely based on your wishes. If you choose a subscription with me, you'll also receive a <strong>free logo</strong>.</p>",
+                        "body": "<p>Choose your design approach:<ol><li>1. Expert-selected design for your niche</li><li>2. Pick from our curated collection</li><li>3. Custom design to your specifications</li></ol><div class='pt-2'><strong>Bonus:</strong> Get a <strong>free logo</strong> with any subscription!</div></p>",
                         "backgroundColor": "rgb(59 130 246)",
                         "icon": {
                             "name": "faPalette",
@@ -95,7 +95,7 @@
                     },
                     {
                         "title": "2. Website development",
-                        "body": "<p>In this phase, I develop your website, including excellent SEO, based on the two requirements mentioned above. On average, this process takes about five days. Variations can occur but are exceptional.</p>",
+                        "body": "<p>Quick and efficient development with:<ol><li>1. Modern, responsive design</li><li>2. Built-in SEO optimization</li><li>3. Performance optimization</li></ol><div class='pt-2'><strong>Average completion:</strong> 5 working days</div></p>",
                         "backgroundColor": "rgb(238 239 70)",
                         "icon": {
                             "name": "faCode",
@@ -104,7 +104,7 @@
                     },
                     {
                         "title": "3. Domain name, hosting, etc. acquisition",
-                        "body": "<p>You choose a domain name, which can end with an extension of your choice, such as .com or .co.uk. Additionally, hosting is needed, which involves monthly costs. All necessary purchases, such as the domain name and hosting, are handled by me if you take out a subscription with me; you don't have to do anything or pay anything for that. I also take care of invoicing for such matters. You always remain the owner, I act as manager.</p>",
+                        "body": "<p>Hassle-free setup:<ol><li>1. Domain name registration (.com, .co.uk, etc.)</li><li>2. Professional hosting setup</li><li>3. All technical management handled</li></ol><div class='pt-2'>You <strong>maintain ownership</strong> while we handle the technical details.</div></p>",
                         "backgroundColor": "rgb(16 185 129)",
                         "icon": {
                             "name": "faPenFancy",
@@ -113,7 +113,7 @@
                     },
                     {
                         "title": "4. Final stage",
-                        "body": "<p>Your website is developed and linked to your purchased domain name. I put the website online and voilà, your site is ready! Additionally, I ensure your website is always updated and maintained if you choose a subscription, and I offer 24/7 support for any questions or comments you have. Want to make changes? No problem, I'm happy to take care of that, and you can always contact me for expansions!</p>",
+                        "body": "<p>Launch and support:<ol><li>1. Website goes live on your domain</li><li>2. Regular updates and maintenance</li><li>3. 24/7 technical support</li><li>4. Easy content updates and expansions</li></ol></p>",
                         "backgroundColor": "rgb(99 102 241)",
                         "icon": {
                             "name": "faBullhorn",
@@ -131,7 +131,7 @@
                 },
                 "slug": "advantages",
                 "subtitle": "Key Business Advantages",
-                "text": "<p>Discover the essential benefits of having a professional website. Your website serves as a powerful digital asset, working 24/7 to enhance your brand identity and reach potential customers.</p>",
+                "text": "<p>Key benefits that drive business growth:</p>",
                 "items": [
                     {
                         "title": "24/7 Online Presence & Accessibility",

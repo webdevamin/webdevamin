@@ -33,7 +33,7 @@
         },
         "locale": "nl",
         "showcase": true,
-        "description": "Een professionele website laten maken? Ik bied betaalbare en state-of-the-art webdesign diensten. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website. Bekijk de abonnementsprijzen en neem contact op. Of vraag direct een gratis offerte aan indien u voor een eenmalige betaling opteert. Ontdek hoe ik u van dienst kan zijn!",
+        "description": "Versterk je zaak en trek meer klanten aan met een professionele website vanaf €44/maand met een all-in-one-pakket. Bekijk de prijzen van de abonnementen en neem contact op. Indien u liever een eenmalige betaling doet, kunt u direct een gratis offerte aanvragen.",
         "shortDescription": "Een professionele website laten maken? Ik bied betaalbare en <strong>state-of-the-art webdesign diensten</strong>. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website die op het internet staat.",
         "img": {
             "src": "https://bucket.webdevamin.com/webdesign.svg",
@@ -62,7 +62,7 @@
                 "slug": "why",
                 "subtitle": "Meer klanten, branding & efficiëntie",
                 "position": "left",
-                "text": "<p>De meeste startende bedrijven hebben geen website. Maar wat is een website precies, en wat is het nut ervan? Een website, gemaakt door een webdesigner of -ontwikkelaar, fungeert als <strong>digitaal vastgoed op het internet</strong>. Hiermee kun je makkelijker gevonden worden en vergroot je je klantenbereik. Het is bedoeld om je <strong>bedrijf te promoten, zowel administratief als commercieel</strong>, afhankelijk van je doelen.</p><p>Wil je klanten aantrekken en hen eenvoudig een offerte laten aanvragen? Met een website kunnen klanten een formulier invullen, waarna jij de aanvraag per e-mail, sms of WhatsApp ontvangt. Dit is slechts een van de vele opties. Een ander voorbeeld is een contactformulier voor vragen van potentiële klanten. Ook kun je een klein CRM-systeem integreren voor klant-, gebruikers- of medewerkersbeheer, zodat je alles eenvoudig organiseert.</p><p>Kortom, een website is digitaal vastgoed op het internet dat je vindbaarheid vergroot en diverse manieren biedt om contact te maken en je bedrijf te versterken. Ongeveer 70% van de bedrijven heeft een website, en potentiële klanten zijn <strong>minder geneigd om uw klant te worden als ze ontdekken dat uw bedrijf geen website heeft</strong>.</p>",
+                "text": "<p>Een website werkt als een <strong>digitaal vastgoed op het internet</strong>, waardoor uw bedrijf makkelijk vindbaar wordt en uw klantenbereik vergroot. Het is ontworpen om uw <strong>zaak zowel administratief als commercieel te promoten</strong>, aangepast aan uw specifieke doelen.</p><p>Van geautomatiseerde offerte-aanvragen tot geïntegreerde CRM-systemen, uw website stroomlijnt klantinteracties via formulieren, e-mail, SMS of WhatsApp. Deze digitale aanwezigheid is cruciaal - met 70% van de bedrijven al online, zijn <strong>potentiële klanten aanzienlijk meer geneigd om te kiezen voor bedrijven met een professionele website</strong>.</p>",
                 "buttons": [
                     {
                         "href": "/projects",
@@ -82,11 +82,11 @@
                 "slug": "process",
                 "subtitle": "Stap per stap",
                 "position": "right",
-                "text": "<p>Een professioneel website laten maken duurt maar ongeveer 5 dagen. Hierbij vindt u een stapsgewijze uitleg van mijn werkwijze voor het ontwikkelen van uw site met uitstekende SEO. Er kunnen uiteraard afwijkingen optreden, maar wat hieronder beschreven staat, geeft een algemeen overzicht van het proces.</p>",
+                "text": "<p>Uw professionele website kan binnen 5 dagen klaar zijn. Dit is ons gestroomlijnde proces:</p>",
                 "items": [
                     {
                         "title": "1. Design keuze",
-                        "body": "<p>We beginnen met het kiezen van het ontwerp voor uw website. Er zijn drie mogelijkheden: ik selecteer een ontwerp dat het beste past bij uw website en niche, u kiest zelf een ontwerp uit een lijst die ik u zal toesturen, of ik creëer een volledig maatwerkontwerp, geheel gebaseerd op uw wensen. Als u kiest voor een abonnement bij mij, ontvangt u daarnaast ook een <strong>gratis logo</strong>.</p>",
+                        "body": "<p>Kies uw design aanpak:<ol><li>1. Expert-geselecteerd ontwerp voor uw niche</li><li>2. Kies uit onze gecureerde collectie</li><li>3. Maatwerk ontwerp volgens uw specificaties</li></ol><div class='pt-2'><strong>Bonus:</strong> Ontvang een <strong>gratis logo</strong> bij elk abonnement!</div></p>",
                         "backgroundColor": "rgb(59 130 246)",
                         "icon": {
                             "name": "faPalette",
@@ -95,7 +95,7 @@
                     },
                     {
                         "title": "2. Ontwikkelen website",
-                        "body": "<p>In deze fase ontwikkel ik uw website, inclusief uitstekende SEO, op basis van de twee hierboven genoemde vereisten. Gemiddeld duurt dit proces ongeveer vijf dagen. Afwijkingen kunnen voorkomen, maar zijn uitzonderlijk.</p>",
+                        "body": "<p>Snelle en efficiënte ontwikkeling met:<ul><li>1. Modern, responsief ontwerp</li><li>2. Ingebouwde SEO-optimalisatie</li><li>3. Prestatie-optimalisatie</li></ul><div class='pt-2'>Gemiddelde doorlooptijd: <strong>5 werkdagen</strong></div></p>",
                         "backgroundColor": "rgb(238 239 70)",
                         "icon": {
                             "name": "faCode",
@@ -104,7 +104,7 @@
                     },
                     {
                         "title": "3. Aanschaffing domeinnaam, hosting, etc.",
-                        "body": "<p>U kiest een domeinnaam, die kan eindigen op een extensie naar keuze, zoals .be of .com. Daarnaast is hosting nodig, wat maandelijkse kosten met zich meebrengt. Alle noodzakelijke aanschaffingen, zoals de domeinnaam en hosting, worden door mij geregeld als u een abonnement bij mij afsluit; daarvoor hoeft u niets te doen en niets voor betalen. Ik verzorg tevens de facturatie voor dergelijke zaken. U blijft altijd de eigenaar, ik fungeer als beheerder.</p>",
+                        "body": "<p>Zorgeloze setup:<ul><li>1. Domeinnaam registratie (.be, .com, etc.)</li><li>2. Professionele hosting setup</li><li>3. Volledig technisch beheer</li></ul><div class='pt-2'>U blijft <strong>eigenaar</strong> terwijl wij de technische details verzorgen.</div></p>",
                         "backgroundColor": "rgb(16 185 129)",
                         "icon": {
                             "name": "faPenFancy",
@@ -113,7 +113,7 @@
                     },
                     {
                         "title": "4. Finale",
-                        "body": "<p>Uw website is ontwikkeld en gekoppeld aan de door u aangeschafte domeinnaam. Ik zet de website online en voilà, uw site is klaar! Daarnaast zorg ik ervoor dat uw website altijd bijgewerkt wordt en onderhoud krijgt indien u voor een abonnement kiesten bied ik daarnaast 24/7 support aan voor alle vragen of opmerkingen die u heeft. Wilt u nog wijzigingen aanbrengen? Geen probleem, ik zorg daar graag voor en u kunt mij altijd contacteren voor uitbreidingen!</p>",
+                        "body": "<p>Launch en ondersteuning:<ul><li>1. Website gaat live op uw domein</li><li>2. Regelmatige updates en onderhoud</li><li>3. 24/7 technische support</li><li>4. Eenvoudige content updates en uitbreidingen</li></ul></p>",
                         "backgroundColor": "rgb(99 102 241)",
                         "icon": {
                             "name": "faBullhorn",
@@ -131,7 +131,7 @@
                 },
                 "slug": "advantages",
                 "subtitle": "Opgesomd voor uw zaak",
-                "text": "Hieronder vindt u een overzicht van de belangrijkste voordelen van een website. Uw website is een belangrijk deel van uw merkidentiteit en wordt dag en nacht bereikbaar voor potentiële klanten.",
+                "text": "<p>Belangrijke voordelen die uw bedrijfsgroei stimuleren:</p>",
                 "items": [
                     {
                         "title": "24/7 Online Zichtbaarheid",

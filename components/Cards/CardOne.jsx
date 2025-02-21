@@ -13,8 +13,7 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
 
     return (
         <article className={`shadow-md border border-dark 
-        xl:border-opacity-10 border-opacity-20 rounded-2xl p-6 relative 
-        flex-1 xl:flex xl:flex-row`}>
+        xl:border-opacity-10 border-opacity-20 rounded-2xl p-6 relative flex-1 xl:flex xl:flex-row justify-center`}>
             {
                 (initial || icon) && (
                     <div className={`p-5 w-14 h-14 md:w-16 md:h-16
