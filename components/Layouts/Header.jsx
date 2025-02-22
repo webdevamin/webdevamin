@@ -59,7 +59,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                     </Dropdown>
                                                 </div>
                                             ) : (
-                                                <Link href={`/${href}`} className={`block md:p-0 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
+                                                <Link href={`${href}`} className={`block md:p-0 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
                                                     {title}
                                                 </Link>
                                             )
