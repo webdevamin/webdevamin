@@ -59,7 +59,6 @@ export async function getStaticPaths() {
 
     const paths = [...nlPaths, ...enPaths];
 
-    console.log(paths);
     return {
         paths,
         fallback: false,
