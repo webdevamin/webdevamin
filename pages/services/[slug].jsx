@@ -41,16 +41,25 @@ export async function getStaticPaths() {
     const servicesDataNl = (await import(`../../lang/nl/services.json`)).default;
     const servicesDataEn = (await import(`../../lang/en/services.json`)).default;
 
-    const servicesAllLocales = servicesDataNl.concat(servicesDataEn);
+    // Filter and map Dutch services that are published (have seo and alternates)
+    const nlPaths = servicesDataNl
+        .filter(service => service.seo && service.alternates)
+        .map((service) => ({
+            params: { slug: service.slug },
+            locale: 'nl'
+        }));
 
-    const paths = servicesAllLocales.map((serviceRaw) => {
-        const { locale, slug } = serviceRaw;
+    // Filter and map English services that are published
+    const enPaths = servicesDataEn
+        .filter(service => service.seo && service.alternates)
+        .map((service) => ({
+            params: { slug: service.slug },
+            locale: 'en'
+        }));
 
-        return {
-            params: { slug }, locale
-        }
-    });
+    const paths = [...nlPaths, ...enPaths];
 
+    console.log(paths);
     return {
         paths,
         fallback: false,

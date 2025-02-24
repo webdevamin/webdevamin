@@ -41,10 +41,6 @@
             {
                 "text": "Contact me",
                 "href": "/contact"
-            },
-            {
-                "text": "View pricing",
-                "href": "/pricing"
             }
         ]
     },
