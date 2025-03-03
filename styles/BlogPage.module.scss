@@ -1,0 +1,133 @@
+// Blog page specific styles
+
+.blogContainer {
+  @apply mb-16 sm:mb-20 md:mb-28 xl:mb-52 xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32;
+}
+
+.blogImage {
+  @apply rounded-xl transition-transform duration-300 ease-in-out;
+  
+  &:hover {
+    @apply transform scale-[1.01];
+  }
+}
+
+.socialSharesContainer {
+  @apply flex justify-center items-center mb-4;
+}
+
+.blogContent {
+  // Typography base styles
+  @apply text-base lg:text-lg leading-relaxed;
+  
+  // Headings
+  h2 {
+    @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7 mt-8 xl:mt-10;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+  }
+  
+  h3 {
+    @apply text-base sm:text-lg mb-2 font-semibold lg:text-xl xl:text-2xl lg:mb-4 uppercase xl:mb-5 mt-6 xl:mt-8;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+  }
+  
+  h4, h5, h6 {
+    @apply font-semibold mb-3 mt-4 lg:mt-6;
+  }
+  
+  // Paragraphs
+  p {
+    @apply mb-4 lg:mb-6 opacity-90;
+  }
+  
+  // Lists
+  ul, ol {
+    @apply mb-4 lg:mb-6 pl-5;
+  }
+  
+  ul {
+    @apply list-disc;
+  }
+  
+  ol {
+    @apply list-decimal;
+  }
+  
+  li {
+    @apply mb-2 opacity-90;
+    
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+  
+  // Blockquotes
+  blockquote {
+    @apply border-l-4 border-theme pl-4 py-1 my-6 italic bg-gray-50 rounded-r;
+    
+    p {
+      @apply mb-0;
+    }
+  }
+  
+  // Tables - special attention for better styling
+  table {
+    @apply w-full mb-6 border-collapse overflow-hidden rounded-lg shadow-sm my-6;
+    
+    thead {
+      @apply bg-gray-100;
+      
+      tr {
+        @apply border-b border-gray-300;
+      }
+    }
+    
+    th {
+      @apply bg-gray-100 font-semibold p-3 text-left border-b border-gray-300 text-sm lg:text-base;
+    }
+    
+    td {
+      @apply border-b border-gray-200 p-3 text-sm lg:text-base;
+    }
+    
+    tr {
+      @apply hover:bg-gray-50 transition-colors duration-150;
+      
+      &:last-child td {
+        @apply border-b-0;
+      }
+    }
+    
+    // Responsive tables
+    @media (max-width: 640px) {
+      @apply block overflow-x-auto;
+    }
+  }
+  
+  // Images
+  img {
+    @apply rounded-lg my-4 max-w-full h-auto mx-auto;
+  }
+  
+  // Links
+  a:not([class]) {
+    @apply text-theme_darker font-semibold underline transition-opacity duration-200;
+    
+    &:hover {
+      @apply opacity-80;
+    }
+  }
+  
+  // Code blocks
+  pre {
+    @apply bg-gray-800 text-white p-4 rounded-lg overflow-x-auto my-4;
+  }
+  
+  code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  
+  pre code {
+    @apply bg-transparent p-0 text-white;
+  }
+}

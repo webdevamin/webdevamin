@@ -71,7 +71,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                     </Navbar.Collapse>
                     <Navbar.Collapse className='px-8 md:px-0'>
                         {
-                            alternateLangs.map((alternateLang, i) => {
+                            alternateLangs && alternateLangs.length > 0 && alternateLangs.map((alternateLang, i) => {
                                 const { href, locale } = alternateLang;
 
                                 const localeLink = locales.find((loc) => {

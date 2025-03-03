@@ -8,6 +8,7 @@ import Footer from '../../components/Layouts/Footer';
 import HeroTwo from '../../components/Heroes/HeroTwo';
 import Image from 'next/image';
 import SocialShares from '../../components/SocialShares';
+import styles from '../../styles/BlogPage.module.scss';
 
 const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, blogData }) => {
     const router = useRouter();
@@ -34,21 +35,22 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroTwo content={heroContent} socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={`mb-16 sm:mb-20 md:mb-28 xl:mb-52 
-                xl:w-10/12 lg:max-w-6xl lg:mx-auto mt-10 md:mt-24 xl:mt-32`}>
+                <section id={slug} className={styles.blogContainer}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
                             <Image
-                                src={src} fill={true} alt={alt} className={`rounded-xl ${border && `border shadow lg:shadow-xl`}`}
+                                src={src} fill={true} alt={alt} 
+                                className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`}`}
                                 style={{ objectFit: `cover` }} priority={true}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
-                        <SocialShares url={seo.canonical} title={`Blog - ${title}`}
-                            description={description} imageUrl={src} />
+                        <div className={styles.socialSharesContainer}>
+                            <SocialShares url={seo.canonical} title={`Blog - ${title}`}
+                                description={description} imageUrl={src} />
+                        </div>
                     </div>
-                    <div className="blog_content">
-                        <div dangerouslySetInnerHTML={{ __html: text }}
-                            className={`blog_content`} />
+                    <div className={styles.blogContent}>
+                        <div dangerouslySetInnerHTML={{ __html: text }} />
                     </div>
                 </section>
                 <Contact content={contactBlockData} />

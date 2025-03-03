@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) => {
     const { title, description, canonical, image,
-        ogTitle, ogDescription } = seo;
+        ogTitle, ogDescription, keywords } = seo;
 
     const router = useRouter();
     const { locale } = router;
@@ -24,6 +24,7 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) =
             }
             <title>{includeCompanyName ? `${title} | Webdevamin` : title}</title>
             <meta name="description" content={description} />
+            {keywords && <meta name="keywords" content={keywords} />}
             <meta property="og:title" content={includeCompanyName ? `${defaultOgTitle} | Webdevamin` : defaultOgTitle} />
             <meta property="og:image" content={defaultImage} />
             <meta property='og:image:width' content='1200' />
@@ -43,7 +44,7 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) =
             <meta name="twitter:url" content={canonical} />
             <meta name="twitter:site" content="@Webdevamin" />
             {
-                alternates.map((alternate) => {
+                (alternates && alternates.length > 0) && alternates.map((alternate) => {
                     const { href, hreflang } = alternate;
 
                     return (
