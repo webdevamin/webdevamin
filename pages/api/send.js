@@ -2,7 +2,7 @@ export const config = {
   runtime: "edge",
 };
 
-const { RESEND_API_KEY, MAIL_TO, MAIL_FROM } = process.env;
+const { RESEND_API_KEY, MAIL_TO } = process.env;
 
 export default async function handler(req) {
   try {
@@ -37,7 +37,7 @@ export default async function handler(req) {
 
     // Prepare email data for Resend
     const emailData = {
-      from: MAIL_FROM || `Contact Form <onboarding@resend.dev>`, // Must be a verified domain or Resend's default
+      from: `Contact Form <onboarding@resend.dev>`, // Must be a verified domain or Resend's default
       to: MAIL_TO,
       subject: `New portfolio message from ${name}`,
       reply_to: email, // Set reply-to as the visitor's email so you can reply directly
