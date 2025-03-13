@@ -2,7 +2,7 @@ export const config = {
   runtime: "edge",
 };
 
-const { MAIL_API_KEY, MAIL_TO } = process.env;
+const { RESEND_API_KEY, MAIL_TO, MAIL_FROM } = process.env;
 
 export default async function handler(req) {
   try {
@@ -34,37 +34,38 @@ export default async function handler(req) {
     }
 
     const cleanMessage = message.replace(/(<([^>]+)>)/gi, "");
-    const apiUrl = 'https://api.brevo.com/v3/smtp/email';
 
+    // Prepare email data for Resend
     const emailData = {
-      sender: {
-        name: name,
-        email: email,
-      },
-      to: [
-        {
-          email: MAIL_TO,
-          name: "Amin",
-        },
-      ],
+      from: MAIL_FROM || `Contact Form <onboarding@resend.dev>`, // Must be a verified domain or Resend's default
+      to: MAIL_TO,
       subject: `New portfolio message from ${name}`,
-      htmlContent: `<html><body><p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${cleanMessage}</p></body></html>`,
+      reply_to: email, // Set reply-to as the visitor's email so you can reply directly
+      html: `<html><body>
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${cleanMessage}</p>
+      </body></html>`,
     };
 
-    const headers = {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'Api-Key': MAIL_API_KEY,
-    };
-
-    const res = await fetch(apiUrl, {
+    // Send email using Resend API
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: headers,
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${RESEND_API_KEY}`
+      },
       body: JSON.stringify(emailData),
     });
 
-    if (!res.ok) throw new Error();
-    else await res.json();
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error('Resend API error:', data);
+      throw new Error(data.message || 'Failed to send email');
+    }
 
     return new Response(
       JSON.stringify(`Bedankt! Uw bericht werd successvol verstuurd. Wij houden u zo snel mogelijk op hoogte!`),
@@ -79,7 +80,7 @@ export default async function handler(req) {
     console.error(err);
 
     if (err.message) {
-      console.error(err.message)
+      console.error(err.message);
     }
 
     return new Response(

@@ -50,7 +50,7 @@
             "title": "success",
             "color": "white",
             "backgroundColor": "#00c485",
-            "text": "Thank you, your message has been sent. If everything is filled in correctly, I'll get back to you."
+            "text": "Thank you, your message has been sent. If everything is filled in correctly, we'll get back to you."
         },
         {
             "title": "clienterror",
