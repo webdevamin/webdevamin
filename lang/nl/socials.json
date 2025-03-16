@@ -30,10 +30,10 @@
         "hideFromFooter": false
     },
     {
-        "title": "Google",
-        "href": "https://goo.gl/maps/KuPJhuTuNv2rK7RNA",
+        "title": "X",
+        "href": "https://x.com/webdevamin",
         "icon": {
-            "name": "faGoogle",
+            "name": "faXTwitter",
             "brands": true
         },
         "hideFromHeader": false,
