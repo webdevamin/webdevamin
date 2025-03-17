@@ -157,6 +157,11 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                                 {locale === `en` ? `Privacy policy` : `Privacybeleid`}
                             </Link>
                         </li>
+                        <li className={`pt-1 sm:pt-2`}>
+                            <Link href={`https://startupfa.me/s/webdevamin?utm_source=webdevamin.com`} className={`lg:text-base transition-all hover:text-theme`} target="_blank" rel="noopener noreferrer nofollow">
+                                Featured on Startup Fame
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
