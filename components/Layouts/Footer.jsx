@@ -85,8 +85,10 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                                 services.map((service, i) => {
                                     const { titleTwo, showcase, slug } = service;
 
+                                    if (!showcase) return null;
+
                                     return (
-                                        <li className={`pt-2 ${!showcase && `hidden`}`} key={i}>
+                                        <li className={`pt-2`} key={i}>
                                             <Link href={`/services/${slug}`} className={`lg:text-base transition-all hover:text-theme`}>
                                                 {titleTwo}
                                             </Link>
