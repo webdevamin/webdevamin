@@ -20,15 +20,13 @@ const Hero = ({ content, socials }) => {
                     <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
-                    <h1 className={`bg-transparent opacity-100 xl:mb-9`}>
-                        <TypeAnimation
-                            sequence={[parsedTitle]}
-                            wrapper="div"
-                            className='font_mohave'
-                            cursor={true}
-                            speed={1}
-                        />
-                    </h1>
+                    <TypeAnimation
+                        sequence={[parsedTitle]}
+                        wrapper="h1"
+                        className='bg-transparent opacity-100 xl:mb-9 font_mohave'
+                        cursor={true}
+                        speed={1}
+                    />
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-theme h-[1px]`} />
