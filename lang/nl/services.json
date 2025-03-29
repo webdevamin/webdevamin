@@ -1,12 +1,12 @@
 [
     {
         "seo": {
-            "title": "Professionele Website Laten Maken | Vanaf €44/m All-In-One",
-            "description": "Een professionele website laten maken vanaf €44/maand met all-in-one-pakket? Laat je zakelijke website maken met webdesign, SEO, gratis upgrades en onderhoud! Bekijk de prijzen en neem contact op!",
-            "canonical": "https://webdevamin.com/nl/services/webdesign",
+            "title": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
+            "description": "Een zakelijke website laten maken vanaf €44/maand! Met een professionele website krijgt u webdesign, SEO, gratis upgrades en onderhoud! Abonneer nu of neem contact op!",
+            "canonical": "https://webdevamin.com/nl/services/zakelijke-website-laten-maken",
             "image": "https://bucket.webdevamin.com/webdesign_og_nl.jpg",
-            "ogTitle": "Professionele Website Laten Maken | Vanaf €44/m All-In-One",
-            "ogDescription": "Een professionele website laten maken vanaf €44/maand met all-in-one-pakket? Laat je zakelijke website maken met webdesign, SEO, gratis upgrades en onderhoud! Bekijk de prijzen en neem contact op!"
+            "ogTitle": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
+            "ogDescription": "Een zakelijke website laten maken vanaf €44/maand! Met een professionele website krijgt u webdesign, SEO, gratis upgrades en onderhoud! Abonneer nu of neem contact op!"
         },
         "alternates": [
             {
@@ -14,7 +14,7 @@
                 "hreflang": "x-default"
             },
             {
-                "href": "https://webdevamin.com/nl/services/webdesign",
+                "href": "https://webdevamin.com/nl/services/zakelijke-website-laten-maken",
                 "hreflang": "nl"
             }
         ],
@@ -24,17 +24,17 @@
                 "locale": "en"
             }
         ],
-        "title": "Professioneel webdesign",
-        "titleTwo": "Webdesign",
-        "slug": "webdesign",
+        "title": "Zakelijke webdesign",
+        "titleTwo": "Zakelijke website laten maken",
+        "slug": "zakelijke-website-laten-maken",
         "detailBtn": {
-            "href": "/services/webdesign",
-            "text": "Naar webdesign"
+            "href": "/services/zakelijke-website-laten-maken",
+            "text": "Naar zakelijke webdesign"
         },
         "locale": "nl",
         "showcase": true,
-        "description": "Versterk je zaak en trek meer klanten aan met een professionele website vanaf €44/maand met een all-in-one-pakket. Bekijk de prijzen van de abonnementen en neem contact op. Indien u liever een eenmalige betaling doet, kunt u direct een gratis offerte aanvragen.",
-        "shortDescription": "Een professionele website laten maken? Ik bied betaalbare en <strong>state-of-the-art webdesign diensten</strong>. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website die op het internet staat.",
+        "description": "Versterk je zaak en trek meer klanten aan met een zakelijke website vanaf €44/maand met een all-in-one-pakket. Bekijk de prijzen van de abonnementen en neem contact op. Indien u liever een eenmalige betaling doet, kunt u direct een gratis offerte aanvragen.",
+        "shortDescription": "Een zakelijke website laten maken? Ik bied betaalbare en <strong>state-of-the-art webdesign diensten</strong>. Trek meer klanten aan en versterk je bedrijf met een op maat gemaakte zakelijke website die op het internet staat.",
         "img": {
             "src": "https://bucket.webdevamin.com/webdesign.svg",
             "alt": "Een persoon die ’s avonds in het donker op de computer werkt.",
@@ -58,7 +58,7 @@
         "contents": [
             {
                 "component": "block-normal",
-                "title": "Waarom webdesign",
+                "title": "Waarom zakelijke website",
                 "slug": "why",
                 "subtitle": "Meer klanten, branding & efficiëntie",
                 "position": "left",
@@ -124,7 +124,7 @@
             },
             {
                 "component": "block-accordion",
-                "title": "Voordelen website",
+                "title": "Voordelen zakelijke website",
                 "layout": {
                     "name": "block-layout-two",
                     "position": "left"
@@ -248,7 +248,7 @@
                 "text": "Hieronder vindt u een lijst met veelgestelde vragen over webdesign en websites. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
                 "items": [
                     {
-                        "title": "Wat is de gemiddelde prijs om een website te laten maken?",
+                        "title": "Wat is de gemiddelde prijs om een zakelijke website te laten maken?",
                         "description": "De gemiddelde prijs voor het laten maken van een website varieert sterk, afhankelijk van de complexiteit van het project, de functionaliteiten die u nodig heeft en de ervaring van de webdesigner. Gelukkig betaalt u bij mij slechts <strong>€49 excl. BTW of €44 per maand</strong> indien u voor een jaarlijks abonnement kiest. Het brengt veel voordelen met zich mee, zoals een <strong>gratis domeinnaam, hosting, onderhoud en support</strong>."
                     },
                     {

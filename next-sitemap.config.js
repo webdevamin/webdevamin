@@ -8,5 +8,17 @@ module.exports = {
         '/500',
         '/nl/500'
     ],
+    policies: [
+        {
+            userAgent: '*',
+            allow: '/',
+            disallow: [
+                '/404',
+                '/nl/404',
+                '/500',
+                '/nl/500'
+            ]
+        }
+    ]
     // ...other options
-  }
+}

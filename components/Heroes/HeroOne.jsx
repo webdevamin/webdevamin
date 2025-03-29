@@ -37,7 +37,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     <h1 className={`bg-transparent opacity-100 
                     ${smallerTitle && `text-3xl mb-8 
                     font-bold lg:text-4xl xl:text-5xl tracking-tight 
-                    2xl:text-6xl`}`}>
+                    2xl:text-6xl md:mb-5`}`}>
                         {
                             (Array.isArray(parsedTitle)) ? (
                                 <TypeAnimation

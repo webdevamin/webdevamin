@@ -19,7 +19,7 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
         <>
             <Seo seo={seo} alternates={alternates} />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
-            <HeroOne content={heroContent} socials={socialsData} />
+            <HeroOne content={heroContent} socials={socialsData} smallerTitle/>
             <PageLayout>
                 {
                     contents.map((content, i) => {

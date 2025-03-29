@@ -5,7 +5,6 @@ import { getJsonString, } from '../../utils/app';
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
 import Marquee from 'react-fast-marquee';
 
 const Hero = ({ content, socials }) => {
@@ -20,13 +19,9 @@ const Hero = ({ content, socials }) => {
                     <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
-                    <TypeAnimation
-                        sequence={[parsedTitle]}
-                        wrapper="h1"
-                        className='bg-transparent opacity-100 xl:mb-9 font_mohave'
-                        cursor={true}
-                        speed={1}
-                    />
+                    <h1 className='bg-transparent opacity-100 xl:mb-9 font_mohave'>
+                        {parsedTitle}
+                    </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-theme h-[1px]`} />
@@ -36,6 +31,7 @@ const Hero = ({ content, socials }) => {
                                     const { href, icon, title, hideFromHeader } = social;
                                     const { name, brands } = icon;
                                     const iconRef = brands ? fab[name] : fas[name];
+
 
                                     return (
                                         <a key={index} href={href} rel="noreferrer"

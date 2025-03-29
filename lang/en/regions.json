@@ -95,7 +95,7 @@
     {
         "name": "Worldwide",
         "slug": "worldwide",
-        "showcase": true,
+        "showcase": false,
         "locale": "en",
         "seo": {
             "title": "Affordable Web Designer & Developer",
@@ -539,6 +539,99 @@
                 "summary": "$ to $$$",
                 "position": "right",
                 "text": "<p>As a professional <strong>website builder </strong>or <strong>web designer </strong>with <strong>freelance web agency</strong>, I can offer cheaper services compared to your typical software companies in <strong>Oostkamp</strong>. Moreover, I am the only person you communicate with, unlike software companies<strong> </strong>where you will meet various project managers and developers. So, people often pay way too much for what they get. These companies not only have to pay their staff, but the costs they have to spend are much more complex, and they often charge exorbitant monthly fees on top. For example, Duke and Duchess spent more than 10K on their website. While they could simply hire a freelancer to streamline communication and spend less than 3K to develop the same solution.</p>",
+                "button": [
+                    {
+                        "href": "/projects",
+                        "text": "Projects",
+                        "label": "To projects page",
+                        "external": false
+                    }
+                ],
+                "img": {
+                    "src": "https://bucket.webdevamin.com/gaming.svg",
+                    "width": 562,
+                    "height": 448,
+                    "alt": "Two people gaming together.",
+                    "objectFit": "cover"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bruges",
+        "slug": "bruges",
+        "showcase": true,
+        "locale": "en",
+        "seo": {
+            "title": "Affordable Web Designer Bruges",
+            "description": "Are you looking for an affordable web agency for your business in Bruges to create a website or app? Look no further. Contact me.",
+            "canonical": "https://webdevamin.com/regions/bruges"
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/regions/bruges",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/regions/brugge",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/regions/brugge",
+                "locale": "nl"
+            }
+        ],
+        "hero": {
+            "title": "Affordable Web Designer & Developer Bruges",
+            "text": "<p>Are you looking for an affordable web agency to develop a website/app for your business in Bruges? Look no further. Feel free to contact me.</p>",
+            "button": [
+                {
+                    "href": "#service",
+                    "text": "What I offer",
+                    "label": "To 'service' section",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "https://bucket.webdevamin.com/feeling_proud.svg",
+                "width": 507,
+                "height": 478,
+                "alt": "Person sitting at a computer desk with a desktop computer beside them.",
+                "objectFit": "cover"
+            }
+        },
+        "contents": [
+            {
+                "title": "Services",
+                "slug": "service",
+                "summary": "Web agency, website builder & SEO",
+                "position": "left",
+                "text": "<p>Are you from <strong>Bruges, West Flanders</strong> and tired of navigating the confusing world of web design and development alone? Look no further! As a <strong>freelancer</strong> with professional experience since 2020, I develop digital solutions with a focus on your needs: <strong>website</strong>/<strong>webshop </strong>for your business with excellent <strong>SEO</strong>, CRMs, administrative application, and more. Anything that needs to be on the screen to improve your business and/or attract more customers to ultimately <strong>generate more revenue</strong>. As a freelancer, I am your only point of contact. I oversee your project and ultimately complete it. Whether you are in <strong>Bruges </strong>or elsewhere, it doesn't matter. In addition to <strong>web design</strong> and <strong>web development</strong>, I also do <strong>digital marketing</strong> to improve your business's online presence and ensure more customer traffic. Contact me for a free quote or if you have any questions.</p>",
+                "button": [
+                    {
+                        "href": "/contact",
+                        "text": "Contact me",
+                        "label": "To contact page",
+                        "external": false
+                    }
+                ],
+                "img": {
+                    "src": "https://bucket.webdevamin.com/services.svg",
+                    "width": 517,
+                    "height": 358,
+                    "alt": "Person in front of their laptop with charts.",
+                    "objectFit": "cover"
+                }
+            },
+            {
+                "title": "Affordable",
+                "slug": "affordable",
+                "subtitle": "$ to $$$",
+                "summary": "$ to $$$",
+                "position": "right",
+                "text": "<p>As a professional <strong>website builder </strong>or <strong>web designer </strong>with <strong>freelance web agency</strong>, I can offer cheaper services compared to your typical software companies in <strong>Bruges</strong>. Moreover, I am the only person you communicate with, unlike software companies<strong> </strong>where you will meet various project managers and developers. So, people often pay way too much for what they get. These companies not only have to pay their staff, but the costs they have to spend are much more complex, and they often charge exorbitant monthly fees on top. For example, Duke and Duchess spent more than 10K on their website. While they could simply hire a freelancer to streamline communication and spend less than 3K to develop the same solution.</p>",
                 "button": [
                     {
                         "href": "/projects",
