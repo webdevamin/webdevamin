@@ -32,7 +32,7 @@ const BlockAccordion = ({ content }) => {
 
                                 return (
                                     <Accordion.Panel key={i}>
-                                        <Accordion.Title className='text-dark'>{title}</Accordion.Title>
+                                        <Accordion.Title>{title}</Accordion.Title>
                                         <Accordion.Content className="w-full">
                                             {text.includes('<') ? (
                                                 <div
