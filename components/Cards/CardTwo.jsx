@@ -5,7 +5,7 @@ import ButtonThree from '../Buttons/ButtonThree';
 import { Tooltip } from "flowbite-react"
 import Link from 'next/link';
 
-const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border, type, link, technologies = [], badgeAlt }) => {
+const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt }) => {
     const router = useRouter();
     const { bText, bgColor, color } = badge || {};
     const [isHovered, setIsHovered] = useState(false);
@@ -43,7 +43,7 @@ const CardTwo = ({ imgUrl, title, text, subtitle, slug, alt, badge, border, type
                                 {bText ?? badge}
                             </span>
                         )}
-                        <span className="line-clamp-1">{title}</span>
+                        <span>{title}</span>
                     </h3>
 
                     {primaryTechs.length > 0 && (
