@@ -1,5 +1,94 @@
 [
     {
+        "locale": "en",
+        "seo": {
+            "title": "Webleadr",
+            "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
+            "canonical": "https://webdevamin.com/projects/webleadr",
+            "image": "https://bucket.webdevamin.com/webleadr-portfolio-og.jpg",
+            "ogTitle": "Webleadr",
+            "ogDescription": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/webleadr",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/webleadr",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/webleadr",
+                "locale": "nl"
+            }
+        ],
+        "title": "Webleadr",
+        "slug": "webleadr",
+        "type": "saas",
+        "niche": "marketing",
+        "link": "https://webleadr.com",
+        "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
+            "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page."
+        },
+        "technologies": [
+            {
+                "name": "Next.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "alt": "Next.js"
+                }
+            },
+            {
+                "name": "Supabase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "alt": "Supabase"
+                }
+            },
+            {
+                "name": "OpenAI",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/openai.svg",
+                    "alt": "OpenAI"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "alt": "Cloudflare"
+                }
+            },
+            {
+                "name": "Paddle",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/paddle.svg",
+                    "alt": "Paddle"
+                }
+            },
+            {
+                "name": "Resend",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/resend.svg",
+                    "alt": "Resend"
+                }
+            },
+            {
+                "name": "Sentry",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/sentry.svg",
+                    "alt": "Sentry"
+                }
+            }
+        ]
+    },
+    {
         "seo": {
             "title": "Gympouch",
             "description": "A gym administration app to manage appointments, store workouts and prices, and more.",
@@ -28,50 +117,33 @@
         "slug": "gympouch",
         "type": "webapp",
         "locale": "en",
+        "niche": "fitness",
         "description": "A gym administration app to manage appointments, store workouts and prices, and more.",
         "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
             "alt": "Dashboard page and detail page of Gympouch application."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/gympouch_alpha.png",
-            "alt": "Dashboard page and detail page of Gympouch application.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>This application is developed for a personal coach to manage appointments of his clients. A potential client sends him an SMS to register his/her sessions. The coach creates a new appointment in the app.</p><p>In addition, the trainer can log the progress of his clients and determine what their next sessions could be. He also logs the current and total price.</p><p>There is also a map integrated to indicate where the session takes place. When clicked, a standard Map application embedded in his smartphone is opened. Well-known examples are Apple Maps and Google Maps. A route is created from his current location to the destination address where the training will take place.</p><p>Finally, a weekly overview is shown on the homepage. This to let the coach know how many sessions he has completed during the period and more.</p><p>This app is not intended for the public. Only for the coach (administrator).</p>",
-        "technologiesText": "<p>Next.js (React.js) for frontend development with Node.js serverless backend. Firebase integration for real-time database. Finally, the app is deployed/hosted on Vercel.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/nodejs.svg",
-                    "width": 115,
-                    "height": 127,
-                    "alt": "Node.js",
-                    "objectFit": "cover"
+                    "alt": "Node.js"
                 }
             },
             {
                 "name": "Firebase",
                 "image": {
                     "src": "https://bucket.webdevamin.com/firebase.svg",
-                    "width": 115,
-                    "height": 158,
-                    "alt": "Firebase",
-                    "objectFit": "cover"
+                    "alt": "Firebase"
                 }
             }
         ]
@@ -105,50 +177,33 @@
         "slug": "my-admin",
         "type": "webapp",
         "locale": "en",
+        "niche": "administration",
         "description": "Administration app with login system to modify data from an external website or web app and receive messages from any event.",
         "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
             "alt": "Login and dashboard page of My Admin application."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/myadmin_alpha.png",
-            "alt": "Login and dashboard page of My Admin application.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>An admin application for clients. What you see in the image above is a general layout. This means that for each client, the overview may be slightly different, but the idea is basically the same: provide clients with a clear dashboard with data connected to their separate website/web application. An example is Restaurant China Bruges. The owner uses this admin app to modify data on his restaurant website (intended for regular users).</p><p>In addition, it is possible to install this as a standalone app on a mobile device, making it more accessible on the go.</p><p>Whenever new data arrives, the owner receives a notification message at the top of his/her smartphone. Even if the app is closed. This is called web push notification.</p>",
-        "technologiesText": "<p>Next.js (React.js) was used for frontend development with serverless Node.js backend code. Firebase integration for real-time database. Finally, the app was hosted/deployed on Vercel.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/nodejs.svg",
-                    "width": 115,
-                    "height": 127,
-                    "alt": "Node.js",
-                    "objectFit": "cover"
+                    "alt": "Node.js"
                 }
             },
             {
                 "name": "Firebase",
                 "image": {
                     "src": "https://bucket.webdevamin.com/firebase.svg",
-                    "width": 115,
-                    "height": 158,
-                    "alt": "Firebase",
-                    "objectFit": "cover"
+                    "alt": "Firebase"
                 }
             }
         ]
@@ -182,6 +237,7 @@
         "slug": "bakiji-construct",
         "type": "website",
         "locale": "en",
+        "niche": "construction",
         "link": "https://bakiji-construct.be",
         "description": "A business website for a construction company with general information and a contact form.",
         "showcase": false,
@@ -189,44 +245,26 @@
             "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
             "alt": "Landing page of Bakiji Construct website."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/bakiji_construct_alpha.png",
-            "alt": "Landing page of Bakiji Construct website.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A business website for a construction company. It contains a single page with necessary information about the company, contact details, gallery, and a form if you wish to send an email.</p>",
-        "technologiesText": "<p>A static website built with HTML, CSS, and JavaScript with Parcel for bundling everything for production. There is no backend code involved. Deployed on Netlify. Netlify Forms are used for a functional contact form.</p>",
         "technologies": [
             {
                 "name": "HTML",
                 "image": {
                     "src": "https://bucket.webdevamin.com/html.svg",
-                    "width": 115,
-                    "height": 132,
-                    "alt": "HTML",
-                    "objectFit": "cover"
+                    "alt": "HTML"
                 }
             },
             {
                 "name": "Javascript",
                 "image": {
                     "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "width": 115,
-                    "height": 132,
-                    "alt": "Javascript",
-                    "objectFit": "cover"
+                    "alt": "Javascript"
                 }
             },
             {
                 "name": "Netlify",
                 "image": {
                     "src": "https://bucket.webdevamin.com/netlify.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Netlify",
-                    "objectFit": "cover"
+                    "alt": "Netlify"
                 }
             }
         ]
@@ -260,6 +298,7 @@
         "slug": "solaris",
         "type": "webapp",
         "locale": "en",
+        "niche": "insurance",
         "link": "https://solarisinsurance.org",
         "description": "Web application for an insurance agency with the ability to fill out various forms with push notifications and live video meetings.",
         "showcase": false,
@@ -267,44 +306,26 @@
             "src": "https://bucket.webdevamin.com/solaris_alpha.png",
             "alt": "The hero section of the Solaris website displayed on 3 devices: mobile, tablet, and desktop."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/solaris_alpha.png",
-            "alt": "The hero section of the Solaris website displayed on 3 devices: mobile, tablet, and desktop.",
-            "width": 900,
-            "height": 460,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A web application for an insurance agency in the United States. Users can read more about them: their mission, vision, and goals. There are three forms available in the app that users can utilize. First is the contact form if users have any questions or comments. Second is the agents form, which is intended for businesses looking to partner with my client. Lastly is the quote form, which is for users looking to discuss quotes with my client. After submitting the quote form, they are directed to a live video meeting to explain their issues.</p><p>For each form submission, the client receives a push notification in Slack. This allows them to easily respond to their potential clients or join the live video meeting by clicking on a specific video call URL.</p><p>This app may be an ongoing project.</p>",
-        "technologiesText": "<p>Frontend: Next.js (React.js), Backend: Node.js, Deployment: Cloudflare.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "width": 115,
-                    "height": 127,
-                    "alt": "Node.js",
-                    "objectFit": "cover"
+                    "alt": "Node.js"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
                     "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 115,
-                    "height": 38,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
+                    "alt": "Cloudflare"
                 }
             }
         ]
@@ -338,70 +359,47 @@
         "title": "Restaurant China Brugge",
         "slug": "restaurant-china-brugge",
         "type": "website",
+        "niche": "restaurant",
         "description": "Restaurant website with general information such as location, gallery, reviews, and a reservation form.",
         "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
             "alt": "Landing page of Restaurant China Brugge website."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/restaurantchina_alpha.png",
-            "alt": "Landing page of Restaurant China Brugge website.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A business website for a restaurant in Bruges. It contains a single page with necessary information about the restaurant, contact details, gallery, reviews, and a form if users want to reserve tables.</p><p>For each reservation, the data is sent to a separate application that can only be operated by the administrator. Additionally, the admin receives an SMS message with the user's details who clicked on a reserve button. This allows the admin to prepare tables for the visitors.</p>",
-        "technologiesText": "<p>Next.js (React.js) for frontend development with Node.js serverless for backend. The backend is used to validate form data and send it to a separate admin application. Firebase integration for real-time database. Twilio was chosen as a third-party service for SMS. Finally, the app is deployed on Netlify.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "width": 115,
-                    "height": 127,
-                    "alt": "Node.js",
-                    "objectFit": "cover"
+                    "alt": "Node.js"
                 }
             },
             {
                 "name": "Firebase",
                 "image": {
                     "src": "https://bucket.webdevamin.com/firebase.svg",
-                    "width": 115,
-                    "height": 158,
-                    "alt": "Firebase",
-                    "objectFit": "cover"
+                    "alt": "Firebase"
                 }
             },
             {
                 "name": "Twilio",
                 "image": {
                     "src": "https://bucket.webdevamin.com/twilio.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Twilio",
-                    "objectFit": "cover"
+                    "alt": "Twilio"
                 }
             },
             {
                 "name": "Netlify",
                 "image": {
                     "src": "https://bucket.webdevamin.com/netlify.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Netlify",
-                    "objectFit": "cover"
+                    "alt": "Netlify"
                 }
             }
         ]
@@ -435,6 +433,7 @@
         "title": "Black Wood",
         "slug": "black-wood",
         "type": "website",
+        "niche": "construction",
         "link": "https://black-wood.be",
         "description": "Website for construction company with information about the company. Users can submit quotes for services such as renovation and window installations.",
         "showcase": true,
@@ -442,44 +441,26 @@
             "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
             "alt": "Landing page of Black Wood website."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
-            "alt": "The hero section of the Black Wood website shown on 3 devices: mobile, tablet, and desktop.",
-            "width": 900,
-            "height": 460,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A website developed for a construction company in Belgium. It provides necessary information such as the company's location, services, specialties, and examples of completed projects.</p><p>On the website, three separate quote forms are available for users to use: one for general renovation work, another for window installation, and a third for terrace projects. After submitting each form, an email is sent to the owners of the company.</p><p>For any additional questions or comments, users can use a standard contact form to directly contact the owners for matters unrelated to quotes.</p>",
-        "technologiesText": "<p>Frontend developed using Next.js, while the backend utilizes Edge functions. Deployment is done via Cloudflare Pages.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Edge Functions",
                 "image": {
                     "src": "https://bucket.webdevamin.com/lambda.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Edge Functions",
-                    "objectFit": "cover"
+                    "alt": "Edge Functions"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
                     "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 115,
-                    "height": 38,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
+                    "alt": "Cloudflare"
                 }
             }
         ]
@@ -513,6 +494,7 @@
         "title": "Verhuisdienst Liftservice",
         "slug": "verhuisdienst-liftservice",
         "type": "website",
+        "niche": "transport",
         "link": "https://verhuisdienst-liftservice.be",
         "description": "A business website for a moving/transport company featuring general information, a gallery, and a quote form.",
         "showcase": true,
@@ -520,44 +502,26 @@
             "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
             "alt": "A landing page of Verhuisdienst Liftservice website in both desktop as well as mobile viewports."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio-alpha.png",
-            "alt": "A landing page of Verhuisdienst Liftservice website in both desktop as well as mobile viewports.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A business website for a moving company featuring general information, a gallery, an 'About Us' section, and a form for users to request a quote from the business owner via email.</p>",
-        "technologiesText": "<p>This static website is built using Next.js. It includes integration with a mail provider “Resend”, allowing users to submit quote forms using Next.js Edge Functions, which are then sent as emails to the business owner. The website is deployed on Netlify through GitHub integration.</p>",
         "technologies": [
             {
                 "name": "Next.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Next.js",
-                    "objectFit": "cover"
+                    "alt": "Next.js"
                 }
             },
             {
                 "name": "Edge Functions",
                 "image": {
                     "src": "https://bucket.webdevamin.com/lambda.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Edge Functions",
-                    "objectFit": "cover"
+                    "alt": "Edge Functions"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
                     "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 115,
-                    "height": 38,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
+                    "alt": "Cloudflare"
                 }
             }
         ]
@@ -591,6 +555,7 @@
         "title": "Pasta Maria",
         "slug": "pastamaria",
         "type": "website",
+        "niche": "restaurant",
         "link": "https://pastamaria.be",
         "description": "A website for an Italian restaurant with general information, a menu, and more.",
         "showcase": true,
@@ -598,152 +563,19 @@
             "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
             "alt": "A landing page of the Pasta Maria website, visible on both desktop and mobile views."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/pastamaria-portfolio-alpha.png",
-            "alt": "A landing page of the Pasta Maria website, visible on both desktop and mobile views.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A business website for an Italian restaurant with general information, a menu, an 'About Us' section, and a section where users can request a quote via email.</p>",
-        "technologiesText": "<p>This static website is built using React.js and deployed via Cloudflare. The website was manually uploaded as a complete file to Cloudflare, without utilizing CI/CD via GitHub or a similar system.</p>",
         "technologies": [
             {
                 "name": "React.js",
                 "image": {
                     "src": "https://bucket.webdevamin.com/react.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "React.js",
-                    "objectFit": "cover"
+                    "alt": "React.js"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
                     "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 115,
-                    "height": 38,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
-                }
-            }
-        ]
-    },
-    {
-        "locale": "en",
-        "seo": {
-            "title": "Webleadr",
-            "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
-            "canonical": "https://webdevamin.com/projects/webleadr",
-            "image": "https://bucket.webdevamin.com/webleadr-portfolio-og.jpg",
-            "ogTitle": "Webleadr",
-            "ogDescription": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/webleadr",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/webleadr",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/webleadr",
-                "locale": "nl"
-            }
-        ],
-        "title": "Webleadr",
-        "slug": "webleadr",
-        "type": "saas",
-        "link": "https://webleadr.com",
-        "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
-        "showcase": true,
-        "img": {
-            "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
-            "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page."
-        },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/webleadr-portfolio-alpha.png",
-            "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page.",
-            "width": 892,
-            "height": 628,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>Webleadr is a platform that helps professionals effortlessly acquire web design clients as leads from anywhere in the world. It also finds businesses without websites or those relying on third-party platforms like Facebook Pages or booking sites instead of dedicated websites, eliminating the hassle of manually searching for potential clients on Google Maps, Yelp, or other platforms. For example, you can find local dentists who either lack a website or are using third-party sites, and contact them with just one click.</p>",
-        "technologiesText": "<p>This platform leverages a variety of technologies. The core web framework is Next.js, which is connected to Supabase as the backend-as-a-service. Supabase handles both the database and authentication. For sending and receiving emails, such as registration and password reset, Resend is used. One feature in Webleadr is powered by an AI-driven API from OpenAI, which evaluates business websites by their URL to determine if they are real dedicated websites or just third-party services. Cloudflare is utilised for deployment and domain management.</p><p>The most interesting technology involved is Paddle, which acts as the Merchant of Record. In other words, it’s a service that not only handles payments and orders but also manages invoicing, VAT, and more—making it especially useful for applications targeting both B2C and B2B audiences. Lastly, Sentry is used for monitoring, debugging, and tracking errors and logs in general.</p>",
-        "technologies": [
-            {
-                "name": "Next.js",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "Nextjs.js",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Supabase",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/supabase.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "Supabase",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "OpenAI",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/openai.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "OpenAI",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Cloudflare",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 100,
-                    "height": 33,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Paddle",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/paddle.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "Paddle",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Resend",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/resend.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "Resend",
-                    "objectFit": "cover"
-                }
-            },
-            {
-                "name": "Sentry",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/sentry.svg",
-                    "width": 100,
-                    "height": 100,
-                    "alt": "Sentry",
-                    "objectFit": "cover"
+                    "alt": "Cloudflare"
                 }
             }
         ]
@@ -777,6 +609,7 @@
         "slug": "williamprojecten",
         "locale": "en",
         "type": "website",
+        "niche": "construction",
         "link": "https://williamprojecten.be",
         "description": "A business website for a construction company with general information and a contact form.",
         "showcase": true,
@@ -784,44 +617,94 @@
             "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
             "alt": "Landing page of William Projecten website."
         },
-        "imgTwo": {
-            "src": "https://bucket.webdevamin.com/williamprojecten-portfolio-alpha.png",
-            "alt": "Landing page of William Projecten website.",
-            "width": 852,
-            "height": 600,
-            "objectFit": "cover"
-        },
-        "descriptionText": "<p>A business website for a construction company. It contains a single page with necessary information about the company, contact details, gallery, FAQ section and a form if you wish to send an email.</p>",
-        "technologiesText": "<p>A static website built with HTML, CSS, and JavaScript. There is no backend code involved. Deployed on Cloudflare.</p>",
         "technologies": [
             {
                 "name": "HTML",
                 "image": {
                     "src": "https://bucket.webdevamin.com/html.svg",
-                    "width": 115,
-                    "height": 132,
-                    "alt": "HTML",
-                    "objectFit": "cover"
+                    "alt": "HTML"
                 }
             },
             {
                 "name": "Javascript",
                 "image": {
                     "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "width": 115,
-                    "height": 132,
-                    "alt": "Javascript",
-                    "objectFit": "cover"
+                    "alt": "Javascript"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
                     "src": "https://bucket.webdevamin.com/cloudflare.svg",
-                    "width": 115,
-                    "height": 115,
-                    "alt": "Cloudflare",
-                    "objectFit": "cover"
+                    "alt": "Cloudflare"
+                }
+            }
+        ]
+    },
+    {
+        "seo": {
+            "title": "GRIT.",
+            "description": "A modern fitness application helping personal trainers schedule sessions and track client progress.",
+            "canonical": "https://webdevamin.com/projects/grit",
+            "image": "https://bucket.webdevamin.com/grit-portfolio-og.jpg",
+            "ogTitle": "GRIT.",
+            "ogDescription": "A modern fitness application helping personal trainers schedule sessions and track client progress."
+        },
+        "alternates": [
+            {
+                "href": "https://webdevamin.com/projects/grit",
+                "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/nl/projects/grit",
+                "hreflang": "nl"
+            }
+        ],
+        "alternateLangs": [
+            {
+                "href": "/projects/grit",
+                "locale": "nl"
+            }
+        ],
+        "title": "GRIT.",
+        "slug": "grit",
+        "type": "webapp",
+        "locale": "en",
+        "niche": "fitness",
+        "link": "https://gritbrugge.be/",
+        "description": "A modern fitness application helping personal trainers schedule sessions and track client progress.",
+        "showcase": true,
+        "img": {
+            "src": "https://bucket.webdevamin.com/grit-portfolio.png",
+            "alt": "Dashboard and scheduling screens of the GRIT. fitness application."
+        },
+        "technologies": [
+            {
+                "name": "React.js",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/react.svg",
+                    "alt": "React.js"
+                }
+            },
+            {
+                "name": "Vite",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/vite.svg",
+                    "alt": "Vite"
+                }
+            },
+            {
+                "name": "Supabase",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "alt": "Supabase"
+                }
+            },
+            {
+                "name": "Cloudflare",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "alt": "Cloudflare"
                 }
             }
         ]

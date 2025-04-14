@@ -32,21 +32,22 @@ const BlockAccordion = ({ content }) => {
 
                                 return (
                                     <Accordion.Panel key={i}>
-                                        <Accordion.Title>{title}</Accordion.Title>
+                                        <Accordion.Title className='text-dark'>{title}</Accordion.Title>
                                         <Accordion.Content className="w-full">
                                             {text.includes('<') ? (
                                                 <div
-                                                    className="mb-2 text-gray-500 dark:text-gray-400 w-full"
+                                                    className="mb-2 w-full"
                                                     dangerouslySetInnerHTML={{ __html: text }}
                                                 />
                                             ) : (
-                                                <p className="mb-2 text-gray-500 dark:text-gray-400 w-full">
+                                                <p className="mb-2 w-full">
                                                     {text}
                                                 </p>
                                             )}
                                             {detailBtn && (
                                                 <div className={`mt-4`}>
-                                                    <ButtonThree href={detailBtn.href} text={detailBtn.text} />
+                                                    <ButtonThree href={detailBtn.href}
+                                                        text={detailBtn.text} />
                                                 </div>
                                             )}
                                         </Accordion.Content>
@@ -67,7 +68,8 @@ const BlockAccordion = ({ content }) => {
                                     if (href) {
                                         return (
                                             <ButtonOne key={i} href={href}
-                                                text={text} outline={isOdd} noMargin classes={`sm:px-14 text-center`} />
+                                                text={text} outline={isOdd} noMargin
+                                                classes={`sm:px-14 text-center`} />
                                         )
                                     }
                                 })

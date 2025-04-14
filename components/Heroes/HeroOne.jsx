@@ -16,7 +16,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] 
         mx-auto mt-20 pb-0`} id={`hero`}>
-            <div className={`text-white text-center bg-transparent
+            <div className={`text-center bg-transparent
             md:flex md:flex-row-reverse md:justify-evenly 
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
             xl:px-40 2xl:px-50 md:pt-14`}>
@@ -52,8 +52,8 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>
-                        <span className={`w-64 block bg-theme h-[1px]`} />
-                        <div className={`px-5 text-theme flex gap-5 text-opacity-70`}>
+                        <span className={`w-64 block bg-dark h-[1px]`} />
+                        <div className={`px-5 flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, i) => {
                                     const { href, icon, title, hideFromHeader } =
@@ -72,7 +72,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                 })
                             }
                         </div>
-                        <span className={`w-64 block bg-theme h-[1px]`} />
+                        <span className={`w-64 block bg-dark h-[1px]`} />
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
@@ -106,7 +106,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
             <div className={`mt-20 hidden items-center md:flex -ml-10 
             pt-28 bg-transparent`}>
                 <span className={`w-64 block bg-dark h-[1px]`} />
-                <div className={`px-10 text-theme flex gap-8`}>
+                <div className={`px-10 flex gap-8`}>
                     {
                         socials.map((social, i) => {
                             const { href, icon, title, hideFromHeader } = social;

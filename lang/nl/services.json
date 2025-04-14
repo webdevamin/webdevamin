@@ -87,7 +87,7 @@
                     {
                         "title": "1. Design keuze",
                         "body": "<p>Kies uw design aanpak:<ol><li>1. Expert-geselecteerd ontwerp voor uw niche</li><li>2. Kies uit onze gecureerde collectie</li><li>3. Maatwerk ontwerp volgens uw specificaties</li></ol><div class='pt-2'><strong>Bonus:</strong> Ontvang een <strong>gratis logo</strong> bij elk abonnement!</div></p>",
-                        "backgroundColor": "rgb(59 130 246)",
+                        "backgroundColor": "rgb(179 208 255)",
                         "icon": {
                             "name": "faPalette",
                             "brands": false
@@ -105,7 +105,7 @@
                     {
                         "title": "3. Aanschaffing domeinnaam, hosting, etc.",
                         "body": "<p>Zorgeloze setup:<ul><li>1. Domeinnaam registratie (.be, .com, etc.)</li><li>2. Professionele hosting setup</li><li>3. Volledig technisch beheer</li></ul><div class='pt-2'>U blijft <strong>eigenaar</strong> terwijl wij de technische details verzorgen.</div></p>",
-                        "backgroundColor": "rgb(16 185 129)",
+                        "backgroundColor": "rgb(191 255 234)",
                         "icon": {
                             "name": "faPenFancy",
                             "brands": false
@@ -114,7 +114,7 @@
                     {
                         "title": "4. Finale",
                         "body": "<p>Launch en ondersteuning:<ul><li>1. Website gaat live op uw domein</li><li>2. Regelmatige updates en onderhoud</li><li>3. 24/7 technische support</li><li>4. Eenvoudige content updates en uitbreidingen</li></ul></p>",
-                        "backgroundColor": "rgb(99 102 241)",
+                        "backgroundColor": "rgb(183 184 255)",
                         "icon": {
                             "name": "faBullhorn",
                             "brands": false
@@ -235,7 +235,7 @@
                 ],
                 "buttons": [
                     {
-                        "href": "/projects/williamprojecten",
+                        "href": "https://williamprojecten.be/",
                         "text": "Bekijk voorbeeld website"
                     }
                 ]

@@ -87,7 +87,7 @@
                     {
                         "title": "1. Design choice",
                         "body": "<p>Choose your design approach:<ol><li>1. Expert-selected design for your niche</li><li>2. Pick from our curated collection</li><li>3. Custom design to your specifications</li></ol><div class='pt-2'><strong>Bonus:</strong> Get a <strong>free logo</strong> with any subscription!</div></p>",
-                        "backgroundColor": "rgb(59 130 246)",
+                        "backgroundColor": "rgb(179 208 255)",
                         "icon": {
                             "name": "faPalette",
                             "brands": false
@@ -105,7 +105,7 @@
                     {
                         "title": "3. Domain name, hosting, etc. acquisition",
                         "body": "<p>Hassle-free setup:<ol><li>1. Domain name registration (.com, .co.uk, etc.)</li><li>2. Professional hosting setup</li><li>3. All technical management handled</li></ol><div class='pt-2'>You <strong>maintain ownership</strong> while we handle the technical details.</div></p>",
-                        "backgroundColor": "rgb(16 185 129)",
+                        "backgroundColor": "rgb(191 255 234)",
                         "icon": {
                             "name": "faPenFancy",
                             "brands": false
@@ -114,7 +114,7 @@
                     {
                         "title": "4. Final stage",
                         "body": "<p>Launch and support:<ol><li>1. Website goes live on your domain</li><li>2. Regular updates and maintenance</li><li>3. 24/7 technical support</li><li>4. Easy content updates and expansions</li></ol></p>",
-                        "backgroundColor": "rgb(99 102 241)",
+                        "backgroundColor": "rgb(183 184 255)",
                         "icon": {
                             "name": "faBullhorn",
                             "brands": false

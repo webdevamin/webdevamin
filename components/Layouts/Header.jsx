@@ -14,7 +14,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
     return (
         <header className={`fixed w-full top-0 z-50 bg-light`}>
             <div className={`text-center m-1.5 md:m-3 ${(!isAlertVisible || !content) && `hidden`}`}>
-                <Alert onDismiss={hideAlert} className='bg-red-400 alert_component'>
+                <Alert onDismiss={hideAlert} className='bg-red-400 alert_component text-black'>
                     <span className='ml-4 mr-1 font-medium block' dangerouslySetInnerHTML={{ __html: content }}>
                     </span>
                 </Alert>
@@ -27,7 +27,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                             className={`rounded-lg`} priority={true} alt={`Logo`}
                         />
                     </Link>
-                    <Navbar.Toggle />
+                    <Navbar.Toggle className='text-dark' />
                     <Navbar.Collapse className='header_navbar'>
                         {
                             nonHiddenPages.map((page, i) => {
@@ -59,7 +59,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                     </Dropdown>
                                                 </div>
                                             ) : (
-                                                <Link href={`${href}`} className={`block md:p-0 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
+                                                <Link href={`${href}`} className={`block md:p-0 hover:bg-gray-50 md:border-0 md:hover:bg-transparent z-50 w-full transition-all xl:block py-3 px-8 xl:py-0 xl:px-0 border-theme ease-linear xl:border-none relative hover:text-theme font-semibold ${isLast ? `border-none` : `border-b`} ${href == '/policy' && `hidden`}`}>
                                                     {title}
                                                 </Link>
                                             )
