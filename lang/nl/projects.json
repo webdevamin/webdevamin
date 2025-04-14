@@ -1,37 +1,10 @@
 [
     {
-        "locale": "nl",
-        "seo": {
-            "title": "Webleadr",
-            "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
-            "canonical": "https://webdevamin.com/projects/webleadr",
-            "image": "https://bucket.webdevamin.com/webleadr-portfolio-og.jpg",
-            "ogTitle": "Webleadr",
-            "ogDescription": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/webleadr",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/webleadr",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/webleadr",
-                "locale": "en"
-            }
-        ],
         "title": "Webleadr",
         "slug": "webleadr",
-        "type": "saas",
         "niche": "marketing",
         "link": "https://webleadr.com",
         "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
             "alt": "Drie webpagina's van Webleadr: homepagina, dashboard en 'Find businesses' pagina."
@@ -89,37 +62,10 @@
         ]
     },
     {
-        "seo": {
-            "title": "Gympouch",
-            "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
-            "canonical": "https://webdevamin.com/nl/projects/gympouch",
-            "image": "https://bucket.webdevamin.com/gympouch.jpg",
-            "ogTitle": "Gympouch",
-            "ogDescription": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/gympouch",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/gympouch",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/gympouch",
-                "locale": "en"
-            }
-        ],
         "title": "Gympouch",
         "slug": "gympouch",
-        "type": "webapp",
-        "locale": "nl",
         "niche": "fitness",
         "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
             "alt": "Dashboard pagina en detail pagina van Gympouch applicatie."
@@ -149,37 +95,10 @@
         ]
     },
     {
-        "seo": {
-            "title": "My Admin",
-            "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
-            "canonical": "https://webdevamin.com/nl/projects/my-admin",
-            "image": "https://bucket.webdevamin.com/my_admin.jpg",
-            "ogTitle": "My Admin",
-            "ogDescription": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/my-admin",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/my-admin",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/my-admin",
-                "locale": "en"
-            }
-        ],
         "title": "My Admin",
-        "type": "webapp",
         "slug": "my-admin",
-        "locale": "nl",
         "niche": "administratie",
         "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
             "alt": "Login en dashboard pagina van My Admin applicatie."
@@ -209,38 +128,11 @@
         ]
     },
     {
-        "seo": {
-            "title": "Bakiji Construct",
-            "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
-            "canonical": "https://webdevamin.com/nl/projects/bakiji-construct",
-            "image": "https://bucket.webdevamin.com/bakiji.jpg",
-            "ogTitle": "Bakiji Construct",
-            "ogDescription": "Een business website voor een bouwbedrijf met algemene info en een contactformulier."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/bakiji-construct",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/bakiji-construct",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/bakiji-construct",
-                "locale": "en"
-            }
-        ],
         "title": "Bakiji Construct",
         "slug": "bakiji-construct",
-        "type": "website",
-        "locale": "nl",
         "niche": "bouw",
         "link": "https://bakiji-construct.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
-        "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
             "alt": "Landing pagina van Bakiji Construct website."
@@ -270,38 +162,11 @@
         ]
     },
     {
-        "seo": {
-            "title": "Solaris",
-            "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
-            "canonical": "https://webdevamin.com/nl/projects/solaris",
-            "image": "https://bucket.webdevamin.com/solaris.png",
-            "ogTitle": "Solaris",
-            "ogDescription": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/solaris",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/solaris",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/solaris",
-                "locale": "en"
-            }
-        ],
         "title": "Solaris",
         "slug": "solaris",
-        "type": "webapp",
-        "locale": "nl",
         "niche": "verzekering",
         "link": "https://solarisinsurance.org",
         "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
-        "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/solaris_alpha.png",
             "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop."
@@ -331,37 +196,10 @@
         ]
     },
     {
-        "locale": "nl",
-        "seo": {
-            "title": "Restaurant China Brugge",
-            "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
-            "canonical": "https://webdevamin.com/nl/projects/restaurant-china-brugge",
-            "image": "https://bucket.webdevamin.com/restaurant_china.jpg",
-            "ogTitle": "Restaurant China Brugge",
-            "ogDescription": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/restaurant-china-brugge",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/restaurant-china-brugge",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/restaurant-china-brugge",
-                "locale": "en"
-            }
-        ],
         "title": "Restaurant China Brugge",
         "slug": "restaurant-china-brugge",
-        "type": "website",
         "niche": "restaurant",
         "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
-        "showcase": false,
         "img": {
             "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
             "alt": "Landing pagina van Restaurant China Brugge website."
@@ -405,38 +243,11 @@
         ]
     },
     {
-        "locale": "nl",
-        "seo": {
-            "title": "Black Wood",
-            "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
-            "canonical": "https://webdevamin.com/nl/projects/black-wood",
-            "image": "https://bucket.webdevamin.com/og.png",
-            "ogTitle": "Black Wood",
-            "ogDescription": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/black-wood",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/black-wood",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/black-wood",
-                "locale": "en"
-            }
-        ],
         "title": "Black Wood",
         "slug": "black-wood",
-        "type": "website",
         "niche": "bouw",
         "link": "https://black-wood.be",
         "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
             "alt": "Startpagina van Black Wood website."
@@ -466,38 +277,11 @@
         ]
     },
     {
-        "locale": "nl",
-        "seo": {
-            "title": "Verhuisdienst Liftservice",
-            "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
-            "canonical": "https://webdevamin.com/projects/verhuisdienst-liftservice",
-            "image": "https://bucket.webdevamin.com/verhuisdienst-portfolio-og.jpg",
-            "ogTitle": "Verhuisdienst Liftservice",
-            "ogDescription": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/verhuisdienst-liftservice",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/verhuisdienst-liftservice",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/verhuisdienst-liftservice",
-                "locale": "en"
-            }
-        ],
         "title": "Verhuisdienst Liftservice",
         "slug": "verhuisdienst-liftservice",
-        "type": "website",
         "niche": "transport",
         "link": "https://verhuisdienst-liftservice.be",
         "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
             "alt": "Een landingspagina van de website van Verhuisdienst Liftservice, zichtbaar op zowel desktop- als mobiele weergaven."
@@ -527,38 +311,11 @@
         ]
     },
     {
-        "locale": "nl",
-        "seo": {
-            "title": "Pasta Maria",
-            "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
-            "canonical": "https://webdevamin.com/projects/pastamaria",
-            "image": "https://bucket.webdevamin.com/pastamaria-portfolio-og.jpg",
-            "ogTitle": "Pasta Maria",
-            "ogDescription": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/pastamaria",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/pastamaria",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/pastamaria",
-                "locale": "en"
-            }
-        ],
         "title": "Pasta Maria",
         "slug": "pastamaria",
-        "type": "website",
         "niche": "restaurant",
         "link": "https://pastamaria.be",
         "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
             "alt": "Een landingspagina van de website van Pasta Maria, zichtbaar op zowel desktop- als mobiele weergaven."
@@ -581,38 +338,11 @@
         ]
     },
     {
-        "seo": {
-            "title": "William Projecten",
-            "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
-            "canonical": "https://webdevamin.com/nl/projects/williamprojecten",
-            "image": "https://bucket.webdevamin.com/williamprojecten-portfolio-og.jpg",
-            "ogTitle": "William Projecten",
-            "ogDescription": "Een business website voor een bouwbedrijf met algemene info en een contactformulier."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/williamprojecten",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/williamprojecten",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/williamprojecten",
-                "locale": "en"
-            }
-        ],
         "title": "William Projecten",
         "slug": "williamprojecten",
-        "type": "website",
-        "locale": "nl",
         "niche": "bouw",
         "link": "https://williamprojecten.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
             "alt": "Landing pagina van William Projecten website."
@@ -642,38 +372,11 @@
         ]
     },
     {
-        "seo": {
-            "title": "GRIT.",
-            "description": "Een moderne fitness-applicatie die persoonlijke trainers helpt bij het plannen van sessies en het bijhouden van de vooruitgang van klanten.",
-            "canonical": "https://webdevamin.com/nl/projects/grit",
-            "image": "https://bucket.webdevamin.com/grit-portfolio-og.jpg",
-            "ogTitle": "GRIT.",
-            "ogDescription": "Een moderne fitness-applicatie die persoonlijke trainers helpt bij het plannen van sessies en het bijhouden van de vooruitgang van klanten."
-        },
-        "alternates": [
-            {
-                "href": "https://webdevamin.com/projects/grit",
-                "hreflang": "x-default"
-            },
-            {
-                "href": "https://webdevamin.com/nl/projects/grit",
-                "hreflang": "nl"
-            }
-        ],
-        "alternateLangs": [
-            {
-                "href": "/projects/grit",
-                "locale": "en"
-            }
-        ],
         "title": "GRIT.",
         "slug": "grit",
-        "type": "webapp",
-        "locale": "nl",
         "niche": "fitness",
         "link": "https://gritbrugge.be/",
         "description": "Een moderne fitness-applicatie die persoonlijke trainers helpt bij het plannen van sessies en het bijhouden van de vooruitgang van klanten.",
-        "showcase": true,
         "img": {
             "src": "https://bucket.webdevamin.com/grit-portfolio.png",
             "alt": "Dashboard en planning schermen van de GRIT. fitness applicatie."

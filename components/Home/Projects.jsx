@@ -8,9 +8,8 @@ const Projects = ({ content, data }) => {
     const { title, text, button, slug } = content;
     const { href, text: buttonText } = button[0];
 
-    const projects = data.filter((project) => {
-        return project.showcase;
-    });
+    // Use all projects instead of filtering by showcase property
+    const projects = data;
 
     return (
         <BlockLayoutTwo title={title} slug={slug}>

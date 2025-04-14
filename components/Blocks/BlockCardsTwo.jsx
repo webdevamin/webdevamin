@@ -41,13 +41,13 @@ const BlockCardsTwo = ({ content }) => {
                         <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-12 l:gap-6`}>
                             {
                                 buttons.map((btn, i) => {
-                                    const { href, text } = btn;
+                                    const { href, text, external } = btn;
                                     const isOdd = i % 2 !== 0 ? true : false;
 
                                     if (href) {
                                         return (
                                             <ButtonOne key={i} href={href}
-                                                text={text} outline={isOdd} noMargin classes={`sm:px-14 text-center`} />
+                                                text={text} outline={isOdd} noMargin classes={`sm:px-14 text-center`} external={external} />
                                         )
                                     }
                                 })

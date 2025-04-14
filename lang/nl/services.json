@@ -236,7 +236,8 @@
                 "buttons": [
                     {
                         "href": "https://williamprojecten.be/",
-                        "text": "Bekijk voorbeeld website"
+                        "text": "Bekijk voorbeeld website",
+                        "external": true
                     }
                 ]
             },

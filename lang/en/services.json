@@ -238,8 +238,9 @@
                 ],
                 "buttons": [
                     {
-                        "href": "/projects/williamprojecten",
-                        "text": "View example website"
+                        "href": "https://williamprojecten.be/",
+                        "text": "View example website",
+                        "external": true
                     }
                 ]
             },
