@@ -4,14 +4,11 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'res.cloudinary.com',
-    },
-    {
-      protocol: 'https',
-      hostname: 'bucket.webdevamin.com',
-    },
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'bucket.webdevamin.com',
+      },
     ],
   },
   i18n: {
