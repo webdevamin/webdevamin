@@ -6,7 +6,7 @@ import Contact from '../../components/Contact';
 import Footer from '../../components/Layouts/Footer';
 import BlockAccordion from '../../components/Blocks/BlockAccordion';
 
-const Services = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, pageData }) => {
+const Services = ({ localesData, socialsData, blogsData, servicesData, pagesData, contactBlockData, pageData }) => {
     const { seo, alternates, alternateLangs, hero, content: pageContent, serviceLinkBtnText } = pageData;
     const { title, subtitle, text } = pageContent;
     const content = { title, subtitle, text, items: servicesData, itemBtn: serviceLinkBtnText };
@@ -22,7 +22,7 @@ const Services = ({ localesData, socialsData, blogsData, servicesData, regionsDa
                 </div>
                 <Contact content={contactBlockData} />
                 <Footer services={servicesData} blogs={blogsData}
-                    socials={socialsData} regions={regionsData} pages={pagesData} />
+                    socials={socialsData} pages={pagesData} />
             </PageLayout>
         </>
     )
@@ -38,7 +38,6 @@ export async function getStaticProps({ locale }) {
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
             servicesData: (await import(`../../lang/${locale}/services.json`)).default,
-            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data

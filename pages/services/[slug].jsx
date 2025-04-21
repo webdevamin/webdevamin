@@ -7,7 +7,7 @@ import Footer from '../../components/Layouts/Footer';
 import HeroOne from '../../components/Heroes/HeroOne';
 import { componentMapper } from '../../utils/app';
 
-const Service = ({ localesData, socialsData, servicesData, serviceData, regionsData, pagesData, contactBlockData, blogsData, pricingData }) => {
+const Service = ({ localesData, socialsData, servicesData, serviceData, pagesData, contactBlockData, blogsData, pricingData }) => {
     const { seo, alternates, alternateLangs, titleTwo,
         description, button, img, contents } = serviceData;
 
@@ -29,7 +29,7 @@ const Service = ({ localesData, socialsData, servicesData, serviceData, regionsD
                 }
                 <Contact content={contactBlockData} />
                 <Footer services={servicesData} blogs={blogsData}
-                    socials={socialsData} regions={regionsData} pages={pagesData} />
+                    socials={socialsData} pages={pagesData} />
             </PageLayout>
         </>
     )
@@ -95,7 +95,6 @@ export async function getStaticProps({ locale, params }) {
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
             servicesData,
-            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data

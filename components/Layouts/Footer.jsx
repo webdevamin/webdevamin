@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks }) => {
+const Footer = ({ services, blogs, socials, pages, followExternalLinks }) => {
     const router = useRouter();
     const { locale } = router;
     const isServiceAPage = services[0].seo;
@@ -127,27 +127,6 @@ const Footer = ({ services, blogs, socials, regions, pages, followExternalLinks 
                         <ButtonThree href={`/blogs`} color={`text_theme_all`}
                             text={locale === `en` ? `All blogs` : `Alle blogs`} />
                     </div>
-                </div>
-                <div className={`text_light_all`}>
-                    <h2 className={`text-xl mb-2`}>
-                        {locale === `en` ? `Regions` : `Regio's`}
-                    </h2>
-                    <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
-                        {
-                            regions.map((region, i) => {
-                                const { name, showcase, slug } = region;
-
-                                return (
-                                    <li className={`pt-1 sm:pt-2 ${!showcase && `hidden`}`} key={i}>
-                                        <Link href={`/regions/${slug}`} className={`lg:text-base transition-all 
-                                            hover:text-theme`}>
-                                            {name}
-                                        </Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
                 </div>
                 <div className={`text_light_all`}>
                     <h2 className={`text-xl mb-2`}>

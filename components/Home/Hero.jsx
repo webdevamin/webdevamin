@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 const Hero = ({ content, socials }) => {
-    const { title, text, button, img, types } = content;
+    const { title, subtitle, text, button, img, types } = content;
     const { src, alt } = img;
 
     const parsedTitle = getJsonString(title);
@@ -19,9 +19,18 @@ const Hero = ({ content, socials }) => {
                     <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
                 </div>
                 <section className={`mt-7 md:w-6/12 bg-transparent`}>
-                    <h1 className='bg-transparent opacity-100 xl:mb-9 font_mohave'>
-                        {parsedTitle}
-                    </h1>
+                    {subtitle ? (
+                        <div className='flex flex-col lg:mb-3'>
+                            <h1 className='order-2 text-lg sm:text-xl font-semibold lg:text-2xl xl:text-3xl uppercase font_quicksand text-theme_darker'>
+                                {parsedTitle}
+                            </h1>
+                            <span className='order-1 text-5xl mb-2 lg:mb-4 font-bold md:text-6xl xl:text-7xl tracking-tight 2xl:text-8xl font_mohave'>{subtitle}</span>
+                        </div>
+                    ) : (
+                        <h1 className='bg-transparent opacity-100 xl:mb-7 font_mohave'>
+                            {parsedTitle}
+                        </h1>
+                    )}
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
                         <span className={`w-64 block bg-dark h-[1px]`} />

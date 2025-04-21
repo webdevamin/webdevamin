@@ -98,7 +98,6 @@ export async function getStaticProps({ locale, params }) {
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData,
             servicesData: (await import(`../../lang/${locale}/services.json`)).default,
-            regionsData: (await import(`../../lang/${locale}/regions.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data

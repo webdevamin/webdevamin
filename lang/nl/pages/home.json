@@ -1,10 +1,10 @@
 {
     "seo": {
-        "title": "Betaalbare Webdesigner & Webdeveloper Brugge",
-        "description": "Ik versterk uw bedrijf met betaalbare websites of apps met focus op uw behoeften: webdesign, webdevelopment en meer. Freelance webbureau uit Brugge, België.",
+        "title": "Betaalbare Webdesigner | Vanaf €44/maand All-In-One",
+        "description": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
         "canonical": "https://webdevamin.com/nl",
-        "ogTitle": "Webdesigner & Webdeveloper Brugge",
-        "ogDescription": "Ik versterk uw bedrijf met betaalbare websites of apps met focus op uw behoeften: webdesign, webdevelopment en meer. Freelance webbureau uit Brugge, België.",
+        "ogTitle": "Betaalbare Webdesigner | Vanaf €44/maand All-In-One",
+        "ogDescription": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
         "image": "https://bucket.webdevamin.com/home_nl.jpg"
     },
     "alternates": [
@@ -25,9 +25,10 @@
     ],
     "blocks": [
         {
-            "title": "Webdevamin",
+            "title": "Betaalbare Webdesigner",
+            "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Ik versterk uw zaak met betaalbare, op maat gemaakte website, webapplicatie en/of digitale marketing met een focus op uw behoeften: webdesign, webdevelopment en meer. Zelfstandig webbureau uit Brugge, België. Contacteer me voor een gratis offerte.",
+            "text": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
             "button": [
                 {
                     "href": "/contact",
