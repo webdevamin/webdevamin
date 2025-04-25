@@ -5,22 +5,6 @@
         "icon": "faHouse"
     },
     {
-        "title": "Services",
-        "href": "/services",
-        "icon": "faCircleUser",
-        "subs": [
-            {
-                "title": "Web design",
-                "href": "/services/webdesign"
-            },
-            {
-                "borderTop": true,
-                "title": "Show all services",
-                "href": "/services"
-            }
-        ]
-    },
-    {
         "title": "Projects",
         "href": "/projects",
         "icon": "faImage"

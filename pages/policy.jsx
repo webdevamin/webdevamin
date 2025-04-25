@@ -5,7 +5,7 @@ import Heading from '../components/Heading';
 import Footer from '../components/Layouts/Footer';
 import HeroOne from '../components/Heroes/HeroOne';
 
-const Policy = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, pageData }) => {
+const Policy = ({ localesData, socialsData, blogsData, regionsData, pagesData, pageData }) => {
     const { seo, alternates, alternateLangs, blocks } = pageData;
     const { title, subtitle, slug: slug1, text } = blocks[1];
     return (
@@ -22,7 +22,7 @@ const Policy = ({ localesData, socialsData, blogsData, servicesData, regionsData
                             className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
                     </div>
                 </section>
-                <Footer services={servicesData} blogs={blogsData}
+                <Footer blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </>
@@ -37,7 +37,6 @@ export async function getStaticProps({ locale }) {
             localesData: (await import(`../lang/${locale}/locales.json`)).default,
             socialsData: (await import(`../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../lang/${locale}/blogs.json`)).default,
-            servicesData: (await import(`../lang/${locale}/services.json`)).default,
             pagesData: (await import(`../lang/${locale}/pages.json`)).default,
             // End global data
 

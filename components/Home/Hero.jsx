@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 const Hero = ({ content, socials }) => {
-    const { title, subtitle, text, button, img, types } = content;
+    const { title, subtitle, text, button, img, types, extra } = content;
     const { src, alt } = img;
 
     const parsedTitle = getJsonString(title);
@@ -64,6 +64,7 @@ const Hero = ({ content, socials }) => {
                             </div>
                         )
                     }
+                    <p className={`${!extra || extra === '' ? 'hidden' : 'larger_p'}`}>{extra}</p>
                     <Marquee gradient={false} className={`mt-3 max-w-2xl marque 
                     lg:mt-5 lg:mb-10 py-3`} pauseOnHover>
                         {

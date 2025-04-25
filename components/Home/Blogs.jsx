@@ -21,7 +21,7 @@ const Blogs = ({ content, data }) => {
             </div>
             <div className={`mt-10 gap-6 h-auto md:hidden overflow-x-auto 
             overscroll-x-contain 
-            ${data.length > 1 ? `flex pr-20 w-screen pb-4` : `block`}`}>
+            ${data.length > 1 ? `flex pr-20 w-screen lg:pb-4` : `block`}`}>
                 {
                     data.map((blog, i) => {
                         const { title, img: { src, alt }, date } = blog;

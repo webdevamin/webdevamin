@@ -1,10 +1,10 @@
 {
     "seo": {
-        "title": "Betaalbare Webdesigner | Vanaf €44/maand All-In-One",
-        "description": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
+        "title": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
+        "description": "Zakelijke website laten maken vanaf €44/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
         "canonical": "https://webdevamin.com/nl",
-        "ogTitle": "Betaalbare Webdesigner | Vanaf €44/maand All-In-One",
-        "ogDescription": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
+        "ogTitle": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
+        "ogDescription": "Zakelijke website laten maken vanaf €44/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
         "image": "https://bucket.webdevamin.com/home_nl.jpg"
     },
     "alternates": [
@@ -25,10 +25,11 @@
     ],
     "blocks": [
         {
-            "title": "Betaalbare Webdesigner",
+            "title": "Zakelijke Website Laten Maken",
             "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Op zoek naar een betaalbare webdesigner? Professionele websites vanaf €44/maand inclusief gratis onderhoud, hosting en meer! Vraag nu een gratis offerte aan!",
+            "text": "Zakelijke website laten maken? Laat een professionele website bouwen vanaf slechts €44/maand – inclusief gratis hosting, onderhoud en meer. Vraag nu vrijblijvend een abonnement of een gratis offerte aan!",
+            "extra": "Ook op maat gemaakte webapplicaties zoals:",
             "button": [
                 {
                     "href": "/contact",
@@ -37,9 +38,9 @@
                     "external": false
                 },
                 {
-                    "href": "#about",
-                    "text": "Lees meer",
-                    "label": "Meer lezen",
+                    "href": "#pricing",
+                    "text": "Bekijk prijs",
+                    "label": "Bekijk prijs",
                     "external": false
                 }
             ],
@@ -57,34 +58,28 @@
             ]
         },
         {
-            "title": "Diensten & tech",
-            "subtitle": "Webdesign | Webbouwer | SEO",
+            "title": "Waarom zakelijke website laten maken?",
+            "subtitle": "Voordelen van een zakelijke website laten maken",
             "slug": "about",
-            "text": "<p>Ik ben een <strong>freelancer </strong>gespecialiseerd in <a href='/nl/services/zakelijke-website-laten-maken'>zakelijke webdesign</a>, <strong>web development</strong>,<strong> SEO </strong>en <strong>digital marketing</strong>. Ik ontwikkel digitale oplossingen op maat met een focus op uw behoeften bv. business website, applicatie voor administratieve doeleinden, webshops, CRM's, etc. noem maar op. Alles wat op het scherm moet verschijnen om de efficiëntie van uw zaak te verbeteren en/of meer klanten aan te trekken en uiteindelijk meer opbrengsten te genereren. Uw <strong>professioneel website bouwer en webdesigner</strong> uit <strong>Brugge</strong> helpt u graag verder.</p>",
+            "text": "<p>Een <strong>zakelijke website</strong> biedt tal van voordelen voor zowel startende als gevestigde ondernemers. Allereerst straalt het direct vertrouwen uit, waardoor potentiële klanten sneller geneigd zijn om contact op te nemen of een aankoop te doen. Daarnaast zorgt een goed ontworpen website voor een betere vindbaarheid in zoekmachines zoals Google, zeker wanneer deze is geoptimaliseerd voor SEO. Ook geeft het je de mogelijkheid om je merkidentiteit duidelijk te communiceren en 24/7 bereikbaar te zijn voor bezoekers, zonder dat je fysiek aanwezig hoeft te zijn. Ten slotte helpt een zakelijke website bij het stroomlijnen van processen, zoals offerte-aanvragen, klantcontact en zelfs verkoop, wat je tijd én geld bespaart op lange termijn.</p><p>Wil je een <strong>professionele, zakelijke website laten maken</strong>? Bij mij bent u op het juiste adres. En weet dus dat het niet alleen draait om hoger te scoren in Google, maar ook om het optimaliseren van je bedrijfsprocessen en het verhogen van je omzet. Heb je een idee of een gedachte die jouw bedrijf op eender welk vlak kan versterken? Laten we eens samenzitten en erover praten!</p>",
             "button": [
                 {
                     "href": "https://docs.google.com/document/d/e/2PACX-1vTkRGHOPEtuK0Hu_pIAUD9DWQE9QCJoPPrpYKDzOApbtIHZ5q5xKqBaoJuFuWeUAx5fG-ABjC8X7AeM/pub",
                     "text": "Mijn CV",
                     "label": "Naar CV pagina",
                     "external": true
-                },
-                {
-                    "href": "/services",
-                    "text": "Mijn diensten",
-                    "label": "Naar 'mijn diensten'",
-                    "external": false
                 }
             ],
             "img": {
                 "src": "https://bucket.webdevamin.com/about.jpg",
-                "alt": "Workstation met 2 monitors en een smartphone."
+                "alt": "Computer met codes om een zakelijke website te maken in een donkere omgeving."
             }
         },
         {
             "title": "Projecten",
             "subtitle": "",
             "slug": "projects",
-            "text": "<p>Aanschouw projecten op verschillende niveaus. Ik zet prestaties en SEO bovenaan de ranglijst. Het maakt niet uit of het om een eenvoudig <strong>webdesign </strong>of complex <strong>webdevelopment</strong> gaat.</p>",
+            "text": "<p>Laat je inspireren door onze afgeronde projecten: van strakke <strong>zakelijke websites</strong> tot <strong>geavanceerde webapplicaties</strong>. Met een oog voor optimale snelheid en SEO, zodat jouw online succes gegarandeerd is.</p>",
             "button": [
                 {
                     "href": "/projects",
@@ -95,10 +90,95 @@
             ]
         },
         {
+            "title": "Prijzen",
+            "subtitle": "Betaalbare diensten",
+            "slug": "pricing",
+            "text": "<p>Ontdek onze transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>professionele zakelijke website</strong> inclusief talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer om tijd en kosten te besparen! Laat alle administratieve taken aan mij over, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p>",
+            "img": {
+                "src": "https://bucket.webdevamin.com/pricing_home.jpg",
+                "alt": "Een laptop op een bureau waarop een professionele website in ontwikkeling te zien is."
+            },
+            "pricing": {
+                "webdesign": {
+                    "content": {
+                        "main": "49/maand",
+                        "mid": "of",
+                        "mainTwo": {
+                            "first": "44/maand",
+                            "second": "indien jaarlijks"
+                        },
+                        "sub": "excl. BTW",
+                        "footer": {
+                            "text": "Contacteer voor dit abonnement",
+                            "src": "/contact"
+                        }
+                    },
+                    "items": [
+                        {
+                            "title": "Professionele, zakelijke website",
+                            "details": "Het is vanzelfsprekend dat uw website er professioneel en zakelijk uitziet. Dit is belangrijk voor uw bedrijf."
+                        },
+                        {
+                            "title": "Uitstekende weergave op alle apparaten",
+                            "details": "Uw website zal er goed uitzien op alle apparaten zoals smartphones, tablets en computers."
+                        },
+                        {
+                            "title": "Levenslang <strong>GRATIS</strong> hosting",
+                            "details": "U hoeft nooit te betalen voor hosting. Ik regel alles voor u. Hosting: online plaatsen van uw website."
+                        },
+                        {
+                            "title": "Levenslang <strong>GRATIS</strong> domeinnaam",
+                            "details": "U hoeft nooit te betalen voor domeinnaam. Ik regel alles voor u. Domeinnaam: uw website adres (bv. www.uwbedrijf.be)"
+                        },
+                        {
+                            "title": "Levenslang <strong>GRATIS</strong> onderhoud en updates",
+                            "details": "Ik zorg er altijd voor dat uw website up-to-date is en blijft zodat het altijd uitstekend functioneert. U hoeft zich geen zorgen te maken over updates of onderhoud."
+                        },
+                        {
+                            "title": "Uitstekend SEO op uw website, <strong>GRATIS</strong>",
+                            "details": "Ik zorg ervoor dat uw website goed scoort in Google zodat u meer bezoekers krijgt. SEO: zoekmachine optimalisatie. Dit is belangrijk voor uw website om gevonden te worden in Google en andere zoekmachines."
+                        },
+                        {
+                            "title": "<strong>GRATIS</strong> logo's",
+                            "details": "Je leest het goed! Bij een abonnement ontvangt u een gratis logo uit mijn collectie, volledig afgestemd op uw wensen. En je mag er zo veel hebben hoeveel je maar wilt."
+                        },
+                        {
+                            "title": "<strong>Administratie & facturen</strong> door mij geregeld",
+                            "details": "Ik regel alle administratie en facturatie voor u, zoals de website, hosting en domeinnaam. U hoeft zich nergens zorgen over te maken."
+                        },
+                        {
+                            "title": "<strong>24/7</strong> support",
+                            "details": "Heeft u vragen of opmerkingen? U kunt mij altijd contacteren. Ik help u graag verder zonder kosten."
+                        },
+                        {
+                            "title": "Jaarlijks betalen? <strong>Geen opstartkosten</strong>!",
+                            "details": "Yup, u leest het goed! Geen opstartkosten bij jaarlijkse betaling. U betaalt enkel voor het abonnement zelf."
+                        },
+                        {
+                            "title": "In ongeveer <strong>5 dagen</strong> klaar",
+                            "details": "Uw website is klaar in ongeveer 5 dagen."
+                        },
+                        {
+                            "title": "Niet tevreden? <strong>30 dagen geld terug</strong>",
+                            "details": "Bent u niet tevreden? Geen probleem, u krijgt uw geld terug binnen 30 dagen."
+                        }
+                    ]
+                }
+            },
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Contacteer voor dit abonnement",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
             "title": "Blogs",
             "subtitle": "",
             "slug": "blogs",
-            "text": "<p>Aanschouw interessante onderwerpen, verhalen en tips over IT, <strong>development</strong>, <strong>webdesign</strong>, <strong>freelance </strong>en meer.</p>",
+            "text": "<p>Ontdek inzichten en praktische tips over IT, development, webdesign en freelancen. Blijf op de hoogte van de trends en krijg inspiratie om je projecten te laten groeien en je carrière een duwtje te geven.</p>",
             "button": [
                 {
                     "href": "/blogs",
@@ -110,7 +190,7 @@
         },
         {
             "title": "Beoordelingen",
-            "subtitle": "testimonials",
+            "subtitle": "klantenreviews",
             "slug": "testimonials",
             "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
             "testimonials": [
@@ -118,22 +198,62 @@
                     "letter": "A",
                     "name": "Alexi",
                     "stars": "5",
-                    "review": "Very professional, friendly, good prices definitely recommended.",
+                    "review": "Zeer professioneel,vriendelijk,goede prijzen zeker aan te raden.",
                     "backgroundColor": "rgb(168 85 247)"
                 },
                 {
                     "letter": "N",
                     "name": "Natan Hongenaert",
                     "stars": "5",
-                    "review": "Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.",
+                    "review": "Transparant en flexibel in zijn manier van werken. Hij denkt mee om een oplossing op te zetten die op de lange termijn werkt.",
                     "backgroundColor": "rgb(6 182 212)"
                 },
                 {
                     "letter": "R",
                     "name": "Robert Chen",
                     "stars": "5",
-                    "review": "Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.",
+                    "review": "Schitterend werk. Denk mee en zoek mee voor een oplossing.  Zeer goede prijs en kwaliteit werk geleverd.  Uiterst tevreden. Bedankt Amin.",
                     "backgroundColor": "rgb(236 72 153)"
+                },
+                {
+                    "letter": "F",
+                    "name": "Filip",
+                    "stars": "5",
+                    "review": "Mooi, sterk en betaalbaar website ontwikkeld voor onze organisatie. Als je een betrouwbare webdesigner uit Brugge zoekt, je weet waar je moet zijn.",
+                    "backgroundColor": "rgb(203 236 72)"
+                }
+            ]
+        },
+        {
+            "component": "block-accordion",
+            "title": "Veelgestelde vragen",
+            "slug": "faq",
+            "subtitle": "Vragen & antwoorden",
+            "text": "Hieronder vindt u een lijst met veelgestelde vragen over webontwikkeling en zakelijke websites. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
+            "items": [
+                {
+                    "title": "Wat kost een zakelijke website laten maken?",
+                    "description": "De gemiddelde prijs voor het laten maken van een website varieert sterk, afhankelijk van de complexiteit van het project, de functionaliteiten die u nodig heeft en de ervaring van een betaalbare webdesigner. Gelukkig betaalt u bij mij slechts <strong>€49 excl. BTW of €44 per maand</strong> indien u voor een jaarlijks abonnement kiest. Het brengt veel voordelen met zich mee, zoals een <strong>gratis domeinnaam, hosting, onderhoud en support</strong>."
+                },
+                {
+                    "title": "Kan ik een offerte aanvragen om een website te laten maken?",
+                    "description": "Zeker, maar waarom? Als u weet dat u voor een professionele website slechts €49 per maand excl. BTW of €44 per maand betaalt indien u voor een jaarlijkse abonnement opteert? Prijs weet je dus al. U kunt direct een <strong>abonnement afsluiten door contact met mij op te nemen</strong> en uw website binnen circa. 5 dagen online hebben. Uiteraard kunt u ook contact opnemen voor meer informatie."
+                },
+                {
+                    "title": "Hoeveel bedragen de opstartkosten?",
+                    "description": "Indien u voor een jaarlijkse abonnement kiest, <strong>betaalt u geen opstartkosten</strong>. €44 per maand als u voor een jaarlijkse abonnement opteert. Indien u voor een maandelijks abonnement kiest, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
+                },
+                {
+                    "title": "Wat is SEO?",
+                    "description": "SEO staat voor zoekmachineoptimalisatie. Het is het proces van het <strong>verbeteren van de kwaliteit en kwantiteit van websiteverkeer</strong> naar een website of webpagina van zoekmachines. SEO richt zich op onbetaalde resultaten in plaats van direct verkeer of betaald verkeer. Dit is iets wat ik standaard in mijn websites verwerk."
+                },
+                {
+                    "title": "Wat is een domeinnaam?",
+                    "description": "Een domeinnaam is een unieke naam die wordt gebruikt om een IP-adres te identificeren op internet. Een domeinnaam is een <strong>adres waarmee mensen uw website kunnen vinden op het internet</strong>. Ik regel de domeinnaam voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
+                },
+                {
+                    "title": "Wat is hosting?",
+                    "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun <strong>website of webpagina op internet te plaatsen</strong>. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken. Ik regel de hosting voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
                 }
             ]
         },
@@ -141,7 +261,7 @@
             "title": "Contact",
             "subtitle": "",
             "slug": "contact",
-            "text": "<p>Heeft u vragen? Of heeft u misschien behoefte aan een website, logo-ontwerp of iets anders? Aarzel dan niet om contact met mij op te nemen.</p>",
+            "text": "Heb je vragen of interesse in een zakelijke website of een op maat gemaakte webapplicatie om je bedrijf te laten groeien? Neem vandaag nog contact op!",
             "button": [
                 {
                     "href": "/contact",

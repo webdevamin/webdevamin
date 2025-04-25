@@ -132,7 +132,7 @@ p a {
 }
 
 .block_container {
-  @apply my-16 sm:my-20 md:my-28 xl:my-52;
+  @apply my-24 sm:my-20 md:my-28 xl:my-52;
 }
 
 .clamp_2 {
@@ -256,4 +256,20 @@ p a {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Animations for FAQ and other interactive components */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
 }

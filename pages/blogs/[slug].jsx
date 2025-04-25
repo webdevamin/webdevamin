@@ -10,7 +10,7 @@ import Image from 'next/image';
 import SocialShares from '../../components/SocialShares';
 import styles from '../../styles/BlogPage.module.scss';
 
-const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, blogData }) => {
+const Blog = ({ localesData, socialsData, blogsData, regionsData, pagesData, contactBlockData, blogData }) => {
     const router = useRouter();
 
     const { seo, alternates, alternateLangs, title,
@@ -54,7 +54,7 @@ const Blog = ({ localesData, socialsData, blogsData, servicesData, regionsData, 
                     </div>
                 </section>
                 <Contact content={contactBlockData} />
-                <Footer services={servicesData} blogs={blogsData}
+                <Footer blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>
         </div>
@@ -97,7 +97,6 @@ export async function getStaticProps({ locale, params }) {
             localesData: (await import(`../../lang/${locale}/locales.json`)).default,
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData,
-            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data

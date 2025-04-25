@@ -5,22 +5,6 @@
         "icon": "faHouse"
     },
     {
-        "title": "Diensten",
-        "href": "/services",
-        "icon": "faCircleUser",
-        "subs": [
-            {
-                "title": "Zakelijke website laten maken",
-                "href": "/services/zakelijke-website-laten-maken"
-            },
-            {
-                "borderTop": true,
-                "title": "Toon alle diensten",
-                "href": "/services"
-            }
-        ]
-    },
-    {
         "title": "Projecten",
         "href": "/projects",
         "icon": "faImage"

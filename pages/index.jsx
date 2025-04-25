@@ -8,8 +8,10 @@ import Blogs from '../components/Home/Blogs'
 import Contact from '../components/Contact'
 import Footer from '../components/Layouts/Footer'
 import Hero from '../components/Home/Hero'
+import PricingSection from '../components/Home/Pricing'
+import BlockAccordion from '../components/Blocks/BlockAccordion'
 
-const Index = ({ localesData, blogsData, servicesData, socialsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
+const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
   const { seo, alternates, alternateLangs, blocks } = pageData;
 
   return (
@@ -24,9 +26,13 @@ const Index = ({ localesData, blogsData, servicesData, socialsData, projectsData
           data={projectsData} />
         <Blogs content={blocks.find(block => block.slug === `blogs`)}
           data={blogsData} />
+        <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
+        <div className="transition-all duration-500 rounded-xl">
+            <BlockAccordion content={blocks.find(block => block.component === `block-accordion`)} center/>
+        </div>
         <Contact content={contactBlockData} />
-        <Footer services={servicesData} blogs={blogsData} pages={pagesData}
+        <Footer blogs={blogsData} pages={pagesData}
           socials={socialsData} followExternalLinks />
       </PageLayout>
     </>
@@ -42,7 +48,6 @@ export async function getStaticProps({ locale }) {
       localesData: (await import(`../lang/${locale}/locales.json`)).default,
       socialsData: (await import(`../lang/${locale}/socials.json`)).default,
       blogsData: (await import(`../lang/${locale}/blogs.json`)).default,
-      servicesData: (await import(`../lang/${locale}/services.json`)).default,
       pagesData: (await import(`../lang/${locale}/pages.json`)).default,
       heroBannerData: (await import(`../lang/${locale}/heroBanner.json`)).default,
       contactBlockData: (await import(`../lang/${locale}/contactBlock.json`)).default,

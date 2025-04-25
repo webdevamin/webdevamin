@@ -3,7 +3,6 @@ import BlockCards from '../components/Blocks/BlockCards';
 import BlockCardsTwo from '../components/Blocks/BlockCardsTwo';
 import BlockCols from '../components/Blocks/BlockCols';
 import BlockNormal from '../components/Blocks/BlockNormal';
-import Pricing from '../components/Pricing';
 // General app related
 
 const getJsonString = (string) => {
@@ -16,8 +15,7 @@ const componentMapper = {
   "block-cards": BlockCards,
   "block-cards-two": BlockCardsTwo,
   "block-cols": BlockCols,
-  "block-accordion": BlockAccordion,
-  "pricing": Pricing,
+  "block-accordion": BlockAccordion
   // Add other mappings as needed
 };
 

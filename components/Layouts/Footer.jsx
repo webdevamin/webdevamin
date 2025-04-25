@@ -5,10 +5,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ services, blogs, socials, pages, followExternalLinks }) => {
+const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
     const router = useRouter();
     const { locale } = router;
-    const isServiceAPage = services[0].seo;
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
@@ -73,35 +72,6 @@ const Footer = ({ services, blogs, socials, pages, followExternalLinks }) => {
                             })
                         }
                     </ul>
-                </div>
-                <div className={`col-span-2 sm:col-span-1 border-t border-b border-t-white border-b-white py-8 sm:py-0 sm:border-none`}>
-                    <h2 className={`text-xl mb-2 text-light`}>
-                        {locale === `en` ? `Services` : `Diensten`}
-                    </h2>
-                    <ul className={`text_light_all grid grid-cols-2 gap-x-7 
-                    items-center sm:block`}>
-                        {
-                            isServiceAPage && (
-                                services.map((service, i) => {
-                                    const { titleTwo, showcase, slug } = service;
-
-                                    if (!showcase) return null;
-
-                                    return (
-                                        <li className={`pt-2`} key={i}>
-                                            <Link href={`/services/${slug}`} className={`lg:text-base transition-all hover:text-theme`}>
-                                                {titleTwo}
-                                            </Link>
-                                        </li>
-                                    )
-                                })
-                            )
-                        }
-                    </ul>
-                    <div className={`md:mt-4`}>
-                        <ButtonThree href={`/services`} color={`text_theme_all`}
-                            text={locale === `en` ? `All services` : `Alle diensten`} />
-                    </div>
                 </div>
                 <div className={`border-b border-b-white sm:border-none pb-8 sm:py-0 col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>
                     <h2 className={`text-xl mb-2 text-light`}>

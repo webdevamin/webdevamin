@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Heading = ({ title, subtitle, titleClasses, split, noSubtitle }) => {
     const { ref, inView } = useInView({
-        threshold: 0, triggerOnce: false
+        threshold: 0, triggerOnce: true
     });
 
     if (noSubtitle) {

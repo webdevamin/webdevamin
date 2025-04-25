@@ -9,7 +9,7 @@ import Footer from '../../components/Layouts/Footer';
 import CardTwo from '../../components/Cards/CardTwo';
 import HeroOne from '../../components/Heroes/HeroOne';
 
-const Blogs = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, pageData }) => {
+const Blogs = ({ localesData, socialsData, blogsData, regionsData, pagesData, contactBlockData, pageData }) => {
     const router = useRouter();
 
     const { seo, alternates, alternateLangs, blocks } = pageData;
@@ -51,7 +51,7 @@ const Blogs = ({ localesData, socialsData, blogsData, servicesData, regionsData,
                     </div>
                 </section>
                 <Contact content={contactBlockData} />
-                <Footer services={servicesData} blogs={blogsData} pages={pagesData}
+                <Footer blogs={blogsData} pages={pagesData}
                     socials={socialsData} regions={regionsData} followExternalLinks />
             </PageLayout>
         </>
@@ -67,7 +67,6 @@ export async function getStaticProps({ locale }) {
             localesData: (await import(`../../lang/${locale}/locales.json`)).default,
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
-            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data

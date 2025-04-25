@@ -9,7 +9,7 @@ import CardTwo from '../../components/Cards/CardTwo';
 import HeroOne from '../../components/Heroes/HeroOne';
 import { useEffect, useState } from 'react';
 
-const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsData, pagesData, contactBlockData, projectsData, pageData }) => {
+const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData, contactBlockData, projectsData, pageData }) => {
     const router = useRouter();
     const [animationsReady, setAnimationsReady] = useState(false);
 
@@ -80,7 +80,7 @@ const Projects = ({ localesData, socialsData, blogsData, servicesData, regionsDa
                     </div>
                 </section>
                 <Contact content={contactBlockData} />
-                <Footer services={servicesData} blogs={blogsData} pages={pagesData}
+                <Footer blogs={blogsData} pages={pagesData}
                     socials={socialsData} regions={regionsData} followExternalLinks />
             </PageLayout>
         </>
@@ -96,7 +96,6 @@ export async function getStaticProps({ locale }) {
             localesData: (await import(`../../lang/${locale}/locales.json`)).default,
             socialsData: (await import(`../../lang/${locale}/socials.json`)).default,
             blogsData: (await import(`../../lang/${locale}/blogs.json`)).default,
-            servicesData: (await import(`../../lang/${locale}/services.json`)).default,
             pagesData: (await import(`../../lang/${locale}/pages.json`)).default,
             contactBlockData: (await import(`../../lang/${locale}/contactBlock.json`)).default,
             // End global data
