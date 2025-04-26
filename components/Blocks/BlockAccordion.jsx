@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
 import { Accordion } from "flowbite-react";
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
-import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
 import Heading from '../Heading';
 import ButtonOne from '../Buttons/ButtonOne';
 import ButtonThree from '../Buttons/ButtonThree';
@@ -9,18 +7,9 @@ import ButtonThree from '../Buttons/ButtonThree';
 const BlockAccordion = ({ content, center = false }) => {
     const { title, text, subtitle, position, items, buttons, layout, slug } = content;
     const { name, position: layoutPosition } = layout || {};
-    const isBlockLayoutTwo = name === `block-layout-two`;
-    const Layout = isBlockLayoutTwo ? BlockLayoutTwo : BlockLayoutOne;
-
-    // Track active accordion item for enhanced animations
-    const [activeItem, setActiveItem] = useState(-1);
-
-    const handleAccordionClick = (index) => {
-        setActiveItem(activeItem === index ? -1 : index);
-    };
 
     return (
-        <Layout title={title} slug={slug} includeMaxWidth={false} position={layoutPosition}>
+        <BlockLayoutOne title={title} slug={slug} includeMaxWidth={false} position={layoutPosition}>
             <div className={`4xl:pr-5 4xl:pl-12`}>
                 {
                     (title && subtitle && text) && (
@@ -39,17 +28,13 @@ const BlockAccordion = ({ content, center = false }) => {
                             items.map((item, i) => {
                                 const { title, shortDescription, description, detailBtn } = item;
                                 const text = shortDescription || description;
-                                const isActive = activeItem === i;
 
                                 return (
                                     <Accordion.Panel
                                         key={i}
-                                        className={`transition-all duration-500 ${isActive ? 'shadow-md rounded-lg border-l-4 border-theme' : 'hover:border-l-2 hover:border-theme_darker'}`}
+                                        className={`transition-all duration-500 shadow-md rounded-lg border-l-4 border-theme hover:border-l-2 hover:border-theme_darker`}
                                     >
-                                        <Accordion.Title
-                                            onClick={() => handleAccordionClick(i)}
-                                            className={`transition-all duration-300 flex items-center ${isActive ? 'text-theme font-semibold' : 'hover:text-theme_darker'}`}
-                                            aria-expanded={isActive}
+                                        <Accordion.Title as="h3" className={`transition-all duration-300 flex items-center text-theme font-semibold hover:text-theme_darker`}
                                         >
                                             <span className="transform transition-transform duration-300 inline-block mr-2">
                                                 {i + 1}.
@@ -57,7 +42,7 @@ const BlockAccordion = ({ content, center = false }) => {
                                             {title}
                                         </Accordion.Title>
                                         <Accordion.Content
-                                            className={`w-full transition-all duration-500 ${isActive ? 'animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg' : ''}`}
+                                            className={`w-full transition-all duration-500 animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg`}
                                         >
                                             {text.includes('<') ? (
                                                 <div
@@ -71,8 +56,10 @@ const BlockAccordion = ({ content, center = false }) => {
                                             )}
                                             {detailBtn && (
                                                 <div className={`mt-4 transition-all duration-300 hover:translate-x-1`}>
-                                                    <ButtonThree href={detailBtn.href}
-                                                        text={detailBtn.text} />
+                                                    <ButtonThree
+                                                        href={detailBtn.href}
+                                                        text={detailBtn.text}
+                                                    />
                                                 </div>
                                             )}
                                         </Accordion.Content>
@@ -97,13 +84,14 @@ const BlockAccordion = ({ content, center = false }) => {
                                                 classes={`sm:px-14 text-center transition-all duration-300 hover:scale-105`} />
                                         )
                                     }
+                                    return null;
                                 })
                             }
                         </div>
                     )
                 }
             </div>
-        </Layout>
+        </BlockLayoutOne>
     )
 }
 

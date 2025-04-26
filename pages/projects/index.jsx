@@ -37,12 +37,12 @@ const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData,
                     <Heading title={title} subtitle={subtitle} />
                     <p className="max-w-2xl mb-8 opacity-85">{text}</p>
                     <div
-                        className={`pb-8 flex gap-y-8 flex-col md:pb-0 md:pr-0 md:w-full md:grid 
+                        className={`pb-8 flex gap-y-14 flex-col md:pb-0 md:pr-0 md:w-full md:grid 
                             md:grid-cols-2 xl:grid-cols-3 md:gap-x-14 md:gap-y-12 lg:mt-14`}
                     >
                         {projectsData.length > 0 ? (
                             projectsData.map((project, i) => {
-                                const { title, img, slug, description, border, link, technologies = [], niche = '' } = project;
+                                const { title, img, slug, description, border, link, technologies = [], niche = '', price } = project;
                                 const { src, alt } = img;
                                 const text = router.locale === `en` ? `Read more` : `Verder lezen`;
 
@@ -65,7 +65,7 @@ const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData,
                                             type={`project`}
                                             link={link}
                                             technologies={technologies}
-                                            badgeAlt={niche}
+                                            badgeAlt={niche} badgeAltTwo={price}
                                         />
                                     </div>
                                 )

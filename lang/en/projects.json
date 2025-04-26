@@ -65,6 +65,7 @@
         "title": "Gympouch",
         "slug": "gympouch",
         "niche": "fitness",
+        "price": "€149/month",
         "description": "A gym administration app to manage appointments, store workouts and prices, and more.",
         "img": {
             "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
@@ -98,6 +99,7 @@
         "title": "My Admin",
         "slug": "my-admin",
         "niche": "administration",
+        "price": "€79/month",
         "description": "Administration app with login system to modify data from an external website or web app and receive messages from any event.",
         "img": {
             "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
@@ -131,6 +133,7 @@
         "title": "Bakiji Construct",
         "slug": "bakiji-construct",
         "niche": "construction",
+        "price": "€49/month",
         "link": "https://bakiji-construct.be",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
@@ -165,6 +168,7 @@
         "title": "Solaris",
         "slug": "solaris",
         "niche": "insurance",
+        "price": "€89/month",
         "link": "https://solarisinsurance.org",
         "description": "Web application for an insurance agency with the ability to fill out various forms with push notifications and live video meetings.",
         "img": {
@@ -199,6 +203,7 @@
         "title": "Restaurant China Brugge",
         "slug": "restaurant-china-brugge",
         "niche": "restaurant",
+        "price": "€49/month",
         "description": "Restaurant website with general information such as location, gallery, reviews, and a reservation form.",
         "img": {
             "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
@@ -246,6 +251,7 @@
         "title": "Black Wood",
         "slug": "black-wood",
         "niche": "construction",
+        "price": "€49/month",
         "link": "https://black-wood.be",
         "description": "Website for construction company with information about the company. Users can submit quotes for services such as renovation and window installations.",
         "img": {
@@ -280,6 +286,7 @@
         "title": "Verhuisdienst Liftservice",
         "slug": "verhuisdienst-liftservice",
         "niche": "transport",
+        "price": "€49/month",
         "link": "https://verhuisdienst-liftservice.be",
         "description": "A business website for a moving/transport company featuring general information, a gallery, and a quote form.",
         "img": {
@@ -314,6 +321,7 @@
         "title": "Pasta Maria",
         "slug": "pastamaria",
         "niche": "restaurant",
+        "price": "€49/month",
         "link": "https://pastamaria.be",
         "description": "A website for an Italian restaurant with general information, a menu, and more.",
         "img": {
@@ -341,6 +349,7 @@
         "title": "William Projecten",
         "slug": "williamprojecten",
         "niche": "construction",
+        "price": "€49/month",
         "link": "https://williamprojecten.be",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
@@ -375,6 +384,7 @@
         "title": "GRIT.",
         "slug": "grit",
         "niche": "fitness",
+        "price": "€69/month",
         "link": "https://gritbrugge.be/",
         "description": "A modern fitness application helping personal trainers schedule sessions and track client progress.",
         "img": {

@@ -28,6 +28,7 @@
             "title": "Webdevamin",
             "slug": "hero",
             "text": "Empower your business with state-of-the-art digital solutions, such as websites, web applications, and digital marketing, with a focus on your specific needs, including web design, web development, and more.",
+            "extra": "Custom web applications such as:",
             "button": [
                 {
                     "href": "/contact",
@@ -56,10 +57,10 @@
             ]
         },
         {
-            "title": "Services & tech",
-            "subtitle": "Web Designer | Web Developer | SEO",
+            "title": "Why have a business website made?",
+            "subtitle": "Benefits of having a business website made",
             "slug": "about",
-            "text": "<p>As a professional <strong>freelancer</strong> specialized in <a href='/services/webdesign'>professional web design</a>, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p>",
+            "text": "<p>As a professional <strong>freelancer</strong> specialized in <a href='/services/webdesign'>professional web design</a>, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p><p>A <strong>business website</strong> offers numerous advantages for both starting and established entrepreneurs. First, it immediately conveys trust, making potential customers more likely to reach out or make a purchase. Additionally, a well-designed website ensures better findability in search engines like Google, especially when optimized for SEO. It also gives you the opportunity to clearly communicate your brand identity and be available to visitors 24/7, without having to be physically present. Finally, a business website helps streamline processes, such as quote requests, customer contact, and even sales, saving you time and money in the long run.</p>",
             "button": [
                 {
                     "href": "https://docs.google.com/document/d/e/2PACX-1vTTs0T9BMUNrrYu1zKw0jvR5fcTTqCVgWoAQrVKzQw9NKJdYETfgsFIUbZ16kvSBc9rnAeJEk_McsEw/pub",
@@ -72,6 +73,44 @@
                 "src": "https://bucket.webdevamin.com/about.jpg",
                 "alt": "Workstation with 2 monitors and a keyboard."
             }
+        },
+        {
+            "title": "My Services",
+            "subtitle": "What I Offer",
+            "slug": "services",
+            "text": "<p>Comprehensive digital solutions tailored to your business needs. From beautiful designs to cutting-edge development, I offer professional services to help your business thrive online.</p>",
+            "services": [
+                {
+                    "type": "webdesign",
+                    "title": "Web Design",
+                    "description": "Beautiful, modern, and user-friendly website designs that leave a lasting impression on your visitors and represent your brand perfectly."
+                },
+                {
+                    "type": "webdevelopment",
+                    "title": "Web Development",
+                    "description": "Custom web solutions built with the latest technologies to ensure your website is fast, secure, and scalable."
+                },
+                {
+                    "type": "seo",
+                    "title": "SEO Optimization",
+                    "description": "Improve your visibility in search engines and attract more organic traffic with comprehensive SEO strategies."
+                },
+                {
+                    "type": "graphicdesign",
+                    "title": "Graphic Design",
+                    "description": "Eye-catching visuals and branding elements that enhance your website's appeal and strengthen your brand identity."
+                },
+                {
+                    "type": "ecommerce",
+                    "title": "E-commerce",
+                    "description": "Full-featured online stores that make selling your products online easy, secure, and profitable."
+                },
+                {
+                    "type": "automation",
+                    "title": "Automation Systems",
+                    "description": "Custom automation solutions to streamline your business processes, save time, and reduce operational costs."
+                }
+            ]
         },
         {
             "title": "Projects",
@@ -90,7 +129,14 @@
             "title": "Pricing",
             "subtitle": "Affordable Services",
             "slug": "pricing",
-            "text": "<p>Discover our competitive prices for website development. Transparent rates with no hidden costs. Invest in a professional website that delivers results.</p>",
+            "text": "<p>Discover our competitive prices for website development. Transparent rates with no hidden costs. From <strong>just €49 per month</strong>, you get a <strong>professional business website</strong> including numerous benefits, without hidden costs. The price varies slightly depending on the complexity and size of your specific project.</p><p>In addition to a professional business website, you receive lifetime free hosting, domain name, maintenance, updates, and more to save time and costs! Let me handle all administrative tasks, so you can fully focus on growing your business.</p>",
+            "subsubtitle": "Benefits summarized",
+            "exampleButton": {
+                "href": "/projects/business-website",
+                "text": "See examples of €49/month websites",
+                "label": "View example business websites",
+                "external": false
+            },
             "pricing": {
                 "webdesign": {
                     "content": {
@@ -171,7 +217,7 @@
             "title": "Blogs",
             "subtitle": "",
             "slug": "blogs",
-            "text": "<p>Interesting topics, stories, and guides about IT, development, freelance, and more.</p>",
+            "text": "<p>Discover insights and practical tips about IT, development, web design, and freelancing. Stay updated on trends and get inspiration to grow your projects and boost your career.</p>",
             "button": [
                 {
                     "href": "/blogs",
@@ -212,7 +258,7 @@
                     "letter": "F",
                     "name": "Filip",
                     "stars": "5",
-                    "review": "Beautiful, strong, and affordable website developed for our organization. If you’re looking for a reliable web designer from Bruges, you know where to go.",
+                    "review": "Beautiful, strong, and affordable website developed for our organization. If you're looking for a reliable web designer from Bruges, you know where to go.",
                     "backgroundColor": "rgb(203 236 72)"
                 }
             ]
@@ -254,7 +300,7 @@
             "title": "Contact",
             "subtitle": "",
             "slug": "contact",
-            "text": "<p>Questions/comments? Need a website, logo or something else? Don't hesitate to contact me.</p>",
+            "text": "<p>Do you have questions or interest in a business website or a custom web application to grow your business? Get in touch today!</p>",
             "button": [
                 {
                     "href": "/contact",

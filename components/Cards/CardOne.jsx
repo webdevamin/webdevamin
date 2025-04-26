@@ -6,6 +6,7 @@ import Image from 'next/image';
 import starsImage from '../../public/images/star.webp';
 import { useRouter } from 'next/router';
 
+// Example: Testimonials
 const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
     const router = useRouter();
     const { name, brands } = icon || {};

@@ -132,7 +132,7 @@ p a {
 }
 
 .block_container {
-  @apply my-24 sm:my-20 md:my-28 xl:my-52;
+  @apply my-20 sm:my-20 md:my-28 xl:my-52;
 }
 
 .clamp_2 {
@@ -144,7 +144,7 @@ p a {
 
 #accordion,
 .accordion {
-  h2 {
+  h3 {
     @apply font_quicksand text-base lg:text-lg normal-case font-semibold mb-0;
   }
 

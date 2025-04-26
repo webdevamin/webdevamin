@@ -5,7 +5,8 @@ import ButtonThree from '../Buttons/ButtonThree';
 import { Tooltip } from "flowbite-react"
 import Link from 'next/link';
 
-const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt }) => {
+// Example: Projects
+const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt, badgeAltTwo }) => {
     const router = useRouter();
     const { bText, bgColor, color } = badge || {};
     const [isHovered, setIsHovered] = useState(false);
@@ -73,18 +74,28 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
                     )}
                 </div>
 
-                {badgeAlt && (
-                    <span className="inline-block text-xs font-medium bg-theme bg-opacity-10 text-theme_darker rounded-full px-2.5 py-1 mb-2">
-                        {badgeAlt}
-                    </span>
-                )}
+                <div className='flex flex-wrap gap-2'>
+                    {badgeAlt && (
+                        <span className="inline-block text-xs font-medium 
+                        bg-theme bg-opacity-10 text-theme_darker rounded-full 
+                        px-2.5 py-1 mb-3 lg:mb-4 border border-theme_darker border-opacity-20">
+                            {badgeAlt}
+                        </span>
+                    )}
+
+                    {badgeAltTwo && (
+                        <span className="inline-block text-xs font-semibold bg-dark bg-opacity-80 text-white rounded-full px-2.5 py-1 mb-3 lg:mb-4">
+                            {badgeAltTwo}
+                        </span>
+                    )}
+                </div>
 
                 <p className={`text-base clamp_2 text-gray-600 mb-3 transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-70'}`}>
                     {subtitle}
                 </p>
 
                 {link && (
-                    <div className="mt-1 cursor-pointer relative z-10">
+                    <div className="mt-4 cursor-pointer relative z-10">
                         <ButtonThree href={link} text={buttonText} target="_blank" rel="noopener noreferrer" />
                     </div>
                 )}

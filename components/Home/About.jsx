@@ -15,10 +15,10 @@ const About = ({ content }) => {
                     <Image src={src} priority width={836} height={483} alt={alt} className="object-contain w-full h-auto mt-4" />
                 </div>
                 <div className={`mt-1 sm:mt-3 md:mt-8 lg:mt-20 xl:mt-36 xl:w-full lg:max-w-md xl:max-w-2xl 2xl:max-w-3xl`}>
-                    <article className={`mt-4 lg:ml-3`}>
+                    <article className={`mt-6 lg:ml-3`}>
                         <div>
                             <SubHeading title={subtitle} />
-                            <div dangerouslySetInnerHTML={{ __html: text }} className="pt-2 lg:pt-0" />
+                            <div dangerouslySetInnerHTML={{ __html: text }} />
                         </div>
                         <div className={`mt-8 flex-col sm:flex-row lg:mt-10 xl:mt-12 flex 
                         gap-4 sm:justify-center sm:mt-9 lg:w-full 
@@ -30,7 +30,7 @@ const About = ({ content }) => {
 
                                     return (
                                         <ButtonOne href={hrefButton} text={textButton}
-                                            classes={`w-full md:w-auto lg:w-auto sm:px-14 mt-0`}
+                                            classes={`w-fit px-14 sm:px-14 mt-0`}
                                             noMargin={true} external={external}
                                             key={index} outline={index % 2 !== 0 ? true : false} />
                                     )

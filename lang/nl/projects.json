@@ -65,6 +65,7 @@
         "title": "Gympouch",
         "slug": "gympouch",
         "niche": "fitness",
+        "price": "€149/maand",
         "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
         "img": {
             "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
@@ -97,6 +98,7 @@
     {
         "title": "My Admin",
         "slug": "my-admin",
+        "price": "€79/maand",
         "niche": "administratie",
         "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
         "img": {
@@ -131,6 +133,7 @@
         "title": "Bakiji Construct",
         "slug": "bakiji-construct",
         "niche": "bouw",
+        "price": "€49/maand",
         "link": "https://bakiji-construct.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
         "img": {
@@ -165,6 +168,7 @@
         "title": "Solaris",
         "slug": "solaris",
         "niche": "verzekering",
+        "price": "€89/maand",
         "link": "https://solarisinsurance.org",
         "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
         "img": {
@@ -199,6 +203,7 @@
         "title": "Restaurant China Brugge",
         "slug": "restaurant-china-brugge",
         "niche": "restaurant",
+        "price": "€49/maand",
         "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
         "img": {
             "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
@@ -246,6 +251,7 @@
         "title": "Black Wood",
         "slug": "black-wood",
         "niche": "bouw",
+        "price": "€49/maand",
         "link": "https://black-wood.be",
         "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
         "img": {
@@ -280,6 +286,7 @@
         "title": "Verhuisdienst Liftservice",
         "slug": "verhuisdienst-liftservice",
         "niche": "transport",
+        "price": "€49/maand",
         "link": "https://verhuisdienst-liftservice.be",
         "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
         "img": {
@@ -314,6 +321,7 @@
         "title": "Pasta Maria",
         "slug": "pastamaria",
         "niche": "restaurant",
+        "price": "€49/maand",
         "link": "https://pastamaria.be",
         "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
         "img": {
@@ -341,6 +349,7 @@
         "title": "William Projecten",
         "slug": "williamprojecten",
         "niche": "bouw",
+        "price": "€49/maand",
         "link": "https://williamprojecten.be",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
         "img": {
@@ -375,6 +384,7 @@
         "title": "GRIT.",
         "slug": "grit",
         "niche": "fitness",
+        "price": "€69/maand",
         "link": "https://gritbrugge.be/",
         "description": "Een moderne fitness-applicatie die persoonlijke trainers helpt bij het plannen van sessies en het bijhouden van de vooruitgang van klanten.",
         "img": {

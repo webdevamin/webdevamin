@@ -33,19 +33,19 @@ const Heading = ({ title, subtitle, titleClasses, split, noSubtitle }) => {
     }
 
     return (
-        <div className={`transition-all 
+        <div className={`flex flex-col-reverse transition-all 
         duration-700 ease-linear 
         ${inView && `is-visible opacity-100 translate-y-0`} 
         ${!inView && `opacity-40 translate-y-10`}`}
             ref={ref}>
-            <div className={`uppercase font-bold text-theme_darker
-            text-opacity-100 mb-4 md:mb-5 lg:mb-4 tracking-widest 
-            text-sm lg:text-lg xl:mb-8 xl:text-2xl`}>
-                {subtitle}
-            </div>
             <h2 className={titleClasses}>
                 {title}
             </h2>
+            <h3 className={`uppercase font-bold text-theme_darker
+            text-opacity-100 mb-4 md:mb-5 lg:mb-4 tracking-widest 
+            text-sm lg:text-lg xl:mb-8 xl:text-2xl`}>
+                {subtitle}
+            </h3>
         </div>
     )
 }

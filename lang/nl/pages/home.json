@@ -46,7 +46,7 @@
             ],
             "img": {
                 "src": "https://bucket.webdevamin.com/developer.svg",
-                "alt": "Ontwikkelaar werkt op zijn computer."
+                "alt": "Een betaalbare webdesigner die programmeert om een professionele website af te krijgen."
             },
             "types": [
                 "Business website",
@@ -72,14 +72,52 @@
             ],
             "img": {
                 "src": "https://bucket.webdevamin.com/about.jpg",
-                "alt": "Computer met codes om een zakelijke website te maken in een donkere omgeving."
+                "alt": "Computer met codes om een zakelijke website te ontwikkelen in een donkere omgeving."
             }
+        },
+        {
+            "title": "Mijn Diensten",
+            "subtitle": "Wat ik aanbied",
+            "slug": "services",
+            "text": "<p>Uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften. Van prachtige ontwerpen tot geavanceerde ontwikkeling. Het maakt niet uit of u naar een <strong>betaalbare webdesigner</strong> zoekt of een ware <strong>software ontwikkelaar</strong>, bij mij bent u op het juist adres.</p>",
+            "services": [
+                {
+                    "type": "webdesign",
+                    "title": "Webdesign",
+                    "description": "Mooie, moderne en gebruiksvriendelijke website-ontwerpen die een blijvende indruk achterlaten op uw bezoekers en uw merk perfect vertegenwoordigen."
+                },
+                {
+                    "type": "webdevelopment",
+                    "title": "Webontwikkeling",
+                    "description": "Op maat gemaakte weboplossingen gebouwd met de nieuwste technologieën om ervoor te zorgen dat uw website snel, veilig en schaalbaar is."
+                },
+                {
+                    "type": "seo",
+                    "title": "SEO Optimalisatie",
+                    "description": "Verbeter uw zichtbaarheid in zoekmachines en trek meer organisch verkeer aan met uitgebreide SEO-strategieën."
+                },
+                {
+                    "type": "graphicdesign",
+                    "title": "Grafisch Ontwerp",
+                    "description": "Opvallende visuele en brandingelementen die de aantrekkingskracht van uw website vergroten en uw merkidentiteit versterken."
+                },
+                {
+                    "type": "ecommerce",
+                    "title": "E-commerce",
+                    "description": "Volwaardige webshops die het online verkopen van uw producten gemakkelijk, veilig en winstgevend maken."
+                },
+                {
+                    "type": "automation",
+                    "title": "Automatiseringssystemen",
+                    "description": "Aangepaste automatiseringsoplossingen om uw bedrijfsprocessen te stroomlijnen, tijd te besparen en operationele kosten te verlagen."
+                }
+            ]
         },
         {
             "title": "Projecten",
             "subtitle": "",
             "slug": "projects",
-            "text": "<p>Laat je inspireren door onze afgeronde projecten: van strakke <strong>zakelijke websites</strong> tot <strong>geavanceerde webapplicaties</strong>. Met een oog voor optimale snelheid en SEO, zodat jouw online succes gegarandeerd is.</p>",
+            "text": "<p>Laat je inspireren door afgeronde projecten: van strakke <strong>zakelijke websites</strong> tot <strong>geavanceerde webapplicaties</strong>. Met een oog voor optimale snelheid en SEO, zodat jouw online succes gegarandeerd is.</p>",
             "button": [
                 {
                     "href": "/projects",
@@ -90,81 +128,71 @@
             ]
         },
         {
-            "title": "Prijzen",
-            "subtitle": "Betaalbare diensten",
+            "title": "Prijsabonnement",
+            "subtitle": "Betaalbare webdesigner & developer",
             "slug": "pricing",
-            "text": "<p>Ontdek onze transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>professionele zakelijke website</strong> inclusief talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer om tijd en kosten te besparen! Laat alle administratieve taken aan mij over, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p>",
-            "img": {
-                "src": "https://bucket.webdevamin.com/pricing_home.jpg",
-                "alt": "Een laptop op een bureau waarop een professionele website in ontwikkeling te zien is."
-            },
-            "pricing": {
-                "webdesign": {
-                    "content": {
-                        "main": "49/maand",
-                        "mid": "of",
-                        "mainTwo": {
-                            "first": "44/maand",
-                            "second": "indien jaarlijks"
-                        },
-                        "sub": "excl. BTW",
-                        "footer": {
-                            "text": "Contacteer voor dit abonnement",
-                            "src": "/contact"
-                        }
-                    },
-                    "items": [
-                        {
-                            "title": "Professionele, zakelijke website",
-                            "details": "Het is vanzelfsprekend dat uw website er professioneel en zakelijk uitziet. Dit is belangrijk voor uw bedrijf."
-                        },
-                        {
-                            "title": "Uitstekende weergave op alle apparaten",
-                            "details": "Uw website zal er goed uitzien op alle apparaten zoals smartphones, tablets en computers."
-                        },
-                        {
-                            "title": "Levenslang <strong>GRATIS</strong> hosting",
-                            "details": "U hoeft nooit te betalen voor hosting. Ik regel alles voor u. Hosting: online plaatsen van uw website."
-                        },
-                        {
-                            "title": "Levenslang <strong>GRATIS</strong> domeinnaam",
-                            "details": "U hoeft nooit te betalen voor domeinnaam. Ik regel alles voor u. Domeinnaam: uw website adres (bv. www.uwbedrijf.be)"
-                        },
-                        {
-                            "title": "Levenslang <strong>GRATIS</strong> onderhoud en updates",
-                            "details": "Ik zorg er altijd voor dat uw website up-to-date is en blijft zodat het altijd uitstekend functioneert. U hoeft zich geen zorgen te maken over updates of onderhoud."
-                        },
-                        {
-                            "title": "Uitstekend SEO op uw website, <strong>GRATIS</strong>",
-                            "details": "Ik zorg ervoor dat uw website goed scoort in Google zodat u meer bezoekers krijgt. SEO: zoekmachine optimalisatie. Dit is belangrijk voor uw website om gevonden te worden in Google en andere zoekmachines."
-                        },
-                        {
-                            "title": "<strong>GRATIS</strong> logo's",
-                            "details": "Je leest het goed! Bij een abonnement ontvangt u een gratis logo uit mijn collectie, volledig afgestemd op uw wensen. En je mag er zo veel hebben hoeveel je maar wilt."
-                        },
-                        {
-                            "title": "<strong>Administratie & facturen</strong> door mij geregeld",
-                            "details": "Ik regel alle administratie en facturatie voor u, zoals de website, hosting en domeinnaam. U hoeft zich nergens zorgen over te maken."
-                        },
-                        {
-                            "title": "<strong>24/7</strong> support",
-                            "details": "Heeft u vragen of opmerkingen? U kunt mij altijd contacteren. Ik help u graag verder zonder kosten."
-                        },
-                        {
-                            "title": "Jaarlijks betalen? <strong>Geen opstartkosten</strong>!",
-                            "details": "Yup, u leest het goed! Geen opstartkosten bij jaarlijkse betaling. U betaalt enkel voor het abonnement zelf."
-                        },
-                        {
-                            "title": "In ongeveer <strong>5 dagen</strong> klaar",
-                            "details": "Uw website is klaar in ongeveer 5 dagen."
-                        },
-                        {
-                            "title": "Niet tevreden? <strong>30 dagen geld terug</strong>",
-                            "details": "Bent u niet tevreden? Geen probleem, u krijgt uw geld terug binnen 30 dagen."
-                        }
-                    ]
+            "text": "<p>Ontdek transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>professionele zakelijke website</strong> inclusief talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer om tijd en kosten te besparen! Laat alle administratieve taken aan mij over, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p>",
+            "subsubtitle": "Voordelen opgesomd",
+            "buttons": [
+                {
+                    "href": "https://williamprojecten.be",
+                    "text": "Voorbeeld van €49/maand site",
+                    "label": "Voorbeeld van €49/maand site",
+                    "external": true
+                },
+                {
+                    "href": "/projects",
+                    "text": "Bekijk projecten",
+                    "label": "Bekijk projecten",
+                    "external": false
                 }
-            },
+            ],
+            "items": [
+                {
+                    "title": "Professionele, zakelijke website",
+                    "details": "Het is vanzelfsprekend dat uw website er professioneel en zakelijk uitziet. Dit is belangrijk voor uw bedrijf."
+                },
+                {
+                    "title": "Uitstekende weergave op alle apparaten",
+                    "details": "Uw website zal er goed uitzien op alle apparaten zoals smartphones, tablets en computers."
+                },
+                {
+                    "title": "Levenslang GRATIS hosting",
+                    "details": "U hoeft nooit te betalen voor hosting. Ik regel alles voor u. Hosting: online plaatsen van uw website."
+                },
+                {
+                    "title": "Levenslang GRATIS domeinnaam",
+                    "details": "U hoeft nooit te betalen voor domeinnaam. Ik regel alles voor u. Domeinnaam: uw website adres (bv. www.uwbedrijf.be)"
+                },
+                {
+                    "title": "Levenslang GRATIS onderhoud en updates",
+                    "details": "Ik zorg er altijd voor dat uw website up-to-date is en blijft zodat het altijd uitstekend functioneert. U hoeft zich geen zorgen te maken over updates of onderhoud."
+                },
+                {
+                    "title": "Uitstekend SEO op uw website, GRATIS",
+                    "details": "Ik zorg ervoor dat uw website goed scoort in Google zodat u meer bezoekers krijgt. SEO: zoekmachine optimalisatie. Dit is belangrijk voor uw website om gevonden te worden in Google en andere zoekmachines."
+                },
+                {
+                    "title": "GRATIS logo's",
+                    "details": "Je leest het goed! Bij een abonnement ontvangt u een gratis logo uit mijn collectie, volledig afgestemd op uw wensen. En je mag er zo veel hebben hoeveel je maar wilt."
+                },
+                {
+                    "title": "Administratie & facturen door mij geregeld",
+                    "details": "Ik regel alle administratie en facturatie voor u, zoals de website, hosting en domeinnaam. U hoeft zich nergens zorgen over te maken."
+                },
+                {
+                    "title": "24/7 support",
+                    "details": "Heeft u vragen of opmerkingen? U kunt mij altijd contacteren. Ik help u graag verder zonder kosten."
+                },
+                {
+                    "title": "Jaarlijks betalen? Geen opstartkosten!",
+                    "details": "Yup, u leest het goed! Geen opstartkosten bij jaarlijkse betaling. U betaalt enkel voor het abonnement zelf."
+                },
+                {
+                    "title": "Niet tevreden? 30 dagen geld terug",
+                    "details": "Bent u niet tevreden? Geen probleem, u krijgt uw geld terug binnen 30 dagen."
+                }
+            ],
             "button": [
                 {
                     "href": "/contact",
@@ -225,7 +253,7 @@
             ]
         },
         {
-            "component": "block-accordion",
+            "component": "faq",
             "title": "Veelgestelde vragen",
             "slug": "faq",
             "subtitle": "Vragen & antwoorden",
@@ -233,7 +261,7 @@
             "items": [
                 {
                     "title": "Wat kost een zakelijke website laten maken?",
-                    "description": "De gemiddelde prijs voor het laten maken van een website varieert sterk, afhankelijk van de complexiteit van het project, de functionaliteiten die u nodig heeft en de ervaring van een betaalbare webdesigner. Gelukkig betaalt u bij mij slechts <strong>€49 excl. BTW of €44 per maand</strong> indien u voor een jaarlijks abonnement kiest. Het brengt veel voordelen met zich mee, zoals een <strong>gratis domeinnaam, hosting, onderhoud en support</strong>."
+                    "description": "De prijs voor een zakelijke website varieert sterk, afhankelijk van de complexiteit, gewenste functionaliteiten en de ervaring van de webdesigner. Bij mij betaalt u slechts <strong>€49 excl. BTW per maand</strong>, of voordelig <strong>€44 per maand</strong> bij een jaarabonnement voor een professionele zakelijke website. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals <strong>gratis domeinnaam, hosting, onderhoud en persoonlijke support</strong>. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
                 },
                 {
                     "title": "Kan ik een offerte aanvragen om een website te laten maken?",
@@ -241,7 +269,7 @@
                 },
                 {
                     "title": "Hoeveel bedragen de opstartkosten?",
-                    "description": "Indien u voor een jaarlijkse abonnement kiest, <strong>betaalt u geen opstartkosten</strong>. €44 per maand als u voor een jaarlijkse abonnement opteert. Indien u voor een maandelijks abonnement kiest, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
+                    "description": "Indien u voor een jaarlijkse abonnement van €44 per maand kiest, <strong>betaalt u geen opstartkosten</strong>. Opteert u voor een maandelijks abonnement, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
                 },
                 {
                     "title": "Wat is SEO?",

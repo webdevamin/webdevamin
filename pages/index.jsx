@@ -10,6 +10,7 @@ import Footer from '../components/Layouts/Footer'
 import Hero from '../components/Home/Hero'
 import PricingSection from '../components/Home/Pricing'
 import BlockAccordion from '../components/Blocks/BlockAccordion'
+import Services from '../components/Home/Services'
 
 const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
   const { seo, alternates, alternateLangs, blocks } = pageData;
@@ -22,6 +23,7 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
         socials={socialsData} />
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)} />
+        <Services content={blocks.find(block => block.slug === `services`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)}
           data={projectsData} />
         <Blogs content={blocks.find(block => block.slug === `blogs`)}
@@ -29,7 +31,7 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
         <div className="transition-all duration-500 rounded-xl">
-            <BlockAccordion content={blocks.find(block => block.component === `block-accordion`)} center/>
+            <BlockAccordion content={blocks.find(block => block.component === `faq`)} center/>
         </div>
         <Contact content={contactBlockData} />
         <Footer blogs={blogsData} pages={pagesData}
