@@ -21,7 +21,7 @@
         {
             "title": "Whoops, lost?",
             "slug": "hero",
-            "text": "<p>It seems like this page does not exist. Return to the homepage.</p>",
+            "text": "<p>Oops! It seems the page you are looking for does not exist (anymore). It might have been moved or removed during recent updates. No worries, click the button below to return to the homepage.</p>",
             "button": [
                 {
                     "href": "/",

@@ -13,7 +13,7 @@ const Error404 = ({ pageData }) => {
         <>
             <Seo seo={seo} alternates={alternates} noIndex />
             <div className={`flex flex-col h-full justify-center`}>
-                <main className={`w-9/12 max-w-8xl m-auto flex flex-col items-center gap-1 md:gap-6`}>
+                <main className={`w-9/12 max-w-6xl m-auto flex flex-col items-center gap-1 md:gap-6`}>
                     <Image
                         src={src} width={width} height={height} alt={alt}
                         style={{ objectFit: objectFit }} priority={true}

@@ -79,7 +79,7 @@
             "title": "Mijn Diensten",
             "subtitle": "Wat ik aanbied",
             "slug": "services",
-            "text": "<p>Uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften. Van prachtige ontwerpen tot geavanceerde ontwikkeling. Het maakt niet uit of u naar een <strong>betaalbare webdesigner</strong> zoekt of een ware <strong>software ontwikkelaar</strong>, bij mij bent u op het juist adres.</p>",
+            "text": "<p>Uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften. Van prachtige ontwerpen tot geavanceerde ontwikkeling. Het maakt niet uit of u naar een <strong>betaalbare webdesigner</strong> zoekt of een ware <strong>software ontwikkelaar</strong>, bij mij bent u op het juist adres.</p><p>Kortom: een digitale oplossing om je tijd, kosten te besparen en je winst te verhogen.</p>",
             "services": [
                 {
                     "type": "webdesign",
@@ -131,26 +131,20 @@
             "title": "Prijsabonnement",
             "subtitle": "Betaalbare webdesigner & developer",
             "slug": "pricing",
-            "text": "<p>Ontdek transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>professionele zakelijke website</strong> inclusief talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer om tijd en kosten te besparen! Laat alle administratieve taken aan mij over, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p>",
-            "subsubtitle": "Voordelen opgesomd",
+            "text": "<p>Ontdek transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €44 per maand</strong> krijgt u een standaard, <strong>professionele zakelijke website</strong> inclusief talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer om tijd en kosten te besparen! Laat alle administratieve taken aan mij over, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p><p>Bekijk hier een <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>voorbeeld van een bedrijfswebsite</a> ontwikkeld voor een bouwbedrijf in Brugge voor €49 per maand als voorbeeld.</p>",
+            "subsubtitle": "Wat krijgt u",
             "buttons": [
                 {
-                    "href": "https://williamprojecten.be",
-                    "text": "Voorbeeld van €49/maand site",
-                    "label": "Voorbeeld van €49/maand site",
-                    "external": true
-                },
-                {
                     "href": "/projects",
-                    "text": "Bekijk projecten",
-                    "label": "Bekijk projecten",
+                    "text": "Bekijk alle projecten",
+                    "label": "Bekijk alle projecten",
                     "external": false
                 }
             ],
             "items": [
                 {
                     "title": "Professionele, zakelijke website",
-                    "details": "Het is vanzelfsprekend dat uw website er professioneel en zakelijk uitziet. Dit is belangrijk voor uw bedrijf."
+                    "details": "Vanzelfsprekend krijgt u een website met professionele en zakelijke uitstraling die essentieel is voor uw bedrijfsimago. Uw website omvat standaard: een navigatiemenu met links, inleiding, footer met sociale media links en bedrijfsgegevens, contact- en/of offerteformulier, over ons sectie, diensten overzicht, projectengalerij en FAQ (veelgestelde vragen) sectie. Extra functionaliteit zoals een reserveringssysteem is mogelijk tegen een kleine meerprijs. Uiteraard kunt u ook zelf kiezen welke secties u op uw website wilt hebben."
                 },
                 {
                     "title": "Uitstekende weergave op alle apparaten",
@@ -264,8 +258,8 @@
                     "description": "De prijs voor een zakelijke website varieert sterk, afhankelijk van de complexiteit, gewenste functionaliteiten en de ervaring van de webdesigner. Bij mij betaalt u slechts <strong>€49 excl. BTW per maand</strong>, of voordelig <strong>€44 per maand</strong> bij een jaarabonnement voor een professionele zakelijke website. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals <strong>gratis domeinnaam, hosting, onderhoud en persoonlijke support</strong>. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
                 },
                 {
-                    "title": "Kan ik een offerte aanvragen om een website te laten maken?",
-                    "description": "Zeker, maar waarom? Als u weet dat u voor een professionele website slechts €49 per maand excl. BTW of €44 per maand betaalt indien u voor een jaarlijkse abonnement opteert? Prijs weet je dus al. U kunt direct een <strong>abonnement afsluiten door contact met mij op te nemen</strong> en uw website binnen circa. 5 dagen online hebben. Uiteraard kunt u ook contact opnemen voor meer informatie."
+                    "title": "Hoe lang duurt het om een website te maken?",
+                    "description": "De tijd die nodig is om een website te maken hangt af van de complexiteit en de specifieke wensen. Bij mij kunt u rekenen op een <strong>doorlooptijd van ongeveer 5 dagen</strong> voor een standaard zakelijke website. Voor meer complexe projecten kan dit langer duren, maar ik houd u altijd op de hoogte van de voortgang."
                 },
                 {
                     "title": "Hoeveel bedragen de opstartkosten?",

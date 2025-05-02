@@ -26,12 +26,12 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
         <Services content={blocks.find(block => block.slug === `services`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)}
           data={projectsData} />
-        <Blogs content={blocks.find(block => block.slug === `blogs`)}
+                  <Blogs content={blocks.find(block => block.slug === `blogs`)}
           data={blogsData} />
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
         <div className="transition-all duration-500 rounded-xl">
-            <BlockAccordion content={blocks.find(block => block.component === `faq`)} center/>
+          <BlockAccordion content={blocks.find(block => block.component === `faq`)} center />
         </div>
         <Contact content={contactBlockData} />
         <Footer blogs={blogsData} pages={pagesData}

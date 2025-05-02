@@ -1,6 +1,5 @@
 import BlockAccordion from '../components/Blocks/BlockAccordion';
 import BlockCols from '../components/Blocks/BlockCols';
-import BlockNormal from '../components/Blocks/BlockNormal';
 // General app related
 
 const getJsonString = (string) => {
@@ -9,7 +8,6 @@ const getJsonString = (string) => {
 }
 
 const componentMapper = {
-  "block-normal": BlockNormal,
   "block-cols": BlockCols,
   "block-accordion": BlockAccordion
   // Add other mappings as needed

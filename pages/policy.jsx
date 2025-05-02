@@ -7,7 +7,7 @@ import HeroOne from '../components/Heroes/HeroOne';
 
 const Policy = ({ localesData, socialsData, blogsData, regionsData, pagesData, pageData }) => {
     const { seo, alternates, alternateLangs, blocks } = pageData;
-    const { title, subtitle, slug: slug1, text } = blocks[1];
+    const { title, subtitle, slug, text } = blocks[1];
     return (
         <>
             <Seo seo={seo} alternates={alternates} />
@@ -15,9 +15,9 @@ const Policy = ({ localesData, socialsData, blogsData, regionsData, pagesData, p
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
                 socials={socialsData} />
             <PageLayout>
-                <section id={slug1} className={`block_container`}>
+                <section id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
-                    <div className={`mt-7 sm:mt-16 xl:mt-24 lg:w-10/12`}>
+                    <div className={`mt-3 sm:mt-8 md:mt-12 lg:w-10/12`}>
                         <div dangerouslySetInnerHTML={{ __html: text }}
                             className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
                     </div>

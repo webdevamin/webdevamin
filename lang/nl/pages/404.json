@@ -21,7 +21,7 @@
         {
             "title": "Whoops, verdwaald?",
             "slug": "hero",
-            "text": "<p>Het lijkt er op dat deze pagina niet bestaat. Keer terug naar de homepagina.</p>",
+            "text": "<p>Oeps! Het lijkt erop dat de pagina die je zoekt niet (meer) bestaat. Mogelijk is deze verplaatst of verwijderd tijdens recente updates. Geen zorgen, klik op de knop hieronder om terug te keren naar de homepagina.</p>",
             "button": [
                 {
                     "href": "/",

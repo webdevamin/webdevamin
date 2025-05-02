@@ -25,10 +25,11 @@
     ],
     "blocks": [
         {
-            "title": "Webdevamin",
+            "title": "Freelance Software Developer",
+            "subtitle": "Webdevamin",
             "slug": "hero",
             "text": "Empower your business with state-of-the-art digital solutions, such as websites, web applications, and digital marketing, with a focus on your specific needs, including web design, web development, and more.",
-            "extra": "Custom web applications such as:",
+            "extra": "Also custom-made web applications such as:",
             "button": [
                 {
                     "href": "/contact",
@@ -45,22 +46,22 @@
             ],
             "img": {
                 "src": "https://bucket.webdevamin.com/developer.svg",
-                "alt": "Developer working in front of his computer."
+                "alt": "An affordable web designer programming to finish a professional website."
             },
             "types": [
                 "Business website",
-                "Booking & reservation system",
+                "Appointment and reservation system",
                 "Administration system",
-                "E-commerce",
+                "E-commerce / webshop",
                 "CRM",
                 "And much more..."
             ]
         },
         {
-            "title": "Why have a business website made?",
-            "subtitle": "Benefits of having a business website made",
+            "title": "Services & tech",
+            "subtitle": "Web Designer | Web Developer | SEO",
             "slug": "about",
-            "text": "<p>As a professional <strong>freelancer</strong> specialized in <a href='/services/webdesign'>professional web design</a>, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p><p>A <strong>business website</strong> offers numerous advantages for both starting and established entrepreneurs. First, it immediately conveys trust, making potential customers more likely to reach out or make a purchase. Additionally, a well-designed website ensures better findability in search engines like Google, especially when optimized for SEO. It also gives you the opportunity to clearly communicate your brand identity and be available to visitors 24/7, without having to be physically present. Finally, a business website helps streamline processes, such as quote requests, customer contact, and even sales, saving you time and money in the long run.</p>",
+            "text": "<p>As a professional <strong>freelancer</strong> specialized in <a href='/services/webdesign'>professional web design</a>, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p>",
             "button": [
                 {
                     "href": "https://docs.google.com/document/d/e/2PACX-1vTTs0T9BMUNrrYu1zKw0jvR5fcTTqCVgWoAQrVKzQw9NKJdYETfgsFIUbZ16kvSBc9rnAeJEk_McsEw/pub",
@@ -78,12 +79,12 @@
             "title": "My Services",
             "subtitle": "What I Offer",
             "slug": "services",
-            "text": "<p>Comprehensive digital solutions tailored to your business needs. From beautiful designs to cutting-edge development, I offer professional services to help your business thrive online.</p>",
+            "text": "<p>Comprehensive digital solutions tailored to your business needs. From beautiful designs to advanced development. It doesn't matter if you're looking for an <strong>affordable web designer</strong> or a true <strong>software developer</strong>, you've come to the right place.</p><p>In short: a digital solution to save you time, costs, and increase your profit.</p>",
             "services": [
                 {
                     "type": "webdesign",
                     "title": "Web Design",
-                    "description": "Beautiful, modern, and user-friendly website designs that leave a lasting impression on your visitors and represent your brand perfectly."
+                    "description": "Beautiful, modern, and user-friendly website designs that leave a lasting impression on your visitors and perfectly represent your brand."
                 },
                 {
                     "type": "webdevelopment",
@@ -114,96 +115,78 @@
         },
         {
             "title": "Projects",
+            "subtitle": "",
             "slug": "projects",
-            "text": "<p>A glimpse of realizations I've developed so far. Taking care of every need of my clients. Bringing performance and SEO on top of the charts. It doesn't matter whether it is about a simple business website or a live complex e-commerce webshop. Click the button to see my projects.</p>",
+            "text": "<p>Get inspired by completed projects: from sleek <strong>business websites</strong> to <strong>advanced web applications</strong>. With an eye for optimal speed and SEO, ensuring your online success is guaranteed.</p>",
             "button": [
                 {
                     "href": "/projects",
-                    "text": "See projects",
+                    "text": "View projects",
                     "label": "To projects page",
                     "external": false
                 }
             ]
         },
         {
-            "title": "Pricing",
-            "subtitle": "Affordable Services",
+            "title": "Price Subscription",
+            "subtitle": "Affordable Web Designer & Developer",
             "slug": "pricing",
-            "text": "<p>Discover our competitive prices for website development. Transparent rates with no hidden costs. From <strong>just €49 per month</strong>, you get a <strong>professional business website</strong> including numerous benefits, without hidden costs. The price varies slightly depending on the complexity and size of your specific project.</p><p>In addition to a professional business website, you receive lifetime free hosting, domain name, maintenance, updates, and more to save time and costs! Let me handle all administrative tasks, so you can fully focus on growing your business.</p>",
-            "subsubtitle": "Benefits summarized",
-            "exampleButton": {
-                "href": "/projects/business-website",
-                "text": "See examples of €49/month websites",
-                "label": "View example business websites",
-                "external": false
-            },
-            "pricing": {
-                "webdesign": {
-                    "content": {
-                        "main": "79/month",
-                        "mid": "or",
-                        "mainTwo": {
-                            "first": "74/month",
-                            "second": "if paid annually"
-                        },
-                        "sub": "excl. VAT",
-                        "footer": {
-                            "text": "Contact for this subscription",
-                            "src": "/contact"
-                        }
-                    },
-                    "items": [
-                        {
-                            "title": "Professional business website",
-                            "details": "It goes without saying that your website looks professional and business-like. This is important for your company."
-                        },
-                        {
-                            "title": "Excellent display on all devices",
-                            "details": "Your website will look good on all devices such as smartphones, tablets, and computers."
-                        },
-                        {
-                            "title": "Lifetime <strong>FREE</strong> hosting",
-                            "details": "You never have to pay for hosting. I'll take care of everything for you. Hosting: putting your website online."
-                        },
-                        {
-                            "title": "Lifetime <strong>FREE</strong> domain name",
-                            "details": "You never have to pay for a domain name. I'll take care of everything for you. Domain name: your website address (e.g., www.yourcompany.com)"
-                        },
-                        {
-                            "title": "Lifetime <strong>FREE</strong> maintenance and updates",
-                            "details": "I always ensure that your website is and remains up-to-date so that it always functions excellently. You don't have to worry about updates or maintenance."
-                        },
-                        {
-                            "title": "Excellent SEO on your website, <strong>FREE</strong>",
-                            "details": "I make sure your website ranks well in Google so you get more visitors. SEO: search engine optimization. This is important for your website to be found in Google and other search engines."
-                        },
-                        {
-                            "title": "<strong>FREE</strong> logos",
-                            "details": "You read that right! With a subscription, you receive a free logo from my collection, completely tailored to your wishes. And you can have as many as you want."
-                        },
-                        {
-                            "title": "<strong>Administration & invoices</strong> handled by me",
-                            "details": "I handle all administration and invoicing for you, such as the website, hosting, and domain name. You don't have to worry about anything."
-                        },
-                        {
-                            "title": "<strong>24/7</strong> support",
-                            "details": "Do you have questions or comments? You can always contact me. I'm happy to help you at no additional cost."
-                        },
-                        {
-                            "title": "Pay annually? <strong>No startup costs</strong>!",
-                            "details": "Yup, you read that right! No startup costs with annual payment. You only pay for the subscription itself."
-                        },
-                        {
-                            "title": "Ready in about <strong>5 days</strong>",
-                            "details": "Your website will be ready in approximately 5 days."
-                        },
-                        {
-                            "title": "Not satisfied? <strong>30-day money back</strong>",
-                            "details": "Not satisfied? No problem, you get your money back within 30 days."
-                        }
-                    ]
+            "text": "<p>Discover a transparent and simple pricing strategy for web development. Starting from <strong>just €74 per month</strong>, you get a standard, <strong>professional business website</strong> including numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifetime free hosting, domain name, maintenance, updates, and more to save time and costs! Let me handle all administrative tasks, so you can fully focus on the growth of your business.</p><p>See an <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>example of a business website</a> developed for a construction company.</p>",
+            "subsubtitle": "What you get",
+            "buttons": [
+                {
+                    "href": "/projects",
+                    "text": "View all projects",
+                    "label": "View all projects",
+                    "external": false
                 }
-            },
+            ],
+            "items": [
+                {
+                    "title": "Professional, business website",
+                    "details": "Naturally, you get a website with a professional and business-like appearance essential for your company image. Your website standardly includes: a navigation menu with links, introduction, footer with social media links and company details, contact and/or quote form, about us section, services overview, project gallery, and FAQ (frequently asked questions) section. Extra functionality such as a reservation system is possible for a small additional fee. Of course, you can also choose which sections you want on your website yourself."
+                },
+                {
+                    "title": "Excellent display on all devices",
+                    "details": "Your website will look good on all devices such as smartphones, tablets, and computers."
+                },
+                {
+                    "title": "Lifetime FREE hosting",
+                    "details": "You never have to pay for hosting. I handle everything for you. Hosting: placing your website online."
+                },
+                {
+                    "title": "Lifetime FREE domain name",
+                    "details": "You never have to pay for a domain name. I handle everything for you. Domain name: your website address (e.g., www.yourcompany.com)"
+                },
+                {
+                    "title": "Lifetime FREE maintenance and updates",
+                    "details": "I always ensure your website is and remains up-to-date so it always functions excellently. You don't have to worry about updates or maintenance."
+                },
+                {
+                    "title": "Excellent SEO on your website, FREE",
+                    "details": "I ensure your website ranks well in Google so you get more visitors. SEO: search engine optimization. This is important for your website to be found in Google and other search engines."
+                },
+                {
+                    "title": "FREE logos",
+                    "details": "You read that right! With a subscription, you receive a free logo from my collection, fully tailored to your wishes. And you can have as many as you want."
+                },
+                {
+                    "title": "Administration & invoices handled by me",
+                    "details": "I handle all administration and invoicing for you, such as the website, hosting, and domain name. You don't have to worry about anything."
+                },
+                {
+                    "title": "24/7 support",
+                    "details": "Do you have questions or comments? You can always contact me. I'm happy to help you further at no cost."
+                },
+                {
+                    "title": "Pay annually? No startup costs!",
+                    "details": "Yup, you read that right! No startup costs with annual payment. You only pay for the subscription itself."
+                },
+                {
+                    "title": "Not satisfied? 30-day money back",
+                    "details": "Are you not satisfied? No problem, you get your money back within 30 days."
+                }
+            ],
             "button": [
                 {
                     "href": "/contact",
@@ -221,17 +204,17 @@
             "button": [
                 {
                     "href": "/blogs",
-                    "text": "See blogs",
+                    "text": "View blogs",
                     "label": "To blogs page",
                     "external": false
                 }
             ]
         },
         {
-            "title": "Testimonials",
-            "subtitle": "client reviews",
+            "title": "Reviews",
+            "subtitle": "customer reviews",
             "slug": "testimonials",
-            "text": "<p>Satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions. For more reviews, check my <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profile</a>.</p>",
+            "text": "<p>Extremely satisfied customers from all over the world. Translating wishes into custom digital solutions. For more reviews, check my <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profile</a>.</p>",
             "testimonials": [
                 {
                     "letter": "A",
@@ -244,55 +227,55 @@
                     "letter": "N",
                     "name": "Natan Hongenaert",
                     "stars": "5",
-                    "review": "Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.",
+                    "review": "Transparent and flexible in his way of working. He thinks along to set up a solution that works in the long term.",
                     "backgroundColor": "rgb(6 182 212)"
                 },
                 {
                     "letter": "R",
                     "name": "Robert Chen",
                     "stars": "5",
-                    "review": "Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.",
+                    "review": "Excellent work. Thinks along and searches for a solution. Very good price and quality work delivered. Extremely satisfied. Thanks Amin.",
                     "backgroundColor": "rgb(236 72 153)"
                 },
                 {
                     "letter": "F",
                     "name": "Filip",
                     "stars": "5",
-                    "review": "Beautiful, strong, and affordable website developed for our organization. If you're looking for a reliable web designer from Bruges, you know where to go.",
+                    "review": "Beautiful, strong, and affordable website developed for our organization. If you're looking for a reliable web designer from Bruges, you know where to be.",
                     "backgroundColor": "rgb(203 236 72)"
                 }
             ]
         },
         {
-            "component": "block-accordion",
+            "component": "faq",
             "title": "Frequently Asked Questions",
             "slug": "faq",
             "subtitle": "Questions & Answers",
-            "text": "Below you'll find a list of frequently asked questions about web design and websites. If you have another question, don't hesitate to contact me.",
+            "text": "Below you will find a list of frequently asked questions about web development and business websites. If you have another question, do not hesitate to contact me.",
             "items": [
                 {
-                    "title": "What is the average price for having a business website created?",
-                    "description": "The average price for having a website created varies greatly, depending on the complexity of the project, the functionalities you need, and the experience of the web designer. Fortunately, with me, you only pay <strong>€49 excl. VAT or €44 per month</strong> if you opt for an annual subscription. It comes with many benefits, such as a <strong>free domain name, hosting, maintenance, and support</strong>."
+                    "title": "What does it cost to have a business website created?",
+                    "description": "The price for a business website varies greatly, depending on the complexity, desired functionalities, and the experience of the web designer. With me, you only pay <strong>€79 excl. VAT per month</strong>, or <strong>€74 per month</strong> with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Every subscription includes valuable benefits such as <strong>free domain name, hosting, maintenance, and personal support</strong>. Everything you need for a worry-free online presence."
                 },
                 {
-                    "title": "Can I request a quote for a website?",
-                    "description": "Certainly, but why? When you know that you only pay €49 per month excl. VAT or €44 per month for a professional website if you opt for an annual subscription? So you already know the price. You can directly <strong>subscribe by contacting me</strong> and have your website online in about 5 days. Of course, you can also contact me for more information."
+                    "title": "How long does it take to create a website?",
+                    "description": "The time needed to create a website depends on the complexity and specific requirements. With me, you can count on a <strong>turnaround time of about 5 days</strong> for a standard business website. For more complex projects, this may take longer, but I will always keep you informed of the progress."
                 },
                 {
-                    "title": "What are the startup costs?",
-                    "description": "If you opt for an annual subscription, <strong>you pay no startup costs</strong>. You only pay €530 per year (€44 per month). If you opt for a monthly subscription, you pay a <strong>one-time fee of €180</strong> for startup costs excl. VAT."
+                    "title": "How much are the startup costs?",
+                    "description": "If you opt for an annual subscription of €74 per month, <strong>you pay no startup costs</strong>. If you opt for a monthly subscription, you pay a <strong>one-time fee</strong> depending on the complexity and size of the project."
                 },
                 {
                     "title": "What is SEO?",
-                    "description": "SEO stands for search engine optimization. It is the process of <strong>improving the quality and quantity of website traffic</strong> to a website or webpage from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I incorporate as standard in my websites."
+                    "description": "SEO stands for search engine optimization. It is the process of <strong>improving the quality and quantity of website traffic</strong> to a website or web page from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I standardly incorporate into my websites."
                 },
                 {
                     "title": "What is a domain name?",
-                    "description": "A domain name is a unique name that is used to identify an IP address on the internet. A domain name is an <strong>address that allows people to find your website on the internet</strong>. I will handle the domain name for you and cover the costs. You don't need to worry about this."
+                    "description": "A domain name is a unique name used to identify an IP address on the internet. A domain name is an <strong>address that allows people to find your website on the internet</strong>. I arrange the domain name for you and cover the costs. You don't have to worry about this."
                 },
                 {
                     "title": "What is hosting?",
-                    "description": "Web hosting is a service that allows businesses and individuals the ability to <strong>place their website or web page on the internet</strong>. A web host, or web hosting service provider, is a business that provides the technologies and services needed for the website or webpage to be viewed on the internet. I will handle the hosting for you and cover the costs. You don't need to worry about this."
+                    "description": "Web hosting is a service that offers businesses and individuals the ability to <strong>place their website or web page on the internet</strong>. A web host, or web hosting service provider, is a company that provides the technologies and services needed for the website or web page to be viewed on the internet. I arrange the hosting for you and cover the costs. You don't have to worry about this."
                 }
             ]
         },
@@ -300,7 +283,7 @@
             "title": "Contact",
             "subtitle": "",
             "slug": "contact",
-            "text": "<p>Do you have questions or interest in a business website or a custom web application to grow your business? Get in touch today!</p>",
+            "text": "Do you have questions or are you interested in a business website or a custom web application to grow your business? Contact me today!",
             "button": [
                 {
                     "href": "/contact",
