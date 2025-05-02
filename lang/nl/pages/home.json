@@ -79,7 +79,7 @@
             "title": "Mijn Diensten",
             "subtitle": "Wat ik aanbied",
             "slug": "services",
-            "text": "<p>Uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften. Van prachtige ontwerpen tot geavanceerde ontwikkeling. Het maakt niet uit of u naar een <strong>betaalbare webdesigner</strong> zoekt of een ware <strong>software ontwikkelaar</strong>, bij mij bent u op het juist adres.</p><p>Kortom: een digitale oplossing om je tijd, kosten te besparen en je winst te verhogen.</p>",
+            "text": "<p>Op maat gemaakte digitale oplossingen die perfect aansluiten bij uw zakelijke behoeften. Van elegante ontwerpen tot geavanceerde ontwikkeling. Of u nu op zoek bent naar een <strong>betaalbare webdesigner</strong> of een ervaren <strong>software ontwikkelaar</strong>, bij mij bent u aan het juiste adres.</p><p>Kortom: digitale oplossingen die tijd en kosten besparen én uw omzet verhogen.</p>",
             "services": [
                 {
                     "type": "webdesign",
@@ -276,6 +276,19 @@
                 {
                     "title": "Wat is hosting?",
                     "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun <strong>website of webpagina op internet te plaatsen</strong>. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken. Ik regel de hosting voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
+                }
+            ]
+        },
+        {
+            "slug": "cta",
+            "title": "Klaar om te starten?",
+            "text": "Bespaar tijd en kosten terwijl u meer klanten aantrekt en uw winst op lange termijn verhoogt met een professionele zakelijke website! Neem vandaag nog contact op om uw project vrijblijvend te bespreken.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Neem contact op",
+                    "label": "Naar contact pagina",
+                    "external": false
                 }
             ]
         },

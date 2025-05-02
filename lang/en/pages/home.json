@@ -280,6 +280,19 @@
             ]
         },
         {
+            "slug": "cta",
+            "title": "Ready to Start?",
+            "text": "Save time and costs while attracting more customers and increasing your long-term profit with a professional business website! Contact me today for a no-obligation discussion about your project.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Get in Touch",
+                    "label": "To contact page",
+                    "external": false
+                }
+            ]
+        },
+        {
             "title": "Contact",
             "subtitle": "",
             "slug": "contact",

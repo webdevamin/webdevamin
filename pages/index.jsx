@@ -11,6 +11,7 @@ import Hero from '../components/Home/Hero'
 import PricingSection from '../components/Home/Pricing'
 import BlockAccordion from '../components/Blocks/BlockAccordion'
 import Services from '../components/Home/Services'
+import CallToAction from '../components/Home/CallToAction'
 
 const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
   const { seo, alternates, alternateLangs, blocks } = pageData;
@@ -26,17 +27,17 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
         <Services content={blocks.find(block => block.slug === `services`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)}
           data={projectsData} />
-                  <Blogs content={blocks.find(block => block.slug === `blogs`)}
+        <Blogs content={blocks.find(block => block.slug === `blogs`)}
           data={blogsData} />
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
+        <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
         <div className="transition-all duration-500 rounded-xl">
           <BlockAccordion content={blocks.find(block => block.component === `faq`)} center />
         </div>
         <Contact content={contactBlockData} />
-        <Footer blogs={blogsData} pages={pagesData}
-          socials={socialsData} followExternalLinks />
       </PageLayout>
+      <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
     </>
   )
 }

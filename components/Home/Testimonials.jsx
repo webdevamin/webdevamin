@@ -1,12 +1,13 @@
 import Heading from '../Heading'
 import CardOne from '../Cards/CardOne'
+import BlockLayoutOne from '../Layouts/BlockLayoutOne'
 
 const Testimonials = ({ content }) => {
     const { title, text, testimonials, subtitle } = content;
 
     return (
-        <section className={`4xl:pr-5 4xl:pl-12`} aria-labelledby="testimonials-title">
-            <div className="max-w-6xl mr-auto">
+        <BlockLayoutOne className={`4xl:pr-5 4xl:pl-12`} aria-labelledby="testimonials-title">
+            <div className="max-w-6xl mr-auto lg:-mt-16">
                 <div className="flex flex-col">
                     <Heading title={title} subtitle={subtitle} />
                     <div
@@ -68,7 +69,7 @@ const Testimonials = ({ content }) => {
                     )}
                 </div>
             </div>
-        </section>
+        </BlockLayoutOne>
     )
 }
 
