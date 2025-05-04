@@ -12,23 +12,34 @@ import PricingSection from '../components/Home/Pricing'
 import BlockAccordion from '../components/Blocks/BlockAccordion'
 import Services from '../components/Home/Services'
 import CallToAction from '../components/Home/CallToAction'
+import Why from '../components/Home/Why'
 
 const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, heroBannerData, contactBlockData, pageData }) => {
-  const { seo, alternates, alternateLangs, blocks } = pageData;
+  const { seo, alternates, alternateLangs, blocks, jsonLd } = pageData;
 
   return (
     <>
-      <Seo seo={seo} alternates={alternates} />
+      <Seo seo={seo} alternates={alternates} jsonLd={jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)}
         socials={socialsData} />
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)} />
+        
+        {/* Conditionally render Why component only if the block exists */}
+        {blocks.find(block => block.slug === `why-all-in-one`) && (
+          <Why content={blocks.find(block => block.slug === `why-all-in-one`)} />
+        )}
+
         <Services content={blocks.find(block => block.slug === `services`)} />
-        <Projects content={blocks.find(block => block.slug === `projects`)}
-          data={projectsData} />
-        <Blogs content={blocks.find(block => block.slug === `blogs`)}
-          data={blogsData} />
+        <Projects 
+          content={blocks.find(block => block.slug === `projects`)} 
+          data={projectsData} 
+        />
+        <Blogs 
+          content={blocks.find(block => block.slug === `blogs`)} 
+          data={blogsData} 
+        />
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />

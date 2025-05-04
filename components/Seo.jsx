@@ -2,7 +2,8 @@ import React from 'react'
 import Head from "next/head";
 import { useRouter } from 'next/router';
 
-const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) => {
+// Accept jsonLd prop
+const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false, jsonLd }) => {
     const { title, description, canonical, image,
         ogTitle, ogDescription, keywords } = seo;
 
@@ -52,6 +53,34 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false }) =
                     )
                 })
             }
+
+            {/* Conditionally render JSON-LD scripts if jsonLd prop exists */}
+            {jsonLd && (
+                <>
+                    {jsonLd.localBusiness && (
+                        <script
+                            key="ld-localbusiness"
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.localBusiness) }}
+                        />
+                    )}
+                    {jsonLd.service && (
+                        <script
+                            key="ld-service"
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.service) }}
+                        />
+                    )}
+                    {/* Conditionally render FAQ based on existence and maybe router path */}
+                    {jsonLd.faq && router.pathname === '/' && ( // Example: Only add FAQ on the homepage
+                        <script
+                            key="ld-faq"
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.faq) }}
+                        />
+                    )}
+                </>
+            )}
         </Head>
     )
 }

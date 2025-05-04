@@ -17,7 +17,7 @@ const BlockAccordion = ({ content, center = false }) => {
                             <Heading title={title} subtitle={subtitle} />
                             <div
                                 dangerouslySetInnerHTML={{ __html: text }}
-                                className={`p transition-all duration-300 ${center ? `lg:text-center` : `max-w-3xl`}`}
+                                className={`p transition-all duration-300 ${center ? `xl:text-center` : `max-w-3xl`}`}
                             />
                         </section>
                     )

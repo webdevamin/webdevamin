@@ -12,7 +12,7 @@ const CallToAction = ({ content }) => {
     return (
         <div className='lg:-mt-20'>
             <BlockLayoutThree title={`cta`} bothSides>
-                <section className="container mx-auto px-4 text-center 
+                <section className="container mx-auto md:px-4 text-center 
                 text-white md:py-32 lg:py-48">
                     {title && <Heading title={title} noSubtitle />}
                     {text && (

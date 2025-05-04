@@ -20,28 +20,29 @@ const About = ({ content }) => {
                             <SubHeading title={subtitle} />
                             <div dangerouslySetInnerHTML={{ __html: text }} />
                         </div>
-                        <div className={`mt-8 flex-col sm:flex-row lg:mt-10 xl:mt-12 flex 
-                        gap-4 sm:justify-center sm:mt-9 lg:w-full 
-                        lg:gap-7 md:justify-start xl:gap-8`}>
-                            {
-                                button.map((btn, index) => {
-                                    const { href: hrefButton, text: textButton,
-                                        external = false } = btn;
-
+                        {button && button.length > 0 && (
+                            <div className={`mt-8 flex flex-col sm:flex-row lg:mt-10 xl:mt-12 gap-4 sm:justify-center sm:mt-9 lg:w-full lg:gap-7 md:justify-start xl:gap-8`}>
+                                {button.map((btn, index) => {
+                                    const { href: hrefButton, text: textButton, external = false } = btn;
                                     return (
-                                        <ButtonOne href={hrefButton} text={textButton}
+                                        <ButtonOne
+                                            key={index}
+                                            href={hrefButton}
+                                            text={textButton}
                                             classes={`w-fit px-14 sm:px-14 mt-0`}
-                                            noMargin={true} external={external}
-                                            key={index} outline={index % 2 !== 0 ? true : false} />
-                                    )
-                                })
-                            }
-                        </div>
+                                            noMargin={true}
+                                            external={external}
+                                            outline={index % 2 !== 0}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        )}
                     </article>
                 </div>
             </section>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;
