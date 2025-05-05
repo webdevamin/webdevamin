@@ -24,14 +24,26 @@
         }
     ],
     "jsonLd": {
+        "person": {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amin",
+            "jobTitle": "Freelance Webdesigner",
+            "worksFor": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin"
+            }
+        },
         "localBusiness": {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Webdevamin",
-            "url": "https://develop.webdevamin.pages.dev/nl",
-            "logo": "https://develop.webdevamin.pages.dev/logo.png",
-            "image": "https://develop.webdevamin.pages.dev/og-image.jpg",
-            "description": "Betaalbare zakelijke websites laten maken – inclusief hosting, SEO, onderhoud en meer.",
+            "url": "https://webdevamin.com/nl",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://webdevamin.com/images/ogbanner-nl.png",
+            "description": "Betaalbare webdesigner gespecialiseerd in zakelijke websites laten maken, inclusief onderhoud en SEO-optimalisatie.",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32 470 93 09 16",
             "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "BE"
@@ -41,26 +53,40 @@
                 "name": "Belgium"
             },
             "priceRange": "€€",
-            "telephone": "+32 123 45 67 89"
+            "sameAs": [
+                "https://www.linkedin.com/company/webdevamin",
+                "https://github.com/webdevamin",
+                "https://www.facebook.com/a.webdevamin",
+                "https://www.instagram.com/webdevamin",
+                "https://x.com/webdevamin"
+            ]
         },
         "service": {
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Zakelijke website laten maken",
+            "serviceType": "Zakelijke Website Laten Maken",
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Webdevamin",
-                "url": "https://develop.webdevamin.pages.dev/nl"
+                "url": "https://webdevamin.com/nl"
             },
             "areaServed": {
                 "@type": "Country",
                 "name": "Belgium"
             },
+            "description": "Professionele en betaalbare zakelijke websites inclusief onderhoud, hosting en SEO.",
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "EUR",
                 "price": "44",
-                "description": "Professionele zakelijke website vanaf €44 per maand inclusief SEO, onderhoud, domeinnaam en hosting."
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "44",
+                    "priceCurrency": "EUR",
+                    "billingDuration": "P1M",
+                    "unitText": "month"
+                },
+                "availability": "https://schema.org/InStock"
             }
         },
         "faq": {
@@ -72,15 +98,55 @@
                     "name": "Wat kost een zakelijke website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Bij Webdevamin kunt u al een professionele zakelijke website laten maken vanaf €44 per maand inclusief SEO, domeinnaam en onderhoud."
+                        "text": "De prijs voor een zakelijke website varieert sterk, afhankelijk van de complexiteit, gewenste functionaliteiten en de ervaring van de webdesigner. Bij mij betaalt u slechts €49 excl. BTW per maand, of voordelig €44 per maand bij een jaarabonnement voor een professionele zakelijke website. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals gratis domeinnaam, hosting, onderhoud en persoonlijke support. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Wat is inbegrepen bij het abonnement?",
+                    "name": "Hoe lang duurt het om een website te maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Elke zakelijke website bevat domeinnaam, hosting, onderhoud, updates, en volledige ondersteuning."
+                        "text": "De tijd die nodig is om een website te maken hangt af van de complexiteit en de specifieke wensen. Bij mij kunt u rekenen op een doorlooptijd van ongeveer 5 dagen voor een standaard zakelijke website. Voor meer complexe projecten kan dit langer duren, maar ik houd u altijd op de hoogte van de voortgang."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoeveel bedragen de opstartkosten?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Indien u voor een jaarlijkse abonnement van €44 per maand kiest, betaalt u geen opstartkosten. Opteert u voor een maandelijks abonnement, betaalt u eenmalig €180 voor de opstartkosten excl. BTW."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik later extra pagina's toevoegen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, u kunt altijd extra pagina's of secties aan uw website laten toevoegen. Dit kan eenvoudig door een verzoek in te dienen. Afhankelijk van de complexiteit en het aantal pagina's wordt er een kleine eenmalige toeslag berekend bovenop uw abonnement."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik zelf mijn website beheren?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen. Ik zorg er voor dat je je tijd en energie kunt richten op je bedrijf, terwijl ik zorg voor de technische kant van je website."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is hosting en domeinnaam inbegrepen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wat als ik niet tevreden ben?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bij Webdevamin staat klanttevredenheid voorop. Als u binnen 30 dagen na de lancering van uw website niet tevreden bent, kunt u een verzoek indienen voor een volledige terugbetaling. Dit geeft u de kans om het abonnement risicoloos uit te proberen."
                     }
                 }
             ]
@@ -339,16 +405,20 @@
                     "description": "Indien u voor een jaarlijkse abonnement van €44 per maand kiest, <strong>betaalt u geen opstartkosten</strong>. Opteert u voor een maandelijks abonnement, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
                 },
                 {
-                    "title": "Wat is SEO?",
-                    "description": "SEO staat voor zoekmachineoptimalisatie. Het is het proces van het <strong>verbeteren van de kwaliteit en kwantiteit van websiteverkeer</strong> naar een website of webpagina van zoekmachines. SEO richt zich op onbetaalde resultaten in plaats van direct verkeer of betaald verkeer. Dit is iets wat ik standaard in mijn websites verwerk."
+                    "title": "Kan ik later extra pagina's toevoegen?",
+                    "description": "Ja, u kunt altijd extra pagina's of secties aan uw website laten toevoegen. Dit kan eenvoudig door een verzoek in te dienen. Afhankelijk van de complexiteit en het aantal pagina's wordt er een kleine eenmalige toeslag berekend bovenop uw abonnement."
                 },
                 {
-                    "title": "Wat is een domeinnaam?",
-                    "description": "Een domeinnaam is een unieke naam die wordt gebruikt om een IP-adres te identificeren op internet. Een domeinnaam is een <strong>adres waarmee mensen uw website kunnen vinden op het internet</strong>. Ik regel de domeinnaam voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
+                    "title": "Kan ik zelf mijn website beheren?",
+                    "description": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen. Ik zorg er voor dat je je tijd en energie kunt richten op je bedrijf, terwijl ik zorg voor de technische kant van je website."
                 },
                 {
-                    "title": "Wat is hosting?",
-                    "description": "Webhosting is een service die bedrijven en individuen de mogelijkheid biedt om hun <strong>website of webpagina op internet te plaatsen</strong>. Een webhost, of webhostingserviceprovider, is een bedrijf dat de technologieën en services levert die nodig zijn voor de website of webpagina om op internet te worden bekeken. Ik regel de hosting voor u en ik reken de kosten op mij op. U hoeft zich hier geen zorgen over te maken."
+                    "title": "Is hosting en domeinnaam inbegrepen?",
+                    "description": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                },
+                {
+                    "title": "Wat als ik niet tevreden ben?",
+                    "description": "Bij Webdevamin staat klanttevredenheid voorop. Als u binnen 30 dagen na de lancering van uw website niet tevreden bent, kunt u een verzoek indienen voor een volledige terugbetaling. Dit geeft u de kans om het abonnement risicoloos uit te proberen."
                 }
             ]
         },

@@ -64,6 +64,14 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false, jso
                             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.localBusiness) }}
                         />
                     )}
+                    {/* Add Person schema rendering */}
+                    {jsonLd.person && (
+                        <script
+                            key="ld-person"
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.person) }}
+                        />
+                    )}
                     {jsonLd.service && (
                         <script
                             key="ld-service"
@@ -71,8 +79,8 @@ const Seo = ({ seo, alternates, noIndex = false, includeCompanyName = false, jso
                             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.service) }}
                         />
                     )}
-                    {/* Conditionally render FAQ based on existence and maybe router path */}
-                    {jsonLd.faq && router.pathname === '/' && ( // Example: Only add FAQ on the homepage
+                    {/* Conditionally render FAQ based on existence */}
+                    {jsonLd.faq && (
                         <script
                             key="ld-faq"
                             type="application/ld+json"

@@ -28,10 +28,12 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Webdevamin",
-            "url": "https://develop.webdevamin.pages.dev",
-            "logo": "https://develop.webdevamin.pages.dev/logo.png",
-            "image": "https://develop.webdevamin.pages.dev/og-image.jpg",
-            "description": "Affordable business websites – including hosting, SEO, maintenance, and more.",
+            "url": "https://webdevamin.com",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://webdevamin.com/images/ogbanner.png",
+            "description": "Affordable web designer specializing in creating business websites, including maintenance and SEO optimization.",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32 470 93 09 16",
             "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "BE"
@@ -41,26 +43,50 @@
                 "name": "Belgium"
             },
             "priceRange": "€€",
-            "telephone": "+32 123 45 67 89"
+            "sameAs": [
+                "https://www.linkedin.com/company/webdevamin",
+                "https://github.com/webdevamin",
+                "https://www.facebook.com/a.webdevamin",
+                "https://www.instagram.com/webdevamin",
+                "https://x.com/webdevamin"
+            ]
+        },
+        "person": {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amin",
+            "jobTitle": "Freelance Web Designer",
+            "worksFor": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin"
+            }
         },
         "service": {
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Business website creation",
+            "serviceType": "Professional Business Website",
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Webdevamin",
-                "url": "https://develop.webdevamin.pages.dev"
+                "url": "https://webdevamin.com"
             },
             "areaServed": {
                 "@type": "Country",
                 "name": "Belgium"
             },
+            "description": "Professional and affordable business websites including maintenance, hosting, and SEO.",
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "EUR",
-                "price": "44",
-                "description": "Professional business website from €44 per month including SEO, maintenance, domain name, and hosting."
+                "price": "74",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "74",
+                    "priceCurrency": "EUR",
+                    "billingDuration": "P1M",
+                    "unitText": "month"
+                },
+                "availability": "https://schema.org/InStock"
             }
         },
         "faq": {
@@ -72,15 +98,55 @@
                     "name": "What does it cost to have a business website made?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "At Webdevamin, you can have a professional business website made starting from €44 per month, including SEO, domain name, and maintenance."
+                        "text": "The price for a business website varies greatly, depending on the complexity, and desired functionalities. With me, you pay only €79 excl. VAT per month, or €74 per month with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Each subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "What is included in the subscription?",
+                    "name": "How long does it take to create a website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Every business website includes domain name, hosting, maintenance, updates, and full support."
+                        "text": "The time needed to create a website depends on the complexity and specific requirements. With me, you can expect a turnaround time of about 5 days for a standard business website. For more complex projects, this may take longer, but I will always keep you informed of the progress."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much are the setup costs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If you opt for an annual subscription of €74 per month, you pay no setup costs. If you opt for a monthly subscription, you pay a one-time fee of €180 for setup costs excl. VAT."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I add extra pages later?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, you can always have extra pages or sections added to your website. This can be done easily by submitting a request. Depending on the complexity and the number of pages, a small one-time surcharge will be calculated on top of your subscription."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I manage my website myself?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No, I take full responsibility for managing your website. This has significant advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't need to worry about this - you can always request adjustments or additions from me. The costs for this are very affordable, and I am happy to assist you with any desired changes. I ensure that you can focus your time and energy on your business, while I take care of the technical side of your website."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is hosting and domain name included?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, both hosting and the domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I ensure everything is properly arranged so you can concentrate on your business."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What if I'm not satisfied?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free."
                     }
                 }
             ]
@@ -186,7 +252,7 @@
             "title": "Pricing Subscription",
             "subtitle": "Affordable web designer & developer",
             "slug": "pricing",
-            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €44 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifelong free hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €49 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
+            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €74 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifelong free hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
             "subsubtitle": "What you get",
             "items": [
                 {
@@ -302,7 +368,7 @@
             "items": [
                 {
                     "title": "What does it cost to have a business website made?",
-                    "description": "The price for a business website varies greatly, depending on the complexity, desired functionalities, and the web designer's experience. With me, you pay only <strong>€49 excl. VAT per month</strong>, or advantageously <strong>€44 per month</strong> with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Each subscription includes valuable benefits such as <strong>free domain name, hosting, maintenance, and personal support</strong>. Everything you need for a worry-free online presence."
+                    "description": "The price for a business website varies greatly, depending on the complexity, desired functionalities, and the web designer's experience. With me, you pay only <strong>€79 excl. VAT per month</strong>, or <strong>€74 per month</strong> with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Each subscription includes valuable benefits such as <strong>free domain name, hosting, maintenance, and personal support</strong>. Everything you need for a worry-free online presence."
                 },
                 {
                     "title": "How long does it take to create a website?",
@@ -310,19 +376,23 @@
                 },
                 {
                     "title": "How much are the setup costs?",
-                    "description": "If you opt for an annual subscription of €44 per month, <strong>you pay no setup costs</strong>. If you opt for a monthly subscription, you pay a <strong>one-time fee of €180</strong> for setup costs excl. VAT."
+                    "description": "If you opt for an annual subscription of €74 per month, <strong>you pay no setup costs</strong>. If you opt for a monthly subscription, you pay a <strong>one-time fee of €180</strong> for setup costs excl. VAT."
                 },
                 {
-                    "title": "What is SEO?",
-                    "description": "SEO stands for search engine optimization. It is the process of <strong>improving the quality and quantity of website traffic</strong> to a website or web page from search engines. SEO focuses on unpaid results rather than direct traffic or paid traffic. This is something I standardly incorporate into my websites."
+                    "title": "Can I add extra pages later?",
+                    "description": "Yes, you can always have extra pages or sections added to your website. This can be done easily by submitting a request. Depending on the complexity and the number of pages, a small one-time surcharge will be calculated on top of your subscription."
                 },
                 {
-                    "title": "What is a domain name?",
-                    "description": "A domain name is a unique name used to identify an IP address on the internet. A domain name is an <strong>address that people can use to find your website on the internet</strong>. I arrange the domain name for you and cover the costs. You don't have to worry about this."
+                    "title": "Can I manage my website myself?",
+                    "description": "No, I take full responsibility for managing your website. This has significant advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't need to worry about this - you can always request adjustments or additions from me. The costs for this are very affordable, and I am happy to assist you with any desired changes. I ensure that you can focus your time and energy on your business, while I take care of the technical side of your website."
                 },
                 {
-                    "title": "What is hosting?",
-                    "description": "Web hosting is a service that allows businesses and individuals to <strong>post their website or web page onto the Internet</strong>. A web host, or web hosting service provider, is a business that provides the technologies and services needed for the website or webpage to be viewed on the Internet. I arrange the hosting for you and cover the costs. You don't have to worry about this."
+                    "title": "Is hosting and domain name included?",
+                    "description": "Yes, both hosting and the domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I ensure everything is properly arranged so you can concentrate on your business."
+                },
+                {
+                    "title": "What if I'm not satisfied?",
+                    "description": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free."
                 }
             ]
         },
