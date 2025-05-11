@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+const isDev = process.env.NODE_ENV === 'development';
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: isDev,
     loader: 'custom',
     loaderFile: './imageLoader.js',
     remotePatterns: [

@@ -90,7 +90,7 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
                     )}
                 </div>
 
-                <p className={`text-base clamp_2 text-gray-600 mb-3 transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-70'}`}>
+                <p className={`text-base clamp_3 text-gray-600 mb-3 transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-70'}`}>
                     {subtitle}
                 </p>
 
