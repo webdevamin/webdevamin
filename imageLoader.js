@@ -7,10 +7,10 @@ export default function cloudflareLoader({
     width,
     quality,
 }) {
-    if (process.env.NODE_ENV !== "development") {
+    if (process.env.NODE_ENV !== "production") {
         return src;
     }
-    const params = [`width=${width}`];
+    const params = [`width=${width}`, "format=auto"];
     if (quality) {
         params.push(`quality=${quality}`);
     }
