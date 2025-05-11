@@ -24,7 +24,7 @@ const Blogs = ({ localesData, socialsData, blogsData, regionsData, pagesData, co
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
                 socials={socialsData} ctaLink={`#${slugHeading}`} />
             <PageLayout>
-                <section id={slugHeading} className={`block_container`}>
+                <div id={slugHeading} className={`block_container`}>
                     <Heading title={titleHeading} subtitle={subtitleHeading} />
                     <div dangerouslySetInnerHTML={{ __html: textHeading }}
                         className={`${textHeading ? `pb-6` : `hidden`}`} />
@@ -49,7 +49,7 @@ const Blogs = ({ localesData, socialsData, blogsData, regionsData, pagesData, co
                             })
                         }
                     </div>
-                </section>
+                </div>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData} pages={pagesData}
                     socials={socialsData} regions={regionsData} followExternalLinks />

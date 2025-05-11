@@ -9,7 +9,7 @@ const About = ({ content }) => {
 
     return (
         <div id={`about`} className={`mt-24 md:mt-28 xl:mt-40`}>
-            <section className={`lg:flex lg:flex-row lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly`}>
+            <div className={`lg:flex lg:flex-row lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly`}>
                 <div className={`mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0`}>
                     <Heading title={title} />
                     <Image src={src} priority width={836} height={483} alt={alt} className="object-contain w-full h-auto mt-4" />
@@ -40,7 +40,7 @@ const About = ({ content }) => {
                         )}
                     </article>
                 </div>
-            </section>
+            </div>
         </div>
     );
 }

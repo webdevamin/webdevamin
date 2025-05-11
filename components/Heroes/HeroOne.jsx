@@ -33,7 +33,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                         />
                     </div>
                 </div>
-                <section className={`mt-7 md:w-6/12 bg-transparent`}>
+                <div className={`mt-7 md:w-6/12 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 
                     ${smallerTitle && `text-3xl mb-8 
                     font-bold lg:text-4xl xl:text-5xl tracking-tight 
@@ -101,7 +101,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                             })
                         }
                     </div>
-                </section>
+                </div>
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
             pt-28 bg-transparent`}>

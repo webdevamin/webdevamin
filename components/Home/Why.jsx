@@ -9,7 +9,7 @@ const Why = ({ content }) => {
 
     return (
         <div id={`about`} className={`mt-20 md:mt-30 lg:mt-36 xl:mt-48`}>
-            <section className={`lg:flex lg:flex-row-reverse lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly`}>
+            <div className={`lg:flex lg:flex-row-reverse lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly`}>
                 <div className={`mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0`}>
                     <Heading title={title} />
                     <Image src={src} priority width={836} height={483} alt={alt} className="object-contain w-full h-auto mt-4" />
@@ -39,7 +39,7 @@ const Why = ({ content }) => {
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }

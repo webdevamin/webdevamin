@@ -83,7 +83,7 @@ const Contact = ({ localesData, socialsData, blogsData, regionsData, pagesData, 
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
                 socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={`block_container sm:text-center`}>
+                <div id={slug} className={`block_container sm:text-center`}>
                     <Heading title={title4} subtitle={subtitle} />
                     <div className={`mt-7 sm:mt-10 xl:mt-16 max-w-4xl mx-auto`}>
                         <div dangerouslySetInnerHTML={{ __html: text }}
@@ -124,7 +124,7 @@ const Contact = ({ localesData, socialsData, blogsData, regionsData, pagesData, 
                                 sm:flex sm:justify-center`} />
                         </form>
                     </div>
-                </section>
+                </div>
                 <Footer blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>

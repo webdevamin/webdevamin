@@ -9,7 +9,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
     const { href, text: buttonText } = button[0];
 
     return (
-        <section className={`p-10 bg-transparent max-w-[2000px] 
+        <div className={`p-10 bg-transparent max-w-[2000px] 
         mx-auto mt-24 lg:mt-20 pb-0`} id={`hero`}>
             <div className={`text-white text-center bg-transparent w-11/12 mx-auto
             md:flex flex-col items-center justify-center md:pt-14 mt-7 lg:w-6/12`}>
@@ -71,7 +71,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                 </div>
                 <span className={`w-screen xl:w-4/12 block -mr-10 bg-dark h-[1px]`} />
             </div>
-        </section>
+        </div>
     )
 }
 

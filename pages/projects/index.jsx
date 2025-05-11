@@ -33,7 +33,7 @@ const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData,
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={`block_container overflow-hidden`}>
+                <div id={slug} className={`block_container overflow-hidden`}>
                     <Heading title={title} subtitle={subtitle} />
                     <p className="max-w-2xl mb-8 opacity-85">{text}</p>
                     <div
@@ -78,7 +78,7 @@ const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData,
                             </div>
                         )}
                     </div>
-                </section>
+                </div>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData} pages={pagesData}
                     socials={socialsData} regions={regionsData} followExternalLinks />

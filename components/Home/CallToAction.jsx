@@ -12,7 +12,7 @@ const CallToAction = ({ content }) => {
     return (
         <div className='lg:-mt-20'>
             <BlockLayoutThree title={`cta`} bothSides>
-                <section className="container mx-auto md:px-4 text-center 
+                <div className="container mx-auto md:px-4 text-center 
                 text-white md:py-32 lg:py-48">
                     {title && <Heading title={title} noSubtitle />}
                     {text && (
@@ -25,7 +25,7 @@ const CallToAction = ({ content }) => {
                         <ButtonTwo href={button[0].href} text={button[0].text}
                             classes={`sm:w-fit px-7 sm:px-12 md:px-20`} />
                     )}
-                </section>
+                </div>
             </BlockLayoutThree>
         </div>
     );

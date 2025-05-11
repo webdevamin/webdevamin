@@ -44,7 +44,7 @@ const CookieConsent = () => {
     }
 
     return (
-        <section className={`${hideConsent && `hidden`} fixed bottom-0 left-1/2 w-full py-15 p-6 bg-light border-t-2 border-dark flex flex-col items-center justify-center transform -translate-x-1/2 z-50 xl:flex-row xl:gap-12`}>
+        <div className={`${hideConsent && `hidden`} fixed bottom-0 left-1/2 w-full py-15 p-6 bg-light border-t-2 border-dark flex flex-col items-center justify-center transform -translate-x-1/2 z-50 xl:flex-row xl:gap-12`}>
             <p className='text-dark text-center font-medium text-sm xl:mb-0'>
                 <span className='mb-0.5'>{text}{` `}</span>
                 <span className={`${locale === 'en' && `hidden`}`}>Lees onze <Link href={`/policy`}>privacybeleid</Link> voor meer info.</span>
@@ -54,7 +54,7 @@ const CookieConsent = () => {
                 <button onClick={acceptConsent} className='text-white bg-dark w-full rounded border-2 border-dark text-sm py-2 font-bold'>{acceptBtn}</button>
                 <button onClick={declineConsent} className='text-dark font-bold w-full rounded border-2 border-dark text-sm py-2'>{declineBtn}</button>
             </div>
-        </section>
+        </div>
     )
 }
 

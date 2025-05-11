@@ -15,13 +15,13 @@ const Policy = ({ localesData, socialsData, blogsData, regionsData, pagesData, p
             <HeroOne content={blocks.find(block => block.slug === `hero`)}
                 socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={`block_container`}>
+                <div id={slug} className={`block_container`}>
                     <Heading title={title} subtitle={subtitle} />
                     <div className={`mt-3 sm:mt-8 md:mt-12 lg:w-10/12`}>
                         <div dangerouslySetInnerHTML={{ __html: text }}
                             className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
                     </div>
-                </section>
+                </div>
                 <Footer blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />
             </PageLayout>

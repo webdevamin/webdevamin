@@ -8,9 +8,9 @@ const BlockLayoutThree = ({ children, title, bothSides, darkBg = false }) => {
         relative ${bothSides ? `md:clip-path-both` : `md:clip-path`} 
         ${darkBg ? `bg-dark` : `bg-theme_dark`}`}>
             <div className={`w-10/12 max-w-8xl mx-auto`}>
-                <section className={`page_container`}>
+                <div className={`page_container`}>
                     {children}
-                </section>
+                </div>
             </div>
         </div>
     )

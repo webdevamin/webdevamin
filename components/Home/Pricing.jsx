@@ -9,7 +9,7 @@ const PricingSection = ({ content }) => {
 
     return (
         <BlockLayoutOne title={title} slug={`pricing`} includeMaxWidth={false} position={`right`}>
-            <section className="4xl:pl-5 4xl:pr-12 w-full">
+            <div className="4xl:pl-5 4xl:pr-12 w-full">
                 <div className="max-w-6xl ml-auto lg:text-right">
                     <div>
                         <Heading title={title} subtitle={subtitle} />
@@ -37,7 +37,7 @@ const PricingSection = ({ content }) => {
                         <div className='text-left lg:mb-10'>
                             <SubHeading title={subsubtitle} smallerMarginB />
                         </div>
-                        <section className='accordion'>
+                        <div className='accordion'>
                             <Accordion className='text-left w-full min-w-full'>
                                 {
                                     items.map((item, i) => {
@@ -75,10 +75,10 @@ const PricingSection = ({ content }) => {
                                     })
                                 }
                             </Accordion>
-                        </section>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </BlockLayoutOne>
     );
 };

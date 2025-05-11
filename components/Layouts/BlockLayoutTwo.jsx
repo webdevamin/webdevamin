@@ -20,11 +20,11 @@ const BlockLayoutTwo = ({ children, title, slug, position, contentClasses, noPad
             <div className={`xl:w-10/12 xl:max-w-8xl xl:mx-auto xl:py-8`}>
                 <div className={`${position === `right` ?
                     `xl:mr-[13%]` : `xl:ml-[13%]`}`}>
-                    <section className={`page_container md:flex 
+                    <div className={`page_container md:flex 
                         md:gap-20 md:items-center ${contentClasses}
                         ${position === `right` ? `md:flex-row-reverse` : ``}`}>
                         {children}
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>

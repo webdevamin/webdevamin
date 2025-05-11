@@ -35,7 +35,7 @@ const Blog = ({ localesData, socialsData, blogsData, regionsData, pagesData, con
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroTwo content={heroContent} socials={socialsData} />
             <PageLayout>
-                <section id={slug} className={styles.blogContainer}>
+                <div id={slug} className={styles.blogContainer}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
                             <Image
@@ -52,7 +52,7 @@ const Blog = ({ localesData, socialsData, blogsData, regionsData, pagesData, con
                     <div className={styles.blogContent}>
                         <div dangerouslySetInnerHTML={{ __html: text }} />
                     </div>
-                </section>
+                </div>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData}
                     socials={socialsData} regions={regionsData} pages={pagesData} />

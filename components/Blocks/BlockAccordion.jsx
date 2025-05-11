@@ -13,13 +13,13 @@ const BlockAccordion = ({ content, center = false }) => {
             <div className={`4xl:pr-5 4xl:pl-12`}>
                 {
                     (title && subtitle && text) && (
-                        <section className={`flex flex-col 4xl:px-0 ${position === `right` ? `4xl:justify-end 4xl:items-end 4xl:text-right` : `max-w-6xl`}`}>
+                        <div className={`flex flex-col 4xl:px-0 ${position === `right` ? `4xl:justify-end 4xl:items-end 4xl:text-right` : `max-w-6xl`}`}>
                             <Heading title={title} subtitle={subtitle} />
                             <div
                                 dangerouslySetInnerHTML={{ __html: text }}
                                 className={`p transition-all duration-300 ${center ? `xl:text-center` : `max-w-3xl`}`}
                             />
-                        </section>
+                        </div>
                     )
                 }
                 <div className='mt-8 lg:mt-10 accordion w-full max-w-6xl'>

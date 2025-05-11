@@ -18,7 +18,7 @@ const Hero = ({ content, socials }) => {
                 <div className={`p-5 lg:p-0`}>
                     <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
                 </div>
-                <section className={`mt-7 md:w-6/12 bg-transparent`}>
+                <div className={`mt-7 md:w-6/12 bg-transparent`}>
                     {subtitle ? (
                         <div className='flex flex-col lg:mb-3'>
                             <h1 className='order-2 text-lg sm:text-xl font-semibold lg:text-2xl xl:text-3xl uppercase font_quicksand text-theme_darker'>
@@ -93,7 +93,7 @@ const Hero = ({ content, socials }) => {
                             })
                         }
                     </div>
-                </section>
+                </div>
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
         pt-28 bg-transparent`}>
