@@ -64,7 +64,7 @@ h2,
 
 h3,
 .h3 {
-  @apply text-lg sm:text-xl mb-3 font-semibold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7;
+  @apply text-lg sm:text-xl mb-4 font-semibold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7;
 }
 
 h4,
@@ -264,6 +264,7 @@ p a {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

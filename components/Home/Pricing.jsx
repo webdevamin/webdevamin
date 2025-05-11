@@ -5,7 +5,7 @@ import ButtonOne from '../Buttons/ButtonOne';
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 
 const PricingSection = ({ content }) => {
-    const { title, subtitle, subsubtitle, text, items, buttons } = content;
+    const { title, subtitle, subsubtitle, text, items, buttons, highlight } = content;
 
     return (
         <BlockLayoutOne title={title} slug={`pricing`} includeMaxWidth={false} position={`right`}>
@@ -13,6 +13,9 @@ const PricingSection = ({ content }) => {
                 <div className="max-w-6xl ml-auto lg:text-right">
                     <div>
                         <Heading title={title} subtitle={subtitle} />
+                        <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme 
+                        text-white px-4 py-2 mb-7 inline-block uppercase 
+                        md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
                         <div dangerouslySetInnerHTML={{ __html: text }} />
                         <div className={`flex flex-col lg:gap-4 lg:flex-row lg:justify-end`}>
                             {
