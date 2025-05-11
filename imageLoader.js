@@ -7,13 +7,13 @@ export default function cloudflareLoader({
     width,
     quality,
 }) {
-    const params = [];
-    if (width) {
-        params.push(`width=${width}`);
+    if (process.env.NODE_ENV === "development") {
+        return src;
     }
+    const params = [`width=${width}`];
     if (quality) {
         params.push(`quality=${quality}`);
     }
     const paramsString = params.join(",");
-    return `${process.env.NEXT_PUBLIC_URL}/cdn-cgi/image/${paramsString}/${normalizeSrc(src)}`;
+    return `/cdn-cgi/image/${paramsString}/${normalizeSrc(src)}`;
 }
