@@ -24,16 +24,6 @@
         }
     ],
     "jsonLd": {
-        "person": {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Amin",
-            "jobTitle": "Freelance Webdesigner",
-            "worksFor": {
-                "@type": "LocalBusiness",
-                "name": "Webdevamin"
-            }
-        },
         "localBusiness": {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
@@ -46,7 +36,10 @@
             "telephone": "+32 470 93 09 16",
             "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "BE"
+                "addressCountry": "BE",
+                "addressLocality": "Bruges",
+                "postalCode": "8000",
+                "streetAddress": "Rodenonnenstraat 21"
             },
             "areaServed": {
                 "@type": "Country",
@@ -68,7 +61,14 @@
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Webdevamin",
-                "url": "https://webdevamin.com/nl"
+                "url": "https://webdevamin.com/nl",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
             },
             "areaServed": {
                 "@type": "Country",
