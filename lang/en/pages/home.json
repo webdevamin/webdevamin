@@ -68,7 +68,8 @@
                     "addressLocality": "Bruges",
                     "postalCode": "8000",
                     "streetAddress": "Rodenonnenstraat 21"
-                }
+                },
+                "image": "https://webdevamin.com/images/ogbanner.png"
             },
             "areaServed": {
                 "@type": "Country",

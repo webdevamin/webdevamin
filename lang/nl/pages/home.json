@@ -68,7 +68,9 @@
                     "addressLocality": "Bruges",
                     "postalCode": "8000",
                     "streetAddress": "Rodenonnenstraat 21"
-                }
+                },
+                "telephone": "+32 470 93 09 16",
+                "image": "https://webdevamin.com/images/ogbanner-nl.png"
             },
             "areaServed": {
                 "@type": "Country",
