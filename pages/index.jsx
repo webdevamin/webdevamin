@@ -25,20 +25,20 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
         socials={socialsData} />
       <PageLayout>
         <About content={blocks.find(block => block.slug === `about`)} />
-        
+
         {/* Conditionally render Why component only if the block exists */}
         {blocks.find(block => block.slug === `why-all-in-one`) && (
           <Why content={blocks.find(block => block.slug === `why-all-in-one`)} />
         )}
 
         <Services content={blocks.find(block => block.slug === `services`)} />
-        <Projects 
-          content={blocks.find(block => block.slug === `projects`)} 
-          data={projectsData} 
+        <Projects
+          content={blocks.find(block => block.slug === `projects`)}
+          data={projectsData}
         />
-        <Blogs 
-          content={blocks.find(block => block.slug === `blogs`)} 
-          data={blogsData} 
+        <Blogs
+          content={blocks.find(block => block.slug === `blogs`)}
+          data={blogsData}
         />
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <CallToAction content={blocks.find(block => block.slug === 'cta')} />
@@ -47,8 +47,8 @@ const Index = ({ localesData, blogsData, socialsData, projectsData, pagesData, h
           <BlockAccordion content={blocks.find(block => block.component === `faq`)} center />
         </div>
         <Contact content={contactBlockData} />
+        <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
       </PageLayout>
-      <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
     </>
   )
 }
