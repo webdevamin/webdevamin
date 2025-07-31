@@ -11,20 +11,14 @@ import { useEffect, useState } from 'react';
 
 const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData, contactBlockData, projectsData, pageData }) => {
     const router = useRouter();
-    const [animationsReady, setAnimationsReady] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
 
     const { seo, alternates, alternateLangs, title, blocks } = pageData;
     const { subtitle, slug, text } = blocks[1];
 
-    // Add animation effect to reveal projects on page load
+    // Ensure consistent server/client render
     useEffect(() => {
-        // Wait for next tick to ensure hydration is complete
-        requestAnimationFrame(() => {
-            // Add a small delay for better visual effect
-            setTimeout(() => {
-                setAnimationsReady(true);
-            }, 100);
-        });
+        setIsMounted(true);
     }, []);
 
     return (
@@ -49,7 +43,7 @@ const Projects = ({ localesData, socialsData, blogsData, regionsData, pagesData,
                                 return (
                                     <div
                                         key={i}
-                                        className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0 transition-all duration-700 ease-out ${animationsReady ? 'opacity-100 transform-none' : 'opacity-0 translate-y-6'}`}
+                                        className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0 transition-all duration-700 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
                                         style={{
                                             transitionDelay: `${Math.min(i * 100, 500)}ms`,
                                         }}

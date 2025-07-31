@@ -96,6 +96,41 @@
         ]
     },
     {
+        "title": "Eyefine",
+        "slug": "eyefine",
+        "niche": "photography CRM",
+        "price": "€129/month",
+        "link": "https://eyefine.be",
+        "description": "Web application with a CRM for photographers and real estate agents. The platform makes it easier to photograph houses, share the photos, and follow up.",
+        "img": {
+            "src": "https://bucket.webdevamin.com/eyefine-portfolio.png",
+            "alt": "Three webpages of Eyefine: dashboard on both large and small screens and real estate agent page."
+        },
+        "technologies": [
+            {
+                "name": "Laravel",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/laravel.svg",
+                    "alt": "Laravel"
+                }
+            },
+            {
+                "name": "Livewire",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/livewire.svg",
+                    "alt": "Livewire"
+                }
+            },
+            {
+                "name": "AWS",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/aws.svg",
+                    "alt": "AWS"
+                }
+            }
+        ]
+    },
+    {
         "title": "My Admin",
         "slug": "my-admin",
         "niche": "administration",

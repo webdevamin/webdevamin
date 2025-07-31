@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import ButtonThree from '../Buttons/ButtonThree';
 import { Tooltip } from "flowbite-react"
 import Link from 'next/link';
 
@@ -19,7 +18,7 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
 
     // Create the card content
     const cardContent = (
-        <>
+        <div>
             <div className={`relative rounded-xl w-full border shadow ${type === `project` ? `pt-[70%]` : `pt-[58.25%]`} overflow-hidden`}>
                 <Image
                     src={imgUrl}
@@ -93,35 +92,31 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
                 <p className={`text-base clamp_3 text-gray-600 mb-3 transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-70'}`}>
                     {subtitle}
                 </p>
-
                 {link && (
-                    <div className="mt-4 cursor-pointer relative z-10">
-                        <ButtonThree href={link} text={buttonText} target="_blank" rel="noopener noreferrer" />
+                    <div className="mt-4 flex items-center text-sm font-semibold text-theme_darker hover:text-dark transition-colors">
+                        {buttonText}
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
                     </div>
                 )}
             </div>
-        </>
+        </div>
     );
 
-    return link ? (
-        <article
-            className="group transition-all duration-500 hover:-translate-y-1.5 rounded-xl relative overflow-hidden cursor-pointer"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
-            <Link href={link} passHref legacyBehavior>
-                <a className="block" target="_blank" rel="noopener noreferrer" aria-label={title}>
-                    {cardContent}
-                </a>
-            </Link>
-        </article>
-    ) : (
+    return (
         <article
             className="group transition-all duration-500 hover:-translate-y-1.5 rounded-xl relative overflow-hidden"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {cardContent}
+            {link ? (
+                <Link href={link} target="_blank" rel="noopener noreferrer" className="block" aria-label={title}>
+                    {cardContent}
+                </Link>
+            ) : (
+                cardContent
+            )}
         </article>
     );
 }

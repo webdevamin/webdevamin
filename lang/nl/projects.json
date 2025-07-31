@@ -96,6 +96,41 @@
         ]
     },
     {
+        "title": "Eyefine",
+        "slug": "eyefine",
+        "niche": "fotografie CRM",
+        "price": "€129/maand",
+        "link": "https://eyefine.be",
+        "description": "Webapplicatie met een CRM voor fotografen en makelaars. Het platform maakt het makkelijker om huizen te fotograferen, de foto's te delen en te volgen.",
+        "img": {
+            "src": "https://bucket.webdevamin.com/eyefine-portfolio.png",
+            "alt": "Drie webpagina's van Eyefine: dashboard op zowel grote schermen als kleine schermen en makelaars pagina."
+        },
+        "technologies": [
+            {
+                "name": "Laravel",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/laravel.svg",
+                    "alt": "Laravel"
+                }
+            },
+            {
+                "name": "Livewire",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/livewire.svg",
+                    "alt": "Livewire"
+                }
+            },
+            {
+                "name": "AWS",
+                "image": {
+                    "src": "https://bucket.webdevamin.com/aws.svg",
+                    "alt": "AWS"
+                }
+            }
+        ]
+    },
+    {
         "title": "My Admin",
         "slug": "my-admin",
         "price": "€79/maand",
