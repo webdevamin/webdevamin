@@ -3,6 +3,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   swcMinify: true,
   images: {
     unoptimized: isDev,
