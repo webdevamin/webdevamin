@@ -159,7 +159,7 @@
             "title": "Zakelijke Website Laten Maken",
             "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Zakelijke website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf slechts €49/maand - inclusief gratis hosting, onderhoud en meer. Vraag nu vrijblijvend een abonnement of een gratis offerte aan!",
+            "text": "Zakelijke website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf slechts €49/maand - inclusief levenslang gratis hosting, onderhoud en meer. Vraag nu een gratis offerte aan voor dit abonnement of een op maatwerk webapplicatie!",
             "extra": "Ook op maat gemaakte webapplicaties zoals:",
             "button": [
                 {
@@ -170,8 +170,8 @@
                 },
                 {
                     "href": "#pricing",
-                    "text": "Bekijk prijs",
-                    "label": "Bekijk prijs",
+                    "text": "Bekijk aanbod",
+                    "label": "Bekijk aanbod",
                     "external": false
                 }
             ],
