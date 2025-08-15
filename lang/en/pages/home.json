@@ -99,7 +99,7 @@
                     "name": "What does it cost to have a business website made?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "The price for a business website varies greatly, depending on the complexity, and desired functionalities. With me, you pay only €79 excl. VAT per month, or €74 per month with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Each subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
+                        "text": "With me, you pay only €79 per month for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                     }
                 },
                 {
@@ -115,7 +115,7 @@
                     "name": "How much are the setup costs?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "If you opt for an annual subscription of €74 per month, you pay no setup costs. If you opt for a monthly subscription, you pay a one-time fee of €180 for setup costs excl. VAT."
+                        "text": "There are no setup costs! Only the subscription counts."
                     }
                 },
                 {
@@ -252,9 +252,9 @@
         {
             "title": "Pricing Subscription",
             "subtitle": "Affordable web designer & developer",
-            "highlight": "From €74/month",
+            "highlight": "From €79/month",
             "slug": "pricing",
-            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €74 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifelong free hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
+            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €79 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifelong free hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
             "subsubtitle": "What you get",
             "items": [
                 {
@@ -294,8 +294,8 @@
                     "details": "Do you have questions or comments? You can always contact me. I'm happy to help you further at no cost."
                 },
                 {
-                    "title": "Pay annually? No setup costs!",
-                    "details": "Yup, you read that right! No setup costs with annual payment. You only pay for the subscription itself. With monthly payment, there are setup costs of €180 excl. VAT."
+                    "title": "No setup costs!",
+                    "details": "Yup, you read that right! No setup costs whatsoever. You only pay for the subscription itself."
                 },
                 {
                     "title": "Not satisfied? 30-day money back",
@@ -370,7 +370,7 @@
             "items": [
                 {
                     "title": "What does it cost to have a business website made?",
-                    "description": "The price for a business website varies greatly, depending on the complexity, desired functionalities, and the web designer's experience. With me, you pay only <strong>€79 excl. VAT per month</strong>, or <strong>€74 per month</strong> with an annual subscription for a professional business website. For more complex projects with extensive functionalities, the costs are higher. Each subscription includes valuable benefits such as <strong>free domain name, hosting, maintenance, and personal support</strong>. Everything you need for a worry-free online presence."
+                    "description": "With me, you pay <strong>only €79 per month</strong> for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                 },
                 {
                     "title": "How long does it take to create a website?",
@@ -378,7 +378,7 @@
                 },
                 {
                     "title": "How much are the setup costs?",
-                    "description": "If you opt for an annual subscription of €74 per month, <strong>you pay no setup costs</strong>. If you opt for a monthly subscription, you pay a <strong>one-time fee of €180</strong> for setup costs excl. VAT."
+                    "description": "There are no setup costs! Only the subscription counts."
                 },
                 {
                     "title": "Can I add extra pages later?",

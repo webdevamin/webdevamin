@@ -1,10 +1,10 @@
 {
     "seo": {
-        "title": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
-        "description": "Zakelijke website laten maken vanaf €44/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
+        "title": "Zakelijke Website Laten Maken | Vanaf €49/maand All-In-One",
+        "description": "Zakelijke website laten maken vanaf €49/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
         "canonical": "https://webdevamin.com/nl",
-        "ogTitle": "Zakelijke Website Laten Maken | Vanaf €44/maand All-In-One",
-        "ogDescription": "Zakelijke website laten maken vanaf €44/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
+        "ogTitle": "Zakelijke Website Laten Maken | Vanaf €49/maand All-In-One",
+        "ogDescription": "Zakelijke website laten maken vanaf €49/maand? Professionele website met gratis hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
         "image": "https://bucket.webdevamin.com/home_nl.jpg"
     },
     "alternates": [
@@ -100,7 +100,7 @@
                     "name": "Wat kost een zakelijke website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "De prijs voor een zakelijke website varieert sterk, afhankelijk van de complexiteit, gewenste functionaliteiten en de ervaring van de webdesigner. Bij mij betaalt u slechts €49 excl. BTW per maand, of voordelig €44 per maand bij een jaarabonnement voor een professionele zakelijke website. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals gratis domeinnaam, hosting, onderhoud en persoonlijke support. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
+                        "text": "Voor een zakelijke business website betaalt u slechts €49 excl. BTW per maand. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals gratis domeinnaam, hosting, onderhoud en persoonlijke support. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
                     }
                 },
                 {
@@ -116,7 +116,7 @@
                     "name": "Hoeveel bedragen de opstartkosten?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Indien u voor een jaarlijkse abonnement van €44 per maand kiest, betaalt u geen opstartkosten. Opteert u voor een maandelijks abonnement, betaalt u eenmalig €180 voor de opstartkosten excl. BTW."
+                        "text": "Geen opstartkosten! Nada! Nihil!"
                     }
                 },
                 {
@@ -159,7 +159,7 @@
             "title": "Zakelijke Website Laten Maken",
             "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Zakelijke website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf slechts €44/maand - inclusief gratis hosting, onderhoud en meer. Vraag nu vrijblijvend een abonnement of een gratis offerte aan!",
+            "text": "Zakelijke website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf slechts €49/maand - inclusief gratis hosting, onderhoud en meer. Vraag nu vrijblijvend een abonnement of een gratis offerte aan!",
             "extra": "Ook op maat gemaakte webapplicaties zoals:",
             "button": [
                 {
@@ -248,7 +248,7 @@
             "subtitle": "Geen losse diensten, maar één compleet pakket",
             "slug": "why-all-in-one",
             "layout": "reversed",
-            "text": "<p>Een <strong>All-in-one Website Pakket</strong> vanaf €44/maand biedt alles wat u nodig heeft voor een professionele online aanwezigheid — zonder het gedoe van verschillende leveranciers. Als <strong>betaalbare webdesigner en developer</strong> bied ik een complete oplossing: van een <strong>zakelijke website op maat</strong> tot hosting, onderhoud en aanpassingen wanneer u die nodig heeft.</p><p>Hiermee krijgt u een professionele website die altijd up-to-date blijft en naadloos aansluit bij uw merk en doelgroep. Eén aanspreekpunt, één transparante prijs — en volledige gemoedsrust.</p><p>Ondernemers besparen gemiddeld 20% van hun tijd omdat ze zich niet meer hoeven bezig te houden met het controleren en betalen van facturen, of zich zorgen te maken over een verouderde website. Geen stress meer over onderhoud of contact zoeken met verschillende leveranciers — <strong>alles wordt door mij geregeld</strong>!</p>",
+            "text": "<p>Een <strong>All-in-one Website Pakket</strong> vanaf €49/maand biedt alles wat u nodig heeft voor een professionele online aanwezigheid — zonder het gedoe van verschillende leveranciers. Als <strong>betaalbare webdesigner en developer</strong> bied ik een complete oplossing: van een <strong>zakelijke website op maat</strong> tot hosting, onderhoud en aanpassingen wanneer u die nodig heeft.</p><p>Hiermee krijgt u een professionele website die altijd up-to-date blijft en naadloos aansluit bij uw merk en doelgroep. Eén aanspreekpunt, één transparante prijs — en volledige gemoedsrust.</p><p>Ondernemers besparen gemiddeld 20% van hun tijd omdat ze zich niet meer hoeven bezig te houden met het controleren en betalen van facturen, of zich zorgen te maken over een verouderde website. Geen stress meer over onderhoud of contact zoeken met verschillende leveranciers — <strong>alles wordt door mij geregeld</strong>!</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -279,9 +279,9 @@
         {
             "title": "Prijsabonnement",
             "subtitle": "Betaalbare webdesigner & developer",
-            "highlight": "Vanaf €44/maand",
+            "highlight": "Vanaf €49/maand",
             "slug": "pricing",
-            "text": "<p>Ontdek mijn transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €44 per maand</strong> krijgt u een <strong>SEO geoptimaliseerde, professionele zakelijke website</strong> met talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer - alles om u tijd en kosten te besparen! Ik neem alle administratieve taken op mij, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p><p>Bekijk <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>deze voorbeeldwebsite</a>, ontwikkeld voor een bouwbedrijf in Brugge voor €49 per maand, om een indruk te krijgen van mijn werk.</p><p>Wilt u weten welke prijzen ik voor mijn bestaande klanten hanteer? Bekijk dan mijn <a href='/nl/projects'>gerealiseerde digitale oplossingen</a> voor concrete voorbeelden en bijbehorende prijzen.</p>",
+            "text": "<p>Ontdek mijn transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>SEO geoptimaliseerde, professionele zakelijke website</strong> met talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project.</p><p>Naast een professionele zakelijke website ontvangt u levenslang gratis hosting, domeinnaam, onderhoud, updates en meer - alles om u tijd en kosten te besparen! Ik neem alle administratieve taken op mij, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p><p>Bekijk <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>deze voorbeeldwebsite</a>, ontwikkeld voor een bouwbedrijf in Brugge voor €49 per maand, om een indruk te krijgen van mijn werk.</p><p>Wilt u weten welke prijzen ik voor mijn bestaande klanten hanteer? Bekijk dan mijn <a href='/nl/projects'>gerealiseerde digitale oplossingen</a> voor concrete voorbeelden en bijbehorende prijzen.</p>",
             "subsubtitle": "Wat krijgt u",
             "items": [
                 {
@@ -321,8 +321,8 @@
                     "details": "Heeft u vragen of opmerkingen? U kunt mij altijd contacteren. Ik help u graag verder zonder kosten."
                 },
                 {
-                    "title": "Jaarlijks betalen? Geen opstartkosten!",
-                    "details": "Yup, u leest het goed! Geen opstartkosten bij jaarlijkse betaling. U betaalt enkel voor het abonnement zelf. Bij maandelijkse betaling zijn er wel opstartkosten van €180 excl. BTW."
+                    "title": "Geen opstartkosten!",
+                    "details": "Geen opstartkosten! Nada! Nihil!"
                 },
                 {
                     "title": "Niet tevreden? 30 dagen geld terug",
@@ -397,7 +397,7 @@
             "items": [
                 {
                     "title": "Wat kost een zakelijke website laten maken?",
-                    "description": "De prijs voor een zakelijke website varieert sterk, afhankelijk van de complexiteit, gewenste functionaliteiten en de ervaring van de webdesigner. Bij mij betaalt u slechts <strong>€49 excl. BTW per maand</strong>, of voordelig <strong>€44 per maand</strong> bij een jaarabonnement voor een professionele zakelijke website. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals <strong>gratis domeinnaam, hosting, onderhoud en persoonlijke support</strong>. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
+                    "description": "Voor een zakelijke business website betaalt u slechts <strong>€49 excl. BTW per maand</strong>. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals <strong>gratis domeinnaam, hosting, onderhoud en persoonlijke support</strong>. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
                 },
                 {
                     "title": "Hoe lang duurt het om een website te maken?",
@@ -405,7 +405,7 @@
                 },
                 {
                     "title": "Hoeveel bedragen de opstartkosten?",
-                    "description": "Indien u voor een jaarlijkse abonnement van €44 per maand kiest, <strong>betaalt u geen opstartkosten</strong>. Opteert u voor een maandelijks abonnement, betaalt u <strong>eenmalig €180</strong> voor de opstartkosten excl. BTW."
+                    "description": "Geen opstartkosten! Nada! Nihil!"
                 },
                 {
                     "title": "Kan ik later extra pagina's toevoegen?",
