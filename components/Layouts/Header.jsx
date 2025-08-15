@@ -1,5 +1,6 @@
+'use client'
 import Image from 'next/image';
-import Link from 'next/link'
+import { Link } from '../../src/i18n/navigation'
 import { Alert, Dropdown, Navbar } from "flowbite-react";
 import useStore from '../../utils/store';
 import { useLocale } from 'next-intl';

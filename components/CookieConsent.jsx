@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import useStore from "../utils/store";
 import Cookies from 'js-cookie';
@@ -10,8 +12,8 @@ const expirationDate = new Date();
 expirationDate.setFullYear(expirationDate.getFullYear() + 1);
 
 const CookieConsent = () => {
-    const router = useRouter();
-    const { locale } = router;
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1] || 'en';
 
     const [hideConsent, setHideConsent] = useState(true);
     const { update } = useStore();

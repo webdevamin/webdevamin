@@ -1,3 +1,4 @@
+'use client'
 import { Accordion } from "flowbite-react";
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 import Heading from '../Heading';

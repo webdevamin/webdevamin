@@ -1,13 +1,15 @@
+'use client';
+
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Icon from './../Icon'
 import Link from 'next/link'
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import ButtonThree from '../Buttons/ButtonThree';
 
 const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
-    const router = useRouter();
-    const { locale } = router;
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1] || 'en';
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 

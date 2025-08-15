@@ -1,14 +1,17 @@
+'use client';
+
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import starsImage from '../../public/images/star.webp';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 // Example: Testimonials
 const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
-    const router = useRouter();
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1];
     const { name, brands } = icon || {};
     const iconRef = brands ? fab[name] : fas[name];
 
@@ -44,7 +47,7 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
                                         <div key={i} className={`${!count ? `hidden` : `inline`}`}><Image
                                             src={starsImage}
                                             width={11} height={11}
-                                            alt={router.locale === `en` ?
+                                            alt={locale === `en` ?
                                                 `${count} stars review` :
                                                 `${count} sterren review`}
                                             style={{ objectFit: "cover" }} />

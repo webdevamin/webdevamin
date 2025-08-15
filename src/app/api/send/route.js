@@ -1,29 +1,14 @@
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 const { RESEND_API_KEY, MAIL_TO } = process.env;
 
-export default async function handler(req) {
+export async function POST(req) {
   try {
-    const { method } = req;
     const { name, email, message } = await req.json();
-
-    if (method !== `POST`) {
-      return new Response(
-        JSON.stringify('Method not allowed.'),
-        {
-          status: 400,
-          headers: {
-            'content-type': 'application/json'
-          }
-        }
-      );
-    }
 
     if (!name || !email || !message) {
       return new Response(
-        JSON.stringify('Please fill in the form correctly.'),
+        JSON.stringify({ error: 'Please fill in the form correctly.' }),
         {
           status: 400,
           headers: {
@@ -35,12 +20,11 @@ export default async function handler(req) {
 
     const cleanMessage = message.replace(/(<([^>]+)>)/gi, "");
 
-    // Prepare email data for Resend
     const emailData = {
-      from: `Contact Form <onboarding@resend.dev>`, // Must be a verified domain or Resend's default
+      from: `Contact Form <onboarding@resend.dev>`,
       to: MAIL_TO,
       subject: `New portfolio message from ${name}`,
-      reply_to: email, // Set reply-to as the visitor's email so you can reply directly
+      reply_to: email,
       html: `<html><body>
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -50,7 +34,6 @@ export default async function handler(req) {
       </body></html>`,
     };
 
-    // Send email using Resend API
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -68,7 +51,7 @@ export default async function handler(req) {
     }
 
     return new Response(
-      JSON.stringify(`Bedankt! Uw bericht werd successvol verstuurd. Wij houden u zo snel mogelijk op hoogte!`),
+      JSON.stringify({ message: `Bedankt! Uw bericht werd successvol verstuurd. Wij houden u zo snel mogelijk op hoogte!` }),
       {
         status: 200,
         headers: {
@@ -84,7 +67,7 @@ export default async function handler(req) {
     }
 
     return new Response(
-      JSON.stringify('Er ging iets mis met de website. Probeer het later opnieuw.'),
+      JSON.stringify({ error: 'Er ging iets mis met de website. Probeer het later opnieuw.' }),
       {
         status: 500,
         headers: {

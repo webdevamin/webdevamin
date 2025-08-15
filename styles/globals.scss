@@ -24,16 +24,18 @@ body {
 }
 
 body {
-  @apply font_quicksand text-dark;
+  font-family: var(--font-quicksand), -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+  @apply text-dark;
 }
 
 .font_quicksand {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+  font-family: var(--font-quicksand), -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
 }
 
 .font_mohave {
-  font-family: "Mohave", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+  font-family: var(--font-mohave), -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", cursive;
 }
 
@@ -49,7 +51,8 @@ h3,
 h1,
 h2,
 .h2 {
-  @apply font_mohave;
+  font-family: var(--font-mohave), -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", cursive;
 }
 
 h1,

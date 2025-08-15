@@ -1,17 +1,20 @@
+'use client';
+
 import React, { useState } from 'react'
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { Tooltip } from "flowbite-react"
 import Link from 'next/link';
 
 // Example: Projects
 const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt, badgeAltTwo }) => {
-    const router = useRouter();
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1];
     const { bText, bgColor, color } = badge || {};
     const [isHovered, setIsHovered] = useState(false);
 
     // Determine text based on locale and link presence
-    const buttonText = router.locale === 'en' ? 'Visit website' : 'Bezoek website';
+    const buttonText = locale === 'en' ? 'Visit website' : 'Bezoek website';
 
     // Get max 3 primary technologies to show
     const primaryTechs = technologies?.slice(0, 3) || [];

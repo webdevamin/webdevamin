@@ -1,14 +1,17 @@
+'use client';
+
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo'
 import { Carousel } from "flowbite-react";
 import Slide from '../Slide';
 import Image from 'next/image';
 import ButtonOne from '../Buttons/ButtonOne';
 import NoContent from '../NoContent';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import Heading from '../Heading';
 
 const Blogs = ({ content, data }) => {
-    const router = useRouter();
+    const pathname = usePathname();
+    const locale = pathname.split('/')[1] || 'en';
     const { title, text, button, slug } = content;
     const { href, text: buttonText } = button[0];
 
@@ -63,7 +66,7 @@ const Blogs = ({ content, data }) => {
                                 })
                             }
                         </Carousel>
-                    ) : <NoContent imgOnly locale={router.locale} />
+                    ) : <NoContent imgOnly locale={locale} />
                 }
             </div>
         </BlockLayoutTwo>

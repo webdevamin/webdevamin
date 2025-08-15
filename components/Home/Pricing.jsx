@@ -1,3 +1,4 @@
+'use client'
 import Heading from '../Heading'
 import { Accordion } from 'flowbite-react';
 import SubHeading from '../SubHeading';
