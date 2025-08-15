@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// const { setupDevPlatform } = require('@cloudflare/next-on-pages/next-dev');
 const isDev = process.env.NODE_ENV === 'development';
 
 const nextConfig = {
@@ -42,5 +43,12 @@ const nextConfig = {
   // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
 };
+
+// // IIFE to support top-level await
+// (async () => {
+//   if (process.env.NODE_ENV === 'development') {
+//     await setupDevPlatform();
+//   }
+// })();
 
 module.exports = nextConfig;

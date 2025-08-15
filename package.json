@@ -7,6 +7,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
+    "pages:build": "npx @cloudflare/next-on-pages",
     "lint": "next lint"
   },
   "dependencies": {
@@ -30,11 +31,15 @@
     "zustand": "^4.4.7"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.12.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "8.23.1",
+    "eslint": "^8.57.0",
     "eslint-config-next": "^14.0.1",
     "postcss": "^8.4.47",
     "sass": "^1.56.2",
     "tailwindcss": "^3.4.14"
+  },
+  "overrides": {
+    "undici": "^6.19.2"
   }
 }
