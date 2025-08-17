@@ -7,14 +7,12 @@ import PricingSection from '../../../../../components/Home/Pricing'
 import BlockAccordion from '../../../../../components/Blocks/BlockAccordion'
 import Testimonials from '../../../../../components/Home/Testimonials'
 import CallToAction from '../../../../../components/Home/CallToAction'
-import Projects from '../../../../../components/Home/Projects'
 import JsonLd from '../../../../../components/SEO/JsonLd'
 import { notFound } from 'next/navigation'
 import { routing } from '../../../../i18n/routing'
 import BlockLayoutOne from '../../../../../components/Layouts/BlockLayoutOne'
 import BlockLayoutTwo from '../../../../../components/Layouts/BlockLayoutTwo'
 import Heading from '../../../../../components/Heading'
-import SubHeading from '../../../../../components/SubHeading'
 import ButtonOne from '../../../../../components/Buttons/ButtonOne'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +32,6 @@ async function getData(locale, slug) {
   const socialsData = (await import(`../../../../../messages/${locale}/socials.json`)).default;
   const blogsData = (await import(`../../../../../messages/${locale}/blogs.json`)).default;
   const pagesData = (await import(`../../../../../messages/${locale}/pages.json`)).default;
-  const heroBannerData = (await import(`../../../../../messages/${locale}/heroBanner.json`)).default;
   const contactBlockData = (await import(`../../../../../messages/${locale}/contactBlock.json`)).default;
   const projectsData = (await import(`../../../../../messages/${locale}/projects.json`)).default;
   const pageData = (await import(`../../../../../messages/${locale}/industries/taxi-website-laten-maken.json`)).default;
@@ -44,7 +41,6 @@ async function getData(locale, slug) {
     socialsData,
     blogsData,
     pagesData,
-    heroBannerData,
     contactBlockData,
     projectsData,
     pageData,
@@ -111,7 +107,7 @@ const WhyTaxiWebsite = ({ content }) => {
       <div className="md:basis-6/12">
         <Heading title={title} subtitle={subtitle} />
         <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
-        
+
         {contentItems.map((item, index) => {
           if (item.type === 'paragraph') {
             return (
@@ -120,7 +116,7 @@ const WhyTaxiWebsite = ({ content }) => {
               </p>
             );
           }
-          
+
           if (item.type === 'list') {
             return (
               <ul key={index} className="mb-6 space-y-2">
@@ -133,11 +129,11 @@ const WhyTaxiWebsite = ({ content }) => {
               </ul>
             );
           }
-          
+
           return null;
         })}
       </div>
-      
+
       <div className="mt-10 md:mt-0 md:basis-6/12">
         <div className="relative">
           <Image
@@ -171,12 +167,12 @@ const FeaturesSection = ({ content }) => {
     <BlockLayoutOne title={title} slug="features-benefits">
       <div className="w-full">
         <Heading title={title} subtitle={subtitle} />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {features.map((feature, index) => {
             const { icon, title, description } = feature;
             const IconComponent = iconMap[icon] || faCalendarCheck;
-            
+
             return (
               <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="text-theme mb-4">
@@ -203,11 +199,11 @@ const PortfolioCase = ({ content }) => {
       <div className="md:basis-6/12">
         <Heading title={title} subtitle={subtitle} />
         <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-2xl font-bold text-theme mb-4">{name}</h3>
           <p className="text-gray-700 mb-4">{projectDesc}</p>
-          
+
           <div className="mb-6">
             <h4 className="font-semibold text-gray-800 mb-3">Functionaliteiten:</h4>
             <ul className="space-y-1">
@@ -219,7 +215,7 @@ const PortfolioCase = ({ content }) => {
               ))}
             </ul>
           </div>
-          
+
           <div className="mb-4">
             <h4 className="font-semibold text-gray-800 mb-3">Resultaten:</h4>
             <ul className="space-y-1">
@@ -231,11 +227,11 @@ const PortfolioCase = ({ content }) => {
               ))}
             </ul>
           </div>
-          
+
           <ButtonOne href={url} text="Bekijk Website" target="_blank" />
         </div>
       </div>
-      
+
       <div className="mt-10 md:mt-0 md:basis-6/12">
         <div className="relative">
           <Image
@@ -252,63 +248,6 @@ const PortfolioCase = ({ content }) => {
   );
 };
 
-// Custom Pricing Component for Taxi Website
-const TaxiPricingSection = ({ content }) => {
-  const { title, subtitle, plans } = content;
-
-  return (
-    <BlockLayoutOne title={title} slug="taxi-pricing">
-      <div className="w-full">
-        <Heading title={title} subtitle={subtitle} />
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto">
-          {plans.map((plan, index) => {
-            const { name, price, period, description, features, cta, popular } = plan;
-            
-            return (
-              <div key={index} className={`relative p-8 bg-white rounded-lg shadow-lg ${popular ? 'border-2 border-theme transform scale-105' : 'border border-gray-200'}`}>
-                {popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-theme text-white px-4 py-2 rounded-full text-sm font-semibold">
-                      Meest Populair
-                    </span>
-                  </div>
-                )}
-                
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{name}</h3>
-                  <div className="mb-4">
-                    <span className="text-4xl font-bold text-theme">€{price}</span>
-                    <span className="text-gray-600 ml-1">{period}</span>
-                  </div>
-                  <p className="text-gray-600">{description}</p>
-                </div>
-                
-                <ul className="space-y-3 mb-8">
-                  {features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start">
-                      <span className="text-theme mr-2 mt-1">✓</span>
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="text-center">
-                  <ButtonOne 
-                    href="/contact" 
-                    text={cta} 
-                    outline={!popular}
-                    classes="w-full justify-center"
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </BlockLayoutOne>
-  );
-};
 
 const IndustryPage = async ({ params: { locale, slug } }) => {
   const {
@@ -316,40 +255,38 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
     socialsData,
     blogsData,
     pagesData,
-    heroBannerData,
     contactBlockData,
-    projectsData,
     pageData,
   } = await getData(locale, slug);
 
-  const { alternates, alternateLangs, blocks } = pageData;
+  const { alternateLangs, blocks } = pageData;
 
   return (
     <>
       <JsonLd data={pageData.jsonLd} />
-      <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
-      
+      <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
+
       <Hero content={blocks.find(block => block.slug === 'hero')} socials={socialsData} />
-      
+
       <PageLayout>
         <WhyTaxiWebsite content={blocks.find(block => block.slug === 'why-taxi-website')} />
-        
+
         <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
-        
+
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
-        
-        <TaxiPricingSection content={blocks.find(block => block.slug === 'pricing')} />
-        
+
+        <PricingSection content={blocks.find(block => block.slug === 'pricing')} />
+
         <div className="transition-all duration-500 rounded-xl">
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
         </div>
-        
+
         <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
-        
+
         <Testimonials content={blocks.find(block => block.slug === 'testimonials')} />
-        
+
         <Contact content={contactBlockData} />
-        
+
         <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
       </PageLayout>
     </>

@@ -104,7 +104,7 @@ const Index = async ({ params: { locale } }) => {
     pageData,
   } = await getData(locale);
 
-  const { alternates, alternateLangs, blocks } = pageData;
+  const { alternateLangs, blocks } = pageData;
 
   return (
     <>

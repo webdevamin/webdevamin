@@ -34,14 +34,15 @@ const PricingSection = ({ content }) => {
                             }
                         </div>
                     </div>
-                    <div className="mt-8 lg:mt-16">
-                        <div className='text-left lg:mb-10'>
-                            <SubHeading title={subsubtitle} smallerMarginB />
-                        </div>
-                        <div className='accordion'>
-                            <Accordion className='text-left w-full min-w-full'>
-                                {
-                                    items.map((item, i) => {
+                    {(items && items.length > 0 && subsubtitle) && (
+                        <div className="mt-8 lg:mt-16">
+                            <div className='text-left lg:mb-10'>
+                                <SubHeading title={subsubtitle} smallerMarginB />
+                            </div>
+                            <div className='accordion'>
+                                <Accordion className='text-left w-full min-w-full'>
+                                    {
+                                        items.map((item, i) => {
                                         const { title, details } = item;
 
                                         return (
@@ -73,11 +74,12 @@ const PricingSection = ({ content }) => {
                                                 </Accordion.Content>
                                             </Accordion.Panel>
                                         )
-                                    })
-                                }
-                            </Accordion>
+                                        })
+                                    }
+                                </Accordion>
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </BlockLayoutOne>
