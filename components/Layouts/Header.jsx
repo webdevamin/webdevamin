@@ -94,7 +94,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                     sm:px-4 font-semibold tracking-wide drop-shadow-2xl 
                                     flex justify-center items-center sm:flex mt-0`}>
                                             <Image
-                                                src={flag} fill={true} alt={alt}
+                                                src={flag} fill={true} alt={alt} priority={true} loading="eager"
                                                 style={{ objectFit: `contain` }}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />

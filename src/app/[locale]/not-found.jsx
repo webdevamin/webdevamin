@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ButtonOne from '../../../components/Buttons/ButtonOne';
 import Header from '../../../components/Layouts/Header';
 import Footer from '../../../components/Layouts/Footer';
+import { getLocale } from 'next-intl/server';
 
 async function getData(locale) {
     const pageData = (await import(`../../../messages/${locale}/pages/404.json`)).default;
@@ -19,13 +20,9 @@ async function getData(locale) {
     };
 }
 
-export default async function NotFound({ params }) {
-    // This is a workaround to get the locale in the not-found page.
-    // The headers contain the full URL, so we can extract the locale from it.
-    // Note: This is not a standard Next.js feature and might break in future updates.
-    const { headers } = require('next/headers');
-    const url = headers().get('x-next-pathname');
-    const locale = url.split('/')[1] || 'en'; // Default to 'en' if locale is not in URL
+export default async function NotFound() {
+    // Get the active locale from next-intl on the server
+    const locale = await getLocale();
 
     const { pageData, pagesData, localesData, socialsData, blogsData } = await getData(locale);
 

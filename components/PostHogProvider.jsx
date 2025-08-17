@@ -14,9 +14,10 @@ export default function PostHogProvider({ children }) {
   const [posthogInstance, setPosthogInstance] = useState(null);
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
+    const enableInDev = process.env.NEXT_PUBLIC_ENABLE_POSTHOG_DEV === 'true';
+    const isProd = process.env.NODE_ENV === 'production';
+
+    if (!isProd && !enableInDev) return;
 
     const currentConsent = Cookies.get(key) || consent;
 
@@ -28,6 +29,9 @@ export default function PostHogProvider({ children }) {
           person_profiles: 'identified_only',
           loaded: (ph) => {
             setPosthogInstance(ph);
+            if (typeof window !== 'undefined') {
+              window.posthog = ph;
+            }
           }
         });
       }
@@ -35,6 +39,9 @@ export default function PostHogProvider({ children }) {
       if (posthogInstance) {
         posthogInstance.shutdown();
         setPosthogInstance(null);
+        if (typeof window !== 'undefined' && window.posthog) {
+          try { delete window.posthog } catch (_) { window.posthog = undefined }
+        }
       }
     }
   }, [consent, posthogInstance]);
@@ -44,17 +51,17 @@ export default function PostHogProvider({ children }) {
 
   useEffect(() => {
     if (posthogInstance && pathname) {
-        let url = window.origin + pathname;
-        if (searchParams.toString()) {
-            url = url + `?${searchParams.toString()}`;
-        }
-        posthogInstance.capture('$pageview', {
-            '$current_url': url,
-        });
+      let url = window.origin + pathname;
+      if (searchParams.toString()) {
+        url = url + `?${searchParams.toString()}`;
+      }
+      posthogInstance.capture('$pageview', {
+        '$current_url': url,
+      });
     }
   }, [pathname, searchParams, posthogInstance]);
 
-  if (process.env.NODE_ENV === 'production' && posthogInstance && consent === 'enable') {
+  if ((process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ENABLE_POSTHOG_DEV === 'true') && posthogInstance && consent === 'enable') {
     return <Provider client={posthogInstance}>{children}</Provider>;
   }
 
