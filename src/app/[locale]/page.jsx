@@ -14,6 +14,7 @@ import CallToAction from '../../../components/Home/CallToAction'
 import Why from '../../../components/Home/Why'
 import { notFound } from 'next/navigation'
 import { routing } from '../../i18n/routing'
+import JsonLd from '../../../components/SEO/JsonLd'
 
 async function getData(locale) {
   if (!routing.locales.includes(locale)) {
@@ -45,8 +46,8 @@ export async function generateMetadata({ params: { locale } }) {
   const { seo, alternates, jsonLd } = pageData;
   const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
 
-  const defaultImage = image || (locale === `nl` ? 
-    `/images/ogbanner-nl.png` : 
+  const defaultImage = image || (locale === `nl` ?
+    `/images/ogbanner-nl.png` :
     `/images/ogbanner.png`);
 
   return {
@@ -107,6 +108,7 @@ const Index = async ({ params: { locale } }) => {
 
   return (
     <>
+      <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
       <PageLayout>

@@ -10,6 +10,17 @@
         "icon": "faImage"
     },
     {
+        "title": "Branches",
+        "href": "#",
+        "icon": "faIndustry",
+        "subs": [
+            {
+                "title": "Taxi Website Laten Maken",
+                "href": "/industry/taxi-website-laten-maken"
+            }
+        ]
+    },
+    {
         "title": "Blogs",
         "href": "/blogs",
         "icon": "faBookmark"
