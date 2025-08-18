@@ -1,4 +1,4 @@
-import About from '../../../components/Home/About'
+import BlockNormal from '../../../components/Blocks/BlockNormal'
 import Header from '../../../components/Layouts/Header'
 import Projects from '../../../components/Home/Projects'
 import Testimonials from '../../../components/Home/Testimonials'
@@ -11,7 +11,6 @@ import PricingSection from '../../../components/Home/Pricing'
 import BlockAccordion from '../../../components/Blocks/BlockAccordion'
 import Services from '../../../components/Home/Services'
 import CallToAction from '../../../components/Home/CallToAction'
-import Why from '../../../components/Home/Why'
 import { notFound } from 'next/navigation'
 import { routing } from '../../i18n/routing'
 import JsonLd from '../../../components/SEO/JsonLd'
@@ -112,9 +111,9 @@ const Index = async ({ params: { locale } }) => {
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
       <PageLayout>
-        <About content={blocks.find(block => block.slug === `about`)} />
+        <BlockNormal content={blocks.find(block => block.slug === `about`)} />
         {blocks.find(block => block.slug === `why-all-in-one`) && (
-          <Why content={blocks.find(block => block.slug === `why-all-in-one`)} />
+          <BlockNormal content={blocks.find(block => block.slug === `why-all-in-one`)} position='right' />
         )}
         <Services content={blocks.find(block => block.slug === `services`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)} data={projectsData} />
