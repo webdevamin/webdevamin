@@ -118,8 +118,12 @@ const iconMap = {
  */
 export const getIconComponent = (iconName, props = {}) => {
   if (!iconName) return Globe;
-  // Normalize: accept strings, numbers, etc., support kebab/pascal, case-insensitive
-  const keyRaw = String(iconName).trim();
+  // Support passing an icon object with { name }
+  const candidate = typeof iconName === 'object' && iconName !== null
+    ? (iconName.name || '')
+    : iconName;
+  // Normalize: accept strings, numbers, etc.; support kebab/pascal; case-insensitive
+  const keyRaw = String(candidate).trim();
   const keyLower = keyRaw.toLowerCase();
   const IconComponent = iconMap[keyRaw] || iconMap[keyLower] || Globe;
   return IconComponent;

@@ -6,6 +6,7 @@ import HeroTwo from '../../../../../components/Heroes/HeroTwo';
 import Image from 'next/image';
 import SocialShares from '../../../../../components/SocialShares';
 import styles from '../../../../../styles/BlogPage.module.scss';
+import { notFound } from 'next/navigation';
 
 async function getData(locale, slug) {
     const allBlogs = (await import(`../../../../../messages/${locale}/blogs.json`)).default;
@@ -42,9 +43,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params: { locale, slug } }) {
-    const { blogData } = await getData(locale, slug);
-    if (blogData.notFound) return {};
+    const data = await getData(locale, slug);
+    if (data.notFound || !data.blogData) return notFound();
 
+    const { blogData } = data;
     const { seo, alternates, title } = blogData;
     const { description, canonical, image, ogTitle, ogDescription, keywords } = seo;
 
@@ -85,12 +87,13 @@ export async function generateMetadata({ params: { locale, slug } }) {
 }
 
 const Blog = async ({ params: { locale, slug } }) => {
-    const { localesData, socialsData, blogsData, pagesData, contactBlockData, blogData } = await getData(locale, slug);
+    const data = await getData(locale, slug);
 
-    if (blogData.notFound) {
-        // This should be handled by Next.js returning a 404 page
-        return null;
+    if (data.notFound || !data.blogData) {
+        return notFound();
     }
+
+    const { localesData, socialsData, blogsData, pagesData, contactBlockData, blogData } = data;
 
     const { alternateLangs, title, description, text, img, border } = blogData;
     const { src, alt } = img;
@@ -111,7 +114,7 @@ const Blog = async ({ params: { locale, slug } }) => {
             <PageLayout>
                 <div id={slug} className={styles.blogContainer}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`relative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
+                        <div className={`Nelative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
                             <Image
                                 src={src} fill={true} alt={alt}
                                 className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`}`}
