@@ -52,13 +52,18 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                     <ul>
                         {
                             pages.map((page, i) => {
-                                const { href, icon, title, hideFromHeader } = page;
+                                const { href, icon, title, hideFromHeader, subs } = page;
                                 const IconComponent = getIconComponent(icon);
+
+                                // Hide items like "Branches" that only act as dropdown parents (no index page)
+                                const noIndex = !href || href === '#';
+                                const isDropdownParent = Array.isArray(subs) && subs.length > 0;
+                                if (isDropdownParent && noIndex) return null;
 
                                 return (
                                     <li className={`pt-2 ${hideFromHeader && `hidden`}`}
                                         key={i}>
-                                        <Link href={href} className={`flex items-center gap-3`}>
+                                        <Link href={`/${locale}${href}`} className={`flex items-center gap-3`}>
                                             <IconComponent className="h-5 w-5" />
                                             <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>
@@ -82,7 +87,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
 
                                 return (
                                     <li className={`pt-2`} key={i}>
-                                        <Link href={`/blogs/${slug}`} className={`lg:text-base transition-all 
+                                        <Link href={`/${locale}/blogs/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
                                             {title}
                                         </Link>
@@ -92,7 +97,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         }
                     </ul>
                     <div className={`md:mt-4`}>
-                        <ButtonThree href={`/blogs`} color={`text_theme_all`}
+                        <ButtonThree href={`/${locale}/blogs`} color={`text_theme_all`}
                             text={locale === `en` ? `All blogs` : `Alle blogs`} />
                     </div>
                 </div>
@@ -102,7 +107,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                     </h2>
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         <li className={`pt-1 sm:pt-2`}>
-                            <Link href={`/policy`} className={`lg:text-base transition-all hover:text-theme`}>
+                            <Link href={`/${locale}/policy`} className={`lg:text-base transition-all hover:text-theme`}>
                                 {locale === `en` ? `Privacy policy` : `Privacybeleid`}
                             </Link>
                         </li>
