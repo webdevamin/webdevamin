@@ -2,22 +2,22 @@
     {
         "title": "Home",
         "href": "/",
-        "icon": "faHouse"
+        "icon": "home"
     },
     {
         "title": "Projects",
         "href": "/projects",
-        "icon": "faImage"
+        "icon": "image"
     },
     {
         "title": "Blogs",
         "href": "/blogs",
-        "icon": "faBookmark"
+        "icon": "bookmark"
     },
     {
         "title": "Contact",
         "href": "/contact",
-        "icon": "faAddressBook"
+        "icon": "address-book"
     },
     {
         "title": "Privacy policy",

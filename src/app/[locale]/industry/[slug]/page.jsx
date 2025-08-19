@@ -14,7 +14,7 @@ import Heading from '../../../../../components/Heading'
 import ButtonOne from '../../../../../components/Buttons/ButtonOne'
 import { PricingCard } from '../../../../../components/Cards/PricingCard'
 import Image from 'next/image'
-import { faCalendarCheck, faMapMarkedAlt, faMobile, faSearch, faCreditCard, faCalculator } from '@fortawesome/free-solid-svg-icons'
+import { getIconComponent } from '../../../../../utils/iconMapper';
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
@@ -101,22 +101,13 @@ export async function generateMetadata({ params: { locale, slug } }) {
 
 // Features Section Component
 const FeaturesSection = ({ content }) => {
-  const iconMap = {
-    faCalendarCheck,
-    faMapMarkedAlt,
-    faMobile,
-    faSearch,
-    faCreditCard,
-    faCalculator
-  };
-
   // Transform features to services format expected by BlockCards
   const transformedContent = {
     ...content,
     services: content.features
   };
 
-  return <BlockCards content={transformedContent} iconMap={iconMap} />;
+  return <BlockCards content={transformedContent} />;
 };
 
 // Portfolio Case Component

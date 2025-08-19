@@ -1,13 +1,12 @@
 'use client';
 
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import Icon from './../Icon'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { getIconComponent } from '../../utils/iconMapper';
 import ButtonThree from '../Buttons/ButtonThree';
 
-const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
+const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
     const pathname = usePathname();
     const locale = pathname.split('/')[1] || 'en';
 
@@ -24,8 +23,9 @@ const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
                         {
                             socials.map((social, i) => {
                                 const { href, icon, title, hideFromFooter } = social;
-                                const { name, brands } = icon;
-                                const iconRef = brands ? fab[name] : fas[name];
+                                const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
+
+                                const IconComponent = getIconComponent(name);
 
                                 return (
                                     <li className={`pt-2 ${hideFromFooter && `hidden`}`} key={i}>
@@ -34,9 +34,7 @@ const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
                                                 `noopener noreferrer nofollow`}`} target="_blank"
                                             className={`lg:text-base`}>
                                             <div className={`flex items-center gap-1`}>
-                                                <div className={`w-6 h-5 flex items-center justify-start`}>
-                                                    <Icon icon={iconRef} />
-                                                </div>
+                                                <IconComponent className="h-5 w-5" />
                                                 <span className={`lg:text-base transition-all hover:text-theme`}>
                                                     {title}
                                                 </span>
@@ -62,7 +60,7 @@ const Footer = ({ blogs, socials, pages, followExternalLinks }) => {
                                         <Link href={href} className={`flex items-center gap-1`}>
                                             <div className={`w-6 h-5 flex items-center 
                                         justify-start`}>
-                                                <Icon icon={fas[icon]} size={`sm`} />
+                                                {React.createElement(getIconComponent(typeof icon === 'string' ? icon : (icon?.name || 'globe')), { className: "h-5 w-5" })}
                                             </div>
                                             <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>

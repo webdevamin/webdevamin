@@ -2,8 +2,7 @@ import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
 import { getJsonString, } from '../../utils/app';
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { Facebook, Twitter, Linkedin, Instagram, Github, Youtube, Globe, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -58,15 +57,31 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                 socials.map((social, i) => {
                                     const { href, icon, title, hideFromHeader } =
                                         social;
-                                    const { name, brands } = icon;
-                                    const iconRef = brands ? fab[name] : fas[name];
+                                    const { name } = icon;
+                                    
+                                    const getIconComponent = (iconName) => {
+                                        const iconMap = {
+                                            'facebook': Facebook,
+                                            'twitter': Twitter,
+                                            'linkedin': Linkedin,
+                                            'instagram': Instagram,
+                                            'github': Github,
+                                            'youtube': Youtube,
+                                            'globe': Globe,
+                                            'mail': Mail,
+                                            'phone': Phone,
+                                            'map-pin': MapPin,
+                                            'external-link': ExternalLink
+                                        };
+                                        return iconMap[iconName] || Globe;
+                                    };
 
                                     return (
                                         <a key={i} href={href}
                                             className={`${hideFromHeader && `hidden`}`}
                                             rel="noreferrer nofollow"
                                             target="_blank" aria-label={title}>
-                                            <Icon icon={iconRef} size={`xl`} />
+                                            <Icon icon={React.createElement(getIconComponent(name), { className: "h-6 w-6" })} size={`xl`} />
                                         </a>
                                     )
                                 })
@@ -110,15 +125,31 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     {
                         socials.map((social, i) => {
                             const { href, icon, title, hideFromHeader } = social;
-                            const { name, brands } = icon;
-                            const iconRef = brands ? fab[name] : fas[name];
+                            const { name } = icon;
+                            
+                            const getIconComponent = (iconName) => {
+                                const iconMap = {
+                                    'facebook': Facebook,
+                                    'twitter': Twitter,
+                                    'linkedin': Linkedin,
+                                    'instagram': Instagram,
+                                    'github': Github,
+                                    'youtube': Youtube,
+                                    'globe': Globe,
+                                    'mail': Mail,
+                                    'phone': Phone,
+                                    'map-pin': MapPin,
+                                    'external-link': ExternalLink
+                                };
+                                return iconMap[iconName] || Globe;
+                            };
 
                             return (
                                 <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
                                     rel="noreferrer nofollow"
                                     target="_blank" aria-label={title}>
-                                    <Icon icon={iconRef} size={`2xl`} />
+                                    <Icon icon={React.createElement(getIconComponent(name), { className: "h-8 w-8" })} size={`2xl`} />
                                 </a>
                             )
                         })

@@ -1,7 +1,6 @@
 import React from 'react'
-import { fas } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
     const isExternalLink = href?.startsWith('http');
@@ -21,7 +20,7 @@ const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
                 font-semibold hover:gap-4 gap-2 hover:text_dark_all`}>
                     {text}
                 </span>
-                <FontAwesomeIcon icon={fas["faArrowRight"]} />
+                <ArrowRight className="h-4 w-4" />
             </div>
         )
     }
@@ -37,7 +36,7 @@ const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
                 ${color || `text_theme_darker_all hover:text_dark_all`} ${classes}`}
             >
                 <span className="uppercase drop-shadow-none">{text}</span>
-                <FontAwesomeIcon icon={fas["faArrowUpRightFromSquare"]} className="text-xs" />
+                <ExternalLink className="h-3 w-3" />
             </a>
         )
     }
@@ -47,7 +46,7 @@ const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
         text-sm font-semibold transition-all hover:gap-4 gap-2 drop-shadow-none
         ${color || `text_theme_darker_all hover:text_dark_all`} ${classes}`}>
             <span className="uppercase drop-shadow-none">{text}</span>
-            <FontAwesomeIcon icon={fas["faArrowRight"]} />
+            <ArrowRight className="h-4 w-4" />
         </Link>
     )
 }

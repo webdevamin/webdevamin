@@ -238,36 +238,37 @@
             "component": "features",
             "title": "Essentiële Functionaliteiten",
             "subtitle": "Alles voor een boost voor uw taxi bedrijf",
+            "text": "<p>Bekijk hieronder een lijst van essentiële functionaliteiten die uw taxi bedrijf kunnen versterken: een professionele website met tijdbesparende functies en de mogelijkheid voor meer klanten en winst op langere termijn.</p>",
             "features": [
                 {
-                    "icon": "faCalendarCheck",
+                    "icon": "CalendarDays",
                     "title": "Online Reserveringssysteem",
                     "description": "Klanten kunnen 24/7 online een taxi reserveren met datum, tijd en bestemming. Automatische bevestigingen en herinneringen verhogen de klanttevredenheid."
                 },
                 {
-                    "icon": "faMapMarkedAlt",
+                    "icon": "MapPin",
                     "title": "Google Maps Integratie",
                     "description": "Interactieve kaarten tonen uw servicegebied, route-planning en real-time locatie tracking voor transparante service."
                 },
                 {
-                    "icon": "faMobile",
-                    "title": "Mobiele Optimalisatie",
-                    "description": "Volledig responsive ontwerp dat perfect werkt op smartphones en tablets. De meeste taxi-boekingen gebeuren via mobiele apparaten."
+                    "icon": "Smartphone",
+                    "title": "Mobielvriendelijk Ontwerp",
+                    "description": "Uw website ziet er perfect uit op alle apparaten: desktop, tablet en smartphone. Klanten kunnen altijd en overal boeken."
                 },
                 {
-                    "icon": "faSearch",
-                    "title": "Lokale SEO Optimalisatie",
-                    "description": "Geoptimaliseerd voor lokale zoekopdrachten zoals 'taxi [uw stad]' om hoger te ranken in Google zoekresultaten."
+                    "icon": "Search",
+                    "title": "SEO Geoptimaliseerd",
+                    "description": "Geavanceerde zoekmachineoptimalisatie zorgt ervoor dat uw taxibedrijf bovenaan verschijnt wanneer mensen zoeken naar 'taxi' in uw regio."
                 },
                 {
-                    "icon": "faCreditCard",
-                    "title": "Online Betalingssysteem",
-                    "description": "Veilige online betalingen via Stripe, PayPal of Mollie. Klanten kunnen vooraf betalen voor gemak en zekerheid."
+                    "icon": "CreditCard",
+                    "title": "Veilige Online Betaling",
+                    "description": "Integreer betrouwbare betalingsgateways zodat klanten veilig online kunnen betalen met iDEAL, creditcard of andere betaalmethoden."
                 },
                 {
-                    "icon": "faCalculator",
-                    "title": "Prijscalculator",
-                    "description": "Automatische prijsberekening op basis van afstand en tijd, zodat klanten transparant de kosten kunnen zien."
+                    "icon": "Calculator",
+                    "title": "Transparante Prijscalculator",
+                    "description": "Klanten kunnen direct een prijsindicatie krijgen voor hun rit door bestemming en afstand in te voeren."
                 }
             ]
         },

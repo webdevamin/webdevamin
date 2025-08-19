@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Icon = ({ icon, size, classes }) => {
     const [currentSize, setCurrentSize] = useState(size || 'sm');
@@ -31,14 +30,14 @@ const Icon = ({ icon, size, classes }) => {
         return () => window.removeEventListener('resize', handleResize);
     }, [size]);
 
+    // For Lucide React, we'll create a simple wrapper component
+    // The actual icon components will be passed as children
     return (
-        <FontAwesomeIcon
-            icon={icon}
-            size={currentSize}
-            className={`transition-all ease-linear duration-300
+        <div className={`transition-all ease-linear duration-300
             hover:opacity-70 ${classes || ''} hover:rotate-[360deg]
-            text-base sm:text-lg lg:text-xl`}
-        />
+            text-base sm:text-lg lg:text-xl`}>
+            {icon}
+        </div>
     )
 }
 

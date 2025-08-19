@@ -2,17 +2,17 @@
     {
         "title": "Home",
         "href": "/",
-        "icon": "faHouse"
+        "icon": "home"
     },
     {
         "title": "Projecten",
         "href": "/projects",
-        "icon": "faImage"
+        "icon": "image"
     },
     {
         "title": "Branches",
         "href": "#",
-        "icon": "faIndustry",
+        "icon": "building",
         "subs": [
             {
                 "title": "Taxi Website Laten Maken",
@@ -23,12 +23,12 @@
     {
         "title": "Blogs",
         "href": "/blogs",
-        "icon": "faBookmark"
+        "icon": "bookmark"
     },
     {
         "title": "Contact",
         "href": "/contact",
-        "icon": "faAddressBook"
+        "icon": "address-book"
     },
     {
         "title": "Privacybeleid",

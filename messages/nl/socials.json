@@ -2,60 +2,42 @@
     {
         "title": "Email",
         "href": "mailto:amin@webdevamin.com",
-        "icon": {
-            "name": "faEnvelope",
-            "brands": false
-        },
+        "icon": "mail",
         "hideFromHeader": false,
         "hideFromFooter": true
     },
     {
         "title": "Facebook",
         "href": "https://www.facebook.com/a.webdevamin",
-        "icon": {
-            "name": "faFacebookF",
-            "brands": true
-        },
+        "icon": "facebook",
         "hideFromHeader": false,
         "hideFromFooter": false
     },
     {
         "title": "Instagram",
         "href": "https://www.instagram.com/webdevamin",
-        "icon": {
-            "name": "faInstagram",
-            "brands": true
-        },
+        "icon": "instagram",
         "hideFromHeader": false,
         "hideFromFooter": false
     },
     {
         "title": "X",
         "href": "https://x.com/webdevamin",
-        "icon": {
-            "name": "faXTwitter",
-            "brands": true
-        },
+        "icon": "twitter",
         "hideFromHeader": false,
         "hideFromFooter": false
     },
     {
         "title": "LinkedIn",
         "href": "https://www.linkedin.com/company/webdevamin",
-        "icon": {
-            "name": "faLinkedinIn",
-            "brands": true
-        },
+        "icon": "linkedin",
         "hideFromHeader": false,
         "hideFromFooter": false
     },
     {
         "title": "GitHub",
         "href": "https://github.com/webdevamin",
-        "icon": {
-            "name": "faGithub",
-            "brands": true
-        },
+        "icon": "github",
         "hideFromHeader": false,
         "hideFromFooter": false
     }

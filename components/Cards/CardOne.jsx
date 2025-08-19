@@ -1,9 +1,6 @@
 'use client';
 
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import starsImage from '../../public/images/star.webp';
 import { usePathname } from 'next/navigation';
@@ -12,8 +9,6 @@ import { usePathname } from 'next/navigation';
 const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
     const pathname = usePathname();
     const locale = pathname.split('/')[1];
-    const { name, brands } = icon || {};
-    const iconRef = brands ? fab[name] : fas[name];
 
     return (
         <article className={`shadow-md border border-dark 
@@ -26,11 +21,6 @@ const CardOne = ({ initial, title, bgColor, text, icon, count }) => {
                     text-dark text-lg md:-top-[13%]`}
                         style={{ backgroundColor: `${bgColor}` }}>
                         {initial && <span>{initial}</span>}
-                        {icon && (
-                            <div>
-                                <FontAwesomeIcon icon={iconRef} />
-                            </div>
-                        )}
                     </div>
                 )
             }

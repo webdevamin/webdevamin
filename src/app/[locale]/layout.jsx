@@ -4,12 +4,9 @@ import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
 
 import '../../../styles/globals.scss';
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 import PostHogProvider from '../../../components/PostHogProvider';
 import { Quicksand, Mohave } from 'next/font/google';
 
-config.autoAddCss = false;
 
 export const metadata = {
   icons: {

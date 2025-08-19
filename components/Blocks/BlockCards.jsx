@@ -1,8 +1,17 @@
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 import Heading from '../Heading';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const BlockCards = ({ content, iconMap = null }) => {
+// Lucide React icons
+import {
+  CalendarDays,
+  MapPin,
+  Smartphone,
+  Search,
+  CreditCard,
+  Calculator
+} from 'lucide-react';
+
+const BlockCards = ({ content }) => {
     const { title, subtitle, text, services } = content;
 
     return (
@@ -26,11 +35,25 @@ const BlockCards = ({ content, iconMap = null }) => {
                             <div className="rounded-full bg-theme bg-opacity-5 p-3 
                             sm:p-4 lg:p-5 mb-3 lg:mb-4">
                                 <div className="text-theme_dark">
-                                    {iconMap && service.icon ? (
-                                        <FontAwesomeIcon 
-                                            icon={iconMap[service.icon] || iconMap.faCalendarCheck} 
-                                            className="h-5 w-5 sm:h-7 sm:w-7 lg:h-9 lg:w-9" 
-                                        />
+                                    {service.icon ? (
+                                        (() => {
+                                          switch(service.icon) {
+                                            case 'CalendarDays':
+                                              return <CalendarDays className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            case 'MapPin':
+                                              return <MapPin className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            case 'Smartphone':
+                                              return <Smartphone className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            case 'Search':
+                                              return <Search className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            case 'CreditCard':
+                                              return <CreditCard className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            case 'Calculator':
+                                              return <Calculator className="h-5 w-5 sm:h-7 sm:w-7" />;
+                                            default:
+                                              return getServiceIcon(service.type || 'default');
+                                          }
+                                        })()
                                     ) : (
                                         getServiceIcon(service.type || 'default')
                                     )}

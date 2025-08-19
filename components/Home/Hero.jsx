@@ -2,8 +2,7 @@ import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
 import { getJsonString, } from '../../utils/app';
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
@@ -38,15 +37,16 @@ const Hero = ({ content, socials }) => {
                             {
                                 socials.map((social, index) => {
                                     const { href, icon, title, hideFromHeader } = social;
-                                    const { name, brands } = icon;
-                                    const iconRef = brands ? fab[name] : fas[name];
+                                    const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
+                                    
+                                    const IconComponent = getIconComponent(name);
 
 
                                     return (
                                         <a key={index} href={href} rel="noreferrer"
                                             target="_blank" aria-label={title}
                                             className={`${hideFromHeader && `hidden`}`}>
-                                            <Icon icon={iconRef} size={`xl`} />
+                                            <IconComponent className="h-6 w-6" />
                                         </a>
                                     )
                                 })
@@ -102,14 +102,15 @@ const Hero = ({ content, socials }) => {
                     {
                         socials.map((social, index) => {
                             const { href, icon, title, hideFromHeader } = social;
-                            const { name, brands } = icon;
-                            const iconRef = brands ? fab[name] : fas[name];
+                            const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
+                            
+                            const IconComponent = getIconComponent(name);
 
                             return (
                                 <a key={index} href={href} rel="noreferrer"
                                     target="_blank" aria-label={title}
                                     className={`${hideFromHeader && `hidden`}`}>
-                                    <Icon icon={iconRef} size={`2xl`} />
+                                    <IconComponent className="h-8 w-8" />
                                 </a>
                             )
                         })
