@@ -23,9 +23,8 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         {
                             socials.map((social, i) => {
                                 const { href, icon, title, hideFromFooter } = social;
-                                const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
 
-                                const IconComponent = getIconComponent(name);
+                                const IconComponent = getIconComponent(icon);
 
                                 return (
                                     <li className={`pt-2 ${hideFromFooter && `hidden`}`} key={i}>
@@ -33,7 +32,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                                             rel={`${followExternalLinks ? `noopener noreferrer` :
                                                 `noopener noreferrer nofollow`}`} target="_blank"
                                             className={`lg:text-base`}>
-                                            <div className={`flex items-center gap-1`}>
+                                            <div className={`flex items-center gap-3`}>
                                                 <IconComponent className="h-5 w-5" />
                                                 <span className={`lg:text-base transition-all hover:text-theme`}>
                                                     {title}
@@ -54,14 +53,13 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         {
                             pages.map((page, i) => {
                                 const { href, icon, title, hideFromHeader } = page;
+                                const IconComponent = getIconComponent(icon);
 
                                 return (
-                                    <li className={`pt-2 ${hideFromHeader && `hidden`}`} key={i}>
-                                        <Link href={href} className={`flex items-center gap-1`}>
-                                            <div className={`w-6 h-5 flex items-center 
-                                        justify-start`}>
-                                                {React.createElement(getIconComponent(typeof icon === 'string' ? icon : (icon?.name || 'globe')), { className: "h-5 w-5" })}
-                                            </div>
+                                    <li className={`pt-2 ${hideFromHeader && `hidden`}`}
+                                        key={i}>
+                                        <Link href={href} className={`flex items-center gap-3`}>
+                                            <IconComponent className="h-5 w-5" />
                                             <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>
                                                 {title}

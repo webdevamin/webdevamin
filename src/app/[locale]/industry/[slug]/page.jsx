@@ -14,7 +14,6 @@ import Heading from '../../../../../components/Heading'
 import ButtonOne from '../../../../../components/Buttons/ButtonOne'
 import { PricingCard } from '../../../../../components/Cards/PricingCard'
 import Image from 'next/image'
-import { getIconComponent } from '../../../../../utils/iconMapper';
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'

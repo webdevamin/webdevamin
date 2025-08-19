@@ -21,9 +21,9 @@ import {
   // Business & Professional Icons
   Briefcase,
   Building,
-  Award,
-  Users,
-  User,
+  Image,
+  Bookmark,
+  BookUser,
   
   // Content & File Icons
   FileText,
@@ -75,9 +75,10 @@ const iconMap = {
   // Business & Professional
   'briefcase': Briefcase,
   'building': Building,
-  'award': Award,
-  'users': Users,
-  'user': User,
+  'image': Image,
+  'bookmark': Bookmark,
+  // Support both legacy and canonical names
+  'address-book': BookUser,
   
   // Content & File
   'file-text': FileText,
@@ -117,8 +118,10 @@ const iconMap = {
  */
 export const getIconComponent = (iconName, props = {}) => {
   if (!iconName) return Globe;
-  
-  const IconComponent = iconMap[iconName] || Globe;
+  // Normalize: accept strings, numbers, etc., support kebab/pascal, case-insensitive
+  const keyRaw = String(iconName).trim();
+  const keyLower = keyRaw.toLowerCase();
+  const IconComponent = iconMap[keyRaw] || iconMap[keyLower] || Globe;
   return IconComponent;
 };
 
