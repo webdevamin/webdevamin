@@ -3,13 +3,11 @@ import Footer from '../../../../../components/Layouts/Footer'
 import PageLayout from '../../../../../components/Layouts/PageLayout'
 import Contact from '../../../../../components/Contact'
 import BlockAccordion from '../../../../../components/Blocks/BlockAccordion'
-import Testimonials from '../../../../../components/Home/Testimonials'
 import CallToAction from '../../../../../components/Home/CallToAction'
 import JsonLd from '../../../../../components/SEO/JsonLd'
 import { notFound } from 'next/navigation'
 import { routing } from '../../../../i18n/routing'
 import BlockLayoutOne from '../../../../../components/Layouts/BlockLayoutOne'
-import BlockLayoutTwo from '../../../../../components/Layouts/BlockLayoutTwo'
 import Heading from '../../../../../components/Heading'
 import ButtonOne from '../../../../../components/Buttons/ButtonOne'
 import { PricingCard } from '../../../../../components/Cards/PricingCard'
@@ -17,6 +15,7 @@ import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
+import { renderIcon } from '../../../../../utils/iconMapper'
 
 async function getData(locale, slug) {
   if (!routing.locales.includes(locale)) {
@@ -111,60 +110,57 @@ const FeaturesSection = ({ content }) => {
 
 // Portfolio Case Component
 const PortfolioCase = ({ content }) => {
-  const { title, subtitle, description, project } = content;
-  const { name, url, image, description: projectDesc, features, results } = project;
+  const { title, subtitle, description, project, highlights } = content;
+  const { name, url, image, description: projectDesc } = project;
 
   return (
-    <BlockLayoutTwo title={title} slug="portfolio-case">
-      <div className="md:basis-6/12">
+    <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-between lg:items-center">
+      <div className="lg:flex-1">
         <Heading title={title} subtitle={subtitle} />
         <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold text-theme mb-4">{name}</h3>
-          <p className="text-gray-700 mb-4">{projectDesc}</p>
-
-          <div className="mb-6">
-            <h4 className="font-semibold text-gray-800 mb-3">Functionaliteiten:</h4>
-            <ul className="space-y-1">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="text-theme mr-2">✓</span>
-                  <span className="text-gray-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
+        {/* Highlights Section */}
+        {highlights && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
+            {highlights.map((highlight, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center shadow-md border 
+                border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-5 lg:p-6 
+                relative justify-center transform transition-all duration-300 hover:scale-105 overflow-hidden"
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <div className="rounded-full bg-theme bg-opacity-5 p-3 sm:p-4 lg:p-5 mb-3 lg:mb-4">
+                  <div className="text-theme_dark">
+                    {renderIcon(highlight.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7' })}
+                  </div>
+                </div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 
+                text-gray-800 break-words hyphens-auto w-full px-1">
+                  {highlight.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 break-words">
+                  {highlight.description}
+                </p>
+              </div>
+            ))}
           </div>
-
-          <div className="mb-4">
-            <h4 className="font-semibold text-gray-800 mb-3">Resultaten:</h4>
-            <ul className="space-y-1">
-              {results.map((result, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="text-theme mr-2">→</span>
-                  <span className="text-gray-700">{result}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <ButtonOne href={url} text="Bekijk Website" target="_blank" />
-        </div>
+        )}
       </div>
-
-      <div className="mt-10 md:mt-0 md:basis-6/12">
-        <div className="relative">
+      <div className="w-full lg:w-auto">
+        <div className="relative w-full max-w-[600px] mx-auto">
           <Image
             src={image}
-            alt={`${name} taxi website`}
+            alt={projectDesc}
             width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-            style={{ objectFit: 'cover' }}
+            height={600}
+            className="w-full h-auto object-contain"
+            sizes="(max-width: 768px) 100vw, 600px"
+            priority
           />
         </div>
       </div>
-    </BlockLayoutTwo>
+    </div>
   );
 };
 
@@ -184,9 +180,9 @@ const PricingSection = ({ content }) => {
           </div>
           {(items && items.length > 0) && (
             <div className="mt-12">
-              <div className="flex flex-col gap-8 md:flex-row md:justify-end">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch md:justify-end">
                 {items.map((item, index) => (
-                  <div key={index} className="flex-1 min-w-[280px] max-w-sm">
+                  <div key={index} className="min-w-[280px] max-w-sm mx-auto md:mx-0">
                     <PricingCard
                       title={item.title}
                       price={item.price}
@@ -232,13 +228,10 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
         <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
         <PricingSection content={blocks.find(block => block.slug === 'pricing')} />
-
+        <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
         <div className="transition-all duration-500 rounded-xl">
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
         </div>
-
-        <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
-        <Testimonials content={blocks.find(block => block.slug === 'testimonials')} />
         <Contact content={contactBlockData} />
         <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
       </PageLayout>

@@ -9,7 +9,7 @@ const BlockNormal = ({ content, position = 'left' }) => {
     const isImageLeft = position === 'left';
 
     const ImageSection = () => (
-        <div className={`mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0`}>
+        <div className={`mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0 xl:w-full`}>
             <Heading title={title} />
             <Image src={src} priority width={836} height={483} alt={alt} className="object-contain w-full h-auto mt-4" />
         </div>

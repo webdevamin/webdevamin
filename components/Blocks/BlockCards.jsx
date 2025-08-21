@@ -2,14 +2,7 @@ import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 import Heading from '../Heading';
 
 // Lucide React icons
-import {
-  CalendarDays,
-  MapPin,
-  Smartphone,
-  Search,
-  CreditCard,
-  Calculator
-} from 'lucide-react';
+import { renderIcon } from '../../utils/iconMapper';
 
 const BlockCards = ({ content }) => {
     const { title, subtitle, text, services } = content;
@@ -35,28 +28,7 @@ const BlockCards = ({ content }) => {
                             <div className="rounded-full bg-theme bg-opacity-5 p-3 
                             sm:p-4 lg:p-5 mb-3 lg:mb-4">
                                 <div className="text-theme_dark">
-                                    {service.icon ? (
-                                        (() => {
-                                          switch(service.icon) {
-                                            case 'CalendarDays':
-                                              return <CalendarDays className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            case 'MapPin':
-                                              return <MapPin className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            case 'Smartphone':
-                                              return <Smartphone className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            case 'Search':
-                                              return <Search className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            case 'CreditCard':
-                                              return <CreditCard className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            case 'Calculator':
-                                              return <Calculator className="h-5 w-5 sm:h-7 sm:w-7" />;
-                                            default:
-                                              return getServiceIcon(service.type || 'default');
-                                          }
-                                        })()
-                                    ) : (
-                                        getServiceIcon(service.type || 'default')
-                                    )}
+                                    {renderIcon(service.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7' })}
                                 </div>
                             </div>
                             <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 

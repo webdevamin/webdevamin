@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
-import Icon from '../Icon'
 import { getJsonString, } from '../../utils/app';
 import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';

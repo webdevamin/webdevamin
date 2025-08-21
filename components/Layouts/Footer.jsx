@@ -106,12 +106,17 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         {locale === `en` ? `Misc` : `Overige`}
                     </h2>
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
-                        <li className={`pt-1 sm:pt-2`}>
+                        {locale === 'nl' && (
+                            <li className={`pt-3 sm:pt-2`}>
+                                <strong>Adres</strong>: Rodenonnenstraat 21, 8000 Brugge
+                            </li>
+                        )}
+                        <li className={`pt-3 sm:pt-2`}>
                             <Link href={`/${locale}/policy`} className={`lg:text-base transition-all hover:text-theme`}>
                                 {locale === `en` ? `Privacy policy` : `Privacybeleid`}
                             </Link>
                         </li>
-                        <li className={`pt-1 sm:pt-2`}>
+                        <li className={`pt-3 sm:pt-2`}>
                             <div>
                                 Featured on <a href="https://startupfa.me/s/webdevamin?utm_source=webdevamin.com" target="_blank" className={`lg:text-base transition-all hover:text-theme`}>Startup Fame</a>
                             </div>

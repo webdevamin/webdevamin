@@ -6,43 +6,44 @@ import {
   Instagram,
   Github,
   Youtube,
-  
+
   // Communication Icons
   Mail,
   Phone,
   MessageCircle,
-  
+
   // Navigation & Location Icons
   MapPin,
   ExternalLink,
   Home,
   Globe,
-  
+
   // Business & Professional Icons
   Briefcase,
   Building,
   Image,
   Bookmark,
   BookUser,
-  
+
   // Content & File Icons
   FileText,
   Info,
   Settings,
-  
+
   // E-commerce & Actions
   ShoppingCart,
   Heart,
-  
+
   // Calendar & Time Icons
   CalendarDays,
-  
+
   // Technology & Tools Icons
   Smartphone,
   CreditCard,
   Calculator,
   Search,
-  
+  PanelTop,
+
   // Status & Feedback Icons
   CheckCircle,
   Star,
@@ -60,18 +61,18 @@ const iconMap = {
   'instagram': Instagram,
   'github': Github,
   'youtube': Youtube,
-  
+
   // Communication
   'mail': Mail,
   'phone': Phone,
   'message-circle': MessageCircle,
-  
+
   // Navigation & Location
   'map-pin': MapPin,
   'external-link': ExternalLink,
   'home': Home,
   'globe': Globe,
-  
+
   // Business & Professional
   'briefcase': Briefcase,
   'building': Building,
@@ -79,20 +80,20 @@ const iconMap = {
   'bookmark': Bookmark,
   // Support both legacy and canonical names
   'address-book': BookUser,
-  
+
   // Content & File
   'file-text': FileText,
   'info': Info,
   'settings': Settings,
-  
+
   // E-commerce & Actions
   'shopping-cart': ShoppingCart,
   'heart': Heart,
-  
+
   // Calendar & Time
   'calendar-days': CalendarDays,
   'CalendarDays': CalendarDays, // Support both formats
-  
+
   // Technology & Tools
   'smartphone': Smartphone,
   'Smartphone': Smartphone, // Support both formats
@@ -102,7 +103,9 @@ const iconMap = {
   'Calculator': Calculator, // Support both formats
   'search': Search,
   'Search': Search, // Support both formats
-  
+  'panel-top': PanelTop,
+  'PanelTop': PanelTop,
+
   // Status & Feedback
   'check-circle': CheckCircle,
   'CheckCircle': CheckCircle, // Support both formats
@@ -141,7 +144,7 @@ export const renderIcon = (iconName, props = {}) => {
     size: 20,
     ...props
   };
-  
+
   return <IconComponent {...defaultProps} />;
 };
 
