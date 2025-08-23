@@ -111,56 +111,51 @@ const FeaturesSection = ({ content }) => {
 // Portfolio Case Component
 const PortfolioCase = ({ content }) => {
   const { title, subtitle, description, project, highlights } = content;
-  const { name, url, image, description: projectDesc } = project;
+  const { image, description: projectDesc } = project;
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-between lg:items-center">
-      <div className="lg:flex-1">
-        <Heading title={title} subtitle={subtitle} />
-        <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
-
-        {/* Highlights Section */}
-        {highlights && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
-            {highlights.map((highlight, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center shadow-md border 
-                border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-5 lg:p-6 
-                relative justify-center transform transition-all duration-300 hover:scale-105 overflow-hidden"
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="rounded-full bg-theme bg-opacity-5 p-3 sm:p-4 lg:p-5 mb-3 lg:mb-4">
-                  <div className="text-theme_dark">
-                    {renderIcon(highlight.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7' })}
-                  </div>
-                </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 
-                text-gray-800 break-words hyphens-auto w-full px-1">
-                  {highlight.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 break-words">
-                  {highlight.description}
-                </p>
-              </div>
-            ))}
+    <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
+      <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
+        <div className="lg:flex-1">
+          <div className="mb-6 lg:mb-10">
+            <Heading title={title} subtitle={subtitle} />
+            <div dangerouslySetInnerHTML={{ __html: description }} />
           </div>
-        )}
-      </div>
-      <div className="w-full lg:w-auto">
-        <div className="relative w-full max-w-[600px] mx-auto">
-          <Image
-            src={image}
-            alt={projectDesc}
-            width={600}
-            height={600}
-            className="w-full h-auto object-contain"
-            sizes="(max-width: 768px) 100vw, 600px"
-            priority
-          />
+
+          {/* Highlights Section */}
+          {highlights && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6">
+              {highlights.map((highlight, index) => (
+                <div
+                  key={index}
+                  className="flex shadow-md border 
+                border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-3 sm:p-4 lg:p-6 relative transform transition-all duration-300 hover:scale-105 items-center justify-center"
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                >
+                  <span className="stroke-text pr-4 text-3xl">{highlight.number}</span>
+                  <h3 className="text-sm sm:text-base font-bold text-gray-800 break-words hyphens-auto w-full mb-0">
+                    {highlight.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="w-full lg:w-auto">
+          <div className="relative w-full max-w-[400px] mx-auto">
+            <Image
+              src={image}
+              alt={projectDesc}
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain max-w-[400px]"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 400px"
+              style={{ maxWidth: '400px', height: 'auto' }}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </BlockLayoutOne>
   );
 };
 
@@ -171,7 +166,7 @@ const PricingSection = ({ content }) => {
     <BlockLayoutOne title={title} slug={`pricing`} includeMaxWidth={false} position={`right`}>
       <div className="4xl:pl-5 4xl:pr-12 w-full">
         <div className="max-w-6xl ml-auto lg:text-right">
-          <div>
+          <div className='mb-10'>
             <Heading title={title} subtitle={subtitle} />
             <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme 
                 text-white px-4 py-2 mb-7 inline-block uppercase 
@@ -179,10 +174,10 @@ const PricingSection = ({ content }) => {
             <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
           {(items && items.length > 0) && (
-            <div className="mt-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch md:justify-end">
+            <div className="mt-12 pt-4">
+              <div className="flex flex-wrap justify-end items-stretch gap-10">
                 {items.map((item, index) => (
-                  <div key={index} className="min-w-[280px] max-w-sm mx-auto md:mx-0">
+                  <div key={index}>
                     <PricingCard
                       title={item.title}
                       price={item.price}

@@ -11,10 +11,12 @@ export function PricingCard({
     buttonText = "Kies pakket",
     buttonHref = "/contact",
     popular = false,
-    className = ""
+    className = "",
+    phoneHref = "tel:+32470930916",
+    phoneLabel = "Bel nu: +32 470 93 09 16"
 }) {
     return (
-        <Card className={`max-w-sm flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform scale-105' : ''} ${className}`}>
+        <Card className={`w-full flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform scale-105' : ''} ${className}`}>
             <div className="flex-grow">
                 <div className="flex items-center mb-4">
                     {popular && (
@@ -43,7 +45,7 @@ export function PricingCard({
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <span className="text-sm text-gray-700">{feature}</span>
+                            <span className="text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: feature }}></span>
                         </li>
                     ))}
                     {excludedFeatures.map((feature, index) => (
@@ -55,7 +57,7 @@ export function PricingCard({
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <span className="text-sm text-gray-500">{feature}</span>
+                            <span className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: feature }}></span>
                         </li>
                     ))}
                 </ul>
@@ -68,6 +70,13 @@ export function PricingCard({
                     }`}
             >
                 {buttonText}
+            </a>
+            <a
+                href={phoneHref}
+                aria-label="Bel ons"
+                className="mt-3 inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200"
+            >
+                {phoneLabel}
             </a>
         </Card>
     );

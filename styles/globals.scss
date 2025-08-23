@@ -261,6 +261,14 @@ p a {
   height: 100%;
 }
 
+.stroke-text {
+  color: transparent;
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #e91122;
+}
+
 /* Animations for FAQ and other interactive components */
 @keyframes fadeIn {
   0% {

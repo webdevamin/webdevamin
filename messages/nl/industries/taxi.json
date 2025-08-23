@@ -293,21 +293,21 @@
             "component": "portfolio",
             "title": "Succesverhaal: AN Taxi",
             "subtitle": "Klantervaring",
-            "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Wij hebben een complete taxi website ontwikkeld met alle moderne functionaliteiten.</p>",
+            "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, hebben wij een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>deze website</a> voor meer informatie.</p>",
             "highlights": [
                 {
-                    "icon": "Clock",
-                    "title": "Meer dan 30% tijdsbesparing",
+                    "number": "30%",
+                    "title": "Tijdsbesparing",
                     "description": "Automatisering van boekingen en administratie bespaart dagelijks uren werk"
                 },
                 {
-                    "icon": "Users",
-                    "title": "Bijna 2x meer klanten",
+                    "number": "1.5x",
+                    "title": "Meer klanten",
                     "description": "Online zichtbaarheid en professionele uitstraling trekken meer klanten aan"
                 },
                 {
-                    "icon": "TrendingUp",
-                    "title": "3x meer conversies",
+                    "number": "3x",
+                    "title": "Meer conversies",
                     "description": "Supergoede website met optimale gebruikerservaring verhoogt boekingen"
                 }
             ],
@@ -332,12 +332,12 @@
                     "currency": "€",
                     "period": "/maand",
                     "features": [
-                        "Professionele zakelijke website",
-                        "Gratis mobiele optimalisatie",
-                        "Gratis SEO-optimalisatie",
-                        "Gratis hosting & onderhoud",
-                        "24/7 support",
-                        "Geen opstartkosten"
+                        "Professionele <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>"
                     ],
                     "excludedFeatures": [
                         "Online reserveringssysteem",
@@ -355,16 +355,16 @@
                     "period": "/maand",
                     "popular": true,
                     "features": [
-                        "Professionele zakelijke website",
-                        "Gratis mobiele optimalisatie",
-                        "Gratis SEO-optimalisatie",
-                        "Gratis hosting & onderhoud",
-                        "24/7 support",
-                        "Geen opstartkosten",
-                        "Online reserveringssysteem",
-                        "Automatische rittenberekening",
-                        "Geautomatiseerde emails",
-                        "Adresvoorinvulling navigatie-app"
+                        "Professionele <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>",
+                        "Online <strong>reserveringssysteem</strong>",
+                        "Automatische <strong>rittenberekening</strong>",
+                        "Geautomatiseerde <strong>emails</strong>",
+                        "Adresvoorinvulling <strong>navigatie-app</strong>"
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Kies Premium Pakket",
