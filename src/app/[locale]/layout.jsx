@@ -6,13 +6,30 @@ import { routing } from '../../i18n/routing';
 import '../../../styles/globals.scss';
 import PostHogProvider from '../../../components/PostHogProvider';
 import { Quicksand, Mohave } from 'next/font/google';
+import { headers } from 'next/headers';
 
+export async function generateMetadata() {
+  const headersList = headers();
+  const host = headersList.get('host');
 
-export const metadata = {
-  icons: {
-    icon: '/favicon.ico',
-  },
-};
+  const baseMetadata = {
+    icons: {
+      icon: '/favicon.ico',
+    },
+  };
+
+  if (host !== 'webdevamin.com') {
+    return {
+      ...baseMetadata,
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  return baseMetadata;
+}
 
 const quicksand = Quicksand({
   subsets: ['latin'],
