@@ -175,7 +175,7 @@ const PricingSection = ({ content }) => {
           </div>
           {(items && items.length > 0) && (
             <div className="mt-12 pt-4">
-              <div className="flex flex-wrap justify-end items-stretch gap-10">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-end items-stretch gap-10">
                 {items.map((item, index) => (
                   <div key={index}>
                     <PricingCard

@@ -13,12 +13,12 @@ export function PricingCard({
     popular = false,
     className = "",
     phoneHref = "tel:+32470930916",
-    phoneLabel = "Bel nu: +32 470 93 09 16"
+    phoneLabel = "Of Bel Nu!"
 }) {
     return (
-        <Card className={`w-full flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform scale-105' : ''} ${className}`}>
+        <Card className={`flex flex-col lg:min-w-[400px] ${popular ? 'border-2 border-theme shadow-lg transform scale-105' : ''} ${className}`}>
             <div className="flex-grow">
-                <div className="flex items-center mb-4">
+                <div className={`flex items-center ${popular ? 'justify-between' : 'justify-end'} mb-4`}>
                     {popular && (
                         <span className="bg-theme text-white px-3 py-1 rounded-full text-xs font-semibold mr-3">
                             Meest Populair
@@ -74,7 +74,7 @@ export function PricingCard({
             <a
                 href={phoneHref}
                 aria-label="Bel ons"
-                className="mt-3 inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200"
+                className="inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200"
             >
                 {phoneLabel}
             </a>
