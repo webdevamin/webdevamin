@@ -9,13 +9,11 @@ import { notFound } from 'next/navigation'
 import { routing } from '../../../../i18n/routing'
 import BlockLayoutOne from '../../../../../components/Layouts/BlockLayoutOne'
 import Heading from '../../../../../components/Heading'
-import ButtonOne from '../../../../../components/Buttons/ButtonOne'
 import { PricingCard } from '../../../../../components/Cards/PricingCard'
 import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
-import { renderIcon } from '../../../../../utils/iconMapper'
 
 async function getData(locale, slug) {
   if (!routing.locales.includes(locale)) {
@@ -117,19 +115,32 @@ const PortfolioCase = ({ content }) => {
     <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
       <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
         <div className="lg:flex-1">
-          <div className="mb-6 lg:mb-10">
-            <Heading title={title} subtitle={subtitle} />
-            <div dangerouslySetInnerHTML={{ __html: description }} />
+          <div className="mb-6 lg:mb-10 flex flex-col lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
+            <div>
+              <Heading title={title} subtitle={subtitle} />
+              <div dangerouslySetInnerHTML={{ __html: description }} />
+            </div>
+            <div className="w-full lg:w-auto my-4">
+              <div className="relative w-full max-w-[400px] mx-auto">
+                <Image
+                  src={image}
+                  alt={projectDesc}
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-contain max-w-[400px] px-5 lg:px-0"
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 400px"
+                  style={{ maxWidth: '400px', height: 'auto' }}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Highlights Section */}
           {highlights && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6">
               {highlights.map((highlight, index) => (
-                <div
-                  key={index}
-                  className="flex shadow-md border 
-                border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-3 sm:p-4 lg:p-6 relative transform transition-all duration-300 hover:scale-105 items-center justify-center"
+                <div key={index} className="flex shadow-md border 
+                border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-5 lg:p-6 relative transform transition-all duration-300 hover:scale-105 items-center justify-center"
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   <span className="stroke-text pr-4 text-3xl">{highlight.number}</span>
@@ -140,19 +151,6 @@ const PortfolioCase = ({ content }) => {
               ))}
             </div>
           )}
-        </div>
-        <div className="w-full lg:w-auto">
-          <div className="relative w-full max-w-[400px] mx-auto">
-            <Image
-              src={image}
-              alt={projectDesc}
-              width={400}
-              height={400}
-              className="w-full h-auto object-contain max-w-[400px]"
-              sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 400px"
-              style={{ maxWidth: '400px', height: 'auto' }}
-            />
-          </div>
         </div>
       </div>
     </BlockLayoutOne>
@@ -174,23 +172,29 @@ const PricingSection = ({ content }) => {
             <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
           {(items && items.length > 0) && (
-            <div className="mt-12 pt-4">
-              <div className="flex flex-col lg:flex-row flex-wrap justify-end items-stretch gap-10">
-                {items.map((item, index) => (
-                  <div key={index}>
-                    <PricingCard
-                      title={item.title}
-                      price={item.price}
-                      currency={item.currency}
-                      period={item.period}
-                      features={item.features}
-                      excludedFeatures={item.excludedFeatures}
-                      buttonText={item.buttonText}
-                      buttonHref={item.buttonHref}
-                      popular={item.popular}
-                    />
-                  </div>
-                ))}
+            <div className="mt-12 lg:pt-4">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-end 
+              items-stretch gap-10">
+                {items.map((item, index) => {
+                  const { title, price, currency, period, features,
+                    excludedFeatures, buttonText, buttonHref, popular } = item;
+
+                  return (
+                    <div key={index}>
+                      <PricingCard
+                        title={title}
+                        price={price}
+                        currency={currency}
+                        period={period}
+                        features={features}
+                        excludedFeatures={excludedFeatures}
+                        buttonText={buttonText}
+                        buttonHref={buttonHref}
+                        popular={popular}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
