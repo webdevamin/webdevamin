@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 const { RESEND_API_KEY, MAIL_TO } = process.env;
 
 export async function POST(req) {

@@ -37,3 +37,4 @@ next-env.d.ts
 
 # Other
 /public/sitemap*
+.open-next
