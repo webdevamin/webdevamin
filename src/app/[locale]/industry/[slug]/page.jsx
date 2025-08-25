@@ -91,7 +91,6 @@ export async function generateMetadata({ params: { locale, slug } }) {
       'Content-Type': 'text/html; charset=utf-8',
       'X-UA-Compatible': 'IE=edge',
     },
-    jsonLd: jsonLd,
   };
 }
 
