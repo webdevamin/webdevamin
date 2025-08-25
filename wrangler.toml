@@ -1,0 +1,19 @@
+# Top-level configuration for your Next.js application on Cloudflare Workers.
+# Use 'wrangler deploy' for production and 'wrangler deploy --env staging' for staging.
+
+name = "webdevamin" # Default to production name
+main = ".open-next/worker.js"
+compatibility_date = "2025-03-25"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# --- Environments ---
+
+[env.production]
+name = "webdevamin"
+
+[env.staging]
+name = "webdevamin-staging"
