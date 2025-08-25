@@ -41,7 +41,14 @@
             "serviceType": "Website Development",
             "provider": {
                 "@type": "LocalBusiness",
-                "name": "Webdevamin"
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
             }
         },
         "faqPage": {
@@ -121,7 +128,14 @@
             "description": "Professionele taxi website laten maken met online reserveringssysteem en SEO-optimalisatie",
             "provider": {
                 "@type": "LocalBusiness",
-                "name": "Webdevamin"
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
             },
             "areaServed": {
                 "@type": "Country",
