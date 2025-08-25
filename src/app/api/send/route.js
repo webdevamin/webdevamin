@@ -49,7 +49,7 @@ export async function POST(req) {
     }
 
     return new Response(
-      JSON.stringify({ message: `Bedankt! Uw bericht werd successvol verstuurd. Wij houden u zo snel mogelijk op hoogte!` }),
+      JSON.stringify({ message: `Bedankt! Uw bericht werd successvol verstuurd. Ik hou u zo snel mogelijk op hoogte!` }),
       {
         status: 200,
         headers: {

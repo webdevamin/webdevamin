@@ -77,7 +77,7 @@
                     "name": "Is mijn taxi website mobiel-vriendelijk?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, alle taxi websites die wij ontwikkelen zijn volledig responsive en geoptimaliseerd voor mobiele apparaten, omdat de meeste klanten via hun smartphone een taxi boeken."
+                        "text": "Ja, alle taxi websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten, omdat de meeste klanten via hun smartphone een taxi boeken."
                     }
                 },
                 {
@@ -85,7 +85,7 @@
                     "name": "Krijg ik ondersteuning na de lancering van mijn website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, wij bieden continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief."
+                        "text": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief."
                     }
                 },
                 {
@@ -93,7 +93,7 @@
                     "name": "Hoe zorg ik ervoor dat mijn website goed vindbaar is in Google?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Wij optimaliseren uw website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie om hoger te ranken in zoekresultaten."
+                        "text": "Ik optimaliseer uw website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie om hoger te ranken in zoekresultaten."
                     }
                 },
                 {
@@ -293,7 +293,7 @@
             "component": "portfolio",
             "title": "Succesverhaal: AN Taxi",
             "subtitle": "Klantervaring",
-            "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, hebben wij een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
+            "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, heb ik een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
             "highlights": [
                 {
                     "number": "40%",
@@ -323,7 +323,7 @@
             "subtitle": "Pakketten voor uw taxibedrijf",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen onze <strong>zakelijke taxi website voor €49 per maand</strong> of ons <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde emails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een voorbeeld van onze professionele taxi website ontwikkeling met een boekingssysteem.</p>",
+            "text": "<p>Kies tussen mijn <strong>zakelijke taxi website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde emails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een voorbeeld van mijn professionele taxi website ontwikkeling met een boekingssysteem.</p>",
             "subsubtitle": "Opties",
             "items": [
                 {
@@ -399,15 +399,15 @@
                 },
                 {
                     "title": "Zal de website mobiel optimaliseerd zijn?",
-                    "description": "Ja, alle taxi websites die wij ontwikkelen zijn volledig responsive en geoptimaliseerd voor mobiele apparaten. Dit is cruciaal omdat de meeste klanten via hun smartphone een taxi boeken, vooral onderweg."
+                    "description": "Ja, alle taxi websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten. Dit is cruciaal omdat de meeste klanten via hun smartphone een taxi boeken, vooral onderweg."
                 },
                 {
                     "title": "Krijg ik ondersteuning na de lancering van mijn taxi website?",
-                    "description": "Ja, wij bieden continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief, zodat u zich kunt focussen op uw taxibedrijf."
+                    "description": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief, zodat u zich kunt focussen op uw taxibedrijf."
                 },
                 {
                     "title": "Hoe zorg ik ervoor dat mijn taxi website goed vindbaar is in Google?",
-                    "description": "Wij optimaliseren uw taxi website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie. Dit zorgt ervoor dat u hoger rankt bij zoekopdrachten zoals 'taxi [uw stad]'."
+                    "description": "Ik optimaliseer uw taxi website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie. Dit zorgt ervoor dat u hoger rankt bij zoekopdrachten zoals 'taxi [uw stad]'."
                 },
                 {
                     "title": "Kan ik zelf content aanpassen op mijn taxi website?",
@@ -424,7 +424,7 @@
             "component": "cta",
             "title": "Klaar om Boekingen te Genereren?",
             "subtitle": "Kies uw pakket: €49 of €69 per maand",
-            "text": "Start met een professionele taxi website vanaf €49 per maand of kies het geavanceerde pakket met boekingssysteem en automatisering voor €69 per maand. We helpen u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe wij uw taxibedrijf online kunnen laten groeien.",
+            "text": "Start met een professionele taxi website vanaf €49 per maand of kies het geavanceerde pakket met boekingssysteem en automatisering voor €69 per maand. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw taxibedrijf online kunnen laten groeien.",
             "button": [
                 {
                     "href": "/contact",

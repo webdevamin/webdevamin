@@ -50,7 +50,7 @@
             "title": "success",
             "color": "white",
             "backgroundColor": "#00c485",
-            "text": "Bedankt, uw bericht werd verstuurd. Indien alles correct ingevuld is, geven wij u wel een seintje."
+            "text": "Bedankt, uw bericht werd verstuurd. Indien alles correct ingevuld is, geef ik u wel een seintje."
         },
         {
             "title": "clienterror",
