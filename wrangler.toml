@@ -9,11 +9,3 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
-
-# --- Environments ---
-
-[env.production]
-name = "webdevamin"
-
-[env.staging]
-name = "webdevamin-staging"
