@@ -25,6 +25,9 @@ async function getData(locale, slug) {
     notFound();
   }
 
+  // This page is Dutch-only, redirect English users
+  if (locale !== 'nl') notFound();
+
   const localesData = (await import(`../../../../../messages/${locale}/locales.json`)).default;
   const socialsData = (await import(`../../../../../messages/${locale}/socials.json`)).default;
   const blogsData = (await import(`../../../../../messages/${locale}/blogs.json`)).default;
@@ -46,7 +49,7 @@ async function getData(locale, slug) {
 
 export async function generateMetadata({ params: { locale, slug } }) {
   const { pageData } = await getData(locale, slug);
-  const { seo, alternates, jsonLd } = pageData;
+  const { seo, alternates } = pageData;
   const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
 
   const defaultImage = image || (locale === `nl` ?
