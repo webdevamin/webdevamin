@@ -1,10 +1,7 @@
 import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
-import { getJsonString, } from '../../utils/app';
-import { Facebook, Twitter, Linkedin, Instagram, Github, Youtube, Globe, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
+import { getIconComponent } from '../../utils/iconMapper';
 
 const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
     const { title, text, button } = content;
@@ -35,53 +32,15 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                         text-opacity-70`}>
                     {
                         socials.map((social, i) => {
-                            const { href, icon, hideFromHeader } = social
-                            const { name } = icon;
-
-                            let iconRef;
-                            switch (name) {
-                                case 'facebook':
-                                    iconRef = <Facebook className="h-6 w-6" />;
-                                    break;
-                                case 'twitter':
-                                    iconRef = <Twitter className="h-6 w-6" />;
-                                    break;
-                                case 'linkedin':
-                                    iconRef = <Linkedin className="h-6 w-6" />;
-                                    break;
-                                case 'instagram':
-                                    iconRef = <Instagram className="h-6 w-6" />;
-                                    break;
-                                case 'github':
-                                    iconRef = <Github className="h-6 w-6" />;
-                                    break;
-                                case 'youtube':
-                                    iconRef = <Youtube className="h-6 w-6" />;
-                                    break;
-                                case 'globe':
-                                    iconRef = <Globe className="h-6 w-6" />;
-                                    break;
-                                case 'mail':
-                                    iconRef = <Mail className="h-6 w-6" />;
-                                    break;
-                                case 'phone':
-                                    iconRef = <Phone className="h-6 w-6" />;
-                                    break;
-                                case 'map-pin':
-                                    iconRef = <MapPin className="h-6 w-6" />;
-                                    break;
-                                case 'external-link':
-                                    iconRef = <ExternalLink className="h-6 w-6" />;
-                                    break;
-                                default:
-                                    iconRef = <></>;
-                            }
+                            const { href, icon, title, hideFromHeader } = social;
+                            const IconComponent = getIconComponent(icon);
 
                             return (
-                                <a key={i} href={href} rel="noreferrer nofollow"
+                                <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
-                                    target="_blank" aria-label={`${name} icon`}>
-                                    {iconRef}
+                                    rel="noreferrer nofollow"
+                                    target="_blank" aria-label={title}>
+                                    <Icon icon={<IconComponent className="h-6 w-6" />} size={`xl`} />
                                 </a>
                             )
                         })
@@ -95,33 +54,15 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                 <div className={`px-10 flex gap-8`}>
                     {
                         socials.map((social, i) => {
-                            const { href, icon, hideFromHeader } = social
-                            const { name } = icon;
-                            
-                            const getIconComponent = (iconName) => {
-                                const iconMap = {
-                                    'facebook': Facebook,
-                                    'twitter': Twitter,
-                                    'linkedin': Linkedin,
-                                    'instagram': Instagram,
-                                    'github': Github,
-                                    'youtube': Youtube,
-                                    'globe': Globe,
-                                    'mail': Mail,
-                                    'phone': Phone,
-                                    'map-pin': MapPin,
-                                    'external-link': ExternalLink
-                                };
-                                return iconMap[iconName] || Globe;
-                            };
-
-                            const IconComponent = getIconComponent(name);
+                            const { href, icon, title, hideFromHeader } = social;
+                            const IconComponent = getIconComponent(icon);
 
                             return (
-                                <a key={i} href={href} rel="noreferrer nofollow"
+                                <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
-                                    target="_blank" aria-label={`${name} icon`}>
-                                    <IconComponent className="h-8 w-8" />
+                                    rel="noreferrer nofollow"
+                                    target="_blank" aria-label={title}>
+                                    <Icon icon={<IconComponent className="h-8 w-8" />} size={`2xl`} />
                                 </a>
                             )
                         })

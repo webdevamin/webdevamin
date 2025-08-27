@@ -78,7 +78,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                 </div>
                 <div className={`border-b border-b-white sm:border-none pb-8 sm:py-0 col-span-2 sm:col-span-1 ${!blogs.length && `hidden`}`}>
                     <h2 className={`text-xl mb-2 text-light`}>
-                        {locale === `en` ? `Latest blogs` : `Laatste blogs`}
+                        {locale === `nl` ? `Laatste blogs` : `Latest blogs`}
                     </h2>
                     <ul className={`text_light_all`}>
                         {
@@ -98,12 +98,12 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                     </ul>
                     <div className={`md:mt-4`}>
                         <ButtonThree href={`/${locale}/blogs`} color={`text_theme_all`}
-                            text={locale === `en` ? `All blogs` : `Alle blogs`} />
+                            text={locale === `nl` ? `Alle blogs` : `All blogs`} />
                     </div>
                 </div>
                 <div className={`text_light_all`}>
                     <h2 className={`text-xl mb-2`}>
-                        {locale === `en` ? `Misc` : `Overige`}
+                        {locale === `nl` ? `Overige` : `Misc`}
                     </h2>
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         {locale === 'nl' && (
@@ -113,7 +113,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         )}
                         <li className={`pt-3 sm:pt-2`}>
                             <Link href={`/${locale}/policy`} className={`lg:text-base transition-all hover:text-theme`}>
-                                {locale === `en` ? `Privacy policy` : `Privacybeleid`}
+                                {locale === `nl` ? `Privacybeleid` : `Privacy policy`}
                             </Link>
                         </li>
                         <li className={`pt-3 sm:pt-2`}>

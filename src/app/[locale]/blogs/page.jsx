@@ -85,10 +85,10 @@ const Blogs = async ({ params: { locale } }) => {
                             blogsData.map((blog, index) => {
                                 const { title, img, slug, description, dev, border } = blog;
                                 const { src, alt } = img;
-                                const text = locale === `en` ? `Read more` : `Verder lezen`;
+                                const text = locale === `nl` ? `Lees verder` : `Read more`;
 
                                 return (
-                                    <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                    <Link href={`/${locale}/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                         <CardTwo imgUrl={src} title={title} text={text}
                                             subtitle={description} slug={slug} alt={alt}
                                             badge={dev && { bText: `dev` }} border={border} type={`blog`} />

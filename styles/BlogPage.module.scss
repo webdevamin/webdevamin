@@ -23,12 +23,12 @@
   // Headings
   h2 {
     @apply text-lg sm:text-xl mb-3 font-bold lg:text-2xl xl:text-3xl lg:mb-5 uppercase xl:mb-7 mt-8 xl:mt-10;
-    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+    font-family: var(--font-quicksand), -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   h3 {
     @apply text-base sm:text-lg mb-2 font-semibold lg:text-xl xl:text-2xl lg:mb-4 uppercase xl:mb-5 mt-6 xl:mt-8;
-    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue", sans-serif;
+    font-family: var(--font-quicksand), -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   h4, h5, h6 {

@@ -100,7 +100,7 @@ const Blog = async ({ params: { locale, slug } }) => {
 
     const button = [{
         href: `#${slug}`,
-        text: locale === `en` ? `Read` : `Lees`
+        text: locale === `nl` ? `Lees verder` : `Read more`
     }];
 
     const heroContent = {
@@ -114,12 +114,15 @@ const Blog = async ({ params: { locale, slug } }) => {
             <PageLayout>
                 <div id={slug} className={styles.blogContainer}>
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`Nelative aspect-[1.7/1] mb-3 md:mb-5 lg:mb-6`}>
+                        <div className={`relative w-full mb-3 md:mb-5 lg:mb-6`}>
                             <Image
-                                src={src} fill={true} alt={alt}
-                                className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`}`}
+                                width={1152}
+                                height={400}
+                                src={src}
+                                alt={alt}
+                                className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`} w-full h-auto`}
                                 style={{ objectFit: `cover` }} priority={true}
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                                sizes="100vw" />
                         </div>
                         <div className={styles.socialSharesContainer}>
                             <SocialShares url={blogData.seo.canonical} title={`Blog - ${title}`}
