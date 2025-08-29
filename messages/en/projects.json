@@ -4,6 +4,7 @@
         "slug": "webleadr",
         "niche": "marketing",
         "link": "https://webleadr.com",
+        "buttonText": "Visit website",
         "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
         "img": {
             "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
@@ -66,6 +67,7 @@
         "slug": "gympouch",
         "niche": "fitness",
         "price": "€149/month",
+        "buttonText": "Visit website",
         "description": "A gym administration app to manage appointments, store workouts and prices, and more.",
         "img": {
             "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
@@ -101,6 +103,7 @@
         "niche": "photography CRM",
         "price": "€129/month",
         "link": "https://eyefine.be",
+        "buttonText": "Visit website",
         "description": "Web application with a CRM for photographers and real estate agents. The platform makes it easier to photograph houses, share the photos, and follow up.",
         "img": {
             "src": "https://bucket.webdevamin.com/eyefine-portfolio.png",
@@ -135,6 +138,7 @@
         "slug": "my-admin",
         "niche": "administration",
         "price": "€79/month",
+        "buttonText": "Visit website",
         "description": "Administration app with login system to modify data from an external website or web app and receive messages from any event.",
         "img": {
             "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
@@ -170,6 +174,7 @@
         "niche": "construction",
         "price": "€49/month",
         "link": "https://bakiji-construct.be",
+        "buttonText": "Visit website",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
             "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
@@ -205,6 +210,7 @@
         "niche": "insurance",
         "price": "€89/month",
         "link": "https://solarisinsurance.org",
+        "buttonText": "Visit website",
         "description": "Web application for an insurance agency with the ability to fill out various forms with push notifications and live video meetings.",
         "img": {
             "src": "https://bucket.webdevamin.com/solaris_alpha.png",
@@ -239,6 +245,7 @@
         "slug": "restaurant-china-brugge",
         "niche": "restaurant",
         "price": "€49/month",
+        "buttonText": "Visit website",
         "description": "Restaurant website with general information such as location, gallery, reviews, and a reservation form.",
         "img": {
             "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
@@ -288,6 +295,7 @@
         "niche": "construction",
         "price": "€49/month",
         "link": "https://black-wood.be",
+        "buttonText": "Visit website",
         "description": "Website for construction company with information about the company. Users can submit quotes for services such as renovation and window installations.",
         "img": {
             "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
@@ -323,6 +331,7 @@
         "niche": "transport",
         "price": "€49/month",
         "link": "https://verhuisdienst-liftservice.be",
+        "buttonText": "Visit website",
         "description": "A business website for a moving/transport company featuring general information, a gallery, and a quote form.",
         "img": {
             "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
@@ -358,6 +367,7 @@
         "niche": "restaurant",
         "price": "€49/month",
         "link": "https://pastamaria.be",
+        "buttonText": "Visit website",
         "description": "A website for an Italian restaurant with general information, a menu, and more.",
         "img": {
             "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
@@ -386,6 +396,7 @@
         "niche": "construction",
         "price": "€49/month",
         "link": "https://williamprojecten.be",
+        "buttonText": "Visit website",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
             "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
@@ -421,6 +432,7 @@
         "niche": "fitness",
         "price": "€69/month",
         "link": "https://gritbrugge.be/",
+        "buttonText": "Visit website",
         "description": "A modern fitness application helping personal trainers schedule sessions and track client progress.",
         "img": {
             "src": "https://bucket.webdevamin.com/grit-portfolio.png",

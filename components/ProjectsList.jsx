@@ -20,9 +20,8 @@ const ProjectsList = ({ projectsData }) => {
         >
             {projectsData.length > 0 ? (
                 projectsData.map((project, i) => {
-                    const { title, img, slug, description, border, link, technologies = [], niche = '', price } = project;
+                    const { title, img, slug, description, border, link, technologies = [], niche = '', price, buttonText } = project;
                     const { src, alt } = img;
-                    const text = locale === `en` ? `Read more` : `Verder lezen`;
 
                     return (
                         <div
@@ -35,7 +34,7 @@ const ProjectsList = ({ projectsData }) => {
                             <CardTwo
                                 imgUrl={src}
                                 title={title}
-                                text={text}
+                                text={buttonText}
                                 subtitle={description}
                                 slug={slug}
                                 alt={alt}

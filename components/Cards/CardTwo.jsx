@@ -2,20 +2,15 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { Tooltip } from "flowbite-react"
 import Link from 'next/link';
 
 // Example: Projects
-const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt, badgeAltTwo }) => {
-    const pathname = usePathname();
-    const locale = pathname.split('/')[1];
+const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt, badgeAltTwo, text }) => {
     const { bText, bgColor, color } = badge || {};
     const [isHovered, setIsHovered] = useState(false);
 
-    // Determine text based on locale and link presence
-    const buttonText = locale === 'en' ? 'Visit website' : 'Bezoek website';
-
+    
     // Get max 3 primary technologies to show
     const primaryTechs = technologies?.slice(0, 3) || [];
 
@@ -97,7 +92,7 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
                 </p>
                 {link && (
                     <div className="mt-4 flex items-center text-sm font-semibold text-theme_darker hover:text-dark transition-colors">
-                        {buttonText}
+                        {text}
                         <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>

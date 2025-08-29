@@ -2,13 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { getIconComponent } from '../../utils/iconMapper';
 import ButtonThree from '../Buttons/ButtonThree';
 
 const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
-    const pathname = usePathname();
-    const locale = pathname.split('/')[1] || 'en';
+    const locale = useLocale();
 
     return (
         <footer className={`bg-dark p-10 w-screen left-[calc(-50vw+50%)] 
@@ -63,7 +62,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                                 return (
                                     <li className={`pt-2 ${hideFromHeader && `hidden`}`}
                                         key={i}>
-                                        <Link href={`/${locale}${href}`} className={`flex items-center gap-3`}>
+                                        <Link href={`/${locale}${href.startsWith('/') ? '' : '/'}${href}`} className={`flex items-center gap-3`}>
                                             <IconComponent className="h-5 w-5" />
                                             <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>
