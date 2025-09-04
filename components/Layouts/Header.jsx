@@ -25,7 +25,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                     <Link href={`/`}>
                         <Image
                             src={`/images/logo-light.webp`} width={46} height={46}
-                            className={`rounded-lg`} priority={true} alt={`Logo`}
+                            className={`rounded-lg`} priority={true} alt={`Webdevamin Logo`}
                         />
                     </Link>
                     <Navbar.Toggle className='text-dark' />

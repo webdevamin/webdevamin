@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const isDev = process.env.NODE_ENV === 'development';
 const createNextIntlPlugin = require('next-intl/plugin');
 
 const withNextIntl = createNextIntlPlugin();
@@ -8,7 +7,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    unoptimized: isDev,
+    // Ensure custom Cloudflare loader runs in both dev and prod
+    unoptimized: false,
     loader: 'custom',
     loaderFile: './imageLoader.js',
     remotePatterns: [

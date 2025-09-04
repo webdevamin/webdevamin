@@ -186,10 +186,10 @@
             "title": "Taxi Website Laten Maken",
             "text": "Laat uw taxi website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website (€49/maand) of met een automatiserende boekingssysteem (€69/maand).",
             "image": {
-                "src": "https://bucket.webdevamin.com/taxi.svg",
+                "src": "https://bucket.webdevamin.com/taxi.png",
                 "alt": "Een taxichauffeur rijdt tijdens een zonsondergang met een taxi website op de dashboard in de auto.",
-                "width": 900,
-                "height": 630
+                "width": 600,
+                "height": 400
             },
             "button": [
                 {

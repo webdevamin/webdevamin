@@ -20,7 +20,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
             xl:px-40 2xl:px-50 md:pt-14`}>
                 <div className={`flex items-center justify-center ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
-                    <div className="relative max-w-[500px] mx-auto">
+                    <div className="relative max-w-[600px] mx-auto">
                         <Image
                             src={url}
                             priority={true}
@@ -29,6 +29,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                             alt={alt}
                             className="rounded-lg h-auto"
                             style={{ objectFit: objectFit }}
+                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 50vw, 600px"
                         />
                     </div>
                 </div>
