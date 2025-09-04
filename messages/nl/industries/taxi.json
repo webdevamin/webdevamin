@@ -242,14 +242,14 @@
             ],
             "img": {
                 "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
-                "alt": "Computer met codes om een zakelijke website te ontwikkelen in een donkere omgeving."
+                "alt": "Taxi's in druk verkeer bij nachtelijke omgeving."
             }
         },
         {
             "title": "Waarom All-In-One Pakket?",
             "subtitle": "Geen losse systemen, maar één compleet taxi pakket",
             "slug": "why-all-in-one",
-            "text": "<p>Een all-in-one pakket voor uw taxibedrijf is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>hier</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen (of meer, indien er tussenstops zijn). De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dit bespaart u tijd en vermindert administratieve lasten.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen.</p>",
+            "text": "<p>Een all-in-one pakket voor uw taxibedrijf is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen (of meer, indien er tussenstops zijn). De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dit bespaart u tijd en vermindert administratieve lasten.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -310,7 +310,7 @@
             "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, heb ik een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
             "highlights": [
                 {
-                    "number": "40%",
+                    "number": "60%",
                     "title": "Tijdsbesparing",
                     "description": "Automatisering van boekingen en administratie bespaart dagelijks uren werk"
                 },
