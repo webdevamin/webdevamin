@@ -1,10 +1,10 @@
 {
     "seo": {
         "title": "Taxi Website Laten Maken | Vanaf €49/maand All-In-One",
-        "description": "Laat uw taxi website maken vanaf €49 of €69 per maand (met boekingssysteem) met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "description": "Laat uw taxi website maken vanaf €49 of €69 per maand met boekingssysteem met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
         "canonical": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
         "ogTitle": "Taxi Website Laten Maken | Vanaf €49/maand All-In-One",
-        "ogDescription": "Laat uw taxi website maken vanaf €49 of €69 per maand (met boekingssysteem) met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "ogDescription": "Laat uw taxi website maken vanaf €49 of €69 per maand met boekingssysteem met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
         "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
         "keywords": "taxi website laten maken, taxibedrijf website €49, taxi boekingssysteem €69, taxi online reserveren, responsive taxi website, SEO voor taxi's, taxi website ontwerp, professionele taxi website"
     },
@@ -60,7 +60,7 @@
                     "name": "Hoeveel kost het om een taxi website te laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een professionele taxi website kost vanaf €49 per maand voor een standaard zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand voor een website met online boekingssysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                        "text": "Een professionele taxi website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand excl. BTW voor een website met online boekingssysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
                     }
                 },
                 {
@@ -184,7 +184,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Taxi Website Laten Maken",
-            "text": "Laat uw taxi website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website (€49/maand) of met een automatiserende boekingssysteem (€69/maand).",
+            "text": "Laat uw taxi website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website voor €49/maand of met een automatiserende boekingssysteem voor €69/maand. Excl. BTW.",
             "image": {
                 "src": "https://bucket.webdevamin.com/taxi.png",
                 "alt": "Een taxichauffeur rijdt tijdens een zonsondergang met een taxi website op de dashboard in de auto.",
@@ -249,7 +249,7 @@
             "title": "Waarom All-In-One Pakket?",
             "subtitle": "Geen losse systemen, maar één compleet taxi pakket",
             "slug": "why-all-in-one",
-            "text": "<p>Een all-in-one pakket voor uw taxibedrijf is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen (of meer, indien er tussenstops zijn). De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dit bespaart u tijd en vermindert administratieve lasten.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen.</p>",
+            "text": "<p>Een all-in-one pakket voor uw taxibedrijf is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen (of meer, indien er tussenstops zijn). De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dit bespaart u tijd en vermindert administratieve lasten.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -337,7 +337,7 @@
             "subtitle": "Pakketten voor uw taxibedrijf",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen mijn <strong>zakelijke taxi website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde emails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een voorbeeld van mijn professionele taxi website ontwikkeling met een boekingssysteem.</p>",
+            "text": "<p>Kies tussen mijn <strong>zakelijke taxi website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde emails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een voorbeeld van mijn professionele taxi website ontwikkeling met een boekingssysteem. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
             "subsubtitle": "Opties",
             "items": [
                 {
