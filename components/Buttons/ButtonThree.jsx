@@ -1,9 +1,8 @@
-import React from 'react'
-import Link from 'next/link';
+import { Link } from '../../src/i18n/navigation'
 import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
-    const isExternalLink = href?.startsWith('http');
+    const isExternalLink = href?.startsWith('http') || href?.startsWith('tel:') || href?.startsWith('mailto:');
 
     // Create external link props
     const externalProps = isExternalLink ? {

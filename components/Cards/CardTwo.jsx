@@ -1,16 +1,15 @@
 'use client';
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image';
 import { Tooltip } from "flowbite-react"
-import Link from 'next/link';
+import { Link } from '../../src/i18n/navigation'
 
 // Example: Projects
 const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, technologies = [], badgeAlt, badgeAltTwo, text }) => {
     const { bText, bgColor, color } = badge || {};
     const [isHovered, setIsHovered] = useState(false);
 
-    
     // Get max 3 primary technologies to show
     const primaryTechs = technologies?.slice(0, 3) || [];
 

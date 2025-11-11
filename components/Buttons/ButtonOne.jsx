@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import React from 'react'
+import { Link } from '../../src/i18n/navigation'
 
 const ButtonOne = ({ href, text, classes, wFit, external,
     input, outline, noMargin }) => {

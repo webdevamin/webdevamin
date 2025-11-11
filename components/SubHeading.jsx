@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SubHeading = ({ title, smallerMarginB = false, center = false }) => {
     return (
         <div className={`${center ? 'text-center' : ''}`}>

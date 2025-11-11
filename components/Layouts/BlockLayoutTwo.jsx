@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BlockLayoutTwo = ({ children, title, slug, position, contentClasses, noPadding = false }) => {
     return (
         <div {...slug && { id: slug }} className={`block_container 

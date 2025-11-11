@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BlockLayoutOne = ({ children, slug, includeMaxWidth = true, textCenter = true, right = false }) => {
     return (
         <div id={slug} className={`z-30 ${includeMaxWidth ? `max-w-5xl mx-auto` : ``} block_container`}>

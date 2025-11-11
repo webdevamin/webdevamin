@@ -1,7 +1,6 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
+import { Link } from '../../src/i18n/navigation'
 import { useLocale } from 'next-intl';
 import { getIconComponent } from '../../utils/iconMapper';
 import ButtonThree from '../Buttons/ButtonThree';
@@ -62,7 +61,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                                 return (
                                     <li className={`pt-2 ${hideFromHeader && `hidden`}`}
                                         key={i}>
-                                        <Link href={`/${locale}${href.startsWith('/') ? '' : '/'}${href}`} className={`flex items-center gap-3`}>
+                                        <Link href={`${href}`} className={`flex items-center gap-3`}>
                                             <IconComponent className="h-5 w-5" />
                                             <span className={`lg:text-base transition-all 
                                                 hover:text-theme`}>
@@ -86,7 +85,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
 
                                 return (
                                     <li className={`pt-2`} key={i}>
-                                        <Link href={`/${locale}/blogs/${slug}`} className={`lg:text-base transition-all 
+                                        <Link href={`/blogs/${slug}`} className={`lg:text-base transition-all 
                                             hover:text-theme`}>
                                             {title}
                                         </Link>
@@ -96,7 +95,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         }
                     </ul>
                     <div className={`md:mt-4`}>
-                        <ButtonThree href={`/${locale}/blogs`} color={`text_theme_all`}
+                        <ButtonThree href={`/blogs`} color={`text_theme_all`}
                             text={locale === `nl` ? `Alle blogs` : `All blogs`} />
                     </div>
                 </div>
@@ -111,7 +110,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                             </li>
                         )}
                         <li className={`pt-3 sm:pt-2`}>
-                            <Link href={`/${locale}/policy`} className={`lg:text-base transition-all hover:text-theme`}>
+                            <Link href={`/policy`} className={`lg:text-base transition-all hover:text-theme`}>
                                 {locale === `nl` ? `Privacybeleid` : `Privacy policy`}
                             </Link>
                         </li>

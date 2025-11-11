@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react'
 import Image from 'next/image';
 import starsImage from '../../public/images/star.webp';
 import { usePathname } from 'next/navigation';

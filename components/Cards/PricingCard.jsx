@@ -1,5 +1,6 @@
 
 import { Card } from "flowbite-react";
+import CtaButton from "../Buttons/CtaButton";
 
 export function PricingCard({
     title,
@@ -62,22 +63,19 @@ export function PricingCard({
                     ))}
                 </ul>
             </div>
-            <a
+            <CtaButton
                 href={buttonHref}
-                className={`inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-4 ${popular
-                    ? 'bg-theme text-white hover:bg-theme_darker focus:ring-theme/20'
-                    : 'border border-theme text-theme hover:bg-theme hover:text-white focus:ring-theme/20'
-                    }`}
-            >
-                {buttonText}
-            </a>
-            <a
+                text={buttonText}
+                variant={popular ? 'primary' : 'outline'}
+                fullWidth
+            />
+            <CtaButton
                 href={phoneHref}
-                aria-label="Bel ons"
-                className="inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200"
-            >
-                {phoneLabel}
-            </a>
+                text={phoneLabel}
+                variant="neutral"
+                fullWidth
+                ariaLabel={phoneLabel}
+            />
         </Card>
     );
 }

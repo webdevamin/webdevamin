@@ -1,7 +1,7 @@
 import Header from '../../../../components/Layouts/Header';
 import PageLayout from '../../../../components/Layouts/PageLayout';
 import Heading from '../../../../components/Heading';
-import Link from 'next/link';
+import { Link } from '../../../../src/i18n/navigation';
 import Contact from '../../../../components/Contact';
 import Footer from '../../../../components/Layouts/Footer';
 import CardTwo from '../../../../components/Cards/CardTwo';
@@ -88,7 +88,7 @@ const Blogs = async ({ params: { locale } }) => {
                                 const text = locale === `nl` ? `Lees verder` : `Read more`;
 
                                 return (
-                                    <Link href={`/${locale}/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                    <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
                                         <CardTwo imgUrl={src} title={title} text={text}
                                             subtitle={description} slug={slug} alt={alt}
                                             badge={dev && { bText: `dev` }} border={border} type={`blog`} />

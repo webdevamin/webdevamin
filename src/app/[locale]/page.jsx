@@ -11,6 +11,7 @@ import PricingSection from '../../../components/Home/Pricing'
 import BlockAccordion from '../../../components/Blocks/BlockAccordion'
 import Services from '../../../components/Home/Services'
 import CallToAction from '../../../components/Home/CallToAction'
+import Location from '../../../components/Location/Location'
 import { notFound } from 'next/navigation'
 import { routing } from '../../i18n/routing'
 import JsonLd from '../../../components/SEO/JsonLd'
@@ -109,7 +110,7 @@ const Index = async ({ params: { locale } }) => {
     <>
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
-      <Hero content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
+      <Hero content={blocks.find(block => block.slug === `hero`)} socials={socialsData} locale={locale} />
       <PageLayout>
         <BlockNormal content={blocks.find(block => block.slug === `about`)} />
         {blocks.find(block => block.slug === `why-all-in-one`) && (
@@ -118,6 +119,9 @@ const Index = async ({ params: { locale } }) => {
         <Services content={blocks.find(block => block.slug === `services`)} />
         <Projects content={blocks.find(block => block.slug === `projects`)} data={projectsData} />
         <Blogs content={blocks.find(block => block.slug === `blogs`)} data={blogsData} />
+        {locale === 'nl' && blocks.find(block => block.slug === 'location') && (
+          <Location content={blocks.find(block => block.slug === 'location')} />
+        )}
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />

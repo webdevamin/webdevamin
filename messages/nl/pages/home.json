@@ -426,6 +426,24 @@
             ]
         },
         {
+            "title": "Onze Locatie",
+            "subtitle": "Gevestigd in Brugge",
+            "slug": "location",
+            "text": "<p>Wij zijn gevestigd in een inspirerende omgeving, ongeacht of u in <strong>Brugge, West-Vlaanderen</strong> of over de hele wereld werkt. Vanuit deze creatieve en innovatieve context ontwikkel ik professionele websites en webapplicaties voor ondernemers over heel België en daarbuiten. </p><p>Of u nu op zoek bent naar een <strong>webdesigner</strong> of een <strong>freelance webontwikkelaar</strong> - ik sta klaar om uw project te realiseren. Neem gerust contact op voor een persoonlijk gesprek of een vrijblijvende offerte!</p>",
+            "address": "Rodenonnenstraat 21",
+            "city": "8000 Brugge, België",
+            "phone": "+32 470 93 09 16",
+            "email": "amin@webdevamin.com",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Plan een afspraak",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
             "slug": "cta",
             "title": "Klaar om te starten?",
             "text": "Bespaar tijd en kosten terwijl u meer klanten aantrekt en uw winst op lange termijn verhoogt met een professionele zakelijke website! Neem vandaag nog contact op om uw project vrijblijvend te bespreken.",

@@ -1,15 +1,16 @@
-import React from 'react'
 import ButtonOne from '../Buttons/ButtonOne'
+import ButtonThree from '../Buttons/ButtonThree'
 import { getJsonString, } from '../../utils/app';
 import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-const Hero = ({ content, socials }) => {
+const Hero = ({ content, socials, locale }) => {
     const { title, subtitle, text, button, img, types, extra } = content;
     const { src, alt } = img;
 
     const parsedTitle = getJsonString(title);
+
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] mx-auto mt-20 pb-0 xl:py-16`} id={`hero`}>
             <div className={`text-center bg-transparent md:flex md:flex-row-reverse md:justify-evenly md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 xl:px-40 2xl:px-50 md:pt-14`}>
@@ -37,7 +38,7 @@ const Hero = ({ content, socials }) => {
                                 socials.map((social, index) => {
                                     const { href, icon, title, hideFromHeader } = social;
                                     const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
-                                    
+
                                     const IconComponent = getIconComponent(name);
 
 
@@ -79,19 +80,44 @@ const Hero = ({ content, socials }) => {
                         }
                     </Marquee>
                     <div className={`flex flex-col gap-4 lg:flex-row mt-7 lg:mt-10`}>
-                        {
-                            button.map((btn, i) => {
-                                const { href, text } = btn;
-                                const isOdd = i % 2 !== 0 ? true : false;
+                        {locale === 'nl' ? (
+                            <>
+                                {/* Primary CTA: Gratis offerte (keep as is) */}
+                                {button.filter(b => b.href !== '#pricing').slice(0,1).map((btn, i) => (
+                                    <ButtonOne key={`primary-${i}`} href={btn.href} text={btn.text}
+                                        outline={false} noMargin classes={`sm:px-14 md:text-center`} />
+                                ))}
 
-                                return (
-                                    <ButtonOne key={i} href={href} text={text}
-                                        outline={isOdd} noMargin
-                                        classes={`sm:px-14 md:text-center`} />
-                                )
-                            })
-                        }
+                                {/* Secondary CTA: Bel direct styled like second button */}
+                                <ButtonOne
+                                    href={`tel:+32470930916`}
+                                    text={`Bel direct`}
+                                    outline={true}
+                                    noMargin
+                                    classes={`sm:px-14 md:text-center`}
+                                />
+                            </>
+                        ) : (
+                            // Default (EN): keep existing two buttons as ButtonOne
+                            <>
+                                {button.map((btn, i) => {
+                                    const { href, text } = btn;
+                                    const isOdd = i % 2 !== 0;
+                                    return (
+                                        <ButtonOne key={i} href={href} text={text}
+                                            outline={isOdd} noMargin classes={`sm:px-14 md:text-center`} />
+                                    )
+                                })}
+                            </>
+                        )}
                     </div>
+                    {locale === 'nl' && (
+                        <div className="mt-7 md:mt-10 ml-1.5">
+                            {button.filter(b => b.href === '#pricing').map((btn, i) => (
+                                <ButtonThree key={`pricing-${i}`} href={btn.href} text={btn.text} />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
@@ -102,7 +128,7 @@ const Hero = ({ content, socials }) => {
                         socials.map((social, index) => {
                             const { href, icon, title, hideFromHeader } = social;
                             const name = typeof icon === 'string' ? icon : (icon?.name || 'globe');
-                            
+
                             const IconComponent = getIconComponent(name);
 
                             return (

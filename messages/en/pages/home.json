@@ -399,6 +399,24 @@
             ]
         },
         {
+            "title": "Our Location",
+            "subtitle": "Based in Bruges",
+            "slug": "location",
+            "text": "<p>Webdevamin is located in the historic heart of <strong>Bruges</strong>, a city that combines creativity and innovation with centuries-old charm. From this inspiring environment, I develop professional websites and web applications for entrepreneurs throughout Belgium and beyond.</p><p>Whether you're looking for a <strong>web designer in Bruges</strong> or a <strong>freelance web developer</strong> who brings your digital vision to life - I'm ready to realize your project. Feel free to contact me for a personal conversation or a non-binding quote!</p>",
+            "address": "Rodenonnenstraat 21",
+            "city": "8000 Bruges, Belgium",
+            "phone": "+32 470 93 09 16",
+            "email": "amin@webdevamin.com",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Schedule a meeting",
+                    "label": "To contact page",
+                    "external": false
+                }
+            ]
+        },
+        {
             "slug": "cta",
             "title": "Ready to start?",
             "text": "Save time and costs while attracting more customers and increasing your long-term profit with a professional business website! Contact us today to discuss your project without obligation.",
