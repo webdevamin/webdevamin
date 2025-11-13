@@ -19,7 +19,24 @@ const CookieConsent = () => {
     const { update } = useStore();
 
     useEffect(() => {
-        if (!Cookies.get(key)) setHideConsent(false);
+        const existing = Cookies.get(key);
+        if (!existing) {
+            setHideConsent(false);
+        } else {
+            // Sync Consent Mode with stored choice on page load
+            const status = existing === 'enable' ? 'granted' : 'denied';
+            try {
+                const gtag = (typeof window !== 'undefined' && (window.gtag || function(){ (window.dataLayer = window.dataLayer || []).push(arguments); })) || null;
+                if (gtag) {
+                    gtag('consent', 'update', {
+                        ad_storage: status,
+                        analytics_storage: status,
+                        ad_user_data: status,
+                        ad_personalization: status,
+                    });
+                }
+            } catch {}
+        }
     }, [])
 
     const acceptBtn = locale === `en` ? `Accept` : `Akkoord`;
@@ -34,6 +51,18 @@ const CookieConsent = () => {
 
         setHideConsent(true)
         update('enable');
+
+        try {
+            const gtag = (typeof window !== 'undefined' && (window.gtag || function(){ (window.dataLayer = window.dataLayer || []).push(arguments); })) || null;
+            if (gtag) {
+                gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    analytics_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted',
+                });
+            }
+        } catch {}
     }
 
     const declineConsent = () => {
@@ -43,6 +72,18 @@ const CookieConsent = () => {
 
         setHideConsent(true)
         update('disable');
+
+        try {
+            const gtag = (typeof window !== 'undefined' && (window.gtag || function(){ (window.dataLayer = window.dataLayer || []).push(arguments); })) || null;
+            if (gtag) {
+                gtag('consent', 'update', {
+                    ad_storage: 'denied',
+                    analytics_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied',
+                });
+            }
+        } catch {}
     }
 
     return (
