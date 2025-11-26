@@ -165,7 +165,7 @@ const PricingSection = ({ content }) => {
   return (
     <BlockLayoutOne title={title} slug={`pricing`} includeMaxWidth={false} position={`right`}>
       <div className="4xl:pl-5 4xl:pr-12 w-full">
-        <div className="max-w-6xl ml-auto lg:text-right">
+        <div className="max-w-7xl ml-auto lg:text-right">
           <div className='mb-10'>
             <Heading title={title} subtitle={subtitle} />
             <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme 
@@ -175,8 +175,7 @@ const PricingSection = ({ content }) => {
           </div>
           {(items && items.length > 0) && (
             <div className="mt-12 lg:pt-4">
-              <div className="flex flex-col lg:flex-row flex-wrap justify-end 
-              items-stretch gap-10">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-8">
                 {items.map((item, index) => {
                   const { title, price, currency, period, features,
                     excludedFeatures, buttonText, buttonHref, popular } = item;

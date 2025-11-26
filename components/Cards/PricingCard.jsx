@@ -17,7 +17,7 @@ export function PricingCard({
     phoneLabel = "Of Bel Nu!"
 }) {
     return (
-        <Card className={`flex flex-col lg:min-w-[400px] ${popular ? 'border-2 border-theme shadow-lg transform scale-105' : ''} ${className}`}>
+        <Card className={`flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform lg:scale-105' : ''} ${className}`}>
             <div className="flex-grow">
                 <div className={`flex items-center ${popular ? 'justify-between' : 'justify-end'} mb-4`}>
                     {popular && (

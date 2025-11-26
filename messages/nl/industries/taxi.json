@@ -389,6 +389,25 @@
                     "excludedFeatures": [],
                     "buttonText": "Kies Premium Pakket",
                     "buttonHref": "/contact"
+                },
+                {
+                    "title": "Op Maat",
+                    "price": "Maatwerk",
+                    "currency": "",
+                    "period": "",
+                    "features": [
+                        "<strong>Volledig gepersonaliseerde</strong> website",
+                        "Aangepast aan <strong>uw specifieke behoeften</strong>",
+                        "Extra functionaliteiten <strong>op maat</strong>",
+                        "Unieke <strong>ontwerp</strong> en <strong>branding</strong>",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "24/7 <strong>support</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Heeft u specifieke wensen die niet volledig aansluiten bij onze Standaard of Premium pakketten? Geen probleem! Ik ontwikkel een volledig op maat gemaakte taxi website die perfect aansluit bij uw unieke bedrijfsbehoeften en doelstellingen.",
+                    "buttonText": "Vraag Offerte Aan",
+                    "buttonHref": "/contact"
                 }
             ]
         },
