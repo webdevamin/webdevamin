@@ -20,13 +20,22 @@ async function getData(locale, slug) {
     notFound();
   }
 
-  // Only handle taxi-website-laten-maken for now
-  if (slug !== 'taxi-website-laten-maken') {
+  // Map slugs to their corresponding JSON file names per locale
+  const slugToFileMap = {
+    nl: {
+      'taxi-website-laten-maken': 'taxi',
+    },
+    en: {
+      'taxi-website-development': 'taxi',
+    },
+  };
+
+  const localeMap = slugToFileMap[locale];
+  if (!localeMap || !localeMap[slug]) {
     notFound();
   }
 
-  // This page is Dutch-only, redirect English users
-  if (locale !== 'nl') notFound();
+  const fileName = localeMap[slug];
 
   const localesData = (await import(`../../../../../messages/${locale}/locales.json`)).default;
   const socialsData = (await import(`../../../../../messages/${locale}/socials.json`)).default;
@@ -34,7 +43,7 @@ async function getData(locale, slug) {
   const pagesData = (await import(`../../../../../messages/${locale}/pages.json`)).default;
   const contactBlockData = (await import(`../../../../../messages/${locale}/contactBlock.json`)).default;
   const projectsData = (await import(`../../../../../messages/${locale}/projects.json`)).default;
-  const pageData = (await import(`../../../../../messages/${locale}/industries/taxi.json`)).default;
+  const pageData = (await import(`../../../../../messages/${locale}/industries/${fileName}.json`)).default;
 
   return {
     localesData,

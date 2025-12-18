@@ -1,0 +1,486 @@
+{
+    "seo": {
+        "title": "Taxi Website Development | From €79/month All-In-One",
+        "description": "Get your taxi website built from €79 or €99 per month with booking system, free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "canonical": "https://webdevamin.com/en/industry/taxi-website-development",
+        "ogTitle": "Taxi Website Development | From €79/month All-In-One",
+        "ogDescription": "Get your taxi website built from €79 or €99 per month with booking system, free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+        "keywords": "taxi website development, taxi company website €79, taxi booking system €99, taxi online booking, responsive taxi website, SEO for taxis, taxi website design, professional taxi website"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
+            "hreflang": "nl"
+        },
+        {
+            "href": "https://webdevamin.com/en/industry/taxi-website-development",
+            "hreflang": "en"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "locale": "nl",
+            "slug": "taxi-website-laten-maken"
+        }
+    ],
+    "jsonLd": {
+        "localBusiness": {
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            "name": "Webdevamin - Taxi Website Development",
+            "url": "https://webdevamin.com/en/industry/taxi-website-development",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+            "description": "Get your taxi website built from €79 or €99 per month (with booking system) with free hosting, maintenance and more. No startup costs! Request a free quote!",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32 470 93 09 16",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BE",
+                "addressLocality": "Bruges",
+                "postalCode": "8000",
+                "streetAddress": "Rodenonnenstraat 21"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "priceRange": "€79-€99",
+            "serviceType": "Website Development",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            }
+        },
+        "faqPage": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How much does it cost to build a taxi website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A professional taxi website costs from €79 per month excl. VAT for a standard business website with free hosting, maintenance and more, or €99 per month excl. VAT for a website with online booking system and advanced features to save you time and administration."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does it take to develop a taxi website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A taxi website is delivered within less than 1 week, depending on the complexity and desired features such as online reservations and payment systems."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What features are important for a taxi website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Important features include online reservation system, mobile optimization, contact forms and price and kilometer calculation. Additionally, an email is automatically sent with all booking details, including price, pickup and destination address. The essential features to save you time and administration."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is my taxi website mobile-friendly?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, all taxi websites I develop are fully responsive and optimized for mobile devices, because most customers book a taxi via their smartphone."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I get support after my website launches?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, I provide continuous support, hosting, backups, security updates and technical support. This is all included in the monthly rate."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I ensure my website ranks well in Google?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "I optimize your website for local SEO with relevant keywords, Google My Business integration, fast loading times and mobile optimization to rank higher in search results."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I manage my website myself?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No, I take full responsibility for managing your website. This has important advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't have to worry about this - you can always request changes or additions from me. The costs for this are very affordable and I'm happy to help you with all desired modifications. I ensure you can focus your time and energy on your business, while I take care of the technical side of your website."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is hosting and domain name included?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, both hosting and domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I make sure everything is properly arranged, so you can focus on your business."
+                    }
+                }
+            ]
+        },
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Taxi Website Development",
+            "description": "Professional taxi website development with online reservation system and SEO optimization",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Taxi Website Packages",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Standard Taxi Website"
+                        },
+                        "price": "79",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "79",
+                            "priceCurrency": "EUR",
+                            "unitText": "per month"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Premium Taxi Website with Booking System"
+                        },
+                        "price": "99",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "99",
+                            "priceCurrency": "EUR",
+                            "unitText": "per month"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Taxi Website Development",
+            "text": "Get your taxi website built by a professional with an All-in-One package: including free hosting, maintenance, SEO optimization and more! No startup costs! Choose a business website for €79/month or with an automating booking system for €99/month. Excl. VAT.",
+            "image": {
+                "src": "https://bucket.webdevamin.com/taxi.png",
+                "alt": "A taxi driver drives during sunset with a taxi website on the dashboard in the car.",
+                "width": 600,
+                "height": 400
+            },
+            "button": [
+                {
+                    "text": "View Packages",
+                    "href": "#pricing"
+                },
+                {
+                    "text": "Free Quote",
+                    "href": "/contact"
+                }
+            ],
+            "types": [
+                "Business taxi website",
+                "Booking system",
+                "Save time and costs",
+                "More customers",
+                "Google Maps Integration",
+                "Mobile Optimized",
+                "Free SEO"
+            ]
+        },
+        {
+            "slug": "why-taxi-website",
+            "component": "content",
+            "title": "Why Get a Taxi Website?",
+            "subtitle": "More customers, profit & time savings",
+            "text": "<p>A <strong>professional taxi website</strong> offers numerous advantages for both starting and established taxi companies. First of all, it immediately radiates professionalism and trust, making potential customers more inclined to book a ride or get in touch. A strategically designed taxi website improves your visibility in search engines like Google. It also allows you to clearly communicate your unique services and be available to customers 24/7, without you having to be available yourself. Moreover, a targeted taxi website helps automate important processes such as online reservations, trip calculations and customer communication, which saves you considerable time and money in the long run.</p><p>Are you looking for a professional to build a professional <strong>taxi website</strong>? Then you've come to the right place. Understand that a good taxi website is not just about higher positions in Google, but especially about optimizing your business processes and increasing your bookings. Do you have a specific idea or concept that can strengthen your taxi company? Or are you looking for expert advice on how to grow your taxi services digitally? Let's <a href='/en/contact' title='Contact us directly for your taxi website'>have a conversation</a> and discover which digital solution fits your taxi company perfectly! Or just call me directly!</p>",
+            "button": [
+                {
+                    "href": "tel:+32470930916",
+                    "text": "Call me",
+                    "label": "Call me"
+                }
+            ],
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "More than 80% of customers search online for local services before making a choice. Without a professional website, your taxi company misses valuable bookings to competitors who are visible online."
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Increase your online visibility in Google",
+                        "Generate more direct bookings without commissions",
+                        "Build trust with professional appearance",
+                        "Reach customers 24/7, even outside office hours",
+                        "Compete effectively with large taxi apps"
+                    ]
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
+                "alt": "Taxis in busy traffic at night."
+            }
+        },
+        {
+            "title": "Why All-In-One Package?",
+            "subtitle": "No separate systems, but one complete taxi package",
+            "slug": "why-all-in-one",
+            "text": "<p>An all-in-one package for your taxi company is <strong>very beneficial</strong> because it provides a complete total solution. You get a professional website with free lifetime hosting and maintenance. That means: no more invoices for hosting, domain name or email. All administration and invoices regarding those matters are handled by me. You pay just €79 per month and enjoy peace of mind, so you can fully focus on your business. Check <a href='https://webdevamin.com/en#pricing' title='Business website for €49/month' rel='noopener noreferrer' target='_blank'>the homepage with prices</a> for more information.</p><p>There is also a <strong>premium</strong> package for €99 per month with a booking system. Visitors can book a ride on your website between two addresses (or more, if there are stops). The application automatically suggests the route and calculates the number of kilometers and the price. This saves you time and reduces administrative burden.</p><p>Thanks to this integration, routes are automatically suggested and you don't have to fill in the addresses yourself completely. Prices are <strong>excl. VAT</strong>.</p>",
+            "button": [
+                {
+                    "href": "#pricing",
+                    "text": "View the benefits",
+                    "label": "To the taxi website prices",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
+                "alt": "A web developer shows a taxi website to a business owner. A booking system is displayed on the computer."
+            }
+        },
+        {
+            "slug": "features-benefits",
+            "component": "features",
+            "title": "Essential Features",
+            "subtitle": "Boost for your taxi company",
+            "text": "<p>Check out the list below of essential features that can strengthen your taxi company: a professional website with time-saving functions and the possibility for more customers and profit in the long term.</p>",
+            "features": [
+                {
+                    "icon": "PanelTop",
+                    "title": "Business taxi website",
+                    "description": "A visually beautiful website for your taxi company: contact details, fleet, services, prices, etc. to get more customers and win trust. Let them be surprised by the quality of your website!"
+                },
+                {
+                    "icon": "CalendarDays",
+                    "title": "Online booking system",
+                    "description": "Customers can book a taxi online 24/7 with date, time and destination. Automatic confirmations and reminders increase customer satisfaction."
+                },
+                {
+                    "icon": "Smartphone",
+                    "title": "Mobile-Friendly Design",
+                    "description": "Your website looks perfect on all devices: desktop, tablet and smartphone. Customers can always book from anywhere."
+                },
+                {
+                    "icon": "Search",
+                    "title": "SEO Optimized",
+                    "description": "Advanced search engine optimization ensures your taxi company appears at the top when people search for 'taxi' in your region."
+                },
+                {
+                    "icon": "Calculator",
+                    "title": "Transparent Price Calculator",
+                    "description": "Customers can immediately get a price indication for their trip by entering destination and distance."
+                },
+                {
+                    "icon": "Email",
+                    "title": "Automatic Email Confirmations",
+                    "description": "Customers and you automatically receive an email with all details of their booking. This also includes a link to go directly to your navigation app, with the route automatically filled in."
+                }
+            ]
+        },
+        {
+            "slug": "portfolio-case",
+            "component": "portfolio",
+            "title": "Success Story: AN Taxi",
+            "subtitle": "Customer Experience",
+            "description": "<p>AN Taxi wanted to strengthen their online presence and generate more direct bookings. To achieve this, I developed a complete taxi website with modern features such as a contact form, automatic email confirmations and reminders, directions, price calculator and a booking system. Check out <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>the website</a> for more information.</p>",
+            "highlights": [
+                {
+                    "number": "60%",
+                    "title": "Time Savings",
+                    "description": "Automation of bookings and administration saves hours of work daily"
+                },
+                {
+                    "number": "1.5x",
+                    "title": "More customers",
+                    "description": "Online visibility and professional appearance attract more customers"
+                },
+                {
+                    "number": "3x",
+                    "title": "More conversions",
+                    "description": "Excellent website with optimal user experience increases bookings"
+                }
+            ],
+            "project": {
+                "name": "AN Taxi",
+                "url": "https://antaxi.be",
+                "image": "https://bucket.webdevamin.com/antaxi.png",
+                "description": "AN Taxi: a taxi website with online reservation system."
+            }
+        },
+        {
+            "title": "Pricing Plans",
+            "subtitle": "Packages for your taxi company",
+            "highlight": "All-In-One",
+            "slug": "pricing",
+            "text": "<p>Choose between my <strong>business taxi website for €79 per month</strong> or my <strong>advanced package with booking system for €99 per month</strong>. Both packages include professional appearance, FREE hosting, maintenance and SEO optimization.</p><p>The €99 package includes extra features such as online reservation system, automatic trip calculation, automated emails and address auto-fill for maximum efficiency.</p><p>Check out <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, an example of my professional taxi website development with a booking system. Prices are always <strong>excl. VAT</strong>.</p>",
+            "subsubtitle": "Options",
+            "items": [
+                {
+                    "title": "Standard",
+                    "price": "79",
+                    "currency": "€",
+                    "period": "/month",
+                    "features": [
+                        "Custom <strong>business website</strong>",
+                        "<strong>FREE</strong> mobile optimization",
+                        "<strong>FREE</strong> SEO optimization",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "<strong>FREE</strong> logo",
+                        "<strong>Administration</strong> and <strong>invoices</strong> on me",
+                        "24/7 <strong>support</strong>",
+                        "No <strong>startup costs</strong>"
+                    ],
+                    "excludedFeatures": [
+                        "Online reservation system",
+                        "Automatic trip calculation",
+                        "Automated emails",
+                        "Address auto-fill navigation app"
+                    ],
+                    "buttonText": "Choose Standard Package",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Premium",
+                    "price": "99",
+                    "currency": "€",
+                    "period": "/month",
+                    "popular": true,
+                    "features": [
+                        "Custom <strong>business website</strong>",
+                        "<strong>FREE</strong> mobile optimization",
+                        "<strong>FREE</strong> SEO optimization",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "<strong>FREE</strong> logo",
+                        "<strong>Administration</strong> and <strong>invoices</strong> on me",
+                        "24/7 <strong>support</strong>",
+                        "No <strong>startup costs</strong>",
+                        "Online <strong>reservation system</strong>",
+                        "Automatic <strong>trip calculation</strong>",
+                        "Automated <strong>emails</strong>",
+                        "Address auto-fill <strong>navigation app</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "buttonText": "Choose Premium Package",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Custom",
+                    "price": "Custom",
+                    "currency": "",
+                    "period": "",
+                    "features": [
+                        "<strong>Fully personalized</strong> website",
+                        "Tailored to <strong>your specific needs</strong>",
+                        "Extra features <strong>on demand</strong>",
+                        "Unique <strong>design</strong> and <strong>branding</strong>",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "24/7 <strong>support</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Do you have specific wishes that don't fully match our Standard or Premium packages? No problem! I develop a fully customized taxi website that perfectly matches your unique business needs and goals.",
+                    "buttonText": "Request Quote",
+                    "buttonHref": "/contact"
+                }
+            ]
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Frequently Asked Questions",
+            "subtitle": "For taxi companies",
+            "text": "Below you will find a list of frequently asked questions about taxi website development. If you have another question, don't hesitate to contact me.",
+            "items": [
+                {
+                    "title": "How much does it cost to build a taxi website?",
+                    "description": "A professional taxi website costs from €79 per month for a business website with free hosting, maintenance and more, or €99 per month for a website with online booking system and advanced features to save you time and administration."
+                },
+                {
+                    "title": "How long does it take to develop a taxi website?",
+                    "description": "It is delivered within less than 1 week, depending on the complexity and desired features such as online reservations and payment systems."
+                },
+                {
+                    "title": "What features are important for a taxi website?",
+                    "description": "Important features include online reservation system, mobile optimization, contact forms and price calculator. Additionally, an email is automatically sent with all booking details, including price, pickup and destination address. The essential features to save you time and administration."
+                },
+                {
+                    "title": "Will the website be mobile optimized?",
+                    "description": "Yes, all taxi websites I develop are fully responsive and optimized for mobile devices. This is crucial because most customers book a taxi via their smartphone, especially on the go."
+                },
+                {
+                    "title": "Do I get support after my taxi website launches?",
+                    "description": "Yes, I provide continuous support, hosting, backups, security updates and technical support. This is all included in the monthly rate, so you can focus on your taxi company."
+                },
+                {
+                    "title": "How do I ensure my taxi website ranks well in Google?",
+                    "description": "I optimize your taxi website for local SEO with relevant keywords, Google My Business integration, fast loading times and mobile optimization. This ensures you rank higher for searches like 'taxi [your city]'."
+                },
+                {
+                    "title": "Can I modify content on my taxi website myself?",
+                    "description": "No, I take full responsibility for managing your website. This has important advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't have to worry about this - you can always request changes or additions from me. The costs for this are very affordable and I'm happy to help you with all desired modifications. I ensure you can focus your time and energy on your business, while I take care of the technical side of your website."
+                },
+                {
+                    "title": "Is hosting and domain name included?",
+                    "description": "Yes, both hosting and domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I make sure everything is properly arranged, so you can focus on your business."
+                }
+            ]
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Ready to Generate Bookings?",
+            "subtitle": "Choose your package: €79 or €99 per month",
+            "text": "Start with a professional taxi website from €79 per month or choose the advanced package with booking system and automation for €99 per month. I help you every step of the way, from design to launch. Request a free quote now and discover how I can help your taxi company grow online.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Request Free Quote",
+                    "label": "To contact page",
+                    "external": false
+                }
+            ],
+            "features": [
+                "Free consultation",
+                "Business website €79/month",
+                "Booking system €99/month",
+                "Continuous support"
+            ]
+        }
+    ]
+}

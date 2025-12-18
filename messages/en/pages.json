@@ -10,6 +10,17 @@
         "icon": "image"
     },
     {
+        "title": "Industries",
+        "href": "#",
+        "icon": "building",
+        "subs": [
+            {
+                "title": "Taxi Website Development",
+                "href": "/industry/taxi-website-development"
+            }
+        ]
+    },
+    {
         "title": "Blogs",
         "href": "/blogs",
         "icon": "bookmark"
