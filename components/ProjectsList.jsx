@@ -20,7 +20,7 @@ const ProjectsList = ({ projectsData }) => {
         >
             {projectsData.length > 0 ? (
                 projectsData.map((project, i) => {
-                    const { title, img, slug, description, border, link, technologies = [], niche = '', price, buttonText } = project;
+                    const { title, img, slug, description, border, link, technologies = [], niche = '', buttonText } = project;
                     const { src, alt } = img;
 
                     return (
@@ -42,7 +42,7 @@ const ProjectsList = ({ projectsData }) => {
                                 type={`project`}
                                 link={link}
                                 technologies={technologies}
-                                badgeAlt={niche} badgeAltTwo={price}
+                                badgeAlt={niche}
                             />
                         </div>
                     )
