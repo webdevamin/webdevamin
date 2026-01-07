@@ -14,6 +14,7 @@ import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
+import OneTimePayment from '../../../../../components/Home/OneTimePayment'
 
 async function getData(locale, slug) {
   if (!routing.locales.includes(locale)) {
@@ -296,6 +297,7 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
         <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
         <PricingSection content={blocks.find(block => block.slug === 'pricing')} />
+        <OneTimePayment content={blocks.find(block => block.slug === 'one-time-payment')} />
         <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
         <div className="transition-all duration-500 rounded-xl">
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />

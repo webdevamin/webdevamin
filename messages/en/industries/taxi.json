@@ -483,6 +483,16 @@
             ]
         },
         {
+            "slug": "one-time-payment",
+            "component": "one-time-payment",
+            "title": "One-Time Payment",
+            "text": "<p>Prefer <strong>no monthly subscription</strong>? No problem! You can also choose a <strong>one-time payment</strong> for your taxi website. This means you pay a fixed amount for the development of your website, without ongoing costs. You then arrange hosting and domain name yourself, or I can take care of this separately for a small annual fee.</p><p>This option is ideal if you want full control over your hosting or already have a hosting provider. <a href='/en/contact'>Contact me</a> for a free custom quote for your taxi company.</p>",
+            "button": {
+                "href": "/contact",
+                "text": "Request Quote"
+            }
+        },
+        {
             "slug": "cta-bottom",
             "component": "cta",
             "title": "Ready to Generate Bookings?",

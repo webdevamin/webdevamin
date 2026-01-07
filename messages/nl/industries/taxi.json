@@ -483,6 +483,16 @@
             ]
         },
         {
+            "slug": "one-time-payment",
+            "component": "one-time-payment",
+            "title": "Eenmalige Betaling",
+            "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong> voor uw taxi website. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Deze optie is ideaal als u volledige controle wilt over uw hosting of al een hostingprovider heeft. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat voor uw taxibedrijf.</p>",
+            "button": {
+                "href": "/contact",
+                "text": "Vraag Offerte Aan"
+            }
+        },
+        {
             "slug": "cta-bottom",
             "component": "cta",
             "title": "Klaar om Boekingen te Genereren?",
