@@ -106,6 +106,14 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "Ik heb al een bestaande website. Kan ik overstappen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik zonder extra kosten alles netjes omzetten naar mijn website. Ik help u met een vlotte overstap, zodat u snel verder kan met een moderne website."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "Hoe zorg ik ervoor dat mijn website goed vindbaar is in Google?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -273,6 +281,15 @@
             }
         },
         {
+            "slug": "video-demo",
+            "component": "video",
+            "title": "Bekijk Hoe Het Werkt",
+            "subtitle": "Video Demonstratie",
+            "text": "<p>Bekijk in deze video hoe een professionele taxi website eruitziet en hoe het <strong>boekingssysteem</strong> werkt. Ontdek hoe klanten eenvoudig online een rit kunnen boeken, hoe de <strong>prijscalculator</strong> automatisch de kosten berekent, en hoe u automatische <strong>e-mailbevestigingen</strong> ontvangt met alle ritdetails inclusief navigatie-link.</p>",
+            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoTitle": "Taxi Website Demonstratie - Boekingssysteem & Prijscalculator"
+        },
+        {
             "slug": "features-benefits",
             "component": "features",
             "title": "Essentiële Functionaliteiten",
@@ -438,6 +455,10 @@
                 {
                     "title": "Welke functionaliteiten zijn belangrijk voor een taxi website?",
                     "description": "Belangrijke functionaliteiten zijn online reserveringssysteem, mobiele optimalisatie, contactformulieren en prijscalculator. Daarnaast wordt er ook automatisch een mail gestuurd met alle boekingsdetails, waaronder prijs, ophaal- en bestemmingsadres. De essentiële functionaliteiten om je tijd en administratie te besparen."
+                },
+                {
+                    "title": "Ik heb al een bestaande website. Kan ik overstappen?",
+                    "description": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik <strong>zonder extra kosten</strong> alles netjes omzetten naar mijn website. Ik help u met een vlotte overstap, zodat u snel verder kan met een moderne website."
                 },
                 {
                     "title": "Zal de website mobiel optimaliseerd zijn?",

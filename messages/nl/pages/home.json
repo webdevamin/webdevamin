@@ -121,6 +121,14 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "Ik heb al een bestaande website. Kan ik overstappen naar jullie website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik zonder extra kosten alles netjes omzetten naar mijn website. U behoudt uw online aanwezigheid, en ik zorg ervoor dat de overstap vlot en zorgeloos verloopt."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "Kan ik later extra pagina's toevoegen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -336,7 +344,15 @@
                     "label": "Naar contact pagina",
                     "external": false
                 }
-            ]
+            ],
+            "oneTimePayment": {
+                "title": "Eenmalige Betaling",
+                "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong>. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat.</p>",
+                "button": {
+                    "href": "/contact",
+                    "text": "Vraag Offerte Aan"
+                }
+            }
         },
         {
             "title": "Blogs",
@@ -406,6 +422,10 @@
                 {
                     "title": "Hoeveel bedragen de opstartkosten?",
                     "description": "Geen opstartkosten! Nada! Nihil!"
+                },
+                {
+                    "title": "Ik heb al een bestaande website. Kan ik overstappen naar jullie website?",
+                    "description": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik <strong>zonder extra kosten</strong> alles netjes omzetten naar mijn website. U behoudt uw online aanwezigheid, en ik zorg ervoor dat de overstap vlot en zorgeloos verloopt."
                 },
                 {
                     "title": "Kan ik later extra pagina's toevoegen?",

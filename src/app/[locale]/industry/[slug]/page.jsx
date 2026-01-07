@@ -24,9 +24,11 @@ async function getData(locale, slug) {
   const slugToFileMap = {
     nl: {
       'taxi-website-laten-maken': 'taxi',
+      'kapper-website-laten-maken': 'kapper',
     },
     en: {
       'taxi-website-development': 'taxi',
+      'barber-website-development': 'kapper',
     },
   };
 
@@ -105,6 +107,62 @@ export async function generateMetadata({ params: { locale, slug } }) {
     },
   };
 }
+
+// Video Demo Section Component
+const VideoDemoSection = ({ content }) => {
+  if (!content) return null;
+  
+  const { title, subtitle, text, videoUrl, videoTitle } = content;
+  
+  // Extract YouTube video ID from URL
+  const getYouTubeId = (url) => {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+  };
+  
+  const videoId = getYouTubeId(videoUrl);
+  
+  return (
+    <BlockLayoutOne title={title} slug="video-demo" includeMaxWidth={false}>
+      <div className="w-full">
+        <div className="max-w-6xl mx-auto">
+          <Heading title={title} subtitle={subtitle} />
+          {text && <div className="mb-8" dangerouslySetInnerHTML={{ __html: text }} />}
+          
+          {videoId && (
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={videoTitle || title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+              />
+            </div>
+          )}
+          
+          {!videoId && videoUrl && (
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-100 flex items-center justify-center">
+              <a 
+                href={videoUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-4 text-theme hover:text-theme_darker transition-colors"
+              >
+                <svg className="w-20 h-20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span className="font-semibold">Bekijk de video</span>
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+    </BlockLayoutOne>
+  );
+};
 
 // Features Section Component
 const FeaturesSection = ({ content }) => {
@@ -232,8 +290,9 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
       <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
       <PageLayout>
-        <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website')} />
+        <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website')} />
         <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position='right' />
+        <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
         <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
         <PricingSection content={blocks.find(block => block.slug === 'pricing')} />

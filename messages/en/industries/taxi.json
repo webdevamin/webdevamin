@@ -106,6 +106,14 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "I already have a website. Can I switch to yours?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! If you already have a website and you no longer want to use it, I can smoothly transition everything to my website at no extra cost. You'll keep your online presence, and I'll ensure the switch is hassle-free."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "How do I ensure my website ranks well in Google?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -273,6 +281,15 @@
             }
         },
         {
+            "slug": "video-demo",
+            "component": "video",
+            "title": "See How It Works",
+            "subtitle": "Video Demonstration",
+            "text": "<p>Watch this video to see what a professional taxi website looks like and how the <strong>booking system</strong> works. Discover how customers can easily book a ride online, how the <strong>price calculator</strong> automatically calculates costs, and how you receive automatic <strong>email confirmations</strong> with all trip details including navigation link.</p>",
+            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoTitle": "Taxi Website Demonstration - Booking System & Price Calculator"
+        },
+        {
             "slug": "features-benefits",
             "component": "features",
             "title": "Essential Features",
@@ -438,6 +455,10 @@
                 {
                     "title": "What features are important for a taxi website?",
                     "description": "Important features include online reservation system, mobile optimization, contact forms and price calculator. Additionally, an email is automatically sent with all booking details, including price, pickup and destination address. The essential features to save you time and administration."
+                },
+                {
+                    "title": "I already have a website. Can I switch to yours?",
+                    "description": "Absolutely! If you already have a website and you no longer want to use it, I can <strong>smoothly transition everything to my website at no extra cost</strong>. You'll keep your online presence, and I'll ensure the switch is hassle-free."
                 },
                 {
                     "title": "Will the website be mobile optimized?",

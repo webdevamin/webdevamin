@@ -1,0 +1,526 @@
+{
+    "seo": {
+        "title": "Barber Website Development | From €79/month All-In-One",
+        "description": "Get your barber website built from €79 or €99 per month with appointment system, free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "canonical": "https://webdevamin.com/en/industry/barber-website-development",
+        "ogTitle": "Barber Website Development | From €79/month All-In-One",
+        "ogDescription": "Get your barber website built from €79 or €99 per month with appointment system, free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+        "keywords": "barber website development, barber shop website €79, barber appointment system €99, barber online booking, responsive barber website, SEO for barbers, barber website design, professional barber website, hair salon website, website for barbers"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
+            "hreflang": "nl"
+        },
+        {
+            "href": "https://webdevamin.com/en/industry/barber-website-development",
+            "hreflang": "en"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "locale": "nl",
+            "href": "/industry/kapper-website-laten-maken"
+        }
+    ],
+    "jsonLd": {
+        "localBusiness": {
+            "@context": "https://schema.org",
+            "@type": "HairSalon",
+            "name": "Webdevamin - Barber Website Development",
+            "url": "https://webdevamin.com/en/industry/barber-website-development",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+            "description": "Get your barber website built from €79 or €99 per month (with appointment system) with free hosting, maintenance and more. No startup costs! Request a free quote!",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32 470 93 09 16",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BE",
+                "addressLocality": "Bruges",
+                "postalCode": "8000",
+                "streetAddress": "Rodenonnenstraat 21"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "priceRange": "€79-€99",
+            "serviceType": "Website Development",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            }
+        },
+        "faqPage": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How much does it cost to build a barber website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A professional barber website costs from €79 per month excl. VAT for a standard business website with free hosting, maintenance and more, or €99 per month excl. VAT for a website with online appointment system and advanced features to save you time and administration."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does it take to develop a barber website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A barber website is delivered within less than 1 week, depending on the complexity and desired features such as online appointments and booking systems."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What features are important for a barber website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Important features include online appointment system, mobile optimization, contact forms and price lists. Additionally, an email is automatically sent with all appointment details, including date, time and chosen treatment. The essential features to save you time and administration."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is my barber website mobile-friendly?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, all barber websites I develop are fully responsive and optimized for mobile devices, because most customers book an appointment via their smartphone."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I get support after my website launches?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, I provide continuous support, hosting, backups, security updates and technical support. This is all included in the monthly rate."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "I already have a website. Can I switch to yours?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! If you already have a website and you no longer want to use it, I can smoothly transition everything to my website at no extra cost. You'll keep your online presence, and I'll ensure the switch is hassle-free."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I ensure my website ranks well in Google?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "I optimize your website for local SEO with relevant keywords, Google My Business integration, fast loading times and mobile optimization to rank higher in search results."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I manage my website myself?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No, I take full responsibility for managing your website. This has important advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't have to worry about this - you can always request changes or additions from me. The costs for this are very affordable and I'm happy to help you with all desired modifications."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is hosting and domain name included?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, both hosting and domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I make sure everything is properly arranged, so you can focus on your business."
+                    }
+                }
+            ]
+        },
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Barber Website Development",
+            "description": "Professional barber website development with online appointment system and SEO optimization",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Barber Website Packages",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Standard Barber Website"
+                        },
+                        "price": "79",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "79",
+                            "priceCurrency": "EUR",
+                            "unitText": "per month"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Premium Barber Website with Appointment System"
+                        },
+                        "price": "99",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "99",
+                            "priceCurrency": "EUR",
+                            "unitText": "per month"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Barber Website Development",
+            "text": "Get your barber website built by a professional with an All-in-One package: including free hosting, maintenance, SEO optimization and more! No startup costs! Choose a business website for €79/month or with an automating appointment system for €99/month. Excl. VAT.",
+            "image": {
+                "src": "https://bucket.webdevamin.com/taxi.png",
+                "alt": "A modern barber shop with a professional website on a tablet showing appointments.",
+                "width": 600,
+                "height": 400
+            },
+            "button": [
+                {
+                    "text": "View Packages",
+                    "href": "#pricing"
+                },
+                {
+                    "text": "Free Quote",
+                    "href": "/contact"
+                }
+            ],
+            "types": [
+                "Business barber website",
+                "Appointment system",
+                "Save time and costs",
+                "More customers",
+                "Online bookings",
+                "Mobile Optimized",
+                "Free SEO"
+            ]
+        },
+        {
+            "slug": "why-barber-website",
+            "component": "content",
+            "title": "Why Get a Barber Website?",
+            "subtitle": "More customers, profit & time savings",
+            "text": "<p>A <strong>professional barber website</strong> offers numerous advantages for both starting and established barber shops. First of all, it immediately radiates professionalism and trust, making potential customers more inclined to book an appointment or get in touch. A strategically designed <strong>website for barbers</strong> improves your visibility in search engines like Google. It also allows you to clearly communicate your unique services and be available to customers 24/7, without you having to be available yourself. Moreover, a targeted barber website helps automate important processes such as online appointments, customer management and reminders, which saves you considerable time and money in the long run.</p><p>Are you looking for a professional to build a professional <strong>barber website</strong>? Then you've come to the right place. Understand that a good barber website is not just about higher positions in Google, but especially about optimizing your business processes and increasing your appointments. Do you have a specific idea or concept that can strengthen your barber shop? Or are you looking for expert advice on how to grow your barber services digitally? Let's <a href='/en/contact' title='Contact us directly for your barber website'>have a conversation</a> and discover which digital solution fits your barber shop perfectly! Or just call me directly!</p>",
+            "button": [
+                {
+                    "href": "tel:+32470930916",
+                    "text": "Call me",
+                    "label": "Call me"
+                }
+            ],
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "More than 80% of customers search online for local services before making a choice. Without a professional website, your barber shop misses valuable appointments to competitors who are visible online."
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Increase your online visibility in Google",
+                        "Generate more direct appointments without commissions",
+                        "Build trust with professional appearance",
+                        "Reach customers 24/7, even outside opening hours",
+                        "Show your portfolio and services to potential customers"
+                    ]
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
+                "alt": "Modern barber shop interior with professional styling."
+            }
+        },
+        {
+            "title": "Why All-In-One Package?",
+            "subtitle": "No separate systems, but one complete barber package",
+            "slug": "why-all-in-one",
+            "text": "<p>An all-in-one package for your barber shop is <strong>very beneficial</strong> because it provides a complete total solution. You get a professional website with free lifetime hosting and maintenance. That means: no more invoices for hosting, domain name or email. All administration and invoices regarding those matters are handled by me. You pay just €79 per month and enjoy peace of mind, so you can fully focus on your business. Check <a href='https://webdevamin.com/en#pricing' title='Business website for €79/month' rel='noopener noreferrer' target='_blank'>the homepage with prices</a> for more information.</p><p>There is also a <strong>premium</strong> package for €99 per month with an appointment system. Visitors can book an appointment on your website with date, time and desired treatment. The application automatically sends confirmations and reminders. This saves you time and reduces no-shows.</p><p>Thanks to this integration, appointments are automatically managed and you don't have to plan manually anymore. Prices are <strong>excl. VAT</strong>.</p>",
+            "button": [
+                {
+                    "href": "#pricing",
+                    "text": "View the benefits",
+                    "label": "To the barber website prices",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
+                "alt": "A web developer shows a barber website to a barber shop owner. An appointment system is displayed on the computer."
+            }
+        },
+        {
+            "slug": "video-demo",
+            "component": "video",
+            "title": "See How It Works",
+            "subtitle": "Video Demonstration",
+            "text": "<p>Watch this video to see what a professional barber website looks like and how the <strong>appointment system</strong> works. Discover how customers can easily book an appointment online, how you can add new services via the <strong>admin panel</strong>, and how you can use <strong>email marketing</strong> to reach existing customers with <strong>promotions</strong> and offers.</p>",
+            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoTitle": "Barber Website Demonstration - Appointment System & Admin Panel"
+        },
+        {
+            "slug": "features-benefits",
+            "component": "features",
+            "title": "Essential Features",
+            "subtitle": "Boost for your barber shop",
+            "text": "<p>Check out the list below of essential features that can strengthen your barber shop: a professional website with time-saving functions and the possibility for more customers and profit in the long term.</p>",
+            "features": [
+                {
+                    "icon": "PanelTop",
+                    "title": "Business barber website",
+                    "description": "A visually beautiful website for your barber shop: contact details, services, prices, portfolio, etc. to get more customers and win trust. Let them be surprised by the quality of your website!"
+                },
+                {
+                    "icon": "CalendarDays",
+                    "title": "Online appointment system",
+                    "description": "Customers can book an appointment online 24/7 with date, time and desired treatment. Automatic confirmations and reminders reduce no-shows."
+                },
+                {
+                    "icon": "Smartphone",
+                    "title": "Mobile-Friendly Design",
+                    "description": "Your website looks perfect on all devices: desktop, tablet and smartphone. Customers can always make an appointment from anywhere."
+                },
+                {
+                    "icon": "Search",
+                    "title": "SEO Optimized",
+                    "description": "Advanced search engine optimization ensures your barber shop appears at the top when people search for 'barber' or 'website for barbers' in your region."
+                },
+                {
+                    "icon": "ImageIcon",
+                    "title": "Portfolio & Gallery",
+                    "description": "Show your best work with a beautiful photo gallery. Let potential customers see what they can expect from your haircuts and treatments."
+                },
+                {
+                    "icon": "Email",
+                    "title": "Automatic Email Confirmations",
+                    "description": "Customers and you automatically receive an email with all details of their appointment. Including reminders to reduce no-shows."
+                },
+                {
+                    "icon": "Settings",
+                    "title": "Admin Panel",
+                    "description": "Manage your services and prices easily via a user-friendly admin panel. Add new treatments, adjust prices and keep everything up-to-date without technical knowledge."
+                },
+                {
+                    "icon": "Mail",
+                    "title": "Email Marketing",
+                    "description": "Reach your existing customers with targeted email campaigns. Send newsletters, reminders for next appointments and keep customers engaged with your barber shop."
+                },
+                {
+                    "icon": "Tag",
+                    "title": "Promotions & Offers",
+                    "description": "Create and manage promotions and special offers. Attract new customers with discount campaigns and reward loyal customers with exclusive deals."
+                }
+            ]
+        },
+        {
+            "slug": "portfolio-case",
+            "component": "portfolio",
+            "title": "Success Story: Modern Barber Shop",
+            "subtitle": "Customer Experience",
+            "description": "<p>A local barber shop wanted to strengthen their online presence and generate more direct appointments. To achieve this, I developed a complete barber website with modern features such as a contact form, automatic email confirmations and reminders, price list, portfolio gallery and an appointment system.</p>",
+            "highlights": [
+                {
+                    "number": "50%",
+                    "title": "Less no-shows",
+                    "description": "Automatic reminders drastically reduce missed appointments"
+                },
+                {
+                    "number": "2x",
+                    "title": "More appointments",
+                    "description": "Online visibility and professional appearance attract more customers"
+                },
+                {
+                    "number": "70%",
+                    "title": "Time savings",
+                    "description": "No more phone calls for appointments - everything goes automatically"
+                }
+            ],
+            "project": {
+                "name": "Modern Barber Shop",
+                "url": "https://antaxi.be",
+                "image": "https://bucket.webdevamin.com/antaxi.png",
+                "description": "Example of a barber website with online appointment system."
+            }
+        },
+        {
+            "title": "Pricing Plans",
+            "subtitle": "Packages for your barber shop",
+            "highlight": "All-In-One",
+            "slug": "pricing",
+            "text": "<p>Choose between my <strong>business barber website for €79 per month</strong> or my <strong>advanced package with appointment system for €99 per month</strong>. Both packages include professional appearance, FREE hosting, maintenance and SEO optimization.</p><p>The €99 package includes extra features such as online appointment system, automatic confirmations, reminders and customer management for maximum efficiency.</p><p>Prices are always <strong>excl. VAT</strong>.</p>",
+            "subsubtitle": "Options",
+            "items": [
+                {
+                    "title": "Standard",
+                    "price": "79",
+                    "currency": "€",
+                    "period": "/month",
+                    "features": [
+                        "Custom <strong>business website</strong>",
+                        "<strong>FREE</strong> mobile optimization",
+                        "<strong>FREE</strong> SEO optimization",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "<strong>FREE</strong> logo",
+                        "<strong>Administration</strong> and <strong>invoices</strong> on me",
+                        "24/7 <strong>support</strong>",
+                        "No <strong>startup costs</strong>"
+                    ],
+                    "excludedFeatures": [
+                        "Online appointment system",
+                        "Automatic confirmations",
+                        "Customer reminders",
+                        "Admin panel for services",
+                        "Email marketing",
+                        "Promotions & offers"
+                    ],
+                    "buttonText": "Choose Standard Package",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Premium",
+                    "price": "99",
+                    "currency": "€",
+                    "period": "/month",
+                    "popular": true,
+                    "features": [
+                        "Custom <strong>business website</strong>",
+                        "<strong>FREE</strong> mobile optimization",
+                        "<strong>FREE</strong> SEO optimization",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "<strong>FREE</strong> logo",
+                        "<strong>Administration</strong> and <strong>invoices</strong> on me",
+                        "24/7 <strong>support</strong>",
+                        "No <strong>startup costs</strong>",
+                        "Online <strong>appointment system</strong>",
+                        "Automatic <strong>confirmations</strong>",
+                        "Customer <strong>reminders</strong>",
+                        "<strong>Admin panel</strong> for services & prices",
+                        "<strong>Email marketing</strong> to customers",
+                        "<strong>Promotions</strong> & offers"
+                    ],
+                    "excludedFeatures": [],
+                    "buttonText": "Choose Premium Package",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Custom",
+                    "price": "Custom",
+                    "currency": "",
+                    "period": "",
+                    "features": [
+                        "<strong>Fully personalized</strong> website",
+                        "Tailored to <strong>your specific needs</strong>",
+                        "Extra features <strong>on demand</strong>",
+                        "Unique <strong>design</strong> and <strong>branding</strong>",
+                        "<strong>FREE</strong> hosting & maintenance",
+                        "<strong>FREE</strong> domain name",
+                        "24/7 <strong>support</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Do you have specific wishes that don't fully match our Standard or Premium packages? No problem! I develop a fully customized barber website that perfectly matches your unique business needs and goals.",
+                    "buttonText": "Request Quote",
+                    "buttonHref": "/contact"
+                }
+            ]
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Frequently Asked Questions",
+            "subtitle": "For barber shops",
+            "text": "Below you will find a list of frequently asked questions about barber website development. If you have another question, don't hesitate to contact me.",
+            "items": [
+                {
+                    "title": "How much does it cost to build a barber website?",
+                    "description": "A professional barber website costs from €79 per month for a business website with free hosting, maintenance and more, or €99 per month for a website with online appointment system and advanced features to save you time and administration."
+                },
+                {
+                    "title": "How long does it take to develop a barber website?",
+                    "description": "It is delivered within less than 1 week, depending on the complexity and desired features such as online appointments and portfolio gallery."
+                },
+                {
+                    "title": "What features are important for a barber website?",
+                    "description": "Important features include online appointment system, mobile optimization, contact forms, price lists and portfolio gallery. Additionally, emails are automatically sent with all appointment details and reminders. The essential features to save you time and administration."
+                },
+                {
+                    "title": "I already have a website. Can I switch to yours?",
+                    "description": "Absolutely! If you already have a website and you no longer want to use it, I can <strong>smoothly transition everything to my website at no extra cost</strong>. You'll keep your online presence, and I'll ensure the switch is hassle-free."
+                },
+                {
+                    "title": "Will the website be mobile optimized?",
+                    "description": "Yes, all barber websites I develop are fully responsive and optimized for mobile devices. This is crucial because most customers book an appointment via their smartphone."
+                },
+                {
+                    "title": "Do I get support after my barber website launches?",
+                    "description": "Yes, I provide continuous support, hosting, backups, security updates and technical support. This is all included in the monthly rate, so you can focus on your barber shop."
+                },
+                {
+                    "title": "How do I ensure my barber website ranks well in Google?",
+                    "description": "I optimize your barber website for local SEO with relevant keywords like 'barber website development' and 'website for barbers', Google My Business integration, fast loading times and mobile optimization. This ensures you rank higher for searches like 'barber [your city]'."
+                },
+                {
+                    "title": "Can I modify content on my barber website myself?",
+                    "description": "No, I take full responsibility for managing your website. This has important advantages: I can guarantee optimal maintenance and ensure everything continues to function perfectly. Experience shows that self-management often leads to unnecessary time loss and technical challenges when expanding or modifying the website. You don't have to worry about this - you can always request changes or additions from me. The costs for this are very affordable and I'm happy to help you with all desired modifications."
+                },
+                {
+                    "title": "Is hosting and domain name included?",
+                    "description": "Yes, both hosting and domain name are included with every subscription. You don't have to worry about extra costs or administrative hassle. I make sure everything is properly arranged, so you can focus on your business."
+                }
+            ]
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Ready to Generate More Appointments?",
+            "subtitle": "Choose your package: €79 or €99 per month",
+            "text": "Start with a professional barber website from €79 per month or choose the advanced package with appointment system and automation for €99 per month. I help you every step of the way, from design to launch. Request a free quote now and discover how I can help your barber shop grow online.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Request Free Quote",
+                    "label": "To contact page",
+                    "external": false
+                }
+            ],
+            "features": [
+                "Free consultation",
+                "Business website €79/month",
+                "Appointment system €99/month",
+                "Continuous support"
+            ]
+        }
+    ]
+}

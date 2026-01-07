@@ -12,6 +12,7 @@ import BlockAccordion from '../../../components/Blocks/BlockAccordion'
 import Services from '../../../components/Home/Services'
 import CallToAction from '../../../components/Home/CallToAction'
 import Location from '../../../components/Location/Location'
+import OneTimePayment from '../../../components/Home/OneTimePayment'
 import { notFound } from 'next/navigation'
 import { routing } from '../../i18n/routing'
 import JsonLd from '../../../components/SEO/JsonLd'
@@ -123,6 +124,7 @@ const Index = async ({ params: { locale } }) => {
           <Location content={blocks.find(block => block.slug === 'location')} />
         )}
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
+        <OneTimePayment content={blocks.find(block => block.slug === `pricing`)?.oneTimePayment} />
         <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
         <div className="transition-all duration-500 rounded-xl">

@@ -120,6 +120,14 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "I already have a website. Can I switch to yours?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! If you already have a website and you no longer want to use it, I can smoothly transition everything to my website at no extra cost. You'll keep your online presence, and I'll ensure the switch is hassle-free."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "Can I add extra pages later?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -309,7 +317,15 @@
                     "label": "To contact page",
                     "external": false
                 }
-            ]
+            ],
+            "oneTimePayment": {
+                "title": "One-Time Payment",
+                "text": "<p>Prefer <strong>no monthly subscription</strong>? No problem! You can also choose a <strong>one-time payment</strong>. This means you pay a fixed amount for the development of your website, without ongoing costs. You then arrange hosting and domain name yourself, or I can take care of this separately for a small annual fee.</p><p><a href='/en/contact'>Contact me</a> for a free custom quote.</p>",
+                "button": {
+                    "href": "/contact",
+                    "text": "Request Quote"
+                }
+            }
         },
         {
             "title": "Blogs",
@@ -379,6 +395,10 @@
                 {
                     "title": "How much are the setup costs?",
                     "description": "There are no setup costs! Only the subscription counts."
+                },
+                {
+                    "title": "I already have a website. Can I switch to yours?",
+                    "description": "Absolutely! If you already have a website and you no longer want to use it, I can <strong>smoothly transition everything to my website at no extra cost</strong>. You'll keep your online presence, and I'll ensure the switch is hassle-free."
                 },
                 {
                     "title": "Can I add extra pages later?",

@@ -43,37 +43,37 @@ const PricingSection = ({ content }) => {
                                 <Accordion className='text-left w-full min-w-full'>
                                     {
                                         items.map((item, i) => {
-                                        const { title, details } = item;
+                                            const { title, details } = item;
 
-                                        return (
-                                            <Accordion.Panel
-                                                key={i}
-                                                className={`transition-all duration-500 shadow-md rounded-lg border-l-4 border-theme' : 'hover:border-l-2 hover:border-theme_darker`}
-                                            >
-                                                <Accordion.Title as='h3'
-                                                    className={`transition-all duration-300 flex items-center 'text-theme font-semibold' : 'hover:text-theme_darker`}
+                                            return (
+                                                <Accordion.Panel
+                                                    key={i}
+                                                    className={`transition-all duration-500 shadow-md rounded-lg border-l-4 border-theme' : 'hover:border-l-2 hover:border-theme_darker`}
                                                 >
-                                                    <span className="transform transition-transform duration-300 inline-block mr-2">
-                                                        {i + 1}.
-                                                    </span>
-                                                    {title}
-                                                </Accordion.Title>
-                                                <Accordion.Content
-                                                    className={`w-full transition-all duration-500 animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg`}
-                                                >
-                                                    {details.includes('<') ? (
-                                                        <div
-                                                            className="mb-2 w-full"
-                                                            dangerouslySetInnerHTML={{ __html: details }}
-                                                        />
-                                                    ) : (
-                                                        <p className="mb-2 w-full leading-relaxed">
-                                                            {details}
-                                                        </p>
-                                                    )}
-                                                </Accordion.Content>
-                                            </Accordion.Panel>
-                                        )
+                                                    <Accordion.Title as='h3'
+                                                        className={`transition-all duration-300 flex items-center 'text-theme font-semibold' : 'hover:text-theme_darker`}
+                                                    >
+                                                        <span className="transform transition-transform duration-300 inline-block mr-2">
+                                                            {i + 1}.
+                                                        </span>
+                                                        {title}
+                                                    </Accordion.Title>
+                                                    <Accordion.Content
+                                                        className={`w-full transition-all duration-500 animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg`}
+                                                    >
+                                                        {details.includes('<') ? (
+                                                            <div
+                                                                className="mb-2 w-full"
+                                                                dangerouslySetInnerHTML={{ __html: details }}
+                                                            />
+                                                        ) : (
+                                                            <p className="mb-2 w-full leading-relaxed">
+                                                                {details}
+                                                            </p>
+                                                        )}
+                                                    </Accordion.Content>
+                                                </Accordion.Panel>
+                                            )
                                         })
                                     }
                                 </Accordion>

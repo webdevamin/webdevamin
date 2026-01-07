@@ -1,0 +1,526 @@
+{
+    "seo": {
+        "title": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
+        "description": "Laat uw kapper website maken vanaf €49 of €69 per maand met afsprakensysteem, gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "canonical": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
+        "ogTitle": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
+        "ogDescription": "Laat uw kapper website maken vanaf €49 of €69 per maand met afsprakensysteem, gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+        "keywords": "kapper website laten maken, website voor kappers, kapperszaak website €49, kapper afsprakensysteem €69, kapper online reserveren, responsive kapper website, SEO voor kappers, kapper website ontwerp, professionele kapper website, barbershop website, website kapsalon"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
+            "hreflang": "nl"
+        },
+        {
+            "href": "https://webdevamin.com/en/industry/barber-website-development",
+            "hreflang": "en"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "locale": "en",
+            "href": "/industry/barber-website-development"
+        }
+    ],
+    "jsonLd": {
+        "localBusiness": {
+            "@context": "https://schema.org",
+            "@type": "HairSalon",
+            "name": "Webdevamin - Kapper Website Ontwikkeling",
+            "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+            "description": "Laat uw kapper website maken vanaf €49 of €69 per maand (met afsprakensysteem) met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32 470 93 09 16",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BE",
+                "addressLocality": "Bruges",
+                "postalCode": "8000",
+                "streetAddress": "Rodenonnenstraat 21"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "priceRange": "€49-€69",
+            "serviceType": "Website Development",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            }
+        },
+        "faqPage": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Hoeveel kost het om een kapper website te laten maken?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Een professionele kapper website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand excl. BTW voor een website met online afsprakensysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe lang duurt het om een kapper website te ontwikkelen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Een kapper website wordt binnen minder dan 1 week opgeleverd, afhankelijk van de complexiteit en gewenste functionaliteiten zoals online reserveringen en afsprakensystemen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Welke functionaliteiten zijn belangrijk voor een kapper website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Belangrijke functionaliteiten zijn online afsprakensysteem, mobiele optimalisatie, contactformulieren en prijslijsten. Daarnaast wordt er ook automatisch een mail gestuurd met alle afspraakdetails, waaronder datum, tijd en gekozen behandeling. De essentiële functionaliteiten om je tijd en administratie te besparen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is mijn kapper website mobiel-vriendelijk?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, alle kapper websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten, omdat de meeste klanten via hun smartphone een afspraak boeken."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Krijg ik ondersteuning na de lancering van mijn website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ik heb al een bestaande website. Kan ik overstappen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik zonder extra kosten alles netjes omzetten naar mijn website. U hoeft nergens van wakker te liggen: ik zorg voor een vlotte en zorgeloze overstap."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe zorg ik ervoor dat mijn website goed vindbaar is in Google?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ik optimaliseer uw website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie om hoger te ranken in zoekresultaten."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik zelf mijn website beheren?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen. Ik zorg er voor dat je je tijd en energie kunt richten op je bedrijf, terwijl ik zorg voor de technische kant van je website."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is hosting en domeinnaam inbegrepen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                    }
+                }
+            ]
+        },
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Kapper Website Ontwikkeling",
+            "description": "Professionele kapper website laten maken met online afsprakensysteem en SEO-optimalisatie",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Bruges",
+                    "postalCode": "8000",
+                    "streetAddress": "Rodenonnenstraat 21"
+                }
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Kapper Website Pakketten",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Standaard Kapper Website"
+                        },
+                        "price": "49",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "49",
+                            "priceCurrency": "EUR",
+                            "unitText": "per maand"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Premium Kapper Website met Afsprakensysteem"
+                        },
+                        "price": "69",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "69",
+                            "priceCurrency": "EUR",
+                            "unitText": "per maand"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Kapper Website Laten Maken",
+            "text": "Laat uw kapper website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website voor €49/maand of met een automatiserend afsprakensysteem voor €69/maand. Excl. BTW.",
+            "image": {
+                "src": "https://bucket.webdevamin.com/taxi.png",
+                "alt": "Een moderne kapperszaak met een professionele website op een tablet die afspraken toont.",
+                "width": 600,
+                "height": 400
+            },
+            "button": [
+                {
+                    "text": "Bekijk Pakketten",
+                    "href": "#pricing"
+                },
+                {
+                    "text": "Gratis Offerte",
+                    "href": "/contact"
+                }
+            ],
+            "types": [
+                "Zakelijke kapper website",
+                "Afsprakensysteem",
+                "Bespaar tijd en kosten",
+                "Meer klanten",
+                "Online reserveringen",
+                "Mobiel Geoptimaliseerd",
+                "Gratis SEO"
+            ]
+        },
+        {
+            "slug": "why-kapper-website",
+            "component": "content",
+            "title": "Waarom een Website voor Kappers?",
+            "subtitle": "Meer klanten, winst & tijdsbesparing",
+            "text": "<p>Een <strong>professionele kapper website</strong> biedt talloze voordelen voor zowel startende als gevestigde kapperszaken. Allereerst straalt het direct professionaliteit en vertrouwen uit, waardoor potentiële klanten eerder geneigd zijn een afspraak te boeken of contact op te nemen. Een strategisch ontworpen <strong>website voor kappers</strong> verbetert uw vindbaarheid in zoekmachines zoals Google. Het stelt u ook in staat om uw unieke dienstverlening helder te communiceren en 24/7 bereikbaar te zijn voor klanten, zonder dat u zelf beschikbaar hoeft te zijn. Bovendien helpt een doelgerichte kapper website bij het automatiseren van belangrijke processen zoals online afspraken, klantenbeheer en herinneringen, wat u op lange termijn aanzienlijk tijd én geld bespaart.</p><p>Bent u op zoek naar een professional om een professionele <strong>kapper website laten maken</strong>? Dan bent u bij mij aan het juiste adres. Begrijp dat een goede kapper website niet alleen draait om hogere posities in Google, maar vooral om het optimaliseren van uw bedrijfsprocessen en het verhogen van uw afspraken. Heeft u een specifiek idee of concept dat uw kapperszaak kan versterken? Of zoekt u juist deskundig advies over hoe u uw kapper diensten digitaal kunt laten groeien? Laten we <a href='/nl/contact' title='Neem direct contact op voor uw kapper website'>samen in gesprek gaan</a> en ontdekken welke digitale oplossing perfect bij uw kapperszaak past! Of bel me maar direct op!</p>",
+            "button": [
+                {
+                    "href": "tel:+32470930916",
+                    "text": "Bel mij",
+                    "label": "Bel mij"
+                }
+            ],
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Meer dan 80% van de klanten zoekt online naar lokale diensten voordat ze een keuze maken. Zonder een professionele website mist uw kapperszaak waardevolle afspraken aan concurrenten die wel online zichtbaar zijn."
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Verhoog uw online zichtbaarheid in Google",
+                        "Genereer meer directe afspraken zonder commissies",
+                        "Bouw vertrouwen op met professionele uitstraling",
+                        "Bereik klanten 24/7, ook buiten openingstijden",
+                        "Toon uw portfolio en diensten aan potentiële klanten"
+                    ]
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
+                "alt": "Moderne kapperszaak interieur met professionele styling."
+            }
+        },
+        {
+            "title": "Waarom All-In-One Pakket?",
+            "subtitle": "Geen losse systemen, maar één compleet kapper pakket",
+            "slug": "why-all-in-one",
+            "text": "<p>Een all-in-one pakket voor uw kapperszaak is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een afsprakensysteem. Bezoekers kunnen op uw website een afspraak boeken met datum, tijd en gewenste behandeling. De applicatie stuurt automatisch bevestigingen en herinneringen. Dit bespaart u tijd en vermindert no-shows.</p><p>Dankzij deze integratie worden afspraken automatisch beheerd en hoeft u niet meer handmatig te plannen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
+            "button": [
+                {
+                    "href": "#pricing",
+                    "text": "Bekijk de voordelen",
+                    "label": "Naar de kapper website prijzen",
+                    "external": false
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
+                "alt": "Een webontwikkelaar laat een kapper website zien aan de eigenaar van een kapperszaak. Op de computer wordt een afsprakensysteem weergegeven."
+            }
+        },
+        {
+            "slug": "video-demo",
+            "component": "video",
+            "title": "Bekijk Hoe Het Werkt",
+            "subtitle": "Video Demonstratie",
+            "text": "<p>Bekijk in deze video hoe een professionele kapper website eruitziet en hoe het <strong>afsprakensysteem</strong> werkt. Ontdek hoe klanten eenvoudig online een afspraak kunnen boeken, hoe u nieuwe diensten kunt toevoegen via het <strong>administratiepaneel</strong>, en hoe u <strong>e-mailmarketing</strong> kunt inzetten om bestaande klanten te bereiken met <strong>promoties</strong> en aanbiedingen.</p>",
+            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoTitle": "Kapper Website Demonstratie - Afsprakensysteem & Administratiepaneel"
+        },
+        {
+            "slug": "features-benefits",
+            "component": "features",
+            "title": "Essentiële Functionaliteiten",
+            "subtitle": "Boost voor uw kapperszaak",
+            "text": "<p>Bekijk hieronder een lijst van essentiële functionaliteiten die uw kapperszaak kunnen versterken: een professionele website met tijdbesparende functies en de mogelijkheid voor meer klanten en winst op langere termijn.</p>",
+            "features": [
+                {
+                    "icon": "PanelTop",
+                    "title": "Zakelijke kapper website",
+                    "description": "Een visueel mooie website voor uw kapperszaak: contactgegevens, diensten, prijzen, portfolio, etc. om meer klanten te krijgen en vertrouwen te winnen. Laat ze zich verrassen door de kwaliteit van uw website!"
+                },
+                {
+                    "icon": "CalendarDays",
+                    "title": "Online afsprakensysteem",
+                    "description": "Klanten kunnen 24/7 online een afspraak reserveren met datum, tijd en gewenste behandeling. Automatische bevestigingen en herinneringen verminderen no-shows."
+                },
+                {
+                    "icon": "Smartphone",
+                    "title": "Mobielvriendelijk Ontwerp",
+                    "description": "Uw website ziet er perfect uit op alle apparaten: desktop, tablet en smartphone. Klanten kunnen altijd en overal een afspraak maken."
+                },
+                {
+                    "icon": "Search",
+                    "title": "SEO Geoptimaliseerd",
+                    "description": "Geavanceerde zoekmachineoptimalisatie zorgt ervoor dat uw kapperszaak bovenaan verschijnt wanneer mensen zoeken naar 'kapper' of 'website voor kappers' in uw regio."
+                },
+                {
+                    "icon": "ImageIcon",
+                    "title": "Portfolio & Galerij",
+                    "description": "Toon uw beste werk met een prachtige fotogalerij. Laat potentiële klanten zien wat ze kunnen verwachten van uw kapsels en behandelingen."
+                },
+                {
+                    "icon": "Email",
+                    "title": "Automatische Email Bevestigingen",
+                    "description": "Klanten en u ontvangen automatisch een e-mail met alle details van hun afspraak. Inclusief herinneringen om no-shows te verminderen."
+                },
+                {
+                    "icon": "Settings",
+                    "title": "Administratiepaneel",
+                    "description": "Beheer uw diensten en prijzen eenvoudig via een gebruiksvriendelijk administratiepaneel. Voeg nieuwe behandelingen toe, pas prijzen aan en houd alles up-to-date zonder technische kennis."
+                },
+                {
+                    "icon": "Mail",
+                    "title": "E-mailmarketing",
+                    "description": "Bereik uw bestaande klanten met gerichte e-mailcampagnes. Stuur nieuwsbrieven, herinneringen voor volgende afspraken en houd klanten betrokken bij uw kapperszaak."
+                },
+                {
+                    "icon": "Tag",
+                    "title": "Promoties & Aanbiedingen",
+                    "description": "Maak en beheer promoties en speciale aanbiedingen. Trek nieuwe klanten aan met kortingsacties en beloon trouwe klanten met exclusieve deals."
+                }
+            ]
+        },
+        {
+            "slug": "portfolio-case",
+            "component": "portfolio",
+            "title": "Succesverhaal: Moderne Kapperszaak",
+            "subtitle": "Klantervaring",
+            "description": "<p>Een lokale kapperszaak wilde hun online aanwezigheid versterken en meer directe afspraken genereren. Om dit te bereiken, heb ik een volledige kapper website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, prijslijst, portfolio galerij en een afsprakensysteem.</p>",
+            "highlights": [
+                {
+                    "number": "50%",
+                    "title": "Minder no-shows",
+                    "description": "Automatische herinneringen verminderen gemiste afspraken drastisch"
+                },
+                {
+                    "number": "2x",
+                    "title": "Meer afspraken",
+                    "description": "Online zichtbaarheid en professionele uitstraling trekken meer klanten aan"
+                },
+                {
+                    "number": "70%",
+                    "title": "Tijdsbesparing",
+                    "description": "Geen telefoontjes meer voor afspraken - alles gaat automatisch"
+                }
+            ],
+            "project": {
+                "name": "Moderne Kapperszaak",
+                "url": "https://antaxi.be",
+                "image": "https://bucket.webdevamin.com/antaxi.png",
+                "description": "Voorbeeld van een kapper website met online afsprakensysteem."
+            }
+        },
+        {
+            "title": "Prijsabonnement",
+            "subtitle": "Pakketten voor uw kapperszaak",
+            "highlight": "All-In-One",
+            "slug": "pricing",
+            "text": "<p>Kies tussen mijn <strong>zakelijke kapper website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met afsprakensysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online afsprakensysteem, automatische bevestigingen, herinneringen en klantenbeheer voor maximale efficiëntie.</p><p>De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "subsubtitle": "Opties",
+            "items": [
+                {
+                    "title": "Standaard",
+                    "price": "49",
+                    "currency": "€",
+                    "period": "/maand",
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "<strong>GRATIS</strong> logo",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>"
+                    ],
+                    "excludedFeatures": [
+                        "Online afsprakensysteem",
+                        "Automatische bevestigingen",
+                        "Herinneringen voor klanten",
+                        "Administratiepaneel voor diensten",
+                        "E-mailmarketing",
+                        "Promoties & aanbiedingen"
+                    ],
+                    "buttonText": "Kies Standaard Pakket",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Premium",
+                    "price": "69",
+                    "currency": "€",
+                    "period": "/maand",
+                    "popular": true,
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "<strong>GRATIS</strong> logo",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>",
+                        "Online <strong>afsprakensysteem</strong>",
+                        "Automatische <strong>bevestigingen</strong>",
+                        "<strong>Herinneringen</strong> voor klanten",
+                        "<strong>Administratiepaneel</strong> voor diensten & prijzen",
+                        "<strong>E-mailmarketing</strong> naar klanten",
+                        "<strong>Promoties</strong> & aanbiedingen"
+                    ],
+                    "excludedFeatures": [],
+                    "buttonText": "Kies Premium Pakket",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Op Maat",
+                    "price": "Maatwerk",
+                    "currency": "",
+                    "period": "",
+                    "features": [
+                        "<strong>Volledig gepersonaliseerde</strong> website",
+                        "Aangepast aan <strong>uw specifieke behoeften</strong>",
+                        "Extra functionaliteiten <strong>op maat</strong>",
+                        "Unieke <strong>ontwerp</strong> en <strong>branding</strong>",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "24/7 <strong>support</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Heeft u specifieke wensen die niet volledig aansluiten bij onze Standaard of Premium pakketten? Geen probleem! Ik ontwikkel een volledig op maat gemaakte kapper website die perfect aansluit bij uw unieke bedrijfsbehoeften en doelstellingen.",
+                    "buttonText": "Vraag Offerte Aan",
+                    "buttonHref": "/contact"
+                }
+            ]
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Veelgestelde Vragen",
+            "subtitle": "Voor kapperszaken",
+            "text": "Hieronder vindt u een lijst met veelgestelde vragen over kapper website ontwikkeling. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
+            "items": [
+                {
+                    "title": "Hoeveel kost het om een kapper website te laten maken?",
+                    "description": "Een professionele kapper website kost vanaf €49 per maand voor een zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand voor een website met online afsprakensysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                },
+                {
+                    "title": "Hoe lang duurt het om een kapper website te ontwikkelen?",
+                    "description": "Het wordt binnen minder dan 1 week opgeleverd, afhankelijk van de complexiteit en gewenste functionaliteiten zoals online afspraken en portfolio galerij."
+                },
+                {
+                    "title": "Welke functionaliteiten zijn belangrijk voor een website voor kappers?",
+                    "description": "Belangrijke functionaliteiten zijn online afsprakensysteem, mobiele optimalisatie, contactformulieren, prijslijst en portfolio galerij. Daarnaast worden er ook automatisch mails gestuurd met alle afspraakdetails en herinneringen. De essentiële functionaliteiten om je tijd en administratie te besparen."
+                },
+                {
+                    "title": "Ik heb al een bestaande website. Kan ik overstappen?",
+                    "description": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik <strong>zonder extra kosten</strong> alles netjes omzetten naar mijn website. U hoeft nergens van wakker te liggen: ik zorg voor een vlotte en zorgeloze overstap."
+                },
+                {
+                    "title": "Zal de website mobiel optimaliseerd zijn?",
+                    "description": "Ja, alle kapper websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten. Dit is cruciaal omdat de meeste klanten via hun smartphone een afspraak boeken."
+                },
+                {
+                    "title": "Krijg ik ondersteuning na de lancering van mijn kapper website?",
+                    "description": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief, zodat u zich kunt focussen op uw kapperszaak."
+                },
+                {
+                    "title": "Hoe zorg ik ervoor dat mijn kapper website goed vindbaar is in Google?",
+                    "description": "Ik optimaliseer uw kapper website voor lokale SEO met relevante zoekwoorden zoals 'kapper website laten maken' en 'website voor kappers', Google My Business integratie, snelle laadtijden en mobiele optimalisatie. Dit zorgt ervoor dat u hoger rankt bij zoekopdrachten zoals 'kapper [uw stad]'."
+                },
+                {
+                    "title": "Kan ik zelf content aanpassen op mijn kapper website?",
+                    "description": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen."
+                },
+                {
+                    "title": "Is hosting en domeinnaam inbegrepen?",
+                    "description": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                }
+            ]
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Klaar om Meer Afspraken te Genereren?",
+            "subtitle": "Kies uw pakket: €49 of €69 per maand",
+            "text": "Start met een professionele kapper website vanaf €49 per maand of kies het geavanceerde pakket met afsprakensysteem en automatisering voor €69 per maand. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw kapperszaak online kan laten groeien.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Vraag Gratis Offerte Aan",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ],
+            "features": [
+                "Gratis adviesgesprek",
+                "Zakelijke website €49/maand",
+                "Afsprakensysteem €69/maand",
+                "Continue ondersteuning"
+            ]
+        }
+    ]
+}
