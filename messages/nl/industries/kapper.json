@@ -32,7 +32,7 @@
             "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
-            "description": "Laat uw kapper website maken vanaf €49 of €69 per maand (met afsprakensysteem) met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+            "description": "Laat uw kapper website maken vanaf €49, €69 of €79 per maand met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
             "email": "amin@webdevamin.com",
             "telephone": "+32 470 93 09 16",
             "address": {
@@ -542,8 +542,8 @@
             "slug": "cta-bottom",
             "component": "cta",
             "title": "Klaar om Meer Afspraken te Genereren?",
-            "subtitle": "Kies uw pakket: €49 of €69 per maand",
-            "text": "Start met een professionele kapper website vanaf €49 per maand of kies het geavanceerde pakket met afsprakensysteem en automatisering voor €69 per maand. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw kapperszaak online kan laten groeien.",
+            "subtitle": "Kies uw pakket: €49, €69 of €79 per maand",
+            "text": "Start met een professionele kapper website vanaf €49 per maand, kies het geavanceerde pakket voor €69 per maand (afsprakensysteem, diensten & prijzen en promoties) of ga voor Pro voor €79 per maand met e-mailmarketing campagnes. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw kapperszaak online kan laten groeien.",
             "button": [
                 {
                     "href": "/contact",
@@ -555,7 +555,8 @@
             "features": [
                 "Gratis adviesgesprek",
                 "Zakelijke website €49/maand",
-                "Afsprakensysteem €69/maand",
+                "Geavanceerd pakket €69/maand",
+                "Pro pakket €79/maand",
                 "Continue ondersteuning"
             ]
         }

@@ -1,6 +1,8 @@
+'use client'
 
 import { Card } from "flowbite-react";
 import CtaButton from "../Buttons/CtaButton";
+import { useLocale } from 'next-intl';
 
 export function PricingCard({
     title,
@@ -16,6 +18,9 @@ export function PricingCard({
     phoneHref = "tel:+32470930916",
     phoneLabel = "Of Bel Nu!"
 }) {
+    const locale = useLocale();
+    const isDutch = locale === 'nl';
+
     return (
         <Card className={`flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform lg:scale-105' : ''} ${className}`}>
             <div className="flex-grow">
@@ -69,13 +74,15 @@ export function PricingCard({
                 variant={popular ? 'primary' : 'outline'}
                 fullWidth
             />
-            <CtaButton
-                href={phoneHref}
-                text={phoneLabel}
-                variant="neutral"
-                fullWidth
-                ariaLabel={phoneLabel}
-            />
+            {isDutch && (
+                <CtaButton
+                    href={phoneHref}
+                    text={phoneLabel}
+                    variant="neutral"
+                    fullWidth
+                    ariaLabel={phoneLabel}
+                />
+            )}
         </Card>
     );
 }
