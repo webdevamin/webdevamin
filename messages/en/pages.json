@@ -15,11 +15,11 @@
         "icon": "building",
         "subs": [
             {
-                "title": "Taxi Website Development",
+                "title": "Taxi companies",
                 "href": "/industry/taxi-website-development"
             },
             {
-                "title": "Barber Website Development",
+                "title": "Barber shops",
                 "href": "/industry/barber-website-development"
             }
         ]

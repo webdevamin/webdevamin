@@ -46,7 +46,7 @@ export function PricingCard({
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <span className="text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: feature }}></span>
+                            <span className="text-sm text-gray-700 text-left" dangerouslySetInnerHTML={{ __html: feature }}></span>
                         </li>
                     ))}
                     {excludedFeatures.map((feature, index) => (

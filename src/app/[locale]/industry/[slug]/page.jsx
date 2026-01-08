@@ -229,6 +229,7 @@ const PortfolioCase = ({ content }) => {
 
 const PricingSection = ({ content }) => {
   const { title, subtitle, text, highlight, items } = content;
+  const hasSingleTier = Array.isArray(items) && items.length === 1;
 
   return (
     <BlockLayoutOne title={title} slug={`pricing`} includeMaxWidth={false} position={`right`}>
@@ -243,13 +244,13 @@ const PricingSection = ({ content }) => {
           </div>
           {(items && items.length > 0) && (
             <div className="mt-12 lg:pt-4">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-8">
+              <div className={`grid grid-cols-1 ${hasSingleTier ? '' : 'lg:grid-cols-3'} gap-6 xl:gap-8`}>
                 {items.map((item, index) => {
                   const { title, price, currency, period, features,
                     excludedFeatures, buttonText, buttonHref, popular } = item;
 
                   return (
-                    <div key={index}>
+                    <div key={index} className={hasSingleTier ? 'w-full' : ''}>
                       <PricingCard
                         title={title}
                         price={price}

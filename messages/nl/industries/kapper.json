@@ -1,10 +1,10 @@
 {
     "seo": {
         "title": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
-        "description": "Laat uw kapper website maken vanaf €49 of €69 per maand met afsprakensysteem, gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "description": "Laat uw kapper website maken vanaf €49, €69 of €79 per maand met o.a. afsprakensysteem, diensten & prijzen, promoties en (vanaf €79) e-mailmarketing campagnes. Gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
         "canonical": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
         "ogTitle": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
-        "ogDescription": "Laat uw kapper website maken vanaf €49 of €69 per maand met afsprakensysteem, gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "ogDescription": "Laat uw kapper website maken vanaf €49, €69 of €79 per maand met o.a. afsprakensysteem, diensten & prijzen, promoties en (vanaf €79) e-mailmarketing campagnes. Gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
         "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
         "keywords": "kapper website laten maken, website voor kappers, kapperszaak website €49, kapper afsprakensysteem €69, kapper online reserveren, responsive kapper website, SEO voor kappers, kapper website ontwerp, professionele kapper website, barbershop website, website kapsalon"
     },
@@ -46,7 +46,7 @@
                 "@type": "Country",
                 "name": "Belgium"
             },
-            "priceRange": "€49-€69",
+            "priceRange": "€49-€79",
             "serviceType": "Website Development",
             "provider": {
                 "@type": "LocalBusiness",
@@ -69,7 +69,7 @@
                     "name": "Hoeveel kost het om een kapper website te laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een professionele kapper website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand excl. BTW voor een website met online afsprakensysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                        "text": "Een professionele kapper website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer. Wilt u meer automatisatie? Dan kunt u kiezen voor €69 per maand excl. BTW met een online afsprakensysteem, diensten & prijzen en promoties. Voor €79 per maand excl. BTW krijgt u alles uit het €69 pakket plus e-mailmarketing campagnes naar uw bestaande klanten."
                     }
                 },
                 {
@@ -188,6 +188,21 @@
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
                             "price": "69",
+                            "priceCurrency": "EUR",
+                            "unitText": "per maand"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Pro Kapper Website met E-mailmarketing"
+                        },
+                        "price": "79",
+                        "priceCurrency": "EUR",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "79",
                             "priceCurrency": "EUR",
                             "unitText": "per maand"
                         }
@@ -317,19 +332,9 @@
                     "description": "Geavanceerde zoekmachineoptimalisatie zorgt ervoor dat uw kapperszaak bovenaan verschijnt wanneer mensen zoeken naar 'kapper' of 'website voor kappers' in uw regio."
                 },
                 {
-                    "icon": "ImageIcon",
-                    "title": "Portfolio & Galerij",
-                    "description": "Toon uw beste werk met een prachtige fotogalerij. Laat potentiële klanten zien wat ze kunnen verwachten van uw kapsels en behandelingen."
-                },
-                {
                     "icon": "Email",
                     "title": "Automatische Email Bevestigingen",
                     "description": "Klanten en u ontvangen automatisch een e-mail met alle details van hun afspraak. Inclusief herinneringen om no-shows te verminderen."
-                },
-                {
-                    "icon": "Settings",
-                    "title": "Administratiepaneel",
-                    "description": "Beheer uw diensten en prijzen eenvoudig via een gebruiksvriendelijk administratiepaneel. Voeg nieuwe behandelingen toe, pas prijzen aan en houd alles up-to-date zonder technische kennis."
                 },
                 {
                     "icon": "Mail",
@@ -378,7 +383,7 @@
             "subtitle": "Pakketten voor uw kapperszaak",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen mijn <strong>zakelijke kapper website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met afsprakensysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online afsprakensysteem, automatische bevestigingen, herinneringen en klantenbeheer voor maximale efficiëntie.</p><p>De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Kies tussen mijn <strong>zakelijke kapper website voor €49 per maand</strong>, het <strong>geavanceerde pakket voor €69 per maand</strong> (met o.a. afsprakensysteem, diensten & prijzen en promoties) of het <strong>Pro pakket voor €79 per maand</strong> met <strong>e-mailmarketing campagnes</strong> naar bestaande klanten.</p><p>Alle pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
             "subsubtitle": "Opties",
             "items": [
                 {
@@ -399,11 +404,9 @@
                     ],
                     "excludedFeatures": [
                         "Online afsprakensysteem",
-                        "Automatische bevestigingen",
-                        "Herinneringen voor klanten",
-                        "Administratiepaneel voor diensten",
-                        "E-mailmarketing",
-                        "Promoties & aanbiedingen"
+                        "Diensten & prijzen beheren",
+                        "Promoties & aanbiedingen",
+                        "E-mailmarketing campagnes"
                     ],
                     "buttonText": "Kies Standaard Pakket",
                     "buttonHref": "/contact"
@@ -411,6 +414,32 @@
                 {
                     "title": "Premium",
                     "price": "69",
+                    "currency": "€",
+                    "period": "/maand",
+                    "popular": false,
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "<strong>GRATIS</strong> logo",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>",
+                        "Online <strong>afsprakensysteem</strong>",
+                        "Diensten aanpassen met <strong>prijzen</strong>",
+                        "<strong>Promoties</strong> & aanbiedingen"
+                    ],
+                    "excludedFeatures": [
+                        "E-mailmarketing campagnes"
+                    ],
+                    "buttonText": "Kies Premium Pakket",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Pro",
+                    "price": "79",
                     "currency": "€",
                     "period": "/maand",
                     "popular": true,
@@ -425,14 +454,12 @@
                         "24/7 <strong>support</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>afsprakensysteem</strong>",
-                        "Automatische <strong>bevestigingen</strong>",
-                        "<strong>Herinneringen</strong> voor klanten",
-                        "<strong>Administratiepaneel</strong> voor diensten & prijzen",
-                        "<strong>E-mailmarketing</strong> naar klanten",
-                        "<strong>Promoties</strong> & aanbiedingen"
+                        "Diensten aanpassen met <strong>prijzen</strong>",
+                        "<strong>Promoties</strong> & aanbiedingen",
+                        "<strong>E-mailmarketing</strong> campagnes naar bestaande klanten"
                     ],
                     "excludedFeatures": [],
-                    "buttonText": "Kies Premium Pakket",
+                    "buttonText": "Kies Pro Pakket",
                     "buttonHref": "/contact"
                 },
                 {
@@ -465,7 +492,7 @@
             "items": [
                 {
                     "title": "Hoeveel kost het om een kapper website te laten maken?",
-                    "description": "Een professionele kapper website kost vanaf €49 per maand voor een zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand voor een website met online afsprakensysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                    "description": "Een professionele kapper website kost vanaf <strong>€49 per maand</strong> voor een zakelijke website met gratis hosting, onderhoud en meer. Wilt u meer automatisatie? Dan kunt u kiezen voor <strong>€69 per maand</strong> met een online afsprakensysteem, diensten & prijzen en promoties. Voor <strong>€79 per maand</strong> krijgt u alles uit het €69 pakket plus <strong>e-mailmarketing campagnes</strong> naar uw bestaande klanten."
                 },
                 {
                     "title": "Hoe lang duurt het om een kapper website te ontwikkelen?",
