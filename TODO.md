@@ -1,0 +1,6 @@
+- Remove AI chars zoals em dash
+- Eenmalige betaling section in home moet van links alignen
+- Niche menu items in de header moeten niet bevatten 'laten maken'
+- Juist video youtube demo voor kapper
+- Check de whole content
+- Extra pricing tiers op kappers
