@@ -5,7 +5,7 @@
         "canonical": "https://webdevamin.com/en/industry/barber-website-development",
         "ogTitle": "Barber Website Development | From €79/month All-In-One",
         "ogDescription": "Get your barber website built from €79, €99 or €109 per month with an appointment system, services & pricing, promotions and (from €109) email marketing campaigns. Free hosting, maintenance and more. No startup costs! Request a free quote!",
-        "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+        "image": "https://bucket.webdevamin.com/barber_og.png",
         "keywords": "barber website development, barber shop website €79, barber appointment system €99, barber email marketing €109, barber online booking, responsive barber website, SEO for barbers, barber website design, professional barber website, hair salon website, website for barbers"
     },
     "alternates": [
@@ -31,7 +31,7 @@
             "name": "Webdevamin - Barber Website Development",
             "url": "https://webdevamin.com/en/industry/barber-website-development",
             "logo": "https://webdevamin.com/images/logo-light.png",
-            "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
+            "image": "https://bucket.webdevamin.com/barber_og.png",
             "description": "Get your barber website built from €79, €99 or €109 per month with free hosting, maintenance and more. No startup costs! Request a free quote!",
             "email": "amin@webdevamin.com",
             "telephone": "+32 470 93 09 16",
@@ -466,7 +466,7 @@
                         "Online <strong>appointment system</strong>",
                         "Services & pricing management",
                         "<strong>Promotions</strong> & offers",
-                        "<strong>Email marketing</strong> campaigns to existing customers"
+                        "<strong>Email marketing</strong> campaigns"
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Choose Pro Package",

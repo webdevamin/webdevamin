@@ -1,3 +1,1 @@
-- Remove AI chars zoals em dash
-- Check de whole content
-- Juiste OG image voor kapper
+- 
