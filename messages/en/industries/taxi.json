@@ -286,7 +286,7 @@
             "title": "See How It Works",
             "subtitle": "Video Demonstration",
             "text": "<p>Watch this video to see what a professional taxi website looks like and how the <strong>booking system</strong> works. Discover how customers can easily book a ride online, how the <strong>price calculator</strong> automatically calculates costs, and how you receive automatic <strong>email confirmations</strong> with all trip details including navigation link.</p>",
-            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoUrl": null,
             "videoTitle": "Taxi Website Demonstration - Booking System & Price Calculator"
         },
         {

@@ -1,12 +1,12 @@
 {
     "seo": {
-        "title": "Barber Website Development | From €49/month All-In-One",
-        "description": "Get your barber website built from €49, €69 or €79 per month with an appointment system, services & pricing, promotions and (from €79) email marketing campaigns. Free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "title": "Barber Website Development | From €79/month All-In-One",
+        "description": "Get your barber website built from €79, €99 or €109 per month with an appointment system, services & pricing, promotions and (from €109) email marketing campaigns. Free hosting, maintenance and more. No startup costs! Request a free quote!",
         "canonical": "https://webdevamin.com/en/industry/barber-website-development",
-        "ogTitle": "Barber Website Development | From €49/month All-In-One",
-        "ogDescription": "Get your barber website built from €49, €69 or €79 per month with an appointment system, services & pricing, promotions and (from €79) email marketing campaigns. Free hosting, maintenance and more. No startup costs! Request a free quote!",
+        "ogTitle": "Barber Website Development | From €79/month All-In-One",
+        "ogDescription": "Get your barber website built from €79, €99 or €109 per month with an appointment system, services & pricing, promotions and (from €109) email marketing campaigns. Free hosting, maintenance and more. No startup costs! Request a free quote!",
         "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
-        "keywords": "barber website development, barber shop website €49, barber appointment system €69, barber email marketing €79, barber online booking, responsive barber website, SEO for barbers, barber website design, professional barber website, hair salon website, website for barbers"
+        "keywords": "barber website development, barber shop website €79, barber appointment system €99, barber email marketing €109, barber online booking, responsive barber website, SEO for barbers, barber website design, professional barber website, hair salon website, website for barbers"
     },
     "alternates": [
         {
@@ -32,7 +32,7 @@
             "url": "https://webdevamin.com/en/industry/barber-website-development",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
-            "description": "Get your barber website built from €49, €69 or €79 per month with free hosting, maintenance and more. No startup costs! Request a free quote!",
+            "description": "Get your barber website built from €79, €99 or €109 per month with free hosting, maintenance and more. No startup costs! Request a free quote!",
             "email": "amin@webdevamin.com",
             "telephone": "+32 470 93 09 16",
             "address": {
@@ -46,7 +46,7 @@
                 "@type": "Country",
                 "name": "Belgium"
             },
-            "priceRange": "€49-€79",
+            "priceRange": "€79-€109",
             "serviceType": "Website Development",
             "provider": {
                 "@type": "LocalBusiness",
@@ -69,7 +69,7 @@
                     "name": "How much does it cost to build a barber website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "A professional barber website costs from €49 per month excl. VAT for a standard business website with free hosting, maintenance and more. Want more automation? Then you can choose €69 per month excl. VAT with an online appointment system, services & pricing and promotions. For €79 per month excl. VAT you get everything from the €69 package plus email marketing campaigns to your existing customers."
+                        "text": "A professional barber website costs from €79 per month excl. VAT for a standard business website with free hosting, maintenance and more. Want more automation? Then you can choose €99 per month excl. VAT with an online appointment system, services & pricing and promotions. For €109 per month excl. VAT you get everything from the €99 package plus email marketing campaigns to your existing customers."
                     }
                 },
                 {
@@ -168,11 +168,11 @@
                             "@type": "Service",
                             "name": "Standard Barber Website"
                         },
-                        "price": "49",
+                        "price": "79",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "49",
+                            "price": "79",
                             "priceCurrency": "EUR",
                             "unitText": "per month"
                         }
@@ -183,11 +183,11 @@
                             "@type": "Service",
                             "name": "Premium Barber Website with Appointment System"
                         },
-                        "price": "69",
+                        "price": "99",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "69",
+                            "price": "99",
                             "priceCurrency": "EUR",
                             "unitText": "per month"
                         }
@@ -198,11 +198,11 @@
                             "@type": "Service",
                             "name": "Pro Barber Website with Email Marketing"
                         },
-                        "price": "79",
+                        "price": "109",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "79",
+                            "price": "109",
                             "priceCurrency": "EUR",
                             "unitText": "per month"
                         }
@@ -216,9 +216,9 @@
             "slug": "hero",
             "component": "hero",
             "title": "Barber Website Development",
-            "text": "Get your barber website built by a professional with an All-in-One package: including free hosting, maintenance, SEO optimization and more! No startup costs! Choose a business website for €49/month, the advanced package for €69/month (appointment system, services & pricing and promotions) or the Pro package for €79/month with email marketing campaigns. Excl. VAT.",
+            "text": "Get your barber website built by a professional with an All-in-One package: including free hosting, maintenance, SEO optimization and more! No startup costs! Choose a business website for €79/month, the advanced package for €99/month (appointment system, services & pricing and promotions) or the Pro package for €109/month with email marketing campaigns. Excl. VAT.",
             "image": {
-                "src": "https://bucket.webdevamin.com/taxi.png",
+                "src": "https://bucket.webdevamin.com/barber.png",
                 "alt": "A modern barber shop with a professional website on a tablet showing appointments.",
                 "width": 600,
                 "height": 400
@@ -273,7 +273,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
+                "src": "https://bucket.webdevamin.com/barber-salon.png",
                 "alt": "Modern barber shop interior with professional styling."
             }
         },
@@ -281,7 +281,7 @@
             "title": "Why All-In-One Package?",
             "subtitle": "No separate systems, but one complete barber package",
             "slug": "why-all-in-one",
-            "text": "<p>An all-in-one package for your barber shop is <strong>very beneficial</strong> because it provides a complete total solution. You get a professional website with free lifetime hosting and maintenance. That means: no more invoices for hosting, domain name or email. All administration and invoices regarding those matters are handled by me.</p><p>You can start from <strong>€49 per month</strong> for a professional business website. Want more automation? Then you can choose the <strong>€69 per month</strong> package with an appointment system, services & pricing and promotions. If you want to actively re-engage existing customers, choose the <strong>Pro package for €79 per month</strong> with email marketing campaigns.</p><p>Prices are <strong>excl. VAT</strong>.</p>",
+            "text": "<p>An all-in-one package for your barber shop is <strong>very beneficial</strong> because it provides a complete total solution. You get a professional website with free lifetime hosting and maintenance. That means: no more invoices for hosting, domain name or email. All administration and invoices regarding those matters are handled by me.</p><p>You can start from <strong>€79 per month</strong> for a professional business website. Want more automation? Then you can choose the <strong>€99 per month</strong> package with an appointment system, services & pricing and promotions. If you want to actively re-engage existing customers, choose the <strong>Pro package for €109 per month</strong> with email marketing campaigns.</p><p>Prices are <strong>excl. VAT</strong>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -291,7 +291,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
+                "src": "https://bucket.webdevamin.com/client-showcase-barber-site.png",
                 "alt": "A web developer shows a barber website to a barber shop owner. An appointment system is displayed on the computer."
             }
         },
@@ -301,7 +301,7 @@
             "title": "See How It Works",
             "subtitle": "Video Demonstration",
             "text": "<p>Watch this video to see what a professional barber website looks like and how the <strong>appointment system</strong> works. Discover how customers can easily book an appointment online, how you can add new services via the <strong>admin panel</strong>, and how you can use <strong>email marketing</strong> to reach existing customers with <strong>promotions</strong> and offers.</p>",
-            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoUrl": null,
             "videoTitle": "Barber Website Demonstration - Appointment System & Admin Panel"
         },
         {
@@ -361,9 +361,9 @@
         {
             "slug": "portfolio-case",
             "component": "portfolio",
-            "title": "Success Story: Modern Barber Shop",
+            "title": "Success Story: Kapsalon Dila",
             "subtitle": "Customer Experience",
-            "description": "<p>A local barber shop wanted to strengthen their online presence and generate more direct appointments. To achieve this, I developed a complete barber website with modern features such as a contact form, automatic email confirmations and reminders, price list, portfolio gallery and an appointment system.</p>",
+            "description": "<p>A local barber shop wanted to strengthen their online presence and generate more direct appointments. To achieve this, I developed a complete barber website with modern features such as a contact form, automatic email confirmations and reminders, price list, portfolio gallery and an appointment system. Check out <a href='https://kapsalondila.be' target='_blank' rel='noopener noreferrer'>the website</a> for more information.</p>",
             "highlights": [
                 {
                     "number": "50%",
@@ -382,9 +382,9 @@
                 }
             ],
             "project": {
-                "name": "Modern Barber Shop",
-                "url": "https://antaxi.be",
-                "image": "https://bucket.webdevamin.com/antaxi.png",
+                "name": "Kapsalon Dila barber website",
+                "url": "https://kapsalondila.be",
+                "image": "https://bucket.webdevamin.com/kapsalondila.png",
                 "description": "Example of a barber website with online appointment system."
             }
         },
@@ -393,12 +393,12 @@
             "subtitle": "Packages for your barber shop",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Choose between my <strong>business barber website for €49 per month</strong>, the <strong>advanced package for €69 per month</strong> (appointment system, services & pricing and promotions) or the <strong>Pro package for €79 per month</strong> with <strong>email marketing campaigns</strong> to existing customers.</p><p>All packages include professional appearance, FREE hosting, maintenance and SEO optimization.</p><p>Prices are always <strong>excl. VAT</strong>.</p>",
+            "text": "<p>Choose between my <strong>business barber website for €79 per month</strong>, the <strong>advanced package for €99 per month</strong> (appointment system, services & pricing and promotions) or the <strong>Pro package for €109 per month</strong> with <strong>email marketing campaigns</strong> to existing customers.</p><p>All packages include professional appearance, FREE hosting, maintenance and SEO optimization.</p><p>Prices are always <strong>excl. VAT</strong>.</p>",
             "subsubtitle": "Options",
             "items": [
                 {
                     "title": "Standard",
-                    "price": "49",
+                    "price": "79",
                     "currency": "€",
                     "period": "/month",
                     "features": [
@@ -423,7 +423,7 @@
                 },
                 {
                     "title": "Premium",
-                    "price": "69",
+                    "price": "99",
                     "currency": "€",
                     "period": "/month",
                     "popular": false,
@@ -449,7 +449,7 @@
                 },
                 {
                     "title": "Pro",
-                    "price": "79",
+                    "price": "109",
                     "currency": "€",
                     "period": "/month",
                     "popular": true,
@@ -502,7 +502,7 @@
             "items": [
                 {
                     "title": "How much does it cost to build a barber website?",
-                    "description": "A professional barber website costs from <strong>€49 per month</strong> for a business website with free hosting, maintenance and more. Want more automation? Then you can choose <strong>€69 per month</strong> with an online appointment system, services & pricing and promotions. For <strong>€79 per month</strong> you get everything from the €69 package plus <strong>email marketing campaigns</strong> to your existing customers."
+                    "description": "A professional barber website costs from <strong>€79 per month</strong> for a business website with free hosting, maintenance and more. Want more automation? Then you can choose <strong>€99 per month</strong> with an online appointment system, services & pricing and promotions. For <strong>€109 per month</strong> you get everything from the €99 package plus <strong>email marketing campaigns</strong> to your existing customers."
                 },
                 {
                     "title": "How long does it take to develop a barber website?",
@@ -552,8 +552,8 @@
             "slug": "cta-bottom",
             "component": "cta",
             "title": "Ready to Generate More Appointments?",
-            "subtitle": "Choose your package: €49, €69 or €79 per month",
-            "text": "Start with a professional barber website from €49 per month, choose the advanced package for €69 per month (appointment system, services & pricing and promotions) or go Pro for €79 per month with email marketing campaigns. I help you every step of the way, from design to launch. Request a free quote now and discover how I can help your barber shop grow online.",
+            "subtitle": "Choose your package: €79, €99 or €109 per month",
+            "text": "Start with a professional barber website from €79 per month, choose the advanced package for €99 per month (appointment system, services & pricing and promotions) or go Pro for €109 per month with email marketing campaigns. I help you every step of the way, from design to launch. Request a free quote now and discover how I can help your barber shop grow online.",
             "button": [
                 {
                     "href": "/contact",
@@ -564,9 +564,9 @@
             ],
             "features": [
                 "Free consultation",
-                "Business website €49/month",
-                "Advanced package €69/month",
-                "Pro package €79/month",
+                "Business website €79/month",
+                "Advanced package €99/month",
+                "Pro package €109/month",
                 "Continuous support"
             ]
         }

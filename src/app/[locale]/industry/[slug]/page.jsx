@@ -118,12 +118,21 @@ const VideoDemoSection = ({ content }) => {
   // Extract YouTube video ID from URL
   const getYouTubeId = (url) => {
     if (!url) return null;
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    // Handle youtu.be short URLs
+    if (url.includes('youtu.be/')) {
+      const id = url.split('youtu.be/')[1]?.split('?')[0]?.split('#')[0];
+      if (id && id.length === 11) return id;
+    }
+    // Handle standard YouTube URLs
+    const regExp = /^.*(v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : null;
   };
 
   const videoId = getYouTubeId(videoUrl);
+
+  // Don't render if there's no valid video URL
+  if (!videoUrl) return null;
 
   return (
     <BlockLayoutOne title={title} slug="video-demo" includeMaxWidth={false}>
@@ -133,19 +142,26 @@ const VideoDemoSection = ({ content }) => {
           {text && <div className="mb-8" dangerouslySetInnerHTML={{ __html: text }} />}
 
           {videoId && (
-            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+            <div
+              className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
+              style={{ paddingTop: '56.25%' }}
+            >
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
                 title={videoTitle || title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
+                className="absolute inset-0 w-full h-full"
               />
             </div>
           )}
 
           {!videoId && videoUrl && (
-            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-100 flex items-center justify-center">
+            <div
+              className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-100"
+              style={{ paddingTop: '56.25%' }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
               <a
                 href={videoUrl}
                 target="_blank"
@@ -157,6 +173,7 @@ const VideoDemoSection = ({ content }) => {
                 </svg>
                 <span className="font-semibold">Bekijk de video</span>
               </a>
+              </div>
             </div>
           )}
         </div>

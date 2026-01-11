@@ -286,7 +286,7 @@
             "title": "Bekijk Hoe Het Werkt",
             "subtitle": "Video Demonstratie",
             "text": "<p>Bekijk in deze video hoe een professionele taxi website eruitziet en hoe het <strong>boekingssysteem</strong> werkt. Ontdek hoe klanten eenvoudig online een rit kunnen boeken, hoe de <strong>prijscalculator</strong> automatisch de kosten berekent, en hoe u automatische <strong>e-mailbevestigingen</strong> ontvangt met alle ritdetails inclusief navigatie-link.</p>",
-            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoUrl": null,
             "videoTitle": "Taxi Website Demonstratie - Boekingssysteem & Prijscalculator"
         },
         {

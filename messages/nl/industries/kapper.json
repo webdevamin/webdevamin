@@ -218,7 +218,7 @@
             "title": "Kapper Website Laten Maken",
             "text": "Laat uw kapper website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website voor €49/maand of met een automatiserend afsprakensysteem voor €69/maand. Excl. BTW.",
             "image": {
-                "src": "https://bucket.webdevamin.com/taxi.png",
+                "src": "https://bucket.webdevamin.com/barber.png",
                 "alt": "Een moderne kapperszaak met een professionele website op een tablet die afspraken toont.",
                 "width": 600,
                 "height": 400
@@ -273,7 +273,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
+                "src": "https://bucket.webdevamin.com/barber-salon.png",
                 "alt": "Moderne kapperszaak interieur met professionele styling."
             }
         },
@@ -291,7 +291,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
+                "src": "https://bucket.webdevamin.com/client-showcase-barber-site.png",
                 "alt": "Een webontwikkelaar laat een kapper website zien aan de eigenaar van een kapperszaak. Op de computer wordt een afsprakensysteem weergegeven."
             }
         },
@@ -301,7 +301,7 @@
             "title": "Bekijk Hoe Het Werkt",
             "subtitle": "Video Demonstratie",
             "text": "<p>Bekijk in deze video hoe een professionele kapper website eruitziet en hoe het <strong>afsprakensysteem</strong> werkt. Ontdek hoe klanten eenvoudig online een afspraak kunnen boeken, hoe u nieuwe diensten kunt toevoegen via het <strong>administratiepaneel</strong>, en hoe u <strong>e-mailmarketing</strong> kunt inzetten om bestaande klanten te bereiken met <strong>promoties</strong> en aanbiedingen.</p>",
-            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "videoUrl": "https://youtu.be/AGwC2u7a-DM",
             "videoTitle": "Kapper Website Demonstratie - Afsprakensysteem & Administratiepaneel"
         },
         {
@@ -351,9 +351,9 @@
         {
             "slug": "portfolio-case",
             "component": "portfolio",
-            "title": "Succesverhaal: Moderne Kapperszaak",
+            "title": "Succesverhaal: Kapsalon Dila",
             "subtitle": "Klantervaring",
-            "description": "<p>Een lokale kapperszaak wilde hun online aanwezigheid versterken en meer directe afspraken genereren. Om dit te bereiken, heb ik een volledige kapper website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, prijslijst, portfolio galerij en een afsprakensysteem.</p>",
+            "description": "<p>Een lokale kapperszaak wilde hun online aanwezigheid versterken en meer directe afspraken genereren. Om dit te bereiken, heb ik een volledige kapper website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, prijslijst, portfolio galerij en een afsprakensysteem. Bekijk <a href='https://kapsalondila.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
             "highlights": [
                 {
                     "number": "50%",
@@ -372,9 +372,9 @@
                 }
             ],
             "project": {
-                "name": "Moderne Kapperszaak",
-                "url": "https://antaxi.be",
-                "image": "https://bucket.webdevamin.com/antaxi.png",
+                "name": "Kapsalon Dila kapperswebsite",
+                "url": "https://kapsalondila.be",
+                "image": "https://bucket.webdevamin.com/kapsalondila.png",
                 "description": "Voorbeeld van een kapper website met online afsprakensysteem."
             }
         },
@@ -428,7 +428,7 @@
                         "24/7 <strong>support</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>afsprakensysteem</strong>",
-                        "Diensten aanpassen met <strong>prijzen</strong>",
+                        "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
                         "<strong>Promoties</strong> & aanbiedingen"
                     ],
                     "excludedFeatures": [
@@ -454,9 +454,9 @@
                         "24/7 <strong>support</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>afsprakensysteem</strong>",
-                        "Diensten aanpassen met <strong>prijzen</strong>",
+                        "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
                         "<strong>Promoties</strong> & aanbiedingen",
-                        "<strong>E-mailmarketing</strong> campagnes naar bestaande klanten"
+                        "<strong>E-mailmarketing</strong> campagnes"
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Kies Pro Pakket",
@@ -532,7 +532,7 @@
             "slug": "one-time-payment",
             "component": "one-time-payment",
             "title": "Eenmalige Betaling",
-            "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong> voor uw kapper website. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Deze optie is ideaal als u volledige controle wilt over uw hosting of al een hostingprovider heeft. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat voor uw kapperszaak.</p>",
+            "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong> voor uw kapper website. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting, onderhoud en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Deze optie is ideaal als u volledige controle wilt over uw hosting of al een hostingprovider heeft. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat voor uw kapperszaak.</p>",
             "button": {
                 "href": "/contact",
                 "text": "Vraag Offerte Aan"
@@ -541,7 +541,7 @@
         {
             "slug": "cta-bottom",
             "component": "cta",
-            "title": "Klaar om Meer Afspraken te Genereren?",
+            "title": "Klaar voor Meer Afspraken?",
             "subtitle": "Kies uw pakket: €49, €69 of €79 per maand",
             "text": "Start met een professionele kapper website vanaf €49 per maand, kies het geavanceerde pakket voor €69 per maand (afsprakensysteem, diensten & prijzen en promoties) of ga voor Pro voor €79 per maand met e-mailmarketing campagnes. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw kapperszaak online kan laten groeien.",
             "button": [
