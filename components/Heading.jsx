@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+
 import { useInView } from 'react-intersection-observer'
 
 const Heading = ({ title, subtitle, titleClasses = '', split, noSubtitle, level = 'h2' }) => {

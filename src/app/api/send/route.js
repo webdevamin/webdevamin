@@ -19,7 +19,7 @@ export async function POST(req) {
     const cleanMessage = message.replace(/(<([^>]+)>)/gi, "");
 
     const emailData = {
-      from: `Contact Form <onboarding@resend.dev>`,
+      from: `Contact Form <contact@webdevamin.com>`,
       to: MAIL_TO,
       subject: `New portfolio message from ${name}`,
       reply_to: email,

@@ -1,4 +1,3 @@
-import React from 'react'
 import CookieConsent from '../CookieConsent'
 
 const PageLayout = ({ children }) => {

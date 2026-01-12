@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BlockLayoutThree = ({ children, title, bothSides, darkBg = false }) => {
     return (
         <div id={title} className={`py-14 sm:py-16 

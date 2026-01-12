@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Alert = ({ title, text, bgColor, classes }) => {
     return (
         <div style={{ backgroundColor: bgColor }}

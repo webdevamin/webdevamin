@@ -68,7 +68,7 @@
             "title": "Contactformulier",
             "slug": "contact",
             "subtitle": "Keep in touch",
-            "text": "<p>U kunt <a href='mailto:amin@webdevamin.com'>hier</a> klikken om mij een e-mailbericht te sturen via uw standaard e-mailclient, oftewel vult u de velden hieronder in.</p>"
+            "text": "<p>U kunt <a href='mailto:amin@webdevamin.com'>hier</a> klikken om mij een e-mailbericht te sturen via uw standaard e-mailclient, mij <a href='tel:+32470930916'>bellen</a> op +32 470 93 09 16, of vult u de velden hieronder in.</p>"
         }
     ]
 }

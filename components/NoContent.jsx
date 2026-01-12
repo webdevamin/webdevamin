@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
-import React from 'react'
 
 const NoContent = ({ title, text, locale, imgOnly }) => {
     const router = useRouter();

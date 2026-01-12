@@ -162,17 +162,17 @@ const VideoDemoSection = ({ content }) => {
               style={{ paddingTop: '56.25%' }}
             >
               <div className="absolute inset-0 flex items-center justify-center">
-              <a
-                href={videoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-4 text-theme hover:text-theme_darker transition-colors"
-              >
-                <svg className="w-20 h-20" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span className="font-semibold">Bekijk de video</span>
-              </a>
+                <a
+                  href={videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-4 text-theme hover:text-theme_darker transition-colors"
+                >
+                  <svg className="w-20 h-20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  <span className="font-semibold">Bekijk de video</span>
+                </a>
               </div>
             </div>
           )}
