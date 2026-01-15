@@ -5,7 +5,7 @@ import ButtonOne from './Buttons/ButtonOne';
 import Alert from './Alert';
 
 const initForm = {
-    name: '', email: '', message: ''
+    name: '', email: '', message: '', website: ''
 };
 
 const ContactForm = ({ content, formText }) => {
@@ -83,6 +83,17 @@ const ContactForm = ({ content, formText }) => {
                             onChange={handleChange} required
                             className={`w-full rounded border-dark border-opacity-25 sm:py-3 bg-slate-50`} />
                     </label>
+                    {/* Honeypot field - hidden from humans, bots will fill it */}
+                    <input
+                        type="text"
+                        name="website"
+                        value={form.website}
+                        onChange={handleChange}
+                        autoComplete="off"
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }}
+                    />
                 </div>
                 <ButtonOne input={{ value: formText.send }} classes={`w-full sm:w-1/3 md:w-1/4 mt-10 sm:mt-12 sm:flex sm:justify-center`} />
             </form>

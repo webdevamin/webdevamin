@@ -66,7 +66,8 @@ export async function generateMetadata({ params: { locale } }) {
 const Contact = async ({ params: { locale } }) => {
     const { localesData, socialsData, blogsData, pagesData, pageData } = await getData(locale);
     const { alternateLangs, slug, blocks } = pageData;
-    const { title: title4, subtitle, text } = blocks[4];
+    const contactBlock = blocks.find(block => block.slug === `contact`);
+    const { title: title4, subtitle, text } = contactBlock;
 
     const formTexts = {
         name: locale === `en` ? `Name` : `Naam`,

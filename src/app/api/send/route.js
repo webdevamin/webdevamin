@@ -2,7 +2,21 @@ const { RESEND_API_KEY, MAIL_TO } = process.env;
 
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, message, website } = await req.json();
+
+    // Honeypot check - if website field is filled, it's likely a bot
+    if (website) {
+      // Silently reject but return success to not alert the bot
+      return new Response(
+        JSON.stringify({ message: 'Message sent successfully.' }),
+        {
+          status: 200,
+          headers: {
+            'content-type': 'application/json'
+          }
+        }
+      );
+    }
 
     if (!name || !email || !message) {
       return new Response(
