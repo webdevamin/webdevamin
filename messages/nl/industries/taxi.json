@@ -12,18 +12,9 @@
         {
             "href": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
             "hreflang": "nl"
-        },
-        {
-            "href": "https://webdevamin.com/en/industry/taxi-website-development",
-            "hreflang": "en"
         }
     ],
-    "alternateLangs": [
-        {
-            "locale": "en",
-            "href": "/industry/taxi-website-development"
-        }
-    ],
+    "alternateLangs": [],
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",

@@ -27,10 +27,6 @@ async function getData(locale, slug) {
       'taxi-website-laten-maken': 'taxi',
       'kapper-website-laten-maken': 'kapper',
     },
-    en: {
-      'taxi-website-development': 'taxi',
-      'barber-website-development': 'kapper',
-    },
   };
 
   const localeMap = slugToFileMap[locale];
@@ -244,8 +240,12 @@ const PortfolioCase = ({ content }) => {
   );
 };
 
+/*
+ * Rendert de pricing-sectie volledig vanuit data, inclusief positionering,
+ * aanbevolen badge en een extra groeiblok onder de kaarten.
+ */
 const PricingSection = ({ content }) => {
-  const { title, subtitle, text, highlight, items } = content;
+  const { title, subtitle, text, highlight, items, growthTitle, growthText, growthNote } = content;
   const hasSingleTier = Array.isArray(items) && items.length === 1;
 
   return (
@@ -254,17 +254,29 @@ const PricingSection = ({ content }) => {
         <div className="max-w-7xl ml-auto lg:text-right">
           <div className='mb-10'>
             <Heading title={title} subtitle={subtitle} />
-            <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme 
-                text-white px-4 py-2 mb-7 inline-block uppercase 
-                md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
+            <h4 className='-mt-2 mb-7 inline-block rounded-full bg-theme px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-white md:text-base xl:px-5 xl:py-3'>{highlight}</h4>
             <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
           {(items && items.length > 0) && (
             <div className="mt-12 lg:pt-4">
-              <div className={`grid grid-cols-1 ${hasSingleTier ? '' : 'lg:grid-cols-3'} gap-6 xl:gap-8`}>
+              <div className={`grid grid-cols-1 ${hasSingleTier ? '' : 'md:grid-cols-2 xl:grid-cols-4'} gap-6 xl:gap-8`}>
                 {items.map((item, index) => {
-                  const { title, price, currency, period, features,
-                    excludedFeatures, buttonText, buttonHref, popular } = item;
+                  const {
+                    title,
+                    price,
+                    currency,
+                    period,
+                    tagline,
+                    microcopy,
+                    badge,
+                    limitLabel,
+                    description,
+                    features,
+                    excludedFeatures,
+                    buttonText,
+                    buttonHref,
+                    popular,
+                  } = item;
 
                   return (
                     <div key={index} className={hasSingleTier ? 'w-full' : ''}>
@@ -273,6 +285,11 @@ const PricingSection = ({ content }) => {
                         price={price}
                         currency={currency}
                         period={period}
+                        tagline={tagline}
+                        microcopy={microcopy}
+                        badge={badge}
+                        limitLabel={limitLabel}
+                        description={description}
                         features={features}
                         excludedFeatures={excludedFeatures}
                         buttonText={buttonText}
@@ -283,6 +300,27 @@ const PricingSection = ({ content }) => {
                   );
                 })}
               </div>
+            </div>
+          )}
+          {(growthTitle || growthText || growthNote) && (
+            <div className="mt-10 mb-10 rounded-3xl lg:ml-auto lg:max-w-4xl">
+              {growthTitle && (
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                  {growthTitle}
+                </h3>
+              )}
+              {growthText && (
+                <p className="mt-3 text-base leading-7 text-slate-600">
+                  {growthText}
+                </p>
+              )}
+              {growthNote && (
+                <div className="mt-5">
+                  <span className="inline-block rounded-full bg-theme px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-white">
+                    {growthNote}
+                  </span>
+                </div>
+              )}
             </div>
           )}
         </div>

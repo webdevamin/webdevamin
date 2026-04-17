@@ -4,11 +4,20 @@ import { Card } from "flowbite-react";
 import CtaButton from "../Buttons/CtaButton";
 import { useLocale } from 'next-intl';
 
+/*
+ * Toont een pricing card met optionele positioneringsteksten zoals badge,
+ * tagline, microcopy en groeilabels zodat elk pakket duidelijk zijn rol krijgt.
+ */
 export function PricingCard({
     title,
     price,
     currency = "€",
     period = "/maand",
+    tagline,
+    microcopy,
+    badge,
+    limitLabel,
+    description,
     features = [],
     excludedFeatures = [],
     buttonText = "Kies pakket",
@@ -22,25 +31,52 @@ export function PricingCard({
     const isDutch = locale === 'nl';
 
     return (
-        <Card className={`flex flex-col h-full ${popular ? 'border-2 border-theme shadow-lg transform lg:scale-105' : ''} ${className}`}>
+        <Card
+            className={`flex flex-col h-full rounded-3xl border transition-all duration-300 ${popular
+                ? 'border-2 border-theme bg-white shadow-2xl lg:-translate-y-3'
+                : 'border-gray-200 bg-white shadow-md hover:shadow-xl'
+                } ${className}`}
+        >
             <div className="flex-grow">
-                <div className={`flex items-center ${popular ? 'justify-between' : 'justify-end'} mb-4`}>
-                    {popular && (
-                        <span className="bg-theme text-white px-3 py-1 rounded-full text-xs font-semibold mr-3">
-                            Meest Populair
-                        </span>
-                    )}
-                    <h5 className="text-xl font-medium text-gray-500 dark:text-gray-400">
+                <div className="mb-6 flex min-h-[2rem] items-center justify-between gap-3">
+                    <h5 className="text-xl font-semibold text-slate-900">
                         {title}
                     </h5>
+                    {badge && (
+                        <span className="rounded-full bg-theme px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white">
+                            {badge}
+                        </span>
+                    )}
                 </div>
-                <div className="flex items-baseline text-gray-900 dark:text-white">
-                    <span className="text-3xl font-semibold">{currency}</span>
+                {tagline && (
+                    <p className="mb-5 min-h-[3rem] text-sm leading-6 text-slate-600">
+                        {tagline}
+                    </p>
+                )}
+                <div className="mb-5 flex items-end gap-1 text-slate-900">
+                    <span className="text-2xl font-semibold">{currency}</span>
                     <span className="text-5xl font-extrabold tracking-tight">{price}</span>
-                    <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+                    <span className="mb-1 ml-1 text-sm font-medium text-slate-500 sm:text-base">
                         {period}
                     </span>
                 </div>
+                {microcopy && (
+                    <p className="mb-5 rounded-2xl border border-theme/20 bg-theme/5 px-4 py-3 text-sm font-medium leading-6 text-theme_darker">
+                        {microcopy}
+                    </p>
+                )}
+                {limitLabel && (
+                    <div className="mb-5">
+                        <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
+                            {limitLabel}
+                        </span>
+                    </div>
+                )}
+                {description && (
+                    <p className="mb-5 text-sm leading-6 text-slate-600">
+                        {description}
+                    </p>
+                )}
                 <ul className="my-7 space-y-3">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-start space-x-3">
@@ -51,7 +87,7 @@ export function PricingCard({
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <span className="text-sm text-gray-700 text-left" dangerouslySetInnerHTML={{ __html: feature }}></span>
+                            <span className="text-left text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: feature }}></span>
                         </li>
                     ))}
                     {excludedFeatures.map((feature, index) => (

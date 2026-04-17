@@ -1,29 +1,20 @@
 {
     "seo": {
         "title": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
-        "description": "Professionele kapper websites vanaf €49/maand met afsprakensysteem & e-mailmarketing. Gratis hosting inbegrepen. Vraag nu gratis offerte aan!",
+        "description": "Professionele kapper websites vanaf €49/maand waarmee u online zichtbaar wordt en automatisch afspraken kunt ontvangen. Alles inbegrepen, zonder opstartkosten.",
         "canonical": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
         "ogTitle": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
-        "ogDescription": "Professionele kapper websites vanaf €49/maand met afsprakensysteem & e-mailmarketing. Gratis hosting inbegrepen. Vraag nu gratis offerte aan!",
+        "ogDescription": "Professionele kapper websites vanaf €49/maand waarmee u online zichtbaar wordt en automatisch afspraken kunt ontvangen. Alles inbegrepen, zonder opstartkosten.",
         "image": "https://bucket.webdevamin.com/barber_og_nl.png",
-        "keywords": "kapper website laten maken, website voor kappers, kapperszaak website €49, kapper afsprakensysteem €69, kapper online reserveren, responsive kapper website, SEO voor kappers, kapper website ontwerp, professionele kapper website, barbershop website, website kapsalon"
+        "keywords": "kapper website laten maken, website voor kappers, kapperszaak website €49, kapper afsprakensysteem €89, kapper website €119, kapper online reserveren, responsive kapper website, SEO voor kappers, professionele kapper website, barbershop website, website kapsalon"
     },
     "alternates": [
         {
             "href": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
             "hreflang": "nl"
-        },
-        {
-            "href": "https://webdevamin.com/en/industry/barber-website-development",
-            "hreflang": "en"
         }
     ],
-    "alternateLangs": [
-        {
-            "locale": "en",
-            "href": "/industry/barber-website-development"
-        }
-    ],
+    "alternateLangs": [],
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",
@@ -32,7 +23,7 @@
             "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://bucket.webdevamin.com/barber_og_nl.png",
-            "description": "Laat uw kapper website maken vanaf €49, €69 of €79 per maand met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+            "description": "Laat uw kapper website maken vanaf €49, €89 of €119 per maand om online zichtbaar te zijn en automatisch afspraken te ontvangen. Geen opstartkosten, geen gedoe.",
             "email": "amin@webdevamin.com",
             "telephone": "+32 470 93 09 16",
             "address": {
@@ -46,7 +37,7 @@
                 "@type": "Country",
                 "name": "Belgium"
             },
-            "priceRange": "€49-€79",
+            "priceRange": "€49-€119",
             "serviceType": "Website Development",
             "provider": {
                 "@type": "LocalBusiness",
@@ -69,7 +60,7 @@
                     "name": "Hoeveel kost het om een kapper website te laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een professionele kapper website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer. Wilt u meer automatisatie? Dan kunt u kiezen voor €69 per maand excl. BTW met een online afsprakensysteem, diensten & prijzen en promoties. Voor €79 per maand excl. BTW krijgt u alles uit het €69 pakket plus e-mailmarketing campagnes naar uw bestaande klanten."
+                        "text": "Een professionele kapper website kost vanaf €49 per maand excl. BTW voor een sterke online aanwezigheid. Wilt u automatisch afspraken ontvangen? Dan is Premium voor €89 per maand excl. BTW de beste keuze, inclusief online afsprakensysteem, diensten & prijzen beheren, promoties en tot 100 afspraken per maand inbegrepen. Voor salons die willen doorgroeien is er Pro voor €119 per maand excl. BTW, met e-mailmarketing campagnes en tot 250 afspraken per maand inbegrepen."
                     }
                 },
                 {
@@ -142,7 +133,7 @@
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Kapper Website Ontwikkeling",
-            "description": "Professionele kapper website laten maken met online afsprakensysteem en SEO-optimalisatie",
+            "description": "Professionele kapper website laten maken om online zichtbaar te zijn en automatisch afspraken te ontvangen",
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Webdevamin",
@@ -183,11 +174,11 @@
                             "@type": "Service",
                             "name": "Premium Kapper Website met Afsprakensysteem"
                         },
-                        "price": "69",
+                        "price": "89",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "69",
+                            "price": "89",
                             "priceCurrency": "EUR",
                             "unitText": "per maand"
                         }
@@ -198,11 +189,11 @@
                             "@type": "Service",
                             "name": "Pro Kapper Website met E-mailmarketing"
                         },
-                        "price": "79",
+                        "price": "119",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "79",
+                            "price": "119",
                             "priceCurrency": "EUR",
                             "unitText": "per maand"
                         }
@@ -216,7 +207,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Kapper Website Laten Maken",
-            "text": "Laat uw kapper website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website voor €49/maand of met een automatiserend afsprakensysteem voor €69/maand. Excl. BTW.",
+            "text": "Word online zichtbaar met een professionele kapper website die klanten overtuigt en afspraken oplevert. Kies voor een sterke online basis vanaf €49/maand of voor een pakket waarmee u automatisch afspraken ontvangt vanaf €89/maand. Geen opstartkosten. Excl. BTW.",
             "image": {
                 "src": "https://bucket.webdevamin.com/barber.png",
                 "alt": "Een moderne kapperszaak met een professionele website op een tablet die afspraken toont.",
@@ -281,7 +272,7 @@
             "title": "Waarom All-In-One Pakket?",
             "subtitle": "Geen losse systemen, maar één compleet kapper pakket",
             "slug": "why-all-in-one",
-            "text": "<p>Een all-in-one pakket voor uw kapperszaak is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een afsprakensysteem. Bezoekers kunnen op uw website een afspraak boeken met datum, tijd en gewenste behandeling. De applicatie stuurt automatisch bevestigingen en herinneringen. Dit bespaart u tijd en vermindert no-shows.</p><p>Dankzij deze integratie worden afspraken automatisch beheerd en hoeft u niet meer handmatig te plannen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Een all-in-one pakket voor uw kapperszaak helpt u om <strong>online zichtbaar</strong> te zijn zonder technische zorgen. U krijgt een professionele website, onderhoud, SEO-optimalisatie en alle praktische opvolging in één eenvoudig maandplan. Zo kunt u zich focussen op uw klanten, terwijl ik zorg voor de technische kant.</p><p>Wilt u ook <strong>automatisch afspraken ontvangen</strong>? Dan is Premium de slimste keuze. Klanten boeken zelf via uw website, u beheert eenvoudig diensten, prijzen en promoties, en u wint tijd doordat minder handmatig geregeld moet worden. Dat zorgt voor meer gemak, minder no-shows en een vlottere werking in uw salon.</p><p>Voor salons die verder willen groeien is er Pro, met extra ruimte voor meer afspraken en e-mailmarketing campagnes om bestaande klanten opnieuw te activeren. De prijzen zijn <strong>excl. BTW</strong>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -379,11 +370,14 @@
             }
         },
         {
-            "title": "Prijsabonnement",
+            "title": "Meer afspraken voor je kapsalon, zonder technische zorgen",
             "subtitle": "Pakketten voor uw kapperszaak",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen mijn <strong>zakelijke kapper website voor €49 per maand</strong>, het <strong>geavanceerde pakket voor €69 per maand</strong> (met o.a. afsprakensysteem, diensten & prijzen en promoties) of het <strong>Pro pakket voor €79 per maand</strong> met <strong>e-mailmarketing campagnes</strong> naar bestaande klanten.</p><p>Alle pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Alles wat je nodig hebt om online zichtbaar te zijn én automatisch afspraken te ontvangen, in één eenvoudig maandplan. Geen opstartkosten, geen gedoe.</p><p>Premium is de beste keuze voor kappers die meer afspraken willen ontvangen zonder technische zorgen. Pro geeft extra ruimte om verder te groeien wanneer uw salon meer volume draait.</p><p>De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "growthTitle": "Onze plannen groeien met je mee",
+            "growthText": "Krijg je meer afspraken? Dan kun je eenvoudig upgraden zodat alles vlot blijft werken zonder technische zorgen.",
+            "growthNote": "Geen opstartkosten. Alles inbegrepen.",
             "subsubtitle": "Opties",
             "items": [
                 {
@@ -391,6 +385,8 @@
                     "price": "49",
                     "currency": "€",
                     "period": "/maand",
+                    "popular": false,
+                    "tagline": "Voor kappers die professioneel online zichtbaar willen zijn",
                     "features": [
                         "Op maat <strong>zakelijke website</strong>",
                         "<strong>GRATIS</strong> mobiele optimalisatie",
@@ -413,36 +409,14 @@
                 },
                 {
                     "title": "Premium",
-                    "price": "69",
-                    "currency": "€",
-                    "period": "/maand",
-                    "popular": false,
-                    "features": [
-                        "Op maat <strong>zakelijke website</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
-                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
-                        "Geen <strong>opstartkosten</strong>",
-                        "Online <strong>afsprakensysteem</strong>",
-                        "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
-                        "<strong>Promoties</strong> & aanbiedingen"
-                    ],
-                    "excludedFeatures": [
-                        "E-mailmarketing campagnes"
-                    ],
-                    "buttonText": "Kies Premium Pakket",
-                    "buttonHref": "/contact"
-                },
-                {
-                    "title": "Pro",
-                    "price": "79",
+                    "price": "89",
                     "currency": "€",
                     "period": "/maand",
                     "popular": true,
+                    "badge": "Meest gekozen",
+                    "tagline": "Ontvang automatisch afspraken via je website, 24/7",
+                    "microcopy": "Met slechts 3–4 extra klanten per maand verdien je dit pakket al terug.",
+                    "limitLabel": "Tot 100 afspraken per maand inbegrepen",
                     "features": [
                         "Op maat <strong>zakelijke website</strong>",
                         "<strong>GRATIS</strong> mobiele optimalisatie",
@@ -456,7 +430,37 @@
                         "Online <strong>afsprakensysteem</strong>",
                         "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
                         "<strong>Promoties</strong> & aanbiedingen",
-                        "<strong>E-mailmarketing</strong> campagnes"
+                        "Tot <strong>100 afspraken per maand</strong> inbegrepen"
+                    ],
+                    "excludedFeatures": [
+                        "E-mailmarketing campagnes"
+                    ],
+                    "buttonText": "Kies Premium Pakket",
+                    "buttonHref": "/contact"
+                },
+                {
+                    "title": "Pro",
+                    "price": "119",
+                    "currency": "€",
+                    "period": "/maand",
+                    "popular": false,
+                    "tagline": "Voor kapsalons die willen groeien en opschalen",
+                    "limitLabel": "Tot 250 afspraken per maand inbegrepen",
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "<strong>GRATIS</strong> mobiele optimalisatie",
+                        "<strong>GRATIS</strong> SEO-optimalisatie",
+                        "<strong>GRATIS</strong> hosting & onderhoud",
+                        "<strong>GRATIS</strong> domeinnaam",
+                        "<strong>GRATIS</strong> logo",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "24/7 <strong>support</strong>",
+                        "Geen <strong>opstartkosten</strong>",
+                        "Online <strong>afsprakensysteem</strong>",
+                        "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
+                        "<strong>Promoties</strong> & aanbiedingen",
+                        "<strong>E-mailmarketing</strong> campagnes",
+                        "Tot <strong>250 afspraken per maand</strong> inbegrepen"
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Kies Pro Pakket",
@@ -467,6 +471,8 @@
                     "price": "Maatwerk",
                     "currency": "",
                     "period": "",
+                    "popular": false,
+                    "tagline": "Voor salons met specifieke wensen of extra maatwerk",
                     "features": [
                         "<strong>Volledig gepersonaliseerde</strong> website",
                         "Aangepast aan <strong>uw specifieke behoeften</strong>",
@@ -477,7 +483,7 @@
                         "24/7 <strong>support</strong>"
                     ],
                     "excludedFeatures": [],
-                    "description": "Heeft u specifieke wensen die niet volledig aansluiten bij onze Standaard of Premium pakketten? Geen probleem! Ik ontwikkel een volledig op maat gemaakte kapper website die perfect aansluit bij uw unieke bedrijfsbehoeften en doelstellingen.",
+                    "description": "Heeft u specifieke wensen die niet volledig aansluiten bij de standaardpakketten? Geen probleem. Ik ontwikkel een volledig op maat gemaakte kapper website die perfect aansluit bij uw unieke bedrijfsbehoeften en groeiplannen.",
                     "buttonText": "Vraag Offerte Aan",
                     "buttonHref": "/contact"
                 }
@@ -492,7 +498,7 @@
             "items": [
                 {
                     "title": "Hoeveel kost het om een kapper website te laten maken?",
-                    "description": "Een professionele kapper website kost vanaf <strong>€49 per maand</strong> voor een zakelijke website met gratis hosting, onderhoud en meer. Wilt u meer automatisatie? Dan kunt u kiezen voor <strong>€69 per maand</strong> met een online afsprakensysteem, diensten & prijzen en promoties. Voor <strong>€79 per maand</strong> krijgt u alles uit het €69 pakket plus <strong>e-mailmarketing campagnes</strong> naar uw bestaande klanten."
+                    "description": "Een professionele kapper website kost vanaf <strong>€49 per maand</strong> voor een sterke online aanwezigheid. Wilt u automatisch afspraken ontvangen? Dan kiest u best voor <strong>Premium aan €89 per maand</strong>, inclusief online afsprakensysteem, diensten & prijzen beheren, promoties en tot <strong>100 afspraken per maand</strong> inbegrepen. Voor salons die willen groeien is er <strong>Pro aan €119 per maand</strong>, met e-mailmarketing campagnes en tot <strong>250 afspraken per maand</strong> inbegrepen."
                 },
                 {
                     "title": "Hoe lang duurt het om een kapper website te ontwikkelen?",
@@ -542,8 +548,8 @@
             "slug": "cta-bottom",
             "component": "cta",
             "title": "Klaar voor Meer Afspraken?",
-            "subtitle": "Kies uw pakket: €49, €69 of €79 per maand",
-            "text": "Start met een professionele kapper website vanaf €49 per maand, kies het geavanceerde pakket voor €69 per maand (afsprakensysteem, diensten & prijzen en promoties) of ga voor Pro voor €79 per maand met e-mailmarketing campagnes. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw kapperszaak online kan laten groeien.",
+            "subtitle": "Kies uw pakket: €49, €89 of €119 per maand",
+            "text": "Start eenvoudig met een professionele website vanaf €49 per maand, kies Premium voor €89 per maand om automatisch afspraken te ontvangen, of ga voor Pro voor €119 per maand als uw salon wil groeien en opschalen. Ik help u van strategie tot lancering, zonder technische zorgen.",
             "button": [
                 {
                     "href": "/contact",
@@ -555,8 +561,8 @@
             "features": [
                 "Gratis adviesgesprek",
                 "Zakelijke website €49/maand",
-                "Geavanceerd pakket €69/maand",
-                "Pro pakket €79/maand",
+                "Premium pakket €89/maand",
+                "Pro pakket €119/maand",
                 "Continue ondersteuning"
             ]
         }
