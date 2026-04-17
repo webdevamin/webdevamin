@@ -254,7 +254,9 @@ const PricingSection = ({ content }) => {
         <div className="max-w-7xl ml-auto lg:text-right">
           <div className='mb-10'>
             <Heading title={title} subtitle={subtitle} />
-            <h4 className='-mt-2 mb-7 inline-block rounded-full bg-theme px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-white md:text-base xl:px-5 xl:py-3'>{highlight}</h4>
+            <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme 
+                        text-white px-4 py-2 mb-7 inline-block uppercase 
+                        md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
             <div dangerouslySetInnerHTML={{ __html: text }} />
           </div>
           {(items && items.length > 0) && (
@@ -303,20 +305,21 @@ const PricingSection = ({ content }) => {
             </div>
           )}
           {(growthTitle || growthText || growthNote) && (
-            <div className="mt-10 mb-10 rounded-3xl lg:ml-auto lg:max-w-4xl">
+            <div className="mt-10 pt-5 mb-10 rounded-3xl lg:ml-auto lg:max-w-4xl">
               {growthTitle && (
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-4">
                   {growthTitle}
                 </h3>
               )}
               {growthText && (
-                <p className="mt-3 text-base leading-7 text-slate-600">
+                <p className="text-base leading-7 text-slate-600">
                   {growthText}
                 </p>
               )}
               {growthNote && (
-                <div className="mt-5">
-                  <span className="inline-block rounded-full bg-theme px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-white">
+                <div className="mt-6">
+                  <span className="inline-block bg-theme px-4 py-2 
+                  text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-white">
                     {growthNote}
                   </span>
                 </div>
