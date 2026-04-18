@@ -40,6 +40,11 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
   - `description`
   - `popular`
 - Onder de pricing cards staat nu een extra groeiblok dat upgrades positief kadert.
+- De omliggende kapper-copy is afgestemd op de pricing-logica:
+  - `Standaard` = online zichtbaarheid en professioneel visitekaartje
+  - `Premium` = automatisch afspraken ontvangen
+  - `Pro` = groeien en opschalen
+- Copy buiten de pricing-sectie mag afspraken, herinneringen en e-mailmarketing niet meer formuleren alsof die standaard in elk pakket zitten.
 
 ## Belangrijke Gotcha's
 
@@ -51,6 +56,7 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
   - bottom CTA
 - Als pricing wijzigt, controleer altijd zowel zichtbare content als structured data mee.
 - `PricingCard.jsx` wordt mogelijk ook op andere pagina's hergebruikt, dus nieuwe velden moeten optioneel blijven.
+- Controleer op industry-pagina's altijd of featureblokken, FAQ en video-copy dezelfde pakketlogica volgen als de pricing cards. Daar sluipen snel contradicties in.
 
 ## Chronologische Flow Van De Kapper Pricing
 

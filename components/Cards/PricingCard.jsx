@@ -1,6 +1,5 @@
 'use client'
 
-import { Card } from "flowbite-react";
 import CtaButton from "../Buttons/CtaButton";
 import { useLocale } from 'next-intl';
 
@@ -31,14 +30,14 @@ export function PricingCard({
     const isDutch = locale === 'nl';
 
     return (
-        <Card
-            className={`flex flex-col h-full rounded-3xl border transition-all duration-300 ${popular
-                ? 'border-2 border-theme bg-white shadow-2xl lg:-translate-y-3'
-                : 'border-gray-200 bg-white shadow-md hover:shadow-xl'
+        <div
+            className={`flex flex-col h-full rounded-3xl border bg-white p-6 transition-all duration-300 ${popular
+                ? 'border-2 border-theme shadow-2xl lg:-translate-y-3'
+                : 'border-gray-200 shadow-md hover:shadow-xl'
                 } ${className}`}
         >
             <div className="flex-grow">
-                <div className="mb-6 flex min-h-[2rem] items-center justify-between gap-3">
+                <div className="mb-2 flex min-h-[2rem] items-center gap-6">
                     <h5 className="text-xl font-semibold text-slate-900">
                         {title}
                     </h5>
@@ -49,7 +48,7 @@ export function PricingCard({
                     )}
                 </div>
                 {tagline && (
-                    <p className="mb-5 min-h-[3rem] text-sm leading-6 text-slate-600">
+                    <p className="mb-5 min-h-[3rem] text-sm leading-6 text-slate-600 text-left">
                         {tagline}
                     </p>
                 )}
@@ -60,14 +59,9 @@ export function PricingCard({
                         {period}
                     </span>
                 </div>
-                {microcopy && (
-                    <p className="mb-5 rounded-2xl border border-theme/20 bg-theme/5 px-4 py-3 text-sm font-medium leading-6 text-theme_darker">
-                        {microcopy}
-                    </p>
-                )}
                 {limitLabel && (
-                    <div className="mb-5">
-                        <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
+                    <div className="mb-5 text-left">
+                        <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
                             {limitLabel}
                         </span>
                     </div>
@@ -104,21 +98,23 @@ export function PricingCard({
                     ))}
                 </ul>
             </div>
-            <CtaButton
-                href={buttonHref}
-                text={buttonText}
-                variant={popular ? 'primary' : 'outline'}
-                fullWidth
-            />
-            {isDutch && (
+            <div className="flex flex-col gap-2.5">
                 <CtaButton
-                    href={phoneHref}
-                    text={phoneLabel}
-                    variant="neutral"
+                    href={buttonHref}
+                    text={buttonText}
+                    variant={popular ? 'primary' : 'outline'}
                     fullWidth
-                    ariaLabel={phoneLabel}
                 />
-            )}
-        </Card>
+                {isDutch && (
+                    <CtaButton
+                        href={phoneHref}
+                        text={phoneLabel}
+                        variant="neutral"
+                        fullWidth
+                        ariaLabel={phoneLabel}
+                    />
+                )}
+            </div>
+        </div>
     );
 }
