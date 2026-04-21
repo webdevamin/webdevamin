@@ -64,6 +64,11 @@ export function PricingCard({
                         <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
                             {limitLabel}
                         </span>
+                        {microcopy && (
+                            <p className="mt-2 text-xs text-slate-500 leading-5">
+                                {microcopy}
+                            </p>
+                        )}
                     </div>
                 )}
                 {description && (
