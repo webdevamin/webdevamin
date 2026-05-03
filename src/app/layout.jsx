@@ -1,6 +1,7 @@
 import { getLocale } from 'next-intl/server';
 import Script from 'next/script';
-export const dynamic = 'force-dynamic';
+
+export const revalidate = 3600;
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale();

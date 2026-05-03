@@ -72,7 +72,7 @@ export function PricingCard({
                     </div>
                 )}
                 {description && (
-                    <p className="mb-5 text-sm leading-6 text-slate-600">
+                    <p className="mb-5 text-sm leading-6 text-slate-600 text-left">
                         {description}
                     </p>
                 )}

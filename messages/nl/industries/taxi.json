@@ -18,18 +18,19 @@
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",
-            "@type": "TaxiService",
-            "name": "Webdevamin - Taxi Website Ontwikkeling",
+            "@type": "ProfessionalService",
+            "@id": "https://webdevamin.com/#organization",
+            "name": "Webdevamin",
             "url": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
-            "description": "Laat uw taxi website maken vanaf €49 of €69 per maand (met boekingssysteem) met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+            "description": "Professionele taxi website laten maken vanaf €49 per maand. All-in-one pakket met gratis hosting, onderhoud, SEO-optimalisatie en optioneel een online boekingssysteem.",
             "email": "amin@webdevamin.com",
-            "telephone": "+32 470 93 09 16",
+            "telephone": "+32470930916",
             "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "BE",
-                "addressLocality": "Bruges",
+                "addressLocality": "Brugge",
                 "postalCode": "8000",
                 "streetAddress": "Rodenonnenstraat 21"
             },
@@ -38,18 +39,13 @@
                 "name": "Belgium"
             },
             "priceRange": "€49-€69",
-            "serviceType": "Website Development",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Webdevamin",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "BE",
-                    "addressLocality": "Bruges",
-                    "postalCode": "8000",
-                    "streetAddress": "Rodenonnenstraat 21"
-                }
-            }
+            "sameAs": [
+                "https://www.linkedin.com/company/webdevamin",
+                "https://github.com/webdevamin",
+                "https://www.facebook.com/a.webdevamin",
+                "https://www.instagram.com/webdevamin",
+                "https://x.com/webdevamin"
+            ]
         },
         "faqPage": {
             "@context": "https://schema.org",
@@ -60,7 +56,7 @@
                     "name": "Hoeveel kost het om een taxi website te laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een professionele taxi website kost vanaf €49 per maand excl. BTW voor een standaard zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand excl. BTW voor een website met online boekingssysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                        "text": "Een professionele taxi website kost vanaf €49 per maand excl. BTW voor een zakelijke website met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Wilt u ook online ritten laten boeken via uw eigen website, dan is het pakket van €69 per maand excl. BTW beter geschikt. Dat pakket bevat een boekingssysteem met ritgegevens, automatische e-mailbevestiging en praktische functies die administratie verminderen. Zo weet u vooraf wat u betaalt en hoeft u geen aparte leverancier te zoeken voor hosting, onderhoud of technische opvolging."
                     }
                 },
                 {
@@ -68,7 +64,7 @@
                     "name": "Hoe lang duurt het om een taxi website te ontwikkelen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een taxi website wordt binnen minder dan 1 week opgeleverd, afhankelijk van de complexiteit en gewenste functionaliteiten zoals online reserveringen en betalingssystemen."
+                        "text": "Een standaard taxi website kan meestal binnen minder dan 1 week worden opgeleverd zodra de inhoud, huisstijl en praktische gegevens duidelijk zijn. Bij een website met boekingssysteem hangt de timing af van de gewenste ritvelden, prijslogica en manier waarop aanvragen moeten binnenkomen. Voor taxibedrijven in Brugge, West-Vlaanderen en de rest van Benelux werk ik graag met een korte eerste afstemming, daarna volgt ontwerp, bouw en controle. U krijgt dus geen lang traject, maar wel genoeg controle om zeker te zijn dat de website klopt voor uw werking."
                     }
                 },
                 {
@@ -76,7 +72,7 @@
                     "name": "Welke functionaliteiten zijn belangrijk voor een taxi website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Belangrijke functionaliteiten zijn online reserveringssysteem, mobiele optimalisatie, contactformulieren en prijs- en kilometer berekening. Daarnaast wordt er ook automatisch een mail gestuurd met alle boekingsdetails, waaronder prijs, ophaal- en bestemmingsadres. De essentiële functionaliteiten om je tijd en administratie te besparen."
+                        "text": "Voor een taxi website zijn vooral mobiele snelheid, duidelijke contactknoppen, lokale vindbaarheid, ritinformatie en een eenvoudig boekingsproces belangrijk. Klanten zoeken vaak onderweg op hun smartphone, dus ze moeten snel kunnen bellen, een rit aanvragen of een prijsindicatie bekijken. Bij het premium pakket kan het boekingssysteem ophaaladres, bestemming, prijs, kilometers en e-mailbevestiging ondersteunen. Dat maakt uw website niet alleen een online visitekaartje, maar ook een praktisch systeem dat minder telefoontjes, minder losse berichten en minder handmatige administratie vraagt."
                     }
                 },
                 {
@@ -84,7 +80,7 @@
                     "name": "Is mijn taxi website mobiel-vriendelijk?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, alle taxi websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten, omdat de meeste klanten via hun smartphone een taxi boeken."
+                        "text": "Ja, elke taxi website wordt responsive gebouwd, zodat de pagina goed werkt op smartphone, tablet en desktop. Dat is extra belangrijk voor taxibedrijven, omdat veel klanten zoeken wanneer ze onderweg zijn of snel vervoer nodig hebben. De belangrijkste acties, zoals bellen, een offerte aanvragen of een rit boeken, blijven daarom makkelijk bereikbaar op kleine schermen. Ook afbeeldingen, tekstblokken en pricing cards worden mobiel gecontroleerd, zodat de pagina niet alleen technisch past, maar ook professioneel aanvoelt voor klanten die snel willen beslissen."
                     }
                 },
                 {
@@ -92,7 +88,7 @@
                     "name": "Krijg ik ondersteuning na de lancering van mijn website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief."
+                        "text": "Ja, ondersteuning na lancering zit in het maandelijkse pakket. Ik regel hosting, onderhoud, technische updates, basiscontrole en hulp bij kleine aanpassingen, zodat u niet zelf met plugins, hostingpanels of technische fouten bezig hoeft te zijn. Voor een taxibedrijf is dat belangrijk, want uw website moet bereikbaar blijven wanneer klanten een rit willen boeken of contact zoeken. Heeft u later andere teksten, prijzen, diensten of regio's nodig, dan kunt u mij contacteren en bekijken we samen wat er moet worden aangepast."
                     }
                 },
                 {
@@ -100,7 +96,7 @@
                     "name": "Ik heb al een bestaande website. Kan ik overstappen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik zonder extra kosten alles netjes omzetten naar mijn website. Ik help u met een vlotte overstap, zodat u snel verder kan met een moderne website."
+                        "text": "Ja, overstappen kan. Als u al een taxi website heeft, bekijk ik eerst welke inhoud, domeinnaam, e-mailinstellingen en bestaande pagina's belangrijk zijn. Daarna kan ik de nieuwe website netjes opbouwen en de overstap plannen, zodat uw online aanwezigheid niet onnodig onderbroken wordt. Waar mogelijk neem ik nuttige teksten, afbeeldingen en structuur mee, maar ik verbeter ook wat verouderd of onduidelijk is. Zo krijgt u een modernere website zonder dat u helemaal opnieuw moet uitzoeken wat er online moet staan."
                     }
                 },
                 {
@@ -108,7 +104,7 @@
                     "name": "Hoe zorg ik ervoor dat mijn website goed vindbaar is in Google?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ik optimaliseer uw website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie om hoger te ranken in zoekresultaten."
+                        "text": "Een taxi website wordt beter vindbaar door lokale SEO vanaf het begin mee te nemen. Dat betekent duidelijke pagina-inhoud, snelle laadtijden, goede metadata, mobiele optimalisatie, interne structuur en teksten die aansluiten bij zoekopdrachten zoals taxi in uw stad of regio. Voor Belgische taxibedrijven is het ook belangrijk dat plaatsnamen, servicegebieden en contactgegevens helder terugkomen in de zichtbare tekst en structured data. Ik bouw die basis mee in de website, zodat Google en bezoekers sneller begrijpen waar u actief bent en welke diensten u aanbiedt."
                     }
                 },
                 {
@@ -116,7 +112,7 @@
                     "name": "Kan ik zelf mijn website beheren?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen. Ik zorg er voor dat je je tijd en energie kunt richten op je bedrijf, terwijl ik zorg voor de technische kant van je website."
+                        "text": "Nee, het technische beheer van uw website neem ik voor mijn rekening. Dat is bewust zo opgezet, omdat ik dan de kwaliteit, veiligheid en werking beter kan bewaken. U hoeft dus niet zelf in een CMS te zoeken, updates te doen of technische problemen op te lossen. Wilt u een tekst, dienst, prijs of foto laten aanpassen, dan kunt u mij gewoon contacteren. Zo blijft uw taxi website netjes, snel en betrouwbaar, terwijl u uw tijd kunt gebruiken voor uw klanten, chauffeurs en dagelijkse planning."
                     }
                 },
                 {
@@ -124,7 +120,31 @@
                     "name": "Is hosting en domeinnaam inbegrepen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                        "text": "Ja, hosting en domeinnaam zijn inbegrepen bij het maandelijkse pakket. U hoeft dus geen aparte hostingpartij te kiezen, geen technische instellingen uit te zoeken en geen losse facturen voor domeinnaam of hosting op te volgen. Dat maakt het vooral voor kleine taxibedrijven eenvoudiger om professioneel online te staan zonder extra administratie. Ik regel de technische basis, terwijl u één duidelijk aanspreekpunt houdt voor uw website, onderhoud en praktische vragen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wat gebeurt er met mijn website als ik het abonnement stop?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Als u het abonnement wilt stoppen, bespreken we eerst wat u precies nodig heeft: de website offline halen, overstappen naar een andere oplossing of eventueel een eenmalige regeling bekijken. Het abonnement is bedoeld als zorgeloos maandpakket met hosting, onderhoud en support inbegrepen. Zolang het abonnement loopt, blijft die volledige opvolging actief. Wilt u stoppen, dan geef ik duidelijk aan wat de gevolgen zijn voor hosting, domeinnaam, onderhoud en eventuele boekingsfunctionaliteit, zodat u geen verrassingen krijgt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ik zit al op Uber of Bolt, heb ik nog een eigen website nodig?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, een eigen taxi website blijft waardevol, ook als u via Uber, Bolt of andere platformen ritten ontvangt. Platformen kunnen helpen met zichtbaarheid, maar de klantrelatie ligt daar niet volledig bij uw eigen bedrijf. Met een eigen website bouwt u vertrouwen op rond uw naam, regio, diensten, prijzen en contactgegevens. U kunt directe aanvragen ontvangen zonder afhankelijk te zijn van een app, en u heeft een vaste plek waar klanten u kunnen terugvinden via Google. Voor lokale ritten in België/ Nederland/Luxemburg kan dat net het verschil maken tussen een losse platformrit en een terugkerende klant."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe wordt er omgegaan met klant- en ritgegevens?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bij een boekingssysteem vraag ik alleen gegevens die nodig zijn om een ritaanvraag goed te verwerken, zoals naam, contactgegevens, ophaaladres, bestemming en eventueel opmerkingen. De website kan AVG-bewust worden ingericht met duidelijke formulieren, veilige verwerking en geen onnodige velden. Dat is belangrijk omdat taxi-aanvragen vaak persoonlijke locatiegegevens bevatten. Tijdens het eerste gesprek bekijken we welke gegevens u echt nodig heeft, zodat de website praktisch blijft voor uw bedrijf en tegelijk zorgvuldig omgaat met de informatie van klanten."
                     }
                 }
             ]
@@ -132,15 +152,20 @@
         "service": {
             "@context": "https://schema.org",
             "@type": "Service",
+            "@id": "https://webdevamin.com/nl/industry/taxi-website-laten-maken#service",
+            "url": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
             "name": "Taxi Website Ontwikkeling",
             "description": "Professionele taxi website laten maken met online reserveringssysteem en SEO-optimalisatie",
             "provider": {
-                "@type": "LocalBusiness",
+                "@type": "ProfessionalService",
+                "@id": "https://webdevamin.com/#organization",
                 "name": "Webdevamin",
+                "url": "https://webdevamin.com/nl",
+                "telephone": "+32470930916",
                 "address": {
                     "@type": "PostalAddress",
                     "addressCountry": "BE",
-                    "addressLocality": "Bruges",
+                    "addressLocality": "Brugge",
                     "postalCode": "8000",
                     "streetAddress": "Rodenonnenstraat 21"
                 }
@@ -165,6 +190,7 @@
                             "@type": "UnitPriceSpecification",
                             "price": "49",
                             "priceCurrency": "EUR",
+                            "billingDuration": "P1M",
                             "unitText": "per maand"
                         }
                     },
@@ -180,11 +206,36 @@
                             "@type": "UnitPriceSpecification",
                             "price": "69",
                             "priceCurrency": "EUR",
+                            "billingDuration": "P1M",
                             "unitText": "per maand"
                         }
                     }
                 ]
             }
+        },
+        "breadcrumb": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Branches",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Taxi Website Laten Maken",
+                    "item": "https://webdevamin.com/nl/industry/taxi-website-laten-maken"
+                }
+            ]
         }
     },
     "blocks": [
@@ -192,7 +243,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Taxi Website Laten Maken",
-            "text": "Laat uw taxi website maken door een professional met een All-in-One pakket: inclusief gratis hosting, onderhoud, SEO-optimalisatie en meer! Geen opstartkosten! Kies voor een zakelijke website voor €49/maand of met een automatiserende boekingssysteem voor €69/maand. Excl. BTW.",
+            "text": "Laat uw taxi website maken door een webontwikkelaar uit Brugge met een all-in-one pakket voor taxibedrijven in Benelux: inclusief hosting, onderhoud, SEO-optimalisatie en support. Geen opstartkosten. Kies voor een zakelijke website voor €49/maand of een website met automatiserend boekingssysteem voor €69/maand. Excl. BTW.",
             "image": {
                 "src": "https://bucket.webdevamin.com/taxi.png",
                 "alt": "Een taxichauffeur rijdt tijdens een zonsondergang met een taxi website op de dashboard in de auto.",
@@ -206,7 +257,12 @@
                 },
                 {
                     "text": "Gratis Offerte",
-                    "href": "/contact"
+                    "href": "/contact?pakket=taxi"
+                },
+                {
+                    "text": "Bekijk Live Voorbeeld",
+                    "href": "https://antaxi.be",
+                    "external": true
                 }
             ],
             "types": [
@@ -220,11 +276,34 @@
             ]
         },
         {
+            "slug": "process",
+            "component": "process",
+            "title": "Zo Loopt Uw Taxi Website Project",
+            "subtitle": "Duidelijk proces",
+            "items": [
+                {
+                    "icon": "phone",
+                    "title": "Gratis gesprek",
+                    "text": "We bespreken in ongeveer 15 minuten uw taxibedrijf, regio, diensten, gewenste pagina's en of een boekingssysteem nodig is."
+                },
+                {
+                    "icon": "settings",
+                    "title": "Ontwerp en bouw",
+                    "text": "Daarna werk ik de website uit met mobiel ontwerp, lokale SEO, sterke CTA's en de technische basis die bij uw pakket hoort."
+                },
+                {
+                    "icon": "check-circle",
+                    "title": "Live en opvolging",
+                    "text": "Na controle zet ik de website live. Hosting, onderhoud en praktische support blijven inbegrepen in het maandpakket."
+                }
+            ]
+        },
+        {
             "slug": "why-taxi-website",
             "component": "content",
             "title": "Waarom Taxi website laten maken?",
             "subtitle": "Meer klanten, winst & tijdsbesparing",
-            "text": "<p>Een <strong>professionele taxi website</strong> biedt talloze voordelen voor zowel startende als gevestigde taxibedrijven. Allereerst straalt het direct professionaliteit en vertrouwen uit, waardoor potentiële klanten eerder geneigd zijn een rit te boeken of contact op te nemen. Een strategisch ontworpen taxi website verbetert uw vindbaarheid in zoekmachines zoals Google. Het stelt u ook in staat om uw unieke dienstverlening helder te communiceren en 24/7 bereikbaar te zijn voor klanten, zonder dat u zelf beschikbaar hoeft te zijn. Bovendien helpt een doelgerichte taxi website bij het automatiseren van belangrijke processen zoals online reserveringen, rittenberekening en klantcommunicatie, wat u op lange termijn aanzienlijk tijd én geld bespaart.</p><p>Bent u op zoek naar een professional om een professionele <strong>taxi website laten maken</strong>? Dan bent u bij mij aan het juiste adres. Begrijp dat een goede taxi website niet alleen draait om hogere posities in Google, maar vooral om het optimaliseren van uw bedrijfsprocessen en het verhogen van uw boekingen. Heeft u een specifiek idee of concept dat uw taxibedrijf kan versterken? Of zoekt u juist deskundig advies over hoe u uw taxi diensten digitaal kunt laten groeien? Laten we <a href='/nl/contact' title='Neem direct contact op voor uw taxi website'>samen in gesprek gaan</a> en ontdekken welke digitale oplossing perfect bij uw taxibedrijf past! Of bel me maar direct op!</p>",
+            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'/><path stroke-linecap='round' stroke-linejoin='round' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'/></svg></span>Professioneel gevonden worden in uw regio</h3><p>Een <strong>professionele taxi website</strong> helpt startende en gevestigde taxibedrijven om direct vertrouwen uit te stralen. Klanten in Brugge, West-Vlaanderen en de rest van Benelux zoeken vaak eerst online voordat ze bellen of een rit boeken. Een strategisch ontworpen taxi website verbetert uw vindbaarheid in zoekmachines zoals Google, maakt uw diensten duidelijk en zorgt dat klanten u 24/7 kunnen bereiken.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4'/></svg></span>Meer directe aanvragen met minder administratie</h3><p>Een doelgerichte taxi website draait niet alleen om hogere posities in Google, maar vooral om duidelijke aanvragen, minder losse communicatie en betere opvolging. Met een boekingssysteem kunnen online reserveringen, rittenberekening en e-mailbevestigingen een deel van uw administratie overnemen. Heeft u een idee dat uw taxibedrijf kan versterken, of zoekt u advies over hoe uw taxi diensten digitaal kunnen groeien? Laten we <a href='/nl/contact' title='Neem direct contact op voor uw taxi website'>samen in gesprek gaan</a> en bekijken welke digitale oplossing bij uw bedrijf past.</p>",
             "button": [
                 {
                     "href": "tel:+32470930916",
@@ -235,7 +314,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "Meer dan 80% van de klanten zoekt online naar lokale diensten voordat ze een keuze maken. Zonder een professionele website mist uw taxibedrijf waardevolle boekingen aan concurrenten die wel online zichtbaar zijn."
+                    "text": "De meeste klanten zoeken online naar lokale diensten voordat ze een keuze maken. Zonder een professionele website mist uw taxibedrijf waardevolle boekingen aan concurrenten die wel online zichtbaar zijn."
                 },
                 {
                     "type": "list",
@@ -249,15 +328,15 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/taxi-cabs-night.png",
-                "alt": "Taxi's in druk verkeer bij nachtelijke omgeving."
+                "src": "https://images.pexels.com/photos/19769269/pexels-photo-19769269.jpeg?auto=compress&cs=tinysrgb&w=836",
+                "alt": "Gele taxi op straat in de stad."
             }
         },
         {
             "title": "Waarom All-In-One Pakket?",
             "subtitle": "Geen losse systemen, maar één compleet taxi pakket",
             "slug": "why-all-in-one",
-            "text": "<p>Een all-in-one pakket voor uw taxibedrijf is <strong>zeer voordelig</strong> omdat het een complete totaaloplossing biedt. U krijgt een professionele website met gratis levenslange hosting en onderhoud. Dat betekent: geen facturen meer voor hosting, domeinnaam of e‑mail. Al de administratie en facturen omtrent die zaken worden door mij afgehandeld. U betaalt slechts €49 per maand en geniet van gemoedsrust, zodat u zich volledig kunt focussen op uw zaak. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> meer informatie.</p><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen (of meer, indien er tussenstops zijn). De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dit bespaart u tijd en vermindert administratieve lasten.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
+            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'/></svg></span>Een vaste prijs zonder losse technische zorgen</h3><p>Een all-in-one pakket voor uw taxibedrijf is <strong>voordelig en overzichtelijk</strong> omdat website, hosting, onderhoud, domeinnaam en support in één maandplan zitten. Dat betekent: geen losse facturen voor hosting, domeinnaam of e-mail en geen technische opvolging die op uw planning terechtkomt. U betaalt vanaf €49 per maand en kunt zich focussen op uw ritten, chauffeurs en klanten. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> voor meer informatie.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/></svg></span>Premium met boekingssysteem voor directe ritaanvragen</h3><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen, met eventuele tussenstops indien nodig. De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dat bespaart tijd, vermindert administratieve lasten en geeft klanten in België (of Nederland/Luxemburg) sneller duidelijkheid.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -267,25 +346,16 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/client-showcase-taxi-site.png",
-                "alt": "Een webontwikkelaar laat een taxi website zien aan de baas van een bedrijf. Op de computer wordt een boekingssysteem weergegeven."
+                "src": "https://images.pexels.com/photos/5835360/pexels-photo-5835360.jpeg?auto=compress&cs=tinysrgb&w=836",
+                "alt": "Twee mannen schudden handen bij een taxi."
             }
-        },
-        {
-            "slug": "video-demo",
-            "component": "video",
-            "title": "Bekijk Hoe Het Werkt",
-            "subtitle": "Video Demonstratie",
-            "text": "<p>Bekijk in deze video hoe een professionele taxi website eruitziet en hoe het <strong>boekingssysteem</strong> werkt. Ontdek hoe klanten eenvoudig online een rit kunnen boeken, hoe de <strong>prijscalculator</strong> automatisch de kosten berekent, en hoe u automatische <strong>e-mailbevestigingen</strong> ontvangt met alle ritdetails inclusief navigatie-link.</p>",
-            "videoUrl": null,
-            "videoTitle": "Taxi Website Demonstratie - Boekingssysteem & Prijscalculator"
         },
         {
             "slug": "features-benefits",
             "component": "features",
             "title": "Essentiële Functionaliteiten",
             "subtitle": "Boost voor uw taxi bedrijf",
-            "text": "<p>Bekijk hieronder een lijst van essentiële functionaliteiten die uw taxi bedrijf kunnen versterken: een professionele website met tijdbesparende functies en de mogelijkheid voor meer klanten en winst op langere termijn.</p>",
+            "text": "<p>Bekijk hieronder welke functies uw taxi bedrijf kunnen versterken: een professionele website, duidelijke contactmogelijkheden, lokale SEO en tijdbesparende boekingsfuncties wanneer u kiest voor Premium.</p>",
             "features": [
                 {
                     "icon": "PanelTop",
@@ -294,7 +364,7 @@
                 },
                 {
                     "icon": "CalendarDays",
-                    "title": "Online boekings systeem",
+                    "title": "Online boekingssysteem",
                     "description": "Klanten kunnen 24/7 online een taxi reserveren met datum, tijd en bestemming. Automatische bevestigingen en herinneringen verhogen de klanttevredenheid."
                 },
                 {
@@ -313,9 +383,9 @@
                     "description": "Klanten kunnen direct een prijsindicatie krijgen voor hun rit door bestemming en afstand in te voeren."
                 },
                 {
-                    "icon": "Email",
+                    "icon": "mail",
                     "title": "Automatische Email Bevestigingen",
-                    "description": "Klanten en u ontvangen automatisch een e-mail met alle details van hun boeking. Dit omvat ook een link om rechtstreeks naar uw navigatie-app te gaan, waarbij de route automatisch wordt ingevuld."
+                    "description": "Klanten en u ontvangen automatisch een e-mail met boekingsdetails. De website kan AVG-bewust worden ingericht, zodat ritgegevens alleen worden gevraagd wanneer ze nodig zijn voor de aanvraag."
                 }
             ]
         },
@@ -327,17 +397,17 @@
             "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, heb ik een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
             "highlights": [
                 {
-                    "number": "60%",
+                    "number": "70%",
                     "title": "Tijdsbesparing",
                     "description": "Automatisering van boekingen en administratie bespaart dagelijks uren werk"
                 },
                 {
-                    "number": "1.5x",
+                    "number": "80%",
                     "title": "Meer klanten",
                     "description": "Online zichtbaarheid en professionele uitstraling trekken meer klanten aan"
                 },
                 {
-                    "number": "3x",
+                    "number": "300%",
                     "title": "Meer conversies",
                     "description": "Supergoede website met optimale gebruikerservaring verhoogt boekingen"
                 }
@@ -350,11 +420,24 @@
             }
         },
         {
+            "slug": "review",
+            "component": "review",
+            "review": {
+                "name": "Ugur Erden",
+                "source": "Google",
+                "stars": 5,
+                "date": "2 jaar geleden",
+                "text": "Zeer professioneel aan de slag gegaan top gast zeker een aanrader!"
+            },
+            "moreReviewsUrl": "https://goo.gl/maps/pGNDw5zoLZJUtWh1A",
+            "moreReviewsText": "Bekijk meer reviews op Google"
+        },
+        {
             "title": "Prijsabonnement",
             "subtitle": "Pakketten voor uw taxibedrijf",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen mijn <strong>zakelijke taxi website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, GRATIS hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde emails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een voorbeeld van mijn professionele taxi website ontwikkeling met een boekingssysteem. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Kies tussen mijn <strong>zakelijke taxi website voor €49 per maand</strong> of mijn <strong>geavanceerde pakket met boekingssysteem voor €69 per maand</strong>. Beide pakketten bevatten professionele uitstraling, hosting, onderhoud en SEO-optimalisatie.</p><p>Het €69 pakket bevat extra functionaliteiten zoals online reserveringssysteem, automatische rittenberekening, geautomatiseerde e-mails en adresvoorinvulling voor maximale efficiëntie.</p><p>Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>, een live voorbeeld van mijn professionele taxi website ontwikkeling met een boekingssysteem. Prijzen bijgewerkt: mei 2026. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
             "subsubtitle": "Opties",
             "items": [
                 {
@@ -380,7 +463,7 @@
                         "Adresvoorinvulling navigatie-app"
                     ],
                     "buttonText": "Kies Standaard Pakket",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=standaard"
                 },
                 {
                     "title": "Premium",
@@ -405,7 +488,7 @@
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Kies Premium Pakket",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=premium"
                 },
                 {
                     "title": "Op Maat",
@@ -424,7 +507,7 @@
                     "excludedFeatures": [],
                     "description": "Heeft u specifieke wensen die niet volledig aansluiten bij onze Standaard of Premium pakketten? Geen probleem! Ik ontwikkel een volledig op maat gemaakte taxi website die perfect aansluit bij uw unieke bedrijfsbehoeften en doelstellingen.",
                     "buttonText": "Vraag Offerte Aan",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=op-maat"
                 }
             ]
         },
@@ -437,39 +520,51 @@
             "items": [
                 {
                     "title": "Hoeveel kost het om een taxi site te laten maken?",
-                    "description": "Een professionele taxi website kost vanaf €49 per maand voor een zakelijke website met gratis hosting, onderhoud en meer, of €69 per maand voor een website met online boekingssysteem en geavanceerde functionaliteiten om je tijd en administratie te besparen."
+                    "description": "Een professionele taxi website kost vanaf <strong>€49 per maand excl. BTW</strong> voor een zakelijke website met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Wilt u ook online ritten laten boeken via uw eigen website, dan is het pakket van <strong>€69 per maand excl. BTW</strong> beter geschikt. Dat pakket bevat een boekingssysteem met ritgegevens, automatische e-mailbevestiging en praktische functies die administratie verminderen. Zo weet u vooraf wat u betaalt en hoeft u geen aparte leverancier te zoeken voor hosting, onderhoud of technische opvolging."
                 },
                 {
                     "title": "Hoe lang duurt het om een taxi website te ontwikkelen?",
-                    "description": "Het wordt binnen minder dan 1 week opgeleverd, afhankelijk van de complexiteit en gewenste functionaliteiten zoals online reserveringen en betalingssystemen."
+                    "description": "Een standaard taxi website kan meestal binnen minder dan 1 week worden opgeleverd zodra de inhoud, huisstijl en praktische gegevens duidelijk zijn. Bij een website met boekingssysteem hangt de timing af van de gewenste ritvelden, prijslogica en manier waarop aanvragen moeten binnenkomen. Voor taxibedrijven in Brugge, West-Vlaanderen en de rest van Benelux werk ik graag met een korte eerste afstemming, daarna volgt ontwerp, bouw en controle. U krijgt dus geen lang traject, maar wel genoeg controle om zeker te zijn dat de website klopt voor uw werking."
                 },
                 {
                     "title": "Welke functionaliteiten zijn belangrijk voor een taxi website?",
-                    "description": "Belangrijke functionaliteiten zijn online reserveringssysteem, mobiele optimalisatie, contactformulieren en prijscalculator. Daarnaast wordt er ook automatisch een mail gestuurd met alle boekingsdetails, waaronder prijs, ophaal- en bestemmingsadres. De essentiële functionaliteiten om je tijd en administratie te besparen."
+                    "description": "Voor een taxi website zijn vooral mobiele snelheid, duidelijke contactknoppen, lokale vindbaarheid, ritinformatie en een eenvoudig boekingsproces belangrijk. Klanten zoeken vaak onderweg op hun smartphone, dus ze moeten snel kunnen bellen, een rit aanvragen of een prijsindicatie bekijken. Bij het premium pakket kan het boekingssysteem ophaaladres, bestemming, prijs, kilometers en e-mailbevestiging ondersteunen. Dat maakt uw website niet alleen een online visitekaartje, maar ook een praktisch systeem dat minder telefoontjes, minder losse berichten en minder handmatige administratie vraagt."
                 },
                 {
                     "title": "Ik heb al een bestaande website. Kan ik overstappen?",
-                    "description": "Zeker! Als u al een bestaande website heeft en u wilt die niet meer gebruiken, dan kan ik <strong>zonder extra kosten</strong> alles netjes omzetten naar mijn website. Ik help u met een vlotte overstap, zodat u snel verder kan met een moderne website."
+                    "description": "Ja, overstappen kan. Als u al een taxi website heeft, bekijk ik eerst welke inhoud, domeinnaam, e-mailinstellingen en bestaande pagina's belangrijk zijn. Daarna kan ik de nieuwe website netjes opbouwen en de overstap plannen, zodat uw online aanwezigheid niet onnodig onderbroken wordt. Waar mogelijk neem ik nuttige teksten, afbeeldingen en structuur mee, maar ik verbeter ook wat verouderd of onduidelijk is. Zo krijgt u een modernere website zonder dat u helemaal opnieuw moet uitzoeken wat er online moet staan."
                 },
                 {
                     "title": "Zal de website mobiel optimaliseerd zijn?",
-                    "description": "Ja, alle taxi websites die ik ontwikkel zijn volledig responsive en geoptimaliseerd voor mobiele apparaten. Dit is cruciaal omdat de meeste klanten via hun smartphone een taxi boeken, vooral onderweg."
+                    "description": "Ja, elke taxi website wordt responsive gebouwd, zodat de pagina goed werkt op smartphone, tablet en desktop. Dat is extra belangrijk voor taxibedrijven, omdat veel klanten zoeken wanneer ze onderweg zijn of snel vervoer nodig hebben. De belangrijkste acties, zoals bellen, een offerte aanvragen of een rit boeken, blijven daarom makkelijk bereikbaar op kleine schermen. Ook afbeeldingen, tekstblokken en pricing cards worden mobiel gecontroleerd, zodat de pagina niet alleen technisch past, maar ook professioneel aanvoelt voor klanten die snel willen beslissen."
                 },
                 {
                     "title": "Krijg ik ondersteuning na de lancering van mijn taxi website?",
-                    "description": "Ja, ik bied continue ondersteuning, hosting, back-ups, beveiligingsupdates en technische ondersteuning. Dit is allemaal inbegrepen in het maandelijkse tarief, zodat u zich kunt focussen op uw taxibedrijf."
+                    "description": "Ja, ondersteuning na lancering zit in het maandelijkse pakket. Ik regel hosting, onderhoud, technische updates, basiscontrole en hulp bij kleine aanpassingen, zodat u niet zelf met plugins, hostingpanels of technische fouten bezig hoeft te zijn. Voor een taxibedrijf is dat belangrijk, want uw website moet bereikbaar blijven wanneer klanten een rit willen boeken of contact zoeken. Heeft u later andere teksten, prijzen, diensten of regio's nodig, dan kunt u mij contacteren en bekijken we samen wat er moet worden aangepast."
                 },
                 {
                     "title": "Hoe zorg ik ervoor dat mijn taxi website goed vindbaar is in Google?",
-                    "description": "Ik optimaliseer uw taxi website voor lokale SEO met relevante zoekwoorden, Google My Business integratie, snelle laadtijden en mobiele optimalisatie. Dit zorgt ervoor dat u hoger rankt bij zoekopdrachten zoals 'taxi [uw stad]'."
+                    "description": "Een taxi website wordt beter vindbaar door lokale SEO vanaf het begin mee te nemen. Dat betekent duidelijke pagina-inhoud, snelle laadtijden, goede metadata, mobiele optimalisatie, interne structuur en teksten die aansluiten bij zoekopdrachten zoals 'taxi in uw stad' of 'taxibedrijf in uw regio'. Voor Belgische taxibedrijven is het ook belangrijk dat plaatsnamen, servicegebieden en contactgegevens helder terugkomen in de zichtbare tekst en structured data. Ik bouw die basis mee in de website, zodat Google en bezoekers sneller begrijpen waar u actief bent."
                 },
                 {
                     "title": "Kan ik zelf content aanpassen op mijn taxi website?",
-                    "description": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen. Ik zorg er voor dat je je tijd en energie kunt richten op je bedrijf, terwijl ik zorg voor de technische kant van je website."
+                    "description": "Nee, het technische beheer van uw website neem ik voor mijn rekening. Dat is bewust zo opgezet, omdat ik dan de kwaliteit, veiligheid en werking beter kan bewaken. U hoeft dus niet zelf in een CMS te zoeken, updates te doen of technische problemen op te lossen. Wilt u een tekst, dienst, prijs of foto laten aanpassen, dan kunt u mij gewoon contacteren. Zo blijft uw taxi website netjes, snel en betrouwbaar, terwijl u uw tijd kunt gebruiken voor uw klanten, chauffeurs en dagelijkse planning."
                 },
                 {
                     "title": "Is hosting en domeinnaam inbegrepen?",
-                    "description": "Ja, bij elk abonnement zijn zowel de hosting als de domeinnaam inbegrepen. U hoeft zich geen zorgen te maken over extra kosten of administratieve rompslomp. Ik zorg ervoor dat alles goed geregeld is, zodat u zich kunt concentreren op uw bedrijf."
+                    "description": "Ja, hosting en domeinnaam zijn inbegrepen bij het maandelijkse pakket. U hoeft dus geen aparte hostingpartij te kiezen, geen technische instellingen uit te zoeken en geen losse facturen voor domeinnaam of hosting op te volgen. Dat maakt het vooral voor kleine taxibedrijven eenvoudiger om professioneel online te staan zonder extra administratie. Ik regel de technische basis, terwijl u één duidelijk aanspreekpunt houdt voor uw website, onderhoud en praktische vragen."
+                },
+                {
+                    "title": "Wat gebeurt er met mijn website als ik het abonnement stop?",
+                    "description": "Als u het abonnement wilt stoppen, bespreken we eerst wat u precies nodig heeft: de website offline halen, overstappen naar een andere oplossing of eventueel een eenmalige regeling bekijken. Het abonnement is bedoeld als zorgeloos maandpakket met hosting, onderhoud en support inbegrepen. Zolang het abonnement loopt, blijft die volledige opvolging actief. Wilt u stoppen, dan geef ik duidelijk aan wat de gevolgen zijn voor hosting, domeinnaam, onderhoud en eventuele boekingsfunctionaliteit, zodat u geen verrassingen krijgt."
+                },
+                {
+                    "title": "Ik zit al op Uber of Bolt, heb ik nog een eigen website nodig?",
+                    "description": "Ja, een eigen taxi website blijft waardevol, ook als u via Uber, Bolt of andere platformen ritten ontvangt. Platformen kunnen helpen met zichtbaarheid, maar de klantrelatie ligt daar niet volledig bij uw eigen bedrijf. Met een eigen website bouwt u vertrouwen op rond uw naam, regio, diensten, prijzen en contactgegevens. U kunt directe aanvragen ontvangen zonder afhankelijk te zijn van een app, en u heeft een vaste plek waar klanten u kunnen terugvinden via Google. Voor lokale ritten in Benelux kan dat net het verschil maken tussen een losse platformrit en een terugkerende klant."
+                },
+                {
+                    "title": "Hoe wordt er omgegaan met klant- en ritgegevens?",
+                    "description": "Bij een boekingssysteem vraag ik alleen gegevens die nodig zijn om een ritaanvraag goed te verwerken, zoals naam, contactgegevens, ophaaladres, bestemming en eventueel opmerkingen. De website kan AVG-bewust worden ingericht met duidelijke formulieren, veilige verwerking en geen onnodige velden. Dat is belangrijk omdat taxi-aanvragen vaak persoonlijke locatiegegevens bevatten. Tijdens het eerste gesprek bekijken we welke gegevens u echt nodig heeft, zodat de website praktisch blijft voor uw bedrijf en tegelijk zorgvuldig omgaat met de informatie van klanten."
                 }
             ]
         },
@@ -479,7 +574,7 @@
             "title": "Eenmalige Betaling",
             "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong> voor uw taxi website. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Deze optie is ideaal als u volledige controle wilt over uw hosting of al een hostingprovider heeft. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat voor uw taxibedrijf.</p>",
             "button": {
-                "href": "/contact",
+                "href": "/contact?pakket=eenmalig",
                 "text": "Vraag Offerte Aan"
             }
         },
@@ -488,10 +583,10 @@
             "component": "cta",
             "title": "Klaar om Boekingen te Genereren?",
             "subtitle": "Kies uw pakket: €49 of €69 per maand",
-            "text": "Start met een professionele taxi website vanaf €49 per maand of kies het geavanceerde pakket met boekingssysteem en automatisering voor €69 per maand. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw taxibedrijf online kunnen laten groeien.",
+            "text": "Start met een professionele taxi website vanaf €49 per maand of kies het geavanceerde pakket met boekingssysteem en automatisering voor €69 per maand. Ik help u bij elke stap, van ontwerp tot lancering. Vraag nu een gratis offerte aan en ontdek hoe ik uw taxibedrijf online kan laten groeien.",
             "button": [
                 {
-                    "href": "/contact",
+                    "href": "/contact?pakket=taxi",
                     "text": "Vraag Gratis Offerte Aan",
                     "label": "Naar contact pagina",
                     "external": false

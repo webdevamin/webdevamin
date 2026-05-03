@@ -1,8 +1,15 @@
 const { RESEND_API_KEY, MAIL_TO } = process.env;
 
+/*
+ * Verwijdert HTML uit formulierwaarden voordat ze in de e-mail belanden.
+ */
+const stripHtml = (value = '') => {
+  return String(value).replace(/(<([^>]+)>)/gi, '').trim();
+};
+
 export async function POST(req) {
   try {
-    const { name, email, message, website } = await req.json();
+    const { name, email, message, packageChoice, website } = await req.json();
 
     // Honeypot check - if website field is filled, it's likely a bot
     if (website) {
@@ -18,7 +25,12 @@ export async function POST(req) {
       );
     }
 
-    if (!name || !email || !message) {
+    const cleanName = stripHtml(name);
+    const cleanEmail = stripHtml(email);
+    const cleanMessage = stripHtml(message);
+    const cleanPackageChoice = stripHtml(packageChoice);
+
+    if (!cleanName || !cleanEmail || !cleanMessage) {
       return new Response(
         JSON.stringify({ error: 'Please fill in the form correctly.' }),
         {
@@ -30,17 +42,18 @@ export async function POST(req) {
       );
     }
 
-    const cleanMessage = message.replace(/(<([^>]+)>)/gi, "");
-
     const emailData = {
       from: `Contact Form <contact@webdevamin.com>`,
       to: MAIL_TO,
-      subject: `New portfolio message from ${name}`,
-      reply_to: email,
+      subject: cleanPackageChoice
+        ? `New ${cleanPackageChoice} message from ${cleanName}`
+        : `New portfolio message from ${cleanName}`,
+      reply_to: cleanEmail,
       html: `<html><body>
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Name:</strong> ${cleanName}</p>
+        <p><strong>Email:</strong> ${cleanEmail}</p>
+        ${cleanPackageChoice ? `<p><strong>Package:</strong> ${cleanPackageChoice}</p>` : ''}
         <p><strong>Message:</strong></p>
         <p>${cleanMessage}</p>
       </body></html>`,

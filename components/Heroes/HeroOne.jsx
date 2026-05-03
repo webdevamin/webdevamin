@@ -1,15 +1,19 @@
 import ButtonOne from '../Buttons/ButtonOne'
+import ButtonThree from '../Buttons/ButtonThree'
 import Icon from '../Icon'
 import { getJsonString, } from '../../utils/app';
 import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
+import HeroTitleAnimation from './HeroTitleAnimation';
 
 const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     smallerTitle }) => {
     const { title, text, button, image } = content;
     const { src: url, objectFit, width, height, alt, disableImgSpace = false } = image;
     const parsedTitle = getJsonString(title);
+
+    const mainButtons = button.filter(b => !b.external).slice(0, 2);
+    const linkButtons = button.filter(b => b.external);
 
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] 
@@ -39,13 +43,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     2xl:text-6xl md:mb-5`}`}>
                         {
                             (Array.isArray(parsedTitle)) ? (
-                                <TypeAnimation
-                                    sequence={parsedTitle}
-                                    wrapper="div"
-                                    className='font_mohave'
-                                    cursor={true}
-                                    speed={60}
-                                />
+                                <HeroTitleAnimation sequence={parsedTitle} />
                             ) : (parsedTitle)
                         }
                     </h1>
@@ -83,21 +81,28 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     }
                     <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
                         {
-                            button.map((btn, i) => {
-                                const { href, text } = btn;
+                            mainButtons.map((btn, i) => {
+                                const { href, text, external = false } = btn;
                                 const isOdd = i % 2 !== 0 ? true : false;
 
                                 if (href) {
                                     return (
                                         <ButtonOne key={i} href={ctaLink || href}
                                             text={text} outline={isOdd} noMargin
-                                            external={externalLink}
+                                            external={externalLink || external}
                                             classes={`sm:px-14 md:text-center`} />
                                     )
                                 }
                             })
                         }
                     </div>
+                    {linkButtons.length > 0 && (
+                        <div className="mt-5 md:mt-7 ml-1.5 flex flex-col gap-2">
+                            {linkButtons.map((btn, i) => (
+                                <ButtonThree key={`link-${i}`} href={btn.href} text={btn.text} />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
@@ -116,7 +121,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                     target="_blank" aria-label={title}>
                                     <Icon icon={<IconComponent className="h-8 w-8" />} size={`2xl`} />
                                 </a>
-                            )
+                            );
                         })
                     }
                 </div>

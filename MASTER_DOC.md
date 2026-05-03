@@ -20,6 +20,54 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
 
 ## Feature Notities
 
+### Taxi Industry SEO En Conversie Update
+
+- De taxi-pagina leeft in `messages/nl/industries/taxi.json` en wordt gerenderd via `src/app/[locale]/industry/[slug]/page.jsx`.
+- De JSON-LD voor taxi is gecorrigeerd:
+  - `localBusiness` gebruikt nu `ProfessionalService` in plaats van `TaxiService`, zodat Google en AI-systemen Webdevamin als webontwikkelaar lezen, niet als taxibedrijf.
+  - Telefoonnummer staat in E.164-formaat: `+32470930916`.
+  - `addressLocality` is aangepast naar `Brugge`.
+  - `@id` en `sameAs` zijn toegevoegd voor entity-herkenning.
+  - `service` heeft nu een eigen `@id`, `url` en `billingDuration: P1M` in de prijsblokken.
+  - Er is een `BreadcrumbList` toegevoegd.
+- De zichtbare taxi-copy is sterker lokaal gemaakt met vermeldingen van Brugge, West-Vlaanderen en België.
+- De twee korte CTA/grammatica-problemen zijn opgelost:
+  - "kunnen laten groeien" is "kan laten groeien".
+  - "prijzen meer informatie" is "prijzen voor meer informatie".
+- De ongesourcete 80%-claim is vervangen door een neutralere formulering.
+- De lange tekstblokken `why-taxi-website` en `why-all-in-one` bevatten nu H3-subkoppen voor betere scanbaarheid.
+- Er is een nieuwe `process` sectie toegevoegd met drie stappen:
+  - Gratis gesprek
+  - Ontwerp en bouw
+  - Live en opvolging
+- De video-demo sectie toont nu een fallback naar het live AN Taxi voorbeeld zolang `videoUrl` nog leeg is. Zodra er een echte YouTube URL is, vult `videoUrl` die automatisch in de embed.
+- De FAQ's zijn uitgebreid met langere antwoorden, abonnement-stopzetting, Uber/Bolt-positionering en AVG-bewuste omgang met ritgegevens.
+- `generateStaticParams()` is toegevoegd aan de industry route, waardoor de taxi- en kapperpagina bij buildtijd statisch worden gegenereerd.
+- De pricing CTA's geven nu pakketcontext mee via query parameters:
+  - `/contact?pakket=standaard`
+  - `/contact?pakket=premium`
+  - `/contact?pakket=op-maat`
+  - `/contact?pakket=eenmalig`
+- Het contactformulier leest `pakket` uit de URL, toont een pakketselectie en stuurt de keuze mee in de e-mail.
+- De AN Taxi case-metrics zijn herschreven naar niet-geclaimde, kwalitatieve voordelen omdat er geen brondata in het project staat.
+- Er is een `public/llms.txt` toegevoegd voor AI crawlers en agents.
+
+### Performance En Header Update
+
+- `src/app/layout.jsx` gebruikt nu `revalidate = 3600` in plaats van `force-dynamic`.
+- `src/app/[locale]/layout.jsx` laadt minder fontgewichten:
+  - Quicksand: `400`, `600`, `700`
+  - Mohave: `600`, `700`
+  - Beide fonts gebruiken `display: swap`.
+- `HeroOne.jsx` importeert `react-type-animation` niet meer direct. De animatie zit in `components/Heroes/HeroTitleAnimation.jsx` en wordt pas in de browser geladen wanneer een titel echt een animatiereeks gebruikt.
+- `components/Layouts/Header.jsx` gebruikt geen Flowbite Navbar/Dropdown/Alert meer. De header is nu een eigen responsive navigatie met mobiele toggle, dropdowns en taalswitcher.
+- De header is gecorrigeerd zodat de desktopnavigatie opnieuw gecentreerd staat:
+  - logo links
+  - hoofdmenu in het midden
+  - taalswitcher rechts
+- De `Branches` dropdown gebruikt op desktop een hover-bridge met padding tussen trigger en menu. Daardoor verdwijnt het menu niet meer wanneer de cursor van de knop naar de dropdown beweegt.
+- Let op: `BlockAccordion.jsx` gebruikt nog wel Flowbite Accordion. Dat is bewust niet aangepast omdat het buiten de header-audit viel en meer visuele regressierisico's heeft.
+
 ### Pricing Voor Kapper Pagina
 
 - De kapper pricing is opgewaardeerd naar een duidelijk 4-laags aanbod: `Standaard`, `Premium`, `Pro` en `Op Maat`.
@@ -56,6 +104,9 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
 
 ## Belangrijke Gotcha's
 
+- Voor taxi is `videoUrl` nog leeg omdat er geen echte demo-opname in het project staat. Vul hier pas een YouTube URL in nadat de demo van het boekingssysteem is opgenomen en geüpload.
+- Voeg geen AN Taxi quote of review schema toe zonder echte, goedgekeurde klantquote of reviewdata.
+- Het BTW- of ondernemingsnummer staat nog niet in de repo. Voeg dit pas toe aan footer/contact zodra het nummer bevestigd is.
 - Oude prijzen en positioning kunnen op meerdere plekken zitten:
   - SEO descriptions
   - JSON-LD / FAQ schema

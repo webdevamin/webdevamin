@@ -10,24 +10,39 @@ import { routing } from '../../../../i18n/routing'
 import BlockLayoutOne from '../../../../../components/Layouts/BlockLayoutOne'
 import Heading from '../../../../../components/Heading'
 import { PricingCard } from '../../../../../components/Cards/PricingCard'
+import CardOne from '../../../../../components/Cards/CardOne'
 import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
 import OneTimePayment from '../../../../../components/Home/OneTimePayment'
+import { renderIcon } from '../../../../../utils/iconMapper'
+
+const slugToFileMap = {
+  nl: {
+    'taxi-website-laten-maken': 'taxi',
+    'kapper-website-laten-maken': 'kapper',
+  },
+};
+
+/*
+ * Vertelt Next.js welke industry-pagina's statisch gebouwd kunnen worden.
+ */
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) => {
+    const localeMap = slugToFileMap[locale] || {};
+
+    return Object.keys(localeMap).map((slug) => ({
+      locale,
+      slug,
+    }));
+  });
+}
 
 async function getData(locale, slug) {
   if (!routing.locales.includes(locale)) {
     notFound();
   }
-
-  // Map slugs to their corresponding JSON file names per locale
-  const slugToFileMap = {
-    nl: {
-      'taxi-website-laten-maken': 'taxi',
-      'kapper-website-laten-maken': 'kapper',
-    },
-  };
 
   const localeMap = slugToFileMap[locale];
   if (!localeMap || !localeMap[slug]) {
@@ -105,13 +120,63 @@ export async function generateMetadata({ params: { locale, slug } }) {
   };
 }
 
-// Video Demo Section Component
+/*
+ * Rendert de korte processectie zodat bezoekers snel begrijpen wat er gebeurt
+ * nadat ze een offerte of pakket aanvragen.
+ */
+const ProcessSection = ({ content }) => {
+  if (!content?.items?.length) return null;
+
+  const { title, subtitle, items } = content;
+
+  return (
+    <section id="process" className="mt-24 md:mt-28 xl:mt-36">
+      <div className="max-w-7xl mx-auto">
+        <Heading title={title} subtitle={subtitle} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          {items.map((item, index) => (
+            <div
+              key={item.title}
+              className="flex flex-col items-center text-center shadow-md border 
+              border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-5 lg:p-6 
+              relative justify-center transform transition-all duration-300 hover:scale-105 overflow-hidden"
+              style={{ transitionDelay: `${index * 100}ms` }}
+            >
+              <div className="rounded-full bg-theme bg-opacity-5 p-3 
+              sm:p-4 lg:p-5 mb-3 lg:mb-4">
+                <div className="text-theme_dark">
+                  {renderIcon(item.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7 lg:h-9 lg:w-9' })}
+                </div>
+              </div>
+              <div className="mb-1.5 text-xs font-bold uppercase tracking-[0.16em] text-slate-400">
+                Stap {index + 1}
+              </div>
+              <h3 className="mb-2 sm:mb-3 text-lg sm:text-xl font-semibold text-gray-800">
+                {item.title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 break-words">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/*
+ * Rendert een YouTube-demo wanneer die beschikbaar is en toont anders een
+ * nette live-demo fallback, zodat de contentflow niet leeg aanvoelt.
+ */
 const VideoDemoSection = ({ content }) => {
   if (!content) return null;
 
-  const { title, subtitle, text, videoUrl, videoTitle } = content;
+  const { title, subtitle, text, videoUrl, videoTitle, fallbackUrl, fallbackText, fallbackButtonText } = content;
 
-  // Extract YouTube video ID from URL
+  /*
+   * Haalt de YouTube video-id uit gewone YouTube links en korte youtu.be links.
+   */
   const getYouTubeId = (url) => {
     if (!url) return null;
     // Handle youtu.be short URLs
@@ -127,8 +192,7 @@ const VideoDemoSection = ({ content }) => {
 
   const videoId = getYouTubeId(videoUrl);
 
-  // Don't render if there's no valid video URL
-  if (!videoUrl) return null;
+  if (!videoUrl && !fallbackUrl) return null;
 
   return (
     <BlockLayoutOne title={title} slug="video-demo" includeMaxWidth={false}>
@@ -139,7 +203,7 @@ const VideoDemoSection = ({ content }) => {
 
           {videoId && (
             <div
-              className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
+              className="relative w-full overflow-hidden rounded-lg border border-gray-200 shadow-2xl"
               style={{ paddingTop: '56.25%' }}
             >
               <iframe
@@ -154,7 +218,7 @@ const VideoDemoSection = ({ content }) => {
 
           {!videoId && videoUrl && (
             <div
-              className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-gray-100"
+              className="relative w-full overflow-hidden rounded-lg border border-gray-200 bg-gray-100 shadow-2xl"
               style={{ paddingTop: '56.25%' }}
             >
               <div className="absolute inset-0 flex items-center justify-center">
@@ -170,6 +234,24 @@ const VideoDemoSection = ({ content }) => {
                   <span className="font-semibold">Bekijk de video</span>
                 </a>
               </div>
+            </div>
+          )}
+
+          {!videoUrl && fallbackUrl && (
+            <div className="rounded-lg border border-dark border-opacity-10 bg-white p-6 text-center shadow-md sm:p-8">
+              {fallbackText && (
+                <p className="mx-auto mb-6 max-w-2xl text-base leading-7 text-slate-600">
+                  {fallbackText}
+                </p>
+              )}
+              <a
+                href={fallbackUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center rounded border border-dark bg-theme px-5 py-3 text-sm font-semibold uppercase tracking-wider text-dark shadow-bold_r_sm transition-all hover:shadow-zero sm:w-auto"
+              >
+                {fallbackButtonText || 'Bekijk voorbeeld'}
+              </a>
             </div>
           )}
         </div>
@@ -198,27 +280,26 @@ const PortfolioCase = ({ content }) => {
     <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
       <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
         <div className="lg:flex-1">
-          <div className="mb-6 lg:mb-10 flex flex-col lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
-            <div>
+          <div className="mb-6 lg:mb-10 flex flex-col lg:flex-row lg:gap-10 lg:justify-center lg:items-center text-left">
+            <div className="lg:max-w-[45%]">
               <Heading title={title} subtitle={subtitle} />
               <div dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="w-full lg:w-auto my-4">
-              <div className="relative w-full max-w-[400px] mx-auto">
+              <div className="relative w-full max-w-[560px] mx-auto">
                 <Image
                   src={image}
                   alt={projectDesc}
-                  width={400}
-                  height={400}
-                  className="w-full h-auto object-contain max-w-[400px] px-5 lg:px-0"
-                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 400px"
-                  style={{ maxWidth: '400px', height: 'auto' }}
+                  width={560}
+                  height={560}
+                  className="w-full h-auto object-contain max-w-[560px] px-5 lg:px-0"
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 560px"
+                  style={{ maxWidth: '560px', height: 'auto' }}
                 />
               </div>
             </div>
           </div>
 
-          {/* Highlights Section */}
           {highlights && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6">
               {highlights.map((highlight, index) => (
@@ -332,6 +413,56 @@ const PricingSection = ({ content }) => {
   );
 };
 
+const TestimonialSpotlight = ({ content }) => {
+  if (!content?.review) return null;
+
+  const { review, moreReviewsUrl, moreReviewsText } = content;
+
+  return (
+    <section className="mt-20">
+      <div className="max-w-2xl mx-auto flex flex-col items-center">
+        <div className="w-full transform transition-all duration-500 hover:-translate-y-1.5">
+          <article className="shadow-lg border border-dark xl:border-opacity-10 border-opacity-20 rounded-2xl p-6 sm:p-8 md:p-10 relative text-center">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full font-bold flex items-center justify-center mx-auto absolute left-1/2 -translate-x-1/2 -top-8 sm:-top-9 md:-top-10 shadow-bold_r_sm text-white text-lg sm:text-xl md:text-2xl bg-cyan-500 border-4 border-white aspect-square">
+              {review.name.split(' ').map(w => w.charAt(0)).join('').toUpperCase()}
+            </div>
+            <div className="mt-10 sm:mt-12 mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold capitalize mb-3 text-slate-800">
+                {review.name}
+              </h3>
+              <div className="mb-4 flex justify-center gap-1">
+                {[...Array(review.stars)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <blockquote className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed font-medium italic">
+                &ldquo;{review.text}&rdquo;
+              </blockquote>
+            </div>
+          </article>
+        </div>
+        {moreReviewsUrl && (
+          <div className="mt-6">
+            <a
+              href={moreReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-theme_darker hover:text-dark transition-colors uppercase"
+            >
+              <span>{moreReviewsText}</span>
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
 const IndustryPage = async ({ params: { locale, slug } }) => {
   const {
     localesData,
@@ -350,11 +481,13 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
       <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
       <PageLayout>
+        <ProcessSection content={blocks.find(block => block.slug === 'process')} />
         <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website')} />
         <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position='right' />
         <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
         <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
+        <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
         <PricingSection content={blocks.find(block => block.slug === 'pricing')} />
         <OneTimePayment content={blocks.find(block => block.slug === 'one-time-payment')} />
         <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />

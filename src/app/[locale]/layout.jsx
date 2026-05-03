@@ -33,14 +33,16 @@ export async function generateMetadata() {
 
 const quicksand = Quicksand({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '600', '700'],
   variable: '--font-quicksand',
+  display: 'swap',
 });
 
 const mohave = Mohave({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['600', '700'],
   variable: '--font-mohave',
+  display: 'swap',
 });
 
 export default async function LocaleLayout({ children, params: { locale } }) {
