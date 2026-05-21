@@ -5,7 +5,7 @@
         "canonical": "https://webdevamin.com/nl/website-laten-maken-brugge",
         "ogTitle": "Website Laten Maken Brugge | Vanaf €49/maand All-In-One",
         "ogDescription": "Website laten maken in Brugge vanaf €49/maand. Professionele website met hosting, onderhoud, SEO en support. Webontwikkelaar uit Brugge, persoonlijke aanpak.",
-        "image": "https://bucket.webdevamin.com/website-laten-maken-brugge_og.png",
+        "image": "https://bucket.webdevamin.com/website-laten-maken-brugge_og.jpg",
         "keywords": "website laten maken brugge, webdesign brugge, webontwikkelaar brugge, website bouwen brugge, freelance webdesigner brugge, website laten maken west-vlaanderen, website brugge €49, zakelijke website brugge, website maken brugge, goedkope website brugge"
     },
     "alternates": [
@@ -258,7 +258,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Website Laten Maken Brugge",
-            "text": "Uw website laten maken door een webontwikkelaar uit Brugge? Vanaf €49/maand bouw ik een professionele, snelle en SEO-geoptimaliseerde website voor uw bedrijf in Brugge en omgeving. Alles inbegrepen: hosting, onderhoud, domeinnaam en support. Geen opstartkosten. Bekijk hieronder wat ik voor Brugse ondernemers al gerealiseerd heb, hoe het proces werkt en welk pakket bij u past.",
+            "text": "Uw website laten maken door een webontwikkelaar uit Brugge? Vanaf €49/maand bouw ik een professionele, snelle en SEO-geoptimaliseerde website voor uw bedrijf in Brugge en omgeving. Alles inbegrepen: hosting, onderhoud, domeinnaam en support. Geen opstartkosten. Eenmalige betaling of maatwerk kan zeker ook!",
             "image": {
                 "src": "https://bucket.webdevamin.com/laptop-website-brugge.png",
                 "alt": "Webontwikkelaar uit Brugge die een professionele website ontwerpt voor een lokaal bedrijf.",
@@ -384,7 +384,7 @@
             "component": "testimonials",
             "title": "Beoordelingen",
             "subtitle": "klantenreviews",
-            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
+            "text": "<p>Uiterst tevreden klanten uit Brugge. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
             "testimonials": [
                 {
                     "letter": "N",
@@ -420,7 +420,7 @@
             "title": "Onze Locatie",
             "subtitle": "Gevestigd in Brugge",
             "slug": "location",
-            "text": "<p>Ik ben gevestigd in het hart van <strong>Brugge</strong> en ontwikkel websites voor ondernemers in Brugge, West-Vlaanderen en heel België. Als u uit de regio komt, kunnen we altijd persoonlijk afspreken. Koffie, lunch, gewoon een gesprek ergens in de stad, u kiest. <strong>Ik trakteer</strong>. Liever eerst telefonisch of via mail overleggen? Dat kan natuurlijk ook. Neem gerust contact op via <a href='tel:+32470930916'>telefoon</a>, <a href='mailto:amin@webdevamin.com'>mail</a> of het <a href='/nl/contact?ref=brugge'>contactformulier</a>.</p><p>Of u nu een webdesigner, een freelance webontwikkelaar of gewoon een betrouwbare partner zoekt voor uw website, ik sta klaar om uw project te realiseren.</p>",
+            "text": "<p>Gevestigd in het hart van <strong>Brugge</strong>. Dus als u uit de regio komt, kunnen we altijd persoonlijk afspreken. Koffie, lunch, gewoon een gesprek ergens in de stad, u kiest. <strong>Ik trakteer</strong>. Liever eerst telefonisch of via mail overleggen? Dat kan natuurlijk ook. Neem gerust contact op via <a href='tel:+32470930916'>telefoon</a>, <a href='mailto:amin@webdevamin.com'>mail</a> of het <a href='/nl/contact?ref=brugge'>contactformulier</a>.</p><p>Of u nu een webdesigner, een freelance webontwikkelaar of gewoon een betrouwbare partner zoekt voor uw website, ik sta klaar om uw project te realiseren.</p>",
             "address": "Rodenonnenstraat 21",
             "city": "8000 Brugge, België",
             "phone": "+32 470 93 09 16",
@@ -439,10 +439,10 @@
             "subtitle": "Pakketten voor uw bedrijf in Brugge",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies tussen het <strong>Standaard pakket voor €49 per maand</strong> of het <strong>Premium pakket voor €69 per maand</strong>. Beide bevatten een professionele website, hosting, onderhoud, SEO-optimalisatie en support.</p><p>Het Premium pakket bevat extra functionaliteiten zoals een boekingssysteem, afsprakensysteem of andere automatisering die past bij uw bedrijf.</p><p>Bekijk <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>William Projecten</a>, <a href='https://black-wood.be' target='_blank' rel='noopener noreferrer'>Black Wood</a> of <a href='https://pastamaria.be' target='_blank' rel='noopener noreferrer'>Pasta Maria</a> als voorbeeld van Brugse bedrijven met een website die ik voor €49/maand gebouwd heb. Prijzen bijgewerkt: mei 2026. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Kies tussen het <strong>Standaard pakket voor €49 per maand</strong> of het <strong>Premium pakket voor €69 per maand</strong>. Beide bevatten een professionele website, hosting, onderhoud, SEO-optimalisatie en support.</p><p>Het Premium pakket bevat extra functionaliteiten zoals een boekingssysteem, afsprakensysteem of andere automatisering die past bij uw bedrijf.</p>",
             "growthTitle": "Ook uw website kan hier staan",
             "growthText": "Elk project begint met een vrijblijvend gesprek. We bespreken wat u nodig heeft, ik maak een voorstel en binnen een week kan uw website al live zijn. Lokaal in Brugge, persoonlijk en zonder gedoe.",
-            "growthNote": "Geen opstartkosten. Persoonlijke aanpak in Brugge.",
+            "growthNote": "Geen opstartkosten!",
             "subsubtitle": "Opties",
             "items": [
                 {
@@ -529,7 +529,7 @@
             "component": "cta",
             "title": "Klaar om Uw Brugse Bedrijf Online te Brengen?",
             "subtitle": "Kies uw pakket: €49 of €69 per maand",
-            "text": "Start met een professionele website vanaf €49 per maand of kies Premium voor €69 per maand met extra functionaliteiten. Persoonlijke aanpak, lokaal in Brugge. Vraag nu een gratis offerte aan.",
+            "text": "Start met een professionele website vanaf €49 per maand of kies Premium voor €69 per maand met extra functionaliteiten. Vraag nu een gratis offerte aan.",
             "button": [
                 {
                     "href": "/contact?ref=brugge",
@@ -549,7 +549,7 @@
             "slug": "faq",
             "component": "faq",
             "title": "Veelgestelde Vragen",
-            "subtitle": "Over website laten maken in Brugge",
+            "subtitle": "Alles omtrent webontwikkeling",
             "text": "Hieronder vindt u antwoorden op veelgestelde vragen over een website laten maken in Brugge. Staat uw vraag er niet bij? Neem gerust <a href='/nl/contact?ref=brugge'>contact</a> op.",
             "items": [
                 {
