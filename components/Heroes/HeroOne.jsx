@@ -7,7 +7,7 @@ import Image from 'next/image';
 import HeroTitleAnimation from './HeroTitleAnimation';
 
 const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
-    smallerTitle }) => {
+    smallerTitle, imageMaxWidth = 'max-w-[600px]' }) => {
     const { title, text, button, image } = content;
     const { src: url, objectFit, width, height, alt, disableImgSpace = false } = image;
     const parsedTitle = getJsonString(title);
@@ -23,7 +23,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
             xl:px-40 2xl:px-50 md:pt-14`}>
                 <div className={`flex items-center justify-center ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
-                    <div className="relative max-w-[600px] mx-auto">
+                    <div className={`relative ${imageMaxWidth} mx-auto`}>
                         <Image
                             src={url}
                             priority={true}

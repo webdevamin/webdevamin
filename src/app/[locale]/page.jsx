@@ -123,6 +123,9 @@ const Index = async ({ params: { locale } }) => {
         {locale === 'nl' && blocks.find(block => block.slug === 'location') && (
           <Location content={blocks.find(block => block.slug === 'location')} />
         )}
+        {locale === 'nl' && blocks.find(block => block.slug === 'brugge-meetup') && (
+          <CallToAction content={blocks.find(block => block.slug === 'brugge-meetup')} />
+        )}
         <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         <OneTimePayment content={blocks.find(block => block.slug === `pricing`)?.oneTimePayment} />
         <CallToAction content={blocks.find(block => block.slug === 'cta')} />

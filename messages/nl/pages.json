@@ -25,6 +25,11 @@
         ]
     },
     {
+        "title": "Brugge",
+        "href": "/website-laten-maken-brugge",
+        "icon": "map-pin"
+    },
+    {
         "title": "Blogs",
         "href": "/blogs",
         "icon": "bookmark"

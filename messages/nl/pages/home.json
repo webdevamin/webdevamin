@@ -214,6 +214,20 @@
             }
         },
         {
+            "title": "Uit Brugge of de Regio?",
+            "subtitle": "Laten we kennismaken",
+            "slug": "brugge-meetup",
+            "text": "Uw bedrijf in Brugge of ergens in West-Vlaanderen? Laten we samen een koffie drinken en bespreken wat uw bedrijf online kan bereiken. Geen verplichtingen, geen salespraatje. Ik trakteer.",
+            "button": [
+                {
+                    "href": "/website-laten-maken-brugge",
+                    "text": "Bekijk Brugge Pagina",
+                    "label": "Naar de Brugge pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
             "title": "Mijn Diensten",
             "subtitle": "Wat ik aanbied",
             "slug": "services",
@@ -375,32 +389,32 @@
             "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
             "testimonials": [
                 {
-                    "letter": "A",
-                    "name": "Alexi",
+                    "letter": "L",
+                    "name": "Laurenz Dereu",
                     "stars": "5",
-                    "review": "Zeer professioneel,vriendelijk,goede prijzen zeker aan te raden.",
+                    "review": "Heel mooie en handige website voor ons gemaakt. Vol en netjes afgehandeld en aanrader voor iemand die een website wil of vernieuwen. Een dikke 5 sterren voor die jongen. Nogmaals dank u Amin voor alles.",
                     "backgroundColor": "rgb(168 85 247)"
                 },
                 {
-                    "letter": "N",
-                    "name": "Natan Hongenaert",
+                    "letter": "E",
+                    "name": "Eyefine",
                     "stars": "5",
-                    "review": "Transparant en flexibel in zijn manier van werken. Hij denkt mee om een oplossing op te zetten die op de lange termijn werkt.",
+                    "review": "Supertevreden over mijn nieuwe website & tool. Amin was steeds snel bereikbaar en speelde goed in op mijn wensen.",
                     "backgroundColor": "rgb(6 182 212)"
                 },
                 {
-                    "letter": "R",
-                    "name": "Robert Chen",
+                    "letter": "I",
+                    "name": "imfy",
                     "stars": "5",
-                    "review": "Schitterend werk. Denk mee en zoek mee voor een oplossing.  Zeer goede prijs en kwaliteit werk geleverd.  Uiterst tevreden. Bedankt Amin.",
+                    "review": "Zeer tevreden met wat ik wou voor mijn zaak. Geen gezeur noch belachelijke prijzen zoals wat je bij software bedrijven tegenkomt.",
                     "backgroundColor": "rgb(236 72 153)"
                 },
                 {
-                    "letter": "F",
-                    "name": "Filip",
+                    "letter": "U",
+                    "name": "Ugur Erden",
                     "stars": "5",
-                    "review": "Mooi, sterk en betaalbaar website ontwikkeld voor onze organisatie. Als je een betrouwbare webdesigner uit Brugge zoekt, je weet waar je moet zijn.",
-                    "backgroundColor": "rgb(203 236 72)"
+                    "review": "Zeer professioneel aan de slag gegaan top gast zeker een aanrader!",
+                    "backgroundColor": "rgb(34 197 94)"
                 }
             ]
         },

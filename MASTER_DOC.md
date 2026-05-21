@@ -130,3 +130,72 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
 - Als er later automatische facturatie of usage-tracking komt, houd de copy positief en vermijd strafgerichte taal.
 - Als meer industry-pagina's vergelijkbare pricing-logica krijgen, is het zinvol om een gedeeld pricing-schema of helper te introduceren.
 - Controleer bij toekomstige design updates dat de pricing cards op mobiel visueel in balans blijven, zeker met langere taglines of microcopy.
+
+## Website Laten Maken Brugge - Landingspagina
+
+### Doel
+
+SEO-landingspagina gericht op de zoekterm "website laten maken brugge". De pagina staat op positie 13 in Google Search Console en het doel is om door te stijgen naar positie 1. Alleen beschikbaar in het Nederlands (`/nl/website-laten-maken-brugge`).
+
+### Route en Bestanden
+
+- Route: `/nl/website-laten-maken-brugge` (standalone, niet onder `/industry/`)
+- Pagina component: `src/app/[locale]/website-laten-maken-brugge/page.jsx`
+- Data: `messages/nl/pages/brugge.json`
+- Enkel NL, geen Engelse versie. Als locale niet `nl` is, geeft de pagina een 404.
+
+### Secties (in volgorde)
+
+1. **Hero (HeroOne)** - "Website Laten Maken Brugge | Vanaf €49/maand" met intro die bezoekers naar beneden trekt
+2. **Process (ProcessSection)** - 3 stappen: gratis gesprek, ontwerp en bouw, live en opvolging
+3. **Waarom Website Brugge (BlockNormal)** - Lokaal voordeel, koffie-afspraak, realisatie voor Brugse bedrijven
+4. **Waarom All-In-One (BlockNormal, reversed)** - Pakketvoordelen + interne links naar taxi en kapper pagina's
+5. **Brugge Projecten (BruggeProjectsSection)** - Raster van Brugse projecten via `CardTwo` component (zelfde design als `/projects` overzicht): Restaurant China Brugge, Bakiji Construct, Black Wood, William Projecten, Pasta Maria, GRIT.
+6. **Testimonials (Testimonials)** - 4 reviews, zelfde als op home pagina
+7. **Locatie (Location)** - Google Maps embed van Brugge + koffie-afspraak tekst
+8. **Pricing (PricingSection)** - 3 kaarten: Standaard (€49), Premium (€69), Op Maat
+9. **Eenmalige Betaling (OneTimePayment)** - Optie zonder abonnement
+10. **CTA (CallToAction)** - "Klaar om Uw Brugse Bedrijf Online te Brengen?"
+11. **FAQ (BlockAccordion)** - 12 vragen gericht op "website laten maken brugge"
+12. **Contact (Contact)** - Contactformulier
+13. **Footer** - Standaard
+
+### SEO Tactieken
+
+- Primaire keyword "website laten maken brugge" in: title, H1, meta description, URL, first 100 words, alt texts, JSON-LD
+- Secundaire keywords: webdesign brugge, webontwikkelaar brugge, website bouwen brugge, freelance webdesigner brugge
+- "€49/maand" prominent in title, hero en pricing
+- JSON-LD met: LocalBusiness (ProfessionalService), Service, FAQPage, BreadcrumbList
+- Geo coordinates in structured data
+- areaServed: Brugge, West-Vlaanderen, Belgium
+
+### Interne Linking
+
+- Brugge pagina linkt naar: home, taxi industry, kapper industry, contact, individuele project URLs
+- Home pagina linkt naar Brugge pagina via "brugge-meetup" BlockNormal sectie
+- Nav/footer link "Brugge" op elke pagina via `pages.json`
+
+### GEO Tactieken (Generative Engine Optimization)
+
+- Feitelijke FAQ-antwoorden die AI-modellen direct kunnen citeren
+- Specifieke prijsinfo (€49/maand) die AI kan refereren
+- Locatie-specifieke vermeldingen (Brugge, West-Vlaanderen, 8000) door de hele pagina
+- Processtappen helder gestructureerd (1-2-3)
+- Named entities: Webdevamin, Brugge, West-Vlaanderen
+- Testimonial data voor geloofwaardigheidssignalen
+- Breadcrumb structured data voor context
+
+### Home Pagina Wijziging
+
+Er is een nieuwe `brugge-meetup` block toegevoegd aan `messages/nl/pages/home.json` (na "about", voor "why-all-in-one"). Dit blok toont een koffie-afspraak verhaal met link naar de Brugge pagina. Alleen zichtbaar op de NL home pagina. Rendering in `src/app/[locale]/page.jsx` is NL-only geconditioneerd.
+
+### Navigatie
+
+`messages/nl/pages.json` heeft een nieuw top-level nav item "Brugge" met `icon: "map-pin"` en `href: "/website-laten-maken-brugge"`. Dit verschijnt automatisch in zowel header als footer.
+
+### Afhankelijkheden
+
+- `BruggeProjectsSection` is een custom inline component dat projecten filtert op basis van `projectSlugs` array in de JSON-data
+- De projectkaarten worden gerenderd via het gedeelde `CardTwo` component (zelfde als op de `/projects` overzichtspagina), waardoor styling en design consistent blijven
+- Gebruikt bestaande componenten: HeroOne, BlockNormal, Testimonials, Location, PricingCard, CardTwo, CallToAction, BlockAccordion, Contact, Footer, Header
+- `Location` component heeft hardcoded Nederlandse labels ("Contactgegevens", "Adres", etc.) - geschikt voor NL-only

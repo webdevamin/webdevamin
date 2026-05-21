@@ -19,9 +19,8 @@ export default function cloudflareLoader({
 
     const paramsString = params.join(",");
 
-    // Only use Cloudflare resizing for images on our bucket domain.
-    // For relative/public assets (e.g., /images/logo-light.webp) or other hosts,
-    // return the original src but append width/quality so the loader varies by width.
+    // Use Cloudflare /cdn-cgi/image/ for bucket domain images only.
+    // Relative/public assets and other hosts get width/quality params as fallback.
     try {
         const url = new URL(src);
         const path = url.pathname.startsWith("/") ? url.pathname.slice(1) : url.pathname;
