@@ -184,7 +184,7 @@ const BruggeProjectsSection = ({ content, allProjects }) => {
                 border={border}
                 type={`project`}
                 link={link}
-                technologies={technologies}
+                technologies={[]}
                 badgeAlt={niche}
               />
             )
