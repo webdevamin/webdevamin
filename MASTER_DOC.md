@@ -20,6 +20,14 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
 
 ## Feature Notities
 
+### Webleadr Blog Copy Flow
+
+- De Engelse blog `find-businesses-without-websites` in `messages/en/blogs.json` heeft nu een aparte `Next steps` sectie vlak voor de conclusie.
+- De Nederlandse blog `vind-bedrijven-zonder-websites` in `messages/nl/blogs.json` heeft dezelfde flow gekregen met een `Volgende stap` sectie vlak voor de conclusie.
+- De interne links naar de Webleadr gidsen staan niet meer los achter de conclusie, maar krijgen een duidelijker doel voor de lezer: starten met lokale bedrijven zonder website.
+- De dubbele `<p><p>` in de Engelse afsluitende alinea is opgelost, zodat de HTML van de blog netter blijft.
+- De slotzinnen zijn korter gemaakt en klinken minder zwaar, met focus op client acquisition, klantwerving en groei voor webdesign, SEO en agency services.
+
 ### Taxi Industry SEO En Conversie Update
 
 - De taxi-pagina leeft in `messages/nl/industries/taxi.json` en wordt gerenderd via `src/app/[locale]/industry/[slug]/page.jsx`.
