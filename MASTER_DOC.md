@@ -39,6 +39,7 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
   - `service` heeft nu een eigen `@id`, `url` en `billingDuration: P1M` in de prijsblokken.
   - Er is een `BreadcrumbList` toegevoegd.
 - De zichtbare taxi-copy is sterker lokaal gemaakt met vermeldingen van Brugge, West-Vlaanderen en België.
+- De regio-copy in `why-taxi-website` vermeldt Mabo Taxi als voorbeeld voor Antwerpen. Alleen de anchor `taxi Antwerpen` linkt naar `https://mabotaxi.be` als normale followbare externe link.
 - De twee korte CTA/grammatica-problemen zijn opgelost:
   - "kunnen laten groeien" is "kan laten groeien".
   - "prijzen meer informatie" is "prijzen voor meer informatie".
