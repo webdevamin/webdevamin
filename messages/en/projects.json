@@ -7,7 +7,7 @@
         "buttonText": "Visit website",
         "description": "A SaaS platform that allows users to effortlessly acquire web design clients as leads and get businesses without websites from anywhere.",
         "img": {
-            "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
+            "src": "/images/projects/webleadr.png",
             "alt": "Three web pages of Webleadr: homepage, dashboard, and 'Find businesses' page."
         },
         "technologies": [
@@ -70,7 +70,7 @@
         "buttonText": "Visit website",
         "description": "A gym administration app to manage appointments, store workouts and prices, and more.",
         "img": {
-            "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
+            "src": "/images/projects/gympouch.png",
             "alt": "Dashboard page and detail page of Gympouch application."
         },
         "technologies": [
@@ -106,7 +106,7 @@
         "buttonText": "Visit website",
         "description": "Web application with a CRM for photographers and real estate agents. The platform makes it easier to photograph houses, share the photos, and follow up.",
         "img": {
-            "src": "https://bucket.webdevamin.com/eyefine-portfolio.png",
+            "src": "/images/projects/eyefine.png",
             "alt": "Three webpages of Eyefine: dashboard on both large and small screens and real estate agent page."
         },
         "technologies": [
@@ -141,7 +141,7 @@
         "buttonText": "Visit website",
         "description": "Administration app with login system to modify data from an external website or web app and receive messages from any event.",
         "img": {
-            "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
+            "src": "/images/projects/myadmin.png",
             "alt": "Login and dashboard page of My Admin application."
         },
         "technologies": [
@@ -177,7 +177,7 @@
         "buttonText": "Visit website",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
-            "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
+            "src": "/images/projects/bakiji_construct.png",
             "alt": "Landing page of Bakiji Construct website."
         },
         "technologies": [
@@ -213,7 +213,7 @@
         "buttonText": "Visit website",
         "description": "Web application for an insurance agency with the ability to fill out various forms with push notifications and live video meetings.",
         "img": {
-            "src": "https://bucket.webdevamin.com/solaris_alpha.png",
+            "src": "/images/projects/solaris.png",
             "alt": "The hero section of the Solaris website displayed on 3 devices: mobile, tablet, and desktop."
         },
         "technologies": [
@@ -241,15 +241,16 @@
         ]
     },
     {
-        "title": "Restaurant China Brugge",
-        "slug": "restaurant-china-brugge",
-        "niche": "restaurant",
+        "title": "Thermogroep",
+        "slug": "thermogroep",
+        "niche": "insulation",
         "price": "€49/month",
+        "link": "https://thermogroep.be",
         "buttonText": "Visit website",
-        "description": "Restaurant website with general information such as location, gallery, reviews, and a reservation form.",
+        "description": "A multi-page website for an insulation company in Bruges, featuring company information, quote and contact forms, regional pages, and more.",
         "img": {
-            "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
-            "alt": "Landing page of Restaurant China Brugge website."
+            "src": "/images/projects/thermogroep.png",
+            "alt": "Landing page of the Thermogroep website."
         },
         "technologies": [
             {
@@ -260,31 +261,17 @@
                 }
             },
             {
-                "name": "Node.js",
+                "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "alt": "Node.js"
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "alt": "Cloudflare"
                 }
             },
             {
-                "name": "Firebase",
+                "name": "Supabase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/firebase.svg",
-                    "alt": "Firebase"
-                }
-            },
-            {
-                "name": "Twilio",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/twilio.svg",
-                    "alt": "Twilio"
-                }
-            },
-            {
-                "name": "Netlify",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/netlify.svg",
-                    "alt": "Netlify"
+                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "alt": "Supabase"
                 }
             }
         ]
@@ -298,7 +285,7 @@
         "buttonText": "Visit website",
         "description": "Website for construction company with information about the company. Users can submit quotes for services such as renovation and window installations.",
         "img": {
-            "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
+            "src": "/images/projects/black_wood.png",
             "alt": "Landing page of Black Wood website."
         },
         "technologies": [
@@ -334,7 +321,7 @@
         "buttonText": "Visit website",
         "description": "A business website for a moving/transport company featuring general information, a gallery, and a quote form.",
         "img": {
-            "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
+            "src": "/images/projects/verhuisdienst-liftservice.png",
             "alt": "A landing page of Verhuisdienst Liftservice website in both desktop as well as mobile viewports."
         },
         "technologies": [
@@ -370,7 +357,7 @@
         "buttonText": "Visit website",
         "description": "A website for an Italian restaurant with general information, a menu, and more.",
         "img": {
-            "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
+            "src": "/images/projects/pastamaria.png",
             "alt": "A landing page of the Pasta Maria website, visible on both desktop and mobile views."
         },
         "technologies": [
@@ -399,7 +386,7 @@
         "buttonText": "Visit website",
         "description": "A business website for a construction company with general information and a contact form.",
         "img": {
-            "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
+            "src": "/images/projects/williamprojecten.png",
             "alt": "Landing page of William Projecten website."
         },
         "technologies": [
@@ -435,7 +422,7 @@
         "buttonText": "Visit website",
         "description": "A modern fitness application helping personal trainers schedule sessions and track client progress.",
         "img": {
-            "src": "https://bucket.webdevamin.com/grit-portfolio.png",
+            "src": "/images/projects/gritbrugge.png",
             "alt": "Dashboard and scheduling screens of the GRIT. fitness application."
         },
         "technologies": [

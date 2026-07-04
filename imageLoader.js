@@ -30,7 +30,14 @@ export default function cloudflareLoader({
         const sep = url.search && url.search.length > 0 ? "&" : "?";
         return `${url.protocol}//${url.hostname}${url.pathname}${url.search || ""}${sep}w=${width}&q=${optimizedQuality}`;
     } catch (_) {
-        // Relative path (served from /public). Append width/quality params.
+        // Relative path served from /public. In production, route through
+        // Cloudflare Image Resizing (/cdn-cgi/image) on the site's own zone so
+        // public assets get the same optimization as bucket images. In dev there
+        // is no Cloudflare edge, so serve the raw file with harmless query params.
+        const path = normalizeSrc(src); // strip leading slash
+        if (process.env.NODE_ENV === "production") {
+            return `/cdn-cgi/image/${paramsString}/${path}`;
+        }
         const sep = src.includes("?") ? "&" : "?";
         return `${src}${sep}w=${width}&q=${optimizedQuality}`;
     }

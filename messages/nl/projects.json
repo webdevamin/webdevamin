@@ -7,7 +7,7 @@
         "buttonText": "Bezoek website",
         "description": "Een SaaS-platform waarmee gebruikers moeiteloos webdesignklanten kunnen verwerven als leads en bedrijven zonder websites vanuit elke locatie kunnen bereiken.",
         "img": {
-            "src": "https://bucket.webdevamin.com/webleadr-portfolio.png",
+            "src": "/images/projects/webleadr.png",
             "alt": "Drie webpagina's van Webleadr: homepagina, dashboard en 'Find businesses' pagina."
         },
         "technologies": [
@@ -70,7 +70,7 @@
         "buttonText": "Bezoek website",
         "description": "Een gym administratie app om afspraken te beheren, workouts en prijzen op te slaan en meer.",
         "img": {
-            "src": "https://bucket.webdevamin.com/gympouch_portfolio.png",
+            "src": "/images/projects/gympouch.png",
             "alt": "Dashboard pagina en detail pagina van Gympouch applicatie."
         },
         "technologies": [
@@ -106,7 +106,7 @@
         "buttonText": "Bezoek website",
         "description": "Webapplicatie met een CRM voor fotografen en makelaars. Het platform maakt het makkelijker om huizen te fotograferen, de foto's te delen en te volgen.",
         "img": {
-            "src": "https://bucket.webdevamin.com/eyefine-portfolio.png",
+            "src": "/images/projects/eyefine.png",
             "alt": "Drie webpagina's van Eyefine: dashboard op zowel grote schermen als kleine schermen en makelaars pagina."
         },
         "technologies": [
@@ -141,7 +141,7 @@
         "buttonText": "Bezoek website",
         "description": "Administratie app met login systeem om data vanuit een buitenstaande website of webapp te wijzigen en berichten te ontvangen van elke event.",
         "img": {
-            "src": "https://bucket.webdevamin.com/myadmin_portfolio.png",
+            "src": "/images/projects/myadmin.png",
             "alt": "Login en dashboard pagina van My Admin applicatie."
         },
         "technologies": [
@@ -177,7 +177,7 @@
         "buttonText": "Bezoek website",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
         "img": {
-            "src": "https://bucket.webdevamin.com/bakiji_construct_portfolio.png",
+            "src": "/images/projects/bakiji_construct.png",
             "alt": "Landing pagina van Bakiji Construct website."
         },
         "technologies": [
@@ -213,7 +213,7 @@
         "buttonText": "Bezoek website",
         "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
         "img": {
-            "src": "https://bucket.webdevamin.com/solaris_alpha.png",
+            "src": "/images/projects/solaris.png",
             "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop."
         },
         "technologies": [
@@ -241,15 +241,16 @@
         ]
     },
     {
-        "title": "Restaurant China Brugge",
-        "slug": "restaurant-china-brugge",
-        "niche": "restaurant",
+        "title": "Thermogroep",
+        "slug": "thermogroep",
+        "niche": "isolatie",
         "price": "€49/maand",
+        "link": "https://thermogroep.be",
         "buttonText": "Bezoek website",
-        "description": "Restaurant website met algemene info zoals locatie, galerij, reviews en een reservatie formulier.",
+        "description": "Een website met meerdere pagina's voor een isolatiebedrijf in Brugge, met bedrijfsinformatie, offerte- en contactformulieren, regionale pagina's en meer.",
         "img": {
-            "src": "https://bucket.webdevamin.com/restaurantchina_portfolio.png",
-            "alt": "Landing pagina van Restaurant China Brugge website."
+            "src": "/images/projects/thermogroep.png",
+            "alt": "Landingspagina van de Thermogroep website."
         },
         "technologies": [
             {
@@ -260,31 +261,17 @@
                 }
             },
             {
-                "name": "Node.js",
+                "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/javascript.svg",
-                    "alt": "Node.js"
+                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "alt": "Cloudflare"
                 }
             },
             {
-                "name": "Firebase",
+                "name": "Supabase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/firebase.svg",
-                    "alt": "Firebase"
-                }
-            },
-            {
-                "name": "Twilio",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/twilio.svg",
-                    "alt": "Twilio"
-                }
-            },
-            {
-                "name": "Netlify",
-                "image": {
-                    "src": "https://bucket.webdevamin.com/netlify.svg",
-                    "alt": "Netlify"
+                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "alt": "Supabase"
                 }
             }
         ]
@@ -298,7 +285,7 @@
         "buttonText": "Bezoek website",
         "description": "Website voor bouwbedrijf met informatie over het bedrijf. Gebruikers kunnen offertes indienen voor diensten zoals renovatie en raaminstallaties.",
         "img": {
-            "src": "https://bucket.webdevamin.com/black_wood_alpha.png",
+            "src": "/images/projects/black_wood.png",
             "alt": "Startpagina van Black Wood website."
         },
         "technologies": [
@@ -334,7 +321,7 @@
         "buttonText": "Bezoek website",
         "description": "Een zakelijke website voor een verhuisbedrijf met algemene informatie, een galerij en een offerteformulier.",
         "img": {
-            "src": "https://bucket.webdevamin.com/verhuisdienst-portfolio.png",
+            "src": "/images/projects/verhuisdienst-liftservice.png",
             "alt": "Een landingspagina van de website van Verhuisdienst Liftservice, zichtbaar op zowel desktop- als mobiele weergaven."
         },
         "technologies": [
@@ -370,7 +357,7 @@
         "buttonText": "Bezoek website",
         "description": "Een website voor een Italiaanse restaurant met algemene informatie, een menu en meer.",
         "img": {
-            "src": "https://bucket.webdevamin.com/pastamaria-portfolio.png",
+            "src": "/images/projects/pastamaria.png",
             "alt": "Een landingspagina van de website van Pasta Maria, zichtbaar op zowel desktop- als mobiele weergaven."
         },
         "technologies": [
@@ -399,7 +386,7 @@
         "buttonText": "Bezoek website",
         "description": "Een business website voor een bouwbedrijf met algemene info en een contactformulier.",
         "img": {
-            "src": "https://bucket.webdevamin.com/williamprojecten-portfolio.png",
+            "src": "/images/projects/williamprojecten.png",
             "alt": "Landing pagina van William Projecten website."
         },
         "technologies": [
@@ -435,7 +422,7 @@
         "buttonText": "Bezoek website",
         "description": "Een moderne fitness-applicatie die persoonlijke trainers helpt bij het plannen van sessies en het bijhouden van de vooruitgang van klanten.",
         "img": {
-            "src": "https://bucket.webdevamin.com/grit-portfolio.png",
+            "src": "/images/projects/gritbrugge.png",
             "alt": "Dashboard en planning schermen van de GRIT. fitness applicatie."
         },
         "technologies": [
