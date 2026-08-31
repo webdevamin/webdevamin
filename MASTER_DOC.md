@@ -57,7 +57,7 @@ Deze website is gebouwd als een meertalige Next.js-omgeving met content-gedreven
   - `/contact?pakket=premium`
   - `/contact?pakket=op-maat`
   - `/contact?pakket=eenmalig`
-- Het contactformulier leest `pakket` uit de URL, toont een pakketselectie en stuurt de keuze mee in de e-mail.
+- Het contactformulier leest `pakket` uit de URL, toont een pakketselectie en stuurt de keuze via Adminbook en AWS SES mee in de e-mail. De afzender is expliciet `hello@mail.webdevamin.com`, onafhankelijk van de standaardafzender in Adminbook; antwoorden gaan naar de bezoeker.
 - De AN Taxi case-metrics zijn herschreven naar niet-geclaimde, kwalitatieve voordelen omdat er geen brondata in het project staat.
 - Er is een `public/llms.txt` toegevoegd voor AI crawlers en agents.
 

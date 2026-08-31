@@ -1,4 +1,4 @@
-const { RESEND_API_KEY, MAIL_TO } = process.env;
+const { ADMINBOOK_URL, ADMINBOOK_API_KEY, MAIL_TO } = process.env;
 
 /*
  * Verwijdert HTML uit formulierwaarden voordat ze in de e-mail belanden.
@@ -9,7 +9,7 @@ const stripHtml = (value = '') => {
 
 export async function POST(req) {
   try {
-    const { name, email, message, packageChoice, website } = await req.json();
+    const { name, email, message, website } = await req.json();
 
     // Honeypot check - if website field is filled, it's likely a bot
     if (website) {
@@ -28,7 +28,6 @@ export async function POST(req) {
     const cleanName = stripHtml(name);
     const cleanEmail = stripHtml(email);
     const cleanMessage = stripHtml(message);
-    const cleanPackageChoice = stripHtml(packageChoice);
 
     if (!cleanName || !cleanEmail || !cleanMessage) {
       return new Response(
@@ -42,37 +41,48 @@ export async function POST(req) {
       );
     }
 
+    if (!ADMINBOOK_URL || !ADMINBOOK_API_KEY || !MAIL_TO) {
+      throw new Error('Adminbook email delivery is not configured.');
+    }
+
     const emailData = {
-      from: `Contact Form <contact@webdevamin.com>`,
-      to: MAIL_TO,
-      subject: cleanPackageChoice
-        ? `New ${cleanPackageChoice} message from ${cleanName}`
-        : `New portfolio message from ${cleanName}`,
-      reply_to: cleanEmail,
+      from: 'hello@mail.webdevamin.com',
+      to: [{ email: MAIL_TO }],
+      subject: `New portfolio message from ${cleanName}`,
+      replyTo: [{ email: cleanEmail, name: cleanName }],
       html: `<html><body>
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${cleanName}</p>
         <p><strong>Email:</strong> ${cleanEmail}</p>
-        ${cleanPackageChoice ? `<p><strong>Package:</strong> ${cleanPackageChoice}</p>` : ''}
         <p><strong>Message:</strong></p>
         <p>${cleanMessage}</p>
       </body></html>`,
     };
 
-    const res = await fetch('https://api.resend.com/emails', {
+    const adminbookUrl = ADMINBOOK_URL.replace(/\/+$/, '');
+    const res = await fetch(`${adminbookUrl}/api/saas/integrations/email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${RESEND_API_KEY}`
+        'Authorization': `Bearer ${ADMINBOOK_API_KEY}`
       },
       body: JSON.stringify(emailData),
     });
 
-    const data = await res.json();
+    const data = await res.json().catch(() => ({}));
 
     if (!res.ok) {
-      console.error('Resend API error:', data);
-      throw new Error(data.message || 'Failed to send email');
+      const providerError = data.error || `Request failed with status ${res.status}`;
+      console.error('Adminbook email error:', {
+        status: res.status,
+        code: data.code || null,
+        error: providerError,
+      });
+      throw new Error(providerError);
+    }
+
+    if (!data.messageId) {
+      throw new Error('Adminbook did not return an email message ID.');
     }
 
     return new Response(
@@ -85,11 +95,10 @@ export async function POST(req) {
       }
     );
   } catch (err) {
-    console.error(err);
-
-    if (err.message) {
-      console.error(err.message);
-    }
+    console.error(
+      'Contact email send failed:',
+      err instanceof Error ? err.message : 'Unknown error'
+    );
 
     return new Response(
       JSON.stringify({ error: 'Er ging iets mis met de website. Probeer het later opnieuw.' }),
