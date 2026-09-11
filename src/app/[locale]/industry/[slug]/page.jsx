@@ -275,7 +275,7 @@ const FeaturesSection = ({ content }) => {
 // Portfolio Case Component
 const PortfolioCase = ({ content }) => {
   const { title, subtitle, description, project, highlights } = content;
-  const { image, description: projectDesc } = project;
+  const { image, description: projectDesc, wideImageWidth = 560 } = project;
 
   return (
     <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
@@ -287,15 +287,17 @@ const PortfolioCase = ({ content }) => {
               <div dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="w-full lg:w-auto my-4">
-              <div className="relative w-full max-w-[560px] mx-auto">
+              <div
+                className="portfolio-project-mockup relative mx-auto"
+                style={{ '--portfolio-mockup-wide-width': `${wideImageWidth}px` }}
+              >
                 <Image
                   src={image}
                   alt={projectDesc}
-                  width={560}
-                  height={560}
-                  className="w-full h-auto object-contain max-w-[560px] px-5 lg:px-0"
-                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 80vw, 560px"
-                  style={{ maxWidth: '560px', height: 'auto' }}
+                  width={720}
+                  height={540}
+                  className="w-full h-auto object-contain px-5 lg:px-0"
+                  sizes={`(max-width: 480px) 100vw, (max-width: 768px) 80vw, (min-width: 1536px) ${wideImageWidth}px, 560px`}
                 />
               </div>
             </div>

@@ -138,6 +138,18 @@ p a {
   @apply my-20 sm:my-20 md:my-28 xl:my-52;
 }
 
+.portfolio-project-mockup {
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (min-width: 1536px) {
+  .portfolio-project-mockup {
+    width: var(--portfolio-mockup-wide-width);
+    max-width: var(--portfolio-mockup-wide-width);
+  }
+}
+
 .clamp_2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;

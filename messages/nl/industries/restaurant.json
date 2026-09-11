@@ -425,7 +425,8 @@
             "project": {
                 "name": "Restaurant Commanderie",
                 "url": "https://restocommanderie.com",
-                "image": "/images/projects/restocommanderie.png",
+                "image": "/images/projects/mockup-commanderie-restaurant.png",
+                "wideImageWidth": 720,
                 "description": "Restaurant website van Commanderie in Westkerke (Oudenburg), zichtbaar op desktop en smartphone."
             }
         },
