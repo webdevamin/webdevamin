@@ -154,7 +154,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                         key={subTitle}
                                                         href={subHref}
                                                         onClick={closeNavigation}
-                                                        className={`block rounded px-3 py-2 text-sm font-semibold text-dark transition-colors hover:bg-theme hover:text-dark ${borderTop ? 'border-t border-dark border-opacity-10' : ''}`}
+                                                        className={`block rounded px-3 py-2 text-sm font-semibold text-dark transition-colors hover:bg-theme/10 hover:text-dark ${borderTop ? 'border-t border-dark border-opacity-10' : ''}`}
                                                     >
                                                         {subTitle}
                                                     </Link>

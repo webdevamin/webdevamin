@@ -14,6 +14,10 @@
                 "hreflang": "x-default"
             },
             {
+                "href": "https://webdevamin.com/blogs/how-to-hire-webdesigner",
+                "hreflang": "en"
+            },
+            {
                 "href": "https://webdevamin.com/nl/blogs/hoe-webdesigner-inhuren",
                 "hreflang": "nl"
             }
@@ -52,6 +56,10 @@
             {
                 "href": "https://webdevamin.com/blogs/website-vs-webapplication",
                 "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/blogs/website-vs-webapplication",
+                "hreflang": "en"
             },
             {
                 "href": "https://webdevamin.com/nl/blogs/website-vs-webapplicatie",
@@ -94,6 +102,10 @@
                 "hreflang": "x-default"
             },
             {
+                "href": "https://webdevamin.com/blogs/vat-exemption-not-worth-it",
+                "hreflang": "en"
+            },
+            {
                 "href": "https://webdevamin.com/nl/blogs/btw-vrijstelling-nadelig",
                 "hreflang": "nl"
             }
@@ -132,6 +144,10 @@
             {
                 "href": "https://webdevamin.com/blogs/find-businesses-without-websites",
                 "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/blogs/find-businesses-without-websites",
+                "hreflang": "en"
             },
             {
                 "href": "https://webdevamin.com/nl/blogs/vind-bedrijven-zonder-websites",
@@ -174,6 +190,10 @@
             {
                 "href": "https://webdevamin.com/blogs/how-to-get-web-development-clients",
                 "hreflang": "x-default"
+            },
+            {
+                "href": "https://webdevamin.com/blogs/how-to-get-web-development-clients",
+                "hreflang": "en"
             }
         ],
         "locale": "en",

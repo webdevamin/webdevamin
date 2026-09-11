@@ -13,6 +13,10 @@
             "hreflang": "x-default"
         },
         {
+            "href": "https://webdevamin.com",
+            "hreflang": "en"
+        },
+        {
             "href": "https://webdevamin.com/nl",
             "hreflang": "nl"
         }
@@ -351,28 +355,28 @@
                     "letter": "L",
                     "name": "Laurenz Dereu",
                     "stars": "5",
-                    "review": "Heel mooie en handige website voor ons gemaakt. Vol en netjes afgehandeld en aanrader voor iemand die een website wil of vernieuwen. Een dikke 5 sterren voor die jongen. Nogmaals dank u Amin voor alles.",
+                    "review": "Made a very nice and handy website for us. Handled fully and neatly, a recommendation for anyone who wants a new or renewed website. A solid 5 stars for that guy. Thanks again Amin for everything.",
                     "backgroundColor": "rgb(168 85 247)"
                 },
                 {
                     "letter": "E",
                     "name": "Eyefine",
                     "stars": "5",
-                    "review": "Supertevreden over mijn nieuwe website & tool. Amin was steeds snel bereikbaar en speelde goed in op mijn wensen.",
+                    "review": "Very satisfied with my new website & tool. Amin was always quickly reachable and responded well to my wishes.",
                     "backgroundColor": "rgb(6 182 212)"
                 },
                 {
                     "letter": "I",
                     "name": "imfy",
                     "stars": "5",
-                    "review": "Zeer tevreden met wat ik wou voor mijn zaak. Geen gezeur noch belachelijke prijzen zoals wat je bij software bedrijven tegenkomt.",
+                    "review": "Very satisfied with what I wanted for my business. No hassle or ridiculous prices like you find at software companies.",
                     "backgroundColor": "rgb(236 72 153)"
                 },
                 {
                     "letter": "U",
                     "name": "Ugur Erden",
                     "stars": "5",
-                    "review": "Zeer professioneel aan de slag gegaan top gast zeker een aanrader!",
+                    "review": "Worked in a very professional way, top guy, definitely recommended!",
                     "backgroundColor": "rgb(34 197 94)"
                 }
             ]

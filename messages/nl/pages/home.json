@@ -13,6 +13,10 @@
             "hreflang": "x-default"
         },
         {
+            "href": "https://webdevamin.com",
+            "hreflang": "en"
+        },
+        {
             "href": "https://webdevamin.com/nl",
             "hreflang": "nl"
         }
@@ -308,7 +312,7 @@
             "items": [
                 {
                     "title": "Professionele, zakelijke website",
-                    "details": "Vanzelfsprekend krijgt u een website met professionele en zakelijke uitstraling die essentieel is voor uw bedrijfsimago. Uw website omvat standaard: een navigatiemenu met links, inleiding, footer met sociale media links en bedrijfsgegevens, contact- en/of offerteformulier, over ons sectie, diensten overzicht, projectengalerij en FAQ (veelgestelde vragen) sectie. Extra functionaliteit zoals een reserveringssysteem is mogelijk tegen een kleine meerprijs. Uiteraard kunt u ook zelf kiezen welke secties u op uw website wilt hebben."
+                    "details": "<p class='leading-relaxed'>Vanzelfsprekend krijgt u een website met professionele en zakelijke uitstraling die essentieel is voor uw bedrijfsimago. Uw website omvat standaard: een navigatiemenu met links, inleiding, footer met sociale media links en bedrijfsgegevens, contact- en/of offerteformulier, over ons sectie, diensten overzicht, projectengalerij en FAQ (veelgestelde vragen) sectie. Extra functionaliteit zoals een reserveringssysteem is mogelijk tegen een kleine meerprijs, bijvoorbeeld bij een <a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant website laten maken'>website voor restaurants</a>. Uiteraard kunt u ook zelf kiezen welke secties u op uw website wilt hebben.</p>"
                 },
                 {
                     "title": "Uitstekende weergave op alle apparaten",
