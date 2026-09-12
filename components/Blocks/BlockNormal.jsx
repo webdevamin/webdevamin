@@ -5,7 +5,7 @@ import SubHeading from '../SubHeading';
 
 const BlockNormal = ({ content, position = 'left' }) => {
     const { title, text, subtitle, img, button, slug } = content;
-    const { src, alt } = img;
+    const { src, alt, width = 836, height = 483 } = img;
     const isImageLeft = position === 'left';
 
     const ImageSection = () => (
@@ -13,8 +13,8 @@ const BlockNormal = ({ content, position = 'left' }) => {
             <Heading title={title} />
             <Image
                 src={src}
-                width={836}
-                height={483}
+                width={width}
+                height={height}
                 alt={alt}
                 className="object-contain w-full h-auto mt-4"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 70vw, 836px"

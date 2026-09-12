@@ -8,6 +8,16 @@ import SocialShares from '../../../../../components/SocialShares';
 import styles from '../../../../../styles/BlogPage.module.scss';
 import { notFound } from 'next/navigation';
 
+const optimizeEmbeddedImages = (html) => html
+    .replaceAll(
+        "src='https://bucket.webdevamin.com/map.png' objectFit='cover'",
+        "src='https://bucket.webdevamin.com/cdn-cgi/image/width=1200,format=auto,quality=85,fit=scale-down/map.png' width='2758' height='1540' loading='lazy' decoding='async'"
+    )
+    .replaceAll(
+        "src='https://bucket.webdevamin.com/dashboard.png' objectFit='cover'",
+        "src='https://bucket.webdevamin.com/cdn-cgi/image/width=1000,format=auto,quality=85,fit=scale-down/dashboard.png' width='2946' height='1460' loading='lazy' decoding='async'"
+    );
+
 async function getData(locale, slug) {
     const allBlogs = (await import(`../../../../../messages/${locale}/blogs.json`)).default;
     const blogData = allBlogs.find((p) => p.slug === slug);
@@ -96,7 +106,7 @@ const Blog = async ({ params: { locale, slug } }) => {
     const { localesData, socialsData, blogsData, pagesData, contactBlockData, blogData } = data;
 
     const { alternateLangs, title, description, text, img, border } = blogData;
-    const { src, alt } = img;
+    const { src, alt, width, height } = img;
 
     const button = [{
         href: `#${slug}`,
@@ -116,8 +126,8 @@ const Blog = async ({ params: { locale, slug } }) => {
                     <div className={`mb-4 md:mb-7 lg:mb-12`}>
                         <div className={`relative w-full mb-3 md:mb-5 lg:mb-6`}>
                             <Image
-                                width={1152}
-                                height={400}
+                                width={width}
+                                height={height}
                                 src={src}
                                 alt={alt}
                                 className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`} w-full h-auto`}
@@ -130,7 +140,7 @@ const Blog = async ({ params: { locale, slug } }) => {
                         </div>
                     </div>
                     <div className={styles.blogContent}>
-                        <div dangerouslySetInnerHTML={{ __html: text }} />
+                        <div dangerouslySetInnerHTML={{ __html: optimizeEmbeddedImages(text) }} />
                     </div>
                 </div>
                 <Contact content={contactBlockData} />

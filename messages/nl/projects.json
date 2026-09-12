@@ -227,7 +227,7 @@
             {
                 "name": "Node.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "src": "https://bucket.webdevamin.com/nodejs.svg",
                     "alt": "Node.js"
                 }
             },

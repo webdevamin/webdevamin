@@ -17,7 +17,7 @@ const ButtonOne = ({ href, text, classes, wFit, external,
 
     if (external) {
         return (
-            <a className={allClasses} rel="noreferrer"
+            <a className={allClasses} rel="noopener noreferrer"
                 href={href} target="_blank">
                 {text}
             </a>

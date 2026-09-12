@@ -5,6 +5,12 @@ import { routing } from './i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(req) {
+  if (req.nextUrl.pathname.length > 1 && req.nextUrl.pathname.endsWith('/')) {
+    const url = req.nextUrl.clone();
+    url.pathname = req.nextUrl.pathname.replace(/\/+$/, '');
+    return NextResponse.redirect(url, 308);
+  }
+
   // Keep root URL as "/" while serving English content internally
   if (req.nextUrl.pathname === '/') {
     const url = new URL('/en', req.url);

@@ -18,7 +18,7 @@
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",
-            "@type": "HairSalon",
+            "@type": "ProfessionalService",
             "name": "Webdevamin - Kapper Website Ontwikkeling",
             "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",

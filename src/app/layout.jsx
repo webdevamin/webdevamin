@@ -3,6 +3,10 @@ import Script from 'next/script';
 
 export const revalidate = 3600;
 
+export const metadata = {
+  metadataBase: new URL('https://webdevamin.com'),
+};
+
 export default async function RootLayout({ children }) {
   const locale = await getLocale();
 

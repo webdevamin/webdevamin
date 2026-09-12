@@ -53,7 +53,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                                 const { href, icon, title, hideFromHeader, subs } = page;
                                 const IconComponent = getIconComponent(icon);
 
-                                // Hide items like "Branches" that only act as dropdown parents (no index page)
+                                // Hide items like "Sectoren" that only act as dropdown parents (no index page)
                                 const noIndex = !href || href === '#';
                                 const isDropdownParent = Array.isArray(subs) && subs.length > 0;
                                 if (isDropdownParent && noIndex) return null;
@@ -116,7 +116,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                         </li>
                         <li className={`pt-3 sm:pt-2`}>
                             <div>
-                                Featured on <a href="https://startupfa.me/s/webdevamin?utm_source=webdevamin.com" target="_blank" className={`lg:text-base transition-all hover:text-theme`}>Startup Fame</a>
+                                Featured on <a href="https://startupfa.me/s/webdevamin?utm_source=webdevamin.com" target="_blank" rel="noopener noreferrer" className={`lg:text-base transition-all hover:text-theme`}>Startup Fame</a>
                             </div>
                         </li>
                     </ul>

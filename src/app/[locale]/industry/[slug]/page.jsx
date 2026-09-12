@@ -439,7 +439,7 @@ const TestimonialSpotlight = ({ content }) => {
           ))}
         </div>
         {moreReviewsUrl && (
-          <div className="mt-6">
+          <div className="mt-6 md:mt-10">
             <a
               href={moreReviewsUrl}
               target="_blank"

@@ -143,6 +143,13 @@ p a {
   max-width: 560px;
 }
 
+@media (min-width: 1024px) and (max-width: 1535px) {
+  .portfolio-project-mockup {
+    width: clamp(410px, 40vw, 560px);
+    max-width: clamp(410px, 40vw, 560px);
+  }
+}
+
 @media (min-width: 1536px) {
   .portfolio-project-mockup {
     width: var(--portfolio-mockup-wide-width);
@@ -213,6 +220,11 @@ p a {
   @apply flex justify-center items-center gap-1 md:gap-1.5 xl:absolute xl:-left-7 xl:top-[5%] xl:gap-1.5 xl:flex-col xl:z-40;
 
   button {
+    &:focus-visible {
+      outline: 2px solid currentColor !important;
+      outline-offset: 2px !important;
+    }
+
     &>svg {
       @apply w-[35px] sm:w-[38px] transition-all hover:scale-110 md:w-[42px] xl:w-[54px] xl:h-auto;
     }

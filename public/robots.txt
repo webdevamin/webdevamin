@@ -2,3 +2,4 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://webdevamin.com/sitemap.xml

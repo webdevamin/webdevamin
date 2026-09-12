@@ -24,6 +24,9 @@ export async function generateMetadata({ params: { locale } }) {
     const { pageData } = await getData(locale);
     const { seo, alternates } = pageData;
     const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
+    const defaultImage = image || (locale === 'nl'
+        ? '/images/ogbanner-nl.png'
+        : '/images/ogbanner.png');
 
     return {
         title: title,
@@ -44,7 +47,7 @@ export async function generateMetadata({ params: { locale } }) {
             siteName: 'Webdevamin',
             images: [
                 {
-                    url: image,
+                    url: defaultImage,
                     width: 1200,
                     height: 630,
                 },
@@ -57,7 +60,7 @@ export async function generateMetadata({ params: { locale } }) {
             title: ogTitle || title,
             description: ogDescription || description,
             creator: '@Webdevamin',
-            images: [image],
+            images: [defaultImage],
         },
     };
 }

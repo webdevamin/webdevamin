@@ -60,8 +60,6 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                 src={flag}
                                 fill={true}
                                 alt={alt}
-                                priority={true}
-                                loading="eager"
                                 style={{ objectFit: 'contain' }}
                                 sizes="40px"
                             />

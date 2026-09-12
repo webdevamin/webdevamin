@@ -37,7 +37,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                             return (
                                 <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
-                                    rel="noreferrer nofollow"
+                                    rel="noopener noreferrer nofollow"
                                     target="_blank" aria-label={title}>
                                     <Icon icon={<IconComponent className="h-6 w-6" />} size={`xl`} />
                                 </a>
@@ -59,7 +59,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                             return (
                                 <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
-                                    rel="noreferrer nofollow"
+                                    rel="noopener noreferrer nofollow"
                                     target="_blank" aria-label={title}>
                                     <Icon icon={<IconComponent className="h-8 w-8" />} size={`2xl`} />
                                 </a>

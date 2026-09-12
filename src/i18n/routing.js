@@ -11,5 +11,9 @@ export const routing = defineRouting({
     localePrefix: 'as-needed',
 
     // Do not auto-redirect based on Accept-Language
-    localeDetection: false
+    localeDetection: false,
+
+    // Page metadata defines the exact alternates. Automatic Link headers would
+    // otherwise invent English equivalents for Dutch-only pages.
+    alternateLinks: false
 });

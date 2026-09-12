@@ -84,10 +84,10 @@
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "EUR",
-                "price": "44",
+                "price": "49",
                 "priceSpecification": {
                     "@type": "UnitPriceSpecification",
-                    "price": "44",
+                    "price": "49",
                     "priceCurrency": "EUR",
                     "billingDuration": "P1M",
                     "unitText": "month"

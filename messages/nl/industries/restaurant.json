@@ -341,8 +341,10 @@
                 }
             ],
             "img": {
-                "src": "https://images.pexels.com/photos/32537753/pexels-photo-32537753.jpeg?auto=compress&cs=tinysrgb&w=836",
-                "alt": "Gedekte tafels met wijnglazen in een gezellig restaurant."
+                "src": "https://images.pexels.com/photos/18176525/pexels-photo-18176525.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop",
+                "alt": "Een modern restaurantinterieur met lege stoelen en een tafel.",
+                "width": 600,
+                "height": 900
             }
         },
         {
@@ -359,8 +361,10 @@
                 }
             ],
             "img": {
-                "src": "https://images.pexels.com/photos/5779819/pexels-photo-5779819.jpeg?auto=compress&cs=tinysrgb&w=836",
-                "alt": "Een kok geeft een afhaalbestelling mee aan een klant, met een QR-code aan de toonbank."
+                "src": "https://images.pexels.com/photos/4393662/pexels-photo-4393662.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop",
+                "alt": "Een restaurantmedewerker met verpakte maaltijden en een drankje voor afhaalbestellingen.",
+                "width": 600,
+                "height": 900
             }
         },
         {

@@ -59,7 +59,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                     return (
                                         <a key={i} href={href}
                                             className={`${hideFromHeader && `hidden`}`}
-                                            rel="noreferrer nofollow"
+                                            rel="noopener noreferrer nofollow"
                                             target="_blank" aria-label={title}>
                                             <Icon icon={<IconComponent className="h-6 w-6" />} size={`xl`} />
                                         </a>

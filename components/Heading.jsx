@@ -53,11 +53,13 @@ const Heading = ({ title, subtitle, titleClasses = '', split, noSubtitle, level 
             <HeadingTag className={`${headingClass} ${titleClasses}`.trim()}>
                 {title}
             </HeadingTag>
-            <h3 className="h3 uppercase font-bold text-theme_darker 
-            text-opacity-100 mb-4 md:mb-5 lg:mb-4 tracking-widest text-sm 
-            lg:text-lg xl:mb-8 xl:text-2xl">
-                {subtitle}
-            </h3>
+            {subtitle && (
+                <h3 className="h3 uppercase font-bold text-theme_darker 
+                text-opacity-100 mb-4 md:mb-5 lg:mb-4 tracking-widest text-sm 
+                lg:text-lg xl:mb-8 xl:text-2xl">
+                    {subtitle}
+                </h3>
+            )}
         </div>
     );
 }

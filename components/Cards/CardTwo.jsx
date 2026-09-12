@@ -24,7 +24,6 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
                     alt={alt}
                     className={`rounded-xl absolute top-0 left-0 w-full h-full ${border && `border`} transition-transform duration-700 ${isHovered ? 'scale-105' : 'scale-100'}`}
                     style={{ objectFit: "cover" }}
-                    priority={type === 'project'}
                 />
                 {link && (
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 hover:bg-opacity-5" />

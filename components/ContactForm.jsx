@@ -77,18 +77,21 @@ const ContactForm = ({ content, formText }) => {
             <form onSubmit={handleSubmit} className={`mt-7 md:mt-10`}>
                 <div className='flex flex-col gap-3 sm:gap-4'>
                     <label>
+                        <span className="sr-only">{formText.name}</span>
                         <input type="text" maxLength="30" required
                             name='name' placeholder={formText.name}
                             value={form.name} onChange={handleChange}
                             className={`w-full rounded border-dark border-opacity-25 sm:py-3 bg-slate-50`} />
                     </label>
                     <label>
+                        <span className="sr-only">{formText.email}</span>
                         <input type="email" maxLength="90" required
                             name='email' placeholder={formText.email}
                             value={form.email} onChange={handleChange}
                             className={`w-full rounded border-dark border-opacity-25 sm:py-3 bg-slate-50`} />
                     </label>
                     <label>
+                        <span className="sr-only">{formText.message}</span>
                         <textarea name="message" id="message"
                             rows="8" value={form.message}
                             placeholder={formText.message}
@@ -104,6 +107,7 @@ const ContactForm = ({ content, formText }) => {
                         autoComplete="off"
                         tabIndex={-1}
                         aria-hidden="true"
+                        aria-label="Website"
                         style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }}
                     />
                 </div>
