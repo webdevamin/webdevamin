@@ -371,41 +371,471 @@
         {
             "slug": "features-benefits",
             "component": "features",
-            "title": "Functies van Uw Restaurant Website",
-            "subtitle": "Alles wat uw zaak nodig heeft",
-            "text": "<p>Elke restaurant website is snel, mobielvriendelijk en goed vindbaar. Per pakket komen er functies bij: online reservaties vanaf Premium, online bestellen en meertaligheid in Pro.</p>",
+            "title": "Functies die ik voor uw restaurant kan bouwen",
+            "subtitle": "Uw restaurantwebsite of webapplicatie op maat",
+            "text": "Ik bouw restaurantwebsites en webapplicaties met functies die passen bij uw zaak: van een digitale menukaart en online reservaties tot bestellingen en klantenbeheer. Hieronder ziet u voorbeelden van wat ik voor u kan ontwikkelen. Samen bepalen we welke onderdelen u nodig heeft en hoe uw gasten en team ermee werken.",
             "features": [
                 {
-                    "icon": "file-text",
-                    "title": "Digitale menukaart met QR-code",
-                    "description": "Uw menukaart als leesbare pagina met prijzen en allergenen, plus een QR-code voor op tafel. Aanpassen gaat snel en de QR-code blijft altijd werken. In elk pakket."
+                    "id": "reservaties",
+                    "icon": "CalendarDays",
+                    "title": "Online reservaties",
+                    "description": "Ik kan een reservatieformulier in uw website bouwen waarmee gasten zelf een datum, uur en aantal personen kiezen. Voor uw team maak ik een overzicht met de reservaties, tafelindeling en bijzonderheden, zodat u tijdens de service snel ziet wie er komt.",
+                    "availability": "Vanaf Premium",
+                    "hint": "Vul een voorbeeldreservatie in. Ze verschijnt meteen in het overzicht voor uw team.",
+                    "badge": "Reservaties en tafels",
+                    "bullets": [
+                        "Gasten kiezen zelf een datum, uur en gezelschap",
+                        "Alle reservaties samen in één overzicht",
+                        "Bijzonderheden meteen bij de juiste gast",
+                        "Minder telefoontjes tijdens de service"
+                    ]
                 },
                 {
-                    "icon": "calendar-days",
-                    "title": "Online reservatiesysteem",
-                    "description": "Gasten reserveren 24/7 een tafel via uw website en krijgen meteen een bevestiging per e-mail. Minder telefoontjes tijdens de service. Vanaf Premium."
+                    "id": "meldingen",
+                    "icon": "Mail",
+                    "title": "Automatische e-mail- en sms-meldingen",
+                    "description": "Ik kan automatische e-mail- en sms-meldingen koppelen aan uw reservatiesysteem. Denk aan een bevestiging na het boeken en een herinnering voor het bezoek. Samen bepalen we de inhoud, het verzendmoment en welke berichten uw gasten en team ontvangen.",
+                    "availability": "E-mailbevestiging vanaf Premium · Sms en herinneringen op aanvraag",
+                    "hint": "Wissel tussen e-mail en sms en bekijk een bevestiging of herinnering.",
+                    "badge": "Bevestigingen en herinneringen",
+                    "bullets": [
+                        "Een bevestiging meteen na de reservatie",
+                        "Een herinnering voor het bezoek",
+                        "Berichten per e-mail of sms",
+                        "U bepaalt welke meldingen uw zaak gebruikt"
+                    ]
                 },
                 {
-                    "icon": "shopping-cart",
-                    "title": "Online bestellen en afhalen",
-                    "description": "Klanten bestellen via uw eigen website om af te halen of voor levering, zonder commissie per bestelling aan een bezorgapp. In Pro."
+                    "id": "menukaart",
+                    "icon": "BookOpen",
+                    "title": "Digitale menukaart",
+                    "description": "Ik maak een digitale menukaart met categorieën, gerechten, prijzen en allergenen die goed leesbaar is op elke gsm. Gasten openen de kaart via uw website of een QR-code. Wilt u zelf gerechten en prijzen aanpassen, dan kan ik daar een beheeromgeving voor bouwen.",
+                    "availability": "In elk pakket",
+                    "hint": "Kies een categorie en ontdek de voorbeeldgerechten. Zelf uw kaart beheren kan op maat.",
+                    "badge": "Gerechten en prijzen",
+                    "bullets": [
+                        "Uw kaart leesbaar op elke gsm",
+                        "Gerechten overzichtelijk per categorie",
+                        "Prijzen en allergenen bij elk gerecht",
+                        "Eén vaste link voor uw website en QR-code"
+                    ]
                 },
                 {
-                    "icon": "globe",
-                    "title": "Meertalige website",
-                    "description": "Uw website en menukaart in maximaal drie talen, ideaal voor zaken met veel toeristen. In Pro."
+                    "id": "klanten",
+                    "icon": "Users",
+                    "title": "Klantenbeheer",
+                    "description": "Ik kan een klantenoverzicht bouwen waarin uw team contactgegevens, eerdere bezoeken en praktische voorkeuren terugvindt. We bepalen samen welke informatie nuttig is voor uw zaak, zodat u gasten herkent en hun reservaties eenvoudig kunt opzoeken.",
+                    "availability": "Op aanvraag",
+                    "hint": "Zoek een fictieve gast en open het profiel met eerdere bezoeken en notities.",
+                    "badge": "Gasten en voorkeuren",
+                    "bullets": [
+                        "Contactgegevens snel terugvinden",
+                        "Eerdere bezoeken in één oogopslag",
+                        "Praktische voorkeuren bij het gastprofiel",
+                        "Uw team ontvangt elke gast goed voorbereid"
+                    ]
                 },
                 {
-                    "icon": "map-pin",
-                    "title": "Gevonden in Google en Google Maps",
-                    "description": "Lokale SEO, snelle laadtijden en duidelijke gegevens over adres en openingsuren, zodat gasten uit de buurt u vinden. In elk pakket."
+                    "id": "reviews",
+                    "icon": "Star",
+                    "title": "Reviewverzoeken",
+                    "description": "Ik kan uw website of webapplicatie zo inrichten dat gasten na hun bezoek een reviewverzoek ontvangen. U krijgt een overzicht van ingeplande en verstuurde uitnodigingen. Het verzendmoment en de link naar uw reviewpagina stemmen we samen af.",
+                    "availability": "Op aanvraag",
+                    "hint": "Probeer een reviewverzoek. De status verandert alleen in deze demo.",
+                    "badge": "Reviews en feedback",
+                    "bullets": [
+                        "Een uitnodiging na het bezoek",
+                        "Een directe link naar uw reviewpagina",
+                        "Zelf het verzendmoment bepalen",
+                        "Zien welke verzoeken al verstuurd zijn"
+                    ]
                 },
                 {
-                    "icon": "smartphone",
-                    "title": "Mobielvriendelijk ontwerp",
-                    "description": "Gasten zoeken onderweg op hun gsm. Uw website, menukaart en reservatieknop werken vlot op elk scherm. In elk pakket."
+                    "id": "bestellingen",
+                    "icon": "ShoppingBag",
+                    "title": "Takeaway en bestellingen",
+                    "description": "Ik kan een bestelfunctie bouwen waarmee klanten gerechten kiezen, aantallen aanpassen en een afhaalmoment selecteren. Uw team krijgt de bestelling binnen met de gerechten, het totaalbedrag en het afhaaluur. De besteluren en betaalwijze stemmen we af op uw zaak.",
+                    "availability": "In Pro",
+                    "hint": "Voeg gerechten toe, kies een afhaaluur en plaats een voorbeeldbestelling. Er volgt geen betaling.",
+                    "badge": "Bestellen en afhalen",
+                    "bullets": [
+                        "Rechtstreeks bestellen via uw website",
+                        "Gerechten en aantallen in één overzicht",
+                        "De klant kiest een afhaalmoment",
+                        "Uw team ziet meteen wat er klaar moet staan"
+                    ]
+                },
+                {
+                    "id": "inzichten",
+                    "icon": "BarChart3",
+                    "title": "Statistieken en inzichten",
+                    "description": "Ik kan een dashboard maken met cijfers uit uw reservaties en bestellingen, zoals gastenaantallen, takeawayomzet en populaire gerechten. U kunt periodes vergelijken en drukke momenten herkennen. Samen kiezen we welke cijfers helpen bij uw dagelijkse planning.",
+                    "availability": "Op aanvraag",
+                    "hint": "Vergelijk twee voorbeeldperiodes. Alle cijfers zijn illustratief.",
+                    "badge": "Cijfers en overzicht",
+                    "bullets": [
+                        "Reservaties en gastenaantallen vergelijken",
+                        "Inzicht in uw takeawayomzet",
+                        "Uw populairste gerechten herkennen",
+                        "Drukke momenten helpen plannen"
+                    ]
                 }
-            ]
+            ],
+            "navigationLabel": "Ontdek de functies",
+            "demoLabel": "Interactieve demo",
+            "demoNotice": "Alle gegevens zijn fictief. Gebruik voorbeeldgegevens: er wordt niets geboekt, verstuurd, betaald of bewaard. Vernieuw de pagina om opnieuw te beginnen.",
+            "guestLabel": "Voor uw gast",
+            "teamLabel": "Voor uw team",
+            "brand": "Brasserie De Markt",
+            "exampleLabel": "Voorbeeldzaak",
+            "optionNote": "De voorbeelden tonen mogelijke functies. Wat uw zaak nodig heeft en wat inbegrepen is, spreken we vooraf af. Extra opties en eventuele sms-kosten bespreken we samen.",
+            "demo": {
+                "labels": {
+                    "name": "Naam",
+                    "email": "E-mailadres",
+                    "phone": "Telefoonnummer",
+                    "date": "Datum",
+                    "time": "Uur",
+                    "party": "Personen",
+                    "requests": "Bijzonderheden (optioneel)",
+                    "table": "Tafel",
+                    "status": "Status",
+                    "contact": "Contact",
+                    "reserve": "Voeg demoreservatie toe",
+                    "reserved": "De voorbeeldreservatie staat in het overzicht.",
+                    "reservationTitle": "Reservaties",
+                    "reservationEmpty": "Nog geen reservaties voor deze datum.",
+                    "confirmed": "Bevestigd",
+                    "unassigned": "Nog toe te wijzen",
+                    "noRequests": "Geen bijzonderheden",
+                    "reservationDate": "Reservaties op",
+                    "reservationCount": "reservaties",
+                    "guestCount": "gasten",
+                    "demoDay": "Voorbeeldservice",
+                    "allergens": "Allergenen",
+                    "vegetarian": "Vegetarisch",
+                    "menuTitle": "Onze kaart",
+                    "menuIntro": "Seizoensgerechten, met zorg bereid.",
+                    "search": "Zoek op naam of e-mailadres",
+                    "noGuests": "Geen gasten gevonden. Probeer een andere naam.",
+                    "profile": "Gastprofiel",
+                    "visits": "bezoeken",
+                    "history": "Eerdere bezoeken",
+                    "preferences": "Voorkeur",
+                    "notes": "Notitie voor het team",
+                    "add": "Toevoegen",
+                    "remove": "Minder",
+                    "increase": "Meer",
+                    "cart": "Uw bestelling",
+                    "emptyCart": "Kies iets lekkers van de kaart.",
+                    "total": "Totaal",
+                    "pickup": "Afhaaluur",
+                    "order": "Plaats demobestelling",
+                    "orderSuccess": "De voorbeeldbestelling staat klaar in het teamoverzicht.",
+                    "orders": "Binnengekomen bestellingen",
+                    "emptyOrders": "Uw voorbeeldbestelling verschijnt hier.",
+                    "orderStatus": "Nieuw · betaling bij afhaling",
+                    "quantity": "Aantal",
+                    "period": "Voorbeeldperiode",
+                    "popular": "Populaire afhaalgerechten",
+                    "busy": "Gasten per moment",
+                    "revenue": "Takeawayomzet",
+                    "reservations": "Reservaties",
+                    "guests": "Gasten",
+                    "sampleData": "Fictieve cijfers",
+                    "reviewTitle": "Hoe was uw bezoek?",
+                    "reviewBody": "Bedankt voor uw bezoek aan Brasserie De Markt. Wilt u uw ervaring delen? Met uw feedback helpt u ons en andere gasten.",
+                    "reviewButton": "Deel uw ervaring",
+                    "reviewLinkNote": "In uw website opent deze knop uw reviewpagina. In deze demo blijft u hier.",
+                    "reviewSchedule": "Na het bezoek",
+                    "reviewTiming": "De volgende dag om 10:00",
+                    "reviewSend": "Simuleer versturen",
+                    "reviewSent": "Verstuurd (demo)",
+                    "reviewPending": "Ingepland",
+                    "reviewFeedback": "Het reviewverzoek is als verstuurd gemarkeerd. Er is geen bericht verzonden.",
+                    "reviewAlreadySent": "Voorbeeldverzoek verstuurd",
+                    "recipient": "Ontvanger",
+                    "timing": "Verzendmoment",
+                    "delivery": "Afleverstatus",
+                    "messagePreview": "Berichtvoorbeeld",
+                    "messageFlow": "Berichtenoverzicht",
+                    "emailChannel": "E-mail",
+                    "smsChannel": "Sms",
+                    "sentExample": "Afgeleverd (voorbeeld)",
+                    "scheduledExample": "Ingepland (voorbeeld)",
+                    "visitDate": "Datum",
+                    "amount": "Bedrag",
+                    "dishes": "Gerechten",
+                    "orderNumber": "Bestelling"
+                },
+                "reservation": {
+                    "date": "2026-09-18",
+                    "times": [
+                        "18:00",
+                        "18:30",
+                        "19:00",
+                        "19:30",
+                        "20:00",
+                        "20:30"
+                    ],
+                    "defaultName": "Alex Voorbeeld",
+                    "defaultEmail": "alex@example.com",
+                    "defaultPhone": "+32 470 00 00 00",
+                    "defaultRequests": "Liefst bij het raam",
+                    "rows": [
+                        {
+                            "id": "sample-1",
+                            "name": "Emma Peeters",
+                            "email": "emma@example.com",
+                            "phone": "+32 470 00 00 01",
+                            "date": "2026-09-18",
+                            "time": "18:30",
+                            "party": 4,
+                            "table": "04",
+                            "requests": "Kinderstoel graag"
+                        },
+                        {
+                            "id": "sample-2",
+                            "name": "Thomas Jacobs",
+                            "email": "thomas@example.com",
+                            "phone": "+32 470 00 00 02",
+                            "date": "2026-09-18",
+                            "time": "19:00",
+                            "party": 2,
+                            "table": "02",
+                            "requests": ""
+                        }
+                    ]
+                },
+                "messages": [
+                    {
+                        "id": "confirmation",
+                        "label": "Bevestiging",
+                        "timing": "Meteen na de reservatie",
+                        "subject": "Uw tafel staat gereserveerd",
+                        "body": "Dag Emma, fijn dat u langskomt! Uw tafel voor 4 personen is gereserveerd op vrijdag 18 september om 18:30. Tot dan!",
+                        "sms": "Dag Emma, uw tafel bij Brasserie De Markt is bevestigd: 18 september, 18:30, 4 personen. Tot dan!",
+                        "delivered": true
+                    },
+                    {
+                        "id": "reminder",
+                        "label": "Herinnering",
+                        "timing": "24 uur voor het bezoek",
+                        "subject": "Morgen zien we u graag terug",
+                        "body": "Dag Emma, morgen verwachten we u om 18:30 met 4 personen. Zijn uw plannen veranderd? Laat het ons even weten, dan maken we uw tafel vrij.",
+                        "sms": "Dag Emma, tot morgen om 18:30 bij Brasserie De Markt (4 personen). Plannen gewijzigd? Laat het ons even weten.",
+                        "delivered": false
+                    }
+                ],
+                "categories": [
+                    {
+                        "id": "all",
+                        "label": "Alles"
+                    },
+                    {
+                        "id": "starters",
+                        "label": "Vooraf"
+                    },
+                    {
+                        "id": "mains",
+                        "label": "Hoofdgerechten"
+                    },
+                    {
+                        "id": "desserts",
+                        "label": "Desserts"
+                    }
+                ],
+                "dishes": [
+                    {
+                        "id": "burrata",
+                        "category": "starters",
+                        "name": "Burrata & tomaat",
+                        "description": "Romige burrata, gekleurde tomaten en basilicumolie.",
+                        "price": 1450,
+                        "allergens": "Melk",
+                        "vegetarian": true
+                    },
+                    {
+                        "id": "kroketten",
+                        "category": "starters",
+                        "name": "Garnaalkroketten",
+                        "description": "Twee huisgemaakte kroketten met citroen en peterselie.",
+                        "price": 1850,
+                        "allergens": "Gluten, schaaldieren, melk, ei",
+                        "vegetarian": false
+                    },
+                    {
+                        "id": "risotto",
+                        "category": "mains",
+                        "name": "Risotto van het seizoen",
+                        "description": "Met geroosterde pompoen, salie en oude kaas.",
+                        "price": 2400,
+                        "allergens": "Melk, selderij",
+                        "vegetarian": true
+                    },
+                    {
+                        "id": "stoofvlees",
+                        "category": "mains",
+                        "name": "Vlaams stoofvlees",
+                        "description": "Zacht gegaard in bruin bier, met frietjes en een frisse salade.",
+                        "price": 2650,
+                        "allergens": "Gluten, mosterd, selderij",
+                        "vegetarian": false
+                    },
+                    {
+                        "id": "chocolade",
+                        "category": "desserts",
+                        "name": "Chocolademousse",
+                        "description": "Pure Belgische chocolade met een krokant koekje.",
+                        "price": 950,
+                        "allergens": "Melk, ei, gluten",
+                        "vegetarian": true
+                    }
+                ],
+                "customers": [
+                    {
+                        "id": "emma",
+                        "name": "Emma Peeters",
+                        "email": "emma@example.com",
+                        "phone": "+32 470 00 00 01",
+                        "visits": 6,
+                        "preference": "Rustig tafeltje bij het raam",
+                        "notes": "Komt soms met een kinderwagen.",
+                        "history": [
+                            {
+                                "date": "2026-09-12",
+                                "party": 2
+                            },
+                            {
+                                "date": "2026-08-21",
+                                "party": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "thomas",
+                        "name": "Thomas Jacobs",
+                        "email": "thomas@example.com",
+                        "phone": "+32 470 00 00 02",
+                        "visits": 3,
+                        "preference": "Terras bij mooi weer",
+                        "notes": "Belt vooraf als het gezelschap groter wordt.",
+                        "history": [
+                            {
+                                "date": "2026-09-05",
+                                "party": 2
+                            },
+                            {
+                                "date": "2026-07-18",
+                                "party": 3
+                            }
+                        ]
+                    },
+                    {
+                        "id": "noor",
+                        "name": "Noor Willems",
+                        "email": "noor@example.com",
+                        "phone": "+32 470 00 00 03",
+                        "visits": 2,
+                        "preference": "Kiest graag het seizoensmenu",
+                        "notes": "Vraagt graag uitleg bij de dagsuggestie.",
+                        "history": [
+                            {
+                                "date": "2026-09-10",
+                                "party": 4
+                            },
+                            {
+                                "date": "2026-08-02",
+                                "party": 2
+                            }
+                        ]
+                    }
+                ],
+                "pickupTimes": [
+                    "18:00",
+                    "18:15",
+                    "18:30",
+                    "18:45",
+                    "19:00",
+                    "19:15"
+                ],
+                "periods": [
+                    {
+                        "id": "week",
+                        "label": "Deze week",
+                        "reservations": 86,
+                        "guests": 248,
+                        "revenue": 184500,
+                        "popular": [
+                            {
+                                "name": "Vlaams stoofvlees",
+                                "value": 34
+                            },
+                            {
+                                "name": "Risotto van het seizoen",
+                                "value": 27
+                            },
+                            {
+                                "name": "Garnaalkroketten",
+                                "value": 19
+                            }
+                        ],
+                        "busy": [
+                            {
+                                "name": "Lunch",
+                                "value": 92
+                            },
+                            {
+                                "name": "Avond",
+                                "value": 156
+                            }
+                        ]
+                    },
+                    {
+                        "id": "month",
+                        "label": "Deze maand",
+                        "reservations": 342,
+                        "guests": 986,
+                        "revenue": 738000,
+                        "popular": [
+                            {
+                                "name": "Vlaams stoofvlees",
+                                "value": 138
+                            },
+                            {
+                                "name": "Risotto van het seizoen",
+                                "value": 105
+                            },
+                            {
+                                "name": "Garnaalkroketten",
+                                "value": 82
+                            }
+                        ],
+                        "busy": [
+                            {
+                                "name": "Lunch",
+                                "value": 364
+                            },
+                            {
+                                "name": "Avond",
+                                "value": 622
+                            }
+                        ]
+                    }
+                ]
+            },
+            "compact": {
+                "sample": "Voorbeeld",
+                "newReservation": "Nieuwe reservatie mail",
+                "reservationMeta": "Vandaag · avonddienst",
+                "menuMeta": "Vers van onze kaart",
+                "customerMeta": "Vaste gast",
+                "reviewMeta": "Na het bezoek",
+                "reviewStatus": "Klaar om te versturen",
+                "orderMeta": "Afhalen om 18:30",
+                "orderStatus": "Nieuwe bestelling",
+                "insightsMeta": "Uw zaak in cijfers"
+            }
         },
         {
             "slug": "portfolio-case",

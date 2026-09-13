@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'restaurant-reveal': {
+          from: { opacity: '0', transform: 'translateY(22px) scale(0.985)' },
+          to: { opacity: '1', transform: 'translateY(0) scale(1)' },
+        },
+      },
+      animation: {
+        'restaurant-reveal': 'restaurant-reveal 500ms cubic-bezier(0.22, 1, 0.36, 1) both',
+      },
       fontSize: {
         15: "15px",
         17: "17px",
@@ -50,4 +59,3 @@ module.exports = {
   },
   plugins: [flowbite.plugin()],
 }
-

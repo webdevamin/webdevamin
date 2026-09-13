@@ -1,9 +1,9 @@
 import CookieConsent from '../CookieConsent'
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children, allowSticky = false }) => {
     return (
         <>
-            <div className={`overflow-x-hidden`}>
+            <div className={allowSticky ? 'overflow-x-clip' : 'overflow-x-hidden'}>
                 <main className={`relative container`}>
                     <div className={`hidden xl:block w-[0.5px] bg-dark h-full absolute z-20`} />
                     <div className={`page_container`}>

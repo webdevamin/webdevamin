@@ -15,6 +15,7 @@ import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import BlockCards from '../../../../../components/Blocks/BlockCards'
+import RestaurantFeatures from '../../../../../components/Blocks/RestaurantFeatures'
 import OneTimePayment from '../../../../../components/Home/OneTimePayment'
 import { renderIcon } from '../../../../../utils/iconMapper'
 
@@ -475,12 +476,16 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
       <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
-      <PageLayout>
+      <PageLayout allowSticky={locale === 'nl' && slug === 'restaurant-website-laten-maken'}>
         <ProcessSection content={blocks.find(block => block.slug === 'process')} />
         <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website')} />
         <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position='right' />
         <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
-        <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
+        {locale === 'nl' && slug === 'restaurant-website-laten-maken' ? (
+          <RestaurantFeatures content={blocks.find(block => block.slug === 'features-benefits')} />
+        ) : (
+          <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
+        )}
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
         <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
         <PricingSection content={blocks.find(block => block.slug === 'pricing')} />
