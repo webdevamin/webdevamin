@@ -4,12 +4,13 @@ import CtaButton from '../Buttons/CtaButton';
 import LocationMap from './LocationMap';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import BlockLayoutTwo from '../Layouts/BlockLayoutTwo';
+import { FullBleedLine } from '../Layouts/BorderedSection';
 
 const Location = ({ content }) => {
     const { title, subtitle, text, slug, address, city, phone, email, button } = content;
 
     return (
-        <BlockLayoutTwo title={title} slug={slug} position={`left`}>
+        <BlockLayoutTwo title={title} slug={slug} position={`left`} noPadding>
             <div className='w-full'>
                 <div className="mb-12 lg:mb-16 text-left">
                     <Heading title={title} />
@@ -29,8 +30,10 @@ const Location = ({ content }) => {
                     </div>
 
                     {/* Contact Info Section */}
-                    <div className="mt-8 lg:mt-0 lg:w-2/5 xl:w-1/3">
-                        <div className="bg-light rounded-2xl p-6 shadow-md border border-dark xl:border-opacity-10 border-opacity-20">
+                    <div className="mt-10 lg:mt-0 lg:w-2/5 xl:w-1/3">
+                        {/* Onder de kaart een lijn over de volle breedte; op desktop scheidt een lijn links de gegevens van de kaart. */}
+                        <FullBleedLine className="relative mb-10 lg:hidden" />
+                        <div className="lg:h-full border-dark lg:border-l-[0.5px] lg:pl-12 xl:pl-16">
                             <h4 className="text-lg md:text-2xl font-bold mb-5 font_mohave">
                                 Contactgegevens
                             </h4>

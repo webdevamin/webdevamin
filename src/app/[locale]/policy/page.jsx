@@ -3,6 +3,7 @@ import PageLayout from '../../../../components/Layouts/PageLayout';
 import Heading from '../../../../components/Heading';
 import Footer from '../../../../components/Layouts/Footer';
 import HeroOne from '../../../../components/Heroes/HeroOne';
+import BorderedSection from '../../../../components/Layouts/BorderedSection';
 
 async function getData(locale) {
     const localesData = (await import(`../../../../messages/${locale}/locales.json`)).default;
@@ -75,12 +76,14 @@ const Policy = async ({ params: { locale } }) => {
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
-                <div id={slug} className={`block_container`}>
-                    <Heading title={title} subtitle={subtitle} />
-                    <div className={`mt-3 sm:mt-8 md:mt-12 lg:w-10/12`}>
-                        <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
+                <BorderedSection>
+                    <div id={slug} className={`block_container`}>
+                        <Heading title={title} subtitle={subtitle} />
+                        <div className={`mt-3 sm:mt-8 md:mt-12 lg:w-10/12`}>
+                            <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
+                        </div>
                     </div>
-                </div>
+                </BorderedSection>
                 <Footer blogs={blogsData} socials={socialsData} pages={pagesData} />
             </PageLayout>
         </>

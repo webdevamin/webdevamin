@@ -5,6 +5,7 @@ import Footer from '../../../../../components/Layouts/Footer';
 import HeroTwo from '../../../../../components/Heroes/HeroTwo';
 import Image from 'next/image';
 import SocialShares from '../../../../../components/SocialShares';
+import BorderedSection from '../../../../../components/Layouts/BorderedSection';
 import styles from '../../../../../styles/BlogPage.module.scss';
 import { notFound } from 'next/navigation';
 
@@ -122,27 +123,29 @@ const Blog = async ({ params: { locale, slug } }) => {
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroTwo content={heroContent} socials={socialsData} />
             <PageLayout>
-                <div id={slug} className={styles.blogContainer}>
-                    <div className={`mb-4 md:mb-7 lg:mb-12`}>
-                        <div className={`relative w-full mb-3 md:mb-5 lg:mb-6`}>
-                            <Image
-                                width={width}
-                                height={height}
-                                src={src}
-                                alt={alt}
-                                className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`} w-full h-auto`}
-                                style={{ objectFit: `cover` }} priority={true}
-                                sizes="100vw" />
+                <BorderedSection>
+                    <div id={slug} className={styles.blogContainer}>
+                        <div className={`mb-4 md:mb-7 lg:mb-12`}>
+                            <div className={`relative w-full mb-3 md:mb-5 lg:mb-6`}>
+                                <Image
+                                    width={width}
+                                    height={height}
+                                    src={src}
+                                    alt={alt}
+                                    className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`} w-full h-auto`}
+                                    style={{ objectFit: `cover` }} priority={true}
+                                    sizes="100vw" />
+                            </div>
+                            <div className={styles.socialSharesContainer}>
+                                <SocialShares url={blogData.seo.canonical} title={`Blog - ${title}`}
+                                    description={description} imageUrl={src} />
+                            </div>
                         </div>
-                        <div className={styles.socialSharesContainer}>
-                            <SocialShares url={blogData.seo.canonical} title={`Blog - ${title}`}
-                                description={description} imageUrl={src} />
+                        <div className={styles.blogContent}>
+                            <div dangerouslySetInnerHTML={{ __html: optimizeEmbeddedImages(text) }} />
                         </div>
                     </div>
-                    <div className={styles.blogContent}>
-                        <div dangerouslySetInnerHTML={{ __html: optimizeEmbeddedImages(text) }} />
-                    </div>
-                </div>
+                </BorderedSection>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData} socials={socialsData} pages={pagesData} />
             </PageLayout>

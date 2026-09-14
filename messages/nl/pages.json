@@ -11,7 +11,7 @@
     },
     {
         "title": "Sectoren",
-        "href": "#",
+        "href": "/industry",
         "icon": "building",
         "subs": [
             {
@@ -25,6 +25,11 @@
             {
                 "title": "Restaurants & horeca",
                 "href": "/industry/restaurant-website-laten-maken"
+            },
+            {
+                "title": "Alle sectoren",
+                "href": "/industry",
+                "borderTop": true
             }
         ]
     },

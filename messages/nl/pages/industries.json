@@ -1,0 +1,170 @@
+{
+    "seo": {
+        "title": "Website Laten Maken per Sector | Taxi, Kapper & Restaurant",
+        "description": "Een website op maat van uw sector: taxi met boekingssysteem, kapper met online afspraken, restaurant met menukaart en reservaties. Vanaf €49/maand.",
+        "canonical": "https://webdevamin.com/nl/industry",
+        "ogTitle": "Website Laten Maken per Sector | Taxi, Kapper & Restaurant",
+        "ogDescription": "Een website op maat van uw sector: taxi met boekingssysteem, kapper met online afspraken, restaurant met menukaart en reservaties. Vanaf €49/maand.",
+        "keywords": "website laten maken per sector, website per sector, website laten maken per branche, website voor taxibedrijf, website voor kapper, website voor restaurant, website voor horeca"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [],
+    "jsonLd": {
+        "collectionPage": {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": "https://webdevamin.com/nl/industry#webpage",
+            "url": "https://webdevamin.com/nl/industry",
+            "name": "Website Laten Maken per Sector",
+            "description": "Overzicht van de websitepakketten per sector: taxi websites met boekingssysteem, kapper websites met online afspraken en restaurant websites met digitale menukaart en reservaties.",
+            "inLanguage": "nl",
+            "publisher": {
+                "@type": "ProfessionalService",
+                "@id": "https://webdevamin.com/#organization",
+                "name": "Webdevamin"
+            },
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Taxi Website Laten Maken",
+                        "url": "https://webdevamin.com/nl/industry/taxi-website-laten-maken"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Kapper Website Laten Maken",
+                        "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Restaurant Website Laten Maken",
+                        "url": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken"
+                    }
+                ]
+            }
+        },
+        "breadcrumb": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sectoren",
+                    "item": "https://webdevamin.com/nl/industry"
+                }
+            ]
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Website Laten Maken per Sector",
+            "text": "Een taxibedrijf heeft andere functies nodig dan een kapsalon of een restaurant. Daarom is er per sector een eigen pakket: een taxi website met boekingssysteem, een kapper website met online afspraken en een restaurant website met digitale menukaart en reservaties. Elk pakket start vanaf €49/maand, met hosting, onderhoud en SEO inbegrepen. Gemaakt door een webontwikkelaar uit Brugge, voor zaken in België en Nederland. Geen opstartkosten. Excl. BTW.",
+            "image": {
+                "src": "https://bucket.webdevamin.com/laptop-website-brugge.png",
+                "alt": "Webontwikkelaar die een professionele website ontwerpt voor een lokale zaak.",
+                "width": 800,
+                "height": 600
+            },
+            "button": [
+                {
+                    "text": "Bekijk Sectoren",
+                    "href": "#sectoren"
+                },
+                {
+                    "text": "Gratis Offerte",
+                    "href": "/contact"
+                }
+            ]
+        },
+        {
+            "slug": "sectoren",
+            "title": "Kies Uw Sector",
+            "subtitle": "Websites per sector",
+            "text": "<p>Op elke sectorpagina vindt u de pakketten, de prijzen, de functies en een website die ik al bouwde voor een zaak uit die sector.</p>"
+        },
+        {
+            "slug": "why-per-sector",
+            "component": "content",
+            "title": "Waarom een Website per Sector?",
+            "subtitle": "Functies die passen bij uw zaak",
+            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4'/></svg></span>Elke sector werkt anders</h3><p>Een taxibedrijf wil ritaanvragen met ophaaladres, bestemming en ritprijs. Een kapsalon wil dat klanten zelf een afspraak inplannen. Een restaurant wil een menukaart die altijd klopt en gasten die online een tafel reserveren. Bij een algemene website moeten zulke functies er apart bij komen. In een sectorpakket zitten ze er meteen in, afgestemd op hoe uw zaak werkt.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'/></svg></span>Dezelfde basis in elk pakket</h3><p>Welke sector u ook kiest, deze onderdelen zitten er altijd in: een website op maat, hosting, domeinnaam, onderhoud, <strong>SEO-optimalisatie</strong> en support. U betaalt een vaste prijs per maand, zonder opstartkosten, en u heeft één aanspreekpunt. Wilt u eerst voorbeelden zien? Bekijk dan <a href='/nl/projects' title='Projecten van Webdevamin'>mijn projecten</a>. De prijzen zijn <strong>excl. BTW</strong>.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4'/></svg></span>Uw sector staat er niet tussen?</h3><p>Geen probleem. Voor andere zelfstandigen en kmo's bouw ik een <a href='/nl' title='Zakelijke website laten maken vanaf €49/maand'>zakelijke website vanaf €49 per maand</a>, met dezelfde basis. Heeft uw zaak een eigen boekings-, afspraken- of bestelsysteem nodig? <a href='/nl/contact' title='Contact opnemen over een website voor uw sector'>Neem contact op</a>, dan bekijken we samen wat past.</p>",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Vraag offerte aan",
+                    "label": "Naar contact pagina"
+                }
+            ],
+            "img": {
+                "src": "https://bucket.webdevamin.com/client-showcase-barber-site.png",
+                "alt": "Een webontwikkelaar toont een kapper website met afsprakensysteem aan de eigenaar van een kapperszaak."
+            }
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Welke Website Past bij Uw Zaak?",
+            "text": "Twijfelt u welk pakket bij uw zaak past? Vertel in een kort gesprek hoe uw zaak werkt. U krijgt een eerlijk advies en een offerte op maat, gratis en vrijblijvend.",
+            "button": [
+                {
+                    "href": "/contact",
+                    "text": "Vraag Gratis Offerte Aan",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ]
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Veelgestelde Vragen",
+            "subtitle": "Over de sectorpakketten",
+            "text": "Hieronder vindt u antwoorden op vragen over de verschillende sectoren en pakketten. Heeft u een vraag over één sector, kijk dan ook bij de veelgestelde vragen op de pagina van die sector.",
+            "items": [
+                {
+                    "title": "Wat is het verschil tussen een sectorpakket en een gewone zakelijke website?",
+                    "description": "Een sectorpakket bevat functies die in die sector nodig zijn, zoals een boekingssysteem voor taxibedrijven, online afspraken voor kappers of een digitale menukaart en reservaties voor restaurants. De basis is dezelfde als bij een <a href='/nl' title='Zakelijke website laten maken'>zakelijke website</a>: een website op maat, hosting, domeinnaam, onderhoud, SEO en support vanaf <strong>€49 per maand excl. BTW</strong>. Het verschil zit vooral in de uitgebreidere pakketten, zoals Premium en Pro, die per sector andere functies bevatten."
+                },
+                {
+                    "title": "Mijn sector staat er niet tussen. Kan ik toch een website laten maken?",
+                    "description": "Ja. Voor elke zelfstandige of kmo bouw ik een zakelijke website vanaf <strong>€49 per maand excl. BTW</strong>, met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Heeft uw zaak een specifieke functie nodig, zoals een boekingsformulier, een afsprakensysteem of online bestellen, dan werk ik een pakket op maat uit. In een gratis gesprek bekijken we hoe uw zaak werkt, daarna krijgt u een duidelijke offerte."
+                },
+                {
+                    "title": "Welke pakketten hebben een boekings-, afspraken- of reservatiesysteem?",
+                    "description": "Dat hangt af van uw sector. Voor taxibedrijven zit het online boekingssysteem met automatische ritprijs in <strong>Premium voor €69 per maand</strong>. Voor kappers zit het online afsprakensysteem in <strong>Premium voor €89 per maand</strong> en in <strong>Pro voor €119 per maand</strong>. Voor restaurants zitten online reservaties in <strong>Premium voor €69 per maand</strong>, en in <strong>Pro voor €119 per maand</strong> komen online bestellen en een meertalige website erbij. Alle prijzen zijn excl. BTW."
+                },
+                {
+                    "title": "Kan ik later overstappen naar een groter pakket?",
+                    "description": "Ja. Wilt u later online boekingen, afspraken of reservaties ontvangen, dan bekijken we samen de overstap naar een groter pakket, bijvoorbeeld van Standaard naar Premium. U krijgt vooraf een duidelijk overzicht van wat er verandert en wat het kost, zodat u niet voor verrassingen komt te staan."
+                }
+            ]
+        },
+        {
+            "slug": "andere-sectoren",
+            "title": "Websites voor Andere Sectoren",
+            "subtitle": "Ook voor andere zaken",
+            "button": {
+                "href": "/industry",
+                "text": "Bekijk alle sectoren"
+            }
+        }
+    ]
+}

@@ -8,6 +8,7 @@
 - Taxi website service (NL): https://webdevamin.com/nl/industry/taxi-website-laten-maken
 - Kapper website service (NL): https://webdevamin.com/nl/industry/kapper-website-laten-maken
 - Restaurant en horeca website service (NL): https://webdevamin.com/nl/industry/restaurant-website-laten-maken
+- Overzicht websites per sector (NL): https://webdevamin.com/nl/industry
 - Projecten: https://webdevamin.com/nl/projects
 - Contact: https://webdevamin.com/nl/contact
 

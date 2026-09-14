@@ -12,7 +12,7 @@ const Hero = ({ content, socials, locale }) => {
     const parsedTitle = getJsonString(title);
 
     return (
-        <div className={`p-10 bg-transparent max-w-[2250px] mx-auto mt-20 pb-0 xl:py-16`} id={`hero`}>
+        <div className={`p-10 bg-transparent max-w-[2250px] mx-auto mt-20 pb-0 xl:py-16 xl:pb-0`} id={`hero`}>
             <div className={`text-center bg-transparent md:flex md:flex-row-reverse md:justify-evenly md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 xl:px-40 2xl:px-50 md:pt-14`}>
                 <div className={`p-5 lg:p-0`}>
                     <Image src={src} width={524} height={381} className={`rounded-lg`} priority={true} alt={alt} style={{ objectFit: 'cover' }} />
@@ -32,7 +32,7 @@ const Hero = ({ content, socials, locale }) => {
                     )}
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
-                        <span className={`w-64 block bg-dark h-[1px]`} />
+                        <span className={`flex-1 border-t-[0.5px] border-dark`} />
                         <div className={`px-5 flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, index) => {
@@ -52,7 +52,7 @@ const Hero = ({ content, socials, locale }) => {
                                 })
                             }
                         </div>
-                        <span className={`w-64 block bg-dark h-[1px]`} />
+                        <span className={`flex-1 border-t-[0.5px] border-dark`} />
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
@@ -122,8 +122,7 @@ const Hero = ({ content, socials, locale }) => {
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
         pt-28 bg-transparent`}>
-                <span className={`w-64 block bg-dark h-[1px]`} />
-                <div className={`px-10 flex gap-8`}>
+                <div className={`pl-[18.5rem] pb-6 flex gap-8`}>
                     {
                         socials.map((social, index) => {
                             const { href, icon, title, hideFromHeader } = social;
@@ -141,8 +140,9 @@ const Hero = ({ content, socials, locale }) => {
                         })
                     }
                 </div>
-                <span className={`w-64 block -mr-10 bg-dark h-[1px]`} />
             </div>
+            {/* Onderrand van de hero en eerste lijn van het paginaraster; -mx-10 heft de padding van de hero op. */}
+            <div aria-hidden="true" className={`hidden md:block -mx-10 border-t-[0.5px] border-dark`} />
         </div>
     )
 }

@@ -26,7 +26,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
             </div>
             <div className={`mb-8 mt-20 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>
-                <span className={`w-64 block h-[1px]`} />
+                <span className={`flex-1 border-t-[0.5px] border-dark`} />
                 <div className={`px-5 flex gap-5 
                         text-opacity-70`}>
                     {
@@ -45,12 +45,12 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                         })
                     }
                 </div>
-                <span className={`w-64 block h-[1px]`} />
+                <span className={`flex-1 border-t-[0.5px] border-dark`} />
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
             pt-28 bg-transparent justify-center`}>
-                <span className={`w-screen xl:w-4/12 block bg-dark h-[1px]`} />
-                <div className={`px-10 flex gap-8`}>
+                {/* pl-10 compenseert -ml-10 van de rij, zodat de iconen gecentreerd blijven. */}
+                <div className={`pl-10 pb-6 flex gap-8`}>
                     {
                         socials.map((social, i) => {
                             const { href, icon, title, hideFromHeader } = social;
@@ -67,8 +67,9 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                         })
                     }
                 </div>
-                <span className={`w-screen xl:w-4/12 block -mr-10 bg-dark h-[1px]`} />
             </div>
+            {/* Onderrand van de hero en eerste lijn van het paginaraster; -mx-10 heft de padding van de hero op. */}
+            <div aria-hidden="true" className={`hidden md:block -mx-10 border-t-[0.5px] border-dark`} />
         </div>
     )
 }

@@ -22,6 +22,7 @@ export function PricingCard({
     buttonText = "Kies pakket",
     buttonHref = "/contact",
     popular = false,
+    plain = false,
     className = "",
     phoneHref = "tel:+32470930916",
     phoneLabel = "Of Bel Nu!"
@@ -29,13 +30,16 @@ export function PricingCard({
     const locale = useLocale();
     const isDutch = locale === 'nl';
 
+    // plain: zonder kaartrand en schaduw, voor een raster waarin lijnen de pakketten scheiden.
+    const frameClasses = plain
+        ? `p-6 sm:p-8 lg:p-10 ${popular ? 'border-t-[3px] border-theme' : ''}`
+        : `rounded-3xl border bg-white p-6 transition-all duration-300 ${popular
+            ? 'border-2 border-theme shadow-2xl lg:-translate-y-3'
+            : 'border-gray-200 shadow-md hover:shadow-xl'
+        }`;
+
     return (
-        <div
-            className={`flex flex-col h-full rounded-3xl border bg-white p-6 transition-all duration-300 ${popular
-                ? 'border-2 border-theme shadow-2xl lg:-translate-y-3'
-                : 'border-gray-200 shadow-md hover:shadow-xl'
-                } ${className}`}
-        >
+        <div className={`flex flex-col h-full ${frameClasses} ${className}`}>
             <div className="flex-grow">
                 <div className="mb-2 flex min-h-[2rem] items-center gap-6">
                     <h5 className="text-xl font-semibold text-slate-900">
@@ -76,7 +80,8 @@ export function PricingCard({
                         {description}
                     </p>
                 )}
-                <ul className="my-7 space-y-3">
+                {/* In een breed raster-vak verdeelt de lijst zich vanzelf over twee kolommen zodra er plaats is. */}
+                <ul className={`my-7 ${plain ? '[column-width:14rem] gap-x-8 [&>li]:mb-3 [&>li]:break-inside-avoid' : 'space-y-3'}`}>
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-start space-x-3">
                             <svg className="h-5 w-5 shrink-0 text-theme mt-0.5" fill="currentColor" viewBox="0 0 20 20">

@@ -6,6 +6,7 @@ import Contact from '../../../../components/Contact';
 import Footer from '../../../../components/Layouts/Footer';
 import CardTwo from '../../../../components/Cards/CardTwo';
 import HeroOne from '../../../../components/Heroes/HeroOne';
+import BorderedSection from '../../../../components/Layouts/BorderedSection';
 
 async function getData(locale) {
     const localesData = (await import(`../../../../messages/${locale}/locales.json`)).default;
@@ -77,27 +78,29 @@ const Blogs = async ({ params: { locale } }) => {
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} ctaLink={`#${slugHeading}`} />
             <PageLayout>
-                <div id={slugHeading} className={`block_container`}>
-                    <Heading title={titleHeading} subtitle={subtitleHeading} />
-                    <div dangerouslySetInnerHTML={{ __html: textHeading }} className={`${textHeading ? `pb-6` : `hidden`}`} />
-                    <div className={`overflow-x-auto overscroll-x-contain gap-6 pb-6 md:pb-0 md:pr-0 md:w-full md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 ${blogsData.length >= 2 && `pr-[20%] w-screen flex`}`}>
-                        {
-                            blogsData.map((blog, index) => {
-                                const { title, img, slug, description, dev, border } = blog;
-                                const { src, alt } = img;
-                                const text = locale === `nl` ? `Lees verder` : `Read more`;
+                <BorderedSection>
+                    <div id={slugHeading} className={`block_container`}>
+                        <Heading title={titleHeading} subtitle={subtitleHeading} />
+                        <div dangerouslySetInnerHTML={{ __html: textHeading }} className={`${textHeading ? `pb-6` : `hidden`}`} />
+                        <div className={`overflow-x-auto overscroll-x-contain gap-6 pb-6 md:pb-0 md:pr-0 md:w-full md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-10 md:mt-7 lg:mt-14 ${blogsData.length >= 2 && `pr-[20%] w-screen flex`}`}>
+                            {
+                                blogsData.map((blog, index) => {
+                                    const { title, img, slug, description, dev, border } = blog;
+                                    const { src, alt } = img;
+                                    const text = locale === `nl` ? `Lees verder` : `Read more`;
 
-                                return (
-                                    <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
-                                        <CardTwo imgUrl={src} title={title} text={text}
-                                            subtitle={description} slug={slug} alt={alt}
-                                            badge={dev && { bText: `dev` }} border={border} type={`blog`} />
-                                    </Link>
-                                )
-                            })
-                        }
+                                    return (
+                                        <Link href={`/blogs/${slug}`} key={index} className={`min-w-[75vw] sm:min-w-[53vw] md:min-w-0`}>
+                                            <CardTwo imgUrl={src} title={title} text={text}
+                                                subtitle={description} slug={slug} alt={alt}
+                                                badge={dev && { bText: `dev` }} border={border} type={`blog`} />
+                                        </Link>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
-                </div>
+                </BorderedSection>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
             </PageLayout>

@@ -12,7 +12,7 @@ const Projects = ({ content, data }) => {
     const projects = data;
 
     return (
-        <BlockLayoutTwo title={title} slug={slug}>
+        <BlockLayoutTwo title={title} slug={slug} noPadding>
             <div className={`md:basis-5/12`}>
                 <Heading noSubtitle title={title} />
                 <div dangerouslySetInnerHTML={{ __html: text }} />

@@ -5,6 +5,7 @@ import Contact from '../../../../components/Contact';
 import Footer from '../../../../components/Layouts/Footer';
 import HeroOne from '../../../../components/Heroes/HeroOne';
 import ProjectsList from '../../../../components/ProjectsList';
+import BorderedSection from '../../../../components/Layouts/BorderedSection';
 
 async function getData(locale) {
     const localesData = (await import(`../../../../messages/${locale}/locales.json`)).default;
@@ -78,11 +79,13 @@ const Projects = async ({ params: { locale } }) => {
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
-                <div id={slug} className={`block_container overflow-hidden`}>
-                    <Heading title={title} subtitle={subtitle} />
-                    <p className="max-w-2xl mb-8 opacity-85">{text}</p>
-                    <ProjectsList projectsData={projectsData} />
-                </div>
+                <BorderedSection>
+                    <div id={slug} className={`block_container overflow-hidden`}>
+                        <Heading title={title} subtitle={subtitle} />
+                        <p className="max-w-2xl mb-8 opacity-85">{text}</p>
+                        <ProjectsList projectsData={projectsData} />
+                    </div>
+                </BorderedSection>
                 <Contact content={contactBlockData} />
                 <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
             </PageLayout>

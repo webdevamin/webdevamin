@@ -1,44 +1,45 @@
-import BlockLayoutOne from '../Layouts/BlockLayoutOne';
+import { Fragment } from 'react';
 import Heading from '../Heading';
+import { FullBleedLine } from '../Layouts/BorderedSection';
 
+/*
+ * Diensten als vakken gescheiden door lijnen: 1 kolom op gsm, 2 op tablet, 3 op
+ * desktop. De rijlijn staat telkens voor het eerste vak van een nieuwe rij.
+ */
 const Services = ({ content }) => {
     const { title, subtitle, text, services } = content;
 
     return (
-        <div className='max-w-7xl mx-auto'>
-            <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
-                <div className='lg:-mb-4'>
-                    <Heading title={title} subtitle={subtitle} />
-                    {text && <div className="max-w-5xl mx-auto mb-8 lg:mb-0"
-                        dangerouslySetInnerHTML={{ __html: text }} />}
-                </div>
+        <section id="services">
+            <div className='max-w-7xl mx-auto'>
+                <Heading title={title} subtitle={subtitle} />
+                {text && <div className="max-w-5xl" dangerouslySetInnerHTML={{ __html: text }} />}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                <div className="relative mt-8 md:mt-10 xl:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <FullBleedLine className="absolute top-0" />
                     {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-center text-center shadow-md border 
-                            border-dark xl:border-opacity-10 border-opacity-20 rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-5 lg:p-6 
-                            relative justify-center transform transition-all duration-300 hover:scale-105 overflow-hidden"
-                            style={{ transitionDelay: `${index * 100}ms` }}
-                        >
-                            <div className="rounded-full bg-theme bg-opacity-5 p-3 
-                            sm:p-4 lg:p-5 mb-3 lg:mb-4">
-                                <div className="text-theme_dark">
-                                    {getServiceIcon(service.type)}
+                        <Fragment key={index}>
+                            {index > 0 && (
+                                <FullBleedLine className={`relative col-span-full ${index % 2 === 0 ? 'md:block' : 'md:hidden'} ${index % 3 === 0 ? 'lg:block' : 'lg:hidden'}`} />
+                            )}
+                            <div className={`flex flex-col items-center text-center px-6 py-10 lg:px-8 border-dark ${index % 2 === 1 ? 'md:border-l-[0.5px]' : ''} ${index % 3 === 0 ? 'lg:border-l-0' : 'lg:border-l-[0.5px]'}`}>
+                                <div className="rounded-full bg-theme bg-opacity-5 p-3 sm:p-4 lg:p-5 mb-3 lg:mb-4">
+                                    <div className="text-theme_dark">
+                                        {getServiceIcon(service.type)}
+                                    </div>
                                 </div>
+                                <h3 className="text-lg sm:text-xl font-semibold normal-case mb-2 sm:mb-3 text-gray-800 break-words hyphens-auto w-full px-1">
+                                    {service.title}
+                                </h3>
+                                <p className="text-sm sm:text-base text-gray-600 break-words">
+                                    {service.description}
+                                </p>
                             </div>
-                            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 
-                            text-gray-800 break-words hyphens-auto w-full px-1">
-                                {service.title}
-                            </h3>
-                            <p className="text-sm sm:text-base text-gray-600 break-words">
-                                {service.description}</p>
-                        </div>
+                        </Fragment>
                     ))}
                 </div>
-            </BlockLayoutOne>
-        </div>
+            </div>
+        </section>
     );
 };
 

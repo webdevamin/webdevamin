@@ -49,7 +49,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     </h1>
                     <div className={`mb-8 -mx-10 flex items-center 
                     justify-center md:hidden bg-transparent`}>
-                        <span className={`w-64 block bg-dark h-[1px]`} />
+                        <span className={`flex-1 border-t-[0.5px] border-dark`} />
                         <div className={`px-5 flex gap-5 text-opacity-70`}>
                             {
                                 socials.map((social, i) => {
@@ -67,7 +67,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                 })
                             }
                         </div>
-                        <span className={`w-64 block bg-dark h-[1px]`} />
+                        <span className={`flex-1 border-t-[0.5px] border-dark`} />
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
@@ -107,8 +107,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
             </div>
             <div className={`mt-20 hidden items-center md:flex -ml-10 
             pt-28 bg-transparent`}>
-                <span className={`w-64 block bg-dark h-[1px]`} />
-                <div className={`px-10 flex gap-8`}>
+                <div className={`pl-[18.5rem] pb-6 flex gap-8`}>
                     {
                         socials.map((social, i) => {
                             const { href, icon, title, hideFromHeader } = social;
@@ -125,8 +124,9 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                         })
                     }
                 </div>
-                <span className={`w-64 block -mr-10 bg-dark h-[1px]`} />
             </div>
+            {/* Onderrand van de hero en eerste lijn van het paginaraster; -mx-10 heft de padding van de hero op. */}
+            <div aria-hidden="true" className={`hidden md:block -mx-10 border-t-[0.5px] border-dark`} />
         </div>
     )
 }

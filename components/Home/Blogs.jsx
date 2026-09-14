@@ -16,7 +16,7 @@ const Blogs = ({ content, data }) => {
     const { href, text: buttonText } = button[0];
 
     return (
-        <BlockLayoutTwo title={title} slug={slug} position={`right`}>
+        <BlockLayoutTwo title={title} slug={slug} position={`right`} noPadding>
             <div className={`md:basis-5/12`}>
                 <Heading title={title} noSubtitle />
                 <div dangerouslySetInnerHTML={{ __html: text }} />

@@ -15,6 +15,12 @@
         }
     ],
     "alternateLangs": [],
+    "card": {
+        "title": "Restaurant website laten maken",
+        "text": "Een restaurant of horeca website met digitale menukaart en QR-code voor op tafel. Vanaf Premium reserveren gasten online, in Pro bestellen ze ook om af te halen.",
+        "price": "Vanaf €49/maand, met reservaties €69/maand",
+        "linkText": "Bekijk restaurant pakketten"
+    },
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",
@@ -142,7 +148,7 @@
                     "name": "Ik heb al een website. Kan ik overstappen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, overstappen kan. Ik bekijk eerst welke inhoud, domeinnaam, e-mailinstellingen en pagina's u nu heeft, en wat daarvan belangrijk is voor uw gasten en voor Google. Daarna bouw ik de nieuwe website en plan ik de overstap zo dat uw zaak online bereikbaar blijft. Nuttige teksten, foto's en uw menukaart neem ik mee, en wat verouderd is, maak ik duidelijker. Gebruikt u nu een aparte reservatietool, dan bespreken we of u overstapt naar het reservatiesysteem in Premium of Pro."
+                        "text": "Ja, overstappen kan. Ik bekijk eerst welke inhoud, domeinnaam, e-mailinstellingen en pagina's u nu heeft, en wat daarvan belangrijk is voor uw gasten en voor Google. Daarna bouw ik de nieuwe website en plan ik de overstap zo dat uw zaak online bereikbaar blijft. Nuttige teksten, foto's en uw menukaart neem ik mee, en wat verouderd is, maak ik duidelijker. Gebruikt u nu een apart reserveringssysteem, dan bespreken we of u overstapt naar het reservatiesysteem in Premium of Pro."
                     }
                 },
                 {
@@ -262,6 +268,12 @@
                 {
                     "@type": "ListItem",
                     "position": 2,
+                    "name": "Sectoren",
+                    "item": "https://webdevamin.com/nl/industry"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
                     "name": "Restaurant Website Laten Maken",
                     "item": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken"
                 }
@@ -1054,7 +1066,7 @@
                 },
                 {
                     "title": "Ik heb al een website. Kan ik overstappen?",
-                    "description": "Ja, overstappen kan. Ik bekijk eerst welke inhoud, domeinnaam, e-mailinstellingen en pagina's u nu heeft, en wat daarvan belangrijk is voor uw gasten en voor Google. Daarna bouw ik de nieuwe website en plan ik de overstap zo dat uw zaak online bereikbaar blijft. Nuttige teksten, foto's en uw menukaart neem ik mee, en wat verouderd is, maak ik duidelijker. Gebruikt u nu een aparte reservatietool, dan bespreken we of u overstapt naar het reservatiesysteem in Premium of Pro."
+                    "description": "Ja, overstappen kan. Ik bekijk eerst welke inhoud, domeinnaam, e-mailinstellingen en pagina's u nu heeft, en wat daarvan belangrijk is voor uw gasten en voor Google. Daarna bouw ik de nieuwe website en plan ik de overstap zo dat uw zaak online bereikbaar blijft. Nuttige teksten, foto's en uw menukaart neem ik mee, en wat verouderd is, maak ik duidelijker. Gebruikt u nu een apart reserveringssysteem, dan bespreken we of u overstapt naar het reservatiesysteem in Premium of Pro."
                 },
                 {
                     "title": "Hoe gaat u om met de gegevens van gasten?",

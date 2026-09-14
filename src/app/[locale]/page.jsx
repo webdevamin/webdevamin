@@ -16,6 +16,7 @@ import OneTimePayment from '../../../components/Home/OneTimePayment'
 import { notFound } from 'next/navigation'
 import { routing } from '../../i18n/routing'
 import JsonLd from '../../../components/SEO/JsonLd'
+import BorderedSection from '../../../components/Layouts/BorderedSection'
 
 async function getData(locale) {
   if (!routing.locales.includes(locale)) {
@@ -106,6 +107,10 @@ const Index = async ({ params: { locale } }) => {
   } = await getData(locale);
 
   const { alternateLangs, blocks } = pageData;
+  const whyAllInOne = blocks.find(block => block.slug === `why-all-in-one`);
+  const location = locale === 'nl' ? blocks.find(block => block.slug === 'location') : null;
+  const bruggeMeetup = locale === 'nl' ? blocks.find(block => block.slug === 'brugge-meetup') : null;
+  const oneTimePayment = blocks.find(block => block.slug === `pricing`)?.oneTimePayment;
 
   return (
     <>
@@ -113,26 +118,51 @@ const Index = async ({ params: { locale } }) => {
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} heroBannerData={heroBannerData} />
       <Hero content={blocks.find(block => block.slug === `hero`)} socials={socialsData} locale={locale} />
       <PageLayout>
-        <BlockNormal content={blocks.find(block => block.slug === `about`)} />
-        {blocks.find(block => block.slug === `why-all-in-one`) && (
-          <BlockNormal content={blocks.find(block => block.slug === `why-all-in-one`)} position='right' />
+        <BorderedSection>
+          <BlockNormal content={blocks.find(block => block.slug === `about`)} />
+        </BorderedSection>
+        {whyAllInOne && (
+          <BorderedSection>
+            <BlockNormal content={whyAllInOne} position='right' />
+          </BorderedSection>
         )}
-        <Services content={blocks.find(block => block.slug === `services`)} />
-        <Projects content={blocks.find(block => block.slug === `projects`)} data={projectsData} />
-        <Blogs content={blocks.find(block => block.slug === `blogs`)} data={blogsData} />
-        {locale === 'nl' && blocks.find(block => block.slug === 'location') && (
-          <Location content={blocks.find(block => block.slug === 'location')} />
+        <BorderedSection flushBottom>
+          <Services content={blocks.find(block => block.slug === `services`)} />
+        </BorderedSection>
+        <BorderedSection>
+          <Projects content={blocks.find(block => block.slug === `projects`)} data={projectsData} />
+        </BorderedSection>
+        <BorderedSection>
+          <Blogs content={blocks.find(block => block.slug === `blogs`)} data={blogsData} />
+        </BorderedSection>
+        {location && (
+          <BorderedSection>
+            <Location content={location} />
+          </BorderedSection>
         )}
-        {locale === 'nl' && blocks.find(block => block.slug === 'brugge-meetup') && (
-          <CallToAction content={blocks.find(block => block.slug === 'brugge-meetup')} />
+        {/* De wrappers met lg:mt-20 heffen de negatieve bovenmarge van CallToAction op, want de sectie erboven eindigt met vaste padding. */}
+        {bruggeMeetup && (
+          <div className="lg:mt-20">
+            <CallToAction content={bruggeMeetup} />
+          </div>
         )}
-        <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
-        <OneTimePayment content={blocks.find(block => block.slug === `pricing`)?.oneTimePayment} />
-        <CallToAction content={blocks.find(block => block.slug === 'cta')} />
-        <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
-        <div className="transition-all duration-500 rounded-xl">
-          <BlockAccordion content={blocks.find(block => block.component === `faq`)} center />
+        <BorderedSection line={!bruggeMeetup}>
+          <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
+        </BorderedSection>
+        {oneTimePayment && (
+          <BorderedSection>
+            <OneTimePayment content={oneTimePayment} />
+          </BorderedSection>
+        )}
+        <div className="lg:mt-20">
+          <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         </div>
+        <BorderedSection line={false} flushBottom>
+          <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
+        </BorderedSection>
+        <BorderedSection>
+          <BlockAccordion content={blocks.find(block => block.component === `faq`)} center />
+        </BorderedSection>
         <Contact content={contactBlockData} />
         <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
       </PageLayout>

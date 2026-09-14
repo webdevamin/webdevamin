@@ -39,7 +39,7 @@ function Choices({ label, options, value, onChange }) {
           type="button"
           aria-pressed={value === option.id}
           onClick={() => onChange(option.id)}
-          className={`min-h-11 rounded-md border-0 px-2.5 py-2 text-[11px] font-semibold transition-colors ${value === option.id ? 'bg-[#fff0f1] text-theme_darker' : 'bg-transparent text-[#777] hover:text-theme_darker'}`}
+          className={`min-h-11 rounded-md border-0 px-3 py-2 text-xs font-semibold sm:text-sm transition-colors ${value === option.id ? 'bg-[#fff0f1] text-theme_darker' : 'bg-transparent text-[#777] hover:text-theme_darker'}`}
         >
           {option.label}
         </button>
@@ -77,7 +77,7 @@ function CompactPreview({ feature, content }) {
       <div className="grid gap-[9px]">
         {demo.reservation.rows.map((row) => (
           <div
-            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-[13px] [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             key={row.id}
           >
             <span
@@ -116,12 +116,12 @@ function CompactPreview({ feature, content }) {
             setSelected(demo.messages.findIndex((item) => item.id === id))
           }
         />
-        <div className="mt-5 [&>svg]:mb-3 [&>svg]:text-theme_darker [&>strong]:block [&>strong]:text-sm">
+        <div className="mt-5 [&>svg]:mb-3 [&>svg]:text-theme_darker [&>strong]:block [&>strong]:text-base">
           <Mail size={20} />
           <strong>{message.subject}</strong>
           <p>{message.body}</p>
         </div>
-        <div className="flex items-center gap-2 text-[11px] text-[#818181]">
+        <div className="flex items-center gap-2 text-xs text-[#818181] sm:text-sm">
           <Clock3 size={14} />
           {message.timing}
         </div>
@@ -132,7 +132,7 @@ function CompactPreview({ feature, content }) {
       <div className="grid gap-[9px]">
         {demo.dishes.slice(0, 3).map((dish) => (
           <div
-            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-[13px] [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             key={dish.id}
           >
             <div>
@@ -148,7 +148,7 @@ function CompactPreview({ feature, content }) {
     const customer = demo.customers[selected]
     body = (
       <>
-        <div className="mb-5 flex items-center gap-3 [&>span]:grid [&>span]:h-10 [&>span]:w-10 [&>span]:place-items-center [&>span]:rounded-full [&>span]:bg-[#fff0f1] [&>span]:text-xs [&>span]:text-theme_darker [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181]">
+        <div className="mb-5 flex items-center gap-3 [&>span]:grid [&>span]:h-10 [&>span]:w-10 [&>span]:place-items-center [&>span]:rounded-full [&>span]:bg-[#fff0f1] [&>span]:text-xs [&>span]:text-theme_darker [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181]">
           <span>
             {customer.name
               .split(' ')
@@ -162,14 +162,14 @@ function CompactPreview({ feature, content }) {
             </small>
           </div>
         </div>
-        <div className="mb-[18px] [&_small]:mb-[5px] [&_small]:block [&_small]:text-[10px] [&_small]:text-[#818181] [&_strong]:text-xs [&_strong]:font-medium">
+        <div className="mb-[18px] [&_small]:mb-[5px] [&_small]:block [&_small]:text-xs [&_small]:text-[#818181] [&_strong]:text-sm [&_strong]:font-medium">
           <small>{l.preferences}</small>
           <strong>{customer.preference}</strong>
         </div>
         <div className="grid gap-[9px]">
           {customer.history.map((visit) => (
             <div
-              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-[13px] [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
               key={visit.date}
             >
               <span>{formatDate(visit.date)}</span>
@@ -192,7 +192,7 @@ function CompactPreview({ feature, content }) {
     )
   } else if (feature.id === 'reviews') {
     body = (
-      <div className="py-1.5 text-center [&>strong]:text-lg [&>div[role=status]]:mt-3 [&>div[role=status]]:text-left [&>div[role=status]]:text-[11px]">
+      <div className="py-1.5 text-center [&>strong]:text-lg [&>div[role=status]]:mt-3 [&>div[role=status]]:text-left [&>div[role=status]]:text-xs">
         <div
           className="mb-5 flex justify-center gap-[5px] text-theme"
           aria-hidden="true"
@@ -205,7 +205,7 @@ function CompactPreview({ feature, content }) {
         <p>{l.reviewBody}</p>
         <button
           type="button"
-          className="inline-flex min-h-11 items-center gap-2.5 rounded-[7px] bg-theme_darker px-3.5 py-2.5 text-[11px] text-white disabled:bg-[#f1f1f1] disabled:text-[#555]"
+          className="inline-flex min-h-11 items-center gap-2.5 rounded-[7px] bg-theme_darker px-3.5 py-2.5 text-xs text-white sm:text-sm disabled:bg-[#f1f1f1] disabled:text-[#555]"
           disabled={sent}
           onClick={() => setSent(true)}
         >
@@ -219,7 +219,7 @@ function CompactPreview({ feature, content }) {
     const dishes = demo.dishes.slice(2, 4)
     body = (
       <>
-        <div className="mb-4 flex justify-between gap-2.5 text-xs text-[#777]">
+        <div className="mb-4 flex justify-between gap-2.5 text-sm text-[#777]">
           <span>#001</span>
           <span>{c.orderMeta}</span>
         </div>
@@ -227,7 +227,7 @@ function CompactPreview({ feature, content }) {
           {dishes.map((dish) => (
             <div
               key={dish.id}
-              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-[13px] [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             >
               <div>
                 <strong>1 × {dish.name}</strong>
@@ -236,7 +236,7 @@ function CompactPreview({ feature, content }) {
             </div>
           ))}
         </div>
-        <div className="flex justify-between gap-2.5 pt-[18px] text-xs">
+        <div className="flex justify-between gap-2.5 pt-[18px] text-sm">
           <span>{l.total}</span>
           <strong>
             {money(dishes.reduce((sum, dish) => sum + dish.price, 0))}
@@ -265,7 +265,7 @@ function CompactPreview({ feature, content }) {
             setSelected(demo.periods.findIndex((item) => item.id === id))
           }
         />
-        <dl className="my-[22px] flex flex-wrap gap-5 [&_dt]:text-[10px] [&_dt]:text-[#818181] [&_dd]:mt-1.5 [&_dd]:text-[21px] [&_dd]:font-semibold [&_dd]:tracking-[-0.03em]">
+        <dl className="my-[22px] flex flex-wrap gap-5 [&_dt]:text-xs [&_dt]:text-[#818181] [&_dd]:mt-1.5 [&_dd]:text-2xl [&_dd]:font-semibold [&_dd]:tracking-[-0.03em]">
           <div>
             <dt>{l.reservations}</dt>
             <dd>{period.reservations}</dd>
@@ -279,7 +279,7 @@ function CompactPreview({ feature, content }) {
             <dd>{money(period.revenue)}</dd>
           </div>
         </dl>
-        <div className="grid gap-4 [&>div>div]:mb-2 [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:gap-2 [&>div>div]:text-[10px] [&>div>div]:text-[#777] [&_strong]:font-medium">
+        <div className="grid gap-4 [&>div>div]:mb-2 [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:gap-2 [&>div>div]:text-xs [&>div>div]:text-[#777] [&_strong]:font-medium">
           {period.busy.map((item) => (
             <div key={item.name}>
               <div>
@@ -302,17 +302,17 @@ function CompactPreview({ feature, content }) {
 
   return (
     <div
-      className={`relative mx-0 max-w-[480px] rounded-[14px] border border-[#e5e5e5] bg-white p-4 text-[13px] shadow-[0_16px_28px_-20px_#00000030,0_3px_6px_#00000005] sm:p-[22px] lg:mx-auto [&_p]:mt-2.5 [&_p]:mb-[18px] [&_p]:text-xs [&_p]:leading-[1.9] [&_p]:text-[#757575] [&_p]:opacity-100 ${notification ? 'mt-9 !pt-[42px]' : ''}`}
+      className={`relative mx-0 max-w-[520px] rounded-[14px] border border-[#e5e5e5] bg-white p-4 text-sm shadow-[0_16px_28px_-20px_#00000030,0_3px_6px_#00000005] sm:p-6 lg:mx-auto [&_p]:mt-2.5 [&_p]:mb-[18px] [&_p]:text-sm [&_p]:leading-[1.8] sm:[&_p]:text-[15px] [&_p]:text-[#757575] [&_p]:opacity-100 ${notification ? 'mt-9 !pt-[42px]' : ''}`}
     >
       {notification && (
         <div
-          className="absolute right-3 -top-[34px] flex items-center gap-2.5 rounded-xl border border-[#e5e5e5] bg-white px-4 py-3 shadow-[0_12px_24px_-14px_#00000030] [&_svg]:box-content [&_svg]:rounded-full [&_svg]:bg-[#fff0f1] [&_svg]:p-[9px] [&_svg]:text-theme_darker [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-[11px] [&_small]:leading-[1.6] [&_small]:text-[#818181]"
+          className="absolute right-3 -top-[34px] flex items-center gap-2.5 rounded-xl border border-[#e5e5e5] bg-white px-4 py-3 shadow-[0_12px_24px_-14px_#00000030] [&_svg]:box-content [&_svg]:rounded-full [&_svg]:bg-[#fff0f1] [&_svg]:p-[9px] [&_svg]:text-theme_darker [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181]"
           aria-hidden="true"
         >
           {notification}
         </div>
       )}
-      <div className="mb-5 flex items-center justify-between gap-3 text-[13px] font-bold sm:text-[15px] [&>span]:text-[10px] [&>span]:font-normal [&>span]:text-[#888]">
+      <div className="mb-5 flex items-center justify-between gap-3 text-[15px] font-bold sm:text-lg [&>span]:text-xs [&>span]:font-normal [&>span]:text-[#888]">
         {feature.title}
         <span>{c.sample}</span>
       </div>
@@ -391,7 +391,7 @@ export default function RestaurantFeatures({ content }) {
         </div>
         <nav
           aria-label={content.navigationLabel}
-          className="mt-8 mb-12 flex flex-wrap gap-x-6 gap-y-1 border-y border-[#dedbd7] py-5 [&_a]:flex [&_a]:min-h-11 [&_a]:items-center [&_a]:gap-2 [&_a]:text-xs [&_a]:font-semibold [&_a]:text-[#595550] [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-theme_darker [&_a[aria-current]]:text-theme_darker [&_a_span]:text-[10px] [&_a_span]:text-[#898078] motion-reduce:[&_a]:transition-none"
+          className="mt-8 mb-12 flex flex-wrap gap-x-6 gap-y-1 border-y border-[#dedbd7] py-5 [&_a]:flex [&_a]:min-h-11 [&_a]:items-center [&_a]:gap-2 [&_a]:text-sm [&_a]:font-semibold [&_a]:text-[#595550] [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-theme_darker [&_a[aria-current]]:text-theme_darker [&_a_span]:text-xs [&_a_span]:text-[#898078] motion-reduce:[&_a]:transition-none"
         >
           {content.features.map((feature, index) => (
             <a
@@ -424,7 +424,7 @@ export default function RestaurantFeatures({ content }) {
                   <div
                     className={`motion-reduce:!transform-none motion-reduce:transition-none lg:transition-[opacity,transform] lg:duration-[500ms,600ms] ${active === index ? 'lg:translate-y-0 lg:opacity-100' : 'lg:translate-y-4 lg:opacity-[0.35]'}`}
                   >
-                    <span className="mb-5 inline-block rounded-full bg-[#fff0f1] px-3.5 py-[7px] text-xs font-bold text-theme_darker">
+                    <span className="mb-5 inline-block rounded-full bg-[#fff0f1] px-3.5 py-[7px] text-xs font-bold text-theme_darker sm:text-sm">
                       {feature.badge}
                     </span>
                     <h3
@@ -434,10 +434,10 @@ export default function RestaurantFeatures({ content }) {
                     >
                       {feature.title}
                     </h3>
-                    <p className="mb-6 text-[15px] leading-[1.85] text-[#625c56] opacity-100">
+                    <p className="mb-6 text-base leading-[1.8] text-[#625c56] opacity-100 lg:text-lg">
                       {feature.description}
                     </p>
-                    <ul className="mt-7 mb-5 list-none p-0 [&_li]:relative [&_li]:border-t [&_li]:border-[#e4e4e4] [&_li]:py-3.5 [&_li]:pl-5 [&_li]:text-[13px] [&_li]:leading-[1.7] [&_li]:before:absolute [&_li]:before:top-[22px] [&_li]:before:left-0 [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:bg-theme">
+                    <ul className="mt-7 mb-5 list-none p-0 [&_li]:relative [&_li]:border-t [&_li]:border-[#e4e4e4] [&_li]:py-3.5 [&_li]:pl-5 [&_li]:text-base [&_li]:leading-[1.7] [&_li]:before:absolute [&_li]:before:top-[24px] [&_li]:before:left-0 [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:bg-theme lg:[&_li]:text-lg lg:[&_li]:before:top-[26px]">
                       {feature.bullets.map((bullet) => (
                         <li key={bullet}>{bullet}</li>
                       ))}
@@ -460,7 +460,7 @@ export default function RestaurantFeatures({ content }) {
             )
           })}
         </div>
-        <p className="-mt-7 max-w-[800px] p-0 text-[13px] leading-[1.8] lg:mt-0 lg:pt-[30px]">
+        <p className="-mt-7 max-w-[800px] p-0 text-sm leading-[1.8] lg:mt-0 lg:pt-[30px] lg:text-base">
           {content.optionNote}
         </p>
       </section>

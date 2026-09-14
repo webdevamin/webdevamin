@@ -1,10 +1,10 @@
 {
     "seo": {
         "title": "Taxi Website Laten Maken | Vanaf €49/maand All-In-One",
-        "description": "Laat uw taxi website maken vanaf €49 of €69 per maand met boekingssysteem met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "description": "Taxi website laten maken vanaf €49/maand, of €69/maand met eigen boekingssysteem en automatische ritprijs. Hosting, onderhoud en SEO inbegrepen.",
         "canonical": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
         "ogTitle": "Taxi Website Laten Maken | Vanaf €49/maand All-In-One",
-        "ogDescription": "Laat uw taxi website maken vanaf €49 of €69 per maand met boekingssysteem met gratis hosting, onderhoud en meer. Geen opstartkosten! Vraag gratis offerte aan!",
+        "ogDescription": "Taxi website laten maken vanaf €49/maand, of €69/maand met eigen boekingssysteem en automatische ritprijs. Hosting, onderhoud en SEO inbegrepen.",
         "image": "https://bucket.webdevamin.com/taxi-website-laten-maken_og.png",
         "keywords": "taxi website laten maken, taxibedrijf website €49, taxi boekingssysteem €69, taxi online reserveren, responsive taxi website, SEO voor taxi's, taxi website ontwerp, professionele taxi website"
     },
@@ -15,6 +15,12 @@
         }
     ],
     "alternateLangs": [],
+    "card": {
+        "title": "Taxi website laten maken",
+        "text": "Een taxi website waarop klanten zelf een rit boeken, met ophaaladres, bestemming en een automatisch berekende ritprijs. De aanvraag komt meteen per e-mail bij u binnen.",
+        "price": "Vanaf €49/maand, met boekingssysteem €69/maand",
+        "linkText": "Bekijk taxi pakketten"
+    },
     "jsonLd": {
         "localBusiness": {
             "@context": "https://schema.org",
@@ -73,6 +79,14 @@
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Voor een taxi website zijn vooral mobiele snelheid, duidelijke contactknoppen, lokale vindbaarheid, ritinformatie en een eenvoudig boekingsproces belangrijk. Klanten zoeken vaak onderweg op hun smartphone, dus ze moeten snel kunnen bellen, een rit aanvragen of een prijsindicatie bekijken. Bij het premium pakket kan het boekingssysteem ophaaladres, bestemming, prijs, kilometers en e-mailbevestiging ondersteunen. Dat maakt uw website niet alleen een online visitekaartje, maar ook een praktisch systeem dat minder telefoontjes, minder losse berichten en minder handmatige administratie vraagt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe werkt het boekingssysteem op mijn taxi website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Het boekingssysteem is een formulier op uw eigen taxi website waarmee klanten zelf een rit aanvragen. De klant vult het ophaaladres en de bestemming in, eventueel met tussenstops, en kiest datum en uur. Het systeem stelt de route voor en berekent automatisch het aantal kilometers en de ritprijs. Daarna ontvangen de klant en u een e-mail met alle ritgegevens. Het boekingssysteem zit in het Premium pakket van €69 per maand excl. BTW. Een live voorbeeld ziet u op de website van AN Taxi."
                     }
                 },
                 {
@@ -227,7 +241,7 @@
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Sectoren",
-                    "item": "https://webdevamin.com/nl"
+                    "item": "https://webdevamin.com/nl/industry"
                 },
                 {
                     "@type": "ListItem",
@@ -336,7 +350,7 @@
             "title": "Waarom All-In-One Pakket?",
             "subtitle": "Geen losse systemen, maar één compleet taxi pakket",
             "slug": "why-all-in-one",
-            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'/></svg></span>Een vaste prijs zonder losse technische zorgen</h3><p>Een all-in-one pakket voor uw taxibedrijf is <strong>voordelig en overzichtelijk</strong> omdat website, hosting, onderhoud, domeinnaam en support in één maandplan zitten. Dat betekent: geen losse facturen voor hosting, domeinnaam of e-mail en geen technische opvolging die op uw planning terechtkomt. U betaalt vanaf €49 per maand en kunt zich focussen op uw ritten, chauffeurs en klanten. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> voor meer informatie.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/></svg></span>Premium met boekingssysteem voor directe ritaanvragen</h3><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen, met eventuele tussenstops indien nodig. De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dat bespaart tijd, vermindert administratieve lasten en geeft klanten in België (of Nederland/Luxemburg) sneller duidelijkheid.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
+            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'/></svg></span>Een vaste prijs zonder losse technische zorgen</h3><p>Een all-in-one pakket voor uw taxibedrijf is <strong>voordelig en overzichtelijk</strong> omdat website, hosting, onderhoud, domeinnaam en support in één maandplan zitten. Dat betekent: geen losse facturen voor hosting, domeinnaam of e-mail en geen technische opvolging die op uw planning terechtkomt. U betaalt vanaf €49 per maand en kunt zich focussen op uw ritten, chauffeurs en klanten. Bekijk <a href='https://webdevamin.com/nl#pricing' title='Zakelijke website laten maken voor €49/maand' rel='noopener noreferrer' target='_blank'>de homepagina met de prijzen</a> voor meer informatie.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/></svg></span>Taxi website met boekingssysteem voor directe ritaanvragen</h3><p>Er is ook een <strong>premium</strong> pakket voor €69 per maand met een boekingssysteem. Bezoekers kunnen op uw website een rit boeken tussen twee adressen, met eventuele tussenstops indien nodig. De applicatie stelt automatisch de route voor en berekent het aantal kilometers en de prijs. Dat bespaart tijd, vermindert administratieve lasten en geeft klanten in België (of Nederland/Luxemburg) sneller duidelijkheid.</p><p>Dankzij deze integratie worden routes automatisch voorgesteld en hoeft u de adressen niet zelf volledig in te vullen. De prijzen zijn <strong>excl. BTW</strong>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -397,19 +411,16 @@
             "description": "<p>AN Taxi wilde hun online aanwezigheid versterken en meer directe boekingen genereren. Om dit te bereiken, heb ik een volledige taxi website ontwikkeld met moderne functionaliteiten zoals een contactformulier, automatische e-mailbevestigingen en herinneringen, routebeschrijving, prijscalculator en een boekingssysteem. Bekijk <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>de website</a> voor meer informatie.</p>",
             "highlights": [
                 {
-                    "number": "70%",
-                    "title": "Tijdsbesparing",
-                    "description": "Automatisering van boekingen en administratie bespaart dagelijks uren werk"
+                    "number": "24/7",
+                    "title": "Ritten online boeken"
                 },
                 {
-                    "number": "80%",
-                    "title": "Meer klanten",
-                    "description": "Online zichtbaarheid en professionele uitstraling trekken meer klanten aan"
+                    "number": "1",
+                    "title": "Eigen boekingssysteem"
                 },
                 {
-                    "number": "300%",
-                    "title": "Meer conversies",
-                    "description": "Supergoede website met optimale gebruikerservaring verhoogt boekingen"
+                    "number": "100%",
+                    "title": "Op maat gebouwd"
                 }
             ],
             "project": {
@@ -519,7 +530,7 @@
             "text": "Hieronder vindt u een lijst met veelgestelde vragen over taxi website ontwikkeling. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
             "items": [
                 {
-                    "title": "Hoeveel kost het om een taxi site te laten maken?",
+                    "title": "Hoeveel kost het om een taxi website te laten maken?",
                     "description": "Een professionele taxi website kost vanaf <strong>€49 per maand excl. BTW</strong> voor een zakelijke website met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Wilt u ook online ritten laten boeken via uw eigen website, dan is het pakket van <strong>€69 per maand excl. BTW</strong> beter geschikt. Dat pakket bevat een boekingssysteem met ritgegevens, automatische e-mailbevestiging en praktische functies die administratie verminderen. Zo weet u vooraf wat u betaalt en hoeft u geen aparte leverancier te zoeken voor hosting, onderhoud of technische opvolging."
                 },
                 {
@@ -531,11 +542,15 @@
                     "description": "Voor een taxi website zijn vooral mobiele snelheid, duidelijke contactknoppen, lokale vindbaarheid, ritinformatie en een eenvoudig boekingsproces belangrijk. Klanten zoeken vaak onderweg op hun smartphone, dus ze moeten snel kunnen bellen, een rit aanvragen of een prijsindicatie bekijken. Bij het premium pakket kan het boekingssysteem ophaaladres, bestemming, prijs, kilometers en e-mailbevestiging ondersteunen. Dat maakt uw website niet alleen een online visitekaartje, maar ook een praktisch systeem dat minder telefoontjes, minder losse berichten en minder handmatige administratie vraagt."
                 },
                 {
+                    "title": "Hoe werkt het boekingssysteem op mijn taxi website?",
+                    "description": "Het boekingssysteem is een formulier op uw eigen taxi website waarmee klanten zelf een rit aanvragen. De klant vult het ophaaladres en de bestemming in, eventueel met tussenstops, en kiest datum en uur. Het systeem stelt de route voor en berekent automatisch het aantal kilometers en de ritprijs. Daarna ontvangen de klant en u een e-mail met alle ritgegevens. Het boekingssysteem zit in het <strong>Premium pakket van €69 per maand excl. BTW</strong>. Een live voorbeeld ziet u op de website van <a href='https://antaxi.be' target='_blank' rel='noopener noreferrer'>AN Taxi</a>."
+                },
+                {
                     "title": "Ik heb al een bestaande website. Kan ik overstappen?",
                     "description": "Ja, overstappen kan. Als u al een taxi website heeft, bekijk ik eerst welke inhoud, domeinnaam, e-mailinstellingen en bestaande pagina's belangrijk zijn. Daarna kan ik de nieuwe website netjes opbouwen en de overstap plannen, zodat uw online aanwezigheid niet onnodig onderbroken wordt. Waar mogelijk neem ik nuttige teksten, afbeeldingen en structuur mee, maar ik verbeter ook wat verouderd of onduidelijk is. Zo krijgt u een modernere website zonder dat u helemaal opnieuw moet uitzoeken wat er online moet staan."
                 },
                 {
-                    "title": "Zal de website mobiel optimaliseerd zijn?",
+                    "title": "Zal de website mobiel geoptimaliseerd zijn?",
                     "description": "Ja, elke taxi website wordt responsive gebouwd, zodat de pagina goed werkt op smartphone, tablet en desktop. Dat is extra belangrijk voor taxibedrijven, omdat veel klanten zoeken wanneer ze onderweg zijn of snel vervoer nodig hebben. De belangrijkste acties, zoals bellen, een offerte aanvragen of een rit boeken, blijven daarom makkelijk bereikbaar op kleine schermen. Ook afbeeldingen, tekstblokken en pricing cards worden mobiel gecontroleerd, zodat de pagina niet alleen technisch past, maar ook professioneel aanvoelt voor klanten die snel willen beslissen."
                 },
                 {

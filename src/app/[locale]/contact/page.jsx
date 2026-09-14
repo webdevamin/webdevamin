@@ -4,6 +4,7 @@ import Heading from '../../../../components/Heading';
 import Footer from '../../../../components/Layouts/Footer';
 import HeroOne from '../../../../components/Heroes/HeroOne';
 import ContactForm from '../../../../components/ContactForm';
+import BorderedSection from '../../../../components/Layouts/BorderedSection';
 
 async function getData(locale) {
     const localesData = (await import(`../../../../messages/${locale}/locales.json`)).default;
@@ -81,13 +82,15 @@ const Contact = async ({ params: { locale } }) => {
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
             <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
             <PageLayout>
-                <div id={slug} className={`block_container sm:text-center`}>
-                    <Heading title={title4} subtitle={subtitle} />
-                    <div className={`mt-7 sm:mt-10 xl:mt-16 max-w-4xl mx-auto`}>
-                        <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
-                        <ContactForm content={blocks} formText={formTexts} />
+                <BorderedSection>
+                    <div id={slug} className={`block_container sm:text-center`}>
+                        <Heading title={title4} subtitle={subtitle} />
+                        <div className={`mt-7 sm:mt-10 xl:mt-16 max-w-4xl mx-auto`}>
+                            <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
+                            <ContactForm content={blocks} formText={formTexts} />
+                        </div>
                     </div>
-                </div>
+                </BorderedSection>
                 <Footer blogs={blogsData} socials={socialsData} pages={pagesData} />
             </PageLayout>
         </>
