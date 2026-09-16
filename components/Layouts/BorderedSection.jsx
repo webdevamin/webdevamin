@@ -17,8 +17,8 @@ export const FullBleedLine = ({ className = '' }) => (
  * zit (zoals Services), zodat de ruimte boven en onder elke lijn gelijk is. Met
  * flushBottom loopt een raster onderaan door tot aan de lijn van de volgende sectie;
  * met flushTop begint het raster meteen onder de lijn van deze sectie.
- * Vanaf tablet is de onderrand van de hero de eerste lijn, dus de eerste sectie
- * tekent daar geen eigen lijn en begint meteen onder de hero. Een benoemde groep
+ * Vanaf tablet tekent PageLayout de eerste lijn direct onder de hero, dus de eerste
+ * sectie tekent daar geen eigen lijn en begint meteen onder die lijn. Een benoemde groep
  * (group/section) voorkomt dat de gewone `group` van CardTwo mee reageert.
  */
 const BorderedSection = ({ children, line = true, flushTop = false, flushBottom = false }) => (

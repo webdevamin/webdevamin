@@ -40,7 +40,8 @@ async function getData(locale) {
   }
 }
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   if (locale !== 'nl') {
     return {}
   }
@@ -87,7 +88,8 @@ export async function generateMetadata({ params: { locale } }) {
   }
 }
 
-const IndustriesPage = async ({ params: { locale } }) => {
+const IndustriesPage = async ({ params }) => {
+  const { locale } = await params;
   const {
     localesData,
     socialsData,
@@ -99,6 +101,7 @@ const IndustriesPage = async ({ params: { locale } }) => {
   } = await getData(locale)
 
   const { alternateLangs, blocks } = pageData
+  const sectoren = blocks.find(block => block.slug === 'sectoren')
 
   return (
     <>
@@ -106,8 +109,9 @@ const IndustriesPage = async ({ params: { locale } }) => {
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
       <HeroOne content={blocks.find(block => block.slug === 'hero')} socials={socialsData} />
       <PageLayout>
-        <BorderedSection>
-          <IndustryCards content={blocks.find(block => block.slug === 'sectoren')} cards={industryCards} />
+        {/* De sectie eindigt met het raster, en de lijn van de volgende sectie sluit het af. */}
+        <BorderedSection flushBottom>
+          <IndustryCards content={sectoren} cards={[...industryCards, pageData.otherCard]} />
         </BorderedSection>
         <BorderedSection>
           <BlockNormal content={blocks.find(block => block.slug === 'why-per-sector')} />

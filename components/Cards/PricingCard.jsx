@@ -30,9 +30,9 @@ export function PricingCard({
     const locale = useLocale();
     const isDutch = locale === 'nl';
 
-    // plain: zonder kaartrand en schaduw, voor een raster waarin lijnen de pakketten scheiden.
+    // plain: zonder kaartrand, schaduw en zijpadding; LineGrid geeft de vakken hun padding en lijnen.
     const frameClasses = plain
-        ? `p-6 sm:p-8 lg:p-10 ${popular ? 'border-t-[3px] border-theme' : ''}`
+        ? 'py-6 sm:py-8 lg:py-10'
         : `rounded-3xl border bg-white p-6 transition-all duration-300 ${popular
             ? 'border-2 border-theme shadow-2xl lg:-translate-y-3'
             : 'border-gray-200 shadow-md hover:shadow-xl'
@@ -41,7 +41,7 @@ export function PricingCard({
     return (
         <div className={`flex flex-col h-full ${frameClasses} ${className}`}>
             <div className="flex-grow">
-                <div className="mb-2 flex min-h-[2rem] items-center gap-6">
+                <div className="mb-2 flex min-h-[2rem] flex-wrap items-center gap-x-6 gap-y-2">
                     <h5 className="text-xl font-semibold text-slate-900">
                         {title}
                     </h5>
@@ -56,7 +56,7 @@ export function PricingCard({
                         {tagline}
                     </p>
                 )}
-                <div className="mb-5 flex items-end gap-1 text-slate-900">
+                <div className="mb-5 flex flex-wrap items-end gap-1 text-slate-900">
                     <span className="text-2xl font-semibold">{currency}</span>
                     <span className="text-5xl font-extrabold tracking-tight">{price}</span>
                     <span className="mb-1 ml-1 text-sm font-medium text-slate-500 sm:text-base">
@@ -65,7 +65,7 @@ export function PricingCard({
                 </div>
                 {limitLabel && (
                     <div className="mb-5 text-left">
-                        <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
+                        <span className="inline-flex rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-2 sm:rounded-full sm:px-5 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
                             {limitLabel}
                         </span>
                         {microcopy && (

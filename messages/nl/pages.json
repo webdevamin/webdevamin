@@ -27,7 +27,11 @@
                 "href": "/industry/restaurant-website-laten-maken"
             },
             {
-                "title": "Alle sectoren",
+                "title": "Andere sectoren",
+                "href": "/"
+            },
+            {
+                "title": "Overzicht sectoren",
                 "href": "/industry",
                 "borderTop": true
             }

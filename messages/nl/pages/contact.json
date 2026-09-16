@@ -3,7 +3,7 @@
         "title": "Contacteer me: offerte & vragen",
         "description": "Vragen/opmerkingen? Of heeft u een website, logo design of iets anders nodig? Aarzel dan niet om contact met mij op te nemen. Dezelfde dag antwoord!",
         "canonical": "https://webdevamin.com/nl/contact",
-        "image": "https://bucket.webdevamin.com/contact_nl.jpg",
+        "image": "https://webdevamin.com/images/contact_nl.jpg",
         "ogTitle": "Contacteer me: offerte & vragen",
         "ogDescription": "Vragen/opmerkingen? Of heeft u een website, logo design of iets anders nodig? Aarzel dan niet om contact met mij op te nemen. Dezelfde dag antwoord!"
     },
@@ -43,7 +43,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/contact.svg",
+                "src": "/images/contact.svg",
                 "alt": "Persoon zit op de bank en maakt een selfie met bergen op het achtergrond.",
                 "width": 499,
                 "height": 371,

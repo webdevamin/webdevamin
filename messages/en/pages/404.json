@@ -34,7 +34,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/404.svg",
+                "src": "/images/404.svg",
                 "alt": "Decoration number 404 with mountains in the background.",
                 "width": 540,
                 "height": 385,

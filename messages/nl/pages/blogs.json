@@ -3,7 +3,7 @@
         "title": "Blogs over verschillende onderwerpen",
         "description": "Interessante topics, verhalen en gidsen over IT, development, webdesign, freelance en meer.",
         "canonical": "https://webdevamin.com/nl/blogs",
-        "image": "https://bucket.webdevamin.com/blogs_nl.jpg",
+        "image": "https://webdevamin.com/images/blogs_nl.jpg",
         "ogTitle": "Blogs over verschillende onderwerpen",
         "ogDescription": "Interessante topics, verhalen en gidsen over IT, development, webdesign, freelance en meer."
     },
@@ -43,7 +43,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/blogging.svg",
+                "src": "/images/blogging.svg",
                 "alt": "Staande persoon schrijft een blog.",
                 "width": 400,
                 "height": 402,

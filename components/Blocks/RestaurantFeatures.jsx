@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import BlockLayoutOne from '../Layouts/BlockLayoutOne'
 import Heading from '../Heading'
+import { FullBleedLine } from '../Layouts/BorderedSection'
 
 const dateFormat = new Intl.DateTimeFormat('nl-BE', {
   day: 'numeric',
@@ -74,10 +75,10 @@ function CompactPreview({ feature, content }) {
 
   if (feature.id === 'reservaties') {
     body = (
-      <div className="grid gap-[9px]">
+      <div className="grid gap-[9px] lg:flex-1 lg:auto-rows-fr">
         {demo.reservation.rows.map((row) => (
           <div
-            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 lg:p-[18px] [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             key={row.id}
           >
             <span
@@ -116,7 +117,7 @@ function CompactPreview({ feature, content }) {
             setSelected(demo.messages.findIndex((item) => item.id === id))
           }
         />
-        <div className="mt-5 [&>svg]:mb-3 [&>svg]:text-theme_darker [&>strong]:block [&>strong]:text-base">
+        <div className="mt-5 rounded-[10px] border border-[#e8e8e8] p-4 lg:flex lg:flex-1 lg:flex-col lg:justify-center [&>svg]:mb-3 [&>svg]:text-theme_darker [&>strong]:block [&>strong]:text-base [&>p]:mb-0">
           <Mail size={20} />
           <strong>{message.subject}</strong>
           <p>{message.body}</p>
@@ -129,10 +130,10 @@ function CompactPreview({ feature, content }) {
     )
   } else if (feature.id === 'menukaart') {
     body = (
-      <div className="grid gap-[9px]">
-        {demo.dishes.slice(0, 3).map((dish) => (
+      <div className="grid gap-[9px] lg:flex-1 lg:auto-rows-fr">
+        {demo.dishes.slice(0, 4).map((dish) => (
           <div
-            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+            className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 lg:p-[18px] [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             key={dish.id}
           >
             <div>
@@ -166,10 +167,14 @@ function CompactPreview({ feature, content }) {
           <small>{l.preferences}</small>
           <strong>{customer.preference}</strong>
         </div>
+        <div className="mb-[18px] [&_small]:mb-[5px] [&_small]:block [&_small]:text-xs [&_small]:text-[#818181] [&_strong]:text-sm [&_strong]:font-medium">
+          <small>{l.notes}</small>
+          <strong>{customer.notes}</strong>
+        </div>
         <div className="grid gap-[9px]">
           {customer.history.map((visit) => (
             <div
-              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 lg:p-[18px] [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
               key={visit.date}
             >
               <span>{formatDate(visit.date)}</span>
@@ -192,20 +197,22 @@ function CompactPreview({ feature, content }) {
     )
   } else if (feature.id === 'reviews') {
     body = (
-      <div className="py-1.5 text-center [&>strong]:text-lg [&>div[role=status]]:mt-3 [&>div[role=status]]:text-left [&>div[role=status]]:text-xs">
-        <div
-          className="mb-5 flex justify-center gap-[5px] text-theme"
-          aria-hidden="true"
-        >
-          {Array.from({ length: 5 }, (_, index) => (
-            <Star key={index} size={20} />
-          ))}
+      <div className="py-1.5 text-center lg:flex lg:flex-1 lg:flex-col [&>div[role=status]]:mt-3 [&>div[role=status]]:text-left [&>div[role=status]]:text-xs">
+        <div className="rounded-[10px] border border-[#e8e8e8] p-4 lg:flex lg:flex-1 lg:flex-col lg:justify-center [&_p]:mb-0">
+          <div
+            className="mb-5 flex justify-center gap-[5px] text-theme"
+            aria-hidden="true"
+          >
+            {Array.from({ length: 5 }, (_, index) => (
+              <Star key={index} size={20} />
+            ))}
+          </div>
+          <strong className="text-lg">{l.reviewTitle}</strong>
+          <p>{l.reviewBody}</p>
         </div>
-        <strong>{l.reviewTitle}</strong>
-        <p>{l.reviewBody}</p>
         <button
           type="button"
-          className="inline-flex min-h-11 items-center gap-2.5 rounded-[7px] bg-theme_darker px-3.5 py-2.5 text-xs text-white sm:text-sm disabled:bg-[#f1f1f1] disabled:text-[#555]"
+          className="mt-5 inline-flex min-h-11 items-center gap-2.5 rounded-[7px] bg-theme_darker px-3.5 py-2.5 text-xs text-white sm:text-sm lg:self-center disabled:bg-[#f1f1f1] disabled:text-[#555]"
           disabled={sent}
           onClick={() => setSent(true)}
         >
@@ -216,18 +223,18 @@ function CompactPreview({ feature, content }) {
       </div>
     )
   } else if (feature.id === 'bestellingen') {
-    const dishes = demo.dishes.slice(2, 4)
+    const dishes = demo.dishes.slice(1, 5)
     body = (
       <>
         <div className="mb-4 flex justify-between gap-2.5 text-sm text-[#777]">
           <span>#001</span>
           <span>{c.orderMeta}</span>
         </div>
-        <div className="grid gap-[9px]">
+        <div className="grid gap-[9px] lg:flex-1 lg:auto-rows-fr">
           {dishes.map((dish) => (
             <div
               key={dish.id}
-              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
+              className="flex min-w-0 items-center gap-2 rounded-[10px] border border-[#e8e8e8] p-3 sm:gap-3 sm:p-3.5 lg:p-[18px] [&>div]:min-w-0 [&>div]:flex-1 [&_strong]:block [&_strong]:text-sm [&_strong]:font-semibold [&_small]:mt-[3px] [&_small]:block [&_small]:text-xs [&_small]:leading-[1.6] [&_small]:text-[#818181] [&_em]:ml-auto [&_em]:shrink-0 [&_em]:text-sm [&_em]:font-semibold [&_em]:not-italic [&_em]:text-theme_darker"
             >
               <div>
                 <strong>1 × {dish.name}</strong>
@@ -279,6 +286,17 @@ function CompactPreview({ feature, content }) {
             <dd>{money(period.revenue)}</dd>
           </div>
         </dl>
+        <div className="mb-[22px] [&>small]:mb-2 [&>small]:block [&>small]:text-xs [&>small]:text-[#818181]">
+          <small>{l.popular}</small>
+          <div className="grid gap-2 [&>div]:flex [&>div]:justify-between [&>div]:gap-2 [&>div]:text-sm [&_strong]:font-semibold [&_strong]:text-theme_darker">
+            {period.popular.map((item) => (
+              <div key={item.name}>
+                <span>{item.name}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="grid gap-4 [&>div>div]:mb-2 [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:gap-2 [&>div>div]:text-xs [&>div>div]:text-[#777] [&_strong]:font-medium">
           {period.busy.map((item) => (
             <div key={item.name}>
@@ -302,7 +320,7 @@ function CompactPreview({ feature, content }) {
 
   return (
     <div
-      className={`relative mx-0 max-w-[520px] rounded-[14px] border border-[#e5e5e5] bg-white p-4 text-sm shadow-[0_16px_28px_-20px_#00000030,0_3px_6px_#00000005] sm:p-6 lg:mx-auto [&_p]:mt-2.5 [&_p]:mb-[18px] [&_p]:text-sm [&_p]:leading-[1.8] sm:[&_p]:text-[15px] [&_p]:text-[#757575] [&_p]:opacity-100 ${notification ? 'mt-9 !pt-[42px]' : ''}`}
+      className={`relative mx-0 max-w-[520px] rounded-[14px] border border-[#e5e5e5] bg-white p-4 text-sm shadow-[0_16px_28px_-20px_#00000030,0_3px_6px_#00000005] sm:p-6 lg:mx-auto lg:flex lg:flex-col lg:min-h-[min(520px,calc(100dvh-300px))] [&_p]:mt-2.5 [&_p]:mb-[18px] [&_p]:text-sm [&_p]:leading-[1.8] sm:[&_p]:text-[15px] [&_p]:text-[#757575] [&_p]:opacity-100 ${notification ? 'mt-9 !pt-[42px]' : ''}`}
     >
       {notification && (
         <div
@@ -316,7 +334,9 @@ function CompactPreview({ feature, content }) {
         {feature.title}
         <span>{c.sample}</span>
       </div>
-      {body}
+      <div className="lg:flex lg:flex-1 lg:flex-col lg:justify-between">
+        {body}
+      </div>
     </div>
   )
 }
@@ -391,8 +411,10 @@ export default function RestaurantFeatures({ content }) {
         </div>
         <nav
           aria-label={content.navigationLabel}
-          className="mt-8 mb-12 flex flex-wrap gap-x-6 gap-y-1 border-y border-[#dedbd7] py-5 [&_a]:flex [&_a]:min-h-11 [&_a]:items-center [&_a]:gap-2 [&_a]:text-sm [&_a]:font-semibold [&_a]:text-[#595550] [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-theme_darker [&_a[aria-current]]:text-theme_darker [&_a_span]:text-xs [&_a_span]:text-[#898078] motion-reduce:[&_a]:transition-none"
+          className="relative mt-8 flex flex-wrap gap-x-6 gap-y-1 py-5 [&_a]:flex [&_a]:min-h-11 [&_a]:items-center [&_a]:gap-2 [&_a]:text-sm [&_a]:font-semibold [&_a]:text-[#595550] [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-theme_darker [&_a[aria-current]]:text-theme_darker [&_a_span]:text-xs [&_a_span]:text-[#898078] motion-reduce:[&_a]:transition-none"
         >
+          {/* De onderlijn van dit menu is de bovenlijn van de kolommen hieronder. */}
+          <FullBleedLine className="absolute top-0" />
           {content.features.map((feature, index) => (
             <a
               key={feature.id}
@@ -404,7 +426,9 @@ export default function RestaurantFeatures({ content }) {
             </a>
           ))}
         </nav>
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-[clamp(24px,4vw,72px)]">
+        {/* Zelfde regels als LineGrid: op desktop van zijlijn tot zijlijn, met evenveel ruimte aan beide kanten van de scheidingslijn. */}
+        <div className="relative py-10 lg:grid lg:grid-cols-2 lg:items-start lg:py-0 xl:-mx-[calc(100%/22)]">
+          <FullBleedLine className="absolute top-0" />
           {content.features.map((feature, index) => {
             return (
               <section
@@ -412,12 +436,14 @@ export default function RestaurantFeatures({ content }) {
                 className="block mb-0 lg:contents"
                 aria-labelledby={`restaurant-${feature.id}-title`}
               >
+                {/* Op gsm en tablet een lijn tussen de functies; op desktop staan ze naast de voorbeeldkolom. */}
+                {index > 0 && <FullBleedLine className="relative my-10 lg:hidden" />}
                 <div
                   id={`restaurant-${feature.id}`}
                   ref={(element) => {
                     copies.current[index] = element
                   }}
-                  className="scroll-mt-[110px] pb-6 lg:col-start-1 lg:flex lg:min-h-[90vh] lg:scroll-mt-0 lg:items-center lg:py-[70px]"
+                  className="scroll-mt-[110px] pb-6 lg:col-start-1 lg:flex lg:min-h-[90vh] lg:scroll-mt-0 lg:items-center lg:py-[70px] lg:pr-8 xl:px-12"
                   data-active={active === index}
                   style={{ gridRow: index + 1 }}
                 >
@@ -448,7 +474,7 @@ export default function RestaurantFeatures({ content }) {
                   ref={(element) => {
                     demos.current[index] = element
                   }}
-                  className={`min-w-0 lg:sticky lg:top-[150px] lg:col-start-2 lg:-mx-4 lg:mt-[120px] lg:max-h-[calc(100dvh-180px)] lg:self-start lg:overflow-y-auto lg:px-4 lg:pb-4 lg:pt-10 lg:[scrollbar-width:thin] motion-reduce:!animate-none ${active === index ? 'lg:block lg:animate-restaurant-reveal' : 'lg:hidden'}`}
+                  className={`min-w-0 lg:sticky lg:top-[150px] lg:col-start-2 lg:mt-[120px] lg:max-h-[calc(100dvh-180px)] lg:self-start lg:overflow-y-auto lg:pl-8 lg:pr-4 xl:px-12 lg:pb-4 lg:pt-10 lg:[scrollbar-width:thin] motion-reduce:!animate-none ${active === index ? 'lg:block lg:animate-restaurant-reveal' : 'lg:hidden'}`}
                   data-active={active === index}
                   style={{ gridRow: `1 / span ${content.features.length}` }}
                 >
@@ -460,7 +486,7 @@ export default function RestaurantFeatures({ content }) {
             )
           })}
         </div>
-        <p className="-mt-7 max-w-[800px] p-0 text-sm leading-[1.8] lg:mt-0 lg:pt-[30px] lg:text-base">
+        <p className="mt-8 lg:mt-10 max-w-[800px] p-0 text-sm leading-[1.8] lg:text-base">
           {content.optionNote}
         </p>
       </section>

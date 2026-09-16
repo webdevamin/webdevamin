@@ -37,8 +37,8 @@
                 "@type": "PostalAddress",
                 "addressCountry": "BE",
                 "addressLocality": "Brugge",
-                "postalCode": "8000",
-                "streetAddress": "Rodenonnenstraat 21"
+                "postalCode": "8310",
+                "streetAddress": "Zuiderakker 18"
             },
             "areaServed": [
                 {
@@ -179,8 +179,8 @@
                     "@type": "PostalAddress",
                     "addressCountry": "BE",
                     "addressLocality": "Brugge",
-                    "postalCode": "8000",
-                    "streetAddress": "Rodenonnenstraat 21"
+                    "postalCode": "8310",
+                    "streetAddress": "Zuiderakker 18"
                 }
             },
             "audience": {
@@ -314,7 +314,7 @@
                 "Afhalen & bestellen",
                 "Meertalig",
                 "Mobiel Geoptimaliseerd",
-                "Gratis SEO"
+                "SEO Inbegrepen"
             ]
         },
         {
@@ -616,6 +616,28 @@
                             "party": 2,
                             "table": "02",
                             "requests": ""
+                        },
+                        {
+                            "id": "sample-3",
+                            "name": "Noor Willems",
+                            "email": "noor@example.com",
+                            "phone": "+32 470 00 00 03",
+                            "date": "2026-09-18",
+                            "time": "19:30",
+                            "party": 3,
+                            "table": "06",
+                            "requests": "Viert een verjaardag"
+                        },
+                        {
+                            "id": "sample-4",
+                            "name": "Sam De Clercq",
+                            "email": "sam@example.com",
+                            "phone": "+32 470 00 00 04",
+                            "date": "2026-09-18",
+                            "time": "20:00",
+                            "party": 2,
+                            "table": "01",
+                            "requests": ""
                         }
                     ]
                 },
@@ -880,6 +902,8 @@
         {
             "slug": "review",
             "component": "review",
+            "title": "Beoordelingen",
+            "subtitle": "Klantenreviews",
             "reviews": [
                 {
                     "name": "Robert Chen",
@@ -901,7 +925,7 @@
             "subtitle": "Prijzen voor restaurants en horeca",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Kies de <strong>Standaard website voor €49 per maand</strong>, <strong>Premium met online reservaties voor €69 per maand</strong> of <strong>Pro met online bestellen en meertaligheid voor €119 per maand</strong>. In elk pakket zitten hosting, onderhoud, domeinnaam, SEO en support.</p><p>Een reservatie is één boeking, ongeacht het aantal gasten. U betaalt nooit een commissie per gast, per reservatie of per bestelling. Prijzen bijgewerkt: september 2026. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Kies de <strong>Standaard website voor €49 per maand</strong>, <strong>Premium met online reservaties voor €69 per maand</strong> of <strong>Pro met online bestellen en meertaligheid voor €119 per maand</strong>. In elk pakket zitten hosting, onderhoud, domeinnaam, SEO en support.</p><p>Een reservatie is één boeking, ongeacht het aantal gasten. U betaalt nooit een commissie per gast, per reservatie of per bestelling. Prijzen bijgewerkt: september 2026. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
             "items": [
                 {
                     "title": "Standaard",
@@ -913,13 +937,13 @@
                         "Op maat <strong>restaurant website</strong>",
                         "<strong>Digitale menukaart</strong> met QR-code",
                         "Openingsuren, route & <strong>belknop</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>"
                     ],
                     "excludedFeatures": [
@@ -943,13 +967,13 @@
                         "Op maat <strong>restaurant website</strong>",
                         "<strong>Digitale menukaart</strong> met QR-code",
                         "Openingsuren, route & <strong>belknop</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>reservatiesysteem</strong>",
                         "Bevestiging per <strong>e-mail</strong> voor elke gast",
@@ -974,13 +998,13 @@
                         "Op maat <strong>restaurant website</strong>",
                         "<strong>Digitale menukaart</strong> met QR-code",
                         "Openingsuren, route & <strong>belknop</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>reservatiesysteem</strong>",
                         "Bevestiging per <strong>e-mail</strong> voor elke gast",
@@ -1003,9 +1027,9 @@
                         "Meer dan <strong>500 reservaties of bestellingen</strong> per maand",
                         "Extra functionaliteiten en koppelingen <strong>op maat</strong>",
                         "Uniek <strong>ontwerp</strong> en <strong>branding</strong>",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "24/7 <strong>support</strong>"
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>"
                     ],
                     "excludedFeatures": [],
                     "description": "Heeft uw zaak meerdere vestigingen, een hotel erbij of meer volume dan in Pro past? Dan werk ik een pakket op maat uit met een vaste maandprijs, ook dan zonder commissie per reservatie of bestelling.",

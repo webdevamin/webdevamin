@@ -8,15 +8,16 @@ import SocialShares from '../../../../../components/SocialShares';
 import BorderedSection from '../../../../../components/Layouts/BorderedSection';
 import styles from '../../../../../styles/BlogPage.module.scss';
 import { notFound } from 'next/navigation';
+import cloudflareLoader from '../../../../../imageLoader';
 
 const optimizeEmbeddedImages = (html) => html
     .replaceAll(
-        "src='https://bucket.webdevamin.com/map.png' objectFit='cover'",
-        "src='https://bucket.webdevamin.com/cdn-cgi/image/width=1200,format=auto,quality=85,fit=scale-down/map.png' width='2758' height='1540' loading='lazy' decoding='async'"
+        "src='/images/map.png'",
+        `src='${cloudflareLoader({ src: '/images/map.png', width: 1200, quality: 85 })}' width='2758' height='1540' loading='lazy' decoding='async'`
     )
     .replaceAll(
-        "src='https://bucket.webdevamin.com/dashboard.png' objectFit='cover'",
-        "src='https://bucket.webdevamin.com/cdn-cgi/image/width=1000,format=auto,quality=85,fit=scale-down/dashboard.png' width='2946' height='1460' loading='lazy' decoding='async'"
+        "src='/images/dashboard.png'",
+        `src='${cloudflareLoader({ src: '/images/dashboard.png', width: 1000, quality: 85 })}' width='2946' height='1460' loading='lazy' decoding='async'`
     );
 
 async function getData(locale, slug) {
@@ -53,7 +54,8 @@ export async function generateStaticParams() {
     return [...pathsNl, ...pathsEn];
 }
 
-export async function generateMetadata({ params: { locale, slug } }) {
+export async function generateMetadata({ params }) {
+  const { locale, slug } = await params;
     const data = await getData(locale, slug);
     if (data.notFound || !data.blogData) return notFound();
 
@@ -97,7 +99,8 @@ export async function generateMetadata({ params: { locale, slug } }) {
     };
 }
 
-const Blog = async ({ params: { locale, slug } }) => {
+const Blog = async ({ params }) => {
+  const { locale, slug } = await params;
     const data = await getData(locale, slug);
 
     if (data.notFound || !data.blogData) {

@@ -43,7 +43,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/gdpr.svg",
+                "src": "/images/gdpr.svg",
                 "alt": "Persoon met een GDPR vlag.",
                 "width": 485,
                 "height": 429,

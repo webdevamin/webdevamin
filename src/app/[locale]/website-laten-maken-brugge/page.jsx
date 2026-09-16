@@ -46,7 +46,8 @@ async function getData(locale) {
   }
 }
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   if (locale !== 'nl') {
     return {}
   }
@@ -152,7 +153,8 @@ const BruggeProjectsSection = ({ content, allProjects }) => {
   )
 }
 
-const BruggePage = async ({ params: { locale } }) => {
+const BruggePage = async ({ params }) => {
+  const { locale } = await params;
   const {
     localesData,
     socialsData,

@@ -3,7 +3,7 @@
         "title": "Blogs on Various Topics",
         "description": "Interesting topics, stories, and guides on IT, development, web design, freelancing, and more.",
         "canonical": "https://webdevamin.com/blogs",
-        "image": "https://bucket.webdevamin.com/blogs.jpg",
+        "image": "https://webdevamin.com/images/blogs.jpg",
         "ogTitle": "Blogs on Various Topics",
         "ogDescription": "Interesting topics, stories, and guides on IT, development, web design, freelancing, and more."
     },
@@ -43,7 +43,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/blogging.svg",
+                "src": "/images/blogging.svg",
                 "alt": "Person writing a blog.",
                 "width": 400,
                 "height": 402,

@@ -68,8 +68,6 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
                     }
                 </div>
             </div>
-            {/* Onderrand van de hero en eerste lijn van het paginaraster; -mx-10 heft de padding van de hero op. */}
-            <div aria-hidden="true" className={`hidden md:block -mx-10 border-t-[0.5px] border-dark`} />
         </div>
     )
 }

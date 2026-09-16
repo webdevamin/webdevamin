@@ -3,7 +3,7 @@
         "title": "Projecten: websites, apps en meer",
         "description": "Top projecten zoals e-commerce, business websites, real-time administratie apps, etc. Webdesign, web development, logo ontwerp.",
         "canonical": "https://webdevamin.com/nl/projects",
-        "image": "https://bucket.webdevamin.com/projects_nl.jpg",
+        "image": "https://webdevamin.com/images/projects_nl.jpg",
         "ogTitle": "Projecten: websites, apps en meer",
         "ogDescription": "Top projecten zoals e-commerce, business websites, real-time administratie apps, etc. Webdesign, web development, logo ontwerp."
     },
@@ -48,7 +48,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/launch.svg",
+                "src": "/images/launch.svg",
                 "alt": "Persoon lanceert een ruimteschip vanuit een computer.",
                 "width": 503,
                 "height": 342,

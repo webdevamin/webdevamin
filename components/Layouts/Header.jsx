@@ -37,7 +37,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
 
         return (
             <div className={mobile
-                ? 'mt-2 flex items-center gap-2 border-t border-dark border-opacity-10 pt-3 md:hidden'
+                ? 'mt-2 flex items-center gap-2 pt-3 md:hidden px-3'
                 : 'hidden items-center justify-end gap-2 md:flex'}
             >
                 {alternateLangs.map((alternateLang) => {
@@ -110,7 +110,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     aria-expanded={isMenuOpen}
                     aria-label={locale === 'nl' ? 'Menu openen' : 'Open menu'}
-                    className="inline-flex h-11 w-11 items-center justify-center rounded border border-dark border-opacity-20 text-dark transition-colors hover:bg-theme md:hidden"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded border border-dark border-opacity-20 text-dark transition-colors md:hidden"
                 >
                     {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
@@ -134,16 +134,17 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                     <button
                                         type="button"
                                         onClick={() => setOpenDropdownIndex(isOpen ? null : index)}
-                                        className="flex w-full items-center justify-between gap-2 rounded px-3 py-3 text-left font-semibold text-dark transition-colors hover:bg-white hover:text-theme md:w-auto md:px-0 md:py-2 md:hover:bg-transparent"
+                                        className="flex w-full items-center justify-between gap-2 rounded px-3 py-3 text-left font-semibold text-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-theme_darker [@media(hover:hover)]:hover:text-theme md:w-auto md:px-0 md:py-2"
                                         aria-expanded={isOpen}
                                     >
                                         <span>{title}</span>
                                         <ChevronDown className={`h-4 w-4 transition-transform md:group-hover:rotate-180 md:group-focus-within:rotate-180 ${isOpen ? 'rotate-180 md:rotate-0' : ''}`} />
                                     </button>
+                                    {/* Op gsm een ingesprongen lijst met lichtere tekst onder de knop, vanaf md een zwevende kaart. */}
                                     <div
-                                        className={`${isOpen ? 'block' : 'hidden'} static rounded-lg border border-dark border-opacity-10 bg-white p-2 shadow-md md:absolute md:left-1/2 md:top-full md:hidden md:min-w-56 md:-translate-x-1/2 md:border-0 md:bg-transparent md:p-0 md:pt-3 md:shadow-none md:group-hover:block md:group-focus-within:block`}
+                                        className={`${isOpen ? 'block' : 'hidden'} md:absolute md:left-1/2 md:top-full md:hidden md:min-w-56 md:-translate-x-1/2 md:pt-3 md:group-hover:block md:group-focus-within:block`}
                                     >
-                                        <div className="rounded-lg border border-dark border-opacity-10 bg-white p-2 shadow-md">
+                                        <div className="pb-2 pl-7 pr-3 md:rounded-lg md:border md:border-dark md:border-opacity-10 md:bg-white md:p-2 md:shadow-md">
                                             {subs.map((sub) => {
                                                 const { title: subTitle, href: subHref, borderTop } = sub;
 
@@ -152,7 +153,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                                         key={subTitle}
                                                         href={subHref}
                                                         onClick={closeNavigation}
-                                                        className={`block rounded px-3 py-2 text-sm font-semibold text-dark transition-colors hover:bg-theme/10 hover:text-dark ${borderTop ? 'border-t border-dark border-opacity-10' : ''}`}
+                                                        className={`block py-3 text-15 font-medium text-dark/75 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-theme_darker [@media(hover:hover)_and_(max-width:767px)]:hover:text-theme_darker md:rounded md:px-3 md:py-2 md:text-sm md:font-semibold md:text-dark md:hover:bg-theme/10 ${borderTop ? 'border-t border-dark border-opacity-10' : ''}`}
                                                     >
                                                         {subTitle}
                                                     </Link>
@@ -169,7 +170,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                                 key={title}
                                 href={href}
                                 onClick={closeNavigation}
-                                className="rounded px-3 py-3 font-semibold text-dark transition-colors hover:bg-white hover:text-theme md:px-0 md:py-2 md:hover:bg-transparent"
+                                className="rounded px-3 py-3 font-semibold text-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-theme_darker [@media(hover:hover)]:hover:text-theme md:px-0 md:py-2"
                             >
                                 {title}
                             </Link>

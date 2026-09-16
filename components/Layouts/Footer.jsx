@@ -106,7 +106,7 @@ const Footer = ({ blogs, pages, socials, followExternalLinks }) => {
                     <ul className={`flex items-center gap-x-3 flex-wrap sm:gap-0 sm:block`}>
                         {locale === 'nl' && (
                             <li className={`pt-3 sm:pt-2`}>
-                                Adres: Rodenonnenstraat 21, <strong>8000 Brugge</strong>
+                                Adres: Zuiderakker 18, <strong>8310 Brugge</strong>
                             </li>
                         )}
                         <li className={`pt-3 sm:pt-2`}>

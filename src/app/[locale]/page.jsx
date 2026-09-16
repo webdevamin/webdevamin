@@ -43,7 +43,8 @@ async function getData(locale) {
   };
 }
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const { pageData } = await getData(locale);
   const { seo, alternates, jsonLd } = pageData;
   const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
@@ -94,7 +95,8 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-const Index = async ({ params: { locale } }) => {
+const Index = async ({ params }) => {
+  const { locale } = await params;
   const {
     localesData,
     socialsData,

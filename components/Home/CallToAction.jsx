@@ -12,7 +12,8 @@ const CallToAction = ({ content }) => {
     return (
         <div className='lg:-mt-20'>
             <BlockLayoutThree title={`cta`} bothSides>
-                <div className="container mx-auto md:px-4 text-center 
+                {/* Geen .container op gsm: BlockLayoutThree is al 10/12 breed, anders wordt de tekst te smal. */}
+                <div className="mx-auto w-full max-w-8xl md:w-10/12 md:px-4 text-center
                 text-white md:py-32 lg:py-48">
                     {title && <Heading title={title} noSubtitle />}
                     {text && (

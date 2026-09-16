@@ -9,11 +9,11 @@ import { notFound } from 'next/navigation'
 import { routing } from '../../../../i18n/routing'
 import BlockLayoutOne from '../../../../../components/Layouts/BlockLayoutOne'
 import Heading from '../../../../../components/Heading'
-import BorderedSection, { FullBleedLine } from '../../../../../components/Layouts/BorderedSection'
+import BorderedSection from '../../../../../components/Layouts/BorderedSection'
+import LineGrid from '../../../../../components/Layouts/LineGrid'
 import ProcessSteps from '../../../../../components/Blocks/ProcessSteps'
 import PricingGrid from '../../../../../components/Blocks/PricingGrid'
 import Image from 'next/image'
-import { Fragment } from 'react'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
 import RestaurantFeatures from '../../../../../components/Blocks/RestaurantFeatures'
@@ -71,7 +71,8 @@ async function getData(locale, slug) {
   };
 }
 
-export async function generateMetadata({ params: { locale, slug } }) {
+export async function generateMetadata({ params }) {
+  const { locale, slug } = await params;
   const { pageData } = await getData(locale, slug);
   const { seo, alternates } = pageData;
   const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
@@ -220,8 +221,8 @@ const VideoDemoSection = ({ content }) => {
 };
 
 /*
- * Functies als vakken gescheiden door lijnen: 1 kolom op gsm, 2 op tablet, 3 op
- * desktop. De rijlijn staat telkens voor het eerste vak van een nieuwe rij.
+ * Functies als vakken gescheiden door lijnen: 1 kolom op gsm, 2 op tablet, 3 op desktop.
+ * Tekent zelf zijn BorderedSection, dus niet nog eens inpakken op de pagina.
  */
 const FeaturesSection = ({ content }) => {
   const { title, subtitle, text, features = [] } = content;
@@ -232,30 +233,29 @@ const FeaturesSection = ({ content }) => {
         <div className="max-w-7xl mx-auto">
           <Heading title={title} subtitle={subtitle} />
           {text && <div className="max-w-5xl" dangerouslySetInnerHTML={{ __html: text }} />}
-          <div className="relative mt-8 md:mt-10 xl:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <FullBleedLine className="absolute top-0" />
-            {features.map((feature, index) => (
-              <Fragment key={feature.title}>
-                {index > 0 && (
-                  <FullBleedLine className={`relative col-span-full ${index % 2 === 0 ? 'md:block' : 'md:hidden'} ${index % 3 === 0 ? 'lg:block' : 'lg:hidden'}`} />
-                )}
-                <div className={`flex flex-col items-center text-center px-6 py-10 lg:px-8 border-dark ${index % 2 === 1 ? 'md:border-l-[0.5px]' : ''} ${index % 3 === 0 ? 'lg:border-l-0' : 'lg:border-l-[0.5px]'}`}>
-                  <div className="rounded-full bg-theme bg-opacity-5 p-3 sm:p-4 lg:p-5 mb-3 lg:mb-4">
-                    <div className="text-theme_dark">
-                      {renderIcon(feature.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7' })}
-                    </div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold normal-case mb-2 sm:mb-3 text-gray-800 break-words hyphens-auto w-full">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-600 break-words">
-                    {feature.description}
-                  </p>
-                </div>
-              </Fragment>
-            ))}
-          </div>
         </div>
+        <LineGrid
+          className="mt-8 md:mt-10 xl:mt-12"
+          items={features}
+          columns={{ md: 2, lg: 3 }}
+          getKey={(feature) => feature.title}
+          cellClassName="flex flex-col items-center text-center py-10"
+          renderItem={(feature) => (
+            <>
+              <div className="rounded-full bg-theme bg-opacity-5 p-3 sm:p-4 lg:p-5 mb-3 lg:mb-4">
+                <div className="text-theme_dark">
+                  {renderIcon(feature.icon, { className: 'h-5 w-5 sm:h-7 sm:w-7' })}
+                </div>
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold normal-case mb-2 sm:mb-3 text-gray-800 break-words hyphens-auto w-full">
+                {feature.title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 break-words">
+                {feature.description}
+              </p>
+            </>
+          )}
+        />
       </section>
     </BorderedSection>
   );
@@ -292,86 +292,77 @@ const PortfolioCase = ({ content }) => {
                 </div>
               </div>
             </div>
-
-            {highlights && (
-              <div className="relative grid grid-cols-1 md:grid-cols-3">
-                <FullBleedLine className="absolute top-0" />
-                {highlights.map((highlight, index) => (
-                  <Fragment key={index}>
-                    {index > 0 && <FullBleedLine className="relative col-span-full md:hidden" />}
-                    <div className={`flex items-center justify-center px-6 py-8 border-dark ${index > 0 ? 'md:border-l-[0.5px]' : ''}`}>
-                      <span className="stroke-text pr-4 text-3xl">{highlight.number}</span>
-                      <h3 className="text-sm sm:text-base font-bold text-gray-800 break-words hyphens-auto w-full mb-0">
-                        {highlight.title}
-                      </h3>
-                    </div>
-                  </Fragment>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </BlockLayoutOne>
+      {/* Buiten BlockLayoutOne, zodat het raster van zijlijn tot zijlijn kan lopen. */}
+      {highlights && (
+        <LineGrid
+          items={highlights}
+          columns={{ md: 3 }}
+          cellClassName="flex items-center justify-center py-8"
+          renderItem={(highlight) => (
+            <>
+              <span className="stroke-text pr-4 text-3xl">{highlight.number}</span>
+              <h3 className="text-sm sm:text-base font-bold text-gray-800 break-words hyphens-auto w-full mb-0">
+                {highlight.title}
+              </h3>
+            </>
+          )}
+        />
+      )}
     </BorderedSection>
   );
 };
 
+const Stars = ({ count }) => (
+  <div className="flex gap-0.5 text-yellow-400" role="img" aria-label={`${count} sterren`}>
+    {[...Array(count)].map((_, i) => (
+      <svg key={i} className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    ))}
+  </div>
+);
+
+/*
+ * Reviews met titel, gevolgd door een raster: eerst de gemiddelde score, daarna
+ * elke review in een eigen vak.
+ */
 const TestimonialSpotlight = ({ content }) => {
   const reviews = content?.reviews || (content?.review ? [content.review] : []);
   if (!reviews.length) return null;
 
-  const { moreReviewsUrl, moreReviewsText } = content;
+  const { title, subtitle, moreReviewsUrl, moreReviewsText } = content;
   const average = reviews.reduce((sum, review) => sum + (review.stars || 5), 0) / reviews.length;
-  // Eén review krijgt twee van de drie kolommen naast de score; twee reviews krijgen elk één kolom.
-  const reviewSpan = reviews.length === 1 ? 'lg:col-span-2' : '';
-
-  const Stars = ({ count }) => (
-    <div className="flex gap-0.5 text-yellow-400" role="img" aria-label={`${count} sterren`}>
-      {[...Array(count)].map((_, i) => (
-        <svg key={i} className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
+  // null is het scorevak.
+  const cells = [null, ...reviews];
 
   return (
-    <BorderedSection flushTop flushBottom>
-      <section aria-label="Reviews van klanten" className="grid grid-cols-1 lg:grid-cols-3">
-        <div className="flex flex-col justify-center py-10 lg:py-14 lg:pr-10">
-          <div className="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">Google reviews</div>
-          <div className="mt-3 flex items-end gap-3">
-            <div className="stroke-text leading-none">{average.toFixed(1).replace('.', ',')}</div>
-            <div className="mb-1 text-sm font-semibold text-slate-500">/ 5</div>
+    // Zonder titel valt de bovenlijn van het raster samen met die van de sectie.
+    <BorderedSection flushTop={!title} flushBottom>
+      <section>
+        {title && (
+          <div className="max-w-7xl mx-auto">
+            <Heading title={title} subtitle={subtitle} />
           </div>
-          <div className="mt-3">
-            <Stars count={Math.round(average)} />
-          </div>
-          {moreReviewsUrl && (
-            <a
-              href={moreReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-theme_darker hover:text-dark transition-colors uppercase"
-            >
-              <span>{moreReviewsText}</span>
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          )}
-        </div>
-        {reviews.map((review, index) => (
-          <Fragment key={review.name}>
-            <FullBleedLine className="relative col-span-full lg:hidden" />
-            <figure className={`flex flex-col justify-between gap-8 py-10 lg:py-14 lg:px-10 border-dark lg:border-l-[0.5px] ${reviewSpan} ${index === reviews.length - 1 ? 'lg:pr-0' : ''}`}>
+        )}
+        <LineGrid
+          className={title ? 'mt-6 md:mt-8 xl:mt-10' : ''}
+          items={cells}
+          columns={{ md: 2, lg: Math.min(cells.length, 3) }}
+          topLine={Boolean(title)}
+          getKey={(review) => review?.name || 'score'}
+          cellClassName="py-10 lg:py-14"
+          renderItem={(review) => review ? (
+            <figure className="flex h-full flex-col justify-between gap-8 text-left">
               <blockquote>
                 <svg className="mb-4 h-8 w-8 text-theme" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
                 </svg>
                 <p className="mb-0 text-lg md:text-xl leading-8 text-dark opacity-100">{review.text}</p>
               </blockquote>
-              <figcaption className="flex items-center gap-4">
+              <figcaption className="flex items-center gap-4 text-left">
                 <div
                   className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-bold text-dark shadow-bold_r_xs"
                   style={{ backgroundColor: review.backgroundColor || '#FF4654' }}
@@ -385,14 +376,39 @@ const TestimonialSpotlight = ({ content }) => {
                 </div>
               </figcaption>
             </figure>
-          </Fragment>
-        ))}
+          ) : (
+            <div className="flex h-full flex-col justify-center">
+              <div className="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">Google reviews</div>
+              <div className="mt-3 flex items-end gap-3">
+                <div className="stroke-text leading-none">{average.toFixed(1).replace('.', ',')}</div>
+                <div className="mb-1 text-sm font-semibold text-slate-500">/ 5</div>
+              </div>
+              <div className="mt-3">
+                <Stars count={Math.round(average)} />
+              </div>
+              {moreReviewsUrl && (
+                <a
+                  href={moreReviewsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-theme_darker hover:text-dark transition-colors uppercase"
+                >
+                  <span>{moreReviewsText}</span>
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          )}
+        />
       </section>
     </BorderedSection>
   );
 };
 
-const IndustryPage = async ({ params: { locale, slug } }) => {
+const IndustryPage = async ({ params }) => {
+  const { locale, slug } = await params;
   const {
     localesData,
     socialsData,
@@ -420,14 +436,17 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
         <BorderedSection>
           <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position='right' />
         </BorderedSection>
-        <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
-        <BorderedSection>
-          {locale === 'nl' && slug === 'restaurant-website-laten-maken' ? (
+        {/* De taxipagina toont het demoblok nog niet: er is nog geen video van het boekingssysteem. Haal deze voorwaarde weg zodra de video klaar is. */}
+        {slug !== 'taxi-website-laten-maken' && (
+          <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
+        )}
+        {locale === 'nl' && slug === 'restaurant-website-laten-maken' ? (
+          <BorderedSection>
             <RestaurantFeatures content={blocks.find(block => block.slug === 'features-benefits')} />
-          ) : (
-            <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
-          )}
-        </BorderedSection>
+          </BorderedSection>
+        ) : (
+          <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
+        )}
         <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
         <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
         <PricingGrid content={blocks.find(block => block.slug === 'pricing')} />
@@ -444,14 +463,19 @@ const IndustryPage = async ({ params: { locale, slug } }) => {
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
         </BorderedSection>
         {otherIndustryCards.length > 0 && (
-          <BorderedSection>
+          // Het rode contactblok begint direct onder de afsluitende lijn van het raster, zodat die lijn niet boven een lege strook zweeft.
+          <BorderedSection flushBottom>
             <IndustryCards
               content={sectorsPageData.blocks.find(block => block.slug === 'andere-sectoren')}
-              cards={otherIndustryCards}
+              cards={[...otherIndustryCards, sectorsPageData.otherCard]}
+              bottomLine
             />
           </BorderedSection>
         )}
-        <Contact content={contactBlockData} />
+        {/* Extra lege ruimte boven de schuine rand van het contactblok, alleen vanaf md waar die schuine rand er is. */}
+        <div className="md:mt-12 xl:mt-20">
+          <Contact content={contactBlockData} />
+        </div>
         <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
       </PageLayout>
     </>

@@ -19,14 +19,9 @@ export default function cloudflareLoader({
 
     const paramsString = params.join(",");
 
-    // Use Cloudflare /cdn-cgi/image/ for bucket domain images only.
-    // Relative/public assets and other hosts get width/quality params as fallback.
+    // Other hosts get width/quality params as fallback.
     try {
         const url = new URL(src);
-        const path = url.pathname.startsWith("/") ? url.pathname.slice(1) : url.pathname;
-        if (url.hostname === "bucket.webdevamin.com") {
-            return `${url.protocol}//${url.hostname}/cdn-cgi/image/${paramsString}/${path}`;
-        }
         const sep = url.search && url.search.length > 0 ? "&" : "?";
         return `${url.protocol}//${url.hostname}${url.pathname}${url.search || ""}${sep}w=${width}&q=${optimizedQuality}`;
     } catch (_) {

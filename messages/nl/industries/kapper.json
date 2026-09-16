@@ -5,7 +5,7 @@
         "canonical": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
         "ogTitle": "Kapper Website Laten Maken | Vanaf €49/maand All-In-One",
         "ogDescription": "Kapper website laten maken vanaf €49/maand. Online afsprakensysteem vanaf €89/maand. Hosting, onderhoud en SEO inbegrepen, zonder opstartkosten.",
-        "image": "https://bucket.webdevamin.com/barber_og_nl.png",
+        "image": "https://webdevamin.com/images/barber_og_nl.png",
         "keywords": "kapper website laten maken, website voor kappers, kapperszaak website €49, kapper afsprakensysteem €89, kapper website €119, kapper online reserveren, responsive kapper website, SEO voor kappers, professionele kapper website, barbershop website, website kapsalon"
     },
     "alternates": [
@@ -29,7 +29,7 @@
             "name": "Webdevamin",
             "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
-            "image": "https://bucket.webdevamin.com/barber_og_nl.png",
+            "image": "https://webdevamin.com/images/barber_og_nl.png",
             "description": "Kapper website laten maken vanaf €49 per maand. All-in-one pakketten voor kapsalons en barbershops met online afsprakensysteem, hosting, onderhoud en SEO.",
             "email": "amin@webdevamin.com",
             "telephone": "+32470930916",
@@ -37,8 +37,8 @@
                 "@type": "PostalAddress",
                 "addressCountry": "BE",
                 "addressLocality": "Brugge",
-                "postalCode": "8000",
-                "streetAddress": "Rodenonnenstraat 21"
+                "postalCode": "8310",
+                "streetAddress": "Zuiderakker 18"
             },
             "areaServed": [
                 {
@@ -132,7 +132,7 @@
                     "name": "Kan ik zelf content aanpassen op mijn kapper website?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen."
+                        "text": "Nee, teksten, foto's en de opbouw van uw website pas ik voor u aan. Wilt u iets laten wijzigen? Stuur me gewoon een bericht. In Premium en Pro beheert u wel zelf uw diensten en prijzen via het beheerpaneel, zodat een nieuwe behandeling of een aangepaste prijs meteen online staat. De rest van uw website blijft zo veilig en verzorgd, zonder dat u zelf in een systeem moet zoeken."
                     }
                 },
                 {
@@ -179,8 +179,8 @@
                     "@type": "PostalAddress",
                     "addressCountry": "BE",
                     "addressLocality": "Brugge",
-                    "postalCode": "8000",
-                    "streetAddress": "Rodenonnenstraat 21"
+                    "postalCode": "8310",
+                    "streetAddress": "Zuiderakker 18"
                 }
             },
             "audience": {
@@ -287,7 +287,7 @@
             "title": "Kapper Website Laten Maken",
             "text": "Laat uw kapper website maken door een webontwikkelaar uit Brugge. Voor kapsalons en barbershops in België en Nederland. Start met een professionele website vanaf €49/maand, of ontvang vanaf €89/maand automatisch afspraken via uw eigen website. Hosting, onderhoud en SEO zijn inbegrepen. Geen opstartkosten. Excl. BTW.",
             "image": {
-                "src": "https://bucket.webdevamin.com/barber.png",
+                "src": "/images/barber.png",
                 "alt": "Een moderne kapperszaak met een professionele website op een tablet die afspraken toont.",
                 "width": 600,
                 "height": 400
@@ -299,7 +299,7 @@
                 },
                 {
                     "text": "Gratis Offerte",
-                    "href": "/contact"
+                    "href": "/contact?pakket=kapper"
                 },
                 {
                     "text": "Bekijk Live Voorbeeld",
@@ -314,7 +314,7 @@
                 "Meer klanten",
                 "Online reserveringen",
                 "Mobiel Geoptimaliseerd",
-                "Gratis SEO"
+                "SEO Inbegrepen"
             ]
         },
         {
@@ -370,7 +370,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/barber-salon.png",
+                "src": "/images/barber-salon.png",
                 "alt": "Moderne kapperszaak interieur met professionele styling."
             }
         },
@@ -388,7 +388,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/client-showcase-barber-site.png",
+                "src": "/images/client-showcase-barber-site.png",
                 "alt": "Een webontwikkelaar laat een kapper website zien aan de eigenaar van een kapperszaak. Op de computer wordt een afsprakensysteem weergegeven."
             }
         },
@@ -468,7 +468,7 @@
             "project": {
                 "name": "Kapsalon Dila kapperswebsite",
                 "url": "https://kapsalondila.be",
-                "image": "https://bucket.webdevamin.com/kapsalondila.png",
+                "image": "/images/kapsalondila.png",
                 "description": "Voorbeeld van een kapper website met online afsprakensysteem."
             }
         },
@@ -477,7 +477,7 @@
             "subtitle": "Pakketten voor uw kapperszaak",
             "highlight": "All-In-One",
             "slug": "pricing",
-            "text": "<p>Alles wat je nodig hebt om online zichtbaar te zijn én automatisch afspraken te ontvangen, in één eenvoudig maandplan. Geen opstartkosten, geen gedoe.</p><p>Premium is de beste keuze voor kappers die meer afspraken willen ontvangen zonder technische zorgen. Pro geeft extra ruimte om verder te groeien wanneer uw salon meer volume draait.</p><p>Prijzen bijgewerkt: september 2026. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p>Alles wat je nodig hebt om online zichtbaar te zijn én automatisch afspraken te ontvangen, in één eenvoudig maandplan. Geen opstartkosten, geen gedoe.</p><p>Premium is de beste keuze voor kappers die meer afspraken willen ontvangen zonder technische zorgen. Pro geeft extra ruimte om verder te groeien wanneer uw salon meer volume draait.</p><p>Prijzen bijgewerkt: september 2026. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
             "growthTitle": "Onze plannen groeien met je mee",
             "growthText": "Je bent niet gebonden aan een vast maximum. Krijg je meer afspraken dan het inbegrepen aantal? Geen probleem. Je blijft op hetzelfde pakket en betaalt gewoon een klein bedrag extra per afspraak boven je inbegrepen limiet. Zo groeit je abonnement vanzelf mee met je salon.",
             "growthNote": "Geen opstartkosten. Groeit mee met je salon.",
@@ -492,13 +492,13 @@
                     "tagline": "Voor kappers die professioneel online zichtbaar willen zijn",
                     "features": [
                         "Op maat <strong>zakelijke website</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>"
                     ],
                     "excludedFeatures": [
@@ -508,7 +508,7 @@
                         "E-mailmarketing campagnes"
                     ],
                     "buttonText": "Kies Standaard Pakket",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=kapper-standaard"
                 },
                 {
                     "title": "Premium",
@@ -522,13 +522,13 @@
                     "microcopy": "Meer afspraken? Je plan groeit gewoon mee.",
                     "features": [
                         "Op maat <strong>zakelijke website</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>afsprakensysteem</strong>",
                         "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
@@ -539,7 +539,7 @@
                         "E-mailmarketing campagnes"
                     ],
                     "buttonText": "Kies Premium Pakket",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=kapper-premium"
                 },
                 {
                     "title": "Pro",
@@ -552,13 +552,13 @@
                     "microcopy": "Meer afspraken? Je plan groeit gewoon mee.",
                     "features": [
                         "Op maat <strong>zakelijke website</strong>",
-                        "<strong>GRATIS</strong> mobiele optimalisatie",
-                        "<strong>GRATIS</strong> SEO-optimalisatie",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "<strong>GRATIS</strong> logo",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
                         "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "24/7 <strong>support</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
                         "Geen <strong>opstartkosten</strong>",
                         "Online <strong>afsprakensysteem</strong>",
                         "<strong>Diensten</strong> & <strong>prijzen</strong> beheren",
@@ -568,7 +568,7 @@
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Kies Pro Pakket",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=kapper-pro"
                 },
                 {
                     "title": "Op Maat",
@@ -581,13 +581,13 @@
                         "Aangepast aan <strong>uw specifieke behoeften</strong>",
                         "Extra functionaliteiten <strong>op maat</strong>",
                         "Unieke <strong>ontwerp</strong> en <strong>branding</strong>",
-                        "<strong>GRATIS</strong> hosting & onderhoud",
-                        "<strong>GRATIS</strong> domeinnaam",
-                        "24/7 <strong>support</strong>"
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>"
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Vraag Offerte Aan",
-                    "buttonHref": "/contact"
+                    "buttonHref": "/contact?pakket=kapper-op-maat"
                 }
             ]
         },
@@ -632,7 +632,7 @@
                 },
                 {
                     "title": "Kan ik zelf content aanpassen op mijn kapper website?",
-                    "description": "Nee, het beheer van uw website neem ik volledig voor mijn rekening. Dit heeft belangrijke voordelen: ik kan optimaal onderhoud garanderen en zorgen dat alles perfect blijft functioneren. Uit ervaring blijkt dat zelfbeheer vaak leidt tot onnodig tijdverlies en technische uitdagingen bij het uitbreiden of aanpassen van de website. U hoeft zich hier geen zorgen over te maken - u kunt mij altijd verzoeken om aanpassingen of toevoegingen. De kosten hiervoor zijn zeer betaalbaar en ik help u graag verder met alle gewenste wijzigingen."
+                    "description": "Nee, teksten, foto's en de opbouw van uw website pas ik voor u aan. Wilt u iets laten wijzigen? Stuur me gewoon een bericht. In <strong>Premium</strong> en <strong>Pro</strong> beheert u wel zelf uw diensten en prijzen via het beheerpaneel, zodat een nieuwe behandeling of een aangepaste prijs meteen online staat. De rest van uw website blijft zo veilig en verzorgd, zonder dat u zelf in een systeem moet zoeken."
                 },
                 {
                     "title": "Is hosting en domeinnaam inbegrepen?",
@@ -654,7 +654,7 @@
             "title": "Eenmalige Betaling",
             "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem. U kunt ook kiezen voor een <strong>eenmalige betaling</strong> voor uw kapper website. Dit is een aparte optie voor wie liever zelf hosting, onderhoud en domeinnaam regelt of daar al een eigen oplossing voor heeft.</p><p>Het maandabonnement blijft de meest zorgeloze keuze omdat alles daarin inbegrepen zit. Wilt u toch liever een eenmalige investering? Neem dan <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat voor uw kapperszaak.</p>",
             "button": {
-                "href": "/contact",
+                "href": "/contact?pakket=kapper-eenmalig",
                 "text": "Vraag Offerte Aan"
             }
         },
@@ -666,7 +666,7 @@
             "text": "Start eenvoudig met een professionele website vanaf €49 per maand, kies Premium voor €89 per maand om automatisch afspraken te ontvangen, of ga voor Pro voor €119 per maand als uw salon wil groeien en opschalen. Ik help u van strategie tot lancering, zonder technische zorgen.",
             "button": [
                 {
-                    "href": "/contact",
+                    "href": "/contact?pakket=kapper",
                     "text": "Vraag Gratis Offerte Aan",
                     "label": "Naar contact pagina",
                     "external": false

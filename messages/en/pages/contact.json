@@ -3,7 +3,7 @@
         "title": "Contact Me: Quote & Inquiries",
         "description": "Questions/comments? Or do you need a website, logo design, or something else? Feel free to contact me. Same-day response!",
         "canonical": "https://webdevamin.com/contact",
-        "image": "https://bucket.webdevamin.com/contact.jpg",
+        "image": "https://webdevamin.com/images/contact.jpg",
         "ogTitle": "Contact Me: Quote & Inquiries",
         "ogDescription": "Questions/comments? Or do you need a website, logo design, or something else? Feel free to contact me. Same-day response!"
     },
@@ -43,7 +43,7 @@
                 }
             ],
             "image": {
-                "src": "https://bucket.webdevamin.com/contact.svg",
+                "src": "/images/contact.svg",
                 "alt": "Person sitting on the couch taking a selfie with mountains in the background.",
                 "width": 499,
                 "height": 371,

@@ -12,12 +12,6 @@ const nextConfig = {
     unoptimized: false,
     loader: 'custom',
     loaderFile: './imageLoader.js',
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'bucket.webdevamin.com',
-      },
-    ],
   },
   async rewrites() {
     return [

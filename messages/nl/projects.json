@@ -14,49 +14,49 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Supabase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "src": "/images/supabase.svg",
                     "alt": "Supabase"
                 }
             },
             {
                 "name": "OpenAI",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/openai.svg",
+                    "src": "/images/openai.svg",
                     "alt": "OpenAI"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             },
             {
                 "name": "Paddle",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/paddle.svg",
+                    "src": "/images/paddle.svg",
                     "alt": "Paddle"
                 }
             },
             {
                 "name": "Resend",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/resend.svg",
+                    "src": "/images/resend.svg",
                     "alt": "Resend"
                 }
             },
             {
                 "name": "Sentry",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/sentry.svg",
+                    "src": "/images/sentry.svg",
                     "alt": "Sentry"
                 }
             }
@@ -77,21 +77,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/nodejs.svg",
+                    "src": "/images/nodejs.svg",
                     "alt": "Node.js"
                 }
             },
             {
                 "name": "Firebase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/firebase.svg",
+                    "src": "/images/firebase.svg",
                     "alt": "Firebase"
                 }
             }
@@ -113,21 +113,21 @@
             {
                 "name": "Laravel",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/laravel.svg",
+                    "src": "/images/laravel.svg",
                     "alt": "Laravel"
                 }
             },
             {
                 "name": "Livewire",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/livewire.svg",
+                    "src": "/images/livewire.svg",
                     "alt": "Livewire"
                 }
             },
             {
                 "name": "AWS",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/aws.svg",
+                    "src": "/images/aws.svg",
                     "alt": "AWS"
                 }
             }
@@ -148,21 +148,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/nodejs.svg",
+                    "src": "/images/nodejs.svg",
                     "alt": "Node.js"
                 }
             },
             {
                 "name": "Firebase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/firebase.svg",
+                    "src": "/images/firebase.svg",
                     "alt": "Firebase"
                 }
             }
@@ -184,21 +184,21 @@
             {
                 "name": "HTML",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/html.svg",
+                    "src": "/images/html.svg",
                     "alt": "HTML"
                 }
             },
             {
                 "name": "Javascript",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "src": "/images/javascript.svg",
                     "alt": "Javascript"
                 }
             },
             {
                 "name": "Netlify",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/netlify.svg",
+                    "src": "/images/netlify.svg",
                     "alt": "Netlify"
                 }
             }
@@ -220,21 +220,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Node.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/nodejs.svg",
+                    "src": "/images/nodejs.svg",
                     "alt": "Node.js"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }
@@ -256,21 +256,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             },
             {
                 "name": "Supabase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "src": "/images/supabase.svg",
                     "alt": "Supabase"
                 }
             }
@@ -292,21 +292,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Edge Functions",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/lambda.svg",
+                    "src": "/images/lambda.svg",
                     "alt": "Edge Functions"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }
@@ -328,21 +328,21 @@
             {
                 "name": "Next.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/next_js.svg",
+                    "src": "/images/next_js.svg",
                     "alt": "Next.js"
                 }
             },
             {
                 "name": "Edge Functions",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/lambda.svg",
+                    "src": "/images/lambda.svg",
                     "alt": "Edge Functions"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }
@@ -364,14 +364,14 @@
             {
                 "name": "React.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/react.svg",
+                    "src": "/images/react.svg",
                     "alt": "React.js"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }
@@ -393,21 +393,21 @@
             {
                 "name": "HTML",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/html.svg",
+                    "src": "/images/html.svg",
                     "alt": "HTML"
                 }
             },
             {
                 "name": "Javascript",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/javascript.svg",
+                    "src": "/images/javascript.svg",
                     "alt": "Javascript"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }
@@ -429,28 +429,28 @@
             {
                 "name": "React.js",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/react.svg",
+                    "src": "/images/react.svg",
                     "alt": "React.js"
                 }
             },
             {
                 "name": "Vite",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/vite.svg",
+                    "src": "/images/vite.svg",
                     "alt": "Vite"
                 }
             },
             {
                 "name": "Supabase",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/supabase.svg",
+                    "src": "/images/supabase.svg",
                     "alt": "Supabase"
                 }
             },
             {
                 "name": "Cloudflare",
                 "image": {
-                    "src": "https://bucket.webdevamin.com/cloudflare.svg",
+                    "src": "/images/cloudflare.svg",
                     "alt": "Cloudflare"
                 }
             }

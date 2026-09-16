@@ -5,7 +5,7 @@
         "canonical": "https://webdevamin.com",
         "ogTitle": "Web Design & Developer from Belgium",
         "ogDescription": "Empower your business with state-of-the-art digital solutions e.g. website with a focus on your needs: web design, web development and more.",
-        "image": "https://bucket.webdevamin.com/home.jpg"
+        "image": "https://webdevamin.com/images/home.jpg"
     },
     "alternates": [
         {
@@ -42,8 +42,8 @@
                 "@type": "PostalAddress",
                 "addressCountry": "BE",
                 "addressLocality": "Bruges",
-                "postalCode": "8000",
-                "streetAddress": "Rodenonnenstraat 21"
+                "postalCode": "8310",
+                "streetAddress": "Zuiderakker 18"
             },
             "areaServed": {
                 "@type": "Country",
@@ -70,8 +70,8 @@
                     "@type": "PostalAddress",
                     "addressCountry": "BE",
                     "addressLocality": "Bruges",
-                    "postalCode": "8000",
-                    "streetAddress": "Rodenonnenstraat 21"
+                    "postalCode": "8310",
+                    "streetAddress": "Zuiderakker 18"
                 },
                 "image": "https://webdevamin.com/images/ogbanner.png"
             },
@@ -103,7 +103,7 @@
                     "name": "What does it cost to have a business website made?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "With me, you pay only €79 per month for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
+                        "text": "With me, you pay only €79 per month for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                     }
                 },
                 {
@@ -159,7 +159,7 @@
                     "name": "What if I'm not satisfied?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free."
+                        "text": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free. After those first 30 days, the subscription runs for at least 12 months from launch and can then be cancelled monthly."
                     }
                 }
             ]
@@ -187,7 +187,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/developer.svg",
+                "src": "/images/developer.svg",
                 "alt": "An affordable web designer programming to finish a professional website."
             },
             "types": [
@@ -205,7 +205,7 @@
             "slug": "about",
             "text": "<p>As a professional <strong>freelancer</strong> specialized in professional web design, <strong>SEO</strong>, and <strong>web development</strong>, I create state-of-the-art digital solutions with a focus on your needs. Examples are: regular business websites, applications for administrative purposes (e.g. selecting personnel for certain tasks), webshops, food delivery web applications, CRMs, and more. In other words: anything that needs to appear on the screen to increase your business' efficiency and/or attract more users, ultimately generating more revenue.</p>",
             "img": {
-                "src": "https://bucket.webdevamin.com/about.jpg",
+                "src": "/images/about.jpg",
                 "alt": "Computer with code for developing a business website in a dark environment."
             }
         },
@@ -266,7 +266,7 @@
             "subtitle": "Affordable web designer & developer",
             "highlight": "From €79/month",
             "slug": "pricing",
-            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €79 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project.</p><p>In addition to a professional business website, you receive lifelong free hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
+            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €79 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project. Minimum term of 12 months, then cancellable monthly.</p><p>In addition to a professional business website, you receive hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
             "subsubtitle": "What you get",
             "items": [
                 {
@@ -278,32 +278,32 @@
                     "details": "Your website will look great on all devices such as smartphones, tablets, and computers."
                 },
                 {
-                    "title": "Lifelong FREE hosting",
-                    "details": "You never have to pay for hosting. I handle everything for you. Hosting: putting your website online."
+                    "title": "Hosting included",
+                    "details": "Hosting is part of your monthly fee, with no separate invoice. I handle everything for you. Hosting: putting your website online."
                 },
                 {
-                    "title": "Lifelong FREE domain name",
-                    "details": "You never have to pay for a domain name. I handle everything for you. Domain name: your website address (e.g., www.yourcompany.com)"
+                    "title": "Domain name included",
+                    "details": "Your domain name is part of your monthly fee, with no separate invoice. I handle everything for you. Domain name: your website address (e.g., www.yourcompany.com)"
                 },
                 {
-                    "title": "Lifelong FREE maintenance and updates",
+                    "title": "Maintenance and updates included",
                     "details": "I always ensure your website is and remains up-to-date so it always functions excellently. You don't have to worry about updates or maintenance."
                 },
                 {
-                    "title": "Excellent SEO on your website, FREE",
+                    "title": "SEO optimization included",
                     "details": "I ensure your website ranks well in Google so you get more visitors. SEO: search engine optimization. This is important for your website to be found in Google and other search engines."
                 },
                 {
-                    "title": "FREE logos",
-                    "details": "You read that right! With a subscription, you receive a free logo from my collection, fully tailored to your wishes. And you can have as many as you want."
+                    "title": "Logos included",
+                    "details": "You read that right! With a subscription, you receive a logo from my collection, fully tailored to your wishes. And you can have as many as you want."
                 },
                 {
                     "title": "Administration & invoices handled by me",
                     "details": "I handle all administration and invoicing for you, such as the website, hosting, and domain name. So you don't have to worry about invoices for website maintenance, domain names, etc. You can fully focus on your core activities, while I take care of everything related to the website."
                 },
                 {
-                    "title": "24/7 support",
-                    "details": "Do you have questions or comments? You can always contact me. I'm happy to help you further at no cost."
+                    "title": "Support with a reply within 24 hours",
+                    "details": "Do you have questions or comments? Send me a message and you will get a reply within 24 hours, at no extra cost."
                 },
                 {
                     "title": "No setup costs!",
@@ -390,7 +390,7 @@
             "items": [
                 {
                     "title": "What does it cost to have a business website made?",
-                    "description": "With me, you pay <strong>only €79 per month</strong> for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as free domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
+                    "description": "With me, you pay <strong>only €79 per month</strong> for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                 },
                 {
                     "title": "How long does it take to create a website?",
@@ -418,7 +418,7 @@
                 },
                 {
                     "title": "What if I'm not satisfied?",
-                    "description": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free."
+                    "description": "At Webdevamin, customer satisfaction is paramount. If you are not satisfied within 30 days after the launch of your website, you can request a full refund. This gives you the opportunity to try the subscription risk-free. After those first 30 days, the subscription runs for at least 12 months from launch and can then be cancelled monthly."
                 }
             ]
         },
@@ -426,9 +426,9 @@
             "title": "Our Location",
             "subtitle": "Based in Bruges",
             "slug": "location",
-            "text": "<p>Webdevamin is located in the historic heart of <strong>Bruges</strong>, a city that combines creativity and innovation with centuries-old charm. From this inspiring environment, I develop professional websites and web applications for entrepreneurs throughout Belgium and beyond.</p><p>Whether you're looking for a <strong>web designer in Bruges</strong> or a <strong>freelance web developer</strong> who brings your digital vision to life - I'm ready to realize your project. Feel free to contact me for a personal conversation or a non-binding quote!</p>",
-            "address": "Rodenonnenstraat 21",
-            "city": "8000 Bruges, Belgium",
+            "text": "<p>Webdevamin is based in <strong>Bruges</strong>, a city that combines creativity and innovation with centuries-old charm. From here, I develop professional websites and web applications for entrepreneurs throughout Belgium and beyond.</p><p>Whether you're looking for a <strong>web designer in Bruges</strong> or a <strong>freelance web developer</strong> who brings your digital vision to life - I'm ready to realize your project. Feel free to contact me for a personal conversation or a non-binding quote!</p>",
+            "address": "Zuiderakker 18",
+            "city": "8310 Bruges, Belgium",
             "phone": "+32 470 93 09 16",
             "email": "amin@webdevamin.com",
             "button": [

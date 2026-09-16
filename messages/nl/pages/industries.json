@@ -14,6 +14,17 @@
         }
     ],
     "alternateLangs": [],
+    "otherCard": {
+        "title": "Andere sector",
+        "text": "Staat uw zaak er niet tussen? Ik maak ook websites voor andere zelfstandigen en kmo's, zoals een bakkerij, een boekhouder of een fysiotherapeut. U krijgt dezelfde basis: hosting, onderhoud, SEO en support. Heeft u een eigen boekings- of bestelsysteem nodig, dan werk ik dat op maat uit.",
+        "price": "Vanaf €49/maand",
+        "linkText": "Bekijk zakelijke website",
+        "href": "/",
+        "image": {
+            "src": "/images/andere-sectoren.png",
+            "alt": "Winkelstraat met een bakkerij, koffiebar, bloemenwinkel, kapsalon, kledingzaak en restaurant."
+        }
+    },
     "jsonLd": {
         "collectionPage": {
             "@context": "https://schema.org",
@@ -76,9 +87,9 @@
             "slug": "hero",
             "component": "hero",
             "title": "Website Laten Maken per Sector",
-            "text": "Een taxibedrijf heeft andere functies nodig dan een kapsalon of een restaurant. Daarom is er per sector een eigen pakket: een taxi website met boekingssysteem, een kapper website met online afspraken en een restaurant website met digitale menukaart en reservaties. Elk pakket start vanaf €49/maand, met hosting, onderhoud en SEO inbegrepen. Gemaakt door een webontwikkelaar uit Brugge, voor zaken in België en Nederland. Geen opstartkosten. Excl. BTW.",
+            "text": "Ik maak websites voor elke zelfstandige en kmo. Voor taxibedrijven, kapperszaken en restaurants is er daarnaast een pakket met de functies die die sector nodig heeft: een boekingssysteem voor taxi's, online afspraken voor kappers en een digitale menukaart met reservaties voor restaurants. Heeft u een andere zaak, dan krijgt u dezelfde basis. Elke website start vanaf €49/maand, met hosting, onderhoud en SEO inbegrepen. Gemaakt door een webontwikkelaar uit Brugge, voor zaken in België en Nederland. Geen opstartkosten. Excl. BTW.",
             "image": {
-                "src": "https://bucket.webdevamin.com/laptop-website-brugge.png",
+                "src": "/images/laptop-website-brugge.png",
                 "alt": "Webontwikkelaar die een professionele website ontwerpt voor een lokale zaak.",
                 "width": 800,
                 "height": 600
@@ -98,7 +109,7 @@
             "slug": "sectoren",
             "title": "Kies Uw Sector",
             "subtitle": "Websites per sector",
-            "text": "<p>Op elke sectorpagina vindt u de pakketten, de prijzen, de functies en een website die ik al bouwde voor een zaak uit die sector.</p>"
+            "text": "<p>Op elke sectorpagina vindt u de pakketten, de prijzen, de functies en een website die ik al bouwde voor een zaak uit die sector. Staat uw sector er niet tussen? Kies dan Andere sector.</p>"
         },
         {
             "slug": "why-per-sector",
@@ -114,7 +125,7 @@
                 }
             ],
             "img": {
-                "src": "https://bucket.webdevamin.com/client-showcase-barber-site.png",
+                "src": "/images/client-showcase-barber-site.png",
                 "alt": "Een webontwikkelaar toont een kapper website met afsprakensysteem aan de eigenaar van een kapperszaak."
             }
         },
@@ -149,7 +160,7 @@
                 },
                 {
                     "title": "Welke pakketten hebben een boekings-, afspraken- of reservatiesysteem?",
-                    "description": "Dat hangt af van uw sector. Voor taxibedrijven zit het online boekingssysteem met automatische ritprijs in <strong>Premium voor €69 per maand</strong>. Voor kappers zit het online afsprakensysteem in <strong>Premium voor €89 per maand</strong> en in <strong>Pro voor €119 per maand</strong>. Voor restaurants zitten online reservaties in <strong>Premium voor €69 per maand</strong>, en in <strong>Pro voor €119 per maand</strong> komen online bestellen en een meertalige website erbij. Alle prijzen zijn excl. BTW."
+                    "description": "Dat hangt af van uw sector. Voor taxibedrijven zit het online boekingssysteem met automatisch aangevulde adressen, automatische rit- en prijsberekening en navigatie in één klik in <strong>Premium voor €79 per maand</strong>. Voor kappers zit het online afsprakensysteem in <strong>Premium voor €89 per maand</strong> en in <strong>Pro voor €119 per maand</strong>. Voor restaurants zitten online reservaties in <strong>Premium voor €69 per maand</strong>, en in <strong>Pro voor €119 per maand</strong> komen online bestellen en een meertalige website erbij. Alle prijzen zijn excl. BTW."
                 },
                 {
                     "title": "Kan ik later overstappen naar een groter pakket?",
@@ -161,6 +172,7 @@
             "slug": "andere-sectoren",
             "title": "Websites voor Andere Sectoren",
             "subtitle": "Ook voor andere zaken",
+            "text": "<p>Heeft u een ander soort zaak? Voor deze sectoren is er een apart pakket, met een website die ik al bouwde als voorbeeld. Staat uw sector er niet tussen, dan maak ik net zo goed een website voor uw zaak.</p>",
             "button": {
                 "href": "/industry",
                 "text": "Bekijk alle sectoren"

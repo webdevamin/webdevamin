@@ -6,6 +6,8 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    // De pagina-inhoud in messages bevat HTML met Tailwind-klassen.
+    "./messages/**/*.json",
     flowbite.content(),
   ],
   theme: {
