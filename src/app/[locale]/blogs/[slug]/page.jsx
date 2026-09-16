@@ -61,10 +61,10 @@ export async function generateMetadata({ params }) {
 
     const { blogData } = data;
     const { seo, alternates, title } = blogData;
-    const { description, canonical, image, ogTitle, ogDescription, keywords } = seo;
+    const { title: seoTitle, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
 
     return {
-        title: `${title} | Webdevamin`,
+        title: `${seoTitle || title} | Webdevamin`,
         description: description,
         keywords: keywords,
         alternates: {

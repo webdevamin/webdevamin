@@ -1,10 +1,10 @@
 [
     {
         "seo": {
-            "title": "Taxibedrijf starten in Vlaanderen: vergunning, kosten en klanten",
-            "ogTitle": "Taxibedrijf starten in Vlaanderen: vergunning, kosten en klanten",
+            "title": "Taxibedrijf starten in Vlaanderen: vergunning",
+            "ogTitle": "Taxibedrijf starten in Vlaanderen: vergunning",
             "description": "Een taxibedrijf starten in Vlaanderen? Lees welke vergunning, bestuurderspas en wagen u nodig heeft, wat het kost in 2026 en hoe u aan klanten komt.",
-            "ogDescription": "Een taxibedrijf starten in Vlaanderen? Lees welke vergunning, bestuurderspas en wagen u nodig heeft, wat het kost in 2026 en hoe u aan klanten komt.",
+            "ogDescription": "Taxibedrijf starten in Vlaanderen? Lees welke vergunning en wagen u nodig heeft en wat het kost in 2026.",
             "canonical": "https://webdevamin.com/nl/blogs/taxibedrijf-starten",
             "image": "https://webdevamin.com/images/taxi.png"
         },
@@ -35,7 +35,7 @@
             "title": "Hoe huur je een betrouwbare webdesigner in",
             "ogTitle": "Een betrouwbare webdesigner inhuren",
             "description": "Ontdek de belangrijke factoren voordat u een webdesigner of webdeveloper inhuurt die u kunt vertrouwen. Vind uw ideale professional.",
-            "ogDescription": "Ontdek de belangrijke factoren voordat u een webdesigner of webdeveloper inhuurt die u kunt vertrouwen. Vind uw ideale professional.",
+            "ogDescription": "Ontdek waar u op moet letten voordat u een webdesigner of webdeveloper inhuurt die u kunt vertrouwen.",
             "canonical": "https://webdevamin.com/nl/blogs/hoe-webdesigner-inhuren",
             "image": "https://webdevamin.com/images/find_a_webdesigner_nl.jpg"
         },
@@ -78,8 +78,8 @@
         "seo": {
             "title": "Website vs webapplicatie",
             "ogTitle": "Website vs webapplicatie",
-            "description": "Lees de verschillen tussen een website en een webapplicatie. Wanneer moet je het een of het ander hebben. Leer de belangrijke functies en use cases voor beiden.",
-            "ogDescription": "Lees de verschillen tussen een website en een webapplicatie. Wanneer moet je het een of het ander hebben. Leer de belangrijke functies en use cases voor beiden.",
+            "description": "Lees de verschillen tussen een website en een webapplicatie. Wanneer heeft u het een of het ander nodig? Ontdek de functies en use cases.",
+            "ogDescription": "Lees de verschillen tussen een website en een webapplicatie, en wanneer u het een of het ander nodig heeft.",
             "canonical": "https://webdevamin.com/nl/blogs/website-vs-webapplicatie",
             "image": "https://webdevamin.com/images/website_vs_webapp_nl.jpg"
         },
@@ -121,7 +121,7 @@
     {
         "seo": {
             "title": "BTW-vrijstelling als international is nadelig",
-            "ogTitle": "BTW-vrijstel international nadelig",
+            "ogTitle": "BTW-vrijstelling internationaal is nadelig",
             "description": "Ontdek waarom kiezen voor BTW-vrijstelling problematisch kan zijn voor uw internationale bedrijfsactiviteiten.",
             "ogDescription": "Ontdek waarom kiezen voor BTW-vrijstelling problematisch kan zijn voor uw internationale bedrijfsactiviteiten.",
             "canonical": "https://webdevamin.com/nl/blogs/btw-vrijstelling-nadelig",
@@ -164,8 +164,8 @@
     },
     {
         "seo": {
-            "title": "Hoe vind je bedrijven zonder websites met Webleadr",
-            "ogTitle": "Hoe vind je bedrijven zonder websites met Webleadr",
+            "title": "Bedrijven zonder website vinden met Webleadr",
+            "ogTitle": "Bedrijven zonder website vinden met Webleadr",
             "description": "Ontdek hoe je bedrijven zonder websites kunt vinden met Webleadr, samen met andere handige functies om je leads te verhogen.",
             "ogDescription": "Ontdek hoe je bedrijven zonder websites kunt vinden met Webleadr, samen met andere handige functies om je leads te verhogen.",
             "canonical": "https://webdevamin.com/nl/blogs/vind-bedrijven-zonder-websites",

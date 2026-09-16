@@ -48,7 +48,7 @@
             "title": "Website vs Web Application",
             "ogTitle": "Website vs Web Application",
             "description": "Read the differences between a website and a web application. When should you have one or the other. Learn the important features and use cases for both.",
-            "ogDescription": "Read the differences between a website and a web application. When should you have one or the other. Learn the important features and use cases for both.",
+            "ogDescription": "Read the differences between a website and a web application, and when you should have one or the other.",
             "canonical": "https://webdevamin.com/blogs/website-vs-webapplication",
             "image": "https://webdevamin.com/images/website_vs_webapp.jpg"
         },
@@ -133,10 +133,10 @@
     },
     {
         "seo": {
-            "title": "How to find businesses without websites with Webleadr",
-            "ogTitle": "How to find businesses without websites with Webleadr",
-            "description": "Discover how to find companies without websites using Webleadr, along with other handy features to boost your web design leads.",
-            "ogDescription": "Discover how to find companies without websites using Webleadr, along with other handy features to boost your web design leads.",
+            "title": "Find businesses without websites with Webleadr",
+            "ogTitle": "Find businesses without websites with Webleadr",
+            "description": "Discover how to find companies without websites using Webleadr, plus other features to boost your web design leads.",
+            "ogDescription": "Discover how to find companies without websites using Webleadr, plus other features to boost your web design leads.",
             "canonical": "https://webdevamin.com/blogs/find-businesses-without-websites",
             "image": "https://webdevamin.com/images/find_businesses_without_websites_og.jpg"
         },
@@ -182,7 +182,7 @@
             "ogTitle": "How To Get Web Development Clients",
             "keywords": "web development, client acquisition, SEO, freelance platforms, online marketing",
             "description": "Learn effective strategies to attract web development clients, enhance your online presence, and leverage networking opportunities for growth.",
-            "ogDescription": "Learn effective strategies to attract web development clients, enhance your online presence, and leverage networking opportunities for growth.",
+            "ogDescription": "Learn effective strategies to attract web development clients and strengthen your online presence.",
             "canonical": "https://webdevamin.com/blogs/how-to-get-web-development-clients",
             "image": "https://webdevamin.com/images/how-to-get-webdevelopment-clients.jpeg"
         },
