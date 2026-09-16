@@ -5,9 +5,10 @@ import { getJsonString, } from '../../utils/app';
 import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';
 import HeroTitleAnimation from './HeroTitleAnimation';
+import Breadcrumbs from '../SEO/Breadcrumbs';
 
 const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
-    smallerTitle, imageMaxWidth = 'max-w-[600px]' }) => {
+    smallerTitle, imageMaxWidth = 'max-w-[600px]', breadcrumbItems, breadcrumbLocale }) => {
     const { title, text, button, image } = content;
     const { src: url, objectFit, width, height, alt, disableImgSpace = false } = image;
     const parsedTitle = getJsonString(title);
@@ -18,10 +19,15 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] 
         mx-auto mt-20 pb-0`} id={`hero`}>
+            {breadcrumbItems?.length > 0 && (
+                <div className="md:px-12 lg:px-24 xl:px-40">
+                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} />
+                </div>
+            )}
             <div className={`text-center bg-transparent
             md:flex md:flex-row-reverse md:justify-evenly 
             md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
-            xl:px-40 2xl:px-50 md:pt-14`}>
+            xl:px-40 2xl:px-50 ${breadcrumbItems?.length ? 'md:pt-6' : 'md:pt-14'}`}>
                 <div className={`flex items-center justify-center ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
                     <div className={`relative ${imageMaxWidth} mx-auto`}>
                         <Image

@@ -107,7 +107,12 @@ const IndustriesPage = async ({ params }) => {
     <>
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-      <HeroOne content={blocks.find(block => block.slug === 'hero')} socials={socialsData} />
+      <HeroOne
+        content={blocks.find(block => block.slug === 'hero')}
+        socials={socialsData}
+        breadcrumbItems={[{ label: 'Home', href: '/nl' }, { label: 'Sectoren' }]}
+        breadcrumbLocale={locale}
+      />
       <PageLayout>
         {/* De sectie eindigt met het raster, en de lijn van de volgende sectie sluit het af. */}
         <BorderedSection flushBottom>

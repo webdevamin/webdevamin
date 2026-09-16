@@ -82,7 +82,15 @@ const Contact = async ({ params }) => {
     return (
         <>
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-            <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
+            <HeroOne
+                content={blocks.find(block => block.slug === `hero`)}
+                socials={socialsData}
+                breadcrumbItems={[
+                    { label: 'Home', href: locale === 'nl' ? '/nl' : '/' },
+                    { label: pageData.title },
+                ]}
+                breadcrumbLocale={locale}
+            />
             <PageLayout>
                 <BorderedSection>
                     <div id={slug} className={`block_container sm:text-center`}>

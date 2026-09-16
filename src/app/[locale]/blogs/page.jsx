@@ -78,7 +78,16 @@ const Blogs = async ({ params }) => {
     return (
         <>
             <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-            <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} ctaLink={`#${slugHeading}`} />
+            <HeroOne
+                content={blocks.find(block => block.slug === `hero`)}
+                socials={socialsData}
+                ctaLink={`#${slugHeading}`}
+                breadcrumbItems={[
+                    { label: 'Home', href: locale === 'nl' ? '/nl' : '/' },
+                    { label: pageData.title },
+                ]}
+                breadcrumbLocale={locale}
+            />
             <PageLayout>
                 <BorderedSection>
                     <div id={slugHeading} className={`block_container`}>

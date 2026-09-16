@@ -1,16 +1,22 @@
 import ButtonOne from '../Buttons/ButtonOne'
 import Icon from '../Icon'
 import { getIconComponent } from '../../utils/iconMapper';
+import Breadcrumbs from '../SEO/Breadcrumbs';
 
-const HeroTwo = ({ content, socials, ctaLink, externalLink = false }) => {
+const HeroTwo = ({ content, socials, ctaLink, externalLink = false, breadcrumbItems, breadcrumbLocale }) => {
     const { title, text, button } = content;
     const { href, text: buttonText } = button[0];
 
     return (
         <div className={`p-10 bg-transparent max-w-[2000px] 
         mx-auto mt-24 lg:mt-20 pb-0`} id={`hero`}>
+            {breadcrumbItems?.length > 0 && (
+                <div className="mx-auto w-11/12 lg:w-6/12">
+                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} />
+                </div>
+            )}
             <div className={`text-white text-center bg-transparent w-11/12 mx-auto
-            md:flex flex-col items-center justify-center md:pt-14 mt-7 lg:w-6/12`}>
+            md:flex flex-col items-center justify-center ${breadcrumbItems?.length ? 'md:pt-6 mt-4' : 'md:pt-14 mt-7'} lg:w-6/12`}>
                 <div className={`text-black opacity-60 uppercase font-bold mb-8 
                 sm:text-lg md:text-xl lg:text-2xl lg:mb-16 tracking-wider`}>
                     Blog

@@ -124,7 +124,16 @@ const Blog = async ({ params }) => {
     return (
         <div>
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
-            <HeroTwo content={heroContent} socials={socialsData} />
+            <HeroTwo
+                content={heroContent}
+                socials={socialsData}
+                breadcrumbItems={[
+                    { label: 'Home', href: locale === 'nl' ? '/nl' : '/' },
+                    { label: 'Blogs', href: locale === 'nl' ? '/nl/blogs' : '/blogs' },
+                    { label: title },
+                ]}
+                breadcrumbLocale={locale}
+            />
             <PageLayout>
                 <BorderedSection>
                     <div id={slug} className={styles.blogContainer}>

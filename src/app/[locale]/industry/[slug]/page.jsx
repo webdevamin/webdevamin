@@ -360,7 +360,7 @@ const TestimonialSpotlight = ({ content }) => {
                 <svg className="mb-4 h-8 w-8 text-theme" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
                 </svg>
-                <p className="mb-0 text-lg md:text-xl leading-8 text-dark opacity-100">{review.text}</p>
+                <p className="mb-0">{review.text}</p>
               </blockquote>
               <figcaption className="flex items-center gap-4 text-left">
                 <div
@@ -427,7 +427,16 @@ const IndustryPage = async ({ params }) => {
     <>
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-      <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} />
+      <HeroOne
+        content={blocks.find(block => block.slug === `hero`)}
+        socials={socialsData}
+        breadcrumbItems={[
+          { label: 'Home', href: '/nl' },
+          { label: 'Sectoren', href: '/nl/industry' },
+          { label: pageData.card.title },
+        ]}
+        breadcrumbLocale={locale}
+      />
       <PageLayout allowSticky={locale === 'nl' && slug === 'restaurant-website-laten-maken'}>
         <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
         <BorderedSection>

@@ -171,7 +171,13 @@ const BruggePage = async ({ params }) => {
     <>
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
-      <HeroOne content={blocks.find(block => block.slug === `hero`)} socials={socialsData} imageMaxWidth="max-w-[700px]" />
+      <HeroOne
+        content={blocks.find(block => block.slug === `hero`)}
+        socials={socialsData}
+        imageMaxWidth="max-w-[700px]"
+        breadcrumbItems={[{ label: 'Home', href: '/nl' }, { label: 'Website laten maken Brugge' }]}
+        breadcrumbLocale={locale}
+      />
       <PageLayout>
         <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
         <BorderedSection>
