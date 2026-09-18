@@ -15,7 +15,7 @@ const Projects = ({ content, data }) => {
         <BlockLayoutTwo title={title} slug={slug} noPadding>
             <div className={`md:basis-5/12`}>
                 <Heading noSubtitle title={title} />
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                 <ButtonOne href={href} text={buttonText} wFit />
             </div>
             <div className={`mt-10 md:mt-0 md:basis-7/12`}>

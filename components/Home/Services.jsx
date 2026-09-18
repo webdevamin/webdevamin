@@ -11,7 +11,7 @@ const Services = ({ content }) => {
         <section id="services">
             <div className='max-w-7xl mx-auto'>
                 <Heading title={title} subtitle={subtitle} />
-                {text && <div className="max-w-5xl" dangerouslySetInnerHTML={{ __html: text }} />}
+                {text && <div className="section_content max-w-5xl" dangerouslySetInnerHTML={{ __html: text }} />}
             </div>
             <LineGrid
                 className="mt-8 md:mt-10 xl:mt-12"

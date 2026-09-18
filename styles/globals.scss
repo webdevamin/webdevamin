@@ -138,10 +138,6 @@ p a {
   @apply my-20 sm:my-20 md:my-28 xl:my-52;
 }
 
-.block_normal_content h3 {
-  @apply text-lg sm:text-xl;
-}
-
 .portfolio-project-mockup {
   width: 100%;
   max-width: 560px;
@@ -182,6 +178,10 @@ p a {
   button {
     @apply border-dark focus:ring-0 border-opacity-10;
   }
+}
+
+.section_content h3 {
+  @apply text-lg sm:text-xl;
 }
 
 .blog_content {

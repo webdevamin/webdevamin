@@ -19,7 +19,7 @@ const Blogs = ({ content, data }) => {
         <BlockLayoutTwo title={title} slug={slug} position={`right`} noPadding>
             <div className={`md:basis-5/12`}>
                 <Heading title={title} noSubtitle />
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                 <ButtonOne href={href} text={buttonText} wFit />
             </div>
             <div className={`mt-10 gap-6 h-auto md:hidden overflow-x-auto 

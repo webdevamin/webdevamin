@@ -17,7 +17,7 @@ const Location = ({ content }) => {
                     <SubHeading title={subtitle} />
                     {text && (
                         <div
-                            className="mt-6 max-w-4xl text-base md:text-lg leading-relaxed"
+                            className="section_content mt-6 max-w-4xl text-base md:text-lg leading-relaxed"
                             dangerouslySetInnerHTML={{ __html: text }}
                         />
                     )}

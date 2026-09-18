@@ -30,7 +30,7 @@
             "url": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/restaurant-reserv.png",
-            "description": "Restaurantwebsite met digitale menukaart vanaf €49 per maand. Online reservaties vanaf €89, bestellingen en maximaal drie talen voor €139. Hosting en onderhoud inbegrepen.",
+            "description": "Restaurantwebsite met digitale menukaart vanaf €49 per maand. Online reservaties en maximaal drie talen vanaf €89, bestellingen vanaf €139. Hosting en onderhoud inbegrepen.",
             "email": "amin@webdevamin.com",
             "telephone": "+32470930916",
             "address": {
@@ -68,7 +68,7 @@
                     "name": "Wat kost een restaurant website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een restaurantwebsite met digitale menukaart kost €49 per maand excl. btw . Met online reservaties kiest u Premium voor €89 . Pro kost €139 en omvat ook online bestellen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
+                        "text": "Een restaurantwebsite met digitale menukaart kost €49 per maand excl. btw . Met online reservaties en maximaal drie talen kiest u Premium voor €89. Pro kost €139 en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                     }
                 },
                 {
@@ -124,7 +124,7 @@
                     "name": "Kan mijn website in meerdere talen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, in het Pro pakket staat uw website in maximaal drie talen, bijvoorbeeld Nederlands, Frans en Engels. Voor restaurants in Brugge, Gent, Antwerpen of aan de kust met veel toeristen maakt dat een groot verschil: een gast die de kaart begrijpt, reserveert sneller. De menukaart en de reservatie- en bestelpagina zijn dan ook in die talen beschikbaar. Heeft u alleen een extra taal nodig, zonder de andere functies van Pro, dan kan dat via een pakket op maat."
+                        "text": "Ja, vanaf het Premium pakket staat uw website in maximaal drie talen, bijvoorbeeld Nederlands, Frans en Engels. Voor restaurants in Brugge, Gent, Antwerpen of aan de kust met veel toeristen maakt dat een groot verschil: een gast die de kaart begrijpt, reserveert sneller. De menukaart en de reservatiepagina zijn dan ook in die talen beschikbaar. In Pro geldt dit ook voor de bestelpagina."
                     }
                 },
                 {
@@ -239,7 +239,7 @@
                         "@type": "Offer",
                         "itemOffered": {
                             "@type": "Service",
-                            "name": "Pro Restaurant Website met Online Bestellen en Meertaligheid"
+                            "name": "Pro Restaurant Website met Online Bestellen"
                         },
                         "price": "139",
                         "priceCurrency": "EUR",
@@ -363,7 +363,7 @@
             "title": "Eén aanspreekpunt voor uw website",
             "subtitle": "Ook nadat uw website online staat",
             "slug": "why-all-in-one",
-            "text": "<h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>U stuurt een wijziging door, ik pas ze aan</h3><p>Een nieuwe dagschotel, andere prijzen of aangepaste openingsuren? In de maandpakketten geef ik die wijzigingen een plek op uw website. Wilt u uw menukaart zelf beheren, dan bespreken we een beheeromgeving op maat.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Hosting en onderhoud zijn geregeld</h3><p>Uw pakket omvat de website, hosting, domeinnaam, onderhoud, SEO en support. Reservaties zitten erbij vanaf Premium. Met Pro kunnen klanten ook bestellen en is uw website beschikbaar in maximaal drie talen.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Uw eigen kanaal naast bestaande platformen</h3><p>U kunt de platformen die u nu gebruikt blijven inzetten. Via uw eigen website hebben gasten ook een rechtstreekse manier om te reserveren of te bestellen. Vergelijkt u aanbieders? Lees mijn <a href='/nl/blogs/zenchef-alternatief'>vergelijking van Zenchef en Webdevamin</a>.</p>",
+            "text": "<h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>U stuurt een wijziging door, ik pas ze aan</h3><p>Een nieuwe dagschotel, andere prijzen of aangepaste openingsuren? In de maandpakketten geef ik die wijzigingen een plek op uw website. Wilt u uw menukaart zelf beheren, dan bespreken we een beheeromgeving op maat.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Hosting en onderhoud zijn geregeld</h3><p>Uw pakket omvat de website, hosting, domeinnaam, onderhoud, SEO en support. Reservaties zitten erbij vanaf Premium. Vanaf Premium is uw website beschikbaar in maximaal drie talen. Met Pro kunnen klanten ook bestellen.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Uw eigen kanaal naast bestaande platformen</h3><p>U kunt de platformen die u nu gebruikt blijven inzetten. Via uw eigen website hebben gasten ook een rechtstreekse manier om te reserveren of te bestellen. Vergelijkt u aanbieders? Lees mijn <a href='/nl/blogs/zenchef-alternatief'>vergelijking van Zenchef en Webdevamin</a>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -925,7 +925,7 @@
             "subtitle": "Website en ondersteuning voor een vast maandbedrag",
             "highlight": "Online reservaties vanaf €89/maand",
             "slug": "pricing",
-            "text": "<p><strong>Standaard €49</strong> voor uw website en menukaart, <strong>Premium €89</strong> met online reservaties of <strong>Pro €139</strong> met bestellingen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen.</p><p>Alle prijzen zijn <strong>per maand, excl. btw</strong>. Geen opstartkosten. <strong>Minimale looptijd 12 maanden</strong>, daarna maandelijks opzegbaar. Prijzen bijgewerkt: september 2026.</p>",
+            "text": "<p><strong>Standaard €49</strong> voor uw website en menukaart, <strong>Premium €89</strong> met online reservaties en maximaal drie talen of <strong>Pro €139</strong> met bestellingen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen.</p><p>Alle prijzen zijn <strong>per maand, excl. btw</strong>. Geen opstartkosten. <strong>Minimale looptijd 12 maanden</strong>, daarna maandelijks opzegbaar. Prijzen bijgewerkt: september 2026.</p>",
             "items": [
                 {
                     "title": "Standaard",
@@ -965,11 +965,11 @@
                         "<strong>Alles van Standaard</strong> inbegrepen",
                         "Online <strong>reservatiesysteem</strong>",
                         "<strong>E-mailbevestiging</strong> voor uw gasten",
-                        "<strong>200 reservaties per maand</strong>, ongeacht het aantal gasten per boeking"
+                        "<strong>200 reservaties per maand</strong>, ongeacht het aantal gasten per boeking",
+                        "Website in <strong>maximaal drie talen</strong>"
                     ],
                     "excludedFeatures": [
-                        "Online bestellen en afhalen",
-                        "Meertalige website"
+                        "Online bestellen en afhalen"
                     ],
                     "buttonText": "Bespreek Premium",
                     "buttonHref": "/contact?pakket=restaurant-premium",
@@ -986,7 +986,6 @@
                     "features": [
                         "<strong>Alles van Premium</strong>, met een hogere maandlimiet",
                         "Online <strong>bestellen en afhalen</strong>",
-                        "Website in <strong>maximaal drie talen</strong>",
                         "<strong>500 reservaties en bestellingen samen</strong> per maand"
                     ],
                     "excludedFeatures": [],
@@ -1028,7 +1027,7 @@
             "items": [
                 {
                     "title": "Wat kost een restaurant website laten maken?",
-                    "description": "Een restaurantwebsite met digitale menukaart kost <strong>€49 per maand excl. btw</strong>. Met online reservaties kiest u Premium voor <strong>€89</strong>. Pro kost <strong>€139</strong> en omvat ook online bestellen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
+                    "description": "Een restaurantwebsite met digitale menukaart kost <strong>€49 per maand excl. btw</strong>. Met online reservaties en maximaal drie talen kiest u Premium voor <strong>€89</strong>. Pro kost <strong>€139</strong> en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                 },
                 {
                     "title": "Hoe snel staat mijn restaurant website online?",
@@ -1056,7 +1055,7 @@
                 },
                 {
                     "title": "Kan mijn website in meerdere talen?",
-                    "description": "Ja, in het Pro pakket staat uw website in maximaal drie talen, bijvoorbeeld Nederlands, Frans en Engels. Voor restaurants in Brugge, Gent, Antwerpen of aan de kust met veel toeristen maakt dat een groot verschil: een gast die de kaart begrijpt, reserveert sneller. De menukaart en de reservatie- en bestelpagina zijn dan ook in die talen beschikbaar. Heeft u alleen een extra taal nodig, zonder de andere functies van Pro, dan kan dat via een pakket op maat."
+                    "description": "Ja, vanaf het Premium pakket staat uw website in maximaal drie talen, bijvoorbeeld Nederlands, Frans en Engels. Voor restaurants in Brugge, Gent, Antwerpen of aan de kust met veel toeristen maakt dat een groot verschil: een gast die de kaart begrijpt, reserveert sneller. De menukaart en de reservatiepagina zijn dan ook in die talen beschikbaar. In Pro geldt dit ook voor de bestelpagina."
                 },
                 {
                     "title": "Kan ik zelf mijn menukaart aanpassen?",
@@ -1107,7 +1106,7 @@
                 "Gratis adviesgesprek",
                 "Website met menukaart €49/maand",
                 "Online reservaties €89/maand",
-                "Bestellen & meertalig €139/maand"
+                "Bestellen €139/maand"
             ]
         }
     ]

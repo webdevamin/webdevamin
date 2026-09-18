@@ -30,7 +30,7 @@ export const FaqAccordion = ({ items }) => (
                             >
                                 {text.includes('<') ? (
                                     <div
-                                        className="mb-2 w-full"
+                                        className="section_content mb-2 w-full"
                                         dangerouslySetInnerHTML={{ __html: text }}
                                     />
                                 ) : (
@@ -68,7 +68,7 @@ const BlockAccordion = ({ content, center = false }) => {
                             <Heading title={title} subtitle={subtitle} />
                             <div
                                 dangerouslySetInnerHTML={{ __html: text }}
-                                className={`p transition-all duration-300 ${center ? `xl:text-center` : `max-w-3xl`}`}
+                                className={`section_content p transition-all duration-300 ${center ? `xl:text-center` : `max-w-3xl`}`}
                             />
                         </div>
                     )

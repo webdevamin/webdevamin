@@ -19,7 +19,7 @@ const IndustryCards = ({ content, cards, bottomLine = false }) => {
         <section id={slug} className="scroll-mt-28">
             <div className="max-w-7xl mx-auto">
                 <Heading title={title} subtitle={subtitle} />
-                {text && <div className="max-w-3xl" dangerouslySetInnerHTML={{ __html: text }} />}
+                {text && <div className="section_content max-w-3xl" dangerouslySetInnerHTML={{ __html: text }} />}
                 {button && (
                     <div className="mt-6">
                         <ButtonThree href={button.href} text={button.text} />

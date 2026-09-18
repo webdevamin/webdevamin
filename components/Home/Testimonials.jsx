@@ -22,7 +22,7 @@ const Testimonials = ({ content }) => {
         <section>
             <div className="max-w-6xl">
                 <Heading title={title} subtitle={subtitle} />
-                {text && <div dangerouslySetInnerHTML={{ __html: text }} className={`p`} />}
+                {text && <div dangerouslySetInnerHTML={{ __html: text }} className={`section_content p`} />}
             </div>
             <LineGrid
                 className="mt-8 md:mt-10 xl:mt-12"

@@ -43,7 +43,7 @@ const Hero = ({ content, socials, locale }) => {
 
 
                                     return (
-                                        <a key={index} href={href} rel="noreferrer"
+                                        <a key={index} href={href} rel="noopener noreferrer nofollow"
                                             target="_blank" aria-label={title}
                                             className={`${hideFromHeader && `hidden`}`}>
                                             <IconComponent className="h-6 w-6" />
@@ -56,7 +56,7 @@ const Hero = ({ content, socials, locale }) => {
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
-                            <div className={`larger_p`}
+                            <div className={`section_content larger_p`}
                                 dangerouslySetInnerHTML={{ __html: text }} />
                         ) : (
                             <div className={`larger_p`}>
@@ -131,7 +131,7 @@ const Hero = ({ content, socials, locale }) => {
                             const IconComponent = getIconComponent(name);
 
                             return (
-                                <a key={index} href={href} rel="noreferrer"
+                                <a key={index} href={href} rel="noopener noreferrer nofollow"
                                     target="_blank" aria-label={title}
                                     className={`${hideFromHeader && `hidden`}`}>
                                     <IconComponent className="h-8 w-8" />

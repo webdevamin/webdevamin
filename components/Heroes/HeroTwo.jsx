@@ -26,7 +26,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false, breadcrumbIt
                     lg:mb-9 xl:mb-10 2xl:mb-12 2xl:text-7xl 3xl:text-8xl`}>
                     {title}
                 </h1>
-                <div dangerouslySetInnerHTML={{ __html: text }} className={`larger_p text-dark`} />
+                <div dangerouslySetInnerHTML={{ __html: text }} className={`section_content larger_p text-dark`} />
                 <ButtonOne href={ctaLink || href} text={buttonText}
                     classes={`sm:px-28`} external={externalLink} />
             </div>

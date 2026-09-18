@@ -75,7 +75,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                     </div>
                     {
                         (text.startsWith(`<`) && text.endsWith(`>`)) ? (
-                            <div className={`larger_p`}
+                            <div className={`section_content larger_p`}
                                 dangerouslySetInnerHTML={{ __html: text }} />
                         ) : (
                             <div className={`larger_p`}>

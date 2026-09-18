@@ -25,7 +25,7 @@ export function applyTaxiPricing(source, catalog = TAXI_CATALOG) {
       limitLabel: booking ? (item ? `${number(item.bookings)} online boekingen per maand` : 'Met online boeken') : 'Zonder online boeken',
       features: [
         ...(item ? [`${number(item.emails)} e-mails vanuit uw website per maand, zoals ${booking ? 'boekingsbevestigingen' : 'berichten via het contactformulier'}`, ...(booking ? [`${number(item.autocompleteRequests)} keer per maand hulp bij het zoeken naar een adres`, `${number(item.routes)} berekeningen van een ritroute per maand`] : [])] : []),
-        'Maximaal 5 pagina’s in 1 taal', '1 zakelijk e-mailaccount, bijvoorbeeld info@uwtaxibedrijf.be',
+        booking ? 'Maximaal 5 pagina’s in maximaal 3 talen' : 'Maximaal 5 pagina’s in 1 taal', '1 zakelijk e-mailaccount, bijvoorbeeld info@uwtaxibedrijf.be',
         'Ruimte op internet voor uw website: ik regel en betaal die',
         'Uw eigen webadres: ik regel en betaal de verlenging',
         'Onderhoud en technische updates: ik neem het werk uit handen',
@@ -39,7 +39,7 @@ export function applyTaxiPricing(source, catalog = TAXI_CATALOG) {
     title: 'Op Maat', price: 'Op aanvraag', currency: '', period: '',
     tagline: 'Een website die past bij uw eigen werkwijze.',
     description: 'Voor extra functies, meer dan 500 online boekingen per maand of een grotere website. We bespreken uw wensen en maken een persoonlijk voorstel.',
-    features: ['Extra pagina’s, talen of zakelijke e-mailaccounts', 'Online betalen, SMS of chauffeursplanning op aanvraag', 'Prijs en gebruikslimieten vooraf afgesproken'],
+    features: ['Extra pagina’s, meer dan 3 talen of zakelijke e-mailaccounts', 'Online betalen, SMS of chauffeursplanning op aanvraag', 'Prijs en gebruikslimieten vooraf afgesproken'],
     buttonText: 'Bespreek mijn wensen', buttonHref: '#contact',
   });
   if (!catalog) {

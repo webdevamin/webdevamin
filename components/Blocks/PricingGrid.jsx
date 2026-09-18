@@ -28,7 +28,7 @@ const PricingGrid = ({ content, onCalculate }) => {
                 <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme
                             text-white px-4 py-2 mb-7 inline-block uppercase
                             md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                 {button && <ButtonOne href={button.href} text={button.text} onClick={onCalculate} />}
               </div>
             </div>

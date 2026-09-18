@@ -16,7 +16,7 @@ const OneTimePayment = ({ content, align = 'left' }) => {
                 <div className={isRight ? "max-w-6xl ml-auto lg:text-right" : "max-w-6xl lg:text-left"}>
                     <div>
                         <Heading title={title} noSubtitle />
-                        <div dangerouslySetInnerHTML={{ __html: text }} />
+                        <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                         {button?.href && button?.text && (
                             <div className={isRight ? "flex flex-col lg:gap-4 lg:flex-row lg:justify-end" : "flex flex-col lg:gap-4 lg:flex-row"}>
                                 <ButtonOne href={button.href} text={button.text} classes="sm:px-14 text-center" />
