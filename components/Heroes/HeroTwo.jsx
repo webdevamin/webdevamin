@@ -12,7 +12,7 @@ const HeroTwo = ({ content, socials, ctaLink, externalLink = false, breadcrumbIt
         mx-auto mt-24 lg:mt-20 pb-0`} id={`hero`}>
             {breadcrumbItems?.length > 0 && (
                 <div className="mx-auto w-11/12 lg:w-6/12">
-                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} />
+                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} className="text-center [&_ol]:justify-center" />
                 </div>
             )}
             <div className={`text-white text-center bg-transparent w-11/12 mx-auto

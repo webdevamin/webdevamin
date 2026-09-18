@@ -1,3 +1,7 @@
+import { TAXI_CATALOG } from '../../../../../utils/taxi-pricing.mjs';
+import { applyTaxiPricing } from '../../../../../utils/taxi-page.mjs';
+
+export const revalidate = 300;
 import Header from '../../../../../components/Layouts/Header'
 import Footer from '../../../../../components/Layouts/Footer'
 import PageLayout from '../../../../../components/Layouts/PageLayout'
@@ -54,7 +58,8 @@ async function getData(locale, slug) {
   const pagesData = (await import(`../../../../../messages/${locale}/pages.json`)).default;
   const contactBlockData = (await import(`../../../../../messages/${locale}/contactBlock.json`)).default;
   const projectsData = (await import(`../../../../../messages/${locale}/projects.json`)).default;
-  const pageData = (await import(`../../../../../messages/${locale}/industries/${fileName}.json`)).default;
+  let pageData = (await import(`../../../../../messages/${locale}/industries/${fileName}.json`)).default;
+  if (fileName === 'taxi') pageData = applyTaxiPricing(pageData, TAXI_CATALOG);
   const sectorsPageData = (await import(`../../../../../messages/${locale}/pages/industries.json`)).default;
   const otherIndustryCards = await getIndustryCards(locale, slug);
 
@@ -184,7 +189,7 @@ const VideoDemoSection = ({ content }) => {
                   <a
                     href={videoUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="flex flex-col items-center gap-4 text-theme hover:text-theme_darker transition-colors"
                   >
                     <svg className="w-20 h-20" fill="currentColor" viewBox="0 0 24 24">
@@ -206,7 +211,7 @@ const VideoDemoSection = ({ content }) => {
                 <a
                   href={fallbackUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-flex w-full items-center justify-center rounded border border-dark bg-theme px-5 py-3 text-sm font-semibold uppercase tracking-wider text-dark shadow-bold_r_sm transition-all hover:shadow-zero sm:w-auto"
                 >
                   {fallbackButtonText || 'Bekijk voorbeeld'}
@@ -333,7 +338,7 @@ const TestimonialSpotlight = ({ content }) => {
   const reviews = content?.reviews || (content?.review ? [content.review] : []);
   if (!reviews.length) return null;
 
-  const { title, subtitle, moreReviewsUrl, moreReviewsText } = content;
+  const { title, subtitle, moreReviewsUrl, moreReviewsText, scoreLabel } = content;
   const average = reviews.reduce((sum, review) => sum + (review.stars || 5), 0) / reviews.length;
   // null is het scorevak.
   const cells = [null, ...reviews];
@@ -378,7 +383,7 @@ const TestimonialSpotlight = ({ content }) => {
             </figure>
           ) : (
             <div className="flex h-full flex-col justify-center">
-              <div className="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">Google reviews</div>
+              <div className="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">{scoreLabel || 'Google reviews'}</div>
               <div className="mt-3 flex items-end gap-3">
                 <div className="stroke-text leading-none">{average.toFixed(1).replace('.', ',')}</div>
                 <div className="mb-1 text-sm font-semibold text-slate-500">/ 5</div>
@@ -390,7 +395,7 @@ const TestimonialSpotlight = ({ content }) => {
                 <a
                   href={moreReviewsUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-theme_darker hover:text-dark transition-colors uppercase"
                 >
                   <span>{moreReviewsText}</span>
@@ -422,8 +427,42 @@ const IndustryPage = async ({ params }) => {
 
   const { alternateLangs, blocks } = pageData;
   const oneTimePayment = blocks.find(block => block.slug === 'one-time-payment');
+  const isRestaurant = locale === 'nl' && slug === 'restaurant-website-laten-maken';
+  const benefits = (
+    <>
+      <BorderedSection>
+        <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website')} />
+      </BorderedSection>
+      <BorderedSection>
+        <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position="right" />
+      </BorderedSection>
+    </>
+  );
+  const portfolioAndPricing = (
+    <>
+      <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
+      <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
+      <PricingGrid content={blocks.find(block => block.slug === 'pricing')} />
+      {oneTimePayment && (
+        <BorderedSection>
+          <OneTimePayment content={oneTimePayment} />
+        </BorderedSection>
+      )}
+    </>
+  );
+  const faq = (
+    <BorderedSection line={false}>
+      <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
+    </BorderedSection>
+  );
+  const closing = (
+    // Compenseert de negatieve bovenmarge van CallToAction.
+    <div className="lg:mt-20">
+      <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
+    </div>
+  );
 
-  return (
+  const page = (
     <>
       <JsonLd data={pageData.jsonLd} />
       <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
@@ -437,40 +476,38 @@ const IndustryPage = async ({ params }) => {
         ]}
         breadcrumbLocale={locale}
       />
-      <PageLayout allowSticky={locale === 'nl' && slug === 'restaurant-website-laten-maken'}>
-        <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
-        <BorderedSection>
-          <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website')} />
-        </BorderedSection>
-        <BorderedSection>
-          <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position='right' />
-        </BorderedSection>
-        {/* De taxipagina toont het demoblok nog niet: er is nog geen video van het boekingssysteem. Haal deze voorwaarde weg zodra de video klaar is. */}
+      <PageLayout allowSticky={isRestaurant}>
+        {isRestaurant ? portfolioAndPricing : (
+          <>
+            <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
+            {benefits}
+          </>
+        )}
+        {/* De taxipagina toont het demoblok nog niet: er is nog geen video van het boekingssysteem. */}
         {slug !== 'taxi-website-laten-maken' && (
           <VideoDemoSection content={blocks.find(block => block.slug === 'video-demo')} />
         )}
-        {locale === 'nl' && slug === 'restaurant-website-laten-maken' ? (
+        {isRestaurant ? (
           <BorderedSection>
             <RestaurantFeatures content={blocks.find(block => block.slug === 'features-benefits')} />
           </BorderedSection>
         ) : (
           <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         )}
-        <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
-        <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
-        <PricingGrid content={blocks.find(block => block.slug === 'pricing')} />
-        {oneTimePayment && (
-          <BorderedSection>
-            <OneTimePayment content={oneTimePayment} />
-          </BorderedSection>
+        {isRestaurant ? (
+          <>
+            {benefits}
+            <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
+            {faq}
+            {closing}
+          </>
+        ) : (
+          <>
+            {portfolioAndPricing}
+            {closing}
+            {faq}
+          </>
         )}
-        {/* Heft de negatieve bovenmarge van CallToAction op, want de sectie erboven eindigt nu met vaste padding. */}
-        <div className="lg:mt-20">
-          <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
-        </div>
-        <BorderedSection line={false}>
-          <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
-        </BorderedSection>
         {otherIndustryCards.length > 0 && (
           // Het rode contactblok begint direct onder de afsluitende lijn van het raster, zodat die lijn niet boven een lege strook zweeft.
           <BorderedSection flushBottom>
@@ -485,10 +522,11 @@ const IndustryPage = async ({ params }) => {
         <div className="md:mt-12 xl:mt-20">
           <Contact content={contactBlockData} />
         </div>
-        <Footer blogs={blogsData} pages={pagesData} socials={socialsData} followExternalLinks />
+        <Footer blogs={blogsData} pages={pagesData} socials={socialsData} />
       </PageLayout>
     </>
   );
+  return page;
 };
 
 export default IndustryPage;

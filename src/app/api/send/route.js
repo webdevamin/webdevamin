@@ -7,9 +7,16 @@ const stripHtml = (value = '') => {
   return String(value).replace(/(<([^>]+)>)/gi, '').trim();
 };
 
+const escapeHtml = value => value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+
 export async function POST(req) {
   try {
-    const { name, email, message, website } = await req.json();
+    const text = await req.text();
+    if (text.length > 16000) return Response.json({ error: 'Request too large.' }, { status: 413 });
+    let body;
+    try { body = JSON.parse(text); } catch { return Response.json({ error: 'Invalid request.' }, { status: 400 }); }
+    if (!body || typeof body !== 'object') return Response.json({ error: 'Invalid request.' }, { status: 400 });
+    const { name, email, message, website } = body;
 
     // Honeypot check - if website field is filled, it's likely a bot
     if (website) {
@@ -52,10 +59,10 @@ export async function POST(req) {
       replyTo: [{ email: cleanEmail, name: cleanName }],
       html: `<html><body>
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${cleanName}</p>
-        <p><strong>Email:</strong> ${cleanEmail}</p>
+        <p><strong>Name:</strong> ${escapeHtml(cleanName)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(cleanEmail)}</p>
         <p><strong>Message:</strong></p>
-        <p>${cleanMessage}</p>
+        <p>${escapeHtml(cleanMessage).replace(/\n/g, '<br>')}</p>
       </body></html>`,
     };
 

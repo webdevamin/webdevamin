@@ -13,22 +13,20 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
     const { src: url, objectFit, width, height, alt, disableImgSpace = false } = image;
     const parsedTitle = getJsonString(title);
 
-    const mainButtons = button.filter(b => !b.external).slice(0, 2);
-    const linkButtons = button.filter(b => b.external);
+    const mainButtons = button.filter(b => !b.external || b.prominent).slice(0, 2);
+    const linkButtons = button.filter(b => b.external && !b.prominent);
+    const hasProminentContact = mainButtons.some(b => b.prominent);
 
     return (
         <div className={`p-10 bg-transparent max-w-[2250px] 
         mx-auto mt-20 pb-0`} id={`hero`}>
-            {breadcrumbItems?.length > 0 && (
-                <div className="md:px-12 lg:px-24 xl:px-40">
-                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} />
-                </div>
-            )}
-            <div className={`text-center bg-transparent
-            md:flex md:flex-row-reverse md:justify-evenly 
-            md:items-center md:text-left md:px-12 md:gap-16 lg:px-24 
+            <div className={`text-center bg-transparent md:grid md:grid-cols-2
+            md:items-center md:text-left md:px-12 md:gap-x-16 lg:px-24
             xl:px-40 2xl:px-50 ${breadcrumbItems?.length ? 'md:pt-6' : 'md:pt-14'}`}>
-                <div className={`flex items-center justify-center ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
+                {breadcrumbItems?.length > 0 && (
+                    <Breadcrumbs items={breadcrumbItems} locale={breadcrumbLocale} className="mb-6 md:col-start-1 md:mb-0" />
+                )}
+                <div className={`flex items-center justify-center md:col-start-2 md:row-span-2 ${disableImgSpace ? `p-0 -mx-5` : `p-5 lg:p-0`}`}>
                     <div className={`relative ${imageMaxWidth} mx-auto`}>
                         <Image
                             src={url}
@@ -42,7 +40,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                         />
                     </div>
                 </div>
-                <div className={`mt-7 md:w-6/12 bg-transparent`}>
+                <div className={`mt-7 md:col-start-1 md:mt-14 bg-transparent`}>
                     <h1 className={`bg-transparent opacity-100 
                     ${smallerTitle && `text-3xl mb-8 
                     font-bold lg:text-4xl xl:text-5xl tracking-tight 
@@ -85,7 +83,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                             </div>
                         )
                     }
-                    <div className={`flex flex-col gap-4 lg:flex-row mt-8 lg:mt-10`}>
+                    <div className={`flex flex-col gap-4 ${hasProminentContact ? '2xl:flex-row' : 'lg:flex-row'} mt-8 lg:mt-10`}>
                         {
                             mainButtons.map((btn, i) => {
                                 const { href, text, external = false } = btn;
@@ -96,7 +94,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                                         <ButtonOne key={i} href={ctaLink || href}
                                             text={text} outline={isOdd} noMargin
                                             external={externalLink || external}
-                                            classes={`sm:px-14 md:text-center`} />
+                                            classes={`${hasProminentContact ? 'sm:px-6' : 'sm:px-14'} md:text-center`} />
                                     )
                                 }
                             })
@@ -122,7 +120,7 @@ const HeroOne = ({ content, socials = null, ctaLink, externalLink = false,
                             return (
                                 <a key={i} href={href}
                                     className={`${hideFromHeader && `hidden`}`}
-                                    rel="noreferrer nofollow"
+                                    rel="noopener noreferrer nofollow"
                                     target="_blank" aria-label={title}>
                                     <Icon icon={<IconComponent className="h-8 w-8" />} size={`2xl`} />
                                 </a>

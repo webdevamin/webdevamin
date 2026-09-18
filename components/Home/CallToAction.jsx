@@ -23,8 +23,13 @@ const CallToAction = ({ content }) => {
                         </p>
                     )}
                     {button && button.length > 0 && (
-                        <ButtonTwo href={button[0].href} text={button[0].text}
-                            classes={`sm:w-fit px-7 sm:px-12 md:px-20`} />
+                        <div className="flex flex-col items-stretch justify-center gap-x-4 sm:flex-row sm:flex-wrap sm:items-center">
+                            {button.map((item) => (
+                                <ButtonTwo key={item.href} href={item.href} text={item.text}
+                                    external={item.external}
+                                    classes={`sm:w-fit px-7 sm:px-12 md:px-20`} />
+                            ))}
+                        </div>
                     )}
                 </div>
             </BlockLayoutThree>

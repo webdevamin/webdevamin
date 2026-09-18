@@ -9,6 +9,8 @@ import BorderedSection from '../../../../../components/Layouts/BorderedSection';
 import styles from '../../../../../styles/BlogPage.module.scss';
 import { notFound } from 'next/navigation';
 import cloudflareLoader from '../../../../../imageLoader';
+import JsonLd from '../../../../../components/SEO/JsonLd';
+import { FaqAccordion } from '../../../../../components/Blocks/BlockAccordion';
 
 const optimizeEmbeddedImages = (html) => html
     .replaceAll(
@@ -60,7 +62,7 @@ export async function generateMetadata({ params }) {
     if (data.notFound || !data.blogData) return notFound();
 
     const { blogData } = data;
-    const { seo, alternates, title } = blogData;
+    const { seo, alternates, title, img } = blogData;
     const { title: seoTitle, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
 
     return {
@@ -82,8 +84,8 @@ export async function generateMetadata({ params }) {
             images: [
                 {
                     url: image,
-                    width: 1200,
-                    height: 630,
+                    width: img.width,
+                    height: img.height,
                 },
             ],
             locale: locale,
@@ -109,7 +111,7 @@ const Blog = async ({ params }) => {
 
     const { localesData, socialsData, blogsData, pagesData, contactBlockData, blogData } = data;
 
-    const { alternateLangs, title, description, text, img, border } = blogData;
+    const { alternateLangs, title, description, text, faq, textAfterFaq, img } = blogData;
     const { src, alt, width, height } = img;
 
     const button = [{
@@ -123,6 +125,7 @@ const Blog = async ({ params }) => {
 
     return (
         <div>
+            <JsonLd data={blogData.jsonLd} />
             <Header pages={pagesData} locales={localesData} alternateLangs={alternateLangs} />
             <HeroTwo
                 content={heroContent}
@@ -144,7 +147,7 @@ const Blog = async ({ params }) => {
                                     height={height}
                                     src={src}
                                     alt={alt}
-                                    className={`${styles.blogImage} ${border && `border shadow lg:shadow-xl`} w-full h-auto`}
+                                    className={`${styles.blogImage} border border-dark/10 shadow lg:shadow-xl w-full h-auto`}
                                     style={{ objectFit: `cover` }} priority={true}
                                     sizes="100vw" />
                             </div>
@@ -156,6 +159,18 @@ const Blog = async ({ params }) => {
                         <div className={styles.blogContent}>
                             <div dangerouslySetInnerHTML={{ __html: optimizeEmbeddedImages(text) }} />
                         </div>
+                        {faq?.items?.length > 0 && (
+                            <section aria-labelledby="blog-faq-title">
+                                <div className={styles.blogContent}>
+                                    <h2 id="blog-faq-title">{faq.title}</h2>
+                                </div>
+                                <FaqAccordion items={faq.items} />
+                            </section>
+                        )}
+                        {textAfterFaq && (
+                            <div className={styles.blogContent}
+                                dangerouslySetInnerHTML={{ __html: optimizeEmbeddedImages(textAfterFaq) }} />
+                        )}
                     </div>
                 </BorderedSection>
                 <Contact content={contactBlockData} />

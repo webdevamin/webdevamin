@@ -31,7 +31,7 @@ const Blogs = ({ content, data }) => {
 
                         return (
                             <article key={i} className={`min-w-[75vw] sm:min-w-[53vw]`}>
-                                <div className={`relative h-[calc(100vw/2.1)] sm:h-[calc(100vw/3)]`}>
+                                <div className={`relative w-full aspect-[12/7]`}>
                                     <Image
                                         src={src} fill={true} className={`rounded-xl`}
                                         alt={alt} style={{ objectFit: `cover` }}
@@ -61,7 +61,7 @@ const Blogs = ({ content, data }) => {
                                     const { img: { src, alt } } = blog;
 
                                     return (
-                                        <Slide key={i} src={src} alt={alt} />
+                                        <Slide key={i} src={src} alt={alt} blog />
                                     )
                                 })
                             }

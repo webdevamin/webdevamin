@@ -1,8 +1,13 @@
+'use client';
+
 import { Link } from '../../src/i18n/navigation'
 
-const ButtonTwo = ({ href, text, classes }) => {
+const ButtonTwo = ({ href, text, classes, external = false }) => {
+    const Component = external ? 'a' : Link;
+    const externalProps = external ? { target: '_blank', rel: 'noopener noreferrer nofollow' } : {};
+
     return (
-        <Link href={href} className={`p-3 relative before:ease-linear
+        <Component href={href} {...externalProps} className={`p-3 relative before:ease-linear
         block sm:inline-block text-white bg-theme_dark border md:border-2 
         uppercase font-semibold sm:p-4 before:absolute border-white
         before:top-0 before:left-0 transition-all before:origin-left
@@ -12,7 +17,7 @@ const ButtonTwo = ({ href, text, classes }) => {
         text-sm sm:text-base mt-7 hover:text-dark ease-linear 
         ${classes}`}>
             {text}
-        </Link>
+        </Component>
     )
 }
 

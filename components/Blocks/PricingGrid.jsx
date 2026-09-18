@@ -1,3 +1,4 @@
+import ButtonOne from '../Buttons/ButtonOne';
 import Heading from '../Heading';
 import BlockLayoutOne from '../Layouts/BlockLayoutOne';
 import { PricingCard } from '../Cards/PricingCard';
@@ -8,8 +9,8 @@ import LineGrid from '../Layouts/LineGrid';
  * Rendert de pricing-sectie volledig vanuit data, inclusief positionering,
  * aanbevolen badge en een extra groeiblok onder de pakketten.
  */
-const PricingGrid = ({ content }) => {
-  const { title, subtitle, text, highlight, items, growthTitle, growthText, growthNote } = content;
+const PricingGrid = ({ content, onCalculate }) => {
+  const { title, subtitle, text, highlight, items, growthTitle, growthText, growthNote, button } = content;
   const hasSingleTier = Array.isArray(items) && items.length === 1;
   const hasGrowth = Boolean(growthTitle || growthText || growthNote);
   // Drie pakketten passen op desktop op één rij; vier staan in twee rijen van twee, anders worden ze te smal.
@@ -28,6 +29,7 @@ const PricingGrid = ({ content }) => {
                             text-white px-4 py-2 mb-7 inline-block uppercase
                             md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
                 <div dangerouslySetInnerHTML={{ __html: text }} />
+                {button && <ButtonOne href={button.href} text={button.text} onClick={onCalculate} />}
               </div>
             </div>
           </div>
@@ -72,6 +74,7 @@ const PricingGrid = ({ content }) => {
                     excludedFeatures={excludedFeatures}
                     buttonText={buttonText}
                     buttonHref={buttonHref}
+                    onCalculate={onCalculate}
                     popular={popular}
                     plain
                   />

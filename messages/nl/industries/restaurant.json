@@ -1,12 +1,12 @@
 {
     "seo": {
-        "title": "Restaurant Website Laten Maken | Vanaf €49/maand All-In-One",
-        "description": "Laat uw restaurant of horeca website maken vanaf €49/maand. Menukaart met QR-code, online reservaties en afhaal. Hosting inbegrepen, geen opstartkosten.",
+        "title": "Restaurant website laten maken | Vanaf €49/maand",
+        "description": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
         "canonical": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
-        "ogTitle": "Restaurant Website Laten Maken | Vanaf €49/maand All-In-One",
-        "ogDescription": "Restaurant website laten maken vanaf €49/maand. Menukaart met QR-code, online reservaties en afhaal.",
+        "ogTitle": "Restaurant website laten maken | Vanaf €49/maand",
+        "ogDescription": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
         "image": "https://webdevamin.com/images/restaurant-website-laten-maken-og.png",
-        "keywords": "restaurant website laten maken, horeca website laten maken, website restaurant, restaurant website, website voor restaurant, webdesign restaurant, webdesign horeca, reservatiesysteem restaurant, reserveringssysteem restaurant, digitale menukaart, qr code menukaart, online bestellen horeca, meertalige restaurant website"
+        "keywords": "restaurant website laten maken, horeca website laten maken, restaurantwebsite met reservaties, website met digitale menukaart"
     },
     "alternates": [
         {
@@ -17,9 +17,9 @@
     "alternateLangs": [],
     "card": {
         "title": "Restaurant website laten maken",
-        "text": "Een restaurant of horeca website met digitale menukaart en QR-code voor op tafel. Vanaf Premium reserveren gasten online, in Pro bestellen ze ook om af te halen.",
-        "price": "Vanaf €49/maand, met reservaties €69/maand",
-        "linkText": "Bekijk restaurant pakketten"
+        "text": "Uw menukaart goed leesbaar op de gsm. Vanaf Premium reserveren gasten rechtstreeks bij uw zaak, met Pro bestellen ze ook om af te halen.",
+        "price": "Vanaf €49/maand, met reservaties €89/maand",
+        "linkText": "Bekijk de restaurantpakketten"
     },
     "jsonLd": {
         "localBusiness": {
@@ -30,7 +30,7 @@
             "url": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/restaurant-reserv.png",
-            "description": "Restaurant website laten maken vanaf €49 per maand. All-in-one pakketten voor restaurants en horecazaken met digitale menukaart, online reservaties, online bestellen, hosting, onderhoud en SEO.",
+            "description": "Restaurantwebsite met digitale menukaart vanaf €49 per maand. Online reservaties vanaf €89, bestellingen en maximaal drie talen voor €139. Hosting en onderhoud inbegrepen.",
             "email": "amin@webdevamin.com",
             "telephone": "+32470930916",
             "address": {
@@ -50,7 +50,7 @@
                     "name": "Netherlands"
                 }
             ],
-            "priceRange": "€49-€119",
+            "priceRange": "€49-€139",
             "sameAs": [
                 "https://www.linkedin.com/company/webdevamin",
                 "https://github.com/webdevamin",
@@ -68,7 +68,7 @@
                     "name": "Wat kost een restaurant website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een restaurant website kost bij Webdevamin vanaf €49 per maand excl. BTW, met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Wilt u dat gasten online een tafel reserveren, dan kiest u Premium voor €69 per maand. Voor online bestellen en een meertalige website is er Pro voor €119 per maand. Bij een klassiek webbureau betaalt u vaak eerst een eenmalig bedrag van enkele honderden tot enkele duizenden euro's, en daarna nog apart voor hosting en onderhoud. Zelf een restaurant website maken met een websitebouwer lijkt goedkoper, maar dan doet u het ontwerp, de teksten, de SEO en de updates zelf."
+                        "text": "Een restaurantwebsite met digitale menukaart kost €49 per maand excl. btw . Met online reservaties kiest u Premium voor €89 . Pro kost €139 en omvat ook online bestellen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                     }
                 },
                 {
@@ -84,7 +84,7 @@
                     "name": "Wat moet er zeker op een restaurant website staan?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Op een goede restaurant website vindt een gast binnen enkele seconden de menukaart, de openingsuren, het adres en een manier om te reserveren of te bellen. Deze onderdelen voorzie ik altijd: de menukaart als leesbare tekst, met prijzen en allergenen; openingsuren, sluitingsdagen en vakantieperiodes; adres, route via Google Maps en info over parkeren; een belknop en, vanaf Premium, een reservatieknop; foto's van uw zaak en uw gerechten; praktische info over toegankelijkheid, groepen en terras. Zo hoeven gasten niet te bellen voor een eenvoudige vraag en kiezen ze sneller voor uw zaak."
+                        "text": "Op een goede restaurant website vindt een gast binnen enkele seconden de menukaart, de openingsuren, het adres en een manier om te reserveren of te bellen. Deze onderdelen voorzie ik altijd: de menukaart als leesbare tekst, met prijzen en allergenen openingsuren, sluitingsdagen en vakantieperiodes adres, route via Google Maps en info over parkeren een belknop en, vanaf Premium, een reservatieknop foto's van uw zaak en uw gerechten praktische info over toegankelijkheid, groepen en terras Zo hoeven gasten niet te bellen voor een eenvoudige vraag en kiezen ze sneller voor uw zaak."
                     }
                 },
                 {
@@ -100,7 +100,7 @@
                     "name": "Hoeveel reservaties zijn inbegrepen, en wat als ik er meer krijg?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "In Premium zijn 200 reservaties per maand inbegrepen en in Pro 500 reservaties en bestellingen samen. Een reservatie telt als één boeking, of het nu om twee of om tien gasten gaat. Gaat u erover, dan wordt er niets geblokkeerd: elke gast kan gewoon reserveren of bestellen. Ik kijk naar het gemiddelde over drie maanden, zodat drukke periodes zoals december, Valentijn, Moederdag of de zomer aan de kust geen probleem zijn. Ligt het gemiddelde hoger dan uw pakket, dan bekijken we samen de overstap naar het volgende pakket of, boven Pro, een pakket op maat. U betaalt nooit een commissie per gast of per reservatie."
+                        "text": "In Premium zijn 200 reservaties per maand inbegrepen en in Pro 500 reservaties en bestellingen samen . Een reservatie telt als één boeking, of het nu om twee of om tien gasten gaat. Gaat u erover, dan wordt er niets geblokkeerd: elke gast kan gewoon reserveren of bestellen. Ik kijk naar het gemiddelde over drie maanden, zodat drukke periodes zoals december, Valentijn, Moederdag of de zomer aan de kust geen probleem zijn. Ligt het gemiddelde hoger dan uw pakket, dan bekijken we samen de overstap naar het volgende pakket of, boven Pro, een pakket op maat. U betaalt nooit een commissie per gast of per reservatie."
                     }
                 },
                 {
@@ -116,7 +116,7 @@
                     "name": "Ik sta al op TheFork, Resto.be of Takeaway. Heb ik nog een eigen website nodig?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, een eigen website blijft waardevol, ook als u al gasten krijgt via TheFork, Resto.be, Takeaway of een andere app. Zulke platformen kunnen extra gasten brengen, maar ze werken vaak met een vergoeding per reservatie of bestelling, of met een abonnement, en de klantrelatie ligt deels bij hen. Via uw eigen website reserveren en bestellen gasten rechtstreeks bij u. U kan de platformen gewoon blijven gebruiken als extra kanaal, terwijl uw website de vaste plek wordt waar gasten u terugvinden via Google."
+                        "text": "Een eigen website kan naast uw bestaande platformen werken. Gasten die uw zaak al kennen, vinden er uw menukaart en kunnen vanaf Premium rechtstreeks reserveren. Welke oplossing past, hangt af van de functies die u nodig heeft. Vergelijkt u reservatiesoftware? Lees mijn vergelijking van Zenchef en Webdevamin ."
                     }
                 },
                 {
@@ -132,7 +132,7 @@
                     "name": "Kan ik zelf mijn menukaart aanpassen?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, dat kan, maar het hoeft niet. In Standaard, Premium en Pro stuurt u een wijziging gewoon door en ik zet ze online, zodat u zelf niet in een beheersysteem hoeft te zoeken. Een nieuwe dagschotel, een seizoensmenu, aangepaste prijzen of andere openingsuren tijdens de vakantie horen daar allemaal bij. Wilt u de kaart liever zelf beheren, dan kan dat via een pakket op maat, met een eigen beheer-app zoals bij restaurant Commanderie. Daar past het team gerechten, prijzen en suggesties zelf aan via de gsm. De QR-code op tafel blijft na elke aanpassing gewoon werken."
+                        "text": "Zelf uw menukaart beheren kan via een pakket op maat , zoals de beheer-app van Restaurant Commanderie. In Standaard, Premium en Pro stuurt u de wijzigingen naar mij: ik pas uw gerechten, prijzen en openingsuren aan. De QR-code op tafel blijft gewoon werken."
                     }
                 },
                 {
@@ -140,7 +140,7 @@
                     "name": "Hoe word ik beter gevonden in Google en Google Maps?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een restaurant wordt beter gevonden als de website en het Google Bedrijfsprofiel dezelfde, duidelijke gegevens tonen: naam, adres, telefoonnummer, openingsuren en menukaart. Ik bouw uw website met lokale SEO: snelle laadtijden, goede titels en beschrijvingen, een menukaart als tekst in plaats van een PDF, en gestructureerde gegevens die Google helpen om uw zaak, adres en openingsuren te begrijpen. Uw Google Bedrijfsprofiel kan dan naar uw website en reservatiepagina linken. Ook reviews van gasten en recente foto's in dat profiel helpen om beter zichtbaar te zijn in Google Maps."
+                        "text": "Ik voorzie een website die goed leesbaar is op de gsm, met duidelijke paginatitels, praktische gegevens en uw menukaart als tekst. Laat uw Google Bedrijfsprofiel naar de juiste website en reservatiepagina verwijzen en houd uw naam, adres en openingsuren gelijk. Een positie in Google kan ik niet garanderen."
                     }
                 },
                 {
@@ -224,11 +224,11 @@
                             "@type": "Service",
                             "name": "Premium Restaurant Website met Online Reservaties"
                         },
-                        "price": "69",
+                        "price": "89",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "69",
+                            "price": "89",
                             "priceCurrency": "EUR",
                             "billingDuration": "P1M",
                             "unitText": "per maand",
@@ -241,11 +241,11 @@
                             "@type": "Service",
                             "name": "Pro Restaurant Website met Online Bestellen en Meertaligheid"
                         },
-                        "price": "119",
+                        "price": "139",
                         "priceCurrency": "EUR",
                         "priceSpecification": {
                             "@type": "UnitPriceSpecification",
-                            "price": "119",
+                            "price": "139",
                             "priceCurrency": "EUR",
                             "billingDuration": "P1M",
                             "unitText": "per maand",
@@ -284,8 +284,8 @@
         {
             "slug": "hero",
             "component": "hero",
-            "title": "Restaurant Website Laten Maken",
-            "text": "Laat uw restaurant website maken door een webontwikkelaar uit Brugge. Voor restaurants, brasserieën, cafés, frituren en andere horecazaken in België en Nederland. Kies een website met digitale menukaart voor €49/maand, laat gasten zelf online een tafel reserveren voor €69/maand, of ontvang ook afhaalbestellingen in meerdere talen voor €119/maand. Hosting, onderhoud en SEO zijn inbegrepen. Geen opstartkosten. Excl. BTW.",
+            "title": "Restaurant website laten maken",
+            "text": "<p><strong>Meer rechtstreekse reservaties. Minder telefoontjes. Geen commissie per gast.</strong></p><p>Uw restaurantwebsite met online reservaties voor <strong>€89/maand excl. btw</strong>. Hosting, onderhoud en domeinnaam inbegrepen. Geen opstartkosten, minimale looptijd 12 maanden. Een website met menukaart is er vanaf €49/maand. <a href='#pricing'>Bekijk de pakketten</a>.</p><p>Ik ben Amin, webontwikkelaar uit Brugge en de maker van de website van <a href='https://restocommanderie.com' target='_blank' rel='noopener noreferrer'>Restaurant Commanderie</a> in Westkerke.</p><p><strong>Twee klantbeoordelingen, allebei 5 sterren.</strong> Lees ze hieronder of <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>bekijk de reviews op Google</a>.</p>",
             "image": {
                 "src": "/images/restaurant-reserv.png",
                 "alt": "Illustratie van een restaurantbezoek met gasten, een ober en een gedekte tafel.",
@@ -294,17 +294,16 @@
             },
             "button": [
                 {
-                    "text": "Bekijk Pakketten",
-                    "href": "#pricing"
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20restaurant.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20zaak%20past%3F",
+                    "external": true,
+                    "prominent": true
                 },
                 {
-                    "text": "Gratis Offerte",
-                    "href": "/contact?pakket=restaurant"
-                },
-                {
-                    "text": "Bekijk Live Voorbeeld",
+                    "text": "Bekijk voorbeeld",
                     "href": "https://restocommanderie.com",
-                    "external": true
+                    "external": true,
+                    "prominent": true
                 }
             ],
             "types": [
@@ -320,13 +319,13 @@
         {
             "slug": "process",
             "component": "process",
-            "title": "Zo Loopt Uw Restaurant Website Project",
-            "subtitle": "Duidelijk proces",
+            "title": "Van eerste gesprek tot uw restaurantwebsite",
+            "subtitle": "Zo werken we samen",
             "items": [
                 {
                     "icon": "phone",
-                    "title": "Gratis gesprek",
-                    "text": "We bespreken in ongeveer 15 minuten uw zaak, uw menukaart, uw openingsuren en of u online reservaties of afhaalbestellingen wil ontvangen."
+                    "title": "Vertel me over uw zaak",
+                    "text": "Stuur een WhatsApp of vraag een vrijblijvend gesprek aan. We bekijken uw menukaart, openingsuren en hoe u vandaag reservaties of bestellingen ontvangt."
                 },
                 {
                     "icon": "settings",
@@ -343,9 +342,9 @@
         {
             "slug": "why-restaurant-website",
             "component": "content",
-            "title": "Waarom een Eigen Website voor Uw Restaurant?",
-            "subtitle": "Meer gasten, minder telefoontjes",
-            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'/><path stroke-linecap='round' stroke-linejoin='round' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'/></svg></span>Gasten kijken eerst online</h3><p>Wie een restaurant zoekt, pakt meestal eerst de gsm erbij: waar is het, is het vandaag open, wat staat er op de kaart en wat kost het? Een snelle <strong>restaurant website</strong> geeft die antwoorden meteen, met een belknop en een route via Google Maps. Zonder eigen website ziet een gast alleen wat platformen en reviewsites over uw zaak tonen.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/></svg></span>Reservaties zonder commissie per gast</h3><p>Reservatieplatformen en bezorgapps kunnen extra gasten brengen, maar vragen vaak een vergoeding per reservatie of per bestelling. Via uw eigen website reserveren gasten rechtstreeks bij u. U betaalt een vaste prijs per maand, hoeveel gasten er ook aan tafel zitten, en de klantrelatie blijft bij uw zaak.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'/></svg></span>Een menukaart die altijd klopt</h3><p>Een PDF van vorig jaar of een foto van het krijtbord helpt niemand. Op uw website staat de menukaart als gewone tekst, met prijzen en allergenen per gerecht, zodat gasten én Google ze kunnen lezen. De QR-code op tafel verwijst naar diezelfde pagina. Verandert uw kaart, dan blijft de QR-code gewoon werken.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4'/></svg></span>Een horeca website laten maken voor elk type zaak</h3><p>Ik bouw websites voor restaurants, brasserieën, bistro's, eetcafés, frituren, pizzeria's, traiteurs en hotel-restaurants. Elke <strong>horeca website</strong> krijgt de functies die bij de zaak passen: een sfeervolle kaart voor een bistro, snel bestellen voor een frituur of reservaties voor een restaurant dat elk weekend volzet is. Zit uw zaak in de regio? Lees dan ook meer over <a href='/nl/website-laten-maken-brugge' title='Website laten maken in Brugge'>een website laten maken in Brugge</a>, of <a href='/nl/contact' title='Contact opnemen over uw restaurant website'>neem rechtstreeks contact op</a>.</p>",
+            "title": "Uw gasten vinden zelf wat ze nodig hebben",
+            "subtitle": "Minder vragen tijdens de service",
+            "text": "<h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Een leesbare menukaart op de gsm</h3><p>Gasten bekijken uw gerechten, prijzen en allergenen zonder in te zoomen op een PDF. Op tafel opent een QR-code dezelfde kaart. Verandert uw menu, dan blijft die code werken.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Rechtstreeks een tafel reserveren</h3><p>Vanaf Premium kiezen gasten zelf een datum, uur en aantal personen. De reservatie komt bij uw zaak binnen en de gast krijgt een e-mailbevestiging. Zo hoeft niet elke boeking via de telefoon.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Uw zaak duidelijk in beeld</h3><p>Openingsuren, foto's, adres en een belknop staan op een vaste plek. Ik maak de website passend bij uw restaurant, brasserie, bistro of frituur. Vanuit Brugge werk ik voor horecazaken in België en Nederland. Lees ook meer over <a href='/nl/website-laten-maken-brugge'>een website laten maken in Brugge</a>.</p>",
             "button": [
                 {
                     "href": "tel:+32470930916",
@@ -361,10 +360,10 @@
             }
         },
         {
-            "title": "Waarom een All-In-One Pakket?",
-            "subtitle": "Website, reservaties en bestellingen in één pakket",
+            "title": "Eén aanspreekpunt voor uw website",
+            "subtitle": "Ook nadat uw website online staat",
             "slug": "why-all-in-one",
-            "text": "<h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'/></svg></span>Eén vaste prijs in plaats van losse systemen</h3><p>Veel zaken betalen apart voor een website, een hostingpartij, reservatiesoftware en een bestelplatform. In een <strong>all-in-one pakket</strong> zit alles samen: website, hosting, domeinnaam, onderhoud, SEO en support, met reservaties vanaf Premium en online bestellen in Pro. U krijgt één factuur en één aanspreekpunt. Benieuwd naar eerder werk? Bekijk <a href='/nl/projects' title='Projecten van Webdevamin'>mijn projecten</a>. De prijzen zijn <strong>excl. BTW</strong>.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z'/></svg></span>Reservaties en bestellingen komen rechtstreeks bij u binnen</h3><p>Een gast reserveert of bestelt via uw website en krijgt meteen een bevestiging per e-mail. U ontvangt de aanvraag zelf, zonder tussenpersoon. Reservaties en bestellingen worden nooit geweigerd omdat u een limiet haalt, want een drukke maand is goed nieuws. Hoe dat werkt, leest u <a href='#pricing' title='Restaurant website pakketten en limieten'>bij de pakketten</a>.</p><h3 class='flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'><span class='inline-flex items-center justify-center w-7 h-7 rounded-full bg-theme bg-opacity-10 text-theme_dark flex-shrink-0'><svg class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'/></svg></span>Meertalig voor toeristen in Brugge en aan de kust</h3><p>Komen er veel toeristen over de vloer? Met het Pro pakket staan uw website en menukaart in maximaal drie talen, bijvoorbeeld Nederlands, Frans en Engels. Zo begrijpt ook een Franstalige of Engelstalige gast meteen wat er op de kaart staat en reserveert die zonder moeite.</p>",
+            "text": "<h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>U stuurt een wijziging door, ik pas ze aan</h3><p>Een nieuwe dagschotel, andere prijzen of aangepaste openingsuren? In de maandpakketten geef ik die wijzigingen een plek op uw website. Wilt u uw menukaart zelf beheren, dan bespreken we een beheeromgeving op maat.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Hosting en onderhoud zijn geregeld</h3><p>Uw pakket omvat de website, hosting, domeinnaam, onderhoud, SEO en support. Reservaties zitten erbij vanaf Premium. Met Pro kunnen klanten ook bestellen en is uw website beschikbaar in maximaal drie talen.</p><h3 class='text-lg sm:text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0'>Uw eigen kanaal naast bestaande platformen</h3><p>U kunt de platformen die u nu gebruikt blijven inzetten. Via uw eigen website hebben gasten ook een rechtstreekse manier om te reserveren of te bestellen. Vergelijkt u aanbieders? Lees mijn <a href='/nl/blogs/zenchef-alternatief'>vergelijking van Zenchef en Webdevamin</a>.</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -383,15 +382,15 @@
         {
             "slug": "features-benefits",
             "component": "features",
-            "title": "Functies die ik voor uw restaurant kan bouwen",
-            "subtitle": "Uw restaurantwebsite of webapplicatie op maat",
-            "text": "Ik bouw restaurantwebsites en webapplicaties met functies die passen bij uw zaak: van een digitale menukaart en online reservaties tot bestellingen en klantenbeheer. Hieronder ziet u voorbeelden van wat ik voor u kan ontwikkelen. Samen bepalen we welke onderdelen u nodig heeft en hoe uw gasten en team ermee werken.",
+            "title": "Probeer de functies voor uw restaurant",
+            "subtitle": "Voor uw gasten en uw team",
+            "text": "Bekijk hoe gasten reserveren, de menukaart lezen of een bestelling plaatsen. De voorbeelden laten ook zien wat uw team ontvangt. Bij elke functie staat of ze in een pakket zit of op aanvraag wordt gebouwd.",
             "features": [
                 {
                     "id": "reservaties",
                     "icon": "CalendarDays",
                     "title": "Online reservaties",
-                    "description": "Ik kan een reservatieformulier in uw website bouwen waarmee gasten zelf een datum, uur en aantal personen kiezen. Voor uw team maak ik een overzicht met de reservaties, tafelindeling en bijzonderheden, zodat u tijdens de service snel ziet wie er komt.",
+                    "description": "Laat gasten zelf een datum, uur en aantal personen kiezen. Ik stem de reservatieflow af op uw zaak. Hieronder ziet u een voorbeeld van een formulier en een teamoverzicht met tafelindeling.",
                     "availability": "Vanaf Premium",
                     "hint": "Vul een voorbeeldreservatie in. Ze verschijnt meteen in het overzicht voor uw team.",
                     "badge": "Reservaties en tafels",
@@ -406,7 +405,7 @@
                     "id": "meldingen",
                     "icon": "Mail",
                     "title": "Automatische e-mail- en sms-meldingen",
-                    "description": "Ik kan automatische e-mail- en sms-meldingen koppelen aan uw reservatiesysteem. Denk aan een bevestiging na het boeken en een herinnering voor het bezoek. Samen bepalen we de inhoud, het verzendmoment en welke berichten uw gasten en team ontvangen.",
+                    "description": "Een e-mailbevestiging hoort bij Premium en Pro. Sms en herinneringen zijn extra mogelijkheden op aanvraag. We spreken vooraf af welke berichten nodig zijn en wat ze kosten.",
                     "availability": "E-mailbevestiging vanaf Premium · Sms en herinneringen op aanvraag",
                     "hint": "Wissel tussen e-mail en sms en bekijk een bevestiging of herinnering.",
                     "badge": "Bevestigingen en herinneringen",
@@ -421,7 +420,7 @@
                     "id": "menukaart",
                     "icon": "BookOpen",
                     "title": "Digitale menukaart",
-                    "description": "Ik maak een digitale menukaart met categorieën, gerechten, prijzen en allergenen die goed leesbaar is op elke gsm. Gasten openen de kaart via uw website of een QR-code. Wilt u zelf gerechten en prijzen aanpassen, dan kan ik daar een beheeromgeving voor bouwen.",
+                    "description": "Uw gerechten, prijzen en allergenen staan overzichtelijk op de website. Gasten openen de kaart via een link of QR-code. In de pakketten geef ik uw wijzigingen door op de site; zelfbeheer kan op maat.",
                     "availability": "In elk pakket",
                     "hint": "Kies een categorie en ontdek de voorbeeldgerechten. Zelf uw kaart beheren kan op maat.",
                     "badge": "Gerechten en prijzen",
@@ -436,7 +435,7 @@
                     "id": "klanten",
                     "icon": "Users",
                     "title": "Klantenbeheer",
-                    "description": "Ik kan een klantenoverzicht bouwen waarin uw team contactgegevens, eerdere bezoeken en praktische voorkeuren terugvindt. We bepalen samen welke informatie nuttig is voor uw zaak, zodat u gasten herkent en hun reservaties eenvoudig kunt opzoeken.",
+                    "description": "Wilt u eerdere bezoeken en praktische voorkeuren terugvinden? Ik kan daarvoor een klantenoverzicht bouwen. We kiezen samen welke informatie uw team nodig heeft.",
                     "availability": "Op aanvraag",
                     "hint": "Zoek een fictieve gast en open het profiel met eerdere bezoeken en notities.",
                     "badge": "Gasten en voorkeuren",
@@ -451,7 +450,7 @@
                     "id": "reviews",
                     "icon": "Star",
                     "title": "Reviewverzoeken",
-                    "description": "Ik kan uw website of webapplicatie zo inrichten dat gasten na hun bezoek een reviewverzoek ontvangen. U krijgt een overzicht van ingeplande en verstuurde uitnodigingen. Het verzendmoment en de link naar uw reviewpagina stemmen we samen af.",
+                    "description": "Op aanvraag kan ik een reviewverzoek na het bezoek voorzien. We spreken af wanneer het wordt verstuurd en naar welke reviewpagina het verwijst.",
                     "availability": "Op aanvraag",
                     "hint": "Probeer een reviewverzoek. De status verandert alleen in deze demo.",
                     "badge": "Reviews en feedback",
@@ -466,7 +465,7 @@
                     "id": "bestellingen",
                     "icon": "ShoppingBag",
                     "title": "Takeaway en bestellingen",
-                    "description": "Ik kan een bestelfunctie bouwen waarmee klanten gerechten kiezen, aantallen aanpassen en een afhaalmoment selecteren. Uw team krijgt de bestelling binnen met de gerechten, het totaalbedrag en het afhaaluur. De besteluren en betaalwijze stemmen we af op uw zaak.",
+                    "description": "Met Pro bestellen klanten via uw website en kiezen ze een afhaalmoment. Uw team ontvangt de gerechten, aantallen en het afhaaluur. De besteluren en betaalwijze spreken we vooraf af.",
                     "availability": "In Pro",
                     "hint": "Voeg gerechten toe, kies een afhaaluur en plaats een voorbeeldbestelling. Er volgt geen betaling.",
                     "badge": "Bestellen en afhalen",
@@ -481,7 +480,7 @@
                     "id": "inzichten",
                     "icon": "BarChart3",
                     "title": "Statistieken en inzichten",
-                    "description": "Ik kan een dashboard maken met cijfers uit uw reservaties en bestellingen, zoals gastenaantallen, takeawayomzet en populaire gerechten. U kunt periodes vergelijken en drukke momenten herkennen. Samen kiezen we welke cijfers helpen bij uw dagelijkse planning.",
+                    "description": "Op aanvraag bouw ik een overzicht van bijvoorbeeld reservaties, gastenaantallen en takeawayomzet. We kiezen cijfers die u helpen bij de planning van uw zaak.",
                     "availability": "Op aanvraag",
                     "hint": "Vergelijk twee voorbeeldperiodes. Alle cijfers zijn illustratief.",
                     "badge": "Cijfers en overzicht",
@@ -876,7 +875,7 @@
             "component": "portfolio",
             "title": "Realisatie: Restaurant Commanderie",
             "subtitle": "Restaurant website in de praktijk",
-            "description": "<p>Commanderie is een restaurant met een verfijnde Belgische keuken in Westkerke, een deelgemeente van Oudenburg. Voor hen bouwde ik een restaurant website op maat, met de volledige kaart per categorie, suggesties van de chef, sfeerfoto's, openingsuren, praktische info en antwoorden op veelgestelde vragen.</p><p>Achter de website zit een eigen beheer-app voor op de gsm. Daarin past het team zelf gerechten, prijzen, menu's en suggesties aan, zonder mij te moeten bellen. Het <strong>reservatiesysteem</strong> is al ingebouwd: voorlopig reserveren gasten nog telefonisch, maar online reservaties kunnen er op elk moment bij. Bekijk <a href='https://restocommanderie.com' target='_blank' rel='noopener noreferrer'>de website van Commanderie</a> om te zien hoe het er in de praktijk uitziet.</p>",
+            "description": "<p>Voor Restaurant Commanderie in Westkerke bouwde ik een website met menukaart, suggesties en praktische informatie. Het team past zelf gerechten en prijzen aan via een beheer-app op de gsm.</p><p>Dat zelfbeheer is <strong>maatwerk</strong>. Het reservatiesysteem is voorbereid, maar gasten reserveren er momenteel nog telefonisch. Voor een voorbeeld van online boeken kunt u de interactieve demo verderop op deze pagina proberen.</p><p><a href='https://restocommanderie.com' target='_blank' rel='noopener noreferrer'>Bekijk de website van Restaurant Commanderie</a>.</p>",
             "highlights": [
                 {
                     "number": "24/7",
@@ -902,8 +901,8 @@
         {
             "slug": "review",
             "component": "review",
-            "title": "Beoordelingen",
-            "subtitle": "Klantenreviews",
+            "title": "Wat klanten over mijn werk zeggen",
+            "subtitle": "Ervaringen met Webdevamin",
             "reviews": [
                 {
                     "name": "Robert Chen",
@@ -918,111 +917,90 @@
                 }
             ],
             "moreReviewsUrl": "https://goo.gl/maps/pGNDw5zoLZJUtWh1A",
-            "moreReviewsText": "Bekijk meer reviews op Google"
+            "moreReviewsText": "Bekijk meer reviews op Google",
+            "scoreLabel": "Gemiddelde van deze beoordelingen"
         },
         {
-            "title": "Pakketten voor Uw Restaurant",
-            "subtitle": "Prijzen voor restaurants en horeca",
-            "highlight": "All-In-One",
+            "title": "Kies wat uw restaurant nodig heeft",
+            "subtitle": "Website en ondersteuning voor een vast maandbedrag",
+            "highlight": "Online reservaties vanaf €89/maand",
             "slug": "pricing",
-            "text": "<p>Kies de <strong>Standaard website voor €49 per maand</strong>, <strong>Premium met online reservaties voor €69 per maand</strong> of <strong>Pro met online bestellen en meertaligheid voor €119 per maand</strong>. In elk pakket zitten hosting, onderhoud, domeinnaam, SEO en support.</p><p>Een reservatie is één boeking, ongeacht het aantal gasten. U betaalt nooit een commissie per gast, per reservatie of per bestelling. Prijzen bijgewerkt: september 2026. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar. De prijzen zijn altijd <strong>excl. BTW</strong>.</p>",
+            "text": "<p><strong>Standaard €49</strong> voor uw website en menukaart, <strong>Premium €89</strong> met online reservaties of <strong>Pro €139</strong> met bestellingen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen.</p><p>Alle prijzen zijn <strong>per maand, excl. btw</strong>. Geen opstartkosten. <strong>Minimale looptijd 12 maanden</strong>, daarna maandelijks opzegbaar. Prijzen bijgewerkt: september 2026.</p>",
             "items": [
                 {
                     "title": "Standaard",
                     "price": "49",
                     "currency": "€",
                     "period": "/maand",
-                    "tagline": "Voor zaken die professioneel online willen staan",
+                    "tagline": "Uw menukaart en praktische info op één plek",
                     "features": [
-                        "Op maat <strong>restaurant website</strong>",
-                        "<strong>Digitale menukaart</strong> met QR-code",
-                        "Openingsuren, route & <strong>belknop</strong>",
-                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
-                        "SEO-optimalisatie <strong>inbegrepen</strong>",
-                        "Hosting & onderhoud <strong>inbegrepen</strong>",
-                        "Domeinnaam <strong>inbegrepen</strong>",
-                        "Logo <strong>inbegrepen</strong>",
-                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "Website op maat met <strong>digitale menukaart en QR-code</strong>",
+                        "Openingsuren, route, foto's en <strong>belknop</strong>",
+                        "<strong>Mobiele optimalisatie en SEO</strong> inbegrepen",
+                        "<strong>Hosting, onderhoud en domeinnaam</strong> inbegrepen",
+                        "Wijzigingen aan menukaart en openingsuren <strong>door mij uitgevoerd</strong>",
+                        "<strong>Logo</strong> inbegrepen",
+                        "Administratie en facturen door mij geregeld",
                         "Support met <strong>antwoord binnen 24 uur</strong>",
-                        "Geen <strong>opstartkosten</strong>"
+                        "<strong>Geen opstartkosten</strong>"
                     ],
                     "excludedFeatures": [
                         "Online reservatiesysteem",
                         "Online bestellen en afhalen",
                         "Meertalige website"
                     ],
-                    "buttonText": "Kies Standaard Pakket",
+                    "buttonText": "Bespreek Standaard",
                     "buttonHref": "/contact?pakket=restaurant-standaard"
                 },
                 {
                     "title": "Premium",
-                    "price": "69",
+                    "price": "89",
                     "currency": "€",
                     "period": "/maand",
                     "popular": true,
-                    "tagline": "Laat gasten 24/7 zelf een tafel reserveren",
-                    "limitLabel": "200 reservaties per maand inbegrepen",
-                    "microcopy": "Drukke maand? U verliest nooit een reservatie.",
+                    "tagline": "Laat gasten zelf online een tafel boeken",
+                    "limitLabel": "Geen commissie per reservatie",
+                    "microcopy": "Ook boven uw limiet kunnen gasten blijven boeken.",
                     "features": [
-                        "Op maat <strong>restaurant website</strong>",
-                        "<strong>Digitale menukaart</strong> met QR-code",
-                        "Openingsuren, route & <strong>belknop</strong>",
-                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
-                        "SEO-optimalisatie <strong>inbegrepen</strong>",
-                        "Hosting & onderhoud <strong>inbegrepen</strong>",
-                        "Domeinnaam <strong>inbegrepen</strong>",
-                        "Logo <strong>inbegrepen</strong>",
-                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "Support met <strong>antwoord binnen 24 uur</strong>",
-                        "Geen <strong>opstartkosten</strong>",
+                        "<strong>Alles van Standaard</strong> inbegrepen",
                         "Online <strong>reservatiesysteem</strong>",
-                        "Bevestiging per <strong>e-mail</strong> voor elke gast",
-                        "<strong>200 reservaties per maand</strong> inbegrepen (meer is mogelijk)"
+                        "<strong>E-mailbevestiging</strong> voor uw gasten",
+                        "<strong>200 reservaties per maand</strong>, ongeacht het aantal gasten per boeking"
                     ],
                     "excludedFeatures": [
                         "Online bestellen en afhalen",
                         "Meertalige website"
                     ],
-                    "buttonText": "Kies Premium Pakket",
-                    "buttonHref": "/contact?pakket=restaurant-premium"
+                    "buttonText": "Bespreek Premium",
+                    "buttonHref": "/contact?pakket=restaurant-premium",
+                    "badge": "Aanbevolen voor reservaties"
                 },
                 {
                     "title": "Pro",
-                    "price": "119",
+                    "price": "139",
                     "currency": "€",
                     "period": "/maand",
-                    "tagline": "Voor zaken met afhaal, levering of veel toeristen",
-                    "limitLabel": "500 reservaties en bestellingen per maand",
-                    "microcopy": "Drukke maand? U verliest nooit een reservatie of bestelling.",
+                    "tagline": "Ook afhaalbestellingen en gasten in andere talen",
+                    "limitLabel": "Geen commissie per bestelling",
+                    "microcopy": "Ook boven uw limiet blijven boeken en bestellen mogelijk.",
                     "features": [
-                        "Op maat <strong>restaurant website</strong>",
-                        "<strong>Digitale menukaart</strong> met QR-code",
-                        "Openingsuren, route & <strong>belknop</strong>",
-                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
-                        "SEO-optimalisatie <strong>inbegrepen</strong>",
-                        "Hosting & onderhoud <strong>inbegrepen</strong>",
-                        "Domeinnaam <strong>inbegrepen</strong>",
-                        "Logo <strong>inbegrepen</strong>",
-                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
-                        "Support met <strong>antwoord binnen 24 uur</strong>",
-                        "Geen <strong>opstartkosten</strong>",
-                        "Online <strong>reservatiesysteem</strong>",
-                        "Bevestiging per <strong>e-mail</strong> voor elke gast",
-                        "Online <strong>bestellen</strong> en <strong>afhalen</strong>",
-                        "<strong>Meertalige</strong> website (tot 3 talen)",
-                        "<strong>500 reservaties en bestellingen</strong> per maand inbegrepen (meer is mogelijk)"
+                        "<strong>Alles van Premium</strong>, met een hogere maandlimiet",
+                        "Online <strong>bestellen en afhalen</strong>",
+                        "Website in <strong>maximaal drie talen</strong>",
+                        "<strong>500 reservaties en bestellingen samen</strong> per maand"
                     ],
                     "excludedFeatures": [],
-                    "buttonText": "Kies Pro Pakket",
+                    "buttonText": "Bespreek Pro",
                     "buttonHref": "/contact?pakket=restaurant-pro"
                 },
                 {
-                    "title": "Op Maat",
+                    "title": "Op maat",
                     "price": "Maatwerk",
                     "currency": "",
                     "period": "",
                     "features": [
                         "<strong>Volledig gepersonaliseerde</strong> website",
+                        "Zelf gerechten en prijzen aanpassen via een <strong>beheer-app</strong>",
                         "Voor <strong>meerdere vestigingen</strong> of hotel-restaurants",
                         "Meer dan <strong>500 reservaties of bestellingen</strong> per maand",
                         "Extra functionaliteiten en koppelingen <strong>op maat</strong>",
@@ -1033,24 +1011,24 @@
                     ],
                     "excludedFeatures": [],
                     "description": "Heeft uw zaak meerdere vestigingen, een hotel erbij of meer volume dan in Pro past? Dan werk ik een pakket op maat uit met een vaste maandprijs, ook dan zonder commissie per reservatie of bestelling.",
-                    "buttonText": "Vraag Offerte Aan",
+                    "buttonText": "Bespreek uw wensen",
                     "buttonHref": "/contact?pakket=restaurant-op-maat"
                 }
             ],
-            "growthTitle": "Drukker dan verwacht? Dat is goed nieuws.",
-            "growthText": "Reservaties en bestellingen worden nooit geblokkeerd, ook niet als u boven uw limiet gaat. Ik kijk naar het gemiddelde over drie maanden, dus een drukke decembermaand, Valentijn, Moederdag of een topzomer aan de kust is geen probleem. Ligt uw gemiddelde over drie maanden boven de limiet, dan bekijken we samen het volgende pakket. Past zelfs Pro niet meer, dan maken we een pakket op maat met een vaste maandprijs.",
+            "growthTitle": "Een drukke maand? Gasten kunnen blijven boeken.",
+            "growthText": "Boven de inbegrepen aantallen worden reservaties en bestellingen niet geblokkeerd. Ik bekijk het gemiddelde over drie maanden. Ligt dat hoger dan uw pakket, dan bespreken we samen het volgende pakket of een oplossing op maat. Een reservatie telt als één boeking, ongeacht het aantal gasten.",
             "growthNote": "Geen commissie per reservatie of bestelling"
         },
         {
             "slug": "faq",
             "component": "faq",
-            "title": "Veelgestelde Vragen",
+            "title": "Veelgestelde vragen over restaurantwebsites",
             "subtitle": "Voor restaurants en horecazaken",
-            "text": "Hieronder vindt u antwoorden op vragen die restauranthouders vaak stellen over een restaurant website. Staat uw vraag er niet tussen? Neem gerust contact met mij op.",
+            "text": "Wat zit er in een pakket en wat past bij uw zaak? Hieronder vindt u de antwoorden. U kunt mij ook rechtstreeks contacteren.",
             "items": [
                 {
                     "title": "Wat kost een restaurant website laten maken?",
-                    "description": "Een restaurant website kost bij Webdevamin vanaf <strong>€49 per maand excl. BTW</strong>, met hosting, onderhoud, domeinnaam, SEO en support inbegrepen. Wilt u dat gasten online een tafel reserveren, dan kiest u Premium voor <strong>€69 per maand</strong>. Voor online bestellen en een meertalige website is er Pro voor <strong>€119 per maand</strong>. Bij een klassiek webbureau betaalt u vaak eerst een eenmalig bedrag van enkele honderden tot enkele duizenden euro's, en daarna nog apart voor hosting en onderhoud. Zelf een restaurant website maken met een websitebouwer lijkt goedkoper, maar dan doet u het ontwerp, de teksten, de SEO en de updates zelf."
+                    "description": "Een restaurantwebsite met digitale menukaart kost <strong>€49 per maand excl. btw</strong>. Met online reservaties kiest u Premium voor <strong>€89</strong>. Pro kost <strong>€139</strong> en omvat ook online bestellen en maximaal drie talen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                 },
                 {
                     "title": "Hoe snel staat mijn restaurant website online?",
@@ -1074,7 +1052,7 @@
                 },
                 {
                     "title": "Ik sta al op TheFork, Resto.be of Takeaway. Heb ik nog een eigen website nodig?",
-                    "description": "Ja, een eigen website blijft waardevol, ook als u al gasten krijgt via TheFork, Resto.be, Takeaway of een andere app. Zulke platformen kunnen extra gasten brengen, maar ze werken vaak met een vergoeding per reservatie of bestelling, of met een abonnement, en de klantrelatie ligt deels bij hen. Via uw eigen website reserveren en bestellen gasten rechtstreeks bij u. U kan de platformen gewoon blijven gebruiken als extra kanaal, terwijl uw website de vaste plek wordt waar gasten u terugvinden via Google."
+                    "description": "Een eigen website kan naast uw bestaande platformen werken. Gasten die uw zaak al kennen, vinden er uw menukaart en kunnen vanaf Premium rechtstreeks reserveren. Welke oplossing past, hangt af van de functies die u nodig heeft. Vergelijkt u reservatiesoftware? Lees mijn <a href=\"/nl/blogs/zenchef-alternatief\">vergelijking van Zenchef en Webdevamin</a>."
                 },
                 {
                     "title": "Kan mijn website in meerdere talen?",
@@ -1082,11 +1060,11 @@
                 },
                 {
                     "title": "Kan ik zelf mijn menukaart aanpassen?",
-                    "description": "Ja, dat kan, maar het hoeft niet. In Standaard, Premium en Pro stuurt u een wijziging gewoon door en ik zet ze online, zodat u zelf niet in een beheersysteem hoeft te zoeken. Een nieuwe dagschotel, een seizoensmenu, aangepaste prijzen of andere openingsuren tijdens de vakantie horen daar allemaal bij. Wilt u de kaart liever zelf beheren, dan kan dat via een pakket op maat, met een eigen beheer-app zoals bij restaurant Commanderie. Daar past het team gerechten, prijzen en suggesties zelf aan via de gsm. De QR-code op tafel blijft na elke aanpassing gewoon werken."
+                    "description": "Zelf uw menukaart beheren kan via een <strong>pakket op maat</strong>, zoals de beheer-app van Restaurant Commanderie. In Standaard, Premium en Pro stuurt u de wijzigingen naar mij: ik pas uw gerechten, prijzen en openingsuren aan. De QR-code op tafel blijft gewoon werken."
                 },
                 {
                     "title": "Hoe word ik beter gevonden in Google en Google Maps?",
-                    "description": "Een restaurant wordt beter gevonden als de website en het Google Bedrijfsprofiel dezelfde, duidelijke gegevens tonen: naam, adres, telefoonnummer, openingsuren en menukaart. Ik bouw uw website met lokale SEO: snelle laadtijden, goede titels en beschrijvingen, een menukaart als tekst in plaats van een PDF, en gestructureerde gegevens die Google helpen om uw zaak, adres en openingsuren te begrijpen. Uw Google Bedrijfsprofiel kan dan naar uw website en reservatiepagina linken. Ook reviews van gasten en recente foto's in dat profiel helpen om beter zichtbaar te zijn in Google Maps."
+                    "description": "Ik voorzie een website die goed leesbaar is op de gsm, met duidelijke paginatitels, praktische gegevens en uw menukaart als tekst. Laat uw Google Bedrijfsprofiel naar de juiste website en reservatiepagina verwijzen en houd uw naam, adres en openingsuren gelijk. Een positie in Google kan ik niet garanderen."
                 },
                 {
                     "title": "Ik heb al een website. Kan ik overstappen?",
@@ -1101,7 +1079,7 @@
         {
             "slug": "one-time-payment",
             "component": "one-time-payment",
-            "title": "Eenmalige Betaling",
+            "title": "Liever een eenmalige betaling?",
             "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Voor een restaurant website zonder reservatie- of bestelsysteem kan dat. U betaalt dan een vast bedrag voor de ontwikkeling, zonder doorlopende kosten. Hosting en domeinnaam regelt u zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding.</p><p>Online reservaties en bestellingen hebben doorlopend hosting, onderhoud en opvolging nodig. Daarom zitten die alleen in de maandpakketten. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte voor uw zaak.</p>",
             "button": {
                 "href": "/contact?pakket=restaurant-eenmalig",
@@ -1111,22 +1089,25 @@
         {
             "slug": "cta-bottom",
             "component": "cta",
-            "title": "Klaar om Meer Tafels te Vullen?",
-            "subtitle": "Kies uw pakket: €49, €69 of €119 per maand",
-            "text": "Start met een restaurant website vanaf €49 per maand, laat gasten online reserveren voor €69 per maand of ontvang ook afhaalbestellingen in meerdere talen voor €119 per maand. Ik help u van het eerste gesprek tot de lancering. Vraag een gratis offerte aan en ontdek wat een eigen website voor uw zaak kan doen.",
+            "title": "Wat heeft uw restaurant nodig?",
+            "subtitle": "Bespreek uw restaurantwebsite",
+            "text": "Vertel me kort hoe u vandaag reservaties en uw menukaart regelt. Dan bekijken we samen wat bij uw zaak past. Stuur gerust een WhatsApp of vraag een vrijblijvend gesprek aan.",
             "button": [
                 {
-                    "href": "/contact?pakket=restaurant",
-                    "text": "Vraag Gratis Offerte Aan",
-                    "label": "Naar contact pagina",
-                    "external": false
+                    "text": "Bespreek mijn restaurantwebsite",
+                    "href": "/contact?pakket=restaurant"
+                },
+                {
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20restaurant.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20zaak%20past%3F",
+                    "external": true
                 }
             ],
             "features": [
                 "Gratis adviesgesprek",
                 "Website met menukaart €49/maand",
-                "Online reservaties €69/maand",
-                "Bestellen & meertalig €119/maand"
+                "Online reservaties €89/maand",
+                "Bestellen & meertalig €139/maand"
             ]
         }
     ]

@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-const Slide = ({ src, alt, title }) => {
+const Slide = ({ src, alt, title, blog = false }) => {
     return (
         <article className={`relative`}>
-            <div className={`relative h-[calc(100vw/1.75)] 
+            <div className={`relative ${blog ? 'w-full aspect-[12/7]' : `h-[calc(100vw/1.75)] 
         md:h-[calc(100vw/3.5)] xl:h-[calc(100vw/4.20)] 
-        2xl:h-[calc(100vw/4.2)] max-h-[427px]`}>
+        2xl:h-[calc(100vw/4.2)] max-h-[427px]`}`}>
                 <Image src={src} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={alt} style={{ objectFit: "cover" }} className={`rounded-xl`} />
             </div>
             {

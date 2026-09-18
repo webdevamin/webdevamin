@@ -1,3 +1,5 @@
+'use client';
+
 import { Link } from '../../src/i18n/navigation'
 
 const CtaButton = ({
@@ -10,6 +12,7 @@ const CtaButton = ({
     rel,
     ariaLabel,
     title,
+    onClick,
 }) => {
     const isExternal = href?.startsWith('http') || href?.startsWith('tel:') || href?.startsWith('mailto:');
 
@@ -23,6 +26,8 @@ const CtaButton = ({
     };
 
     const classes = `${base} ${width} ${variants[variant] || variants.primary} ${className}`.trim();
+
+    if (onClick) return <button type="button" onClick={onClick} className={classes} aria-label={ariaLabel} title={title}>{text}</button>;
 
     if (isExternal) {
         return (

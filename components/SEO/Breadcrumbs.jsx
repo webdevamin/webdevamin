@@ -27,10 +27,9 @@ export default function Breadcrumbs({ items, locale = 'nl', className = '' }) {
               {isCurrent ? (
                 <span
                   aria-current="page"
-                  className="inline-flex min-w-0 max-w-full items-center gap-1.5 rounded-full border border-dark/10 bg-white/75 px-2.5 py-1 !text-xs font-semibold leading-5 text-dark shadow-sm sm:!text-sm"
+                  className="min-w-0 max-w-full break-words px-2 py-1 !text-xs font-semibold leading-5 text-dark sm:!text-sm"
                 >
-                  <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rounded-full bg-theme_darker !text-xs" />
-                  <span className="min-w-0 break-words !text-xs sm:!text-sm">{item.label}</span>
+                  {item.label}
                 </span>
               ) : item.href ? (
                 <Link

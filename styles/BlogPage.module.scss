@@ -73,6 +73,10 @@
   // Tables - special attention for better styling
   table {
     @apply w-full mb-6 border-collapse overflow-hidden rounded-lg shadow-sm my-6;
+
+    caption {
+      @apply text-left;
+    }
     
     thead {
       @apply bg-gray-100;

@@ -21,6 +21,7 @@ export function PricingCard({
     excludedFeatures = [],
     buttonText = "Kies pakket",
     buttonHref = "/contact",
+    onCalculate,
     popular = false,
     plain = false,
     className = "",
@@ -111,6 +112,7 @@ export function PricingCard({
             <div className="flex flex-col gap-2.5">
                 <CtaButton
                     href={buttonHref}
+                    onClick={onCalculate}
                     text={buttonText}
                     variant={popular ? 'primary' : 'outline'}
                     fullWidth

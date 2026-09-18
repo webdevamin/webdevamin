@@ -4,17 +4,17 @@ import { useState } from 'react';
 import ButtonOne from './Buttons/ButtonOne';
 import Alert from './Alert';
 
-const getInitForm = () => {
+const getInitForm = (message = '') => {
     return {
         name: '',
         email: '',
-        message: '',
+        message,
         website: '',
     };
 };
 
-const ContactForm = ({ content, formText }) => {
-    const [form, setForm] = useState(getInitForm);
+const ContactForm = ({ content, formText, initialMessage = '' }) => {
+    const [form, setForm] = useState(() => getInitForm(initialMessage));
     const [afterSubmit, setAfterSubmit] = useState(null);
 
     /*

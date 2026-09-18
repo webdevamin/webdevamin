@@ -7,7 +7,7 @@ const ButtonThree = ({ href, text, noLink, color, classes, target, rel }) => {
     // Create external link props
     const externalProps = isExternalLink ? {
         target: target || "_blank",
-        rel: rel || "noopener noreferrer"
+        rel: rel || "noopener noreferrer nofollow"
     } : {};
 
     if (noLink) {

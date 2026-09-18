@@ -5,6 +5,56 @@ import Heading from '../Heading';
 import ButtonOne from '../Buttons/ButtonOne';
 import ButtonThree from '../Buttons/ButtonThree';
 
+export const FaqAccordion = ({ items }) => (
+    <div className='accordion w-full max-w-6xl'>
+        <Accordion className='text-left w-full min-w-full'>
+            {
+                items.map((item, i) => {
+                    const { title, shortDescription, description, detailBtn } = item;
+                    const text = shortDescription || description;
+
+                    return (
+                        <Accordion.Panel
+                            key={i}
+                            className={`transition-all duration-500 shadow-md rounded-lg border-l-4 border-theme hover:border-l-2 hover:border-theme_darker`}
+                        >
+                            <Accordion.Title as="h3" className={`transition-all duration-300 flex items-center text-theme font-semibold hover:text-theme_darker`}
+                            >
+                                <span className="transform transition-transform duration-300 inline-block mr-2">
+                                    {i + 1}.
+                                </span>
+                                {title}
+                            </Accordion.Title>
+                            <Accordion.Content
+                                className={`w-full transition-all duration-500 animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg`}
+                            >
+                                {text.includes('<') ? (
+                                    <div
+                                        className="mb-2 w-full"
+                                        dangerouslySetInnerHTML={{ __html: text }}
+                                    />
+                                ) : (
+                                    <p className="mb-2 w-full leading-relaxed">
+                                        {text}
+                                    </p>
+                                )}
+                                {detailBtn && (
+                                    <div className={`mt-4 transition-all duration-300 hover:translate-x-1`}>
+                                        <ButtonThree
+                                            href={detailBtn.href}
+                                            text={detailBtn.text}
+                                        />
+                                    </div>
+                                )}
+                            </Accordion.Content>
+                        </Accordion.Panel>
+                    )
+                })
+            }
+        </Accordion>
+    </div>
+);
+
 const BlockAccordion = ({ content, center = false }) => {
     const { title, text, subtitle, position, items, buttons, layout, slug } = content;
     const { name, position: layoutPosition } = layout || {};
@@ -23,52 +73,8 @@ const BlockAccordion = ({ content, center = false }) => {
                         </div>
                     )
                 }
-                <div className='mt-8 lg:mt-10 accordion w-full max-w-6xl'>
-                    <Accordion className='text-left w-full min-w-full'>
-                        {
-                            items.map((item, i) => {
-                                const { title, shortDescription, description, detailBtn } = item;
-                                const text = shortDescription || description;
-
-                                return (
-                                    <Accordion.Panel
-                                        key={i}
-                                        className={`transition-all duration-500 shadow-md rounded-lg border-l-4 border-theme hover:border-l-2 hover:border-theme_darker`}
-                                    >
-                                        <Accordion.Title as="h3" className={`transition-all duration-300 flex items-center text-theme font-semibold hover:text-theme_darker`}
-                                        >
-                                            <span className="transform transition-transform duration-300 inline-block mr-2">
-                                                {i + 1}.
-                                            </span>
-                                            {title}
-                                        </Accordion.Title>
-                                        <Accordion.Content
-                                            className={`w-full transition-all duration-500 animate-fadeIn bg-gray-50 bg-opacity-30 rounded-b-lg`}
-                                        >
-                                            {text.includes('<') ? (
-                                                <div
-                                                    className="mb-2 w-full"
-                                                    dangerouslySetInnerHTML={{ __html: text }}
-                                                />
-                                            ) : (
-                                                <p className="mb-2 w-full leading-relaxed">
-                                                    {text}
-                                                </p>
-                                            )}
-                                            {detailBtn && (
-                                                <div className={`mt-4 transition-all duration-300 hover:translate-x-1`}>
-                                                    <ButtonThree
-                                                        href={detailBtn.href}
-                                                        text={detailBtn.text}
-                                                    />
-                                                </div>
-                                            )}
-                                        </Accordion.Content>
-                                    </Accordion.Panel>
-                                )
-                            })
-                        }
-                    </Accordion>
+                <div className='mt-8 lg:mt-10'>
+                    <FaqAccordion items={items} />
                 </div>
                 {
                     (buttons && buttons.length >= 1) && (

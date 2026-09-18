@@ -16,7 +16,7 @@ const CardTwo = ({ imgUrl, title, subtitle, alt, badge, border, type, link, tech
     // Create the card content
     const cardContent = (
         <div>
-            <div className={`relative rounded-xl w-full border shadow ${type === `project` ? `pt-[70%]` : `pt-[58.25%]`} overflow-hidden`}>
+            <div className={`relative rounded-xl w-full border shadow ${type === `project` ? `pt-[70%]` : type === `blog` ? `aspect-[12/7]` : `pt-[58.25%]`} overflow-hidden`}>
                 <Image
                     src={imgUrl}
                     fill={true}

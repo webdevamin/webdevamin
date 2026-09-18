@@ -1,7 +1,9 @@
+'use client';
+
 import { Link } from '../../src/i18n/navigation'
 
 const ButtonOne = ({ href, text, classes, wFit, external,
-    input, outline, noMargin }) => {
+    input, outline, noMargin, onClick }) => {
     const allClasses = `p-3 relative before:ease-linear
     block sm:inline-block uppercase font-semibold sm:p-4 before:absolute 
     before:top-0 before:left-0 transition-all 
@@ -15,9 +17,11 @@ const ButtonOne = ({ href, text, classes, wFit, external,
     ${classes} ${outline ? `text-dark border md:border-2 border-dark bg-light` :
             `text-dark bg-theme border md:border-2 border-dark`}`;
 
+    if (onClick) return <button type="button" onClick={onClick} className={allClasses}>{text}</button>;
+
     if (external) {
         return (
-            <a className={allClasses} rel="noopener noreferrer"
+            <a className={allClasses} rel="noopener noreferrer nofollow"
                 href={href} target="_blank">
                 {text}
             </a>

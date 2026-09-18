@@ -70,7 +70,12 @@ const LineGrid = ({
 
         return (
           <Fragment key={getKey(item, index)}>
-            {index > 0 && <FullBleedLine className={`relative col-span-full ${rowLine}`} />}
+            {index > 0 && (
+              <>
+                <FullBleedLine className="relative col-span-full md:hidden" />
+                <FullBleedLine className={`relative col-span-full hidden ${rowLine}`} />
+              </>
+            )}
             <div className={`border-dark px-0 ${edgePadding} xl:px-12 ${leftLine} ${extra}`}>
               {renderItem(item, index)}
             </div>

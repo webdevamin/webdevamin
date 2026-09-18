@@ -65,12 +65,23 @@ export async function generateMetadata({ params }) {
     };
 }
 
-const Contact = async ({ params }) => {
+const Contact = async ({ params, searchParams }) => {
   const { locale } = await params;
     const { localesData, socialsData, blogsData, pagesData, pageData } = await getData(locale);
     const { alternateLangs, slug, blocks } = pageData;
     const contactBlock = blocks.find(block => block.slug === `contact`);
     const { title: title4, subtitle, text } = contactBlock;
+    const packageMessages = {
+        restaurant: 'Dag Amin, ik wil graag bespreken wat er mogelijk is voor mijn restaurantwebsite.',
+        'restaurant-standaard': 'Dag Amin, ik heb interesse in Standaard voor mijn restaurant (€49/maand excl. btw).',
+        'restaurant-premium': 'Dag Amin, ik heb interesse in Premium met online reservaties voor mijn restaurant (€89/maand excl. btw).',
+        'restaurant-pro': 'Dag Amin, ik heb interesse in Pro met online reservaties, bestellingen en meertaligheid (€139/maand excl. btw).',
+        'restaurant-op-maat': 'Dag Amin, ik wil graag een website of webapplicatie op maat voor mijn restaurant bespreken.',
+        'restaurant-eenmalig': 'Dag Amin, ik heb interesse in een restaurantwebsite met eenmalige betaling, zonder reservatie- of bestelsysteem.',
+    };
+    const selectedPackage = searchParams?.pakket;
+    const initialMessage = locale === 'nl' && typeof selectedPackage === 'string'
+        && Object.hasOwn(packageMessages, selectedPackage) ? packageMessages[selectedPackage] : '';
 
     const formTexts = {
         name: locale === `en` ? `Name` : `Naam`,
@@ -97,7 +108,7 @@ const Contact = async ({ params }) => {
                         <Heading title={title4} subtitle={subtitle} />
                         <div className={`mt-7 sm:mt-10 xl:mt-16 max-w-4xl mx-auto`}>
                             <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
-                            <ContactForm content={blocks} formText={formTexts} />
+                            <ContactForm key={initialMessage} content={blocks} formText={formTexts} initialMessage={initialMessage} />
                         </div>
                     </div>
                 </BorderedSection>

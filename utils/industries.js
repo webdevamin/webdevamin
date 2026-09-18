@@ -1,3 +1,6 @@
+import { TAXI_CATALOG } from './taxi-pricing.mjs';
+import { applyTaxiPricing } from './taxi-page.mjs';
+
 /*
  * Koppelt per taal de slug van een sectorpagina aan het JSON-bestand in
  * messages/{locale}/industries.
@@ -23,7 +26,8 @@ export async function getIndustryCards(locale, excludeSlug) {
     Object.entries(localeMap)
       .filter(([slug]) => slug !== excludeSlug)
       .map(async ([slug, fileName]) => {
-        const { card, blocks } = (await import(`../messages/${locale}/industries/${fileName}.json`)).default;
+        const raw = (await import(`../messages/${locale}/industries/${fileName}.json`)).default;
+        const { card, blocks } = fileName === 'taxi' ? applyTaxiPricing(raw, TAXI_CATALOG) : raw;
         const heroImage = blocks.find(block => block.slug === 'hero')?.image;
 
         return card ? { ...card, image: heroImage, href: `/industry/${slug}` } : null;

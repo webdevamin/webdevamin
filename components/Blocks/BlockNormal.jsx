@@ -27,7 +27,7 @@ const BlockNormal = ({ content, position = 'left' }) => {
             <article className={`mt-6 lg:ml-3`}>
                 <div>
                     <SubHeading title={subtitle} />
-                    <div dangerouslySetInnerHTML={{ __html: text }} />
+                    <div className="block_normal_content" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
                 {button && button.length > 0 && (
                     <div className={`mt-8 flex flex-col sm:flex-row lg:mt-10 xl:mt-12 gap-4 sm:justify-center sm:mt-9 lg:w-full lg:gap-7 md:justify-start xl:gap-8`}>

@@ -3,7 +3,7 @@ const BlockLayoutTwo = ({ children, title, slug, position, contentClasses, noPad
         <div {...slug && { id: slug }} className={`block_container 
         relative z-30 xl:w-screen xl:left-[calc(-50vw+50%)] ${!noPadding && `xl:py-20`}`}>
             <div className={`hidden absolute -z-10 bg-theme
-            -translate-y-1/2 top-2/4 h-[115%] xl:flex shadow-2xl
+            inset-y-0 xl:flex shadow-2xl
             items-center flex-col justify-center 
             w-[calc(100vw-83%)] 8xl:w-[calc(((100vw-1504px)/2)+160px)]
             ${position === `right` ?
@@ -15,7 +15,7 @@ const BlockLayoutTwo = ({ children, title, slug, position, contentClasses, noPad
                     {title}
                 </h2>
             </div>
-            <div className={`xl:w-10/12 xl:max-w-8xl xl:mx-auto xl:py-8`}>
+            <div className={`xl:w-10/12 xl:max-w-8xl xl:mx-auto xl:py-24`}>
                 <div className={`${position === `right` ?
                     `xl:mr-[13%]` : `xl:ml-[13%]`}`}>
                     <div className={`page_container md:flex 
