@@ -1,4 +1,4 @@
-const { ADMINBOOK_URL, ADMINBOOK_API_KEY, MAIL_TO } = process.env;
+const { ADMIN_URL, ADMIN_API_KEY, MAIL_TO } = process.env;
 
 /*
  * Verwijdert HTML uit formulierwaarden voordat ze in de e-mail belanden.
@@ -48,7 +48,7 @@ export async function POST(req) {
       );
     }
 
-    if (!ADMINBOOK_URL || !ADMINBOOK_API_KEY || !MAIL_TO) {
+    if (!ADMIN_URL || !ADMIN_API_KEY || !MAIL_TO) {
       throw new Error('Adminbook email delivery is not configured.');
     }
 
@@ -66,12 +66,12 @@ export async function POST(req) {
       </body></html>`,
     };
 
-    const adminbookUrl = ADMINBOOK_URL.replace(/\/+$/, '');
+    const adminbookUrl = ADMIN_URL.replace(/\/+$/, '');
     const res = await fetch(`${adminbookUrl}/api/saas/integrations/email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${ADMINBOOK_API_KEY}`
+        'Authorization': `Bearer ${ADMIN_API_KEY}`
       },
       body: JSON.stringify(emailData),
     });

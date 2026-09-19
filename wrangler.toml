@@ -11,4 +11,4 @@ directory = ".open-next/assets"
 binding = "ASSETS"
 
 [vars]
-ADMINBOOK_URL = "https://adminbook.app"
+ADMIN_URL = "https://webdevamin.app"
