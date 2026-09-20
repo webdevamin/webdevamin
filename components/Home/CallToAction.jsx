@@ -1,6 +1,7 @@
 import Heading from '../Heading'; // Assuming Heading component exists and is suitable
 import ButtonTwo from '../Buttons/ButtonTwo';
 import BlockLayoutThree from '../Layouts/BlockLayoutThree';
+import { FullBleedLine } from '../Layouts/BorderedSection';
 
 const CallToAction = ({ content }) => {
     if (!content) {
@@ -10,7 +11,8 @@ const CallToAction = ({ content }) => {
     const { title, text, button } = content;
 
     return (
-        <div className='lg:-mt-20'>
+        <div className='relative lg:-mt-20'>
+            <FullBleedLine className="absolute top-0 z-20" />
             <BlockLayoutThree title={`cta`} bothSides>
                 {/* Geen .container op gsm: BlockLayoutThree is al 10/12 breed, anders wordt de tekst te smal. */}
                 <div className="mx-auto w-full max-w-8xl md:w-10/12 md:px-4 text-center

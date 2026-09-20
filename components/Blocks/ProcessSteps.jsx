@@ -22,6 +22,7 @@ const ProcessSteps = ({ content }) => {
           className="mt-6 md:mt-8 xl:mt-10"
           items={items}
           columns={{ lg: 3 }}
+          bottomLine
           getKey={(item) => item.title}
           cellClassName="flex flex-col items-center text-center py-10"
           renderItem={(item, index) => (
