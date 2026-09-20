@@ -1,0 +1,381 @@
+{
+    "seo": {
+        "title": "Website laten maken voor isolatiebedrijf | €49/maand",
+        "description": "Website laten maken voor uw isolatiebedrijf vanaf €49/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
+        "canonical": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken",
+        "ogTitle": "Website laten maken voor isolatiebedrijf | €49/maand",
+        "ogDescription": "Website laten maken voor uw isolatiebedrijf vanaf €49/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
+        "image": "https://webdevamin.com/images/isolatiebedrijf-website-laten-maken-og.png",
+        "imageAlt": "Website voor isolatiebedrijven vanaf €49 per maand excl. btw, met offerteformulier, hosting en onderhoud. Een laptop en gsm tonen een isolatiewebsite.",
+        "keywords": "website laten maken voor isolatiebedrijf, isolatiebedrijf website laten maken, webdesign voor isolatiebedrijven, website voor isolatiebedrijven"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [],
+    "card": {
+        "title": "Website voor isolatiebedrijven",
+        "text": "Toon uw isolatiewerken, maak uw werkgebied duidelijk en ontvang offerteaanvragen via uw eigen website. Bekijk de realisatie voor Thermogroep uit Brugge.",
+        "price": "Vanaf €49/maand excl. btw",
+        "linkText": "Bekijk de website voor uw isolatiebedrijf"
+    },
+    "jsonLd": {
+        "localBusiness": {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://webdevamin.com/#organization",
+            "name": "Webdevamin",
+            "url": "https://webdevamin.com/nl",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://webdevamin.com/images/isolatiebedrijf-website-laten-maken-og.png",
+            "description": "Webontwikkelaar uit Brugge. Websites voor isolatiebedrijven vanaf €49 per maand excl. btw, met offerteformulier, hosting, domeinnaam, onderhoud en support.",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32470930916",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BE",
+                "addressLocality": "Brugge",
+                "postalCode": "8310",
+                "streetAddress": "Zuiderakker 18"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "priceRange": "Vanaf €49 per maand excl. btw"
+        },
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken#service",
+            "url": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken",
+            "name": "Website laten maken voor uw isolatiebedrijf",
+            "serviceType": "Webdesign voor isolatiebedrijven",
+            "description": "Een website voor uw isolatiebedrijf met uitleg over uw diensten, projectfoto's, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €49 per maand excl. btw, zonder opstartkosten en met een minimale looptijd van twaalf maanden.",
+            "provider": {
+                "@id": "https://webdevamin.com/#organization"
+            },
+            "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "Isolatiebedrijven en aannemers die dakisolatie, vloerisolatie, zoldervloerisolatie of spouwmuurisolatie plaatsen"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Vlaanderen",
+                "containedInPlace": {
+                    "@type": "Country",
+                    "name": "Belgium"
+                }
+            },
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Standaard website voor een isolatiebedrijf",
+                    "url": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken#pricing",
+                    "description": "Vanaf €49 per maand excl. btw. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "minPrice": "49",
+                        "priceCurrency": "EUR",
+                        "billingDuration": "P1M",
+                        "unitText": "per maand",
+                        "valueAddedTaxIncluded": false
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Op maat voor een isolatiebedrijf",
+                    "url": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken#pricing",
+                    "description": "Een website met extra functies op offerte, zoals online afspraken voor plaatsbezoeken, klantenbeheer of koppelingen met bestaande software. Hosting, domeinnaam, onderhoud en support inbegrepen. De functies en prijs worden vooraf afgesproken."
+                }
+            ]
+        },
+        "breadcrumb": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sectoren",
+                    "item": "https://webdevamin.com/nl/industry"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Website voor isolatiebedrijven",
+                    "item": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken"
+                }
+            ]
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Website laten maken voor uw isolatiebedrijf",
+            "text": "<p>Laat bezoekers zien welke isolatiewerken u uitvoert, waar u werkt en hoe ze een offerte aanvragen. Ik bouw uw website met <strong>diensten, projectfoto's en een offerteformulier</strong>, zoals ik dat voor Thermogroep uit Brugge deed.</p><p>Vanaf <strong>€49/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
+            "image": {
+                "src": "/images/isolatiebedrijf-hero.webp",
+                "alt": "Illustratie van twee vakmannen die dakisolatie plaatsen tussen houten balken, met isolatierollen op de voorgrond.",
+                "width": 1254,
+                "height": 1254
+            },
+            "button": [
+                {
+                    "text": "Bespreek mijn website",
+                    "href": "/contact?pakket=isolatiebedrijf"
+                },
+                {
+                    "text": "Bekijk Thermogroep",
+                    "href": "#thermogroep"
+                },
+                {
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20isolatiebedrijf.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20bedrijf%20past%3F",
+                    "external": true
+                }
+            ]
+        },
+        {
+            "slug": "process",
+            "component": "process",
+            "title": "Van eerste gesprek tot uw nieuwe website",
+            "subtitle": "Zo werken we samen",
+            "items": [
+                {
+                    "icon": "phone",
+                    "title": "Uw diensten en werkgebied",
+                    "text": "We bespreken welke isolatiewerken u uitvoert, in welke gemeenten u werkt en wat u graag van een nieuwe aanvraag wil weten. U krijgt vooraf een voorstel met de prijs."
+                },
+                {
+                    "icon": "settings",
+                    "title": "Tekst, ontwerp en bouw",
+                    "text": "Ik werk uw diensten en projectfoto's uit tot een website. We kiezen de velden van het offerteformulier en controleren samen of de inhoud klopt."
+                },
+                {
+                    "icon": "check-circle",
+                    "title": "Online en onderhouden",
+                    "text": "Na uw goedkeuring zet ik de website online. Hosting en onderhoud blijven inbegrepen. Heeft u nieuwe werffoto's of veranderen uw diensten? Stuur ze door, dan pas ik de inhoud aan."
+                }
+            ]
+        },
+        {
+            "slug": "why-isolatiebedrijf-website",
+            "component": "content",
+            "title": "Een website die de juiste vragen beantwoordt",
+            "subtitle": "Van interesse naar een offerteaanvraag",
+            "text": "<p>Iemand die uw bedrijf via een aanbeveling of Google vindt, wil weten of u zijn woning kunt isoleren. Uw website moet daarom duidelijk maken <strong>wat u plaatst, waar u werkt en hoe een aanvraag verloopt</strong>.</p><h3>Maak uw isolatiewerken concreet</h3><p>Plaatst u dakisolatie, vloerisolatie, zoldervloerisolatie of spouwmuurisolatie? Dan beschrijven we alleen de diensten die u echt aanbiedt. We leggen in gewone taal uit voor welke woningen ze bedoeld zijn, hoe u te werk gaat en welke afwerking de klant kan verwachten.</p><h3>Laat uw eigen werk zien</h3><p>Een foto van een afgewerkte vloer of een geïsoleerde zolder wordt sterker met een korte toelichting: het soort woning, de uitgevoerde werken en de gemeente. Zo kan een bezoeker uw ervaring beoordelen aan de hand van een herkenbaar project.</p><h3>Vraag wat u nodig heeft voor een eerste antwoord</h3><p>Een offerteformulier kan vragen naar het type isolatie, de gemeente en een korte beschrijving van de werken. We houden het beknopt. De precieze uitvoering en prijs bespreekt u daarna zelf met de klant.</p>",
+            "img": {
+                "src": "/images/isolatiebedrijf-website-offerte.webp",
+                "alt": "Illustratie van een isolatiewebsite op laptop en gsm, met diensten, projectfoto’s en een offerteformulier.",
+                "width": 1122,
+                "height": 1402
+            },
+            "button": [
+                {
+                    "text": "Bespreek uw isolatiewebsite",
+                    "href": "/contact?pakket=isolatiebedrijf"
+                }
+            ],
+            "matchImageHeight": true
+        },
+        {
+            "slug": "why-all-in-one",
+            "title": "U volgt de werven op. Ik onderhoud uw website.",
+            "subtitle": "Eén aanspreekpunt voor uw website",
+            "text": "<p>Naast de bouw van uw website regel ik de hosting, domeinnaam en technische updates. Een nieuw telefoonnummer, andere openingsuren of recente projectfoto's? U stuurt de wijzigingen naar mij.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge'>webontwikkelaar in Brugge</a>, en bouw websites voor zelfstandigen en kmo's in Vlaanderen. U bespreekt de inhoud rechtstreeks met de persoon die uw website maakt.</p><p>De basis start vanaf <strong>€49 per maand excl. btw</strong>. Voor extra functies, zoals een koppeling met uw klantenbeheer of een uitgebreid aanvraagproces, krijgt u vooraf een aparte offerte. Bekijk ook <a href='/nl/projects'>mijn andere gerealiseerde websites</a> voor voorbeelden uit verschillende sectoren.</p>",
+            "img": {
+                "src": "/images/isolatiebedrijf-website-onderhoud.webp",
+                "alt": "Illustratie van een webontwikkelaar die een isolatiewebsite onderhoudt terwijl een vakman dakisolatie plaatst.",
+                "width": 1200,
+                "height": 1200
+            },
+            "matchImageHeight": true
+        },
+        {
+            "slug": "features-benefits",
+            "component": "features",
+            "title": "Wat uw isolatiewebsite nodig heeft",
+            "subtitle": "Webdesign voor isolatiebedrijven",
+            "text": "<p>Uw website brengt uw diensten en contactmogelijkheden samen. Dit zijn de onderdelen die we afstemmen op uw bedrijf.</p>",
+            "features": [
+                {
+                    "icon": "file-text",
+                    "title": "Duidelijke diensten",
+                    "description": "Uitleg over de isolatiewerken die u uitvoert, met uw werkwijze en materialen. Bij verschillende diensten bespreken we welke een eigen pagina nodig hebben."
+                },
+                {
+                    "icon": "mail",
+                    "title": "Een gericht offerteformulier",
+                    "description": "Bezoekers sturen hun contactgegevens, gemeente en vraag rechtstreeks naar uw bedrijf. U beslist zelf hoe u de aanvraag opvolgt en een plaatsbezoek afspreekt."
+                },
+                {
+                    "icon": "image",
+                    "title": "Foto's van uw realisaties",
+                    "description": "Laat eigen isolatiewerken zien met een korte uitleg per project. Foto's van de uitvoering helpen bezoekers begrijpen wat u voor hen kunt doen."
+                },
+                {
+                    "icon": "map-pin",
+                    "title": "Een herkenbaar werkgebied",
+                    "description": "Maak duidelijk in welke gemeenten of provincies u werkt. Regiopagina's zijn mogelijk als er eigen informatie of projecten zijn die zo'n pagina nuttig maken."
+                },
+                {
+                    "icon": "smartphone",
+                    "title": "Bellen en aanvragen op de gsm",
+                    "description": "Leesbare teksten, duidelijke foto's en een belknop op kleine schermen. Het offerteformulier werkt ook voor iemand die uw website op zijn gsm bekijkt."
+                },
+                {
+                    "icon": "search",
+                    "title": "Een verzorgde basis voor Google",
+                    "description": "Beschrijvende paginatitels, een logische structuur en inhoud over uw echte diensten. Dat helpt zoekmachines uw website begrijpen. Een bepaalde positie is niet gegarandeerd."
+                }
+            ]
+        },
+        {
+            "slug": "portfolio-case",
+            "component": "portfolio",
+            "sectionId": "thermogroep",
+            "title": "Realisatie: Thermogroep uit Brugge",
+            "subtitle": "Een isolatiewebsite in de praktijk",
+            "description": "<p>Voor <strong>Thermogroep</strong>, een isolatiebedrijf uit Brugge actief in West-Vlaanderen en Gent, bouwde ik een website met meerdere pagina's. Het bedrijf plaatst vloerisolatie, dakisolatie en zoldervloerisolatie.</p><p>Elke dienst heeft een eigen pagina. Bezoekers vinden er ook uitgevoerde projecten, informatie over het werkgebied en een formulier om een offerte aan te vragen of een vraag te stellen. Op de gsm kunnen ze rechtstreeks bellen.</p><p>Dit project laat zien hoe ik de diensten en werkwijze van een isolatiebedrijf vertaal naar een website. De inhoud en het aanvraagformulier voor uw bedrijf stemmen we af op de werken die u uitvoert.</p><p><a href='https://thermogroep.be' target='_blank' rel='noopener noreferrer'>Bekijk de website van Thermogroep</a>.</p>",
+            "project": {
+                "name": "Thermogroep",
+                "url": "https://thermogroep.be",
+                "image": "/images/projects/thermogroep-project.png",
+                "wideImageWidth": 720,
+                "description": "Website voor isolatiebedrijf Thermogroep op desktop, laptop en smartphone, met diensten en een offerteformulier."
+            }
+        },
+        {
+            "slug": "pricing",
+            "title": "Wat kost een website voor uw isolatiebedrijf?",
+            "subtitle": "Website en onderhoud in één maandbedrag",
+            "highlight": "Vanaf €49/maand excl. btw",
+            "text": "<p><strong>Standaard</strong> start vanaf <strong>€49 per maand excl. btw</strong>, met uw diensten, projectfoto's en een offerteformulier. Wilt u ook online afspraken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>Er zijn geen opstartkosten. De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
+            "items": [
+                {
+                    "title": "Standaard",
+                    "price": "49",
+                    "currency": "Vanaf €",
+                    "period": "/maand excl. btw",
+                    "tagline": "Uw diensten, realisaties en offerteaanvragen op één plek",
+                    "features": [
+                        "Website op maat met <strong>uw diensten en bedrijfsinformatie</strong>",
+                        "<strong>Offerteformulier</strong> afgestemd op uw isolatiewerken",
+                        "<strong>Projectfoto's en werkgebied</strong> op uw website",
+                        "Leesbaar op de gsm, met een <strong>belknop</strong>",
+                        "<strong>SEO-basis</strong>: paginatitels, structuur en beschrijvende inhoud",
+                        "<strong>Hosting en domeinnaam</strong> inbegrepen",
+                        "<strong>Onderhoud en updates</strong> inbegrepen",
+                        "Aanpassingen aan uw inhoud <strong>door mij uitgevoerd</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
+                        "<strong>Geen opstartkosten</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Voor een website die uw isolatiewerken toont en offerteaanvragen ontvangt. Extra functies bespreken we binnen het pakket Op maat.",
+                    "buttonText": "Bespreek Standaard",
+                    "buttonHref": "/contact?pakket=isolatiebedrijf"
+                },
+                {
+                    "title": "Op maat",
+                    "price": "Maatwerk",
+                    "currency": "",
+                    "period": "",
+                    "tagline": "Extra functies afgestemd op hoe uw bedrijf werkt",
+                    "features": [
+                        "<strong>Alles van Standaard</strong> inbegrepen",
+                        "Mogelijkheid tot <strong>online afspraken voor plaatsbezoeken</strong>",
+                        "<strong>Klantenbeheer</strong> voor de opvolging van aanvragen en contacten",
+                        "<strong>Koppelingen met uw bestaande software</strong>, waar technisch mogelijk",
+                        "Een <strong>uitgebreider offerteformulier</strong> of aanvraagproces",
+                        "Optioneel <strong>extra talen of zelf inhoud beheren</strong>",
+                        "<strong>Andere functies</strong> in overleg, met een voorstel vooraf"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "We bespreken welke functies u nodig heeft, bijvoorbeeld afsprakenplanning of klantenbeheer. U krijgt een offerte voor de gekozen functies, met de prijs en aanpak vooraf vastgelegd.",
+                    "buttonText": "Bespreek uw wensen",
+                    "buttonHref": "/contact?pakket=isolatiebedrijf-op-maat"
+                }
+            ]
+        },
+        {
+            "slug": "one-time-payment",
+            "component": "one-time-payment",
+            "title": "Liever een eenmalige betaling?",
+            "text": "<p>U kunt de bouw van uw isolatiewebsite ook eenmalig betalen. Ik maak daarvoor een offerte op basis van de gewenste inhoud en functies.</p><p>Hosting en domeinnaam regelt u dan zelf, of ik verzorg ze apart tegen een jaarlijkse vergoeding. We spreken vooraf af wie het onderhoud en latere wijzigingen opneemt, zodat duidelijk is welke kosten er na de oplevering nog zijn.</p>",
+            "button": {
+                "href": "/contact?pakket=isolatiebedrijf-eenmalig",
+                "text": "Vraag een eenmalige offerte"
+            }
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Veelgestelde vragen over isolatiewebsites",
+            "subtitle": "Voor u een website laat maken",
+            "text": "<p>Hieronder vindt u antwoorden over de prijs, inhoud en aanpak. Heeft uw bedrijf andere wensen? Dan bespreken we die in een vrijblijvend gesprek.</p>",
+            "items": [
+                {
+                    "title": "Wat kost een website laten maken voor een isolatiebedrijf?",
+                    "description": "Een website voor uw isolatiebedrijf start bij Webdevamin vanaf <strong>€49 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. De omvang van de website en eventuele extra functies bepalen de definitieve prijs, die u vooraf ontvangt."
+                },
+                {
+                    "title": "Wat staat er op mijn isolatiewebsite?",
+                    "description": "Uw website bevat informatie over uw bedrijf, de isolatiewerken die u uitvoert, uw werkgebied, eigen projectfoto's en contactmogelijkheden. Voor verschillende diensten kunnen we aparte pagina's maken, bijvoorbeeld voor dakisolatie en vloerisolatie. We nemen alleen diensten op die u echt aanbiedt en bespreken vooraf hoeveel pagina's uw bedrijf nodig heeft."
+                },
+                {
+                    "title": "Hoe ontvang ik offerteaanvragen via mijn website?",
+                    "description": "Een bezoeker vult het offerteformulier in en u ontvangt de aanvraag rechtstreeks per e-mail. Samen kiezen we de nodige velden, zoals naam, contactgegevens, gemeente en type isolatiewerk. U neemt daarna zelf contact op om de werken te bespreken of een plaatsbezoek af te spreken. Een automatische prijsberekening of koppeling met uw klantenbeheer is extra maatwerk."
+                },
+                {
+                    "title": "Welke foto's en informatie moet ik aanleveren?",
+                    "description": "Bezorg me uw bedrijfsgegevens, contactgegevens, diensten, werkgebied en foto's van uw eigen projecten. Per project is een korte uitleg over de uitgevoerde werken nuttig. Ik help die informatie omzetten in leesbare websiteteksten. Gebruik foto's die u mag publiceren en deel geen herkenbare klantgegevens zonder toestemming. Heeft u nog weinig materiaal, dan bespreken we wat nodig is om te starten."
+                },
+                {
+                    "title": "Kan mijn isolatiebedrijf beter gevonden worden in mijn regio?",
+                    "description": "Ik bouw de website met duidelijke dienstbeschrijvingen, paginatitels en informatie over uw echte werkgebied. Lokale projecten kunnen die inhoud aanvullen. Houd ook uw Google Bedrijfsprofiel actueel en laat het naar uw website verwijzen. Een aparte regiopagina is alleen zinvol als ze iets toevoegt, zoals eigen projecten of praktische informatie. Een vaste positie in Google of een aantal aanvragen kan ik niet beloven."
+                },
+                {
+                    "title": "Kan ik mijn bestaande website en domeinnaam behouden?",
+                    "description": "Ja, u kunt uw bestaande domeinnaam gebruiken voor een nieuwe website. Ik bekijk eerst uw huidige pagina's, inhoud en e-mailinstellingen. Nuttige teksten en foto's nemen we mee. Veranderen er pagina-adressen, dan voorzie ik waar nodig doorverwijzingen. We plannen de overstap zodat uw website en zakelijke e-mail bereikbaar blijven."
+                },
+                {
+                    "title": "Hoe lang duurt het om mijn website te bouwen?",
+                    "description": "We spreken de planning af zodra de inhoud en omvang duidelijk zijn. Het aantal pagina's, beschikbare projectfoto's en eventuele extra functies bepalen de doorlooptijd. Na het eerste gesprek krijgt u een voorstel met de stappen en timing. U kijkt de website na voor ze online gaat."
+                },
+                {
+                    "title": "Kan ik later nieuwe projecten of functies toevoegen?",
+                    "description": "Ja. Nieuwe werffoto's, aangepaste contactgegevens en wijzigingen aan uw diensten stuurt u naar mij. Ik voer de inhoudelijke aanpassingen uit. Voor online afspraken voor plaatsbezoeken, klantenbeheer, extra talen of zelf inhoud beheren bespreken we het pakket <strong>Op maat</strong>. U krijgt eerst een offerte voor de gekozen functies. Er wordt niets toegevoegd zonder dat de prijs en aanpak besproken zijn."
+                }
+            ]
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Wat moet uw website voor uw bedrijf doen?",
+            "text": "Vertel me welke isolatiewerken u uitvoert en waar u actief bent. Dan bekijken we welke inhoud en contactmogelijkheden bij uw bedrijf passen. U krijgt een vrijblijvend voorstel met een duidelijke prijs.",
+            "button": [
+                {
+                    "text": "Bespreek mijn isolatiewebsite",
+                    "href": "/contact?pakket=isolatiebedrijf"
+                },
+                {
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20isolatiebedrijf.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20bedrijf%20past%3F",
+                    "external": true
+                }
+            ]
+        }
+    ]
+}

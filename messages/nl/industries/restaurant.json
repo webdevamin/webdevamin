@@ -875,7 +875,7 @@
             "component": "portfolio",
             "title": "Realisatie: Restaurant Commanderie",
             "subtitle": "Restaurant website in de praktijk",
-            "description": "<p>Voor Restaurant Commanderie in Westkerke bouwde ik een website met menukaart, suggesties en praktische informatie. Het team past zelf gerechten en prijzen aan via een beheer-app op de gsm.</p><p>Dat zelfbeheer is <strong>maatwerk</strong>. Het reservatiesysteem is voorbereid, maar gasten reserveren er momenteel nog telefonisch. Voor een voorbeeld van online boeken kunt u de interactieve demo verderop op deze pagina proberen.</p><p><a href='https://restocommanderie.com' target='_blank' rel='noopener noreferrer'>Bekijk de website van Restaurant Commanderie</a>.</p>",
+            "description": "<p>Voor Restaurant Commanderie in Westkerke bouwde ik een website met menukaart, suggesties en praktische informatie. Het team past zelf gerechten en prijzen aan via een beheer-app op de gsm.</p><p>Dat zelfbeheer is <strong>maatwerk</strong>. Het reservatiesysteem is voorbereid, maar gasten reserveren er momenteel nog telefonisch. Voor een voorbeeld van online boeken kunt u de interactieve demo verderop op deze pagina proberen.</p><p><a href='https://restocommanderie.com' target='_blank' rel='noopener noreferrer nofollow'>Bekijk de website van Restaurant Commanderie</a>.</p>",
             "highlights": [
                 {
                     "number": "24/7",

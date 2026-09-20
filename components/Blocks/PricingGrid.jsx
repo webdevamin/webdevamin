@@ -25,9 +25,9 @@ const PricingGrid = ({ content, onCalculate }) => {
             <div className="max-w-7xl ml-auto lg:text-right">
               <div className='mb-10'>
                 <Heading title={title} subtitle={subtitle} />
-                <h4 className='-mt-2 text-lg font-bold font_quicksand bg-theme
+                <div className='h4 -mt-2 text-lg font-bold font_quicksand bg-theme
                             text-white px-4 py-2 mb-7 inline-block uppercase
-                            md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</h4>
+                            md:text-xl lg:text-2xl xl:text-3xl xl:px-5 xl:py-3'>{highlight}</div>
                 <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                 {button && <ButtonOne href={button.href} text={button.text} onClick={onCalculate} />}
               </div>
@@ -53,6 +53,7 @@ const PricingGrid = ({ content, onCalculate }) => {
                   limitLabel,
                   description,
                   features,
+                  featureLayout,
                   excludedFeatures,
                   buttonText,
                   buttonHref,
@@ -71,6 +72,7 @@ const PricingGrid = ({ content, onCalculate }) => {
                     limitLabel={limitLabel}
                     description={description}
                     features={features}
+                    featureLayout={featureLayout}
                     excludedFeatures={excludedFeatures}
                     buttonText={buttonText}
                     buttonHref={buttonHref}

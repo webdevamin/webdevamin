@@ -18,6 +18,7 @@ export function PricingCard({
     limitLabel,
     description,
     features = [],
+    featureLayout = 'list',
     excludedFeatures = [],
     buttonText = "Kies pakket",
     buttonHref = "/contact",
@@ -30,6 +31,7 @@ export function PricingCard({
 }) {
     const locale = useLocale();
     const isDutch = locale === 'nl';
+    const hasFeatureGrid = featureLayout === 'grid';
 
     // plain: zonder kaartrand, schaduw en zijpadding; LineGrid geeft de vakken hun padding en lijnen.
     const frameClasses = plain
@@ -43,9 +45,9 @@ export function PricingCard({
         <div className={`flex flex-col h-full ${frameClasses} ${className}`}>
             <div className="flex-grow">
                 <div className="mb-2 flex min-h-[2rem] flex-wrap items-center gap-x-6 gap-y-2">
-                    <h5 className="text-xl font-semibold text-slate-900">
+                    <h3 className="!mb-0 !text-xl !normal-case font-semibold text-slate-900 drop-shadow-none">
                         {title}
-                    </h5>
+                    </h3>
                     {badge && (
                         <span className="rounded-full bg-theme px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white">
                             {badge}
@@ -82,17 +84,17 @@ export function PricingCard({
                     </p>
                 )}
                 {/* In een breed raster-vak verdeelt de lijst zich vanzelf over twee kolommen zodra er plaats is. */}
-                <ul className={`my-7 ${plain ? '[column-width:14rem] gap-x-8 [&>li]:mb-3 [&>li]:break-inside-avoid' : 'space-y-3'}`}>
+                <ul className={`my-7 ${hasFeatureGrid ? 'grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4' : plain ? '[column-width:14rem] gap-x-8 [&>li]:mb-3 [&>li]:break-inside-avoid' : 'space-y-3'}`}>
                     {features.map((feature, index) => (
-                        <li key={index} className="flex items-start space-x-3">
-                            <svg className="h-5 w-5 shrink-0 text-theme mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <li key={index} className={`flex items-start ${hasFeatureGrid ? 'gap-4 rounded-2xl border border-slate-200 bg-white p-4 sm:p-5' : 'space-x-3'}`}>
+                            <svg aria-hidden="true" className={`shrink-0 text-theme ${hasFeatureGrid ? 'h-8 w-8 rounded-full bg-theme/10 p-1.5' : 'h-5 w-5 mt-0.5'}`} fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     fillRule="evenodd"
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <span className="text-left text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: feature }}></span>
+                            <span className={`text-left text-sm leading-6 text-slate-700 ${hasFeatureGrid ? 'pt-1 [&_strong]:font-semibold [&_strong]:text-slate-900' : ''}`} dangerouslySetInnerHTML={{ __html: feature }}></span>
                         </li>
                     ))}
                     {excludedFeatures.map((feature, index) => (
@@ -109,12 +111,13 @@ export function PricingCard({
                     ))}
                 </ul>
             </div>
-            <div className="flex flex-col gap-2.5">
+            <div className="flex flex-col gap-2.5 xl:flex-row">
                 <CtaButton
                     href={buttonHref}
                     onClick={onCalculate}
                     text={buttonText}
                     variant={popular ? 'primary' : 'outline'}
+                    className="items-center xl:min-w-0 xl:flex-1"
                     fullWidth
                 />
                 {isDutch && (
@@ -122,6 +125,7 @@ export function PricingCard({
                         href={phoneHref}
                         text={phoneLabel}
                         variant="neutral"
+                        className="items-center xl:min-w-0 xl:flex-1"
                         fullWidth
                         ariaLabel={phoneLabel}
                     />

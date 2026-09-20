@@ -4,28 +4,31 @@ import Heading from '../Heading';
 import SubHeading from '../SubHeading';
 
 const BlockNormal = ({ content, position = 'left' }) => {
-    const { title, text, subtitle, img, button, slug } = content;
+    const { title, text, subtitle, img, button, slug, matchImageHeight = false } = content;
     const { src, alt, width = 836, height = 483 } = img;
     const isImageLeft = position === 'left';
 
     const ImageSection = () => (
-        <div className={`mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0 xl:w-full`}>
-            <Heading title={title} />
+        <div className={matchImageHeight
+            ? `relative overflow-hidden rounded-2xl lg:min-h-[28rem] ${!isImageLeft ? 'lg:order-2' : ''}`
+            : 'mb-0 lg:self-start md:mb-4 md:ml-3 lg:ml-0 lg:mb-0 xl:w-full'}>
+            {!matchImageHeight && <Heading title={title} />}
             <Image
                 src={src}
                 width={width}
                 height={height}
                 alt={alt}
-                className="object-contain w-full h-auto mt-4"
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 70vw, 836px"
+                className={matchImageHeight ? 'w-full h-auto object-cover lg:absolute lg:inset-0 lg:h-full' : 'object-contain w-full h-auto mt-4'}
+                sizes={matchImageHeight ? '(max-width: 1023px) 90vw, (max-width: 1735px) 45vw, 720px' : '(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 70vw, 836px'}
             />
         </div>
     );
 
     const ContentSection = () => (
-        <div className={`mt-1 sm:mt-3 md:mt-8 lg:mt-20 xl:mt-32 xl:w-full lg:max-w-md xl:max-w-2xl 2xl:max-w-3xl`}>
-            <article className={`mt-6 lg:ml-3`}>
+        <div className={matchImageHeight ? 'min-w-0' : 'mt-1 sm:mt-3 md:mt-8 lg:mt-20 xl:mt-32 xl:w-full lg:max-w-md xl:max-w-2xl 2xl:max-w-3xl'}>
+            <article className={matchImageHeight ? '' : 'mt-6 lg:ml-3'}>
                 <div>
+                    {matchImageHeight && <Heading title={title} />}
                     <SubHeading title={subtitle} />
                     <div className="section_content" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
@@ -53,7 +56,9 @@ const BlockNormal = ({ content, position = 'left' }) => {
 
     return (
         <div id={slug} className={`mt-24 md:mt-28 xl:mt-44`}>
-            <div className={`lg:flex lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly ${!isImageLeft ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+            <div className={matchImageHeight
+                ? 'grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16'
+                : `lg:flex lg:gap-[7rem] md:text-start lg:justify-between xl:justify-evenly ${!isImageLeft ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
                 <ImageSection />
                 <ContentSection />
             </div>

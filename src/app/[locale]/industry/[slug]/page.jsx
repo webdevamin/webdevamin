@@ -108,6 +108,7 @@ export async function generateMetadata({ params }) {
           url: defaultImage,
           width: 1200,
           height: 630,
+          alt: seo.imageAlt,
         },
       ],
       locale: locale,
@@ -268,12 +269,12 @@ const FeaturesSection = ({ content }) => {
 
 // Portfolio Case Component
 const PortfolioCase = ({ content }) => {
-  const { title, subtitle, description, project, highlights } = content;
+  const { title, subtitle, description, project, highlights, sectionId = 'services' } = content;
   const { image, description: projectDesc, wideImageWidth = 560 } = project;
 
   return (
     <BorderedSection flushBottom>
-      <BlockLayoutOne title={title} slug={`services`} includeMaxWidth={false}>
+      <BlockLayoutOne title={title} slug={sectionId} includeMaxWidth={false}>
         <div className="flex flex-col-reverse lg:flex-row lg:gap-[7rem] lg:justify-center lg:items-center text-left">
           <div className="lg:flex-1">
             <div className="mb-6 lg:mb-10 flex flex-col lg:flex-row lg:gap-10 lg:justify-center lg:items-center text-left">
@@ -428,20 +429,26 @@ const IndustryPage = async ({ params }) => {
   const { alternateLangs, blocks } = pageData;
   const oneTimePayment = blocks.find(block => block.slug === 'one-time-payment');
   const isRestaurant = locale === 'nl' && slug === 'restaurant-website-laten-maken';
+  const isTaxi = locale === 'nl' && slug === 'taxi-website-laten-maken';
+  const benefitsFirst = isRestaurant || isTaxi;
   const benefits = (
-    <>
-      <BorderedSection>
-        <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website')} />
-      </BorderedSection>
-      <BorderedSection>
-        <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position="right" />
-      </BorderedSection>
-    </>
+    <BorderedSection>
+      <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website' || block.slug === 'why-isolatiebedrijf-website')} />
+    </BorderedSection>
   );
-  const portfolioAndPricing = (
+  const service = (
+    <BorderedSection>
+      <BlockNormal content={blocks.find(block => block.slug === 'why-all-in-one')} position="right" />
+    </BorderedSection>
+  );
+  const portfolio = (
     <>
       <PortfolioCase content={blocks.find(block => block.slug === 'portfolio-case')} />
       <TestimonialSpotlight content={blocks.find(block => block.slug === 'review')} />
+    </>
+  );
+  const pricing = (
+    <>
       <PricingGrid content={blocks.find(block => block.slug === 'pricing')} />
       {oneTimePayment && (
         <BorderedSection>
@@ -458,7 +465,7 @@ const IndustryPage = async ({ params }) => {
   const closing = (
     // Compenseert de negatieve bovenmarge van CallToAction.
     <div className="lg:mt-20">
-      <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
+      <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} borderless />
     </div>
   );
 
@@ -477,10 +484,16 @@ const IndustryPage = async ({ params }) => {
         breadcrumbLocale={locale}
       />
       <PageLayout allowSticky={isRestaurant}>
-        {isRestaurant ? portfolioAndPricing : (
+        {benefitsFirst ? (
+          <>
+            {benefits}
+            {portfolio}
+          </>
+        ) : (
           <>
             <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
             {benefits}
+            {service}
           </>
         )}
         {/* De taxipagina toont het demoblok nog niet: er is nog geen video van het boekingssysteem. */}
@@ -494,23 +507,25 @@ const IndustryPage = async ({ params }) => {
         ) : (
           <FeaturesSection content={blocks.find(block => block.slug === 'features-benefits')} />
         )}
-        {isRestaurant ? (
+        {benefitsFirst ? (
           <>
-            {benefits}
+            {service}
+            {pricing}
             <ProcessSteps content={blocks.find(block => block.slug === 'process')} />
             {faq}
             {closing}
           </>
         ) : (
           <>
-            {portfolioAndPricing}
+            {portfolio}
+            {pricing}
             {closing}
             {faq}
           </>
         )}
         {otherIndustryCards.length > 0 && (
           // Het rode contactblok begint direct onder de afsluitende lijn van het raster, zodat die lijn niet boven een lege strook zweeft.
-          <BorderedSection flushBottom>
+          <BorderedSection line={!benefitsFirst} flushBottom>
             <IndustryCards
               content={sectorsPageData.blocks.find(block => block.slug === 'andere-sectoren')}
               cards={[...otherIndustryCards, sectorsPageData.otherCard]}

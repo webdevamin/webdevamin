@@ -10,6 +10,7 @@ export const slugToFileMap = {
     'taxi-website-laten-maken': 'taxi',
     'kapper-website-laten-maken': 'kapper',
     'restaurant-website-laten-maken': 'restaurant',
+    'isolatiebedrijf-website-laten-maken': 'isolatiebedrijf',
   },
 };
 

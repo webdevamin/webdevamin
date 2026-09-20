@@ -123,7 +123,7 @@ const IndustriesPage = async ({ params }) => {
         </BorderedSection>
         {/* Heft de negatieve bovenmarge van CallToAction op, want de sectie erboven eindigt nu met vaste padding. */}
         <div className="lg:mt-20">
-          <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} />
+          <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} borderless />
         </div>
         <BorderedSection line={false}>
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
