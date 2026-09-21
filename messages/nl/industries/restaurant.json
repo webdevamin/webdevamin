@@ -4,7 +4,7 @@
         "description": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
         "canonical": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
         "ogTitle": "Restaurant website laten maken | Vanaf €49/maand",
-        "ogDescription": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
+        "ogDescription": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie.",
         "image": "https://webdevamin.com/images/restaurant-website-laten-maken-og.png",
         "keywords": "restaurant website laten maken, horeca website laten maken, restaurantwebsite met reservaties, website met digitale menukaart"
     },
@@ -27,7 +27,7 @@
             "@type": "ProfessionalService",
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
-            "url": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
+            "url": "https://webdevamin.com/nl",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/restaurant-reserv.png",
             "description": "Restaurantwebsite met digitale menukaart vanaf €49 per maand. Online reservaties en maximaal drie talen vanaf €89, bestellingen vanaf €139. Hosting en onderhoud inbegrepen.",
@@ -170,18 +170,7 @@
             "serviceType": "Webdesign voor restaurants en horeca",
             "description": "Professionele restaurant en horeca website met digitale menukaart, QR-code, online reservatiesysteem, online bestellen en lokale SEO.",
             "provider": {
-                "@type": "ProfessionalService",
-                "@id": "https://webdevamin.com/#organization",
-                "name": "Webdevamin",
-                "url": "https://webdevamin.com/nl",
-                "telephone": "+32470930916",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "BE",
-                    "addressLocality": "Brugge",
-                    "postalCode": "8310",
-                    "streetAddress": "Zuiderakker 18"
-                }
+                "@id": "https://webdevamin.com/#organization"
             },
             "audience": {
                 "@type": "BusinessAudience",

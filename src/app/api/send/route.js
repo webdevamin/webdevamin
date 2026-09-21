@@ -49,7 +49,7 @@ export async function POST(req) {
     }
 
     if (!ADMIN_URL || !ADMIN_API_KEY || !MAIL_TO) {
-      throw new Error('Adminbook email delivery is not configured.');
+      throw new Error('Admin app email delivery is not configured.');
     }
 
     const emailData = {
@@ -66,8 +66,8 @@ export async function POST(req) {
       </body></html>`,
     };
 
-    const adminbookUrl = ADMIN_URL.replace(/\/+$/, '');
-    const res = await fetch(`${adminbookUrl}/api/saas/integrations/email`, {
+    const adminUrl = ADMIN_URL.replace(/\/+$/, '');
+    const res = await fetch(`${adminUrl}/api/saas/integrations/email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export async function POST(req) {
 
     if (!res.ok) {
       const providerError = data.error || `Request failed with status ${res.status}`;
-      console.error('Adminbook email error:', {
+      console.error('Admin app email error:', {
         status: res.status,
         code: data.code || null,
         error: providerError,
@@ -89,7 +89,7 @@ export async function POST(req) {
     }
 
     if (!data.messageId) {
-      throw new Error('Adminbook did not return an email message ID.');
+      throw new Error('Admin app did not return an email message ID.');
     }
 
     return new Response(

@@ -27,7 +27,7 @@
             "@type": "ProfessionalService",
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
-            "url": "https://webdevamin.com/nl/industry/kapper-website-laten-maken",
+            "url": "https://webdevamin.com/nl",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/barber_og_nl.png",
             "description": "Kapper website laten maken vanaf €49 per maand. All-in-one pakketten voor kapsalons en barbershops met online afsprakensysteem, hosting, onderhoud en SEO.",
@@ -170,18 +170,7 @@
             "serviceType": "Webdesign voor kappers en kapsalons",
             "description": "Professionele kapper website om online zichtbaar te zijn en automatisch afspraken te ontvangen, met online afsprakensysteem, e-mailmarketing en lokale SEO.",
             "provider": {
-                "@type": "ProfessionalService",
-                "@id": "https://webdevamin.com/#organization",
-                "name": "Webdevamin",
-                "url": "https://webdevamin.com/nl",
-                "telephone": "+32470930916",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "BE",
-                    "addressLocality": "Brugge",
-                    "postalCode": "8310",
-                    "streetAddress": "Zuiderakker 18"
-                }
+                "@id": "https://webdevamin.com/#organization"
             },
             "audience": {
                 "@type": "BusinessAudience",

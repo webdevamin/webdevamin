@@ -1,9 +1,9 @@
 {
     "seo": {
-        "title": "Taxi Website Laten Maken | {{websiteMonthly}}/maand, Boekingssysteem {{bookingMonthly}}",
-        "description": "Taxi website laten maken vanaf {{websiteMonthly}}/maand, of {{bookingMonthly}}/maand met boekingssysteem en automatische ritprijs. Geen opstartkosten, hosting en onderhoud inbegrepen.",
+        "title": "Taxi Website Laten Maken | Vanaf 49 euro per maand",
+        "description": "Laat een taxi website maken via een abonnement vanaf {{websiteMonthly}}/maand. Hosting en onderhoud inbegrepen, met optioneel een online boekingssysteem.",
         "canonical": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
-        "ogTitle": "Taxi Website Laten Maken | {{websiteMonthly}}/maand, Boekingssysteem {{bookingMonthly}}",
+        "ogTitle": "Taxi Website Laten Maken | Vanaf 49 euro per maand",
         "ogDescription": "Taxi website laten maken vanaf {{websiteMonthly}}/maand, of {{bookingMonthly}}/maand met boekingssysteem en automatische ritprijs.",
         "image": "https://webdevamin.com/images/taxi-website-laten-maken_og.png",
         "keywords": "taxi website laten maken, taxi website maken, taxi site, taxi boekingssysteem, taxi website met boekingssysteem, website voor taxibedrijf, taxi website kosten, taxi website prijs"
@@ -27,7 +27,7 @@
             "@type": "ProfessionalService",
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
-            "url": "https://webdevamin.com/nl/industry/taxi-website-laten-maken",
+            "url": "https://webdevamin.com/nl",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/taxi-website-laten-maken_og.png",
             "description": "Taxi website laten maken vanaf {{websiteMonthly}} per maand. All-in-one pakket met hosting, onderhoud, SEO en optioneel een online boekingssysteem.",
@@ -66,18 +66,7 @@
             "name": "Taxi website laten maken",
             "description": "Taxi website laten maken met online boekingssysteem, automatisch aangevulde adressen, automatische rit- en prijsberekening, navigatie in één klik vanuit de e-mail en SEO",
             "provider": {
-                "@type": "ProfessionalService",
-                "@id": "https://webdevamin.com/#organization",
-                "name": "Webdevamin",
-                "url": "https://webdevamin.com/nl",
-                "telephone": "+32470930916",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "BE",
-                    "addressLocality": "Brugge",
-                    "postalCode": "8310",
-                    "streetAddress": "Zuiderakker 18"
-                }
+                "@id": "https://webdevamin.com/#organization"
             },
             "areaServed": [
                 {
