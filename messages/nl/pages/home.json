@@ -198,7 +198,45 @@
                 "E-commerce / webshop",
                 "CRM",
                 "En veel meer..."
-            ]
+            ],
+            "enquiry": {
+                "triggerTitle": "Ik wil mijn zaak verbeteren",
+                "triggerText": "Vertel waar je tegenaan loopt. Ik denk met je mee.",
+                "eyebrow": "Samen kijken wat beter kan",
+                "title": "Wat zou jouw werk makkelijker maken?",
+                "intro": "Veel administratie, gemiste aanvragen of een planning die steeds uitloopt? Vertel waar je tegenaan loopt. Ik denk persoonlijk met je mee over een digitale oplossing die bij je bedrijf past.",
+                "close": "Venster sluiten",
+                "callText": "Liever meteen overleggen?",
+                "callLink": "Bel mij direct",
+                "form": {
+                    "message": "Wat wil je verbeteren in je bedrijf?",
+                    "placeholder": "Bijvoorbeeld: ik ben elke avond bezig met afspraken en offertes. Ik wil minder tijd kwijt zijn aan administratie en sneller kunnen reageren op nieuwe klanten.",
+                    "hint": "Vertel kort wat je bedrijf doet en waar je hulp bij kunt gebruiken.",
+                    "name": "Naam",
+                    "email": "E-mailadres",
+                    "callback": "Ik word liever gebeld",
+                    "phone": "Telefoonnummer",
+                    "send": "Verstuur naar Amin",
+                    "sending": "Bezig met versturen…"
+                },
+                "feedback": [
+                    {
+                        "title": "success",
+                        "backgroundColor": "#00865b",
+                        "text": "Bedankt voor je bericht! Ik neem persoonlijk contact met je op. Wil je liever gebeld worden? Dan bel ik je."
+                    },
+                    {
+                        "title": "clienterror",
+                        "backgroundColor": "#b42332",
+                        "text": "Controleer je gegevens en probeer het opnieuw. Je bericht staat er nog."
+                    },
+                    {
+                        "title": "servererror",
+                        "backgroundColor": "#b42332",
+                        "text": "Je bericht kon niet worden verstuurd. Je gegevens staan er nog. Probeer het opnieuw of bel me rechtstreeks."
+                    }
+                ]
+            }
         },
         {
             "title": "Waarom zakelijke website laten maken?",

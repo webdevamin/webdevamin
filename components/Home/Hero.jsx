@@ -4,6 +4,7 @@ import { getJsonString, } from '../../utils/app';
 import { getIconComponent } from '../../utils/iconMapper';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
+import BusinessEnquiry from './BusinessEnquiry';
 
 const Hero = ({ content, socials, locale }) => {
     const { title, subtitle, text, button, img, types, extra } = content;
@@ -20,7 +21,7 @@ const Hero = ({ content, socials, locale }) => {
                 <div className={`mt-7 md:w-6/12 bg-transparent`}>
                     {subtitle ? (
                         <div className='flex flex-col lg:mb-3'>
-                            <h1 className='order-2 text-lg sm:text-xl font-semibold lg:text-2xl xl:text-3xl uppercase font_quicksand text-theme_darker'>
+                            <h1 className='order-2 text-lg sm:text-xl font-semibold lg:text-2xl xl:text-3xl uppercase font_quicksand text-theme_darker mb-7 md:mb-[revert]'>
                                 {parsedTitle}
                             </h1>
                             <span className='order-1 text-5xl mb-2 lg:mb-4 font-bold md:text-6xl xl:text-7xl tracking-tight 2xl:text-8xl font_mohave'>{subtitle}</span>
@@ -30,6 +31,7 @@ const Hero = ({ content, socials, locale }) => {
                             {parsedTitle}
                         </h1>
                     )}
+                    {locale === 'nl' && content.enquiry && <BusinessEnquiry content={content.enquiry} />}
                     <div className={`mb-8 -mx-10 flex items-center 
                 justify-center md:hidden bg-transparent`}>
                         <span className={`flex-1 border-t-[0.5px] border-dark`} />

@@ -16,7 +16,7 @@ export async function POST(req) {
     let body;
     try { body = JSON.parse(text); } catch { return Response.json({ error: 'Invalid request.' }, { status: 400 }); }
     if (!body || typeof body !== 'object') return Response.json({ error: 'Invalid request.' }, { status: 400 });
-    const { name, email, message, website } = body;
+    const { name, email, message, website, callback = false, phone = '' } = body;
 
     // Honeypot check - if website field is filled, it's likely a bot
     if (website) {
@@ -32,11 +32,20 @@ export async function POST(req) {
       );
     }
 
+    if (typeof name !== 'string' || typeof email !== 'string' || typeof message !== 'string'
+      || typeof callback !== 'boolean' || typeof phone !== 'string' || phone.length > 40) {
+      return Response.json({ error: 'Please check your details.' }, { status: 400 });
+    }
+    const cleanPhone = callback ? phone.trim() : '';
+    if (callback && (!/^[+0-9(). /-]{5,40}$/.test(cleanPhone) || !/\d/.test(cleanPhone))) {
+      return Response.json({ error: 'Please enter your phone number.' }, { status: 400 });
+    }
+
     const cleanName = stripHtml(name);
     const cleanEmail = stripHtml(email);
     const cleanMessage = stripHtml(message);
 
-    if (!cleanName || !cleanEmail || !cleanMessage) {
+    if (!cleanName || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(cleanEmail) || !cleanMessage) {
       return new Response(
         JSON.stringify({ error: 'Please fill in the form correctly.' }),
         {
@@ -61,6 +70,7 @@ export async function POST(req) {
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${escapeHtml(cleanName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(cleanEmail)}</p>
+        ${callback ? `<p><strong>Callback requested:</strong> Yes</p><p><strong>Phone:</strong> ${escapeHtml(cleanPhone)}</p>` : ''}
         <p><strong>Message:</strong></p>
         <p>${escapeHtml(cleanMessage).replace(/\n/g, '<br>')}</p>
       </body></html>`,
