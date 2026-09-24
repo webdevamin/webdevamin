@@ -356,10 +356,14 @@ const TestimonialSpotlight = ({ content }) => {
         <LineGrid
           className={title ? 'mt-6 md:mt-8 xl:mt-10' : ''}
           items={cells}
-          columns={{ md: 2, lg: Math.min(cells.length, 3) }}
+          columns={{ md: 2 }}
           topLine={Boolean(title)}
           getKey={(review) => review?.name || 'score'}
-          cellClassName="py-10 lg:py-14"
+          cellClassName={(_, index) => `py-10 lg:py-14 ${
+            cells.length % 2 === 1 && index === cells.length - 1
+              ? 'md:col-span-full md:max-xl:!pr-0'
+              : ''
+          }`}
           renderItem={(review) => review ? (
             <figure className="flex h-full flex-col justify-between gap-8 text-left">
               <blockquote>
