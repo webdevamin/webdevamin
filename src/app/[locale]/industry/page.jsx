@@ -1,3 +1,4 @@
+import { getSocialImageMetadata } from '../../../../utils/social-images';
 import Header from '../../../../components/Layouts/Header'
 import Footer from '../../../../components/Layouts/Footer'
 import PageLayout from '../../../../components/Layouts/PageLayout'
@@ -48,9 +49,8 @@ export async function generateMetadata({ params }) {
 
   const { pageData } = await getData(locale)
   const { seo, alternates } = pageData
-  const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo
-
-  const defaultImage = image || '/images/ogbanner-nl.png'
+  const { title, description, canonical, ogTitle, ogDescription, keywords } = seo
+  const socialImage = await getSocialImageMetadata(canonical);
 
   return {
     title: `${title}`,
@@ -68,13 +68,7 @@ export async function generateMetadata({ params }) {
       description: ogDescription || description,
       url: canonical,
       siteName: 'Webdevamin',
-      images: [
-        {
-          url: defaultImage,
-          width: 1200,
-          height: 630,
-        },
-      ],
+      images: [socialImage],
       locale: locale,
       type: 'website',
     },
@@ -83,7 +77,7 @@ export async function generateMetadata({ params }) {
       title: `${ogTitle || title}`,
       description: ogDescription || description,
       creator: '@Webdevamin',
-      images: [defaultImage],
+      images: [socialImage.url],
     },
   }
 }

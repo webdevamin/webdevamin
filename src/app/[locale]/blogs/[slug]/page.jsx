@@ -1,3 +1,4 @@
+import { getSocialImageMetadata } from '../../../../../utils/social-images';
 import Header from '../../../../../components/Layouts/Header';
 import PageLayout from '../../../../../components/Layouts/PageLayout';
 import Contact from '../../../../../components/Contact';
@@ -62,8 +63,10 @@ export async function generateMetadata({ params }) {
     if (data.notFound || !data.blogData) return notFound();
 
     const { blogData } = data;
-    const { seo, alternates, title, img } = blogData;
-    const { title: seoTitle, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
+    const { seo, alternates, title } = blogData;
+    const { title: seoTitle, description, canonical, ogTitle, ogDescription, keywords } = seo;
+
+    const socialImage = await getSocialImageMetadata(canonical);
 
     return {
         title: `${seoTitle || title} | Webdevamin`,
@@ -81,13 +84,7 @@ export async function generateMetadata({ params }) {
             description: ogDescription || description,
             url: canonical,
             siteName: 'Webdevamin',
-            images: [
-                {
-                    url: image,
-                    width: img.width,
-                    height: img.height,
-                },
-            ],
+            images: [socialImage],
             locale: locale,
             type: 'article',
         },
@@ -96,7 +93,7 @@ export async function generateMetadata({ params }) {
             title: `${ogTitle || title} | Webdevamin`,
             description: ogDescription || description,
             creator: '@Webdevamin',
-            images: [image],
+            images: [socialImage.url],
         },
     };
 }

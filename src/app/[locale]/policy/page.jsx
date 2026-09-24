@@ -1,3 +1,4 @@
+import { getSocialImageMetadata } from '../../../../utils/social-images';
 import Header from '../../../../components/Layouts/Header';
 import PageLayout from '../../../../components/Layouts/PageLayout';
 import Heading from '../../../../components/Heading';
@@ -25,10 +26,8 @@ export async function generateMetadata({ params }) {
   const { locale } = await params;
     const { pageData } = await getData(locale);
     const { seo, alternates } = pageData;
-    const { title, description, canonical, image, ogTitle, ogDescription, keywords } = seo;
-    const defaultImage = image || (locale === 'nl'
-        ? '/images/ogbanner-nl.png'
-        : '/images/ogbanner.png');
+    const { title, description, canonical, ogTitle, ogDescription, keywords } = seo;
+    const socialImage = await getSocialImageMetadata(canonical);
 
     return {
         title: title,
@@ -47,13 +46,7 @@ export async function generateMetadata({ params }) {
             description: ogDescription || description,
             url: canonical,
             siteName: 'Webdevamin',
-            images: [
-                {
-                    url: defaultImage,
-                    width: 1200,
-                    height: 630,
-                },
-            ],
+            images: [socialImage],
             locale: locale,
             type: 'website',
         },
@@ -62,7 +55,7 @@ export async function generateMetadata({ params }) {
             title: ogTitle || title,
             description: ogDescription || description,
             creator: '@Webdevamin',
-            images: [defaultImage],
+            images: [socialImage.url],
         },
     };
 }
