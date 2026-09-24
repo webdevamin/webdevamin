@@ -361,12 +361,12 @@ const TestimonialSpotlight = ({ content }) => {
           getKey={(review) => review?.name || 'score'}
           cellClassName={(_, index) => `py-10 lg:py-14 ${
             cells.length % 2 === 1 && index === cells.length - 1
-              ? 'md:col-span-full md:max-xl:!pr-0'
+              ? 'md:col-span-full md:pr-0 xl:pr-12'
               : ''
           }`}
           renderItem={(review) => review ? (
-            <figure className="flex h-full flex-col justify-between gap-8 text-left">
-              <blockquote>
+            <figure className="flex h-full w-full flex-col justify-between gap-8 text-left">
+              <blockquote className="w-full">
                 <svg className="mb-4 h-8 w-8 text-theme" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
                 </svg>
