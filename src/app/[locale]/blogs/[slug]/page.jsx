@@ -110,6 +110,7 @@ const Blog = async ({ params }) => {
 
     const { alternateLangs, title, description, text, faq, textAfterFaq, img } = blogData;
     const { src, alt, width, height } = img;
+    const socialImage = await getSocialImageMetadata(blogData.seo.canonical);
 
     const button = [{
         href: `#${slug}`,
@@ -149,8 +150,9 @@ const Blog = async ({ params }) => {
                                     sizes="100vw" />
                             </div>
                             <div className={styles.socialSharesContainer}>
-                                <SocialShares url={blogData.seo.canonical} title={`Blog - ${title}`}
-                                    description={description} imageUrl={src} />
+                                <SocialShares url={blogData.seo.canonical} title={title}
+                                    description={description} shareText={blogData.shareText}
+                                    imageUrl={socialImage.url} locale={locale} />
                             </div>
                         </div>
                         <div className={styles.blogContent}>

@@ -13,7 +13,7 @@
 }
 
 .socialSharesContainer {
-  @apply flex justify-center items-center mb-4;
+  @apply flex flex-col justify-center items-center gap-2 mb-4;
 }
 
 .blogContent {

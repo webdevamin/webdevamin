@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link } from '../../src/i18n/navigation';
-import useStore from '../../utils/store';
 import { useLocale } from 'next-intl';
+
+const bannerDismissedKey = 'webdevamin-webleadr-banner-dismissed';
 
 /*
  * Rendert een lichte, responsive navigatie zonder Flowbite Navbar/Dropdown,
@@ -15,10 +16,24 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
     const locale = useLocale();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+    const [isAlertVisible, setIsAlertVisible] = useState(false);
     const nonHiddenPages = pages.filter(p => !p.hideFromHeader);
     const { content } = heroBannerData || {};
-    const isAlertVisible = useStore((state) => state.isAlertVisible);
-    const hideAlert = useStore((state) => state.hideAlert);
+
+    useEffect(() => {
+        try {
+            setIsAlertVisible(window.localStorage.getItem(bannerDismissedKey) !== 'true');
+        } catch {
+            setIsAlertVisible(true);
+        }
+    }, []);
+
+    const hideAlert = () => {
+        setIsAlertVisible(false);
+        try {
+            window.localStorage.setItem(bannerDismissedKey, 'true');
+        } catch {}
+    };
 
     /*
      * Sluit het mobiele menu en alle dropdowns nadat een bezoeker navigeert.

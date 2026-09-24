@@ -1,5 +1,6 @@
 # Top-level configuration for your Next.js application on Cloudflare Workers.
-# Use 'wrangler deploy' for production and 'wrangler deploy --env staging' for staging.
+# Workers Builds: use 'npx opennextjs-cloudflare build' as the Build command.
+# Use 'npx opennextjs-cloudflare deploy' as the Deploy command so it includes social images.
 
 name = "webdevamin" # Default to production name
 main = ".open-next/worker.js"

@@ -23,9 +23,9 @@ Titles use `seo.ogTitle`, then the page title or `seo.title`. Descriptions use `
 
 ## Builds and caching
 
-`npm run build` creates the final images in Next.js build output. The existing Cloudflare deployment command also runs this build. OpenNext uses its built-in static-assets incremental cache and cache interception to serve the pre-rendered cards; it does not require a new storage binding. Image routes bypass language middleware and have no timed regeneration. Existing public page rendering and the contact API remain separate from the static image routes.
+`npm run build` creates the final images in Next.js build output. OpenNext uses its built-in static-assets incremental cache and cache interception to serve the pre-rendered cards; it does not require a new storage binding. Image routes bypass language middleware and have no timed regeneration. Existing public page rendering and the contact API remain separate from the static image routes.
 
-OpenNext copies its prepared cache into Workers static assets during its cache-population step before deployment. Use the existing OpenNext deployment command, rather than deploying an unpopulated output directory directly with Wrangler.
+For automatic Cloudflare Workers Builds, set the Build command to `npx opennextjs-cloudflare build` and the Deploy command to `npx opennextjs-cloudflare deploy`. The OpenNext deploy command copies the prepared image cache into Workers static assets before uploading. `npx wrangler deploy` skips that step and leaves the social image URLs returning 404. The `npm run deploy` script builds and deploys when running this project locally.
 
 Image URLs include a version derived from card copy, illustration key, artwork version and the shared design version. Copy edits update the URL automatically. After replacing artwork, increment `seo.socialImage.artworkVersion` for every page sharing it, or bump `SOCIAL_IMAGE_DESIGN_VERSION` in `utils/social-image-data.mjs` to refresh all cards. Bump the shared version when changing the renderer, template or fonts. Social platforms can retain their own cached previews until they scrape the page again.
 
