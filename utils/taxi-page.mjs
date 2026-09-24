@@ -2,7 +2,12 @@ import { TAXI_ONE_TIME, TAXI_CATALOG } from './taxi-pricing.mjs';
 
 export function applyTaxiPricing(source, catalog = TAXI_CATALOG) {
   const packages = catalog?.packages || [];
-  const euro = value => new Intl.NumberFormat('nl-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 2 }).format(value);
+  const euro = value => new Intl.NumberFormat('nl-BE', {
+    style: 'currency',
+    currency: 'EUR',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  }).format(value);
   const tokens = {
     websiteMonthly: packages[0] ? euro(packages[0].monthlyPriceEur) : 'prijs op aanvraag',
     bookingMonthly: packages[1] ? euro(packages[1].monthlyPriceEur) : 'prijs op aanvraag',
