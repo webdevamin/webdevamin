@@ -205,16 +205,15 @@
         ]
     },
     {
-        "title": "Solaris",
-        "slug": "solaris",
-        "niche": "verzekering",
-        "price": "€89/maand",
-        "link": "https://solarisinsurance.org",
+        "title": "Voordex",
+        "slug": "voordex",
+        "niche": "energie",
+        "link": "https://voordex.com",
         "buttonText": "Bezoek website",
-        "description": "Webapplicatie voor een verzekeringsbureau met de mogelijkheid om verschillende formulieren in te vullen met pushmeldingen en live videovergaderingen.",
+        "description": "Een tweetalige website (Nederlands en Frans) voor een Belgisch energiebedrijf, met zonnepanelen, thuisbatterijen, energiecontracten, warmtepompen en renovatie, een zonnepanelencalculator en aanvraagformulieren.",
         "img": {
-            "src": "/images/projects/solaris.png",
-            "alt": "De hero section van de Solaris website getoond op 3 apparaten: mobiel, tablet en desktop."
+            "src": "/images/projects/voordex.png",
+            "alt": "Twee pagina's van de Voordex website: de homepage met diensten en de zonnepanelencalculator, en een pagina met klantenreviews, recente projecten en veelgestelde vragen."
         },
         "technologies": [
             {
@@ -222,13 +221,6 @@
                 "image": {
                     "src": "/images/next_js.svg",
                     "alt": "Next.js"
-                }
-            },
-            {
-                "name": "Node.js",
-                "image": {
-                    "src": "/images/nodejs.svg",
-                    "alt": "Node.js"
                 }
             },
             {

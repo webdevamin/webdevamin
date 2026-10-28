@@ -6,3 +6,4 @@
 - For links that open in a new tab, keep `noopener noreferrer` as well: `rel="noopener noreferrer nofollow"`. Neither `noopener` nor `noreferrer` replaces `nofollow`.
 - Do not add other outbound SEO endorsements, such as third-party URLs in `sameAs` structured data, unless I explicitly request them.
 - Check the final link markup when changing content. `nofollow` is a signal to search engines, not a guarantee about any third-party domain authority or rating score.
+- Portfolio project links (`link` in `messages/*/projects.json`) get `nofollow` by default when a project is added. Leave a project link followed only when I explicitly ask for it in my prompt. Do not change the `rel` of existing project links unless I ask.
