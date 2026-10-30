@@ -106,6 +106,14 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "Wat gebeurt er met mijn website en domeinnaam als ik stop?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Na de minimale looptijd van 12 maanden kunt u maandelijks opzeggen. Uw domeinnaam zet ik dan kosteloos naar u over, zodat u uw webadres houdt. Wilt u ook de website zelf houden? Dan verhuis ik de website en alles wat erbij hoort naar uw eigen account, tegen een eenmalige prijs die we vooraf afspreken. Vanaf dan bent u eigenaar en zorgt u zelf voor hosting, updates en onderhoud. Kiest u daar niet voor, dan gaat de website offline."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "Wat kost een website met een boekings- of afsprakensysteem?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -324,6 +332,10 @@
                 {
                     "title": "Hoe lang loopt het abonnement?",
                     "description": "Het abonnement loopt minstens 12 maanden vanaf de lancering van uw website. Daarna is het maandelijks opzegbaar. Bent u binnen 30 dagen na de lancering niet tevreden, dan krijgt u uw geld terug."
+                },
+                {
+                    "title": "Wat gebeurt er met mijn website en domeinnaam als ik stop?",
+                    "description": "Na de minimale looptijd van 12 maanden kunt u maandelijks opzeggen. Uw <strong>domeinnaam zet ik dan kosteloos naar u over</strong>, zodat u uw webadres houdt. Wilt u ook de website zelf houden? Dan verhuis ik de website en alles wat erbij hoort naar uw eigen account, tegen een <strong>eenmalige prijs die we vooraf afspreken</strong>. Vanaf dan bent u eigenaar en zorgt u zelf voor hosting, updates en onderhoud. Kiest u daar niet voor, dan gaat de website offline."
                 },
                 {
                     "title": "Wat kost een website met een boekings- of afsprakensysteem?",
