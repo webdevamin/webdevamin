@@ -1,12 +1,12 @@
 {
     "seo": {
-        "title": "Restaurant website laten maken | Vanaf €49/maand",
-        "description": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
+        "title": "Restaurant & horeca website laten maken | €49/maand",
+        "description": "Restaurant of horeca website laten maken vanaf €49/maand. Online reserveren vanaf €89. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
         "canonical": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
-        "ogTitle": "Restaurant website laten maken | Vanaf €49/maand",
-        "ogDescription": "Restaurant website laten maken vanaf €49/maand. Met online reservaties vanaf €89. Bekijk de pakketten en een realisatie.",
+        "ogTitle": "Restaurant & horeca website laten maken | €49/maand",
+        "ogDescription": "Restaurant of horeca website vanaf €49/maand. Online reserveren vanaf €89. Bekijk de pakketten en een realisatie.",
         "image": "https://webdevamin.com/images/restaurant-website-laten-maken-og.png",
-        "keywords": "restaurant website laten maken, horeca website laten maken, restaurantwebsite met reservaties, website met digitale menukaart"
+        "keywords": "restaurant website laten maken, horeca website laten maken, website horeca, restaurant website, online reserveren restaurant, restaurantwebsite met reservaties, website met digitale menukaart"
     },
     "alternates": [
         {
@@ -65,7 +65,7 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "Wat kost een restaurant website laten maken?",
+                    "name": "Wat kost een restaurant of horeca website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Een restaurantwebsite met digitale menukaart kost €49 per maand excl. btw . Met online reservaties en maximaal drie talen kiest u Premium voor €89. Pro kost €139 en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
@@ -273,7 +273,7 @@
         {
             "slug": "hero",
             "component": "hero",
-            "title": "Restaurant website laten maken",
+            "title": "Restaurant en horeca website laten maken",
             "text": "<p><strong>Meer rechtstreekse reservaties. Minder telefoontjes. Geen commissie per gast.</strong></p><p>Uw restaurantwebsite met online reservaties voor <strong>€89/maand excl. btw</strong>. Hosting, onderhoud en domeinnaam inbegrepen. Geen opstartkosten, minimale looptijd 12 maanden. Een website met menukaart is er vanaf €49/maand. <a href='#pricing'>Bekijk de pakketten</a>.</p>",
             "image": {
                 "src": "/images/restaurant-reserv.png",
@@ -371,7 +371,7 @@
         {
             "slug": "features-benefits",
             "component": "features",
-            "title": "Probeer de functies voor uw restaurant",
+            "title": "Online reserveren en meer voor uw restaurant",
             "subtitle": "Voor uw gasten en uw team",
             "text": "Bekijk hoe gasten reserveren, de menukaart lezen of een bestelling plaatsen. De voorbeelden laten ook zien wat uw team ontvangt. Bij elke functie staat of ze in een pakket zit of op aanvraag wordt gebouwd.",
             "features": [
@@ -1015,7 +1015,7 @@
             "text": "Wat zit er in een pakket en wat past bij uw zaak? Hieronder vindt u de antwoorden. U kunt mij ook rechtstreeks contacteren.",
             "items": [
                 {
-                    "title": "Wat kost een restaurant website laten maken?",
+                    "title": "Wat kost een restaurant of horeca website laten maken?",
                     "description": "Een restaurantwebsite met digitale menukaart kost <strong>€49 per maand excl. btw</strong>. Met online reservaties en maximaal drie talen kiest u Premium voor <strong>€89</strong>. Pro kost <strong>€139</strong> en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                 },
                 {

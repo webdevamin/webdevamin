@@ -131,7 +131,7 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                 </button>
 
                 <div
-                    className={`${isMenuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-full flex-col gap-1 border-t border-dark border-opacity-10 bg-light px-4 pb-5 pt-3 shadow-lg md:static md:flex md:flex-row md:items-center md:justify-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none xl:gap-10`}
+                    className={`${isMenuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-full flex-col gap-1 border-t border-dark border-opacity-10 bg-light px-4 pb-5 pt-3 shadow-lg md:static md:flex md:flex-row md:items-center md:justify-center md:gap-6 lg:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none xl:gap-10`}
                 >
                     {nonHiddenPages.map((page, index) => {
                         const { href, title, subs } = page;

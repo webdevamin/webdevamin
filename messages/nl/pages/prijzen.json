@@ -1,0 +1,347 @@
+{
+    "seo": {
+        "title": "Website laten maken: prijzen vanaf €49/maand",
+        "description": "Wat kost een website laten maken? Vanaf €49/maand met hosting, onderhoud en SEO, of eenmalig betalen. Bekijk de pakketten en een eerlijke vergelijking.",
+        "canonical": "https://webdevamin.com/nl/prijzen",
+        "ogTitle": "Website laten maken: prijzen vanaf €49/maand",
+        "ogDescription": "Wat kost een website? Vanaf €49/maand met hosting en onderhoud, of eenmalig. Bekijk de pakketten en de vergelijking.",
+        "keywords": "website laten maken prijs, wat kost een website laten maken, kosten website laten maken, website abonnement, website per maand, website huren, website leasen, goedkope website laten maken, betaalbare website"
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/prijzen",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [],
+    "jsonLd": {
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Website Laten Maken",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Webdevamin",
+                "url": "https://webdevamin.com/nl",
+                "telephone": "+32 470 93 09 16",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "BE",
+                    "addressLocality": "Brugge",
+                    "postalCode": "8310",
+                    "streetAddress": "Zuiderakker 18"
+                }
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "url": "https://webdevamin.com/nl/prijzen",
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Standaard",
+                    "priceCurrency": "EUR",
+                    "price": "49",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "49",
+                        "priceCurrency": "EUR",
+                        "billingDuration": "P1M",
+                        "unitText": "month",
+                        "valueAddedTaxIncluded": false
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Premium",
+                    "priceCurrency": "EUR",
+                    "price": "69",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "69",
+                        "priceCurrency": "EUR",
+                        "billingDuration": "P1M",
+                        "unitText": "month",
+                        "valueAddedTaxIncluded": false
+                    }
+                }
+            ]
+        },
+        "faqPage": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Wat kost een website laten maken?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bij mij kost een professionele website vanaf €49 per maand excl. btw, zonder opstartkosten. Hosting, domeinnaam, onderhoud, SEO en support zitten in dat bedrag. Kiest u voor een eenmalige betaling bij een Belgisch webbureau, dan betaalt u voor een eenvoudige bedrijfswebsite meestal tussen €1.000 en €5.000, plus jaarlijkse kosten voor hosting en onderhoud."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wat zijn de maandelijkse kosten van een website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ook een website die u eenmalig betaalt, kost elke maand geld: hosting, een domeinnaam, updates, beveiliging en af en toe een aanpassing. Bij een webbureau komt dat vaak neer op enkele honderden tot €2.000 per jaar. In mijn pakketten zit dat allemaal in het vaste maandbedrag vanaf €49 excl. btw."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Zijn er opstartkosten?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nee. U betaalt geen opstartkosten, ook niet voor het ontwerp of het overzetten van uw bestaande website."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe lang loopt het abonnement?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Het abonnement loopt minstens 12 maanden vanaf de lancering van uw website. Daarna is het maandelijks opzegbaar. Bent u binnen 30 dagen na de lancering niet tevreden, dan krijgt u uw geld terug."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wat kost een website met een boekings- of afsprakensysteem?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Het Premium pakket met een boekings- of afsprakensysteem kost vanaf €69 per maand excl. btw. Voor taxibedrijven, kapsalons en restaurants zijn er aparte pakketten met een systeem op maat van die sector, vanaf €89 per maand."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik ook eenmalig betalen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja. Dan betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder abonnement. Hosting en domeinnaam regelt u dan zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding. U krijgt vooraf een offerte op maat."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Zijn de prijzen inclusief btw?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik later extra pagina's of functies laten toevoegen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja. U vraagt het gewoon aan. Afhankelijk van het werk betaalt u een kleine eenmalige toeslag bovenop uw abonnement, of stapt u over naar een pakket met meer functies."
+                    }
+                }
+            ]
+        },
+        "breadcrumb": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Prijzen",
+                    "item": "https://webdevamin.com/nl/prijzen"
+                }
+            ]
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Website Laten Maken: Prijzen",
+            "text": "Een professionele website laten maken kost bij mij vanaf €49 per maand excl. btw. Hosting, domeinnaam, onderhoud, SEO en support zitten erin, en u betaalt geen opstartkosten. Liever eenmalig betalen? Dat kan ook. Hieronder ziet u alle pakketten en wat beide manieren u over drie jaar kosten.",
+            "image": {
+                "src": "/images/why.png",
+                "alt": "Werkplek van een webdesigner met code en een website in ontwikkeling.",
+                "width": 1363,
+                "height": 794
+            },
+            "button": [
+                {
+                    "text": "Bekijk Pakketten",
+                    "href": "#pricing"
+                },
+                {
+                    "text": "Gratis Offerte",
+                    "href": "/contact?ref=prijzen"
+                }
+            ]
+        },
+        {
+            "title": "Website per maand: de pakketten",
+            "subtitle": "Alles inbegrepen, geen opstartkosten",
+            "highlight": "Vanaf €49/maand",
+            "slug": "pricing",
+            "text": "<p>Kies het <strong>Standaard pakket voor €49 per maand</strong> of het <strong>Premium pakket voor €69 per maand</strong>. In beide zitten een professionele website op maat, hosting, domeinnaam, onderhoud, SEO en support. Premium voegt een boekings- of afsprakensysteem toe, met automatische e-mails.</p><p>Alle prijzen zijn exclusief btw. Het abonnement loopt minstens 12 maanden vanaf de lancering, daarna is het maandelijks opzegbaar. Niet tevreden binnen de eerste 30 dagen? Dan krijgt u uw geld terug.</p>",
+            "growthTitle": "Twijfelt u welk pakket past?",
+            "growthText": "Vertel me kort wat uw bedrijf doet en wat de website moet kunnen. U krijgt een eerlijk advies en een vaste prijs, zonder verplichtingen.",
+            "growthNote": "Geen opstartkosten!",
+            "subsubtitle": "Opties",
+            "items": [
+                {
+                    "title": "Standaard",
+                    "price": "49",
+                    "currency": "€",
+                    "period": "/maand",
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
+                        "Geen <strong>opstartkosten</strong>"
+                    ],
+                    "excludedFeatures": [
+                        "Boekingssysteem / afsprakensysteem",
+                        "Automatische e-mails",
+                        "Extra automatisering"
+                    ],
+                    "buttonText": "Kies Standaard Pakket",
+                    "buttonHref": "/contact?pakket=standaard&ref=prijzen"
+                },
+                {
+                    "title": "Premium",
+                    "price": "69",
+                    "currency": "€",
+                    "period": "/maand",
+                    "popular": true,
+                    "features": [
+                        "Op maat <strong>zakelijke website</strong>",
+                        "Mobiele optimalisatie <strong>inbegrepen</strong>",
+                        "SEO-optimalisatie <strong>inbegrepen</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Logo <strong>inbegrepen</strong>",
+                        "<strong>Administratie</strong> en <strong>facturen</strong> op mij",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
+                        "Geen <strong>opstartkosten</strong>",
+                        "Online <strong>boekingssysteem</strong>",
+                        "Automatische <strong>e-mails</strong>",
+                        "Extra <strong>automatisering</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "buttonText": "Kies Premium Pakket",
+                    "buttonHref": "/contact?pakket=premium&ref=prijzen"
+                },
+                {
+                    "title": "Op Maat",
+                    "price": "Maatwerk",
+                    "currency": "",
+                    "period": "",
+                    "features": [
+                        "<strong>Volledig gepersonaliseerde</strong> website",
+                        "Aangepast aan <strong>uw specifieke behoeften</strong>",
+                        "Extra functionaliteiten <strong>op maat</strong>",
+                        "Unieke <strong>ontwerp</strong> en <strong>branding</strong>",
+                        "Hosting & onderhoud <strong>inbegrepen</strong>",
+                        "Domeinnaam <strong>inbegrepen</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Heeft u een webshop, klantenportaal of een eigen systeem nodig? Dan maak ik een voorstel op maat met een vaste prijs.",
+                    "buttonText": "Vraag Offerte Aan",
+                    "buttonHref": "/contact?pakket=op-maat&ref=prijzen"
+                }
+            ]
+        },
+        {
+            "slug": "one-time-payment",
+            "component": "one-time-payment",
+            "title": "Website per maand of eenmalig betalen?",
+            "text": "<p>Bij een eenmalige betaling lijkt een website soms goedkoper, maar de kosten stoppen niet na de oplevering. Hosting, domeinnaam, updates en kleine aanpassingen betaalt u elk jaar opnieuw. Hieronder ziet u een vergelijking met <strong>richtprijzen van Belgische webbureaus</strong> voor een eenvoudige bedrijfswebsite. Alle bedragen zijn exclusief btw.</p><div class='my-8 overflow-x-auto'><table class='w-full min-w-[34rem] border-collapse text-left text-sm sm:text-base'><thead><tr><th class='border-b-2 border-dark border-opacity-20 px-3 py-3 text-left font-bold'></th><th class='border-b-2 border-dark border-opacity-20 px-3 py-3 text-left font-bold'>Per maand bij Webdevamin</th><th class='border-b-2 border-dark border-opacity-20 px-3 py-3 text-left font-bold'>Eenmalig bij een webbureau</th></tr></thead><tbody><tr><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top font-semibold'>Opstartkosten</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>€0</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>€1.000 tot €5.000</td></tr><tr><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top font-semibold'>Hosting en domeinnaam</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Inbegrepen</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Apart, elk jaar</td></tr><tr><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top font-semibold'>Onderhoud en updates</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Inbegrepen</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Apart of zelf doen</td></tr><tr><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top font-semibold'>Kleine aanpassingen</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Inbegrepen via support</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Meestal per uur</td></tr><tr><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top font-semibold'>Totaal na 3 jaar</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>€1.764 (Standaard)</td><td class='border-b border-dark border-opacity-10 px-3 py-3 align-top'>Vaak €2.500 tot €11.000</td></tr></tbody></table></div><p><strong>Wanneer is per maand voordeliger?</strong> Als u geen grote som in één keer wilt betalen, en als u liever niet zelf met hosting, updates en technische problemen bezig bent. U weet precies wat u elke maand betaalt.</p><p><strong>Wanneer is eenmalig betalen beter?</strong> Als u een groter budget heeft, iemand in huis heeft die de website onderhoudt, of de website jarenlang ongewijzigd wilt laten staan. Ook dan help ik u graag. U krijgt een vaste prijs voor de ontwikkeling, en hosting en domeinnaam kan ik apart verzorgen tegen een kleine jaarlijkse vergoeding.</p>",
+            "button": {
+                "href": "/contact?pakket=eenmalig&ref=prijzen",
+                "text": "Vraag Offerte Aan"
+            }
+        },
+        {
+            "slug": "sectoren",
+            "component": "content",
+            "title": "Prijzen per sector",
+            "subtitle": "Pakketten met een systeem op maat",
+            "text": "<p>Voor sommige sectoren is er een pakket met een systeem dat precies doet wat die zaak nodig heeft. De prijs van een gewone website blijft altijd <strong>€49 per maand</strong>.</p><ul class='list-disc pl-6 space-y-2 my-4'><li><a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>Taxi website</a>: met online boekingssysteem en automatische ritprijs vanaf €89 per maand.</li><li><a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>Website voor kapper of kapsalon</a>: met online afsprakensysteem vanaf €89 per maand.</li><li><a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>Restaurant of horeca website</a>: met online reservaties vanaf €89 per maand.</li><li><a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>Website voor isolatiebedrijf</a>: met offerteformulier vanaf €49 per maand.</li></ul><p>Zit u in of rond Brugge? Dan kunnen we ook persoonlijk afspreken. Lees meer over <a href='/nl/website-laten-maken-brugge' title='Webdesign Brugge'>webdesign in Brugge</a>.</p>",
+            "img": {
+                "src": "/images/andere-sectoren.png",
+                "alt": "Winkelstraat met een bakkerij, koffiebar, bloemenwinkel, kapsalon, kledingzaak en restaurant."
+            }
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Weten wat uw website kost?",
+            "subtitle": "Gratis en vrijblijvend",
+            "text": "Vertel me wat uw bedrijf nodig heeft. U krijgt een duidelijk voorstel met een vaste prijs, per maand of eenmalig.",
+            "button": [
+                {
+                    "href": "/contact?ref=prijzen",
+                    "text": "Vraag Gratis Offerte Aan",
+                    "label": "Naar contact pagina",
+                    "external": false
+                }
+            ],
+            "features": [
+                "Geen opstartkosten",
+                "Website vanaf €49/maand",
+                "Met boekingssysteem vanaf €69/maand",
+                "30 dagen geld terug"
+            ]
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Veelgestelde Vragen",
+            "subtitle": "Over prijzen en kosten",
+            "text": "Hieronder vindt u antwoorden op vragen over wat een website laten maken kost. Staat uw vraag er niet bij? Neem gerust <a href='/nl/contact?ref=prijzen'>contact</a> op.",
+            "items": [
+                {
+                    "title": "Wat kost een website laten maken?",
+                    "description": "Bij mij kost een professionele website vanaf <strong>€49 per maand excl. btw</strong>, zonder opstartkosten. Hosting, domeinnaam, onderhoud, SEO en support zitten in dat bedrag. Kiest u voor een eenmalige betaling bij een Belgisch webbureau, dan betaalt u voor een eenvoudige bedrijfswebsite meestal tussen €1.000 en €5.000, plus jaarlijkse kosten voor hosting en onderhoud."
+                },
+                {
+                    "title": "Wat zijn de maandelijkse kosten van een website?",
+                    "description": "Ook een website die u eenmalig betaalt, kost elke maand geld: hosting, een domeinnaam, updates, beveiliging en af en toe een aanpassing. Bij een webbureau komt dat vaak neer op enkele honderden tot €2.000 per jaar. In mijn pakketten zit dat allemaal in het vaste maandbedrag vanaf €49 excl. btw."
+                },
+                {
+                    "title": "Zijn er opstartkosten?",
+                    "description": "Nee. U betaalt geen opstartkosten, ook niet voor het ontwerp of het overzetten van uw bestaande website."
+                },
+                {
+                    "title": "Hoe lang loopt het abonnement?",
+                    "description": "Het abonnement loopt minstens 12 maanden vanaf de lancering van uw website. Daarna is het maandelijks opzegbaar. Bent u binnen 30 dagen na de lancering niet tevreden, dan krijgt u uw geld terug."
+                },
+                {
+                    "title": "Wat kost een website met een boekings- of afsprakensysteem?",
+                    "description": "Het Premium pakket met een boekings- of afsprakensysteem kost vanaf <strong>€69 per maand excl. btw</strong>. Voor taxibedrijven, kapsalons en restaurants zijn er aparte pakketten met een systeem op maat van die sector, vanaf €89 per maand."
+                },
+                {
+                    "title": "Kan ik ook eenmalig betalen?",
+                    "description": "Ja. Dan betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder abonnement. Hosting en domeinnaam regelt u dan zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding. U krijgt vooraf een offerte op maat."
+                },
+                {
+                    "title": "Zijn de prijzen inclusief btw?",
+                    "description": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen."
+                },
+                {
+                    "title": "Kan ik later extra pagina's of functies laten toevoegen?",
+                    "description": "Ja. U vraagt het gewoon aan. Afhankelijk van het werk betaalt u een kleine eenmalige toeslag bovenop uw abonnement, of stapt u over naar een pakket met meer functies."
+                }
+            ]
+        }
+    ]
+}

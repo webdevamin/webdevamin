@@ -1,10 +1,10 @@
 {
     "seo": {
-        "title": "Zakelijke Website Laten Maken vanaf €49/maand",
-        "description": "Zakelijke website laten maken vanaf €49/maand? Professionele website inclusief hosting, onderhoud en meer. Vraag nu gratis en vrijblijvend een offerte aan!",
+        "title": "Website laten maken vanaf €49/maand",
+        "description": "Website laten maken vanaf €49/maand? Professionele website met hosting, onderhoud en SEO inbegrepen. Geen opstartkosten. Vraag een gratis offerte aan.",
         "canonical": "https://webdevamin.com/nl",
-        "ogTitle": "Zakelijke Website Laten Maken vanaf €49/maand",
-        "ogDescription": "Zakelijke website laten maken vanaf €49/maand. Professionele website inclusief hosting, onderhoud en support.",
+        "ogTitle": "Website laten maken vanaf €49/maand",
+        "ogDescription": "Website laten maken vanaf €49/maand. Hosting, onderhoud, SEO en support inbegrepen, zonder opstartkosten.",
         "image": "https://webdevamin.com/images/home_nl.png"
     },
     "alternates": [
@@ -61,7 +61,7 @@
         "service": {
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Zakelijke Website Laten Maken",
+            "serviceType": "Website Laten Maken",
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Webdevamin",
@@ -101,10 +101,10 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "Wat kost een zakelijke website laten maken?",
+                    "name": "Wat kost een website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Voor een zakelijke business website betaalt u slechts €49 excl. BTW per maand. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals domeinnaam, hosting, onderhoud en persoonlijke support. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
+                        "text": "Een professionele website laten maken kost bij mij vanaf €49 excl. btw per maand, zonder opstartkosten. Domeinnaam, hosting, onderhoud en persoonlijke support zitten in dat bedrag. Met een boekings- of afsprakensysteem betaalt u vanaf €69 per maand. Alle pakketten en een vergelijking met eenmalig betalen staan op de prijzenpagina."
                     }
                 },
                 {
@@ -168,10 +168,10 @@
     },
     "blocks": [
         {
-            "title": "Zakelijke Website Laten Maken",
+            "title": "Website Laten Maken",
             "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Zakelijke website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf slechts €49/maand - inclusief hosting, onderhoud en meer. Vraag nu een gratis offerte aan voor dit abonnement of een op maatwerk webapplicatie!",
+            "text": "Website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf €49/maand, inclusief hosting, onderhoud en SEO. Geen opstartkosten. Vraag nu een gratis offerte aan voor dit abonnement of voor een webapplicatie op maat!",
             "extra": "Ook op maat gemaakte webapplicaties zoals:",
             "button": [
                 {
@@ -239,8 +239,8 @@
             }
         },
         {
-            "title": "Waarom zakelijke website laten maken?",
-            "subtitle": "Voordelen van een zakelijke website laten maken",
+            "title": "Waarom een website laten maken?",
+            "subtitle": "Voordelen van een professionele website",
             "slug": "about",
             "text": "<p>Een <strong>zakelijke website</strong> biedt talloze voordelen voor zowel startups als gevestigde ondernemingen. Allereerst straalt het direct professionaliteit en vertrouwen uit, waardoor potentiële klanten eerder geneigd zijn contact op te nemen of een aankoop te doen. Een strategisch ontworpen website verbetert uw vindbaarheid in zoekmachines zoals Google, vooral wanneer deze optimaal is ingericht voor SEO. Het stelt u ook in staat om uw unieke merkidentiteit helder te communiceren en 24/7 bereikbaar te zijn voor klanten, zonder dat u zelf beschikbaar hoeft te zijn. Bovendien helpt een doelgerichte zakelijke website bij het automatiseren van belangrijke processen zoals offerte-aanvragen, klantcommunicatie en online verkoop, wat u op lange termijn aanzienlijk tijd én geld bespaart.</p><p>Bent u op zoek naar een <strong>professionele, zakelijke website op maat</strong>? Dan bent u bij mij aan het juiste adres. Begrijp dat een goede website niet alleen draait om hogere posities in Google, maar vooral om het optimaliseren van uw bedrijfsprocessen en het verhogen van uw omzet. Heeft u een specifiek idee of concept dat uw onderneming kan versterken? Of zoekt u juist deskundig advies over hoe u uw zaak digitaal kunt laten groeien? Laten we <a href='/nl/contact' title='Neem direct contact op met een betaalbare webdesigner'>samen in gesprek gaan</a> en ontdekken welke digitale oplossing perfect bij uw behoeften past! Of bel me maar direct op!</p>",
             "button": [
@@ -256,15 +256,15 @@
             }
         },
         {
-            "title": "Uit Brugge of de Regio?",
+            "title": "Webdesigner in Brugge nodig?",
             "subtitle": "Laten we kennismaken",
             "slug": "brugge-meetup",
             "text": "Uw bedrijf in Brugge of ergens in West-Vlaanderen? Laten we samen een koffie drinken en bespreken wat uw bedrijf online kan bereiken. Geen verplichtingen, geen salespraatje. Ik trakteer.",
             "button": [
                 {
                     "href": "/website-laten-maken-brugge",
-                    "text": "Bekijk Brugge Pagina",
-                    "label": "Naar de Brugge pagina",
+                    "text": "Webdesign in Brugge",
+                    "label": "Naar de pagina over webdesign in Brugge",
                     "external": false
                 }
             ]
@@ -273,7 +273,7 @@
             "title": "Mijn Diensten",
             "subtitle": "Wat ik aanbied",
             "slug": "services",
-            "text": "<p>Op maat gemaakte digitale oplossingen die perfect aansluiten bij uw zakelijke behoeften. Van elegante ontwerpen tot geavanceerde ontwikkeling. Of u nu op zoek bent naar een <strong>freelance webdesigner</strong>, een <strong>betaalbare webdesigner</strong> of een ervaren <strong>software ontwikkelaar</strong>, bij mij bent u aan het juiste adres.</p><p>Heeft u een taxibedrijf, kapsalon of restaurant? Voor die sectoren zijn er pakketten met een boekings-, afspraken- of reservatiesysteem: een <a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>taxi website</a>, een <a href='/nl/industry/kapper-website-laten-maken' title='Kapper website laten maken'>kapper website</a> of een <a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant website laten maken'>restaurant website</a>. Alle pakketten naast elkaar vindt u bij <a href='/nl/industry' title='Website laten maken per sector'>websites per sector</a>.</p><p>Kortom: digitale oplossingen die tijd en kosten besparen én uw omzet verhogen.</p>",
+            "text": "<p>Op maat gemaakte digitale oplossingen die perfect aansluiten bij uw zakelijke behoeften. Van elegante ontwerpen tot geavanceerde ontwikkeling. Of u nu op zoek bent naar een <strong>freelance webdesigner</strong>, een <strong>betaalbare webdesigner</strong> of een ervaren <strong>software ontwikkelaar</strong>, bij mij bent u aan het juiste adres.</p><p>Heeft u een taxibedrijf, kapsalon of restaurant? Voor die sectoren zijn er pakketten met een boekings-, afspraken- of reservatiesysteem: een <a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>taxi website laten maken</a>, een <a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>website voor uw kapsalon</a> of een <a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>restaurant of horeca website</a>. Voert u isolatiewerken uit? Bekijk de <a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>website voor isolatiebedrijven</a>. Alle pakketten naast elkaar vindt u bij <a href='/nl/industry' title='Website laten maken per sector'>websites per sector</a>.</p><p>Zit uw bedrijf in of rond Brugge? Lees dan meer over <a href='/nl/website-laten-maken-brugge' title='Webdesign Brugge'>webdesign in Brugge</a>, met persoonlijke afspraken ter plaatse.</p><p>Kortom: digitale oplossingen die tijd en kosten besparen én uw omzet verhogen.</p>",
             "services": [
                 {
                     "type": "webdesign",
@@ -308,11 +308,11 @@
             ]
         },
         {
-            "title": "Waarom All-in-one Pakket?",
-            "subtitle": "Geen losse diensten, maar één compleet pakket",
+            "title": "Goedkope website, toch professioneel",
+            "subtitle": "Alles in één pakket vanaf €49/maand",
             "slug": "why-all-in-one",
             "layout": "reversed",
-            "text": "<p>Een <strong>All-in-one Website Pakket</strong> vanaf €49/maand biedt alles wat u nodig heeft voor een professionele online aanwezigheid, zonder het gedoe van verschillende leveranciers. Als <strong>betaalbare webdesigner en developer</strong> bied ik een complete oplossing: van een <strong>zakelijke website op maat</strong> tot hosting, onderhoud en aanpassingen wanneer u die nodig heeft.</p><p>Hiermee krijgt u een professionele website die altijd up-to-date blijft en naadloos aansluit bij uw merk en doelgroep. Eén aanspreekpunt, één transparante prijs. En volledige gemoedsrust.</p><p>Ondernemers besparen gemiddeld 20% van hun tijd omdat ze zich niet meer hoeven bezig te houden met het controleren en betalen van facturen, of zich zorgen te maken over een verouderde website. Geen stress meer over onderhoud of contact zoeken met verschillende leveranciers. <strong>Alles wordt door mij geregeld</strong>!</p>",
+            "text": "<p>Een goedkope website hoeft er niet goedkoop uit te zien. Een <strong>All-in-one Website Pakket</strong> vanaf €49/maand biedt alles wat u nodig heeft voor een professionele online aanwezigheid, zonder het gedoe van verschillende leveranciers. Als <strong>betaalbare webdesigner en developer</strong> bied ik een complete oplossing: van een <strong>zakelijke website op maat</strong> tot hosting, onderhoud en aanpassingen wanneer u die nodig heeft.</p><p>Hiermee krijgt u een professionele website die altijd up-to-date blijft en naadloos aansluit bij uw merk en doelgroep. Eén aanspreekpunt, één transparante prijs. En volledige gemoedsrust.</p><p>Ondernemers besparen gemiddeld 20% van hun tijd omdat ze zich niet meer hoeven bezig te houden met het controleren en betalen van facturen, of zich zorgen te maken over een verouderde website. Geen stress meer over onderhoud of contact zoeken met verschillende leveranciers. <strong>Alles wordt door mij geregeld</strong>!</p>",
             "button": [
                 {
                     "href": "#pricing",
@@ -341,11 +341,11 @@
             ]
         },
         {
-            "title": "Prijsabonnement",
-            "subtitle": "Betaalbare webdesigner & developer",
+            "title": "Website laten maken: de prijs",
+            "subtitle": "Website per maand, alles inbegrepen",
             "highlight": "Vanaf €49/maand",
             "slug": "pricing",
-            "text": "<p>Ontdek mijn transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>SEO geoptimaliseerde, professionele zakelijke website</strong> met talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar.</p><p>Naast een professionele zakelijke website ontvangt u hosting, domeinnaam, onderhoud, updates en meer - alles om u tijd en kosten te besparen! Ik neem alle administratieve taken op mij, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p><p>Bekijk <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>deze voorbeeldwebsite</a>, ontwikkeld voor een bouwbedrijf in Brugge voor €49 per maand, om een indruk te krijgen van mijn werk.</p><p>Wilt u weten welke prijzen ik voor mijn bestaande klanten hanteer? Bekijk dan mijn <a href='/nl/projects'>gerealiseerde digitale oplossingen</a> voor concrete voorbeelden en bijbehorende prijzen.</p>",
+            "text": "<p>Ontdek mijn transparante en eenvoudige prijsstrategie voor webontwikkeling. Vanaf <strong>slechts €49 per maand</strong> krijgt u een <strong>SEO geoptimaliseerde, professionele zakelijke website</strong> met talrijke voordelen, zonder verborgen kosten. De prijs varieert licht afhankelijk van de complexiteit en omvang van uw specifieke project. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar.</p><p>Naast een professionele zakelijke website ontvangt u hosting, domeinnaam, onderhoud, updates en meer. Zo bespaart u tijd en kosten! Ik neem alle administratieve taken op mij, zodat u zich volledig kunt focussen op de groei van uw bedrijf.</p><p>Bekijk <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer nofollow'>deze voorbeeldwebsite</a>, ontwikkeld voor een bouwbedrijf in Brugge voor €49 per maand, om een indruk te krijgen van mijn werk.</p><p>Alle pakketten, wat erin zit en hoe dit zich verhoudt tot een eenmalige betaling ziet u op de pagina <a href='/nl/prijzen' title='Website laten maken prijzen'>website laten maken: prijzen</a>.</p><p>Wilt u weten welke prijzen ik voor mijn bestaande klanten hanteer? Bekijk dan mijn <a href='/nl/projects'>gerealiseerde digitale oplossingen</a> voor concrete voorbeelden en bijbehorende prijzen.</p>",
             "subsubtitle": "Wat krijgt u",
             "items": [
                 {
@@ -402,8 +402,8 @@
                 }
             ],
             "oneTimePayment": {
-                "title": "Eenmalige Betaling",
-                "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong>. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat.</p>",
+                "title": "Website per maand of eenmalig betalen?",
+                "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Geen probleem! U kunt ook kiezen voor een <strong>eenmalige betaling</strong>. Hierbij betaalt u een vast bedrag voor de ontwikkeling van uw website, zonder doorlopende kosten. Hosting en domeinnaam regelt u dan zelf, of ik kan dit apart voor u verzorgen tegen een kleine jaarlijkse vergoeding.</p><p>Twijfelt u? Op de <a href='/nl/prijzen' title='Website laten maken prijzen'>prijzenpagina</a> ziet u wat per maand en eenmalig betalen u over drie jaar kost. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte op maat.</p>",
                 "button": {
                     "href": "/contact",
                     "text": "Vraag Offerte Aan"
@@ -428,7 +428,7 @@
             "title": "Beoordelingen",
             "subtitle": "klantenreviews",
             "slug": "testimonials",
-            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer'>Google My Business profiel</a>.</p>",
+            "text": "<p>Uiterst tevreden klanten van over de hele wereld. Wensen vertalen naar digitale oplossingen op maat. Voor meer reviews, check mijn <a href='https://goo.gl/maps/pGNDw5zoLZJUtWh1A' target='_blank' rel='noopener noreferrer nofollow'>Google Bedrijfsprofiel</a>.</p>",
             "testimonials": [
                 {
                     "letter": "L",
@@ -465,11 +465,11 @@
             "title": "Veelgestelde vragen",
             "slug": "faq",
             "subtitle": "Vragen & antwoorden",
-            "text": "Hieronder vindt u een lijst met veelgestelde vragen over webontwikkeling en zakelijke websites. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
+            "text": "Hieronder vindt u een lijst met veelgestelde vragen over een website laten maken. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
             "items": [
                 {
-                    "title": "Wat kost een zakelijke website laten maken?",
-                    "description": "Voor een zakelijke business website betaalt u slechts <strong>€49 excl. BTW per maand</strong>. Voor complexere projecten met uitgebreide functionaliteiten zijn de kosten hoger. Ieder abonnement bevat waardevolle voordelen zoals <strong>domeinnaam, hosting, onderhoud en persoonlijke support</strong>. Alles wat u nodig heeft voor een zorgeloze online aanwezigheid."
+                    "title": "Wat kost een website laten maken?",
+                    "description": "Een professionele website laten maken kost bij mij vanaf <strong>€49 excl. btw per maand</strong>, zonder opstartkosten. <strong>Domeinnaam, hosting, onderhoud en persoonlijke support</strong> zitten in dat bedrag. Met een boekings- of afsprakensysteem betaalt u vanaf €69 per maand. Alle pakketten en een vergelijking met eenmalig betalen staan op de <a href='/nl/prijzen' title='Website laten maken prijzen'>prijzenpagina</a>."
                 },
                 {
                     "title": "Hoe lang duurt het om een website te maken?",

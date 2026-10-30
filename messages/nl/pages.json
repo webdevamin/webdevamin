@@ -19,12 +19,16 @@
                 "href": "/industry/taxi-website-laten-maken"
             },
             {
-                "title": "Kapperszaken",
+                "title": "Kappers & kapsalons",
                 "href": "/industry/kapper-website-laten-maken"
             },
             {
                 "title": "Restaurants & horeca",
                 "href": "/industry/restaurant-website-laten-maken"
+            },
+            {
+                "title": "Isolatiebedrijven",
+                "href": "/industry/isolatiebedrijf-website-laten-maken"
             },
             {
                 "title": "Andere sectoren",
@@ -36,6 +40,11 @@
                 "borderTop": true
             }
         ]
+    },
+    {
+        "title": "Prijzen",
+        "href": "/prijzen",
+        "icon": "credit-card"
     },
     {
         "title": "Brugge",
