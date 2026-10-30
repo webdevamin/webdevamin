@@ -140,7 +140,7 @@ const Index = async ({ params }) => {
             <CallToAction content={bruggeMeetup} />
           </div>
         )}
-        <BorderedSection line={!bruggeMeetup}>
+        <BorderedSection>
           <PricingSection content={blocks.find(block => block.slug === `pricing`)} />
         </BorderedSection>
         {oneTimePayment && (
@@ -151,7 +151,7 @@ const Index = async ({ params }) => {
         <div className="lg:mt-20">
           <CallToAction content={blocks.find(block => block.slug === 'cta')} />
         </div>
-        <BorderedSection line={false} flushBottom>
+        <BorderedSection flushBottom>
           <Testimonials content={blocks.find(block => block.slug === `testimonials`)} />
         </BorderedSection>
         <BorderedSection>

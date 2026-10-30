@@ -119,7 +119,7 @@ const IndustriesPage = async ({ params }) => {
         <div className="lg:mt-20">
           <CallToAction content={blocks.find(block => block.slug === 'cta-bottom')} borderless />
         </div>
-        <BorderedSection line={false}>
+        <BorderedSection>
           <BlockAccordion content={blocks.find(block => block.slug === 'faq')} center />
         </BorderedSection>
         <Contact content={contactBlockData} />
