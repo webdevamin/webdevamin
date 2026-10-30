@@ -106,7 +106,8 @@ span {
   @apply lg:text-lg;
 }
 
-p a {
+p a,
+.section_content a {
   @apply text-theme_darker font-semibold border-b-0 border-theme_darker hover:border-b-2;
 }
 
