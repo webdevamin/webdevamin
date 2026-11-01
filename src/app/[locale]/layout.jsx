@@ -5,6 +5,7 @@ import { routing } from '../../i18n/routing';
 
 import '../../../styles/globals.scss';
 import PostHogProvider from '../../../components/PostHogProvider';
+import TrustooChatbot from '../../../components/TrustooChatbot';
 import { Quicksand, Mohave } from 'next/font/google';
 import { headers } from 'next/headers';
 
@@ -59,6 +60,7 @@ export default async function LocaleLayout({ children, params }) {
         <div className={`${quicksand.className} ${quicksand.variable} ${mohave.variable}`}>
           {children}
         </div>
+        <TrustooChatbot locale={locale} />
       </NextIntlClientProvider>
     </PostHogProvider>
   );
