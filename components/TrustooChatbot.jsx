@@ -1,20 +1,23 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
 import Script from 'next/script';
 import Cookies from 'js-cookie';
+import useConsentStore from '../utils/store';
 
 // Third-party widget (Trustlocal/Trustoo): only load after cookie consent, and only on Dutch pages
 export default function TrustooChatbot({ locale }) {
-  const pathname = usePathname();
-  const [consented, setConsented] = useState(false);
+  const { consent } = useConsentStore();
+  const [storedConsent, setStoredConsent] = useState('');
 
   useEffect(() => {
-    setConsented(Cookies.get('wda-consent') === 'enable');
-  }, [pathname]);
+    setStoredConsent(Cookies.get('wda-consent') || '');
+  }, []);
 
-  if (locale !== 'nl' || !consented) return null;
+  // A choice made in the banner (store) wins over the cookie read on load
+  const currentConsent = consent || storedConsent;
+
+  if (locale !== 'nl' || currentConsent !== 'enable') return null;
 
   return (
     <>

@@ -3,7 +3,7 @@ import { create } from 'zustand'
 const useStore = create((set) => ({
     consent: '',
 
-    update: () => set((state) => ({ consent: state.consent })),
+    update: (consent) => set({ consent }),
 }));
 
 export default useStore;
