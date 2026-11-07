@@ -6,7 +6,7 @@ import { routing } from '../../i18n/routing';
 import '../../../styles/globals.scss';
 import PostHogProvider from '../../../components/PostHogProvider';
 import TrustooChatbot from '../../../components/TrustooChatbot';
-import { Quicksand, Mohave } from 'next/font/google';
+import localFont from 'next/font/local';
 import { headers } from 'next/headers';
 
 export async function generateMetadata() {
@@ -32,16 +32,18 @@ export async function generateMetadata() {
   return baseMetadata;
 }
 
-const quicksand = Quicksand({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
+const quicksand = localFont({
+  src: '../../../public/fonts/Quicksand-Variable.ttf',
+  weight: '400 700',
+  style: 'normal',
   variable: '--font-quicksand',
   display: 'swap',
 });
 
-const mohave = Mohave({
-  subsets: ['latin'],
-  weight: ['600', '700'],
+const mohave = localFont({
+  src: '../../../public/fonts/Mohave-Variable.ttf',
+  weight: '600 700',
+  style: 'normal',
   variable: '--font-mohave',
   display: 'swap',
 });
