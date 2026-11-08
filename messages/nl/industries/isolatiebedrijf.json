@@ -79,7 +79,7 @@
                     "priceCurrency": "EUR",
                     "priceSpecification": {
                         "@type": "UnitPriceSpecification",
-                        "minPrice": "49",
+                        "minPrice": "50",
                         "priceCurrency": "EUR",
                         "billingDuration": "P1M",
                         "unitText": "per maand",
@@ -194,7 +194,7 @@
             "slug": "why-all-in-one",
             "title": "U volgt de werven op. Ik onderhoud uw website.",
             "subtitle": "Eén aanspreekpunt voor uw website",
-            "text": "<p>Naast de bouw van uw website regel ik de hosting, domeinnaam en technische updates. Een nieuw telefoonnummer, andere openingsuren of recente projectfoto's? U stuurt de wijzigingen naar mij.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge'>webontwikkelaar in Brugge</a>, en bouw websites voor zelfstandigen en kmo's in Vlaanderen. U bespreekt de inhoud rechtstreeks met de persoon die uw website maakt.</p><p>De basis start vanaf <strong>€50 per maand excl. btw</strong>. Voor extra functies, zoals een koppeling met uw klantenbeheer of een uitgebreid aanvraagproces, krijgt u vooraf een aparte offerte. Bekijk ook <a href='/nl/projects'>mijn andere gerealiseerde websites</a> voor voorbeelden uit verschillende sectoren.</p>",
+            "text": "<p>Naast de bouw van uw website regel ik de hosting, domeinnaam en technische updates. Een nieuw telefoonnummer, andere openingsuren of recente projectfoto's? U stuurt de wijzigingen naar mij.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge'>webontwikkelaar in Brugge</a>, en bouw websites voor zelfstandigen en kmo's in Vlaanderen. U bespreekt de inhoud rechtstreeks met de persoon die uw website maakt.</p><p>De basis start vanaf <strong>€50 per maand excl. btw</strong>. Voor extra functies, zoals een koppeling met uw klantenbeheer of een uitgebreid aanvraagproces, krijgt u vooraf een aparte offerte. Bekijk ook <a href='/nl/projects'>mijn andere gerealiseerde websites</a> voor voorbeelden uit verschillende sectoren. Voert u naast isolatie ook andere bouwwerken uit? Bekijk dan de <a href='/nl/industry/aannemer-website-laten-maken' title='Aannemer website laten maken'>website voor aannemers</a>.</p>",
             "img": {
                 "src": "/images/isolatiebedrijf-website-onderhoud.webp",
                 "alt": "Illustratie van een webontwikkelaar die een isolatiewebsite onderhoudt terwijl een vakman dakisolatie plaatst.",

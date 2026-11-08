@@ -1,1 +1,1 @@
-- 
+- Aannemerspagina (/nl/industry/aannemer-website-laten-maken): maak 3 illustraties in de stijl van de isolatiepagina en vervang de tijdelijke screenshots in messages/nl/industries/aannemer.json. Bestanden: public/images/aannemer-hero.webp (hero), public/images/aannemer-website-offerte.webp (blok "Waarom een eigen website") en public/images/aannemer-website-onderhoud.webp (blok "U staat op de werf"). Optioneel: OG-artwork public/images/social-cards/aannemer.jpg, prompt staat in SOCIAL_IMAGES.md.

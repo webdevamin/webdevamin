@@ -11,6 +11,7 @@ export const slugToFileMap = {
     'kapper-website-laten-maken': 'kapper',
     'restaurant-website-laten-maken': 'restaurant',
     'isolatiebedrijf-website-laten-maken': 'isolatiebedrijf',
+    'aannemer-website-laten-maken': 'aannemer',
   },
 };
 

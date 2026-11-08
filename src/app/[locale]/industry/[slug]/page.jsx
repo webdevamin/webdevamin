@@ -428,7 +428,7 @@ const IndustryPage = async ({ params }) => {
   const benefitsFirst = isRestaurant || isTaxi;
   const benefits = (
     <BorderedSection>
-      <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website' || block.slug === 'why-isolatiebedrijf-website')} />
+      <BlockNormal content={blocks.find(block => block.slug === 'why-taxi-website' || block.slug === 'why-barber-website' || block.slug === 'why-kapper-website' || block.slug === 'why-restaurant-website' || block.slug === 'why-isolatiebedrijf-website' || block.slug === 'why-aannemer-website')} />
     </BorderedSection>
   );
   const service = (

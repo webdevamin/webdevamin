@@ -10,6 +10,7 @@ const industries = [
     { title: 'Kapperszaken', slug: 'kapper-website-laten-maken' },
     { title: 'Restaurants & horeca', slug: 'restaurant-website-laten-maken' },
     { title: 'Isolatiebedrijven', slug: 'isolatiebedrijf-website-laten-maken' },
+    { title: 'Aannemers & bouwbedrijven', slug: 'aannemer-website-laten-maken' },
 ];
 
 const Footer = ({ blogs, pages, socials }) => {

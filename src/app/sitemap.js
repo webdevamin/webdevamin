@@ -7,6 +7,7 @@ import taxi from '../../messages/nl/industries/taxi.json';
 import kapper from '../../messages/nl/industries/kapper.json';
 import restaurant from '../../messages/nl/industries/restaurant.json';
 import isolatiebedrijf from '../../messages/nl/industries/isolatiebedrijf.json';
+import aannemer from '../../messages/nl/industries/aannemer.json';
 
 const baseUrl = 'https://webdevamin.com';
 
@@ -35,6 +36,7 @@ export default function sitemap() {
     kapper.seo.canonical,
     restaurant.seo.canonical,
     isolatiebedrijf.seo.canonical,
+    aannemer.seo.canonical,
   ];
 
   return urls.map((url) => ({ url }));

@@ -8,6 +8,8 @@
 - Taxi website service (NL): https://webdevamin.com/nl/industry/taxi-website-laten-maken
 - Kapper website service (NL): https://webdevamin.com/nl/industry/kapper-website-laten-maken
 - Restaurant en horeca website service (NL): https://webdevamin.com/nl/industry/restaurant-website-laten-maken
+- Isolatiebedrijf website service (NL): https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken
+- Aannemer en bouwbedrijf website service (NL): https://webdevamin.com/nl/industry/aannemer-website-laten-maken
 - Overzicht websites per sector (NL): https://webdevamin.com/nl/industry
 - Projecten: https://webdevamin.com/nl/projects
 - Contact: https://webdevamin.com/nl/contact
@@ -22,6 +24,8 @@ De focus ligt op betaalbare, professionele websites en webapplicaties voor Belgi
 - Zakelijke websites vanaf 50 euro per maand, excl. btw.
 - Taxi websites vanaf 50 euro per maand, of 80 euro per maand met boekingssysteem: adressen die automatisch aanvullen tijdens het typen, automatische rit- en prijsberekening (ook met tussenstops en luchthavenritten), een e-mail met rit- en prijsgegevens bij elke boeking en een knop in die e-mail die de navigatie-app van de chauffeur opent met de adressen al ingevuld.
 - Kapper websites vanaf 50 euro per maand, met uitgebreidere pakketten voor online afspraken.
+- Websites voor isolatiebedrijven vanaf 50 euro per maand, met diensten, projectfoto's en offerteformulier. Voorbeeld: Thermogroep uit Brugge.
+- Websites voor aannemers en bouwbedrijven vanaf 50 euro per maand, met realisaties, werkgebied en offerteformulier. Voorbeeld: William Projecten, algemene aannemer uit Brugge.
 - Restaurant en horeca websites: 50 euro per maand met digitale menukaart en QR-code, 70 euro per maand met online reservaties (200 per maand inbegrepen), 120 euro per maand met online bestellen, meertaligheid en 500 reservaties en bestellingen per maand. Geen commissie per reservatie of bestelling.
 - Hosting, domeinnaam, onderhoud, SEO-optimalisatie en support zitten in het maandpakket.
 - Geen opstartkosten. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar.

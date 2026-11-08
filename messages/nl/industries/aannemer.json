@@ -1,0 +1,433 @@
+{
+    "seo": {
+        "title": "Website laten maken voor aannemer of bouwbedrijf | €50/maand",
+        "description": "Website laten maken voor uw aannemers- of bouwbedrijf vanaf €50/maand. Met realisaties, offerteformulier, hosting en onderhoud. Zonder opstartkosten.",
+        "canonical": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken",
+        "ogTitle": "Aannemer website laten maken | Vanaf €50/maand",
+        "ogDescription": "Website voor aannemers en bouwbedrijven vanaf €50/maand, met realisaties, offerteformulier, hosting en onderhoud.",
+        "keywords": "aannemer website laten maken, website laten maken bouwbedrijf, website bouwbedrijf, website voor aannemers, website aannemer, webdesign bouwbedrijf, website voor bouwbedrijven, aannemersbedrijf website, website renovatiebedrijf",
+        "socialImage": {
+            "artworkVersion": 1
+        }
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [],
+    "card": {
+        "title": "Website voor aannemers en bouwbedrijven",
+        "text": "Toon uw realisaties, maak uw werkgebied duidelijk en ontvang offerteaanvragen rechtstreeks. Bekijk de website die ik bouwde voor William Projecten uit Brugge.",
+        "price": "Vanaf €50/maand excl. btw",
+        "linkText": "Bekijk de website voor uw bouwbedrijf"
+    },
+    "jsonLd": {
+        "localBusiness": {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://webdevamin.com/#organization",
+            "name": "Webdevamin",
+            "url": "https://webdevamin.com/nl",
+            "logo": "https://webdevamin.com/images/logo-light.png",
+            "image": "https://webdevamin.com/social-cards/nl--industry--aannemer-website-laten-maken/opengraph-image",
+            "description": "Webontwikkelaar uit Brugge. Websites voor aannemers en bouwbedrijven vanaf €50 per maand excl. btw, met realisaties, offerteformulier, hosting, domeinnaam, onderhoud en support.",
+            "email": "amin@webdevamin.com",
+            "telephone": "+32470930916",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BE",
+                "addressLocality": "Brugge",
+                "postalCode": "8310",
+                "streetAddress": "Zuiderakker 18"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Belgium"
+            },
+            "priceRange": "Vanaf €50 per maand excl. btw"
+        },
+        "service": {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken#service",
+            "url": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken",
+            "name": "Website laten maken voor aannemers en bouwbedrijven",
+            "serviceType": "Webdesign voor aannemers en bouwbedrijven",
+            "description": "Een website voor uw aannemers- of bouwbedrijf met uw diensten, foto's van realisaties, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €50 per maand excl. btw, zonder opstartkosten en met een minimale looptijd van twaalf maanden.",
+            "provider": {
+                "@id": "https://webdevamin.com/#organization"
+            },
+            "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "Algemene aannemers, bouw- en renovatiebedrijven, dakwerkers, schrijnwerkers, loodgieters, installateurs, schilders en tegelzetters"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Vlaanderen",
+                "containedInPlace": {
+                    "@type": "Country",
+                    "name": "Belgium"
+                }
+            },
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Standaard website voor een aannemer of bouwbedrijf",
+                    "url": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken#pricing",
+                    "description": "Vanaf €50 per maand excl. btw. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "minPrice": "50",
+                        "priceCurrency": "EUR",
+                        "billingDuration": "P1M",
+                        "unitText": "per maand",
+                        "valueAddedTaxIncluded": false
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Op maat voor een aannemer of bouwbedrijf",
+                    "url": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken#pricing",
+                    "description": "Een website met extra functies op offerte, zoals online afspraken voor plaatsbezoeken, klantenbeheer of koppelingen met bestaande software. Hosting, domeinnaam, onderhoud en support inbegrepen. De functies en prijs worden vooraf afgesproken."
+                }
+            ]
+        },
+        "breadcrumb": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webdevamin.com/nl"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sectoren",
+                    "item": "https://webdevamin.com/nl/industry"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Website voor aannemers en bouwbedrijven",
+                    "item": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken"
+                }
+            ]
+        }
+    },
+    "blocks": [
+        {
+            "slug": "hero",
+            "component": "hero",
+            "title": "Website laten maken voor aannemers en bouwbedrijven",
+            "text": "<p>Laat zien wat u bouwt, waar u werkt en hoe een klant een offerte aanvraagt. Ik maak uw website met <strong>uw diensten, foto's van uw realisaties en een offerteformulier</strong>, zoals ik dat deed voor William Projecten, een algemene aannemer uit Brugge.</p><p>Vanaf <strong>€50/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
+            "image": {
+                "src": "/images/aannemer-hero.webp",
+                "alt": "Illustratie van twee vakmannen die een bakstenen woning renoveren, met bouwplannen, metselwerk en gereedschap.",
+                "width": 1254,
+                "height": 1254
+            },
+            "button": [
+                {
+                    "text": "Bespreek mijn website",
+                    "href": "/contact?pakket=aannemer"
+                },
+                {
+                    "text": "Bekijk William Projecten",
+                    "href": "#william-projecten"
+                },
+                {
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20bouwbedrijf.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20bedrijf%20past%3F",
+                    "external": true
+                }
+            ]
+        },
+        {
+            "slug": "process",
+            "component": "process",
+            "title": "Van eerste gesprek tot uw nieuwe website",
+            "subtitle": "Zo werken we samen",
+            "items": [
+                {
+                    "icon": "phone",
+                    "title": "Uw werken en werkgebied",
+                    "text": "We bespreken welke werken u uitvoert, in welke regio u actief bent en wat u van een nieuwe aanvraag wil weten. U krijgt vooraf een voorstel met de prijs."
+                },
+                {
+                    "icon": "settings",
+                    "title": "Tekst, ontwerp en bouw",
+                    "text": "Ik schrijf de teksten op basis van uw uitleg en werk uw werffoto's uit tot realisaties. Samen kiezen we de vragen van het offerteformulier en controleren we of alles klopt."
+                },
+                {
+                    "icon": "check-circle",
+                    "title": "Online en onderhouden",
+                    "text": "Na uw goedkeuring zet ik de website online. Hosting en onderhoud blijven inbegrepen. Heeft u een nieuw project afgewerkt? Stuur de foto's door, dan zet ik het erbij."
+                }
+            ]
+        },
+        {
+            "slug": "why-aannemer-website",
+            "component": "content",
+            "title": "Waarom een eigen website voor uw bouwbedrijf?",
+            "subtitle": "Van zoeken naar een offerteaanvraag",
+            "text": "<p>Wie gaat verbouwen, vraagt vaak eerst rond bij familie of buren. Daarna zoekt die persoon uw bedrijf op Google. Wat hij daar vindt, bepaalt of hij belt of verder zoekt. Een <strong>website voor aannemers</strong> moet daarom snel duidelijk maken wat u doet, waar u werkt en hoe iemand een offerte aanvraagt.</p><h3>Klanten willen eerst uw werk zien</h3><p>Een verbouwing kost veel geld, dus een klant wil weten met wie hij in zee gaat. Foto's van afgewerkte werven, een korte uitleg per project, reviews en uw ondernemingsnummer geven dat vertrouwen. Een Facebookpagina of een vermelding in een gids toont dat zelden zo overzichtelijk.</p><h3>Aanvragen rechtstreeks bij u</h3><p>Op veel offerteplatformen betaalt u per aanvraag, en dezelfde klant vraagt ook prijzen bij andere aannemers. Via uw eigen website komt de aanvraag rechtstreeks bij u binnen, zonder kosten per aanvraag. Het formulier vraagt meteen naar het soort werk, de gemeente en de gewenste timing.</p><h3>Gevonden worden in uw eigen regio</h3><p>Uw website en uw Google Bedrijfsprofiel werken samen. Het profiel toont u op de kaart wanneer iemand in de buurt een aannemer zoekt. De website geeft daarna de uitleg, de foto's en de knop om een offerte aan te vragen.</p><p>Ik maak websites voor algemene aannemers en renovatiebedrijven, maar ook voor dakwerkers, schrijnwerkers, loodgieters en installateurs, schilders, tegelzetters en tuinaannemers. Plaatst u vooral isolatie? Bekijk dan de <a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>website voor isolatiebedrijven</a>.</p>",
+            "img": {
+                "src": "/images/aannemer-website-offerte.webp",
+                "alt": "Illustratie van een aannemerswebsite op laptop en gsm, met realisaties, diensten en een offerteformulier bij een gerenoveerde bakstenen woning.",
+                "width": 1122,
+                "height": 1402
+            },
+            "button": [
+                {
+                    "text": "Bespreek uw aannemerswebsite",
+                    "href": "/contact?pakket=aannemer"
+                }
+            ]
+        },
+        {
+            "slug": "why-all-in-one",
+            "title": "U staat op de werf. Ik onderhoud uw website.",
+            "subtitle": "Eén aanspreekpunt voor uw website",
+            "text": "<p>Naast de bouw van uw website regel ik de hosting, de domeinnaam en de technische updates. Nieuwe werffoto's, een extra dienst of een ander telefoonnummer? U stuurt het door, ik pas het aan.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge' title='Website laten maken in Brugge'>webontwikkelaar in Brugge</a>. U bespreekt alles rechtstreeks met de persoon die uw website bouwt. Voor Thermogroep, een isolatiebedrijf uit Brugge, maakte ik bijvoorbeeld een website met een eigen pagina per isolatiewerk. Meer voorbeelden vindt u bij <a href='/nl/projects' title='Gerealiseerde websites van Webdevamin'>mijn projecten</a>.</p><p>Bij een webbureau betaalt u voor een website met een paar pagina's meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. Bij mij start het vanaf <strong>€50 per maand excl. btw</strong>, zonder opstartkosten.</p>",
+            "img": {
+                "src": "/images/projects/thermogroep-project.png",
+                "alt": "Website van isolatiebedrijf Thermogroep uit Brugge op desktop, laptop en gsm, gebouwd en onderhouden door Webdevamin.",
+                "width": 1448,
+                "height": 1086
+            }
+        },
+        {
+            "slug": "features-benefits",
+            "component": "features",
+            "title": "Wat een goede aannemerswebsite nodig heeft",
+            "subtitle": "Webdesign voor bouwbedrijven",
+            "text": "<p>Dit zijn de onderdelen die we afstemmen op uw bedrijf en de werken die u uitvoert.</p>",
+            "features": [
+                {
+                    "icon": "image",
+                    "title": "Realisaties met foto's",
+                    "description": "Foto's van afgewerkte werven, met het soort werk en de gemeente erbij. Voor- en nafoto's tonen meteen welk verschil u maakt."
+                },
+                {
+                    "icon": "file-text",
+                    "title": "Een pagina per dienst",
+                    "description": "Renovatie, dakwerken of ramen en deuren: elke belangrijke dienst krijgt eigen uitleg. Zo vindt een klant sneller wat hij zoekt, en begrijpt Google beter wat u doet."
+                },
+                {
+                    "icon": "mail",
+                    "title": "Een offerteformulier dat de juiste vragen stelt",
+                    "description": "Naam, gemeente, soort werk en gewenste timing komen rechtstreeks in uw mailbox. U belt de klant terug met de informatie die u al nodig heeft."
+                },
+                {
+                    "icon": "map-pin",
+                    "title": "Een duidelijk werkgebied",
+                    "description": "Maak duidelijk in welke gemeenten of provincies u werkt. Dat voorkomt aanvragen van te ver weg en helpt bij zoekopdrachten in uw regio."
+                },
+                {
+                    "icon": "star",
+                    "title": "Vertrouwen bij de eerste blik",
+                    "description": "Uw ondernemingsnummer, garanties, verzekering en reviews op een zichtbare plek. Iemand die gaat verbouwen, let daar bewust op."
+                },
+                {
+                    "icon": "smartphone",
+                    "title": "Bellen en WhatsApp op de gsm",
+                    "description": "Veel bezoekers kijken op hun gsm. Een belknop en een WhatsApp-knop maken contact opnemen eenvoudig, ook als u zelf op de werf staat."
+                }
+            ]
+        },
+        {
+            "slug": "portfolio-case",
+            "component": "portfolio",
+            "sectionId": "william-projecten",
+            "title": "Realisatie: William Projecten uit Brugge",
+            "subtitle": "Een aannemerswebsite in de praktijk",
+            "description": "<p><strong>William Projecten</strong> is een algemene aannemer uit Brugge, actief in West- en Oost-Vlaanderen. Het bedrijf doet onder meer dakwerken, EPDM-daken, sanitair, schilderwerken, parket en de plaatsing van ramen en deuren.</p><p>Op de website staat elke dienst met een korte uitleg. Bezoekers bekijken voorbeeldprojecten, lezen antwoorden op veelgestelde vragen en vragen een offerte aan via het formulier, of bellen meteen. Het adres en het btw-nummer staan in de footer.</p><p>In Brugge bouwde ik ook de websites van <a href='https://black-wood.be' target='_blank' rel='noopener noreferrer nofollow'>Black Wood</a>, voor renovatie, ramen en terrassen, en <a href='https://bakiji-construct.be' target='_blank' rel='noopener noreferrer nofollow'>Bakiji Construct</a>, voor dakwerken, sanitair, verwarming en elektriciteit.</p><p><a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer nofollow'>Bekijk de website van William Projecten</a>.</p>",
+            "highlights": [
+                {
+                    "number": "4",
+                    "title": "Websites voor bouwbedrijven in regio Brugge"
+                },
+                {
+                    "number": "€50",
+                    "title": "Per maand, hosting en onderhoud inbegrepen"
+                },
+                {
+                    "number": "24u",
+                    "title": "Antwoord op uw vraag"
+                }
+            ],
+            "project": {
+                "name": "William Projecten",
+                "url": "https://williamprojecten.be",
+                "image": "/images/projects/williamprojecten.png",
+                "description": "Website van aannemer William Projecten uit Brugge op desktop en gsm, met diensten, realisaties en een contactformulier."
+            }
+        },
+        {
+            "slug": "review",
+            "component": "review",
+            "title": "Wat klanten zeggen",
+            "subtitle": "Klantenreviews",
+            "reviews": [
+                {
+                    "name": "William, William Projecten",
+                    "stars": 5,
+                    "text": "Fantastisch werk, prachtig website voor mijn zaak! Bedankt.",
+                    "backgroundColor": "rgb(236 72 153)"
+                },
+                {
+                    "name": "Robert Chen",
+                    "stars": 5,
+                    "text": "Schitterend werk. Denk mee en zoek mee voor een oplossing. Zeer goede prijs en kwaliteit werk geleverd. Uiterst tevreden. Bedankt Amin.",
+                    "backgroundColor": "rgb(6 182 212)"
+                },
+                {
+                    "name": "Alexi",
+                    "stars": 5,
+                    "text": "Zeer professioneel, vriendelijk, goede prijzen zeker aan te raden.",
+                    "backgroundColor": "rgb(34 197 94)"
+                }
+            ],
+            "moreReviewsUrl": "https://goo.gl/maps/pGNDw5zoLZJUtWh1A",
+            "moreReviewsText": "Bekijk meer reviews op Google"
+        },
+        {
+            "slug": "pricing",
+            "title": "Wat kost een website voor een aannemer?",
+            "subtitle": "Website en onderhoud in één maandbedrag",
+            "highlight": "Vanaf €50/maand excl. btw",
+            "text": "<p><strong>Standaard</strong> start vanaf <strong>€50 per maand excl. btw</strong>, met uw diensten, realisaties en een offerteformulier. Wilt u ook online afspraken voor plaatsbezoeken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>Er zijn geen opstartkosten. De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en de gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
+            "items": [
+                {
+                    "title": "Standaard",
+                    "price": "50",
+                    "currency": "Vanaf €",
+                    "period": "/maand excl. btw",
+                    "tagline": "Uw diensten, realisaties en offerteaanvragen op één plek",
+                    "features": [
+                        "Website op maat met <strong>uw diensten en bedrijfsinformatie</strong>",
+                        "<strong>Offerteformulier</strong> afgestemd op uw werken",
+                        "<strong>Realisaties met foto's</strong> en uw werkgebied",
+                        "Leesbaar op de gsm, met een <strong>belknop</strong>",
+                        "<strong>SEO-basis</strong>: paginatitels, structuur en beschrijvende inhoud",
+                        "<strong>Hosting en domeinnaam</strong> inbegrepen",
+                        "<strong>Onderhoud en updates</strong> inbegrepen",
+                        "Aanpassingen aan uw inhoud <strong>door mij uitgevoerd</strong>",
+                        "Support met <strong>antwoord binnen 24 uur</strong>",
+                        "<strong>Geen opstartkosten</strong>"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "Voor een website die uw werken toont en offerteaanvragen ontvangt. Extra functies bespreken we binnen het pakket Op maat.",
+                    "buttonText": "Bespreek Standaard",
+                    "buttonHref": "/contact?pakket=aannemer"
+                },
+                {
+                    "title": "Op maat",
+                    "price": "Maatwerk",
+                    "currency": "",
+                    "period": "",
+                    "tagline": "Extra functies afgestemd op hoe uw bedrijf werkt",
+                    "features": [
+                        "<strong>Alles van Standaard</strong> inbegrepen",
+                        "Mogelijkheid tot <strong>online afspraken voor plaatsbezoeken</strong>",
+                        "<strong>Klantenbeheer</strong> voor de opvolging van aanvragen en contacten",
+                        "<strong>Koppelingen met uw bestaande software</strong>, waar technisch mogelijk",
+                        "Een <strong>uitgebreider offerteformulier</strong>, bijvoorbeeld met eigen vragen per soort werk",
+                        "Optioneel <strong>extra talen of zelf inhoud beheren</strong>",
+                        "<strong>Andere functies</strong> in overleg, met een voorstel vooraf"
+                    ],
+                    "excludedFeatures": [],
+                    "description": "We bespreken welke functies u nodig heeft, bijvoorbeeld een planning voor plaatsbezoeken of klantenbeheer. U krijgt een offerte voor de gekozen functies, met de prijs en aanpak vooraf vastgelegd.",
+                    "buttonText": "Bespreek uw wensen",
+                    "buttonHref": "/contact?pakket=aannemer-op-maat"
+                }
+            ]
+        },
+        {
+            "slug": "one-time-payment",
+            "component": "one-time-payment",
+            "title": "Liever een eenmalige betaling?",
+            "text": "<p>U kunt de bouw van uw aannemerswebsite ook eenmalig betalen. Ik maak daarvoor een offerte op basis van de gewenste inhoud en functies.</p><p>Hosting en domeinnaam regelt u dan zelf, of ik verzorg ze apart tegen een jaarlijkse vergoeding. We spreken vooraf af wie het onderhoud en latere wijzigingen opneemt, zodat duidelijk is welke kosten er na de oplevering nog zijn.</p>",
+            "button": {
+                "href": "/contact?pakket=aannemer-eenmalig",
+                "text": "Vraag een eenmalige offerte"
+            }
+        },
+        {
+            "slug": "faq",
+            "component": "faq",
+            "title": "Veelgestelde vragen over een website voor aannemers",
+            "subtitle": "Voor u een website laat maken",
+            "text": "<p>Hieronder vindt u antwoorden over de prijs, de inhoud en de aanpak. Heeft uw bedrijf andere wensen? Dan bespreken we die in een vrijblijvend gesprek.</p>",
+            "items": [
+                {
+                    "title": "Wat kost een website laten maken voor een aannemer?",
+                    "description": "Bij Webdevamin start een website voor uw bouwbedrijf vanaf <strong>€50 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen, zonder opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. Bij een webbureau betaalt u voor een vergelijkbare website meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. De definitieve prijs hangt af van het aantal pagina's en eventuele extra functies. U krijgt die vooraf."
+                },
+                {
+                    "title": "Heb ik een website nodig als ik genoeg werk heb via mond-tot-mondreclame?",
+                    "description": "Ook wie via een aanbeveling bij u komt, zoekt uw naam eerst op. Vindt die persoon geen website of een verouderde, dan twijfelt hij sneller. Een website bevestigt wat de aanbeveling beloofde: uw werk, uw ervaring en hoe u te bereiken bent. U kunt er ook gerichter mee werken, bijvoorbeeld door meer renovaties aan te trekken en minder kleine herstellingen."
+                },
+                {
+                    "title": "Wat moet er op de website van een aannemer staan?",
+                    "description": "Minstens de werken die u uitvoert, foto's van uw realisaties, uw werkgebied, hoe een klant contact opneemt en uw bedrijfsgegevens, zoals adres en ondernemingsnummer. Reviews, garanties en een korte voorstelling van uzelf of uw ploeg maken het sterker. Een volledige prijslijst is niet nodig. Uitleg over hoe een offerte tot stand komt, helpt een klant wel."
+                },
+                {
+                    "title": "Hoe krijg ik meer offerteaanvragen via mijn website?",
+                    "description": "Maak het de bezoeker makkelijk: een duidelijke knop naar het offerteformulier op elke pagina, een belknop op de gsm en een kort formulier. Toon recente realisaties uit uw regio en houd uw Google Bedrijfsprofiel actueel met foto's en reviews. Een vast aantal aanvragen kan ik niet beloven. Wel bouw ik de website zo dat een geïnteresseerde bezoeker snel de stap zet."
+                },
+                {
+                    "title": "Ik krijg aanvragen via offerteplatformen. Heb ik dan nog een eigen website nodig?",
+                    "description": "Platformen kunnen werk opleveren, maar u betaalt er vaak per aanvraag en de klant vergelijkt u met andere aannemers. Wie u via zo'n platform vindt, zoekt u daarna meestal toch nog op. Uw eigen website toont dan uw werk en brengt aanvragen binnen zonder kosten per aanvraag. Beide kunnen goed naast elkaar bestaan."
+                },
+                {
+                    "title": "Werkt dit ook voor dakwerkers, schrijnwerkers of installateurs?",
+                    "description": "Ja. De opbouw is dezelfde voor een algemene aannemer, een renovatiebedrijf, een dakwerker, schrijnwerker, loodgieter, elektricien, schilder of tegelzetter: uw diensten, realisaties, werkgebied en een offerteformulier. De teksten en de vragen in het formulier passen we aan uw vak aan. Voor isolatiebedrijven is er een <a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>aparte pagina</a>."
+                },
+                {
+                    "title": "Welke foto's en informatie moet ik aanleveren?",
+                    "description": "Bezorg me uw bedrijfsgegevens, diensten, werkgebied en foto's van eigen werven. Foto's met uw gsm zijn vaak goed genoeg, zolang ze scherp zijn en bij daglicht genomen. Per project is een korte uitleg handig: wat er gedaan is en in welke gemeente. Ik zet die informatie om in leesbare teksten. Gebruik alleen foto's die u mag publiceren en toon geen herkenbare klantgegevens zonder toestemming."
+                },
+                {
+                    "title": "Kan ik mijn bestaande website en domeinnaam behouden?",
+                    "description": "Ja, u kunt uw bestaande domeinnaam gebruiken voor de nieuwe website. Ik bekijk eerst uw huidige pagina's, inhoud en e-mailinstellingen. Nuttige teksten en foto's nemen we mee. Veranderen er pagina-adressen, dan voorzie ik waar nodig doorverwijzingen. We plannen de overstap zodat uw website en zakelijke e-mail bereikbaar blijven."
+                },
+                {
+                    "title": "Hoe lang duurt het om mijn website te bouwen?",
+                    "description": "We spreken de planning af zodra de inhoud en de omvang duidelijk zijn. Het aantal pagina's, de beschikbare projectfoto's en eventuele extra functies bepalen de doorlooptijd. Na het eerste gesprek krijgt u een voorstel met de stappen en de timing. U kijkt de website na voor ze online gaat."
+                },
+                {
+                    "title": "Hoe word ik beter gevonden in mijn regio?",
+                    "description": "Ik bouw de website met duidelijke paginatitels, een pagina per belangrijke dienst en informatie over uw echte werkgebied. Projecten uit uw regio versterken dat. Houd ook uw Google Bedrijfsprofiel actueel en laat het naar uw website verwijzen. Een aparte pagina per gemeente maak ik alleen als er iets eigens over te vertellen is, zoals projecten in die gemeente. Een vaste plaats in Google kan niemand eerlijk beloven."
+                },
+                {
+                    "title": "Kan ik later nieuwe projecten of functies toevoegen?",
+                    "description": "Ja. Nieuwe werffoto's, aangepaste contactgegevens en wijzigingen aan uw diensten stuurt u naar mij. Ik voer de inhoudelijke aanpassingen uit. Voor online afspraken voor plaatsbezoeken, klantenbeheer, extra talen of zelf inhoud beheren bespreken we het pakket <strong>Op maat</strong>. U krijgt eerst een offerte voor de gekozen functies. Er wordt niets toegevoegd zonder dat de prijs en de aanpak besproken zijn."
+                }
+            ]
+        },
+        {
+            "slug": "cta-bottom",
+            "component": "cta",
+            "title": "Wat moet uw website voor uw bouwbedrijf doen?",
+            "text": "Vertel me welke werken u uitvoert en waar u actief bent. Dan bekijken we welke pagina's, realisaties en contactmogelijkheden bij uw bedrijf passen. U krijgt een vrijblijvend voorstel met een duidelijke prijs.",
+            "button": [
+                {
+                    "text": "Bespreek mijn aannemerswebsite",
+                    "href": "/contact?pakket=aannemer"
+                },
+                {
+                    "text": "Stuur mij een WhatsApp",
+                    "href": "https://wa.me/32470930916?text=Dag%20Amin%2C%20ik%20heb%20interesse%20in%20een%20website%20voor%20mijn%20bouwbedrijf.%20Kunnen%20we%20bespreken%20wat%20bij%20mijn%20bedrijf%20past%3F",
+                    "external": true
+                }
+            ]
+        }
+    ]
+}
