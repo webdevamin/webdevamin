@@ -83,10 +83,10 @@
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "EUR",
-                "price": "79",
+                "price": "80",
                 "priceSpecification": {
                     "@type": "UnitPriceSpecification",
-                    "price": "79",
+                    "price": "80",
                     "priceCurrency": "EUR",
                     "billingDuration": "P1M",
                     "unitText": "month"
@@ -103,7 +103,7 @@
                     "name": "What does it cost to have a business website made?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "With me, you pay only €79 per month for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
+                        "text": "With me, you pay only €80 per month for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                     }
                 },
                 {
@@ -264,9 +264,9 @@
         {
             "title": "Pricing Subscription",
             "subtitle": "Affordable web designer & developer",
-            "highlight": "From €79/month",
+            "highlight": "From €80/month",
             "slug": "pricing",
-            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €79 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project. Minimum term of 12 months, then cancellable monthly.</p><p>In addition to a professional business website, you receive hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €79 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
+            "text": "<p>Discover my transparent and simple pricing strategy for web development. Starting from <strong>just €80 per month</strong>, you get an <strong>SEO optimized, professional business website</strong> with numerous benefits, without hidden costs. The price varies slightly depending on the complexity and scope of your specific project. Minimum term of 12 months, then cancellable monthly.</p><p>In addition to a professional business website, you receive hosting, domain name, maintenance, updates, and more - everything to save you time and costs! I handle all administrative tasks, so you can fully focus on growing your business.</p><p>Check out <a href='https://williamprojecten.be' target='_blank' rel='noopener noreferrer'>this example website</a>, developed for a construction company in Bruges for €80 per month, to get an impression of my work.</p><p>Want to know the prices I charge my existing clients? View my <a href='/projects'>realized digital solutions</a> for concrete examples and corresponding prices.</p>",
             "subsubtitle": "What you get",
             "items": [
                 {
@@ -390,7 +390,7 @@
             "items": [
                 {
                     "title": "What does it cost to have a business website made?",
-                    "description": "With me, you pay <strong>only €79 per month</strong> for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
+                    "description": "With me, you pay <strong>only €80 per month</strong> for a professional business website. For more complex projects with extensive functionalities, the costs are higher. The subscription includes valuable benefits such as domain name, hosting, maintenance, and personal support. Everything you need for a worry-free online presence."
                 },
                 {
                     "title": "How long does it take to create a website?",

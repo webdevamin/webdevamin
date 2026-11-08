@@ -52,13 +52,13 @@ test('card overrides do not change SEO copy and invalid artwork keys are rejecte
 test('taxi cards use transformed pricing copy', async () => {
     const data = applyTaxiPricing(await json('messages/nl/industries/taxi.json'));
     const entry = createSocialImageEntry(data, { locale: 'nl', type: 'industry', illustrationKey: 'taxi' });
-    assert.match(entry.description, /€\s*49/);
-    assert.match(entry.description, /€\s*89/);
+    assert.match(entry.description, /€\s*50/);
+    assert.match(entry.description, /€\s*90/);
     assert.doesNotMatch(entry.description, /\{\{/);
 });
 
 test('long titles keep all words and prices; descriptions shorten at word boundaries', () => {
-    const title = 'Website Laten Maken Brugge | Vanaf €49/maand All-In-One';
+    const title = 'Website Laten Maken Brugge | Vanaf €50/maand All-In-One';
     const fitted = fitSocialImageTitle(title);
     assert.equal(fitted.lines.join(' '), title);
     assert.ok(fitted.lines.length <= 3);

@@ -1,7 +1,7 @@
 # Webdevamin
 
 > Belgische webontwikkelaar uit Brugge die websites en webapplicaties bouwt voor kleine bedrijven, dienstverleners en lokale ondernemers.
-> All-in-one websitepakketten vanaf 49 euro per maand, met hosting, onderhoud, SEO en support inbegrepen.
+> All-in-one websitepakketten vanaf 50 euro per maand, met hosting, onderhoud, SEO en support inbegrepen.
 
 ## Belangrijke pagina's
 
@@ -19,10 +19,10 @@ De focus ligt op betaalbare, professionele websites en webapplicaties voor Belgi
 
 ## Kernaanbod
 
-- Zakelijke websites vanaf 49 euro per maand, excl. btw.
-- Taxi websites vanaf 49 euro per maand, of 79 euro per maand met boekingssysteem: adressen die automatisch aanvullen tijdens het typen, automatische rit- en prijsberekening (ook met tussenstops en luchthavenritten), een e-mail met rit- en prijsgegevens bij elke boeking en een knop in die e-mail die de navigatie-app van de chauffeur opent met de adressen al ingevuld.
-- Kapper websites vanaf 49 euro per maand, met uitgebreidere pakketten voor online afspraken.
-- Restaurant en horeca websites: 49 euro per maand met digitale menukaart en QR-code, 69 euro per maand met online reservaties (200 per maand inbegrepen), 119 euro per maand met online bestellen, meertaligheid en 500 reservaties en bestellingen per maand. Geen commissie per reservatie of bestelling.
+- Zakelijke websites vanaf 50 euro per maand, excl. btw.
+- Taxi websites vanaf 50 euro per maand, of 80 euro per maand met boekingssysteem: adressen die automatisch aanvullen tijdens het typen, automatische rit- en prijsberekening (ook met tussenstops en luchthavenritten), een e-mail met rit- en prijsgegevens bij elke boeking en een knop in die e-mail die de navigatie-app van de chauffeur opent met de adressen al ingevuld.
+- Kapper websites vanaf 50 euro per maand, met uitgebreidere pakketten voor online afspraken.
+- Restaurant en horeca websites: 50 euro per maand met digitale menukaart en QR-code, 70 euro per maand met online reservaties (200 per maand inbegrepen), 120 euro per maand met online bestellen, meertaligheid en 500 reservaties en bestellingen per maand. Geen commissie per reservatie of bestelling.
 - Hosting, domeinnaam, onderhoud, SEO-optimalisatie en support zitten in het maandpakket.
 - Geen opstartkosten. Minimale looptijd 12 maanden, daarna maandelijks opzegbaar.
 

@@ -1,12 +1,12 @@
 {
     "seo": {
-        "title": "Website laten maken voor isolatiebedrijf | €49/maand",
-        "description": "Website laten maken voor uw isolatiebedrijf vanaf €49/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
+        "title": "Website laten maken voor isolatiebedrijf | €50/maand",
+        "description": "Website laten maken voor uw isolatiebedrijf vanaf €50/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
         "canonical": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken",
-        "ogTitle": "Website laten maken voor isolatiebedrijf | €49/maand",
-        "ogDescription": "Website laten maken voor uw isolatiebedrijf vanaf €49/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
+        "ogTitle": "Website laten maken voor isolatiebedrijf | €50/maand",
+        "ogDescription": "Website laten maken voor uw isolatiebedrijf vanaf €50/maand. Met offerteformulier, hosting en onderhoud. Bekijk de realisatie voor Thermogroep.",
         "image": "https://webdevamin.com/images/isolatiebedrijf-website-laten-maken-og.png",
-        "imageAlt": "Website voor isolatiebedrijven vanaf €49 per maand excl. btw, met offerteformulier, hosting en onderhoud. Een laptop en gsm tonen een isolatiewebsite.",
+        "imageAlt": "Website voor isolatiebedrijven vanaf €50 per maand excl. btw, met offerteformulier, hosting en onderhoud. Een laptop en gsm tonen een isolatiewebsite.",
         "keywords": "website laten maken voor isolatiebedrijf, isolatiebedrijf website laten maken, webdesign voor isolatiebedrijven, website voor isolatiebedrijven"
     },
     "alternates": [
@@ -19,7 +19,7 @@
     "card": {
         "title": "Website voor isolatiebedrijven",
         "text": "Toon uw isolatiewerken, maak uw werkgebied duidelijk en ontvang offerteaanvragen via uw eigen website. Bekijk de realisatie voor Thermogroep uit Brugge.",
-        "price": "Vanaf €49/maand excl. btw",
+        "price": "Vanaf €50/maand excl. btw",
         "linkText": "Bekijk de website voor uw isolatiebedrijf"
     },
     "jsonLd": {
@@ -31,7 +31,7 @@
             "url": "https://webdevamin.com/nl",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/isolatiebedrijf-website-laten-maken-og.png",
-            "description": "Webontwikkelaar uit Brugge. Websites voor isolatiebedrijven vanaf €49 per maand excl. btw, met offerteformulier, hosting, domeinnaam, onderhoud en support.",
+            "description": "Webontwikkelaar uit Brugge. Websites voor isolatiebedrijven vanaf €50 per maand excl. btw, met offerteformulier, hosting, domeinnaam, onderhoud en support.",
             "email": "amin@webdevamin.com",
             "telephone": "+32470930916",
             "address": {
@@ -45,7 +45,7 @@
                 "@type": "Country",
                 "name": "Belgium"
             },
-            "priceRange": "Vanaf €49 per maand excl. btw"
+            "priceRange": "Vanaf €50 per maand excl. btw"
         },
         "service": {
             "@context": "https://schema.org",
@@ -54,7 +54,7 @@
             "url": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken",
             "name": "Website laten maken voor uw isolatiebedrijf",
             "serviceType": "Webdesign voor isolatiebedrijven",
-            "description": "Een website voor uw isolatiebedrijf met uitleg over uw diensten, projectfoto's, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €49 per maand excl. btw, zonder opstartkosten en met een minimale looptijd van twaalf maanden.",
+            "description": "Een website voor uw isolatiebedrijf met uitleg over uw diensten, projectfoto's, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €50 per maand excl. btw, zonder opstartkosten en met een minimale looptijd van twaalf maanden.",
             "provider": {
                 "@id": "https://webdevamin.com/#organization"
             },
@@ -75,7 +75,7 @@
                     "@type": "Offer",
                     "name": "Standaard website voor een isolatiebedrijf",
                     "url": "https://webdevamin.com/nl/industry/isolatiebedrijf-website-laten-maken#pricing",
-                    "description": "Vanaf €49 per maand excl. btw. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
+                    "description": "Vanaf €50 per maand excl. btw. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
                     "priceCurrency": "EUR",
                     "priceSpecification": {
                         "@type": "UnitPriceSpecification",
@@ -124,7 +124,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Website laten maken voor uw isolatiebedrijf",
-            "text": "<p>Laat bezoekers zien welke isolatiewerken u uitvoert, waar u werkt en hoe ze een offerte aanvragen. Ik bouw uw website met <strong>diensten, projectfoto's en een offerteformulier</strong>, zoals ik dat voor Thermogroep uit Brugge deed.</p><p>Vanaf <strong>€49/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
+            "text": "<p>Laat bezoekers zien welke isolatiewerken u uitvoert, waar u werkt en hoe ze een offerte aanvragen. Ik bouw uw website met <strong>diensten, projectfoto's en een offerteformulier</strong>, zoals ik dat voor Thermogroep uit Brugge deed.</p><p>Vanaf <strong>€50/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
             "image": {
                 "src": "/images/isolatiebedrijf-hero.webp",
                 "alt": "Illustratie van twee vakmannen die dakisolatie plaatsen tussen houten balken, met isolatierollen op de voorgrond.",
@@ -194,7 +194,7 @@
             "slug": "why-all-in-one",
             "title": "U volgt de werven op. Ik onderhoud uw website.",
             "subtitle": "Eén aanspreekpunt voor uw website",
-            "text": "<p>Naast de bouw van uw website regel ik de hosting, domeinnaam en technische updates. Een nieuw telefoonnummer, andere openingsuren of recente projectfoto's? U stuurt de wijzigingen naar mij.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge'>webontwikkelaar in Brugge</a>, en bouw websites voor zelfstandigen en kmo's in Vlaanderen. U bespreekt de inhoud rechtstreeks met de persoon die uw website maakt.</p><p>De basis start vanaf <strong>€49 per maand excl. btw</strong>. Voor extra functies, zoals een koppeling met uw klantenbeheer of een uitgebreid aanvraagproces, krijgt u vooraf een aparte offerte. Bekijk ook <a href='/nl/projects'>mijn andere gerealiseerde websites</a> voor voorbeelden uit verschillende sectoren.</p>",
+            "text": "<p>Naast de bouw van uw website regel ik de hosting, domeinnaam en technische updates. Een nieuw telefoonnummer, andere openingsuren of recente projectfoto's? U stuurt de wijzigingen naar mij.</p><p>Ik ben Amin, <a href='/nl/website-laten-maken-brugge'>webontwikkelaar in Brugge</a>, en bouw websites voor zelfstandigen en kmo's in Vlaanderen. U bespreekt de inhoud rechtstreeks met de persoon die uw website maakt.</p><p>De basis start vanaf <strong>€50 per maand excl. btw</strong>. Voor extra functies, zoals een koppeling met uw klantenbeheer of een uitgebreid aanvraagproces, krijgt u vooraf een aparte offerte. Bekijk ook <a href='/nl/projects'>mijn andere gerealiseerde websites</a> voor voorbeelden uit verschillende sectoren.</p>",
             "img": {
                 "src": "/images/isolatiebedrijf-website-onderhoud.webp",
                 "alt": "Illustratie van een webontwikkelaar die een isolatiewebsite onderhoudt terwijl een vakman dakisolatie plaatst.",
@@ -261,12 +261,12 @@
             "slug": "pricing",
             "title": "Wat kost een website voor uw isolatiebedrijf?",
             "subtitle": "Website en onderhoud in één maandbedrag",
-            "highlight": "Vanaf €49/maand excl. btw",
-            "text": "<p><strong>Standaard</strong> start vanaf <strong>€49 per maand excl. btw</strong>, met uw diensten, projectfoto's en een offerteformulier. Wilt u ook online afspraken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>Er zijn geen opstartkosten. De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
+            "highlight": "Vanaf €50/maand excl. btw",
+            "text": "<p><strong>Standaard</strong> start vanaf <strong>€50 per maand excl. btw</strong>, met uw diensten, projectfoto's en een offerteformulier. Wilt u ook online afspraken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>Er zijn geen opstartkosten. De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
             "items": [
                 {
                     "title": "Standaard",
-                    "price": "49",
+                    "price": "50",
                     "currency": "Vanaf €",
                     "period": "/maand excl. btw",
                     "tagline": "Uw diensten, realisaties en offerteaanvragen op één plek",
@@ -328,7 +328,7 @@
             "items": [
                 {
                     "title": "Wat kost een website laten maken voor een isolatiebedrijf?",
-                    "description": "Een website voor uw isolatiebedrijf start bij Webdevamin vanaf <strong>€49 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. De omvang van de website en eventuele extra functies bepalen de definitieve prijs, die u vooraf ontvangt."
+                    "description": "Een website voor uw isolatiebedrijf start bij Webdevamin vanaf <strong>€50 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. De omvang van de website en eventuele extra functies bepalen de definitieve prijs, die u vooraf ontvangt."
                 },
                 {
                     "title": "Wat staat er op mijn isolatiewebsite?",

@@ -69,13 +69,13 @@ const Contact = async ({ params, searchParams }) => {
     const contactBlock = blocks.find(block => block.slug === `contact`);
     const { title: title4, subtitle, text } = contactBlock;
     const packageMessages = {
-        isolatiebedrijf: 'Dag Amin, ik heb interesse in een website voor mijn isolatiebedrijf vanaf €49/maand excl. btw. Kunnen we bespreken wat bij mijn bedrijf past?',
+        isolatiebedrijf: 'Dag Amin, ik heb interesse in een website voor mijn isolatiebedrijf vanaf €50/maand excl. btw. Kunnen we bespreken wat bij mijn bedrijf past?',
         'isolatiebedrijf-op-maat': 'Dag Amin, ik wil graag het pakket Op maat voor mijn isolatiebedrijf bespreken, bijvoorbeeld met online afspraken, klantenbeheer of andere extra functies.',
         'isolatiebedrijf-eenmalig': 'Dag Amin, ik heb interesse in een website voor mijn isolatiebedrijf met een eenmalige betaling. Graag bespreek ik de mogelijkheden en de kosten voor hosting en domeinnaam.',
         restaurant: 'Dag Amin, ik wil graag bespreken wat er mogelijk is voor mijn restaurantwebsite.',
-        'restaurant-standaard': 'Dag Amin, ik heb interesse in Standaard voor mijn restaurant (€49/maand excl. btw).',
-        'restaurant-premium': 'Dag Amin, ik heb interesse in Premium met online reservaties voor mijn restaurant (€89/maand excl. btw).',
-        'restaurant-pro': 'Dag Amin, ik heb interesse in Pro met online reservaties, bestellingen en meertaligheid (€139/maand excl. btw).',
+        'restaurant-standaard': 'Dag Amin, ik heb interesse in Standaard voor mijn restaurant (€50/maand excl. btw).',
+        'restaurant-premium': 'Dag Amin, ik heb interesse in Premium met online reservaties voor mijn restaurant (€90/maand excl. btw).',
+        'restaurant-pro': 'Dag Amin, ik heb interesse in Pro met online reservaties, bestellingen en meertaligheid (€140/maand excl. btw).',
         'restaurant-op-maat': 'Dag Amin, ik wil graag een website of webapplicatie op maat voor mijn restaurant bespreken.',
         'restaurant-eenmalig': 'Dag Amin, ik heb interesse in een restaurantwebsite met eenmalige betaling, zonder reservatie- of bestelsysteem.',
     };
