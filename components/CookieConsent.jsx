@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import useStore from "../utils/store";
 import Cookies from 'js-cookie';
-import Link from 'next/link';
+import { Link } from '../src/i18n/navigation';
 
 const key = `wda-consent`;
 
