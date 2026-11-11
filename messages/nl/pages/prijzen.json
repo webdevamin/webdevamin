@@ -1,9 +1,9 @@
 {
     "seo": {
-        "title": "Website laten maken: prijzen vanaf €50/maand",
+        "title": "Wat kost een website laten maken? Prijzen vanaf €50/maand",
         "description": "Wat kost een website laten maken? Vanaf €50/maand met hosting, onderhoud en SEO, of eenmalig betalen. Bekijk de pakketten en een eerlijke vergelijking.",
         "canonical": "https://webdevamin.com/nl/prijzen",
-        "ogTitle": "Website laten maken: prijzen vanaf €50/maand",
+        "ogTitle": "Wat kost een website laten maken? Prijzen vanaf €50/maand",
         "ogDescription": "Wat kost een website? Vanaf €50/maand met hosting en onderhoud, of eenmalig. Bekijk de pakketten en de vergelijking.",
         "keywords": "website laten maken prijs, wat kost een website laten maken, kosten website laten maken, website abonnement, website per maand, website huren, website leasen, goedkope website laten maken, betaalbare website"
     },
@@ -169,7 +169,7 @@
         {
             "slug": "hero",
             "component": "hero",
-            "title": "Website Laten Maken: Prijzen",
+            "title": "Wat Kost een Website Laten Maken?",
             "text": "Een professionele website laten maken kost bij mij vanaf €50 per maand excl. btw. Hosting, domeinnaam, onderhoud, SEO en support zitten erin, en u betaalt geen opstartkosten. Liever eenmalig betalen? Dat kan ook. Hieronder ziet u alle pakketten en wat beide manieren u over drie jaar kosten.",
             "image": {
                 "src": "/images/why.png",
@@ -283,7 +283,7 @@
             "component": "content",
             "title": "Prijzen per sector",
             "subtitle": "Pakketten met een systeem op maat",
-            "text": "<p>Voor sommige sectoren is er een pakket met een systeem dat precies doet wat die zaak nodig heeft. De prijs van een gewone website blijft altijd <strong>€50 per maand</strong>.</p><ul class='list-disc pl-6 space-y-2 my-4'><li><a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>Taxi website</a>: met online boekingssysteem en automatische ritprijs vanaf €90 per maand.</li><li><a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>Website voor kapper of kapsalon</a>: met online afsprakensysteem vanaf €90 per maand.</li><li><a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>Restaurant of horeca website</a>: met online reservaties vanaf €90 per maand.</li><li><a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>Website voor isolatiebedrijf</a>: met offerteformulier vanaf €50 per maand.</li><li><a href='/nl/industry/aannemer-website-laten-maken' title='Website laten maken voor aannemer of bouwbedrijf'>Website voor aannemer of bouwbedrijf</a>: met realisaties en offerteformulier vanaf €50 per maand.</li></ul><p>Zit u in of rond Brugge? Dan kunnen we ook persoonlijk afspreken. Lees meer over <a href='/nl/website-laten-maken-brugge' title='Webdesign Brugge'>webdesign in Brugge</a>.</p>",
+            "text": "<p>Voor sommige sectoren is er een pakket met een systeem dat precies doet wat die zaak nodig heeft. De prijs van een gewone website blijft altijd <strong>€50 per maand</strong>.</p><ul class='list-disc pl-6 space-y-2 my-4'><li><a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>Taxi website</a>: met online boekingssysteem en automatische ritprijs vanaf €90 per maand.</li><li><a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>Website voor kapper of kapsalon</a>: met online afsprakensysteem vanaf €90 per maand.</li><li><a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>Restaurant of horeca website</a>: met online reservaties vanaf €90 per maand.</li><li><a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>Website voor isolatiebedrijf</a>: met offerteformulier vanaf €50 per maand.</li><li><a href='/nl/industry/aannemer-website-laten-maken' title='Website laten maken voor aannemer of bouwbedrijf'>Website voor aannemer of bouwbedrijf</a>: met realisaties en offerteformulier vanaf €50 per maand.</li></ul><p>Zit u in of rond Brugge? Dan kunnen we ook persoonlijk afspreken. Lees meer over <a href='/nl' title='Website laten maken in Brugge'>webdesign in Brugge</a>.</p>",
             "img": {
                 "src": "/images/andere-sectoren.png",
                 "alt": "Winkelstraat met een bakkerij, koffiebar, bloemenwinkel, kapsalon, kledingzaak en restaurant."

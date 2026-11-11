@@ -1,10 +1,10 @@
 {
     "seo": {
-        "title": "Website laten maken vanaf €50/maand",
-        "description": "Website laten maken vanaf €50/maand? Professionele website met hosting, onderhoud en SEO inbegrepen. Geen opstartkosten. Vraag een gratis offerte aan.",
+        "title": "Website laten maken in Brugge vanaf €50/maand",
+        "description": "Webdesigner in Brugge nodig? Website laten maken vanaf €50/maand, met hosting, onderhoud en SEO. Voor bedrijven in Brugge en West-Vlaanderen. Gratis offerte.",
         "canonical": "https://webdevamin.com/nl",
-        "ogTitle": "Website laten maken vanaf €50/maand",
-        "ogDescription": "Website laten maken vanaf €50/maand. Hosting, onderhoud, SEO en support inbegrepen, zonder opstartkosten.",
+        "ogTitle": "Website laten maken in Brugge vanaf €50/maand",
+        "ogDescription": "Webdesigner in Brugge nodig? Website laten maken vanaf €50/maand, met hosting, onderhoud en SEO. Voor bedrijven in Brugge en West-Vlaanderen.",
         "image": "https://webdevamin.com/images/home_nl.png"
     },
     "alternates": [
@@ -35,7 +35,7 @@
             "url": "https://webdevamin.com/nl",
             "logo": "https://webdevamin.com/images/logo-light.png",
             "image": "https://webdevamin.com/images/ogbanner-nl.png",
-            "description": "Betaalbare webdesigner gespecialiseerd in zakelijke websites laten maken, inclusief onderhoud en SEO-optimalisatie.",
+            "description": "Betaalbare webdesigner in Brugge, gespecialiseerd in zakelijke websites laten maken, inclusief onderhoud en SEO-optimalisatie.",
             "email": "amin@webdevamin.com",
             "telephone": "+32 470 93 09 16",
             "address": {
@@ -45,10 +45,20 @@
                 "postalCode": "8310",
                 "streetAddress": "Zuiderakker 18"
             },
-            "areaServed": {
-                "@type": "Country",
-                "name": "Belgium"
-            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Brugge"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "West-Vlaanderen"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Belgium"
+                }
+            ],
             "priceRange": "€€",
             "sameAs": [
                 "https://www.linkedin.com/company/webdevamin",
@@ -76,10 +86,20 @@
                 "telephone": "+32 470 93 09 16",
                 "image": "https://webdevamin.com/images/ogbanner-nl.png"
             },
-            "areaServed": {
-                "@type": "Country",
-                "name": "Belgium"
-            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Brugge"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "West-Vlaanderen"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Belgium"
+                }
+            ],
             "description": "Professionele en betaalbare zakelijke websites inclusief onderhoud, hosting en SEO.",
             "offers": {
                 "@type": "Offer",
@@ -101,7 +121,7 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "Wat kost een website laten maken?",
+                    "name": "Wat kost een website laten maken in Brugge?",
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Een professionele website laten maken kost bij mij vanaf €50 excl. btw per maand, zonder opstartkosten. Domeinnaam, hosting, onderhoud en persoonlijke support zitten in dat bedrag. Met een boekings- of afsprakensysteem betaalt u vanaf €70 per maand. Alle pakketten en een vergelijking met eenmalig betalen staan op de prijzenpagina."
@@ -113,6 +133,22 @@
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "De tijd die nodig is om een website te maken hangt af van de complexiteit en de specifieke wensen. Bij mij kunt u rekenen op een doorlooptijd van ongeveer 5 dagen voor een standaard zakelijke website. Voor meer complexe projecten kan dit langer duren, maar ik houd u altijd op de hoogte van de voortgang."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan ik persoonlijk kennismaken?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Zeker. Ik ben gevestigd in Brugge en ontmoet potentiële klanten graag persoonlijk, maar het hoeft niet. We kunnen een koffie drinken of ergens in Brugge afspreken om uw wensen te bespreken, volledig vrijblijvend. Ik trakteer. Liever eerst telefonisch of via mail kennismaken? Dat kan ook."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hoe zorg ik dat mijn website goed vindbaar is in Google in Brugge?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Lokale SEO zit zonder meerprijs in elk pakket. Ik bouw die basis mee in uw website: duidelijke pagina-inhoud, snelle laadtijden, goede metadata, mobiele optimalisatie en teksten die aansluiten bij hoe klanten in Brugge en West-Vlaanderen zoeken. Ik help u ook om uw Google Bedrijfsprofiel goed in te vullen, zodat u in Google Maps verschijnt."
                     }
                 },
                 {
@@ -168,10 +204,10 @@
     },
     "blocks": [
         {
-            "title": "Website Laten Maken",
+            "title": "Website Laten Maken in Brugge",
             "subtitle": "Webdevamin",
             "slug": "hero",
-            "text": "Website laten maken? Laat een professionele én betaalbare website op maat bouwen vanaf €50/maand, inclusief hosting, onderhoud en SEO. Geen opstartkosten. Vraag nu een gratis offerte aan voor dit abonnement of voor een webapplicatie op maat!",
+            "text": "Website laten maken in Brugge of elders in West-Vlaanderen? Laat een professionele én betaalbare website op maat bouwen vanaf €50/maand, inclusief hosting, onderhoud en SEO. Geen opstartkosten. Vraag nu een gratis offerte aan voor dit abonnement of voor een webapplicatie op maat!",
             "extra": "Ook op maat gemaakte webapplicaties zoals:",
             "button": [
                 {
@@ -259,12 +295,12 @@
             "title": "Webdesigner in Brugge nodig?",
             "subtitle": "Laten we kennismaken",
             "slug": "brugge-meetup",
-            "text": "Uw bedrijf in Brugge of ergens in West-Vlaanderen? Laten we samen een koffie drinken en bespreken wat uw bedrijf online kan bereiken. Geen verplichtingen, geen salespraatje. Ik trakteer.",
+            "text": "Uw bedrijf in Brugge of ergens in West-Vlaanderen? Ik bouw websites voor ondernemers in heel Brugge en in Damme, Oostkamp, Beernem en Zedelgem. Laten we samen een koffie drinken en bespreken wat uw bedrijf online kan bereiken. Geen verplichtingen, geen salespraatje. Ik trakteer.",
             "button": [
                 {
-                    "href": "/website-laten-maken-brugge",
-                    "text": "Webdesign in Brugge",
-                    "label": "Naar de pagina over webdesign in Brugge",
+                    "href": "/contact",
+                    "text": "Plan een kennismaking",
+                    "label": "Naar de contactpagina om een kennismaking te plannen",
                     "external": false
                 }
             ]
@@ -273,7 +309,7 @@
             "title": "Mijn Diensten",
             "subtitle": "Wat ik aanbied",
             "slug": "services",
-            "text": "<p>Op maat gemaakte digitale oplossingen die perfect aansluiten bij uw zakelijke behoeften. Van elegante ontwerpen tot geavanceerde ontwikkeling. Of u nu op zoek bent naar een <strong>freelance webdesigner</strong>, een <strong>betaalbare webdesigner</strong> of een ervaren <strong>software ontwikkelaar</strong>, bij mij bent u aan het juiste adres.</p><p>Heeft u een taxibedrijf, kapsalon of restaurant? Voor die sectoren zijn er pakketten met een boekings-, afspraken- of reservatiesysteem: een <a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>taxi website laten maken</a>, een <a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>website voor uw kapsalon</a> of een <a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>restaurant of horeca website</a>. Voert u isolatiewerken uit? Bekijk de <a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>website voor isolatiebedrijven</a>. Bent u aannemer of heeft u een bouwbedrijf? Dan is er de <a href='/nl/industry/aannemer-website-laten-maken' title='Aannemer website laten maken'>website voor aannemers en bouwbedrijven</a>. Alle pakketten naast elkaar vindt u bij <a href='/nl/industry' title='Website laten maken per sector'>websites per sector</a>.</p><p>Zit uw bedrijf in of rond Brugge? Lees dan meer over <a href='/nl/website-laten-maken-brugge' title='Webdesign Brugge'>webdesign in Brugge</a>, met persoonlijke afspraken ter plaatse.</p><p>Kortom: digitale oplossingen die tijd en kosten besparen én uw omzet verhogen.</p>",
+            "text": "<p>Op maat gemaakte digitale oplossingen die perfect aansluiten bij uw zakelijke behoeften. Van elegante ontwerpen tot geavanceerde ontwikkeling. Of u nu op zoek bent naar een <strong>freelance webdesigner</strong>, een <strong>betaalbare webdesigner</strong> of een ervaren <strong>software ontwikkelaar</strong>, bij mij bent u aan het juiste adres.</p><p>Heeft u een taxibedrijf, kapsalon of restaurant? Voor die sectoren zijn er pakketten met een boekings-, afspraken- of reservatiesysteem: een <a href='/nl/industry/taxi-website-laten-maken' title='Taxi website laten maken'>taxi website laten maken</a>, een <a href='/nl/industry/kapper-website-laten-maken' title='Website kapper of kapsalon laten maken'>website voor uw kapsalon</a> of een <a href='/nl/industry/restaurant-website-laten-maken' title='Restaurant en horeca website laten maken'>restaurant of horeca website</a>. Voert u isolatiewerken uit? Bekijk de <a href='/nl/industry/isolatiebedrijf-website-laten-maken' title='Website laten maken voor isolatiebedrijf'>website voor isolatiebedrijven</a>. Bent u aannemer of heeft u een bouwbedrijf? Dan is er de <a href='/nl/industry/aannemer-website-laten-maken' title='Aannemer website laten maken'>website voor aannemers en bouwbedrijven</a>. Alle pakketten naast elkaar vindt u bij <a href='/nl/industry' title='Website laten maken per sector'>websites per sector</a>.</p><p>Kortom: digitale oplossingen die tijd en kosten besparen én uw omzet verhogen.</p>",
             "services": [
                 {
                     "type": "webdesign",
@@ -468,12 +504,20 @@
             "text": "Hieronder vindt u een lijst met veelgestelde vragen over een website laten maken. Als u een andere vraag heeft, aarzel dan niet om contact met mij op te nemen.",
             "items": [
                 {
-                    "title": "Wat kost een website laten maken?",
-                    "description": "Een professionele website laten maken kost bij mij vanaf <strong>€50 excl. btw per maand</strong>, zonder opstartkosten. <strong>Domeinnaam, hosting, onderhoud en persoonlijke support</strong> zitten in dat bedrag. Met een boekings- of afsprakensysteem betaalt u vanaf €70 per maand. Alle pakketten en een vergelijking met eenmalig betalen staan op de <a href='/nl/prijzen' title='Website laten maken prijzen'>prijzenpagina</a>."
+                    "title": "Wat kost een website laten maken in Brugge?",
+                    "description": "Een professionele website laten maken kost bij mij vanaf <strong>€50 excl. btw per maand</strong>, zonder opstartkosten. <strong>Domeinnaam, hosting, onderhoud en persoonlijke support</strong> zitten in dat bedrag. Met een boekings- of afsprakensysteem betaalt u vanaf €70 per maand. Alle pakketten en een vergelijking met eenmalig betalen staan op de <a href='/nl/prijzen' title='Wat kost een website laten maken?'>prijzenpagina</a>."
                 },
                 {
                     "title": "Hoe lang duurt het om een website te maken?",
                     "description": "De tijd die nodig is om een website te maken hangt af van de complexiteit en de specifieke wensen. Bij mij kunt u rekenen op een <strong>doorlooptijd van ongeveer 5 dagen</strong> voor een standaard zakelijke website. Voor meer complexe projecten kan dit langer duren, maar ik houd u altijd op de hoogte van de voortgang."
+                },
+                {
+                    "title": "Kan ik persoonlijk kennismaken?",
+                    "description": "Zeker. Ik ben gevestigd in Brugge en ontmoet potentiële klanten graag persoonlijk, maar het hoeft niet. We kunnen een koffie drinken of ergens in Brugge afspreken om uw wensen te bespreken, volledig vrijblijvend. <strong>Ik trakteer</strong>. Liever eerst telefonisch of via mail kennismaken? Dat kan ook."
+                },
+                {
+                    "title": "Hoe zorg ik dat mijn website goed vindbaar is in Google in Brugge?",
+                    "description": "<strong>Lokale SEO</strong> zit zonder meerprijs in elk pakket. Ik bouw die basis mee in uw website: duidelijke pagina-inhoud, snelle laadtijden, goede metadata, mobiele optimalisatie en teksten die aansluiten bij hoe klanten in Brugge en West-Vlaanderen zoeken. Ik help u ook om uw Google Bedrijfsprofiel goed in te vullen, zodat u in Google Maps verschijnt."
                 },
                 {
                     "title": "Hoeveel bedragen de opstartkosten?",

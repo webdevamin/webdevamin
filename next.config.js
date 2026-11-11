@@ -29,6 +29,21 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // The Brugge page was merged into the Dutch homepage
+      {
+        source: '/nl/website-laten-maken-brugge',
+        destination: '/nl',
+        permanent: true,
+      },
+      {
+        source: '/nl/website-laten-maken-brugge/',
+        destination: '/nl',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
