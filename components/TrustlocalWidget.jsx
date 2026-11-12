@@ -47,26 +47,26 @@ export default function TrustlocalWidget() {
   }, [enabled]);
 
   return (
-    <div className="col-span-full min-w-0">
-      <div className="w-fit max-w-full rounded-lg bg-white p-4 text-dark">
+    <div className="flex min-w-0 lg:justify-end">
+      <div className="min-w-0 max-w-full text-light lg:text-right">
         <div hidden={showLiveReviews}>
-          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <ul className="flex flex-col gap-y-2 text-sm sm:flex-row sm:flex-wrap sm:gap-x-6 lg:justify-end">
             <li><strong>Trustlocal 9,5/10</strong> (21 reviews)</li>
             <li><strong>Google 5,0/5</strong> (21 reviews)</li>
           </ul>
           <a
-            className="mt-3 inline-block text-sm font-semibold text-theme_darker underline lg:text-sm"
+            className="mt-1 inline-flex min-h-11 items-center text-sm font-semibold text-theme underline lg:text-sm"
             href="https://trustlocal.be/west-vlaanderen/brugge/webdesign/webdevamin/"
             rel="nofollow"
           >
             Bekijk de reviews op Trustlocal
           </a>
-          <div className="mt-1 text-xs text-gray-600">
+          <div className="text-xs text-light/70">
             Scores op <time dateTime="2026-11-12">12 november 2026</time>
           </div>
         </div>
         {enabled && (
-          <div hidden={!showLiveReviews}>
+          <div hidden={!showLiveReviews} className="text-left">
             <div
               ref={widgetRef}
               className="trustlocal-widget"
@@ -77,8 +77,8 @@ export default function TrustlocalWidget() {
               data-quote="default"
               data-size="small"
               data-type="landscape"
-              data-border="shadow"
-              data-theme="light"
+              data-border="hidden"
+              data-theme="dark"
               data-background="transparent"
               data-google="default"
             />

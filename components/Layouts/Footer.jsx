@@ -127,29 +127,31 @@ const Footer = ({ blogs, pages, socials }) => {
                             text={locale === `nl` ? `Alle blogs` : `All blogs`} />
                     </div>
                 </div>
-                <div className={`text_light_all min-w-0 col-span-full border-t border-white/20 pt-8`}>
-                    <h2 className={`text-xl mb-4`}>
-                        {locale === `nl` ? `Overige` : `Misc`}
-                    </h2>
-                    <ul className={`flex flex-col gap-y-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8`}>
-                        {locale === 'nl' && (
-                            <li className={`py-1 text-sm lg:text-base min-h-8`}>
-                                8310 Brugge
+                <div className={`col-span-full flex min-w-0 flex-col gap-6 border-t border-white/20 pt-8 lg:flex-row lg:items-start lg:justify-between lg:gap-8`}>
+                    <div className={`text_light_all min-w-0`}>
+                        <h2 className={`text-xl mb-4`}>
+                            {locale === `nl` ? `Overige` : `Misc`}
+                        </h2>
+                        <ul className={`flex flex-col gap-y-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8`}>
+                            {locale === 'nl' && (
+                                <li className={`py-1 text-sm lg:text-base min-h-8`}>
+                                    8310 Brugge
+                                </li>
+                            )}
+                            <li>
+                                <Link href={`/policy`} className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>
+                                    {locale === `nl` ? `Privacybeleid` : `Privacy policy`}
+                                </Link>
                             </li>
-                        )}
-                        <li>
-                            <Link href={`/policy`} className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>
-                                {locale === `nl` ? `Privacybeleid` : `Privacy policy`}
-                            </Link>
-                        </li>
-                        <li>
-                            <div>
-                                Featured on <a href="https://startupfa.me/s/webdevamin?utm_source=webdevamin.com" target="_blank" rel="noopener noreferrer nofollow" className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>Startup Fame</a>
-                            </div>
-                        </li>
-                    </ul>
+                            <li>
+                                <div>
+                                    Featured on <a href="https://startupfa.me/s/webdevamin?utm_source=webdevamin.com" target="_blank" rel="noopener noreferrer nofollow" className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>Startup Fame</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    {locale === 'nl' && <TrustlocalWidget />}
                 </div>
-                {locale === 'nl' && <TrustlocalWidget />}
             </div>
         </footer>
     )
