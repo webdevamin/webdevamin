@@ -4,6 +4,7 @@ import { Link } from '../../src/i18n/navigation'
 import { useLocale } from 'next-intl';
 import { getIconComponent } from '../../utils/iconMapper';
 import ButtonThree from '../Buttons/ButtonThree';
+import TrustlocalWidget from '../TrustlocalWidget';
 
 const industries = [
     { title: 'Taxibedrijven', slug: 'taxi-website-laten-maken' },
@@ -148,6 +149,7 @@ const Footer = ({ blogs, pages, socials }) => {
                         </li>
                     </ul>
                 </div>
+                {locale === 'nl' && <TrustlocalWidget />}
             </div>
         </footer>
     )
