@@ -16,7 +16,7 @@
     "alternateLangs": [],
     "heading": "Wat kost jouw website?",
     "wizard": {
-        "progress": "Vraag {current} van {total}",
+        "progress": "Stap {current} van {total}",
         "lastStep": "Laatste stap",
         "back": "Terug",
         "next": "Volgende",

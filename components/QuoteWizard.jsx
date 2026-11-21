@@ -2,11 +2,14 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import Image from 'next/image';
-import { CalendarClock, Check, CheckCircle2, ChevronRight, FileText, LayoutGrid, Lightbulb, Phone, Sparkles, Store, UserRound, Wallet } from 'lucide-react';
+import {
+    Banknote, Briefcase, CalendarCheck, CalendarDays, CarTaxiFront, Check, ChevronRight, CircleHelp, HardHat, House, LayoutTemplate,
+    LockKeyhole, MailCheck, Megaphone, MonitorSmartphone, Phone, RefreshCw, Repeat, Scissors, Search, ShoppingBag, ShoppingCart,
+    Sparkles, UtensilsCrossed, Zap,
+} from 'lucide-react';
 import posthog from 'posthog-js';
 import { Link } from '../src/i18n/navigation';
 import Alert from './Alert';
-import ButtonOne from './Buttons/ButtonOne';
 import Turnstile from './Turnstile';
 import { useChat } from './Chat/ChatProvider';
 import { STEPS, emptyAnswers, nextStep, prefill, priceLine, recommend } from '../utils/quote-wizard.mjs';
@@ -18,16 +21,23 @@ const PROPOSAL = STEPS.length;
 const CONTACT = STEPS.length + 1;
 const DONE = STEPS.length + 2;
 // `website` is the honeypot, like on the other forms. The visitor's current website is `site`.
-// One circle per step at the top of the card: the five questions, the proposal, the contact details and done.
-const STEP_ICONS = [Lightbulb, Store, LayoutGrid, Wallet, CalendarClock, FileText, UserRound, Check];
+// The icon on each answer card, by answer value (the values are unique across the questions).
+const OPTION_ICONS = {
+    new: MonitorSmartphone, redesign: RefreshCw, custom: ShoppingCart, unsure: CircleHelp,
+    kapper: Scissors, restaurant: UtensilsCrossed, taxi: CarTaxiFront, aannemer: HardHat, isolatiebedrijf: House, other: Briefcase,
+    booking: CalendarCheck, emails: MailCheck, marketing: Megaphone, selling: ShoppingBag, portal: LockKeyhole, none: LayoutTemplate,
+    monthly: Repeat, onetime: Banknote,
+    asap: Zap, soon: CalendarDays, exploring: Search,
+};
 const emptyForm = { name: '', email: '', phone: '', company: '', site: '', message: '', website: '' };
 
-const optionClass = selected => `flex min-h-11 w-full items-start gap-3 rounded-lg border-2 px-4 py-3 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker ${selected ? 'border-dark bg-theme shadow-bold_r_xs' : 'border-dark/20 bg-white hover:border-dark'}`;
-const inputClass = 'w-full rounded border-dark border-opacity-25 sm:py-3 bg-slate-50 focus:border-theme_darker focus:ring-theme_darker';
+const cardClass = selected => `relative flex min-h-[9.5rem] w-full flex-col items-center justify-center gap-2 rounded-md border-2 bg-white px-3 py-5 text-center transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker ${selected ? 'border-theme_dark text-theme_dark' : 'border-dark/40 text-dark hover:border-dark'}`;
+const inputClass = 'w-full rounded-md border-2 border-dark/25 bg-white sm:py-3 focus:border-theme_dark focus:ring-theme_dark';
+const primaryClass = 'inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-theme_dark px-8 !text-base font-semibold text-white transition-colors hover:bg-theme_darker disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker';
+const backClass = 'min-h-12 px-2 !text-base font-semibold text-dark/70 hover:text-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker';
 const linkClass = 'inline-flex min-h-11 items-center gap-2 font-semibold text-theme_darker underline underline-offset-4';
 // Keeps the router's own data in the history entry: on the first render Next.js has not taken over history calls yet.
 const saveStep = (method, quoteStep, quoteDepth) => window.history[method]({ ...window.history.state, quoteStep, quoteDepth }, '');
-const backClass = 'min-h-11 rounded-lg border-2 border-dark/20 bg-white px-5 font-semibold hover:border-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker';
 
 export default function QuoteWizard({ texts }) {
     const chat = useChat();
@@ -179,10 +189,11 @@ export default function QuoteWizard({ texts }) {
     const sending = status === 'sending';
     const failed = status === 'clienterror' || status === 'servererror';
     const question = texts.steps[step];
-    const progressLabel = step < PROPOSAL
-        ? texts.progress.replace('{current}', step + 1).replace('{total}', STEPS.length)
-        : step === PROPOSAL ? texts.proposal.eyebrow : step === CONTACT ? texts.lastStep : texts.summary.title;
-    const headingClass = '!m-0 scroll-mt-6 !text-3xl sm:!text-4xl font_mohave focus:outline-none';
+    const progressLabel = step < DONE
+        ? texts.progress.replace('{current}', step + 1).replace('{total}', DONE + 1)
+        : texts.stepLabels[DONE];
+    const headingClass = '!m-0 scroll-mt-6 !text-3xl sm:!text-4xl font-bold !normal-case tracking-tight font_quicksand focus:outline-none';
+    const answered = question && (question.multiple ? answers.features.length > 0 : Boolean(answers[question.key]));
 
     const priceBlock = (
         <div>
@@ -193,78 +204,69 @@ export default function QuoteWizard({ texts }) {
     );
 
     return (
-        <section aria-labelledby={`${id}-heading`} className="ph-no-capture ph-mask w-full max-w-4xl rounded-2xl border border-dark/10 bg-white shadow-[0_20px_60px_-30px_rgba(30,29,32,0.35)]">
-                <div className={`px-4 pt-6 sm:px-10 sm:pt-8 ${step < DONE ? 'border-b border-dark/10 pb-5' : ''}`}>
-                    <ol aria-label={texts.stepsLabel} className="flex items-center">
-                        {STEP_ICONS.map((Icon, index) => {
-                            const finished = index === DONE && step === DONE;
-                            const reached = index <= step;
-                            return (
-                                <li key={index} aria-current={index === step ? 'step' : undefined} className={`flex items-center ${index ? 'flex-1' : ''}`}>
-                                    {index > 0 && <span aria-hidden="true" className={`mx-1 h-0.5 flex-1 sm:mx-2 ${reached ? 'bg-dark' : 'bg-dark/15'}`} />}
-                                    <span title={texts.stepLabels[index]}
-                                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 sm:h-11 sm:w-11 ${finished ? 'border-[#00865b] bg-[#00865b] text-white' : reached ? 'border-dark bg-theme text-dark' : 'border-dark/15 bg-white text-dark/35'} ${index === step && !finished ? 'ring-4 ring-theme/25' : ''}`}>
-                                        <Icon aria-hidden="true" className="h-3.5 w-3.5 sm:h-5 sm:w-5" strokeWidth={index === DONE ? 3 : 2} />
-                                        <span className="sr-only">{texts.stepLabels[index]}</span>
-                                    </span>
-                                </li>
-                            );
-                        })}
-                    </ol>
-                    {step < DONE && (
-                        <div className="mt-5 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-                            <span aria-live="polite" className="block !text-sm font-semibold uppercase tracking-wide text-theme_darker">{progressLabel}</span>
-                            {priced && (
-                                <span className="block !text-sm">{texts.summary.priceTitle}: <strong>{item.name}, {price}</strong></span>
-                            )}
-                        </div>
+        <div className="ph-no-capture ph-mask mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[3rem_minmax(0,1fr)] md:gap-16 lg:gap-24">
+            <ol aria-label={texts.stepsLabel} className="flex items-center md:sticky md:top-10 md:flex-col md:self-start">
+                {texts.stepLabels.map((stepLabel, index) => (
+                    <li key={stepLabel} aria-current={index === step ? 'step' : undefined} className={`flex items-center md:flex-col ${index ? 'flex-1 md:flex-none' : ''}`}>
+                        {index > 0 && <span aria-hidden="true" className={`h-1 flex-1 md:h-8 md:w-1 md:flex-none ${index <= step ? 'bg-theme_dark' : 'bg-dark/40'}`} />}
+                        <span title={stepLabel}
+                            className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full !text-xs font-bold text-white md:h-12 md:w-12 md:!text-sm ${index <= step ? 'bg-theme_dark' : 'bg-dark/60'} ${index === step ? 'ring-4 ring-theme/30' : ''}`}>
+                            {index === DONE && step === DONE ? <Check aria-hidden="true" className="h-4 w-4 md:h-5 md:w-5" strokeWidth={3} /> : <span aria-hidden="true">{index + 1}</span>}
+                            <span className="sr-only">{stepLabel}</span>
+                        </span>
+                    </li>
+                ))}
+            </ol>
+
+            <section aria-labelledby={`${id}-heading`} className="min-w-0 max-w-4xl">
+                <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+                    <span aria-live="polite" className="block !text-base font-bold text-dark/50">{progressLabel}</span>
+                    {priced && step < DONE && (
+                        <span className="block rounded-full bg-theme/10 px-3 py-1 !text-sm">{texts.summary.priceTitle}: <strong>{item.name}, {price}</strong></span>
                     )}
                 </div>
 
-                <div className="p-5 sm:p-10">
+                <div className="mt-6 sm:mt-10">
                     {question && (
                         <>
                             <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>{question.question}</h2>
-                            <p className="!mb-0 mt-2 !opacity-90">{question.hint}</p>
+                            <p className="!mb-0 mt-4 max-w-3xl !opacity-90">{question.hint}</p>
                             {question.key === 'features' && sector && (
-                                <p className="!mb-0 mt-5 rounded-lg border-l-4 border-theme bg-theme/10 px-4 py-3 !text-base !opacity-100">{sector.line}</p>
+                                <p className="!mb-0 mt-5 max-w-3xl border-l-4 border-theme_dark pl-4 !text-base !opacity-100">{sector.line}</p>
                             )}
-                            <div role="group" aria-labelledby={`${id}-heading`} className="mt-6 grid gap-3 sm:grid-cols-2">
+                            <div role="group" aria-labelledby={`${id}-heading`} className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 md:grid-cols-3">
                                 {question.options.map(option => {
                                     const selected = question.multiple ? answers.features.includes(option.value) : answers[question.key] === option.value;
+                                    const Icon = OPTION_ICONS[option.value] || Sparkles;
                                     return (
                                         <button key={option.value} type="button" aria-pressed={selected}
                                             onClick={() => question.multiple ? toggleFeature(option.value) : choose(question.key, option.value)}
-                                            className={optionClass(selected)}>
-                                            <span aria-hidden="true" className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center border-2 border-dark ${question.multiple ? 'rounded' : 'rounded-full'} ${selected ? 'bg-dark text-light' : 'bg-white'}`}>
-                                                {selected && <Check className="h-3.5 w-3.5" strokeWidth={3} />}
-                                            </span>
-                                            <span className="block min-w-0">
-                                                <span className="block !text-base font-semibold leading-snug">{option.label}</span>
-                                                {option.text && <span className="mt-1 block !text-sm leading-snug">{option.text}</span>}
-                                            </span>
+                                            className={cardClass(selected)}>
+                                            {question.multiple && selected && (
+                                                <span aria-hidden="true" className="absolute right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-theme_dark text-white">
+                                                    <Check className="h-3.5 w-3.5" strokeWidth={3} />
+                                                </span>
+                                            )}
+                                            <Icon aria-hidden="true" className="h-8 w-8" strokeWidth={1.5} />
+                                            <span className="block !text-base font-semibold leading-snug">{option.label}</span>
+                                            {option.text && <span className="block !text-xs leading-snug text-dark/70 sm:!text-sm">{option.text}</span>}
                                         </button>
                                     );
                                 })}
                             </div>
-                            {(step > 0 || question.multiple) && (
-                                <div className="mt-8 flex flex-wrap items-center gap-3">
-                                    {step > 0 && <button type="button" onClick={back} className={backClass}>{texts.back}</button>}
-                                    {question.multiple && (
-                                        <button type="button" disabled={!answers.features.length} onClick={() => goTo(nextStep(answers, step))}
-                                            className="min-h-11 rounded-lg border-2 border-dark bg-theme px-6 font-semibold uppercase tracking-wider shadow-bold_r_xs transition-shadow hover:shadow-zero disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker">
-                                            {texts.next}
-                                        </button>
-                                    )}
-                                </div>
-                            )}
+                            <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
+                                <button type="button" disabled={!answered} onClick={() => goTo(nextStep(answers, step))} className={primaryClass}>
+                                    {texts.next}
+                                </button>
+                                {step > 0 && <button type="button" onClick={back} className={backClass}>{texts.back}</button>}
+                            </div>
                         </>
                     )}
 
                     {step === PROPOSAL && (
                         <>
                             <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>{texts.proposal.title}</h2>
-                            <div className="mt-6 rounded-xl border-2 border-dark bg-light p-5 sm:p-6">
+                            <div className="mt-8 max-w-3xl rounded-md border-2 border-theme_dark p-5 sm:p-6">
                                 {priceBlock}
                                 {monthlyOnly && <p className="!mb-0 mt-4 !text-base">{texts.prices.monthlyOnly}</p>}
                                 {oneTime && <p className="!mb-0 mt-4 !text-base">{texts.prices.oneTime}</p>}
@@ -272,7 +274,7 @@ export default function QuoteWizard({ texts }) {
                                 <ul className="space-y-2">
                                     {item.includes.map(line => (
                                         <li key={line} className="flex gap-2">
-                                            <Check aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-theme_darker" strokeWidth={3} />{line}
+                                            <Check aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-theme_dark" strokeWidth={3} />{line}
                                         </li>
                                     ))}
                                 </ul>
@@ -280,16 +282,16 @@ export default function QuoteWizard({ texts }) {
                                     <Link href={sector.link.href} target="_blank" className={`mt-4 ${linkClass}`}>{sector.link.text}</Link>
                                 )}
                             </div>
-                            <ul className="mt-6 grid gap-2 sm:grid-cols-2">
+                            <ul className="mt-6 grid max-w-3xl gap-2 sm:grid-cols-2">
                                 {[...texts.proposal.trust, ...(answers.payment === 'monthly' ? [texts.proposal.guarantee] : [])].map(line => (
                                     <li key={line} className="flex gap-2 text-sm sm:text-base">
-                                        <CheckCircle2 aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-[#00865b]" />{line}
+                                        <Check aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-theme_dark" strokeWidth={3} />{line}
                                     </li>
                                 ))}
                             </ul>
-                            <div className="mt-8 flex flex-wrap items-center gap-3">
+                            <div className="mt-10 flex flex-wrap items-center gap-4">
+                                <button type="button" onClick={() => goTo(CONTACT)} className={primaryClass}>{texts.proposal.button}</button>
                                 <button type="button" onClick={back} className={backClass}>{texts.back}</button>
-                                <ButtonOne onClick={() => goTo(CONTACT)} text={texts.proposal.button} noMargin />
                             </div>
                             <p className="!mb-0 mt-4 !text-sm">{texts.proposal.note}</p>
                         </>
@@ -298,8 +300,8 @@ export default function QuoteWizard({ texts }) {
                     {step === CONTACT && (
                         <>
                             <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>{texts.contact.title}</h2>
-                            <p className="!mb-0 mt-2 !opacity-90">{texts.contact.intro}</p>
-                            <form onSubmit={handleSubmit} aria-busy={sending} className="mt-6">
+                            <p className="!mb-0 mt-4 !opacity-90">{texts.contact.intro}</p>
+                            <form onSubmit={handleSubmit} aria-busy={sending} className="mt-8 max-w-3xl">
                                 <fieldset disabled={sending} className="min-w-0">
                                     <div className="grid gap-4 sm:grid-cols-2">
                                         <label>
@@ -354,10 +356,11 @@ export default function QuoteWizard({ texts }) {
                                     <div ref={errorBox} role="alert" className="scroll-mb-5">
                                         {failed && <Alert text={texts.contact[status]} classes="mt-7" bgColor="#b42332" />}
                                     </div>
-                                    <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:items-center">
+                                    <div className="mt-8 flex flex-wrap items-center gap-4">
+                                        <button type="submit" className={`${primaryClass} w-full sm:w-auto disabled:cursor-wait`}>
+                                            {sending ? texts.contact.sending : texts.contact.send}
+                                        </button>
                                         <button type="button" onClick={back} className={backClass}>{texts.back}</button>
-                                        <ButtonOne input={{ value: sending ? texts.contact.sending : texts.contact.send }}
-                                            classes="w-full sm:w-auto disabled:opacity-60 disabled:cursor-wait" noMargin />
                                     </div>
                                     <p className="!mb-0 mt-4 !text-sm">
                                         {texts.contact.privacy}{' '}
@@ -373,15 +376,15 @@ export default function QuoteWizard({ texts }) {
                             <Image src="/images/launch.svg" alt="" width={855} height={582} className="mx-auto h-auto w-full max-w-sm" />
                             <div>
                                 <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>
-                                    {texts.done.titleStart}<span className="!text-[length:inherit] text-[#00865b]">{texts.done.titleHighlight}</span>{texts.done.titleEnd}
+                                    {texts.done.titleStart}<span className="!text-[length:inherit] text-theme_dark">{texts.done.titleHighlight}</span>{texts.done.titleEnd}
                                 </h2>
                                 <p className="!mb-0 mt-3 !opacity-90">{texts.done.text}</p>
-                                <div className="mt-5 rounded-xl bg-light p-4">{priceBlock}</div>
+                                <div className="mt-5 rounded-md border-2 border-theme_dark p-4">{priceBlock}</div>
                                 <ol className="mt-5 list-decimal space-y-2 pl-5">
                                     {texts.done.next.map(line => <li key={line}>{line}</li>)}
                                 </ol>
                                 <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-                                    <a href="tel:+32470930916" className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-dark px-5 !text-base font-semibold text-light hover:bg-theme_darker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker">
+                                    <a href="tel:+32470930916" className={primaryClass}>
                                         <Phone aria-hidden="true" className="h-4 w-4" />{texts.help.callLink}
                                     </a>
                                     <Link href="/" className="inline-flex min-h-11 items-center gap-1 !text-base font-semibold text-theme_darker hover:underline">
@@ -394,7 +397,7 @@ export default function QuoteWizard({ texts }) {
                 </div>
 
                 {step < DONE && (
-                    <div className="flex flex-col gap-3 border-t border-dark/10 px-5 py-4 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8 sm:px-10">
+                    <div className="mt-14 flex flex-col gap-3 border-t border-dark/10 pt-5 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8">
                         {chat?.shown && (
                             <div>
                                 <span className="!text-sm">{texts.help.askText} </span>
@@ -411,6 +414,7 @@ export default function QuoteWizard({ texts }) {
                         </div>
                     </div>
                 )}
-        </section>
+            </section>
+        </div>
     );
 }

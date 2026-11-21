@@ -70,7 +70,7 @@ const OffertePage = async ({ params }) => {
 
   return (
     <>
-      <main className="flex min-h-[100dvh] items-start justify-center px-4 py-6 sm:items-center sm:px-6 sm:py-10">
+      <main className="min-h-[100dvh] bg-white px-4 py-8 sm:px-8 md:py-16 lg:py-24">
         <h1 className="sr-only">{pageData.heading}</h1>
         <QuoteWizard texts={pageData.wizard} />
       </main>
