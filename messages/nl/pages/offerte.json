@@ -14,34 +14,49 @@
         }
     ],
     "alternateLangs": [],
-    "jsonLd": {
-        "breadcrumb": {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://webdevamin.com/nl" },
-                { "@type": "ListItem", "position": 2, "name": "Gratis offerte", "item": "https://webdevamin.com/nl/offerte" }
-            ]
-        }
-    },
-    "title": "Gratis offerte",
     "heading": "Wat kost jouw website?",
-    "intro": "Beantwoord 5 korte vragen. Je ziet meteen welk pakket bij je zaak past en wat het kost, zonder eerst te moeten bellen.",
     "wizard": {
         "progress": "Vraag {current} van {total}",
         "lastStep": "Laatste stap",
         "back": "Terug",
         "next": "Volgende",
+        "stepsLabel": "Stappen van je offerte",
+        "stepLabels": [
+            "Wat je zoekt",
+            "Je zaak",
+            "Wat je website kan",
+            "Betalen",
+            "Wanneer online",
+            "Je voorstel",
+            "Je gegevens",
+            "Verstuurd"
+        ],
         "steps": [
             {
                 "key": "need",
                 "question": "Wat zoek je?",
                 "hint": "Kies wat het best past. Je kunt altijd terug.",
                 "options": [
-                    { "value": "new", "label": "Een nieuwe website", "text": "Je hebt nog geen website, of je begint liever opnieuw." },
-                    { "value": "redesign", "label": "Mijn website vernieuwen", "text": "Je website is verouderd, traag of brengt te weinig klanten op." },
-                    { "value": "custom", "label": "Een webshop of iets op maat", "text": "Een webshop, een klantenportaal of een eigen systeem voor je zaak." },
-                    { "value": "unsure", "label": "Ik weet het nog niet", "text": "Geen probleem. Na deze vragen krijg je een eerlijk advies." }
+                    {
+                        "value": "new",
+                        "label": "Een nieuwe website",
+                        "text": "Je hebt nog geen website, of je begint liever opnieuw."
+                    },
+                    {
+                        "value": "redesign",
+                        "label": "Mijn website vernieuwen",
+                        "text": "Je website is verouderd, traag of brengt te weinig klanten op."
+                    },
+                    {
+                        "value": "custom",
+                        "label": "Een webshop of iets op maat",
+                        "text": "Een webshop, een klantenportaal of een eigen systeem voor je zaak."
+                    },
+                    {
+                        "value": "unsure",
+                        "label": "Ik weet het nog niet",
+                        "text": "Geen probleem. Na deze vragen krijg je een eerlijk advies."
+                    }
                 ]
             },
             {
@@ -49,12 +64,30 @@
                 "question": "Wat voor zaak heb je?",
                 "hint": "Zo krijg je de pakketten die bij jouw sector passen.",
                 "options": [
-                    { "value": "kapper", "label": "Kapper of schoonheidssalon" },
-                    { "value": "restaurant", "label": "Restaurant, café of horeca" },
-                    { "value": "taxi", "label": "Taxibedrijf" },
-                    { "value": "aannemer", "label": "Aannemer of bouwbedrijf" },
-                    { "value": "isolatiebedrijf", "label": "Isolatiebedrijf" },
-                    { "value": "other", "label": "Een andere zaak of zelfstandige" }
+                    {
+                        "value": "kapper",
+                        "label": "Kapper of schoonheidssalon"
+                    },
+                    {
+                        "value": "restaurant",
+                        "label": "Restaurant, café of horeca"
+                    },
+                    {
+                        "value": "taxi",
+                        "label": "Taxibedrijf"
+                    },
+                    {
+                        "value": "aannemer",
+                        "label": "Aannemer of bouwbedrijf"
+                    },
+                    {
+                        "value": "isolatiebedrijf",
+                        "label": "Isolatiebedrijf"
+                    },
+                    {
+                        "value": "other",
+                        "label": "Een andere zaak of zelfstandige"
+                    }
                 ]
             },
             {
@@ -63,12 +96,36 @@
                 "question": "Wat moet je website kunnen?",
                 "hint": "Kies alles wat je nodig hebt.",
                 "options": [
-                    { "value": "booking", "label": "Klanten boeken online", "text": "Een afspraak, tafel of rit, zonder dat ze moeten bellen." },
-                    { "value": "emails", "label": "Automatische e-mails", "text": "Bevestigingen en herinneringen gaan vanzelf naar je klanten." },
-                    { "value": "marketing", "label": "Nieuwsbrieven en promoties", "text": "Je stuurt aanbiedingen naar je vaste klanten." },
-                    { "value": "selling", "label": "Online bestellen of verkopen", "text": "Klanten bestellen om af te halen of kopen producten in een webshop." },
-                    { "value": "portal", "label": "Klantenportaal of eigen systeem", "text": "Klanten loggen in, of je regelt je eigen werk digitaal." },
-                    { "value": "none", "label": "Gewoon een sterke website", "text": "Je diensten, prijzen en contactgegevens, mooi en snel op elke gsm." }
+                    {
+                        "value": "booking",
+                        "label": "Klanten boeken online",
+                        "text": "Een afspraak, tafel of rit, zonder dat ze moeten bellen."
+                    },
+                    {
+                        "value": "emails",
+                        "label": "Automatische e-mails",
+                        "text": "Bevestigingen en herinneringen gaan vanzelf naar je klanten."
+                    },
+                    {
+                        "value": "marketing",
+                        "label": "Nieuwsbrieven en promoties",
+                        "text": "Je stuurt aanbiedingen naar je vaste klanten."
+                    },
+                    {
+                        "value": "selling",
+                        "label": "Online bestellen of verkopen",
+                        "text": "Klanten bestellen om af te halen of kopen producten in een webshop."
+                    },
+                    {
+                        "value": "portal",
+                        "label": "Klantenportaal of eigen systeem",
+                        "text": "Klanten loggen in, of je regelt je eigen werk digitaal."
+                    },
+                    {
+                        "value": "none",
+                        "label": "Gewoon een sterke website",
+                        "text": "Je diensten, prijzen en contactgegevens, mooi en snel op elke gsm."
+                    }
                 ]
             },
             {
@@ -76,8 +133,16 @@
                 "question": "Hoe wil je betalen?",
                 "hint": "Alle prijzen zijn exclusief btw.",
                 "options": [
-                    { "value": "monthly", "label": "Per maand, alles inbegrepen", "text": "Geen grote som vooraf. Hosting, domeinnaam, onderhoud, SEO en support zitten erin. Minstens 12 maanden, daarna maandelijks opzegbaar." },
-                    { "value": "onetime", "label": "Eenmalig betalen", "text": "Een vaste prijs voor de bouw. Hosting en domeinnaam regel je zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding." }
+                    {
+                        "value": "monthly",
+                        "label": "Per maand, alles inbegrepen",
+                        "text": "Geen grote som vooraf. Hosting, domeinnaam, onderhoud, SEO en support zitten erin. Minstens 12 maanden, daarna maandelijks opzegbaar."
+                    },
+                    {
+                        "value": "onetime",
+                        "label": "Eenmalig betalen",
+                        "text": "Een vaste prijs voor de bouw. Hosting en domeinnaam regel je zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding."
+                    }
                 ]
             },
             {
@@ -85,66 +150,264 @@
                 "question": "Wanneer wil je online?",
                 "hint": "Een standaard website is meestal klaar in ongeveer 5 dagen.",
                 "options": [
-                    { "value": "asap", "label": "Zo snel mogelijk", "text": "Je wilt meteen starten." },
-                    { "value": "soon", "label": "Binnen 1 tot 3 maanden", "text": "Genoeg tijd om alles rustig voor te bereiden." },
-                    { "value": "exploring", "label": "Ik oriënteer me nog", "text": "Je wilt eerst weten wat het kost. Ook goed." }
+                    {
+                        "value": "asap",
+                        "label": "Zo snel mogelijk",
+                        "text": "Je wilt meteen starten."
+                    },
+                    {
+                        "value": "soon",
+                        "label": "Binnen 1 tot 3 maanden",
+                        "text": "Genoeg tijd om alles rustig voor te bereiden."
+                    },
+                    {
+                        "value": "exploring",
+                        "label": "Ik oriënteer me nog",
+                        "text": "Je wilt eerst weten wat het kost. Ook goed."
+                    }
                 ]
             }
         ],
         "sectors": {
             "kapper": {
                 "line": "Je diensten, prijzen en foto's van je werk op één plek. Vanaf Premium plannen klanten zelf 24/7 een afspraak in en krijgen ze automatisch een bevestiging.",
-                "link": { "href": "/industry/kapper-website-laten-maken", "text": "Bekijk de kapperspakketten" },
+                "link": {
+                    "href": "/industry/kapper-website-laten-maken",
+                    "text": "Bekijk de kapperspakketten"
+                },
                 "packages": [
-                    { "key": "standaard", "name": "Standaard", "monthly": 50, "covers": [], "includes": ["Website op maat, mooi op elke gsm", "Hosting, domeinnaam en onderhoud", "SEO, zodat klanten je vinden in Google", "Logo inbegrepen", "Support met antwoord binnen 24 uur"] },
-                    { "key": "premium", "name": "Premium", "monthly": 90, "covers": ["booking", "emails"], "includes": ["Alles van Standaard", "Online afsprakensysteem", "Diensten en prijzen zelf beheren", "Promoties en aanbiedingen", "Website in maximaal drie talen", "Tot 150 afspraken per maand"] },
-                    { "key": "pro", "name": "Pro", "monthly": 120, "covers": ["booking", "emails", "marketing"], "includes": ["Alles van Premium", "E-mailmarketingcampagnes", "Tot 250 afspraken per maand"] }
+                    {
+                        "key": "standaard",
+                        "name": "Standaard",
+                        "monthly": 50,
+                        "covers": [],
+                        "includes": [
+                            "Website op maat, mooi op elke gsm",
+                            "Hosting, domeinnaam en onderhoud",
+                            "SEO, zodat klanten je vinden in Google",
+                            "Logo inbegrepen",
+                            "Support met antwoord binnen 24 uur"
+                        ]
+                    },
+                    {
+                        "key": "premium",
+                        "name": "Premium",
+                        "monthly": 90,
+                        "covers": [
+                            "booking",
+                            "emails"
+                        ],
+                        "includes": [
+                            "Alles van Standaard",
+                            "Online afsprakensysteem",
+                            "Diensten en prijzen zelf beheren",
+                            "Promoties en aanbiedingen",
+                            "Website in maximaal drie talen",
+                            "Tot 150 afspraken per maand"
+                        ]
+                    },
+                    {
+                        "key": "pro",
+                        "name": "Pro",
+                        "monthly": 120,
+                        "covers": [
+                            "booking",
+                            "emails",
+                            "marketing"
+                        ],
+                        "includes": [
+                            "Alles van Premium",
+                            "E-mailmarketingcampagnes",
+                            "Tot 250 afspraken per maand"
+                        ]
+                    }
                 ]
             },
             "restaurant": {
                 "line": "Je menukaart goed leesbaar op de gsm. Vanaf Premium reserveren gasten rechtstreeks bij je zaak, met Pro bestellen ze ook om af te halen.",
-                "link": { "href": "/industry/restaurant-website-laten-maken", "text": "Bekijk de restaurantpakketten" },
+                "link": {
+                    "href": "/industry/restaurant-website-laten-maken",
+                    "text": "Bekijk de restaurantpakketten"
+                },
                 "packages": [
-                    { "key": "standaard", "name": "Standaard", "monthly": 50, "covers": [], "includes": ["Website op maat met digitale menukaart en QR-code", "Openingsuren, route, foto's en belknop", "Hosting, domeinnaam en onderhoud", "Wijzigingen aan je menukaart en openingsuren door mij", "Support met antwoord binnen 24 uur"] },
-                    { "key": "premium", "name": "Premium", "monthly": 90, "monthlyOnly": true, "covers": ["booking", "emails"], "includes": ["Alles van Standaard", "Online reservatiesysteem", "E-mailbevestiging voor je gasten", "200 reservaties per maand", "Website in maximaal drie talen"] },
-                    { "key": "pro", "name": "Pro", "monthly": 140, "monthlyOnly": true, "covers": ["booking", "emails", "selling"], "includes": ["Alles van Premium", "Online bestellen en afhalen", "500 reservaties en bestellingen samen per maand"] }
+                    {
+                        "key": "standaard",
+                        "name": "Standaard",
+                        "monthly": 50,
+                        "covers": [],
+                        "includes": [
+                            "Website op maat met digitale menukaart en QR-code",
+                            "Openingsuren, route, foto's en belknop",
+                            "Hosting, domeinnaam en onderhoud",
+                            "Wijzigingen aan je menukaart en openingsuren door mij",
+                            "Support met antwoord binnen 24 uur"
+                        ]
+                    },
+                    {
+                        "key": "premium",
+                        "name": "Premium",
+                        "monthly": 90,
+                        "monthlyOnly": true,
+                        "covers": [
+                            "booking",
+                            "emails"
+                        ],
+                        "includes": [
+                            "Alles van Standaard",
+                            "Online reservatiesysteem",
+                            "E-mailbevestiging voor je gasten",
+                            "200 reservaties per maand",
+                            "Website in maximaal drie talen"
+                        ]
+                    },
+                    {
+                        "key": "pro",
+                        "name": "Pro",
+                        "monthly": 140,
+                        "monthlyOnly": true,
+                        "covers": [
+                            "booking",
+                            "emails",
+                            "selling"
+                        ],
+                        "includes": [
+                            "Alles van Premium",
+                            "Online bestellen en afhalen",
+                            "500 reservaties en bestellingen samen per maand"
+                        ]
+                    }
                 ]
             },
             "taxi": {
                 "line": "Klanten boeken zelf een rit, met automatisch aangevulde adressen en de ritprijs meteen erbij.",
-                "link": { "href": "/industry/taxi-website-laten-maken", "text": "Bekijk de taxipakketten" },
+                "link": {
+                    "href": "/industry/taxi-website-laten-maken",
+                    "text": "Bekijk de taxipakketten"
+                },
                 "packages": [
-                    { "key": "website", "name": "Website", "monthly": 50, "oneTime": 900, "covers": [], "includes": ["Je diensten, tarieven en contactgegevens", "1 zakelijk e-mailadres", "Hosting, webadres en onderhoud geregeld", "Website in 1 taal", "Support met antwoord binnen 24 uur"] },
-                    { "key": "booking", "name": "Booking", "monthly": 90, "oneTime": 1890, "covers": ["booking", "emails"], "includes": ["Klanten boeken zelf een rit en zien meteen de ritprijs", "Boekingen, bevestigingen en herinneringen op één plek", "200 online boekingen per maand", "Website in maximaal drie talen"] }
+                    {
+                        "key": "website",
+                        "name": "Website",
+                        "monthly": 50,
+                        "oneTime": 900,
+                        "covers": [],
+                        "includes": [
+                            "Je diensten, tarieven en contactgegevens",
+                            "1 zakelijk e-mailadres",
+                            "Hosting, webadres en onderhoud geregeld",
+                            "Website in 1 taal",
+                            "Support met antwoord binnen 24 uur"
+                        ]
+                    },
+                    {
+                        "key": "booking",
+                        "name": "Booking",
+                        "monthly": 90,
+                        "oneTime": 1890,
+                        "covers": [
+                            "booking",
+                            "emails"
+                        ],
+                        "includes": [
+                            "Klanten boeken zelf een rit en zien meteen de ritprijs",
+                            "Boekingen, bevestigingen en herinneringen op één plek",
+                            "200 online boekingen per maand",
+                            "Website in maximaal drie talen"
+                        ]
+                    }
                 ]
             },
             "aannemer": {
                 "line": "Toon je realisaties, maak je werkgebied duidelijk en ontvang offerteaanvragen rechtstreeks, zoals op de website die ik bouwde voor William Projecten uit Brugge.",
-                "link": { "href": "/industry/aannemer-website-laten-maken", "text": "Bekijk de website voor aannemers" },
+                "link": {
+                    "href": "/industry/aannemer-website-laten-maken",
+                    "text": "Bekijk de website voor aannemers"
+                },
                 "packages": [
-                    { "key": "standaard", "name": "Standaard", "monthly": 50, "covers": [], "includes": ["Website op maat met je diensten", "Offerteformulier afgestemd op je werken", "Realisaties met foto's en je werkgebied", "Hosting, domeinnaam en onderhoud", "Support met antwoord binnen 24 uur"] }
+                    {
+                        "key": "standaard",
+                        "name": "Standaard",
+                        "monthly": 50,
+                        "covers": [],
+                        "includes": [
+                            "Website op maat met je diensten",
+                            "Offerteformulier afgestemd op je werken",
+                            "Realisaties met foto's en je werkgebied",
+                            "Hosting, domeinnaam en onderhoud",
+                            "Support met antwoord binnen 24 uur"
+                        ]
+                    }
                 ]
             },
             "isolatiebedrijf": {
                 "line": "Toon je isolatiewerken, maak je werkgebied duidelijk en ontvang offerteaanvragen via je eigen website, zoals bij Thermogroep uit Brugge.",
-                "link": { "href": "/industry/isolatiebedrijf-website-laten-maken", "text": "Bekijk de website voor isolatiebedrijven" },
+                "link": {
+                    "href": "/industry/isolatiebedrijf-website-laten-maken",
+                    "text": "Bekijk de website voor isolatiebedrijven"
+                },
                 "packages": [
-                    { "key": "standaard", "name": "Standaard", "monthly": 50, "covers": [], "includes": ["Website op maat met je diensten", "Offerteformulier afgestemd op je isolatiewerken", "Projectfoto's en je werkgebied", "Hosting, domeinnaam en onderhoud", "Support met antwoord binnen 24 uur"] }
+                    {
+                        "key": "standaard",
+                        "name": "Standaard",
+                        "monthly": 50,
+                        "covers": [],
+                        "includes": [
+                            "Website op maat met je diensten",
+                            "Offerteformulier afgestemd op je isolatiewerken",
+                            "Projectfoto's en je werkgebied",
+                            "Hosting, domeinnaam en onderhoud",
+                            "Support met antwoord binnen 24 uur"
+                        ]
+                    }
                 ]
             },
             "other": {
                 "line": "Elke zaak krijgt klanten op een andere manier. Ik stem je website af op hoe jouw klanten zoeken en kiezen.",
-                "link": { "href": "/prijzen", "text": "Bekijk alle prijzen" }
+                "link": {
+                    "href": "/prijzen",
+                    "text": "Bekijk alle prijzen"
+                }
             }
         },
         "packages": [
-            { "key": "standaard", "name": "Standaard", "monthly": 50, "covers": [], "includes": ["Website op maat, mooi op elke gsm", "Hosting, domeinnaam en onderhoud", "SEO, zodat klanten je vinden in Google", "Logo inbegrepen", "Support met antwoord binnen 24 uur"] },
-            { "key": "premium", "name": "Premium", "monthly": 70, "covers": ["booking", "emails"], "includes": ["Alles van Standaard", "Online boekingssysteem", "Automatische e-mails", "Extra automatisering"] }
+            {
+                "key": "standaard",
+                "name": "Standaard",
+                "monthly": 50,
+                "covers": [],
+                "includes": [
+                    "Website op maat, mooi op elke gsm",
+                    "Hosting, domeinnaam en onderhoud",
+                    "SEO, zodat klanten je vinden in Google",
+                    "Logo inbegrepen",
+                    "Support met antwoord binnen 24 uur"
+                ]
+            },
+            {
+                "key": "premium",
+                "name": "Premium",
+                "monthly": 70,
+                "covers": [
+                    "booking",
+                    "emails"
+                ],
+                "includes": [
+                    "Alles van Standaard",
+                    "Online boekingssysteem",
+                    "Automatische e-mails",
+                    "Extra automatisering"
+                ]
+            }
         ],
         "custom": {
             "key": "op-maat",
             "name": "Op maat",
-            "includes": ["Een voorstel op maat met een vaste prijs", "Webshop, klantenportaal, koppelingen of een eigen systeem", "Hosting, domeinnaam en onderhoud inbegrepen", "Support met antwoord binnen 24 uur"]
+            "includes": [
+                "Een voorstel op maat met een vaste prijs",
+                "Webshop, klantenportaal, koppelingen of een eigen systeem",
+                "Hosting, domeinnaam en onderhoud inbegrepen",
+                "Support met antwoord binnen 24 uur"
+            ]
         },
         "prices": {
             "monthly": "{price} per maand",
@@ -156,16 +419,7 @@
         },
         "summary": {
             "title": "Jouw keuzes",
-            "empty": "Nog niet gekozen",
-            "labels": {
-                "need": "Je zoekt",
-                "sector": "Je zaak",
-                "features": "Je website kan",
-                "payment": "Betalen",
-                "timing": "Online"
-            },
-            "priceTitle": "Jouw prijs",
-            "pricePending": "Je prijs verschijnt hier na vraag 3."
+            "priceTitle": "Jouw prijs"
         },
         "proposal": {
             "eyebrow": "Jouw voorstel",
@@ -203,14 +457,16 @@
             "servererror": "Je aanvraag kon niet worden verstuurd. Probeer het opnieuw of bel me rechtstreeks."
         },
         "done": {
-            "title": "Bedankt, je aanvraag is verstuurd!",
+            "titleStart": "Je aanvraag is ",
+            "titleHighlight": "verstuurd",
+            "titleEnd": "!",
             "text": "Ik bekijk je aanvraag persoonlijk.",
-            "nextTitle": "Wat gebeurt er nu?",
             "next": [
                 "Ik bekijk je keuzes, en je huidige website als je die hebt.",
                 "Binnen 24 uur krijg je een voorstel met prijs en planning.",
                 "Ga je akkoord, dan begin ik aan je website."
-            ]
+            ],
+            "homeLink": "Naar de website"
         },
         "help": {
             "askText": "Eerst een vraag?",
@@ -218,33 +474,5 @@
             "callText": "Liever meteen praten?",
             "callLink": "Bel 0470 93 09 16"
         }
-    },
-    "faq": {
-        "slug": "faq",
-        "title": "Veelgestelde vragen",
-        "subtitle": "Over je offerte",
-        "text": "Staat je vraag er niet bij? Neem gerust <a href='/nl/contact'>contact</a> op.",
-        "items": [
-            {
-                "title": "Zit ik ergens aan vast als ik een offerte aanvraag?",
-                "description": "Nee. Je krijgt een voorstel met prijs en planning, en jij beslist of je verdergaat. Pas als je akkoord gaat, begin ik aan je website."
-            },
-            {
-                "title": "Hoe snel staat mijn website online?",
-                "description": "Een standaard zakelijke website is meestal klaar in ongeveer 5 dagen. Met een boekingssysteem, webshop of maatwerk spreken we vooraf een planning af."
-            },
-            {
-                "title": "Hoe lang loopt het abonnement?",
-                "description": "Het abonnement loopt minstens 12 maanden vanaf de lancering van je website. Daarna is het maandelijks opzegbaar. Ben je binnen 30 dagen na de lancering niet tevreden, dan krijg je je geld terug."
-            },
-            {
-                "title": "Wat gebeurt er met mijn website en domeinnaam als ik stop?",
-                "description": "Na de minimale looptijd van 12 maanden kun je maandelijks opzeggen. Je <strong>domeinnaam zet ik dan kosteloos naar je over</strong>, zodat je je webadres houdt. Wil je ook de website zelf houden? Dan verhuis ik die naar je eigen account, tegen een <strong>eenmalige prijs die we vooraf afspreken</strong>. Kies je daar niet voor, dan gaat de website offline."
-            },
-            {
-                "title": "Zijn de prijzen inclusief btw?",
-                "description": "Nee, alle prijzen zijn exclusief btw. In België komt daar 21% btw bij. Ben je btw-plichtig, dan kun je die btw meestal terugvorderen."
-            }
-        ]
     }
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { usePathname } from 'next/navigation';
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { Send, Sparkles } from 'lucide-react';
 import { cleanChatConfig } from '../../utils/chat.mjs';
@@ -10,6 +11,9 @@ import { cleanChatConfig } from '../../utils/chat.mjs';
 // site. The conversation itself (ChatPanel) only loads when a visitor opens it.
 
 const ChatPanel = dynamic(() => import('./ChatPanel'), { ssr: false });
+
+// The quote page shows only its wizard; the chat opens there from the link in the wizard.
+const BARE_PAGES = ['/nl/offerte'];
 
 const ChatContext = createContext(null);
 
@@ -63,12 +67,13 @@ export default function ChatProvider({ children, locale, texts }) {
     }, [load]);
 
     const shown = config?.available === true;
+    const bare = BARE_PAGES.includes(usePathname());
     const value = useMemo(() => ({ shown, open }), [shown, open]);
 
     return (
         <ChatContext.Provider value={value}>
             {children}
-            {shown && (
+            {shown && !bare && (
                 <>
                     {/* Keeps the end of the footer readable above the ask bar and the ask button. */}
                     <div className="h-24 bg-dark" aria-hidden="true" />

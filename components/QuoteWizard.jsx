@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useId, useRef, useState } from 'react';
-import { Check, CheckCircle2, Phone, Sparkles } from 'lucide-react';
+import Image from 'next/image';
+import { CalendarClock, Check, CheckCircle2, ChevronRight, FileText, LayoutGrid, Lightbulb, Phone, Sparkles, Store, UserRound, Wallet } from 'lucide-react';
 import posthog from 'posthog-js';
 import { Link } from '../src/i18n/navigation';
 import Alert from './Alert';
@@ -17,6 +18,8 @@ const PROPOSAL = STEPS.length;
 const CONTACT = STEPS.length + 1;
 const DONE = STEPS.length + 2;
 // `website` is the honeypot, like on the other forms. The visitor's current website is `site`.
+// One circle per step at the top of the card: the five questions, the proposal, the contact details and done.
+const STEP_ICONS = [Lightbulb, Store, LayoutGrid, Wallet, CalendarClock, FileText, UserRound, Check];
 const emptyForm = { name: '', email: '', phone: '', company: '', site: '', message: '', website: '' };
 
 const optionClass = selected => `flex min-h-11 w-full items-start gap-3 rounded-lg border-2 px-4 py-3 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker ${selected ? 'border-dark bg-theme shadow-bold_r_xs' : 'border-dark/20 bg-white hover:border-dark'}`;
@@ -69,7 +72,7 @@ export default function QuoteWizard({ texts }) {
         const element = heading.current;
         if (!moved.current || !element) return;
         element.focus({ preventScroll: true });
-        if (element.getBoundingClientRect().top < 96) {
+        if (element.getBoundingClientRect().top < 0) {
             const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             element.scrollIntoView({ block: 'start', behavior: reduced ? 'auto' : 'smooth' });
         }
@@ -179,7 +182,7 @@ export default function QuoteWizard({ texts }) {
     const progressLabel = step < PROPOSAL
         ? texts.progress.replace('{current}', step + 1).replace('{total}', STEPS.length)
         : step === PROPOSAL ? texts.proposal.eyebrow : step === CONTACT ? texts.lastStep : texts.summary.title;
-    const headingClass = '!m-0 scroll-mt-28 !text-3xl sm:!text-4xl font_mohave focus:outline-none';
+    const headingClass = '!m-0 scroll-mt-6 !text-3xl sm:!text-4xl font_mohave focus:outline-none';
 
     const priceBlock = (
         <div>
@@ -190,21 +193,35 @@ export default function QuoteWizard({ texts }) {
     );
 
     return (
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-start xl:grid-cols-[minmax(0,1fr)_22rem] xl:gap-12">
-            <section aria-labelledby={`${id}-heading`} className="ph-no-capture ph-mask min-w-0 rounded-xl border-2 border-dark bg-white shadow-bold_r_sm">
-                <div className="border-b border-dark/15 px-5 pb-4 pt-5 sm:px-8">
-                    <span aria-live="polite" className="block !text-sm font-semibold uppercase tracking-wide text-theme_darker">{progressLabel}</span>
-                    <div aria-hidden="true" className="mt-3 h-2 overflow-hidden rounded-full bg-dark/10">
-                        <div className="h-full rounded-full bg-theme transition-[width] duration-300 motion-reduce:transition-none" style={{ width: `${Math.round((step / DONE) * 100)}%` }} />
-                    </div>
-                    {priced && step < DONE && (
-                        <p className="!mb-0 mt-3 !text-sm !opacity-100 lg:hidden">
-                            {texts.summary.priceTitle}: <strong>{item.name}, {price}</strong>
-                        </p>
+        <section aria-labelledby={`${id}-heading`} className="ph-no-capture ph-mask w-full max-w-4xl rounded-2xl border border-dark/10 bg-white shadow-[0_20px_60px_-30px_rgba(30,29,32,0.35)]">
+                <div className={`px-4 pt-6 sm:px-10 sm:pt-8 ${step < DONE ? 'border-b border-dark/10 pb-5' : ''}`}>
+                    <ol aria-label={texts.stepsLabel} className="flex items-center">
+                        {STEP_ICONS.map((Icon, index) => {
+                            const finished = index === DONE && step === DONE;
+                            const reached = index <= step;
+                            return (
+                                <li key={index} aria-current={index === step ? 'step' : undefined} className={`flex items-center ${index ? 'flex-1' : ''}`}>
+                                    {index > 0 && <span aria-hidden="true" className={`mx-1 h-0.5 flex-1 sm:mx-2 ${reached ? 'bg-dark' : 'bg-dark/15'}`} />}
+                                    <span title={texts.stepLabels[index]}
+                                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 sm:h-11 sm:w-11 ${finished ? 'border-[#00865b] bg-[#00865b] text-white' : reached ? 'border-dark bg-theme text-dark' : 'border-dark/15 bg-white text-dark/35'} ${index === step && !finished ? 'ring-4 ring-theme/25' : ''}`}>
+                                        <Icon aria-hidden="true" className="h-3.5 w-3.5 sm:h-5 sm:w-5" strokeWidth={index === DONE ? 3 : 2} />
+                                        <span className="sr-only">{texts.stepLabels[index]}</span>
+                                    </span>
+                                </li>
+                            );
+                        })}
+                    </ol>
+                    {step < DONE && (
+                        <div className="mt-5 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                            <span aria-live="polite" className="block !text-sm font-semibold uppercase tracking-wide text-theme_darker">{progressLabel}</span>
+                            {priced && (
+                                <span className="block !text-sm">{texts.summary.priceTitle}: <strong>{item.name}, {price}</strong></span>
+                            )}
+                        </div>
                     )}
                 </div>
 
-                <div className="p-5 sm:p-8">
+                <div className="p-5 sm:p-10">
                     {question && (
                         <>
                             <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>{question.question}</h2>
@@ -352,21 +369,32 @@ export default function QuoteWizard({ texts }) {
                     )}
 
                     {step === DONE && (
-                        <div role="status">
-                            <CheckCircle2 aria-hidden="true" className="h-12 w-12 text-[#00865b]" />
-                            <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={`mt-4 ${headingClass}`}>{texts.done.title}</h2>
-                            <p className="!mb-0 mt-2 !opacity-90">{texts.done.text}</p>
-                            <div className="mt-6 rounded-xl border-2 border-dark bg-light p-5 sm:p-6">{priceBlock}</div>
-                            <h3 className="!mb-3 mt-8 !text-lg !normal-case font_quicksand">{texts.done.nextTitle}</h3>
-                            <ol className="list-decimal space-y-2 pl-5">
-                                {texts.done.next.map(line => <li key={line}>{line}</li>)}
-                            </ol>
+                        <div role="status" className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+                            <Image src="/images/launch.svg" alt="" width={855} height={582} className="mx-auto h-auto w-full max-w-sm" />
+                            <div>
+                                <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>
+                                    {texts.done.titleStart}<span className="!text-[length:inherit] text-[#00865b]">{texts.done.titleHighlight}</span>{texts.done.titleEnd}
+                                </h2>
+                                <p className="!mb-0 mt-3 !opacity-90">{texts.done.text}</p>
+                                <div className="mt-5 rounded-xl bg-light p-4">{priceBlock}</div>
+                                <ol className="mt-5 list-decimal space-y-2 pl-5">
+                                    {texts.done.next.map(line => <li key={line}>{line}</li>)}
+                                </ol>
+                                <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
+                                    <a href="tel:+32470930916" className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-dark px-5 !text-base font-semibold text-light hover:bg-theme_darker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker">
+                                        <Phone aria-hidden="true" className="h-4 w-4" />{texts.help.callLink}
+                                    </a>
+                                    <Link href="/" className="inline-flex min-h-11 items-center gap-1 !text-base font-semibold text-theme_darker hover:underline">
+                                        {texts.done.homeLink}<ChevronRight aria-hidden="true" className="h-4 w-4" />
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
 
-                {(chat?.shown || texts.help.callLink) && (
-                    <div className="flex flex-col gap-3 border-t border-dark/15 px-5 py-4 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8 sm:px-8">
+                {step < DONE && (
+                    <div className="flex flex-col gap-3 border-t border-dark/10 px-5 py-4 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8 sm:px-10">
                         {chat?.shown && (
                             <div>
                                 <span className="!text-sm">{texts.help.askText} </span>
@@ -383,23 +411,6 @@ export default function QuoteWizard({ texts }) {
                         </div>
                     </div>
                 )}
-            </section>
-
-            <aside aria-label={texts.summary.title} className="hidden rounded-xl border-2 border-dark bg-white p-6 shadow-bold_r_xs lg:sticky lg:top-28 lg:block">
-                <h2 className="!m-0 !text-xl !normal-case font_quicksand">{texts.summary.title}</h2>
-                <dl className="mt-4 space-y-3">
-                    {STEPS.map(key => (
-                        <div key={key}>
-                            <dt className="text-sm text-dark/70">{texts.summary.labels[key]}</dt>
-                            <dd className={valueOf(key) ? 'font-semibold' : 'text-dark/60'}>{valueOf(key) || texts.summary.empty}</dd>
-                        </div>
-                    ))}
-                </dl>
-                <div className="mt-6 border-t border-dark/15 pt-5">
-                    <span className="block !text-sm text-dark/70">{texts.summary.priceTitle}</span>
-                    {priced ? <div className="mt-2">{priceBlock}</div> : <p className="!mb-0 mt-2 !text-base">{texts.summary.pricePending}</p>}
-                </div>
-            </aside>
-        </div>
+        </section>
     );
 }
