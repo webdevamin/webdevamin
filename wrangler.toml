@@ -12,4 +12,18 @@ directory = ".open-next/assets"
 binding = "ASSETS"
 
 [vars]
+ADMIN_TENANT_ID = "83e7ff47-f21e-4e14-b5b9-f1585127aeea"
 ADMIN_URL = "https://webdevamin.app"
+NEXT_PUBLIC_POSTHOG_HOST = "https://eu.i.posthog.com"
+NEXT_PUBLIC_POSTHOG_KEY = "phc_C3750M5ZARkpD3kYdEgpvwYUq9FLG0xcKfyr7Jxu4VI"
+NEXT_PUBLIC_URL = "https://webdevamin.com"
+
+# Limits AI chat questions per visitor: 6 per minute (src/app/api/chat/route.js). Each question costs part of the
+# monthly AI budget at webdevamin.app, which stores no IP addresses, so the limit per visitor lives here.
+# The namespace id must be unique in the Cloudflare account (Arvex uses 1212 and 1213). This wrangler version only
+# knows rate limits as an "unsafe" binding; newer versions also accept a top-level [[ratelimits]] block.
+[[unsafe.bindings]]
+name = "CHAT_RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1230"
+simple = { limit = 6, period = 60 }

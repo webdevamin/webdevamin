@@ -47,6 +47,14 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
      * Toont de taalswitcher. Op desktop staat die rechts, op mobiel onderaan
      * in het menu zodat de hoofdlinks gecentreerd kunnen blijven.
      */
+    // Opens the quote window (components/QuoteModal.jsx) on the current page.
+    const quoteLink = (
+        <a href="?offerte" onClick={closeNavigation}
+            className="inline-flex min-h-11 items-center whitespace-nowrap rounded border-2 border-dark bg-theme px-3 text-sm font-semibold uppercase tracking-wider text-dark shadow-bold_r_xs transition-shadow hover:shadow-zero focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker sm:px-4">
+            {locale === 'nl' ? 'Gratis offerte' : 'Free quote'}
+        </a>
+    );
+
     const LanguageSwitcher = ({ mobile = false }) => {
         if (!alternateLangs || alternateLangs.length === 0) return null;
 
@@ -108,27 +116,32 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
 
             <nav className="relative mx-auto grid max-w-8xl grid-cols-[auto_auto] items-center justify-between px-4 py-4 md:grid-cols-[auto_1fr_auto] lg:px-16">
                 <div className="flex justify-start">
-                    <Link href="/" onClick={closeNavigation} aria-label="Webdevamin home">
+                    <Link href="/" onClick={closeNavigation} aria-label="Webdevamin home" className="flex items-end gap-2">
                         <Image
-                            src="/images/logo-light.webp"
-                            width={46}
-                            height={46}
-                            className="rounded-lg"
+                            src="/images/logo.png"
+                            width={38}
+                            height={23}
                             priority={true}
                             alt="Webdevamin Logo"
                         />
+                        <span aria-hidden="true" className="hidden text-xl font-bold leading-none tracking-tight lg:inline">
+                            ebdevamin
+                        </span>
                     </Link>
                 </div>
 
-                <button
-                    type="button"
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    aria-expanded={isMenuOpen}
-                    aria-label={locale === 'nl' ? 'Menu openen' : 'Open menu'}
-                    className="inline-flex h-11 w-11 items-center justify-center rounded border border-dark border-opacity-20 text-dark transition-colors md:hidden"
-                >
-                    {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
+                <div className="flex items-center gap-3 md:hidden">
+                    {quoteLink}
+                    <button
+                        type="button"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        aria-expanded={isMenuOpen}
+                        aria-label={locale === 'nl' ? 'Menu openen' : 'Open menu'}
+                        className="inline-flex h-11 w-11 items-center justify-center rounded border border-dark border-opacity-20 text-dark transition-colors"
+                    >
+                        {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                    </button>
+                </div>
 
                 <div
                     className={`${isMenuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-full flex-col gap-1 border-t border-dark border-opacity-10 bg-light px-4 pb-5 pt-3 shadow-lg md:static md:flex md:flex-row md:items-center md:justify-center md:gap-6 lg:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none xl:gap-10`}
@@ -195,7 +208,10 @@ const Header = ({ pages, alternateLangs, locales, heroBannerData }) => {
                     <LanguageSwitcher mobile />
                 </div>
 
-                <LanguageSwitcher />
+                <div className="hidden items-center justify-end gap-4 md:flex">
+                    <LanguageSwitcher />
+                    {quoteLink}
+                </div>
             </nav>
         </header>
     );

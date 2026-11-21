@@ -1,0 +1,28 @@
+{
+    "ask": "Vraag het",
+    "launcher": "Stel je vraag",
+    "placeholder": "Stel hier je vraag",
+    "inputLabel": "Je vraag aan {name}",
+    "send": "Versturen",
+    "close": "Chat sluiten",
+    "newChat": "Nieuw gesprek",
+    "aiLabel": "AI-assistent",
+    "conversation": "Gesprek",
+    "thinking": "Even denken…",
+    "suggestions": "Bijvoorbeeld",
+    "disclosure": "Je chat met een AI-assistent. Antwoorden kunnen fouten bevatten, deel dus geen gevoelige gegevens.",
+    "privacyLink": "Privacybeleid",
+    "formIntro": "Ik heb je aanvraag klaargezet. Kijk ze na en verstuur ze in een klik.",
+    "quoteButton": "Vraag een offerte aan",
+    "formButton": "Aanvraag afronden",
+    "unavailable": "De chat werkt nu even niet. Vraag gerust een offerte aan of bel me.",
+    "call": "Bel 0470 93 09 16",
+    "errors": {
+        "limited": "Je stuurt wat snel na elkaar. Wacht een minuutje en probeer het dan opnieuw.",
+        "busy": "Ik ben nog met een vorige vraag bezig. Probeer het zo opnieuw.",
+        "full": "Dit gesprek is vol. Begin een nieuw gesprek om verder te gaan.",
+        "unavailable": "De chat werkt nu even niet. Vraag gerust een offerte aan of bel me.",
+        "invalid": "Deze vraag kon niet verstuurd worden. Maak ze wat korter of probeer het opnieuw.",
+        "error": "Er ging iets mis. Probeer het opnieuw."
+    }
+}

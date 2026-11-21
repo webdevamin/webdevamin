@@ -1,0 +1,38 @@
+{
+    "eyebrow": "Free, no strings attached",
+    "title": "Request your quote",
+    "intro": "Choose what you need and leave your details. Done in a minute.",
+    "close": "Close window",
+    "needLabel": "What do you need?",
+    "needs": {
+        "website": "A website",
+        "booking": "Website with online bookings",
+        "custom": "Web shop or custom software",
+        "onetime": "Website with a one-time payment",
+        "unsure": "I am not sure yet"
+    },
+    "budgetLabel": "What is your budget?",
+    "optional": "optional",
+    "budgets": {
+        "monthly": ["Up to €75 per month", "€75 to €150 per month", "More than €150 per month", "Not sure yet"],
+        "oneTime": ["Up to €2,000", "€2,000 to €5,000", "More than €5,000", "Not sure yet"]
+    },
+    "name": "Name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "phoneHint": "So I can call you as well.",
+    "message": "Anything else I should know?",
+    "messagePlaceholder": "For example: what does your business do, do you already have a website and when would you like to start?",
+    "send": "Request free quote",
+    "sending": "Sending…",
+    "privacy": "I only use your details to answer your request.",
+    "privacyLink": "Privacy policy",
+    "successTitle": "Thank you, your request has been sent!",
+    "successText": "I will look at your request personally and get back to you soon.",
+    "successClose": "Close",
+    "clienterror": "Please check your details and try again. What you filled in is still there.",
+    "servererror": "Your request could not be sent. Please try again in a moment.",
+    "askText": "A question first?",
+    "askButton": "Ask the AI assistant",
+    "headerButton": "Free quote"
+}

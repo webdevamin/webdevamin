@@ -1,0 +1,40 @@
+{
+    "eyebrow": "Gratis en vrijblijvend",
+    "title": "Vraag je offerte aan",
+    "intro": "Kies wat je nodig hebt en laat je gegevens achter. Klaar in een minuut.",
+    "close": "Venster sluiten",
+    "needLabel": "Wat heb je nodig?",
+    "needs": {
+        "website": "Een website",
+        "booking": "Website met online afspraken of reservaties",
+        "custom": "Webshop of maatwerk",
+        "onetime": "Website met eenmalige betaling",
+        "unsure": "Ik weet het nog niet"
+    },
+    "budgetLabel": "Wat is je budget?",
+    "optional": "optioneel",
+    "budgets": {
+        "monthly": ["Tot €75 per maand", "€75 tot €150 per maand", "Meer dan €150 per maand", "Weet ik nog niet"],
+        "oneTime": ["Tot €2.000", "€2.000 tot €5.000", "Meer dan €5.000", "Weet ik nog niet"]
+    },
+    "name": "Naam",
+    "email": "E-mailadres",
+    "phone": "Telefoonnummer",
+    "phoneHint": "Dan kan ik je ook bellen.",
+    "message": "Nog iets dat ik moet weten?",
+    "messagePlaceholder": "Bijvoorbeeld: wat doet je bedrijf, heb je al een website en wanneer wil je starten?",
+    "send": "Vraag gratis offerte aan",
+    "sending": "Bezig met versturen…",
+    "privacy": "Ik gebruik je gegevens alleen om je aanvraag te beantwoorden.",
+    "privacyLink": "Privacybeleid",
+    "successTitle": "Bedankt, je aanvraag is verstuurd!",
+    "successText": "Ik bekijk je aanvraag persoonlijk en neem snel contact met je op.",
+    "successClose": "Sluiten",
+    "clienterror": "Controleer je gegevens en probeer het opnieuw. Wat je invulde staat er nog.",
+    "servererror": "Je aanvraag kon niet worden verstuurd. Probeer het opnieuw of bel me rechtstreeks.",
+    "askText": "Eerst een vraag?",
+    "askButton": "Vraag het de AI-assistent",
+    "callText": "Liever meteen praten?",
+    "callLink": "Bel 0470 93 09 16",
+    "headerButton": "Gratis offerte"
+}

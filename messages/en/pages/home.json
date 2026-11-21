@@ -33,7 +33,7 @@
             "@type": "LocalBusiness",
             "name": "Webdevamin",
             "url": "https://webdevamin.com",
-            "logo": "https://webdevamin.com/images/logo-light.png",
+            "logo": "https://webdevamin.com/images/logo-512.png",
             "image": "https://webdevamin.com/images/ogbanner.png",
             "description": "Affordable web designer specializing in creating business websites, including maintenance and SEO optimization.",
             "email": "amin@webdevamin.com",
@@ -116,14 +116,6 @@
                 },
                 {
                     "@type": "Question",
-                    "name": "How much are the setup costs?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "There are no setup costs! Only the subscription counts."
-                    }
-                },
-                {
-                    "@type": "Question",
                     "name": "I already have a website. Can I switch to yours?",
                     "acceptedAnswer": {
                         "@type": "Answer",
@@ -174,8 +166,8 @@
             "extra": "Also custom-made web applications such as:",
             "button": [
                 {
-                    "href": "/contact",
-                    "text": "contact",
+                    "href": "/?offerte",
+                    "text": "Free quote",
                     "label": "To contact page",
                     "external": false
                 },
@@ -306,17 +298,13 @@
                     "details": "Do you have questions or comments? Send me a message and you will get a reply within 24 hours, at no extra cost."
                 },
                 {
-                    "title": "No setup costs!",
-                    "details": "Yup, you read that right! No setup costs whatsoever. You only pay for the subscription itself."
-                },
-                {
                     "title": "Not satisfied? 30-day money back",
                     "details": "Not satisfied? No problem, you get your money back within 30 days."
                 }
             ],
             "button": [
                 {
-                    "href": "/contact",
+                    "href": "/?offerte=standaard",
                     "text": "Contact for this subscription",
                     "label": "To contact page",
                     "external": false
@@ -326,7 +314,7 @@
                 "title": "One-Time Payment",
                 "text": "<p>Prefer <strong>no monthly subscription</strong>? No problem! You can also choose a <strong>one-time payment</strong>. This means you pay a fixed amount for the development of your website, without ongoing costs. You then arrange hosting and domain name yourself, or I can take care of this separately for a small annual fee.</p><p><a href='/contact'>Contact me</a> for a free custom quote.</p>",
                 "button": {
-                    "href": "/contact",
+                    "href": "/?offerte=eenmalig",
                     "text": "Request Quote"
                 }
             }
@@ -395,10 +383,6 @@
                 {
                     "title": "How long does it take to create a website?",
                     "description": "The time needed to create a website depends on the complexity and specific requirements. With me, you can expect a <strong>turnaround time of about 5 days</strong> for a standard business website. For more complex projects, this may take longer, but I will always keep you informed of the progress."
-                },
-                {
-                    "title": "How much are the setup costs?",
-                    "description": "There are no setup costs! Only the subscription counts."
                 },
                 {
                     "title": "I already have a website. Can I switch to yours?",

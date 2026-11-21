@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Restaurant & horeca website laten maken | €50/maand",
-        "description": "Restaurant of horeca website laten maken vanaf €50/maand. Online reserveren vanaf €90. Bekijk de pakketten en een realisatie. Geen opstartkosten.",
+        "description": "Restaurant of horeca website laten maken vanaf €50/maand. Online reserveren vanaf €90. Bekijk de pakketten en een realisatie.",
         "canonical": "https://webdevamin.com/nl/industry/restaurant-website-laten-maken",
         "ogTitle": "Restaurant & horeca website laten maken | €50/maand",
         "ogDescription": "Restaurant of horeca website vanaf €50/maand. Online reserveren vanaf €90. Bekijk de pakketten en een realisatie.",
@@ -28,7 +28,7 @@
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
             "url": "https://webdevamin.com/nl",
-            "logo": "https://webdevamin.com/images/logo-light.png",
+            "logo": "https://webdevamin.com/images/logo-512.png",
             "image": "https://webdevamin.com/images/restaurant-reserv.png",
             "description": "Restaurantwebsite met digitale menukaart vanaf €50 per maand. Online reservaties en maximaal drie talen vanaf €90, bestellingen vanaf €140. Hosting en onderhoud inbegrepen.",
             "email": "amin@webdevamin.com",
@@ -68,7 +68,7 @@
                     "name": "Wat kost een restaurant of horeca website laten maken?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Een restaurantwebsite met digitale menukaart kost €50 per maand excl. btw . Met online reservaties en maximaal drie talen kiest u Premium voor €90. Pro kost €140 en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
+                        "text": "Een restaurantwebsite met digitale menukaart kost €50 per maand excl. btw . Met online reservaties en maximaal drie talen kiest u Premium voor €90. Pro kost €140 en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                     }
                 },
                 {
@@ -274,7 +274,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Restaurant en horeca website laten maken",
-            "text": "<p><strong>Meer rechtstreekse reservaties. Minder telefoontjes. Geen commissie per gast.</strong></p><p>Uw restaurantwebsite met online reservaties voor <strong>€90/maand excl. btw</strong>. Hosting, onderhoud en domeinnaam inbegrepen. Geen opstartkosten, minimale looptijd 12 maanden. Een website met menukaart is er vanaf €50/maand. <a href='#pricing'>Bekijk de pakketten</a>.</p>",
+            "text": "<p><strong>Meer rechtstreekse reservaties. Minder telefoontjes. Geen commissie per gast.</strong></p><p>Uw restaurantwebsite met online reservaties voor <strong>€90/maand excl. btw</strong>. Hosting, onderhoud en domeinnaam inbegrepen. Minimale looptijd 12 maanden. Een website met menukaart is er vanaf €50/maand. <a href='#pricing'>Bekijk de pakketten</a>.</p>",
             "image": {
                 "src": "/images/restaurant-reserv.png",
                 "alt": "Illustratie van een restaurantbezoek met gasten, een ober en een gedekte tafel.",
@@ -914,7 +914,7 @@
             "subtitle": "Website en ondersteuning voor een vast maandbedrag",
             "highlight": "Online reservaties vanaf €90/maand",
             "slug": "pricing",
-            "text": "<p><strong>Standaard €50</strong> voor uw website en menukaart, <strong>Premium €90</strong> met online reservaties en maximaal drie talen of <strong>Pro €140</strong> met bestellingen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen.</p><p>Alle prijzen zijn <strong>per maand, excl. btw</strong>. Geen opstartkosten. <strong>Minimale looptijd 12 maanden</strong>, daarna maandelijks opzegbaar. Prijzen bijgewerkt: september 2026.</p>",
+            "text": "<p><strong>Standaard €50</strong> voor uw website en menukaart, <strong>Premium €90</strong> met online reservaties en maximaal drie talen of <strong>Pro €140</strong> met bestellingen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen.</p><p>Alle prijzen zijn <strong>per maand, excl. btw</strong>. <strong>Minimale looptijd 12 maanden</strong>, daarna maandelijks opzegbaar. Prijzen bijgewerkt: september 2026.</p>",
             "items": [
                 {
                     "title": "Standaard",
@@ -930,8 +930,7 @@
                         "Wijzigingen aan menukaart en openingsuren <strong>door mij uitgevoerd</strong>",
                         "<strong>Logo</strong> inbegrepen",
                         "Administratie en facturen door mij geregeld",
-                        "Support met <strong>antwoord binnen 24 uur</strong>",
-                        "<strong>Geen opstartkosten</strong>"
+                        "Support met <strong>antwoord binnen 24 uur</strong>"
                     ],
                     "excludedFeatures": [
                         "Online reservatiesysteem",
@@ -939,7 +938,7 @@
                         "Meertalige website"
                     ],
                     "buttonText": "Bespreek Standaard",
-                    "buttonHref": "/contact?pakket=restaurant-standaard"
+                    "buttonHref": "/industry/restaurant-website-laten-maken?offerte=restaurant-standaard"
                 },
                 {
                     "title": "Premium",
@@ -961,7 +960,7 @@
                         "Online bestellen en afhalen"
                     ],
                     "buttonText": "Bespreek Premium",
-                    "buttonHref": "/contact?pakket=restaurant-premium",
+                    "buttonHref": "/industry/restaurant-website-laten-maken?offerte=restaurant-premium",
                     "badge": "Aanbevolen voor reservaties"
                 },
                 {
@@ -979,7 +978,7 @@
                     ],
                     "excludedFeatures": [],
                     "buttonText": "Bespreek Pro",
-                    "buttonHref": "/contact?pakket=restaurant-pro"
+                    "buttonHref": "/industry/restaurant-website-laten-maken?offerte=restaurant-pro"
                 },
                 {
                     "title": "Op maat",
@@ -1000,7 +999,7 @@
                     "excludedFeatures": [],
                     "description": "Heeft uw zaak meerdere vestigingen, een hotel erbij of meer volume dan in Pro past? Dan werk ik een pakket op maat uit met een vaste maandprijs, ook dan zonder commissie per reservatie of bestelling.",
                     "buttonText": "Bespreek uw wensen",
-                    "buttonHref": "/contact?pakket=restaurant-op-maat"
+                    "buttonHref": "/industry/restaurant-website-laten-maken?offerte=restaurant-op-maat"
                 }
             ],
             "growthTitle": "Een drukke maand? Gasten kunnen blijven boeken.",
@@ -1016,7 +1015,7 @@
             "items": [
                 {
                     "title": "Wat kost een restaurant of horeca website laten maken?",
-                    "description": "Een restaurantwebsite met digitale menukaart kost <strong>€50 per maand excl. btw</strong>. Met online reservaties en maximaal drie talen kiest u Premium voor <strong>€90</strong>. Pro kost <strong>€140</strong> en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. Er zijn geen opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
+                    "description": "Een restaurantwebsite met digitale menukaart kost <strong>€50 per maand excl. btw</strong>. Met online reservaties en maximaal drie talen kiest u Premium voor <strong>€90</strong>. Pro kost <strong>€140</strong> en omvat ook online bestellen. Hosting, onderhoud, domeinnaam, SEO en support zijn inbegrepen. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen."
                 },
                 {
                     "title": "Hoe snel staat mijn restaurant website online?",
@@ -1070,7 +1069,7 @@
             "title": "Liever een eenmalige betaling?",
             "text": "<p>Liever <strong>geen maandelijks abonnement</strong>? Voor een restaurant website zonder reservatie- of bestelsysteem kan dat. U betaalt dan een vast bedrag voor de ontwikkeling, zonder doorlopende kosten. Hosting en domeinnaam regelt u zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding.</p><p>Online reservaties en bestellingen hebben doorlopend hosting, onderhoud en opvolging nodig. Daarom zitten die alleen in de maandpakketten. Neem <a href='/nl/contact'>contact op</a> voor een vrijblijvende offerte voor uw zaak.</p>",
             "button": {
-                "href": "/contact?pakket=restaurant-eenmalig",
+                "href": "/industry/restaurant-website-laten-maken?offerte=restaurant-eenmalig",
                 "text": "Vraag Offerte Aan"
             }
         },
@@ -1083,7 +1082,7 @@
             "button": [
                 {
                     "text": "Bespreek mijn restaurantwebsite",
-                    "href": "/contact?pakket=restaurant"
+                    "href": "/industry/restaurant-website-laten-maken?offerte=restaurant"
                 },
                 {
                     "text": "Stuur mij een WhatsApp",

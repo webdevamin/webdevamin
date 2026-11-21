@@ -37,7 +37,7 @@ export function applyTaxiPricing(source, catalog = TAXI_CATALOG) {
         booking ? 'De genoemde aantallen e-mails, adreszoekopdrachten en ritberekeningen zijn inbegrepen' : 'De genoemde e-mails vanuit uw website zijn inbegrepen',
       ],
       microcopy: item ? 'Exclusief btw. Minimumtermijn: 12 maanden.' : 'Vraag de actuele prijs en inbegrepen aantallen aan.',
-      excludedFeatures: [], buttonText: 'Bespreek dit pakket', buttonHref: '#contact',
+      excludedFeatures: [], buttonText: 'Bespreek dit pakket', buttonHref: '/industry/taxi-website-laten-maken?offerte=taxi',
     };
   });
   blocks.pricing.items.push({
@@ -45,7 +45,7 @@ export function applyTaxiPricing(source, catalog = TAXI_CATALOG) {
     tagline: 'Een website die past bij uw eigen werkwijze.',
     description: 'Voor extra functies, meer dan 500 online boekingen per maand of een grotere website. We bespreken uw wensen en maken een persoonlijk voorstel.',
     features: ['Meer dan 3 talen of zakelijke e-mailaccounts', 'Online betalen, SMS of chauffeursplanning op aanvraag', 'Prijs en gebruikslimieten vooraf afgesproken'],
-    buttonText: 'Bespreek mijn wensen', buttonHref: '#contact',
+    buttonText: 'Bespreek mijn wensen', buttonHref: '/industry/taxi-website-laten-maken?offerte=taxi-op-maat',
   });
   if (!catalog) {
     page.seo.title = page.seo.ogTitle = 'Taxi website laten maken | Bereken uw voorstel';

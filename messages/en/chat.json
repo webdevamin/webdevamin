@@ -1,0 +1,27 @@
+{
+    "ask": "Ask",
+    "launcher": "Ask a question",
+    "placeholder": "Ask your question here",
+    "inputLabel": "Your question to {name}",
+    "send": "Send",
+    "close": "Close chat",
+    "newChat": "New chat",
+    "aiLabel": "AI assistant",
+    "conversation": "Conversation",
+    "thinking": "Thinking…",
+    "suggestions": "For example",
+    "disclosure": "You are chatting with an AI assistant. Answers can contain mistakes, so do not share sensitive details.",
+    "privacyLink": "Privacy policy",
+    "formIntro": "I have prepared your request. Check it and send it in one click.",
+    "quoteButton": "Request a quote",
+    "formButton": "Complete your request",
+    "unavailable": "The chat is not working right now. Feel free to request a quote instead.",
+    "errors": {
+        "limited": "You are sending messages quickly. Wait a minute and try again.",
+        "busy": "I am still answering a previous question. Try again in a moment.",
+        "full": "This conversation is full. Start a new chat to continue.",
+        "unavailable": "The chat is not working right now. Feel free to request a quote instead.",
+        "invalid": "This question could not be sent. Make it a bit shorter or try again.",
+        "error": "Something went wrong. Please try again."
+    }
+}

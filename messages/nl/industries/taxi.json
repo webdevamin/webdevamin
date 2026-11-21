@@ -28,7 +28,7 @@
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
             "url": "https://webdevamin.com/nl",
-            "logo": "https://webdevamin.com/images/logo-light.png",
+            "logo": "https://webdevamin.com/images/logo-512.png",
             "image": "https://webdevamin.com/images/taxi-website-laten-maken_og.png",
             "description": "Taxi website laten maken vanaf {{websiteMonthly}} per maand. All-in-one pakket met hosting, onderhoud, SEO en optioneel een online boekingssysteem.",
             "email": "amin@webdevamin.com",
@@ -118,7 +118,7 @@
             },
             "button": [
                 {
-                    "href": "#contact",
+                    "href": "/industry/taxi-website-laten-maken?offerte=taxi",
                     "text": "Bespreek mijn website",
                     "external": false
                 },
@@ -128,7 +128,7 @@
                 },
                 {
                     "text": "Gratis Offerte",
-                    "href": "/contact?pakket=taxi"
+                    "href": "/industry/taxi-website-laten-maken?offerte=taxi"
                 },
                 {
                     "text": "Bekijk Live Voorbeeld",
@@ -402,7 +402,7 @@
             "title": "Eenmalige Betaling",
             "text": "<p>Een zelfstandige taxiwebsite koopt u vanaf <strong>{{oneTimeWebsite}}</strong>, of vanaf <strong>{{oneTimeBooking}} met online boeken</strong>. Excl. btw. De standaardomvang is één bedrijf, één taal en één zakelijk e-mailaccount. De website en alle websitebestanden zijn van u. Ik zet de benodigde accounts op uw naam en help u op weg.</p><p>U betaalt zelf voor het online houden van uw website, uw webadres, zakelijke e-mail, adreszoeken en routeberekeningen. Onderhoud en latere wijzigingen zijn apart. Voor een boekingswebsite kunt u voorlopig <strong>{{providerMonthly}} per maand</strong> aan lopende kosten reserveren. Dit is een voorbeeld van de lopende kosten, geen vaste prijs of minimum. Google biedt betaling naar gebruik en optionele abonnementen; een Maps-abonnement is niet verplicht.</p>",
             "button": {
-                "href": "#contact",
+                "href": "/industry/taxi-website-laten-maken?offerte=taxi",
                 "text": "Bespreek mijn website"
             }
         },
@@ -414,7 +414,7 @@
             "text": "Twijfelt u welk pakket bij uw taxibedrijf past? Vertel mij wat u nodig heeft. Ik denk met u mee en leg duidelijk uit wat uw website kost en wat ik voor u regel. Vrijblijvend en zonder verplichtingen.",
             "button": [
                 {
-                    "href": "#contact",
+                    "href": "/industry/taxi-website-laten-maken?offerte=taxi",
                     "text": "Bespreek mijn website",
                     "external": false
                 }

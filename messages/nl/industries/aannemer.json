@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Website laten maken voor aannemer of bouwbedrijf | €50/maand",
-        "description": "Website laten maken voor uw aannemers- of bouwbedrijf vanaf €50/maand. Met realisaties, offerteformulier, hosting en onderhoud. Zonder opstartkosten.",
+        "description": "Website laten maken voor uw aannemers- of bouwbedrijf vanaf €50/maand. Met realisaties, offerteformulier, hosting en onderhoud.",
         "canonical": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken",
         "ogTitle": "Aannemer website laten maken | Vanaf €50/maand",
         "ogDescription": "Website voor aannemers en bouwbedrijven vanaf €50/maand, met realisaties, offerteformulier, hosting en onderhoud.",
@@ -30,7 +30,7 @@
             "@id": "https://webdevamin.com/#organization",
             "name": "Webdevamin",
             "url": "https://webdevamin.com/nl",
-            "logo": "https://webdevamin.com/images/logo-light.png",
+            "logo": "https://webdevamin.com/images/logo-512.png",
             "image": "https://webdevamin.com/social-cards/nl--industry--aannemer-website-laten-maken/opengraph-image",
             "description": "Webontwikkelaar uit Brugge. Websites voor aannemers en bouwbedrijven vanaf €50 per maand excl. btw, met realisaties, offerteformulier, hosting, domeinnaam, onderhoud en support.",
             "email": "amin@webdevamin.com",
@@ -55,7 +55,7 @@
             "url": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken",
             "name": "Website laten maken voor aannemers en bouwbedrijven",
             "serviceType": "Webdesign voor aannemers en bouwbedrijven",
-            "description": "Een website voor uw aannemers- of bouwbedrijf met uw diensten, foto's van realisaties, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €50 per maand excl. btw, zonder opstartkosten en met een minimale looptijd van twaalf maanden.",
+            "description": "Een website voor uw aannemers- of bouwbedrijf met uw diensten, foto's van realisaties, werkgebied en een offerteformulier. Hosting, domeinnaam, onderhoud, SEO-basis en support inbegrepen. Vanaf €50 per maand excl. btw en met een minimale looptijd van twaalf maanden.",
             "provider": {
                 "@id": "https://webdevamin.com/#organization"
             },
@@ -76,7 +76,7 @@
                     "@type": "Offer",
                     "name": "Standaard website voor een aannemer of bouwbedrijf",
                     "url": "https://webdevamin.com/nl/industry/aannemer-website-laten-maken#pricing",
-                    "description": "Vanaf €50 per maand excl. btw. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
+                    "description": "Vanaf €50 per maand excl. btw. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. Extra functionaliteiten op offerte.",
                     "priceCurrency": "EUR",
                     "priceSpecification": {
                         "@type": "UnitPriceSpecification",
@@ -125,7 +125,7 @@
             "slug": "hero",
             "component": "hero",
             "title": "Website laten maken voor aannemers en bouwbedrijven",
-            "text": "<p>Laat zien wat u bouwt, waar u werkt en hoe een klant een offerte aanvraagt. Ik maak uw website met <strong>uw diensten, foto's van uw realisaties en een offerteformulier</strong>, zoals ik dat deed voor William Projecten, een algemene aannemer uit Brugge.</p><p>Vanaf <strong>€50/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Geen opstartkosten. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
+            "text": "<p>Laat zien wat u bouwt, waar u werkt en hoe een klant een offerte aanvraagt. Ik maak uw website met <strong>uw diensten, foto's van uw realisaties en een offerteformulier</strong>, zoals ik dat deed voor William Projecten, een algemene aannemer uit Brugge.</p><p>Vanaf <strong>€50/maand excl. btw</strong>, met hosting, domeinnaam, onderhoud en support inbegrepen. Minimale looptijd twaalf maanden, daarna maandelijks opzegbaar. <a href='#pricing'>Bekijk wat inbegrepen is</a>.</p>",
             "image": {
                 "src": "/images/aannemer-hero.webp",
                 "alt": "Illustratie van twee vakmannen die een bakstenen woning renoveren, met bouwplannen, metselwerk en gereedschap.",
@@ -135,7 +135,7 @@
             "button": [
                 {
                     "text": "Bespreek mijn website",
-                    "href": "/contact?pakket=aannemer"
+                    "href": "/industry/aannemer-website-laten-maken?offerte=aannemer"
                 },
                 {
                     "text": "Bekijk William Projecten",
@@ -186,7 +186,7 @@
             "button": [
                 {
                     "text": "Bespreek uw aannemerswebsite",
-                    "href": "/contact?pakket=aannemer"
+                    "href": "/industry/aannemer-website-laten-maken?offerte=aannemer"
                 }
             ]
         },
@@ -194,7 +194,7 @@
             "slug": "why-all-in-one",
             "title": "U staat op de werf. Ik onderhoud uw website.",
             "subtitle": "Eén aanspreekpunt voor uw website",
-            "text": "<p>Naast de bouw van uw website regel ik de hosting, de domeinnaam en de technische updates. Nieuwe werffoto's, een extra dienst of een ander telefoonnummer? U stuurt het door, ik pas het aan.</p><p>Ik ben Amin, <a href='/nl' title='Website laten maken in Brugge'>webontwikkelaar in Brugge</a>. U bespreekt alles rechtstreeks met de persoon die uw website bouwt. Voor Thermogroep, een isolatiebedrijf uit Brugge, maakte ik bijvoorbeeld een website met een eigen pagina per isolatiewerk. Meer voorbeelden vindt u bij <a href='/nl/projects' title='Gerealiseerde websites van Webdevamin'>mijn projecten</a>.</p><p>Bij een webbureau betaalt u voor een website met een paar pagina's meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. Bij mij start het vanaf <strong>€50 per maand excl. btw</strong>, zonder opstartkosten.</p>",
+            "text": "<p>Naast de bouw van uw website regel ik de hosting, de domeinnaam en de technische updates. Nieuwe werffoto's, een extra dienst of een ander telefoonnummer? U stuurt het door, ik pas het aan.</p><p>Ik ben Amin, <a href='/nl' title='Website laten maken in Brugge'>webontwikkelaar in Brugge</a>. U bespreekt alles rechtstreeks met de persoon die uw website bouwt. Voor Thermogroep, een isolatiebedrijf uit Brugge, maakte ik bijvoorbeeld een website met een eigen pagina per isolatiewerk. Meer voorbeelden vindt u bij <a href='/nl/projects' title='Gerealiseerde websites van Webdevamin'>mijn projecten</a>.</p><p>Bij een webbureau betaalt u voor een website met een paar pagina's meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. Bij mij start het vanaf <strong>€50 per maand excl. btw</strong>.</p>",
             "img": {
                 "src": "/images/projects/thermogroep-project.png",
                 "alt": "Website van isolatiebedrijf Thermogroep uit Brugge op desktop, laptop en gsm, gebouwd en onderhouden door Webdevamin.",
@@ -302,7 +302,7 @@
             "title": "Wat kost een website voor een aannemer?",
             "subtitle": "Website en onderhoud in één maandbedrag",
             "highlight": "Vanaf €50/maand excl. btw",
-            "text": "<p><strong>Standaard</strong> start vanaf <strong>€50 per maand excl. btw</strong>, met uw diensten, realisaties en een offerteformulier. Wilt u ook online afspraken voor plaatsbezoeken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>Er zijn geen opstartkosten. De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en de gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
+            "text": "<p><strong>Standaard</strong> start vanaf <strong>€50 per maand excl. btw</strong>, met uw diensten, realisaties en een offerteformulier. Wilt u ook online afspraken voor plaatsbezoeken, klantenbeheer of andere extra functies? Dan bespreken we het pakket <strong>Op maat</strong>. Hosting, domeinnaam, onderhoud en support zijn bij beide inbegrepen.</p><p>De minimale looptijd is <strong>twaalf maanden</strong>, daarna kunt u maandelijks opzeggen. De uiteindelijke prijs hangt af van de omvang en de gekozen functies. U krijgt die vooraf in uw voorstel.</p>",
             "items": [
                 {
                     "title": "Standaard",
@@ -319,13 +319,12 @@
                         "<strong>Hosting en domeinnaam</strong> inbegrepen",
                         "<strong>Onderhoud en updates</strong> inbegrepen",
                         "Aanpassingen aan uw inhoud <strong>door mij uitgevoerd</strong>",
-                        "Support met <strong>antwoord binnen 24 uur</strong>",
-                        "<strong>Geen opstartkosten</strong>"
+                        "Support met <strong>antwoord binnen 24 uur</strong>"
                     ],
                     "excludedFeatures": [],
                     "description": "Voor een website die uw werken toont en offerteaanvragen ontvangt. Extra functies bespreken we binnen het pakket Op maat.",
                     "buttonText": "Bespreek Standaard",
-                    "buttonHref": "/contact?pakket=aannemer"
+                    "buttonHref": "/industry/aannemer-website-laten-maken?offerte=aannemer"
                 },
                 {
                     "title": "Op maat",
@@ -345,7 +344,7 @@
                     "excludedFeatures": [],
                     "description": "We bespreken welke functies u nodig heeft, bijvoorbeeld een planning voor plaatsbezoeken of klantenbeheer. U krijgt een offerte voor de gekozen functies, met de prijs en aanpak vooraf vastgelegd.",
                     "buttonText": "Bespreek uw wensen",
-                    "buttonHref": "/contact?pakket=aannemer-op-maat"
+                    "buttonHref": "/industry/aannemer-website-laten-maken?offerte=aannemer-op-maat"
                 }
             ]
         },
@@ -355,7 +354,7 @@
             "title": "Liever een eenmalige betaling?",
             "text": "<p>U kunt de bouw van uw aannemerswebsite ook eenmalig betalen. Ik maak daarvoor een offerte op basis van de gewenste inhoud en functies.</p><p>Hosting en domeinnaam regelt u dan zelf, of ik verzorg ze apart tegen een jaarlijkse vergoeding. We spreken vooraf af wie het onderhoud en latere wijzigingen opneemt, zodat duidelijk is welke kosten er na de oplevering nog zijn.</p>",
             "button": {
-                "href": "/contact?pakket=aannemer-eenmalig",
+                "href": "/industry/aannemer-website-laten-maken?offerte=aannemer-eenmalig",
                 "text": "Vraag een eenmalige offerte"
             }
         },
@@ -368,7 +367,7 @@
             "items": [
                 {
                     "title": "Wat kost een website laten maken voor een aannemer?",
-                    "description": "Bij Webdevamin start een website voor uw bouwbedrijf vanaf <strong>€50 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen, zonder opstartkosten. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. Bij een webbureau betaalt u voor een vergelijkbare website meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. De definitieve prijs hangt af van het aantal pagina's en eventuele extra functies. U krijgt die vooraf."
+                    "description": "Bij Webdevamin start een website voor uw bouwbedrijf vanaf <strong>€50 per maand excl. btw</strong>. Hosting, domeinnaam, onderhoud, support en een offerteformulier zijn inbegrepen. De minimale looptijd is twaalf maanden, daarna kunt u maandelijks opzeggen. Bij een webbureau betaalt u voor een vergelijkbare website meestal eenmalig enkele honderden tot duizenden euro, plus hosting en onderhoud. De definitieve prijs hangt af van het aantal pagina's en eventuele extra functies. U krijgt die vooraf."
                 },
                 {
                     "title": "Heb ik een website nodig als ik genoeg werk heb via mond-tot-mondreclame?",
@@ -420,7 +419,7 @@
             "button": [
                 {
                     "text": "Bespreek mijn aannemerswebsite",
-                    "href": "/contact?pakket=aannemer"
+                    "href": "/industry/aannemer-website-laten-maken?offerte=aannemer"
                 },
                 {
                     "text": "Stuur mij een WhatsApp",

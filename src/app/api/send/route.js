@@ -1,4 +1,4 @@
-const { ADMIN_URL, ADMIN_API_KEY, MAIL_TO } = process.env;
+const { ADMIN_URL, ADMIN_TENANT_ID, ADMIN_PUBLIC_API_KEY } = process.env;
 
 /*
  * Verwijdert HTML uit formulierwaarden voordat ze in de e-mail belanden.
@@ -7,7 +7,56 @@ const stripHtml = (value = '') => {
   return String(value).replace(/(<([^>]+)>)/gi, '').trim();
 };
 
-const escapeHtml = value => value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+// The answers of the quote window (components/QuoteModal.jsx), each a short text. Null when anything else was sent.
+const QUOTE_FIELDS = ['need', 'budget', 'package', 'page', 'source'];
+const parseQuote = quote => {
+  if (!quote || typeof quote !== 'object' || Array.isArray(quote)) return null;
+  const clean = {};
+  for (const key of QUOTE_FIELDS) {
+    const value = quote[key] ?? '';
+    if (typeof value !== 'string' || value.length > 120) return null;
+    clean[key] = stripHtml(value);
+  }
+  return clean;
+};
+
+// Dutch labels for the quote details in the email of the webdevamin.com tenant.
+const QUOTE_LINES = { budget: 'Budget', package: 'Pakket', page: 'Pagina', source: 'Bron' };
+
+/*
+ * Sends the request through this site's own tenant ("Own website") in webdevamin.app: a quote request or a contact
+ * message. Throws when the tenant did not accept it.
+ */
+async function sendViaTenant({ adminUrl, name, email, phone, message, callback, quote }) {
+  const [path, body] = quote
+    ? ['/api/public/quote-requests', {
+      tenantId: ADMIN_TENANT_ID,
+      channel: 'form',
+      form: {
+        name, email, phone: phone || null,
+        service: (quote.need || quote.package || '').slice(0, 200) || null,
+        message: ['Offerteaanvraag via webdevamin.com.',
+          Object.entries(QUOTE_LINES).filter(([key]) => quote[key]).map(([key, label]) => `${label}: ${quote[key]}`).join('\n'),
+          message].filter(Boolean).join('\n\n'),
+      },
+    }]
+    : ['/api/public/email/send', {
+      tenantId: ADMIN_TENANT_ID,
+      type: 'contact',
+      // A fixed subject keeps the visitor's name out of the platform's sending log.
+      form: { name, email, ...(phone ? { phone } : {}), subject: callback ? 'Terugbelverzoek website' : 'Contactformulier website', message },
+    }];
+  const res = await fetch(`${adminUrl}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': ADMIN_PUBLIC_API_KEY },
+    body: JSON.stringify(body),
+    signal: AbortSignal.timeout(15000),
+  });
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(`Tenant did not accept the request (${res.status}${data.error ? `: ${data.error}` : ''}).`);
+  }
+}
 
 export async function POST(req) {
   try {
@@ -16,7 +65,9 @@ export async function POST(req) {
     let body;
     try { body = JSON.parse(text); } catch { return Response.json({ error: 'Invalid request.' }, { status: 400 }); }
     if (!body || typeof body !== 'object') return Response.json({ error: 'Invalid request.' }, { status: 400 });
-    const { name, email, message, website, callback = false, phone = '' } = body;
+    const { name, email, message = '', website, callback = false, phone = '' } = body;
+    const isQuote = body.quote !== undefined;
+    const quote = isQuote ? parseQuote(body.quote) : null;
 
     // Honeypot check - if website field is filled, it's likely a bot
     if (website) {
@@ -33,11 +84,12 @@ export async function POST(req) {
     }
 
     if (typeof name !== 'string' || typeof email !== 'string' || typeof message !== 'string'
-      || typeof callback !== 'boolean' || typeof phone !== 'string' || phone.length > 40) {
+      || typeof callback !== 'boolean' || typeof phone !== 'string' || phone.length > 40 || (isQuote && !quote)) {
       return Response.json({ error: 'Please check your details.' }, { status: 400 });
     }
-    const cleanPhone = callback ? phone.trim() : '';
-    if (callback && (!/^[+0-9(). /-]{5,40}$/.test(cleanPhone) || !/\d/.test(cleanPhone))) {
+    // A quote request may leave its phone number empty; the callback form needs one.
+    const cleanPhone = callback || isQuote ? phone.trim() : '';
+    if ((callback || cleanPhone) && (!/^[+0-9(). /-]{5,40}$/.test(cleanPhone) || !/\d/.test(cleanPhone))) {
       return Response.json({ error: 'Please enter your phone number.' }, { status: 400 });
     }
 
@@ -45,7 +97,7 @@ export async function POST(req) {
     const cleanEmail = stripHtml(email);
     const cleanMessage = stripHtml(message);
 
-    if (!cleanName || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(cleanEmail) || !cleanMessage) {
+    if (!cleanName || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(cleanEmail) || (!cleanMessage && !isQuote)) {
       return new Response(
         JSON.stringify({ error: 'Please fill in the form correctly.' }),
         {
@@ -57,60 +109,13 @@ export async function POST(req) {
       );
     }
 
-    if (!ADMIN_URL || !ADMIN_API_KEY || !MAIL_TO) {
+    const adminUrl = (ADMIN_URL || '').replace(/\/+$/, '');
+    if (!adminUrl || !ADMIN_TENANT_ID || !ADMIN_PUBLIC_API_KEY) {
       throw new Error('Admin app email delivery is not configured.');
     }
+    await sendViaTenant({ adminUrl, name: cleanName, email: cleanEmail, phone: cleanPhone, message: cleanMessage, callback, quote });
 
-    const emailData = {
-      from: 'hello@mail.webdevamin.com',
-      to: [{ email: MAIL_TO }],
-      subject: `New portfolio message from ${cleanName}`,
-      replyTo: [{ email: cleanEmail, name: cleanName }],
-      html: `<html><body>
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${escapeHtml(cleanName)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(cleanEmail)}</p>
-        ${callback ? `<p><strong>Callback requested:</strong> Yes</p><p><strong>Phone:</strong> ${escapeHtml(cleanPhone)}</p>` : ''}
-        <p><strong>Message:</strong></p>
-        <p>${escapeHtml(cleanMessage).replace(/\n/g, '<br>')}</p>
-      </body></html>`,
-    };
-
-    const adminUrl = ADMIN_URL.replace(/\/+$/, '');
-    const res = await fetch(`${adminUrl}/api/saas/integrations/email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${ADMIN_API_KEY}`
-      },
-      body: JSON.stringify(emailData),
-    });
-
-    const data = await res.json().catch(() => ({}));
-
-    if (!res.ok) {
-      const providerError = data.error || `Request failed with status ${res.status}`;
-      console.error('Admin app email error:', {
-        status: res.status,
-        code: data.code || null,
-        error: providerError,
-      });
-      throw new Error(providerError);
-    }
-
-    if (!data.messageId) {
-      throw new Error('Admin app did not return an email message ID.');
-    }
-
-    return new Response(
-      JSON.stringify({ message: `Bedankt! Uw bericht werd successvol verstuurd. Ik hou u zo snel mogelijk op hoogte!` }),
-      {
-        status: 200,
-        headers: {
-          'content-type': 'application/json'
-        }
-      }
-    );
+    return Response.json({ message: 'Bedankt! Uw bericht werd successvol verstuurd. Ik hou u zo snel mogelijk op hoogte!' });
   } catch (err) {
     console.error(
       'Contact email send failed:',
