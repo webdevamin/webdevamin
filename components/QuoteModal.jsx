@@ -3,14 +3,18 @@
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import { CheckCircle2, Phone, Sparkles, X } from 'lucide-react';
 import posthog from 'posthog-js';
+import { useRouter } from 'next/navigation';
 import { Link } from '../src/i18n/navigation';
 import Alert from './Alert';
 import ButtonOne from './Buttons/ButtonOne';
+import Turnstile from './Turnstile';
 import { useChat } from './Chat/ChatProvider';
 
 // The quote window, on every page. It opens from any link with ?offerte in it (the quote buttons, also on other
 // websites, for example https://webdevamin.com/nl?offerte), and from the AI chat. The value names the package
 // (?offerte=premium), which picks the matching answer and is sent along with the request.
+// When the texts have a wizardPath (Dutch), those links open the quote page instead, with the same value as ?pakket=.
+// The AI chat keeps opening this window.
 
 const PARAM = 'offerte';
 const OPEN_EVENT = 'webdevamin:quote';
@@ -32,6 +36,7 @@ const quoteParam = () => new URL(window.location.href).searchParams.get(PARAM);
 
 export default function QuoteModal({ texts }) {
     const chat = useChat();
+    const router = useRouter();
     const dialog = useRef(null);
     const opener = useRef(null);
     const previousOverflow = useRef(null);
@@ -44,6 +49,7 @@ export default function QuoteModal({ texts }) {
     const [form, setForm] = useState(emptyForm);
     const [status, setStatus] = useState(null);
     const errorBox = useRef(null);
+    const turnstile = useRef(null);
 
     // Keeps the error in view, also on small screens where the button sits at the bottom edge.
     useEffect(() => {
@@ -75,9 +81,19 @@ export default function QuoteModal({ texts }) {
         show(value, detail);
     }, [show]);
 
+    const { wizardPath } = texts;
+    const openWizard = useCallback((value, replace = false) => {
+        const url = value ? `${wizardPath}?pakket=${encodeURIComponent(value)}` : wizardPath;
+        if (replace) router.replace(url);
+        else router.push(url);
+    }, [router, wizardPath]);
+
     useEffect(() => {
         const value = quoteParam();
-        if (value !== null) show(value);
+        if (value !== null) {
+            if (wizardPath) openWizard(value, true);
+            else show(value);
+        }
 
         // In the capture phase, before Next.js handles the link, so the page stays where it is.
         const onClick = event => {
@@ -87,7 +103,8 @@ export default function QuoteModal({ texts }) {
             const url = new URL(link.href, window.location.href);
             if (url.origin !== window.location.origin || !url.searchParams.has(PARAM)) return;
             event.preventDefault();
-            openWithUrl(url.searchParams.get(PARAM));
+            if (wizardPath) openWizard(url.searchParams.get(PARAM));
+            else openWithUrl(url.searchParams.get(PARAM));
         };
         const onOpen = event => openWithUrl('', event.detail);
         const onPopState = () => {
@@ -104,7 +121,7 @@ export default function QuoteModal({ texts }) {
             window.removeEventListener('popstate', onPopState);
             if (previousOverflow.current !== null) document.body.style.overflow = previousOverflow.current;
         };
-    }, [show, openWithUrl]);
+    }, [show, openWithUrl, wizardPath, openWizard]);
 
     const onClose = () => {
         if (previousOverflow.current !== null) {
@@ -146,16 +163,18 @@ export default function QuoteModal({ texts }) {
             source,
         };
         try {
+            const turnstileToken = await turnstile.current?.token();
             const response = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...form, quote }),
+                body: JSON.stringify({ ...form, quote, turnstileToken }),
             });
             if (response.ok) {
                 setStatus('success');
                 if (posthog.__loaded) posthog.capture('quote_request_sent', { package: pkg || null, need: need || null, budget: budget || null, source: source || 'form' });
             } else {
-                setStatus(response.status >= 400 && response.status < 500 ? 'clienterror' : 'servererror');
+                // 403: the bot check failed. Sending again usually works, so it is not shown as a mistake in the details.
+                setStatus(response.status >= 400 && response.status < 500 && response.status !== 403 ? 'clienterror' : 'servererror');
             }
         } catch {
             setStatus('servererror');
@@ -256,6 +275,7 @@ export default function QuoteModal({ texts }) {
                                 <input type="text" name="website" value={form.website} onChange={handleChange}
                                     autoComplete="off" tabIndex={-1} aria-hidden="true" aria-label="Website"
                                     style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }} />
+                                <Turnstile ref={turnstile} className="mt-7" />
 
                                 {/* Right above the button, where the visitor is looking after sending, so a failed send is never missed. */}
                                 <div ref={errorBox} role="alert" className="scroll-mb-5">

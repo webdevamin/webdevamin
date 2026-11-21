@@ -36,5 +36,6 @@
     "askButton": "Vraag het de AI-assistent",
     "callText": "Liever meteen praten?",
     "callLink": "Bel 0470 93 09 16",
-    "headerButton": "Gratis offerte"
+    "headerButton": "Gratis offerte",
+    "wizardPath": "/nl/offerte"
 }

@@ -55,6 +55,17 @@ test('contact, callback and quote requests go through the tenant in webdevamin.a
     assert.doesNotMatch(sent.body.form.message, /Bron/);
     assert.equal((await POST(request({ name: 'Visitor', email: 'visitor@example.com', quote }))).status, 200);
     assert.equal(state.calls[4].body.form.phone, null);
+
+    // The quote page sends more answers; the visitor's current website is quote.website, not the honeypot.
+    const wizard = { need: 'Een nieuwe website', package: 'Premium', price: '€90 per maand', sector: 'Kapper of schoonheidssalon',
+        features: 'Klanten boeken online, Automatische e-mails', payment: 'Per maand, alles inbegrepen', timing: 'Zo snel mogelijk',
+        company: 'Salon <b>Test</b>', website: 'salontest.be', page: '/nl/offerte', source: 'quote page' };
+    assert.equal((await POST(request({ name: 'Visitor', email: 'visitor@example.com', message: 'Graag snel', quote: wizard }))).status, 200);
+    const { form } = state.calls[5].body;
+    assert.equal(form.service, 'Een nieuwe website');
+    assert.match(form.message, /Pakket: Premium\nPrijs: €90 per maand\nSector: Kapper of schoonheidssalon\nWat de website moet kunnen: Klanten boeken online, Automatische e-mails\nBetaling: Per maand, alles inbegrepen\nOnline: Zo snel mogelijk\nBedrijf: Salon Test\nHuidige website: salontest\.be\nPagina: \/nl\/offerte\nBron: quote page\n\nGraag snel$/);
+    assert.equal((await POST(request({ name: 'Visitor', email: 'visitor@example.com', quote: { ...wizard, features: 'x'.repeat(300) } }))).status, 200);
+    assert.equal((await POST(request({ name: 'Visitor', email: 'visitor@example.com', quote: { ...wizard, features: 'x'.repeat(301) } }))).status, 400);
 });
 
 test('spam and invalid forms never reach webdevamin.app', async t => {
@@ -84,4 +95,33 @@ test('a refused, failed or unconfigured delivery returns an error instead of a s
     const unconfigured = await route(false);
     assert.equal((await unconfigured(request(valid))).status, 500);
     assert.equal(state.calls.length, 2);
+});
+
+test('with a Turnstile secret, only forms that Cloudflare confirms reach webdevamin.app', async t => {
+    const SECRET_LINE = 'const { TURNSTILE_SECRET_KEY } = process.env;';
+    assert.ok(source.includes(SECRET_LINE));
+    const { POST: protectedPOST } = await import(`data:text/javascript;base64,${Buffer.from(source
+        .replace(ENV_LINE, "const ADMIN_URL = 'https://mail.test', ADMIN_TENANT_ID = 'tenant-1', ADMIN_PUBLIC_API_KEY = 'wdk_tenant_test';")
+        .replace(SECRET_LINE, "const TURNSTILE_SECRET_KEY = 'turnstile-secret';")).toString('base64')}#turnstile`);
+    const state = mockFetch(t);
+    state.reply = () => Response.json({ success: state.calls.at(-1).body.response === 'good-token' });
+    const send = (body, ip) => protectedPOST(new Request('https://example.com/api/send', {
+        method: 'POST', body: JSON.stringify(body), headers: ip ? { 'CF-Connecting-IP': ip } : {},
+    }));
+
+    assert.equal((await send(valid)).status, 403);
+    assert.equal((await send({ ...valid, turnstileToken: 'bad-token' })).status, 403);
+    assert.equal(state.calls.length, 1);
+    assert.equal(state.calls[0].url, 'https://challenges.cloudflare.com/turnstile/v0/siteverify');
+
+    state.reply = () => state.calls.at(-1).url.includes('siteverify')
+        ? Response.json({ success: state.calls.at(-1).body.response === 'good-token' })
+        : Response.json({ ok: true });
+    assert.equal((await send({ ...valid, turnstileToken: 'good-token' }, '203.0.113.5')).status, 200);
+    assert.deepEqual(state.calls[1].body, { secret: 'turnstile-secret', response: 'good-token', remoteip: '203.0.113.5' });
+    assert.equal(state.calls[2].url, 'https://mail.test/api/public/email/send');
+
+    // Invalid details are refused before Cloudflare is asked.
+    assert.equal((await send({ ...valid, email: 'invalid', turnstileToken: 'good-token' })).status, 400);
+    assert.equal(state.calls.length, 3);
 });

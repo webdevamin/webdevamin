@@ -1,4 +1,5 @@
 const { ADMIN_URL, ADMIN_TENANT_ID, ADMIN_PUBLIC_API_KEY } = process.env;
+const { TURNSTILE_SECRET_KEY } = process.env;
 
 /*
  * Verwijdert HTML uit formulierwaarden voordat ze in de e-mail belanden.
@@ -7,21 +8,28 @@ const stripHtml = (value = '') => {
   return String(value).replace(/(<([^>]+)>)/gi, '').trim();
 };
 
-// The answers of the quote window (components/QuoteModal.jsx), each a short text. Null when anything else was sent.
-const QUOTE_FIELDS = ['need', 'budget', 'package', 'page', 'source'];
+// The answers of the quote window (components/QuoteModal.jsx) and the quote page (components/QuoteWizard.jsx), each a
+// short text. Fields the window does not send stay empty. Null when anything else was sent.
+const QUOTE_FIELDS = ['need', 'budget', 'package', 'price', 'sector', 'features', 'payment', 'timing', 'company', 'website',
+  'page', 'source'];
+// The chosen features of the quote page can make a longer list.
+const quoteLimit = key => key === 'features' ? 300 : 120;
 const parseQuote = quote => {
   if (!quote || typeof quote !== 'object' || Array.isArray(quote)) return null;
   const clean = {};
   for (const key of QUOTE_FIELDS) {
     const value = quote[key] ?? '';
-    if (typeof value !== 'string' || value.length > 120) return null;
+    if (typeof value !== 'string' || value.length > quoteLimit(key)) return null;
     clean[key] = stripHtml(value);
   }
   return clean;
 };
 
-// Dutch labels for the quote details in the email of the webdevamin.com tenant.
-const QUOTE_LINES = { budget: 'Budget', package: 'Pakket', page: 'Pagina', source: 'Bron' };
+// Dutch labels for the quote details in the email of the webdevamin.com tenant, in this order.
+const QUOTE_LINES = {
+  budget: 'Budget', package: 'Pakket', price: 'Prijs', sector: 'Sector', features: 'Wat de website moet kunnen',
+  payment: 'Betaling', timing: 'Online', company: 'Bedrijf', website: 'Huidige website', page: 'Pagina', source: 'Bron',
+};
 
 /*
  * Sends the request through this site's own tenant ("Own website") in webdevamin.app: a quote request or a contact
@@ -56,6 +64,23 @@ async function sendViaTenant({ adminUrl, name, email, phone, message, callback, 
     const data = await res.json().catch(() => ({}));
     throw new Error(`Tenant did not accept the request (${res.status}${data.error ? `: ${data.error}` : ''}).`);
   }
+}
+
+/*
+ * True when Cloudflare Turnstile (components/Turnstile.jsx) confirms that a person sent the form. Each answer works
+ * once. Skipped while TURNSTILE_SECRET_KEY is not set, so the forms keep working until the keys exist.
+ */
+async function isHuman(token, ip) {
+  if (!TURNSTILE_SECRET_KEY) return true;
+  if (typeof token !== 'string' || !token || token.length > 2048) return false;
+  const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ secret: TURNSTILE_SECRET_KEY, response: token, ...(ip ? { remoteip: ip } : {}) }),
+    signal: AbortSignal.timeout(10000),
+  });
+  const data = await res.json().catch(() => ({}));
+  return data.success === true;
 }
 
 export async function POST(req) {
@@ -107,6 +132,10 @@ export async function POST(req) {
           }
         }
       );
+    }
+
+    if (!(await isHuman(body.turnstileToken, req.headers.get('CF-Connecting-IP')))) {
+      return Response.json({ error: 'Verification failed.' }, { status: 403 });
     }
 
     const adminUrl = (ADMIN_URL || '').replace(/\/+$/, '');

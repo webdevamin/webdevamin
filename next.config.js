@@ -42,6 +42,12 @@ const nextConfig = {
         destination: '/nl',
         permanent: true,
       },
+      // Short link to the quote page, for sharing. A ?pakket= value is passed on.
+      {
+        source: '/offerte',
+        destination: '/nl/offerte',
+        permanent: false,
+      },
     ];
   },
   async headers() {

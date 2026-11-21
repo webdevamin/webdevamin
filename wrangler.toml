@@ -16,6 +16,7 @@ ADMIN_TENANT_ID = "83e7ff47-f21e-4e14-b5b9-f1585127aeea"
 ADMIN_URL = "https://webdevamin.app"
 NEXT_PUBLIC_POSTHOG_HOST = "https://eu.i.posthog.com"
 NEXT_PUBLIC_POSTHOG_KEY = "phc_C3750M5ZARkpD3kYdEgpvwYUq9FLG0xcKfyr7Jxu4VI"
+NEXT_PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAAGMTfqeFCSUGVR4W"
 NEXT_PUBLIC_URL = "https://webdevamin.com"
 
 # Limits AI chat questions per visitor: 6 per minute (src/app/api/chat/route.js). Each question costs part of the

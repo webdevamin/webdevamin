@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import ButtonOne from './Buttons/ButtonOne';
 import Alert from './Alert';
+import Turnstile from './Turnstile';
 
 const getInitForm = (message = '') => {
     return {
@@ -21,6 +22,7 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
     const [sending, setSending] = useState(false);
     const inFlight = useRef(false);
     const feedbackBox = useRef(null);
+    const turnstile = useRef(null);
     const id = useId();
 
     // Keeps the result in view, also when the button sits at the bottom edge of the screen or popup.
@@ -29,7 +31,8 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
     }, [afterSubmit]);
 
     const initAfterSubmit = (status, ok = false) => {
-        const title = ok ? 'success' : status >= 400 && status < 500 ? 'clienterror' : 'servererror';
+        // 403: the bot check failed. Sending again usually works, so it is not shown as a mistake in the details.
+        const title = ok ? 'success' : status >= 400 && status < 500 && status !== 403 ? 'clienterror' : 'servererror';
         setAfterSubmit(content.find(block => block.title === title));
     };
 
@@ -49,13 +52,14 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
         inFlight.current = true;
         setSending(true);
         setAfterSubmit(null);
+        const turnstileToken = await turnstile.current?.token();
 
         const options = {
             method: `POST`,
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(businessEnquiry ? { ...form, phone: form.callback ? form.phone : '' } : { name: form.name, email: form.email, message: form.message, website: form.website })
+            body: JSON.stringify(businessEnquiry ? { ...form, phone: form.callback ? form.phone : '', turnstileToken } : { name: form.name, email: form.email, message: form.message, website: form.website, turnstileToken })
         }
 
         try {
@@ -133,6 +137,7 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
                             style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }}
                         />
                     </div>
+                    <Turnstile ref={turnstile} className="mt-6" />
                     {/* Right above the button, where the visitor is looking after sending. */}
                     <div ref={feedbackBox} role="status" aria-live="polite" className="scroll-mb-5">
                         {afterSubmit && (
