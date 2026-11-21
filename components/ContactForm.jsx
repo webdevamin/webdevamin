@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import ButtonOne from './Buttons/ButtonOne';
 import Alert from './Alert';
 
@@ -20,7 +20,13 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
     const [afterSubmit, setAfterSubmit] = useState(null);
     const [sending, setSending] = useState(false);
     const inFlight = useRef(false);
+    const feedbackBox = useRef(null);
     const id = useId();
+
+    // Keeps the result in view, also when the button sits at the bottom edge of the screen or popup.
+    useEffect(() => {
+        if (afterSubmit) feedbackBox.current?.scrollIntoView({ block: 'nearest' });
+    }, [afterSubmit]);
 
     const initAfterSubmit = (status, ok = false) => {
         const title = ok ? 'success' : status >= 400 && status < 500 ? 'clienterror' : 'servererror';
@@ -81,11 +87,6 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
 
     return (
         <div className="ph-no-capture ph-mask">
-            <div role="status" aria-live="polite">
-                {afterSubmit && (
-                    <Alert text={afterSubmit.text} classes={businessEnquiry ? "mb-5" : "mt-7 md:mt-10"} bgColor={afterSubmit.backgroundColor} />
-                )}
-            </div>
             <form onSubmit={handleSubmit} className={businessEnquiry ? '' : 'mt-7 md:mt-10'} aria-busy={sending}>
                 <fieldset disabled={sending} className="min-w-0">
                     <div className='flex flex-col gap-3 sm:gap-4'>
@@ -131,6 +132,12 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
                             aria-label="Website"
                             style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }}
                         />
+                    </div>
+                    {/* Right above the button, where the visitor is looking after sending. */}
+                    <div ref={feedbackBox} role="status" aria-live="polite" className="scroll-mb-5">
+                        {afterSubmit && (
+                            <Alert text={afterSubmit.text} classes="mt-6" bgColor={afterSubmit.backgroundColor} />
+                        )}
                     </div>
                     <ButtonOne input={{ value: sending ? (formText.sending || formText.send) : formText.send }} classes={businessEnquiry ? 'w-full mt-6 disabled:opacity-60 disabled:cursor-wait' : 'w-full sm:w-1/3 md:w-1/4 mt-10 sm:mt-12 sm:flex sm:justify-center'} />
                 </fieldset>
