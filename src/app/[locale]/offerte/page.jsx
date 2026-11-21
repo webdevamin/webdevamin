@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import { ArrowLeft } from 'lucide-react'
+import { Link } from '../../../../src/i18n/navigation'
 import { getSocialImageMetadata } from '../../../../utils/social-images';
 import CookieConsent from '../../../../components/CookieConsent'
 import QuoteWizard from '../../../../components/QuoteWizard'
@@ -63,17 +66,30 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// Only the wizard, without header, footer or other sections, so nothing distracts from the questions.
+// Only the logo and the wizard, without the site menu, footer or other sections, so nothing distracts from the questions.
 const OffertePage = async ({ params }) => {
   const { locale } = await params;
   const { pageData } = await getData(locale)
 
   return (
     <>
-      <main className="min-h-[100dvh] bg-white px-4 py-8 sm:px-8 md:py-16 lg:py-24">
+      <div className="min-h-[100dvh] bg-white">
+      <header className="border-b border-dark/10">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-8">
+          <Link href="/" aria-label={pageData.homeLabel} className="flex items-end gap-2">
+            <Image src="/images/logo.png" width={38} height={23} priority alt="Webdevamin Logo" />
+            <span aria-hidden="true" className="text-xl font-bold leading-none tracking-tight">ebdevamin</span>
+          </Link>
+          <Link href="/" className="inline-flex min-h-11 items-center gap-2 !text-sm font-semibold text-dark/70 hover:text-dark sm:!text-base">
+            <ArrowLeft aria-hidden="true" className="h-4 w-4" />{pageData.homeLink}
+          </Link>
+        </div>
+      </header>
+      <main className="px-4 py-8 sm:px-8 md:py-14 lg:py-20">
         <h1 className="sr-only">{pageData.heading}</h1>
         <QuoteWizard texts={pageData.wizard} />
       </main>
+      </div>
       <CookieConsent />
     </>
   )

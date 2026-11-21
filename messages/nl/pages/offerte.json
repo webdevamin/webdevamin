@@ -15,6 +15,8 @@
     ],
     "alternateLangs": [],
     "heading": "Wat kost jouw website?",
+    "homeLabel": "Webdevamin home",
+    "homeLink": "Naar de website",
     "wizard": {
         "progress": "Stap {current} van {total}",
         "lastStep": "Laatste stap",
@@ -39,23 +41,19 @@
                 "options": [
                     {
                         "value": "new",
-                        "label": "Een nieuwe website",
-                        "text": "Je hebt nog geen website, of je begint liever opnieuw."
+                        "label": "Een nieuwe website"
                     },
                     {
                         "value": "redesign",
-                        "label": "Mijn website vernieuwen",
-                        "text": "Je website is verouderd, traag of brengt te weinig klanten op."
+                        "label": "Mijn website vernieuwen"
                     },
                     {
                         "value": "custom",
-                        "label": "Een webshop of iets op maat",
-                        "text": "Een webshop, een klantenportaal of een eigen systeem voor je zaak."
+                        "label": "Een webshop of iets op maat"
                     },
                     {
                         "value": "unsure",
-                        "label": "Ik weet het nog niet",
-                        "text": "Geen probleem. Na deze vragen krijg je een eerlijk advies."
+                        "label": "Ik weet het nog niet"
                     }
                 ]
             },
@@ -98,33 +96,27 @@
                 "options": [
                     {
                         "value": "booking",
-                        "label": "Klanten boeken online",
-                        "text": "Een afspraak, tafel of rit, zonder dat ze moeten bellen."
+                        "label": "Klanten boeken online"
                     },
                     {
                         "value": "emails",
-                        "label": "Automatische e-mails",
-                        "text": "Bevestigingen en herinneringen gaan vanzelf naar je klanten."
+                        "label": "Automatische e-mails"
                     },
                     {
                         "value": "marketing",
-                        "label": "Nieuwsbrieven en promoties",
-                        "text": "Je stuurt aanbiedingen naar je vaste klanten."
+                        "label": "Nieuwsbrieven en promoties"
                     },
                     {
                         "value": "selling",
-                        "label": "Online bestellen of verkopen",
-                        "text": "Klanten bestellen om af te halen of kopen producten in een webshop."
+                        "label": "Online bestellen of verkopen"
                     },
                     {
                         "value": "portal",
-                        "label": "Klantenportaal of eigen systeem",
-                        "text": "Klanten loggen in, of je regelt je eigen werk digitaal."
+                        "label": "Klantenportaal of eigen systeem"
                     },
                     {
                         "value": "none",
-                        "label": "Gewoon een sterke website",
-                        "text": "Je diensten, prijzen en contactgegevens, mooi en snel op elke gsm."
+                        "label": "Een sterke website"
                     }
                 ]
             },
@@ -135,13 +127,11 @@
                 "options": [
                     {
                         "value": "monthly",
-                        "label": "Per maand, alles inbegrepen",
-                        "text": "Geen grote som vooraf. Hosting, domeinnaam, onderhoud, SEO en support zitten erin. Minstens 12 maanden, daarna maandelijks opzegbaar."
+                        "label": "Per maand, alles inbegrepen"
                     },
                     {
                         "value": "onetime",
-                        "label": "Eenmalig betalen",
-                        "text": "Een vaste prijs voor de bouw. Hosting en domeinnaam regel je zelf, of ik verzorg ze apart tegen een kleine jaarlijkse vergoeding."
+                        "label": "Eenmalig betalen"
                     }
                 ]
             },
@@ -152,18 +142,15 @@
                 "options": [
                     {
                         "value": "asap",
-                        "label": "Zo snel mogelijk",
-                        "text": "Je wilt meteen starten."
+                        "label": "Zo snel mogelijk"
                     },
                     {
                         "value": "soon",
-                        "label": "Binnen 1 tot 3 maanden",
-                        "text": "Genoeg tijd om alles rustig voor te bereiden."
+                        "label": "Binnen 1 tot 3 maanden"
                     },
                     {
                         "value": "exploring",
-                        "label": "Ik oriënteer me nog",
-                        "text": "Je wilt eerst weten wat het kost. Ook goed."
+                        "label": "Ik oriënteer me nog"
                     }
                 ]
             }

@@ -123,14 +123,10 @@ export default function QuoteWizard({ texts }) {
         timer.current = setTimeout(() => goTo(nextStep(updated, step)), 250);
     };
 
-    // "Gewoon een sterke website" excludes the other features.
-    const toggleFeature = value => setAnswers(current => {
-        const others = current.features.filter(feature => feature !== 'none');
-        const features = value === 'none'
-            ? (current.features.includes('none') ? [] : ['none'])
-            : others.includes(value) ? others.filter(feature => feature !== value) : [...others, value];
-        return { ...current, features };
-    });
+    const toggleFeature = value => setAnswers(current => ({
+        ...current,
+        features: current.features.includes(value) ? current.features.filter(feature => feature !== value) : [...current.features, value],
+    }));
 
     const item = recommend(texts, answers);
     const price = priceLine(texts, item, answers.payment);
