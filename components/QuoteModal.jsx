@@ -43,6 +43,12 @@ export default function QuoteModal({ texts }) {
     const [budget, setBudget] = useState('');
     const [form, setForm] = useState(emptyForm);
     const [status, setStatus] = useState(null);
+    const errorBox = useRef(null);
+
+    // Keeps the error in view, also on small screens where the button sits at the bottom edge.
+    useEffect(() => {
+        if (status === 'clienterror' || status === 'servererror') errorBox.current?.scrollIntoView({ block: 'nearest' });
+    }, [status]);
 
     const budgets = need === 'onetime' || need === 'custom' ? texts.budgets.oneTime : texts.budgets.monthly;
 
@@ -159,6 +165,7 @@ export default function QuoteModal({ texts }) {
     };
 
     const sending = status === 'sending';
+    const failed = status === 'clienterror' || status === 'servererror';
     const chipClass = 'flex min-h-11 cursor-pointer items-center rounded-full border-2 border-dark/20 bg-white px-4 py-2 text-left text-[0.9375rem] font-medium leading-snug transition-colors hover:border-dark has-[:checked]:border-dark has-[:checked]:bg-theme has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-theme_darker';
     const inputClass = 'w-full rounded border-dark border-opacity-25 sm:py-3 bg-slate-50 focus:border-theme_darker focus:ring-theme_darker';
 
@@ -188,11 +195,6 @@ export default function QuoteModal({ texts }) {
                     </div>
                 ) : (
                     <>
-                        <div role="status" aria-live="polite">
-                            {(status === 'clienterror' || status === 'servererror') && (
-                                <Alert text={texts[status]} classes="mb-5" bgColor="#b42332" />
-                            )}
-                        </div>
                         <form onSubmit={handleSubmit} aria-busy={sending}>
                             <fieldset disabled={sending} className="min-w-0">
                                 <fieldset className="min-w-0">
@@ -255,6 +257,10 @@ export default function QuoteModal({ texts }) {
                                     autoComplete="off" tabIndex={-1} aria-hidden="true" aria-label="Website"
                                     style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }} />
 
+                                {/* Right above the button, where the visitor is looking after sending, so a failed send is never missed. */}
+                                <div ref={errorBox} role="alert" className="scroll-mb-5">
+                                    {failed && <Alert text={texts[status]} classes="mt-7" bgColor="#b42332" />}
+                                </div>
                                 <ButtonOne input={{ value: sending ? texts.sending : texts.send }}
                                     classes="w-full mt-7 disabled:opacity-60 disabled:cursor-wait" />
                                 <p className="!mb-0 mt-4 text-center text-sm">
