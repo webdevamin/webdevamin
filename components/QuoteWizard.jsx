@@ -5,7 +5,7 @@ import Image from 'next/image';
 import {
     Banknote, Briefcase, CalendarCheck, CalendarDays, CarTaxiFront, Check, ChevronRight, CircleHelp, HardHat, House, LayoutTemplate,
     LockKeyhole, MailCheck, Megaphone, MonitorSmartphone, Phone, RefreshCw, Repeat, Scissors, Search, ShoppingBag, ShoppingCart,
-    Sparkles, UtensilsCrossed, Zap,
+    RotateCcw, Sparkles, UtensilsCrossed, Zap,
 } from 'lucide-react';
 import posthog from 'posthog-js';
 import { Link } from '../src/i18n/navigation';
@@ -31,13 +31,18 @@ const OPTION_ICONS = {
 };
 const emptyForm = { name: '', email: '', phone: '', company: '', site: '', message: '', website: '' };
 
-const cardClass = selected => `relative flex min-h-[9.5rem] w-full flex-col items-center justify-center gap-2 rounded-md border-2 bg-white px-3 py-5 text-center transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker ${selected ? 'border-theme_dark text-theme_dark' : 'border-dark/40 text-dark hover:border-dark'}`;
+const cardClass = selected => `relative flex min-h-[7rem] w-full flex-col items-center justify-center gap-2 rounded-md border-2 bg-white px-3 py-4 sm:min-h-[9rem] sm:py-5 text-center transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker ${selected ? 'border-theme_dark text-theme_dark' : 'border-dark/40 text-dark hover:border-dark'}`;
 const inputClass = 'w-full rounded-md border-2 border-dark/25 bg-white sm:py-3 focus:border-theme_dark focus:ring-theme_dark';
 const primaryClass = 'inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-theme_dark px-8 !text-base font-semibold text-white transition-colors hover:bg-theme_darker disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker';
 const backClass = 'min-h-12 px-2 !text-base font-semibold text-dark/70 hover:text-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker';
 const linkClass = 'inline-flex min-h-11 items-center gap-2 font-semibold text-theme_darker underline underline-offset-4';
 // Keeps the router's own data in the history entry: on the first render Next.js has not taken over history calls yet.
 const saveStep = (method, quoteStep, quoteDepth) => window.history[method]({ ...window.history.state, quoteStep, quoteDepth }, '');
+// The furthest step the visitor may open: the first unanswered question, or the contact step once all are answered.
+const lastOpen = answers => {
+    const first = nextStep(answers);
+    return first === PROPOSAL ? CONTACT : first;
+};
 
 export default function QuoteWizard({ texts }) {
     const chat = useChat();
@@ -54,6 +59,8 @@ export default function QuoteWizard({ texts }) {
     const heading = useRef(null);
     const errorBox = useRef(null);
     const turnstile = useRef(null);
+    const answersRef = useRef(answers);
+    answersRef.current = answers;
 
     // Starts at the first question a ?pakket= link did not answer. Every step gets its own browser history entry, so
     // the back button goes to the previous question instead of leaving the page and losing the answers.
@@ -68,7 +75,8 @@ export default function QuoteWizard({ texts }) {
             if (typeof event.state?.quoteStep !== 'number') return;
             depth.current = event.state.quoteDepth;
             moved.current = true;
-            setStep(current => current === DONE ? DONE : event.state.quoteStep);
+            // Never past a question that is unanswered again, for example after starting over.
+            setStep(current => current === DONE ? DONE : Math.min(event.state.quoteStep, lastOpen(answersRef.current)));
         };
         window.addEventListener('popstate', onPopState);
         return () => {
@@ -107,6 +115,14 @@ export default function QuoteWizard({ texts }) {
         moved.current = true;
         setStep(step - 1);
         saveStep('replaceState', step - 1, 0);
+    };
+
+    const reset = () => {
+        link.current = '';
+        setAnswers(emptyAnswers());
+        setForm(emptyForm);
+        setStatus(null);
+        goTo(0);
     };
 
     const steps = Object.fromEntries(texts.steps.map(item => [item.key, item]));
@@ -188,7 +204,7 @@ export default function QuoteWizard({ texts }) {
     const progressLabel = step < DONE
         ? texts.progress.replace('{current}', step + 1).replace('{total}', DONE + 1)
         : texts.stepLabels[DONE];
-    const headingClass = '!m-0 scroll-mt-6 !text-3xl sm:!text-4xl font-bold !normal-case tracking-tight font_quicksand focus:outline-none';
+    const headingClass = '!m-0 scroll-mt-6 !text-2xl sm:!text-3xl lg:!text-4xl font-bold !normal-case tracking-tight font_quicksand focus:outline-none';
     const answered = question && (question.multiple ? answers.features.length > 0 : Boolean(answers[question.key]));
 
     const priceBlock = (
@@ -200,25 +216,49 @@ export default function QuoteWizard({ texts }) {
     );
 
     return (
-        <div className="ph-no-capture ph-mask mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[3rem_minmax(0,1fr)] md:gap-16 lg:gap-24">
+        <div className="ph-no-capture ph-mask mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[3rem_minmax(0,1fr)] md:gap-10 lg:gap-20">
             <ol aria-label={texts.stepsLabel} className="flex items-center md:sticky md:top-10 md:flex-col md:self-start">
-                {texts.stepLabels.map((stepLabel, index) => (
-                    <li key={stepLabel} aria-current={index === step ? 'step' : undefined} className={`flex items-center md:flex-col ${index ? 'flex-1 md:flex-none' : ''}`}>
-                        {index > 0 && <span aria-hidden="true" className={`h-1 flex-1 md:h-8 md:w-1 md:flex-none ${index <= step ? 'bg-theme_dark' : 'bg-dark/40'}`} />}
-                        <span title={stepLabel}
-                            className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full !text-xs font-bold text-white md:h-12 md:w-12 md:!text-sm ${index <= step ? 'bg-theme_dark' : 'bg-dark/60'} ${index === step ? 'ring-4 ring-theme/30' : ''}`}>
+                {texts.stepLabels.map((stepLabel, index) => {
+                    const circle = `flex h-7 w-7 shrink-0 items-center justify-center rounded-full !text-xs font-bold text-white sm:h-8 sm:w-8 md:h-10 md:w-10 md:!text-sm lg:h-12 lg:w-12 ${index <= step ? 'bg-theme_dark' : 'bg-dark/60'} ${index === step ? 'ring-4 ring-theme/30' : ''}`;
+                    const content = (
+                        <>
                             {index === DONE && step === DONE ? <Check aria-hidden="true" className="h-4 w-4 md:h-5 md:w-5" strokeWidth={3} /> : <span aria-hidden="true">{index + 1}</span>}
                             <span className="sr-only">{stepLabel}</span>
-                        </span>
-                    </li>
-                ))}
+                        </>
+                    );
+                    // Answered steps can be opened again by clicking their circle; the larger invisible area makes them easy to tap.
+                    const clickable = step < DONE && index !== step && index <= lastOpen(answers);
+                    return (
+                        <li key={stepLabel} aria-current={index === step ? 'step' : undefined} className={`flex items-center md:flex-col ${index ? 'flex-1 md:flex-none' : ''}`}>
+                            {index > 0 && <span aria-hidden="true" className={`h-1 flex-1 md:h-6 md:w-1 md:flex-none lg:h-8 ${index <= step ? 'bg-theme_dark' : 'bg-dark/40'}`} />}
+                            {clickable ? (
+                                <button type="button" title={stepLabel} onClick={() => goTo(index)}
+                                    className={`${circle} relative before:absolute before:-inset-2 before:content-[''] hover:ring-4 hover:ring-theme/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-theme_darker`}>
+                                    {content}
+                                </button>
+                            ) : (
+                                <span title={stepLabel} className={circle}>{content}</span>
+                            )}
+                        </li>
+                    );
+                })}
             </ol>
 
             <section aria-labelledby={`${id}-heading`} className="min-w-0 max-w-4xl">
                 <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
                     <span aria-live="polite" className="block !text-base font-bold text-dark/50">{progressLabel}</span>
-                    {priced && step < DONE && (
-                        <span className="block rounded-full bg-theme/10 px-3 py-1 !text-sm">{texts.summary.priceTitle}: <strong>{item.name}, {price}</strong></span>
+                    {step < DONE && (
+                        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                            {priced && (
+                                <span className="block rounded-full bg-theme/10 px-3 py-1 !text-sm">{texts.summary.priceTitle}: <strong>{item.name}, {price}</strong></span>
+                            )}
+                            {(step > 0 || answers.need || answers.sector || answers.features.length > 0) && (
+                                <button type="button" onClick={reset}
+                                    className="inline-flex min-h-11 items-center gap-1.5 !text-sm font-semibold text-dark/60 hover:text-theme_dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme_darker">
+                                    <RotateCcw aria-hidden="true" className="h-4 w-4" />{texts.reset}
+                                </button>
+                            )}
+                        </div>
                     )}
                 </div>
 
@@ -230,7 +270,7 @@ export default function QuoteWizard({ texts }) {
                             {question.key === 'features' && sector && (
                                 <p className="!mb-0 mt-5 max-w-3xl border-l-4 border-theme_dark pl-4 !text-base !opacity-100">{sector.line}</p>
                             )}
-                            <div role="group" aria-labelledby={`${id}-heading`} className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 md:grid-cols-3">
+                            <div role="group" aria-labelledby={`${id}-heading`} className="mt-6 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 md:grid-cols-3">
                                 {question.options.map(option => {
                                     const selected = question.multiple ? answers.features.includes(option.value) : answers[question.key] === option.value;
                                     const Icon = OPTION_ICONS[option.value] || Sparkles;
@@ -243,15 +283,15 @@ export default function QuoteWizard({ texts }) {
                                                     <Check className="h-3.5 w-3.5" strokeWidth={3} />
                                                 </span>
                                             )}
-                                            <Icon aria-hidden="true" className="h-8 w-8" strokeWidth={1.5} />
-                                            <span className="block !text-base font-semibold leading-snug">{option.label}</span>
+                                            <Icon aria-hidden="true" className="h-7 w-7 sm:h-8 sm:w-8" strokeWidth={1.5} />
+                                            <span className="block !text-sm font-semibold leading-snug sm:!text-base">{option.label}</span>
                                             {option.text && <span className="block !text-xs leading-snug text-dark/70 sm:!text-sm">{option.text}</span>}
                                         </button>
                                     );
                                 })}
                             </div>
-                            <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
-                                <button type="button" disabled={!answered} onClick={() => goTo(nextStep(answers, step))} className={primaryClass}>
+                            <div className="mt-8 flex flex-col gap-2 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">
+                                <button type="button" disabled={!answered} onClick={() => goTo(nextStep(answers, step))} className={`${primaryClass} w-full sm:w-auto`}>
                                     {texts.next}
                                 </button>
                                 {step > 0 && <button type="button" onClick={back} className={backClass}>{texts.back}</button>}
@@ -285,8 +325,8 @@ export default function QuoteWizard({ texts }) {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="mt-10 flex flex-wrap items-center gap-4">
-                                <button type="button" onClick={() => goTo(CONTACT)} className={primaryClass}>{texts.proposal.button}</button>
+                            <div className="mt-10 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+                                <button type="button" onClick={() => goTo(CONTACT)} className={`${primaryClass} w-full sm:w-auto`}>{texts.proposal.button}</button>
                                 <button type="button" onClick={back} className={backClass}>{texts.back}</button>
                             </div>
                             <p className="!mb-0 mt-4 !text-sm">{texts.proposal.note}</p>
@@ -352,7 +392,7 @@ export default function QuoteWizard({ texts }) {
                                     <div ref={errorBox} role="alert" className="scroll-mb-5">
                                         {failed && <Alert text={texts.contact[status]} classes="mt-7" bgColor="#b42332" />}
                                     </div>
-                                    <div className="mt-8 flex flex-wrap items-center gap-4">
+                                    <div className="mt-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
                                         <button type="submit" className={`${primaryClass} w-full sm:w-auto disabled:cursor-wait`}>
                                             {sending ? texts.contact.sending : texts.contact.send}
                                         </button>
@@ -368,8 +408,8 @@ export default function QuoteWizard({ texts }) {
                     )}
 
                     {step === DONE && (
-                        <div role="status" className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
-                            <Image src="/images/launch.svg" alt="" width={855} height={582} className="mx-auto h-auto w-full max-w-sm" />
+                        <div role="status" className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+                            <Image src="/images/launch.svg" alt="" width={855} height={582} className="mx-auto h-auto w-full max-w-[16rem] sm:max-w-sm" />
                             <div>
                                 <h2 id={`${id}-heading`} ref={heading} tabIndex={-1} className={headingClass}>
                                     {texts.done.titleStart}<span className="!text-[length:inherit] text-theme_dark">{texts.done.titleHighlight}</span>{texts.done.titleEnd}
