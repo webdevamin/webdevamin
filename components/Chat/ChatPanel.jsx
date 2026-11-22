@@ -337,7 +337,7 @@ export default function ChatPanel({ config, texts, locale, open, onClose, reques
                                 maxLength={CHAT_LIMITS.message}
                                 autoComplete="off"
                                 enterKeyHint="send"
-                                className="min-h-12 min-w-0 flex-1 rounded border-dark border-opacity-25 bg-slate-50 text-base focus:border-theme_darker focus:ring-theme_darker"
+                                className="min-h-12 min-w-0 flex-1 rounded px-4 border-dark border-opacity-25 bg-slate-50 text-base focus:border-theme_darker focus:ring-theme_darker"
                             />
                             <button type="submit" disabled={busy || !draft.trim()} aria-label={texts.send}
                                 className="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-dark text-light hover:bg-theme_darker disabled:opacity-50">
