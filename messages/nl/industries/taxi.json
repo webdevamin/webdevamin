@@ -183,7 +183,7 @@
                 }
             ],
             "img": {
-                "src": "https://images.pexels.com/photos/19769269/pexels-photo-19769269.jpeg?auto=compress&cs=tinysrgb&w=836",
+                "src": "/images/industries/taxi-pexels-19769269.jpg",
                 "alt": "Gele taxi op straat in de stad."
             }
         },
@@ -201,7 +201,7 @@
                 }
             ],
             "img": {
-                "src": "https://images.pexels.com/photos/5835360/pexels-photo-5835360.jpeg?auto=compress&cs=tinysrgb&w=836",
+                "src": "/images/industries/taxi-pexels-5835360.jpg",
                 "alt": "Twee mannen schudden handen bij een taxi."
             }
         },

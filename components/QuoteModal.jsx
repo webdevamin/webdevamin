@@ -286,6 +286,9 @@ export default function QuoteModal({ texts }) {
                                 <p className="!mb-0 mt-4 text-center text-sm">
                                     {texts.privacy}{' '}
                                     <Link href="/policy" target="_blank" className="text-sm font-semibold underline underline-offset-4">{texts.privacyLink}</Link>
+                                    <br />
+                                    {texts.terms}{' '}
+                                    <Link href="/terms" target="_blank" className="text-sm font-semibold underline underline-offset-4">{texts.termsLink}</Link>
                                 </p>
                             </fieldset>
                         </form>

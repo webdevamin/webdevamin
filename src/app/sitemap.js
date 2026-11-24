@@ -16,11 +16,15 @@ const staticPaths = [
   '/contact',
   '/projects',
   '/policy',
+  '/terms',
+  '/processing-agreement',
   '/blogs',
   '/nl',
   '/nl/contact',
   '/nl/projects',
   '/nl/policy',
+  '/nl/terms',
+  '/nl/processing-agreement',
   '/nl/blogs',
 ];
 

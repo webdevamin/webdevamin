@@ -28,6 +28,8 @@ export default function PostHogProvider({ children }) {
           ui_host: 'https://eu.posthog.com',
           person_profiles: 'identified_only',
           loaded: (ph) => {
+            // Undo an earlier withdrawal, since this only runs after a new Accept.
+            if (ph.has_opted_out_capturing()) ph.opt_in_capturing();
             setPosthogInstance(ph);
             if (typeof window !== 'undefined') {
               window.posthog = ph;
@@ -37,7 +39,8 @@ export default function PostHogProvider({ children }) {
       }
     } else {
       if (posthogInstance) {
-        posthogInstance.shutdown();
+        posthogInstance.opt_out_capturing();
+        posthogInstance.reset();
         setPosthogInstance(null);
         if (typeof window !== 'undefined' && window.posthog) {
           try { delete window.posthog } catch (_) { window.posthog = undefined }

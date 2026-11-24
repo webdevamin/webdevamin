@@ -401,6 +401,9 @@ export default function QuoteWizard({ texts }) {
                                     <p className="!mb-0 mt-4 !text-sm">
                                         {texts.contact.privacy}{' '}
                                         <Link href="/policy" target="_blank" className="!text-sm font-semibold underline underline-offset-4">{texts.contact.privacyLink}</Link>
+                                        <br />
+                                        {texts.contact.terms}{' '}
+                                        <Link href="/terms" target="_blank" className="!text-sm font-semibold underline underline-offset-4">{texts.contact.termsLink}</Link>
                                     </p>
                                 </fieldset>
                             </form>

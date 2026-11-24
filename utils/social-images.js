@@ -4,7 +4,7 @@ import { createSocialImageEntry, getSocialImageUrl, SOCIAL_IMAGE_SIZE } from './
 
 // Webpack discovers new localized page content during each build.
 const pageContent = require.context('../messages', true, /^\.\/(en|nl)\/pages\/[^/]+\.json$/);
-const pageTypes = { home: 'home', blogs: 'blogs', contact: 'contact', projects: 'projects', policy: 'policy', brugge: 'local', industries: 'industry' };
+const pageTypes = { home: 'home', blogs: 'blogs', contact: 'contact', projects: 'projects', policy: 'policy', terms: 'legal', 'processing-agreement': 'legal', brugge: 'local', industries: 'industry' };
 
 let images;
 

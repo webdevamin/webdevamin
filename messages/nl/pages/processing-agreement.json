@@ -1,0 +1,60 @@
+{
+    "seo": {
+        "title": "Verwerkersovereenkomst",
+        "description": "De verwerkersovereenkomst (artikel 28 AVG) tussen Webdevamin en zijn klanten voor websites en boekingssystemen.",
+        "canonical": "https://webdevamin.com/nl/processing-agreement",
+        "ogTitle": "Verwerkersovereenkomst",
+        "ogDescription": "De verwerkersovereenkomst (artikel 28 AVG) tussen Webdevamin en zijn klanten voor websites en boekingssystemen."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/processing-agreement",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/processing-agreement",
+            "hreflang": "en"
+        },
+        {
+            "href": "https://webdevamin.com/nl/processing-agreement",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/processing-agreement",
+            "locale": "en"
+        }
+    ],
+    "title": "Verwerkersovereenkomst",
+    "slug": "processing-agreement",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Verwerkersovereenkomst",
+            "slug": "hero",
+            "text": "<p>Hoe we omgaan met de persoonsgegevens van uw bezoekers en klanten wanneer we uw website of boekingssysteem bouwen en hosten.</p>",
+            "button": [
+                {
+                    "href": "#processing-agreement",
+                    "text": "Lees de overeenkomst",
+                    "label": "Naar de overeenkomst",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "/images/gdpr.svg",
+                "alt": "Persoon met een GDPR vlag.",
+                "width": 485,
+                "height": 429,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Verwerkersovereenkomst",
+            "slug": "processing-agreement",
+            "subtitle": "Artikel 28 AVG",
+            "text": "<p style='margin-left:0'><em>Laatste update: 24 november 2026</em></p><p style='margin-left:0'>Deze verwerkersovereenkomst geldt wanneer Webdevamin persoonsgegevens verwerkt in opdracht van een klant, bijvoorbeeld de berichten uit contactformulieren, boekingen of klantgegevens van de website van de klant. Ze maakt deel uit van onze <a href='/nl/terms'>algemene voorwaarden</a> en van elke overeenkomst met de klant, zoals artikel 28 van de Algemene Verordening Gegevensbescherming (AVG) vereist.</p><h3 style='margin-left:0'><strong>1. Partijen en rollen</strong></h3><ul><li><strong>De klant</strong> is de verwerkingsverantwoordelijke: de klant bepaalt waarom en hoe persoonsgegevens van zijn bezoekers en klanten verwerkt worden.</li><li><strong>Webdevamin</strong> (eenmanszaak, btw BE0798993057, Eigen-Haardstraat 39, 8400 Oostende, België) is de verwerker: we verwerken deze gegevens alleen om onze diensten aan de klant te leveren.</li></ul><h3 style='margin-left:0'><strong>2. Onderwerp, aard en duur</strong></h3><ul><li><strong>Onderwerp:</strong> het bouwen, hosten en onderhouden van de website, het boekingssysteem en verwante functies van de klant in ons platform (webdevamin.app).</li><li><strong>Aard van de verwerking:</strong> opslaan, hosten, e-mails en sms’en versturen, gegevens tonen in het dashboard van de klant, back-ups en verwijdering.</li><li><strong>Duur:</strong> zolang de overeenkomst met de klant loopt, plus de tijd die nodig is om de gegevens te verwijderen of terug te geven (artikel 10).</li></ul><h3 style='margin-left:0'><strong>3. Soorten gegevens en betrokkenen</strong></h3><ul><li><strong>Betrokkenen:</strong> bezoekers, klanten, prospecten en boekingscontacten van de klant, gebruikers van het account van de klant en, bij nieuwsbrieven, abonnees.</li><li><strong>Gegevens:</strong> namen, e-mailadressen, telefoonnummers, adressen (zoals ophaal- en bestemmingsadressen bij boekingen), berichten uit formulieren, gegevens over boekingen en afspraken, en technische gegevens zoals IP-adressen.</li><li>De klant vraagt zijn bezoekers via onze systemen geen bijzondere categorieën van gegevens (zoals gezondheidsgegevens), tenzij we dat schriftelijk afspraken.</li></ul><h3 style='margin-left:0'><strong>4. Onze verplichtingen</strong></h3><ul><li>We verwerken de gegevens alleen volgens de gedocumenteerde instructies van de klant. De overeenkomst, deze voorwaarden en de instellingen die de klant in ons platform kiest, gelden als zulke instructies. Is een instructie in strijd met de AVG, dan laten we dat de klant weten.</li><li>We gebruiken de gegevens niet voor eigen doeleinden en verkopen ze niet.</li><li>Iedereen die voor ons met de gegevens werkt, is gebonden aan geheimhouding.</li><li>We helpen de klant, voor zover redelijk mogelijk, bij het beantwoorden van verzoeken van mensen die hun rechten uitoefenen (inzage, verbetering, verwijdering enzovoort), bij gegevensbeschermingseffectbeoordelingen en bij contacten met de toezichthouder.</li></ul><h3 style='margin-left:0'><strong>5. Beveiliging</strong></h3><p style='margin-left:0'>We nemen passende technische en organisatorische maatregelen om de gegevens te beschermen, waaronder:</p><ul><li>versleutelde verbindingen (HTTPS) voor al het verkeer;</li><li>toegang tot klantgegevens alleen voor wie die nodig heeft, met toegangsregels per klant in de database;</li><li>geheime sleutels en wachtwoorden in beveiligde opslag, niet in de code;</li><li>regelmatige back-ups en beveiligingsupdates;</li><li>zorgvuldig gekozen dienstverleners met hun eigen beveiligingscertificeringen.</li></ul><h3 style='margin-left:0'><strong>6. Subverwerkers</strong></h3><p style='margin-left:0'>De klant geeft algemene toestemming om de volgende subverwerkers in te schakelen. We leggen hun dezelfde verplichtingen inzake gegevensbescherming op als in deze overeenkomst.</p><ul><li><strong>Cloudflare</strong> (hosting, netwerk, beveiliging en back-ups). Cloudflare, Inc., Verenigde Staten, onder het EU-VS Data Privacy Framework en standaardcontractbepalingen.</li><li><strong>Supabase</strong> (database, gebruikersaccounts en bestandsopslag). Gegevens opgeslagen in Ierland (EU).</li><li><strong>Amazon Web Services</strong> (versturen van e-mails en sms’en, bijvoorbeeld boekingsbevestigingen). Regio Ierland (EU).</li><li><strong>OpenAI</strong> (AI-functies zoals een chatassistent op de website, alleen als de klant die gebruikt). Verenigde Staten, onder standaardcontractbepalingen.</li><li><strong>Google</strong> (berekening van reistijden en adressen bij boekingen, alleen als de klant die gebruikt). Google Ireland Limited, met mogelijke doorgifte onder het EU-VS Data Privacy Framework.</li></ul><p style='margin-left:0'>We laten de klant minstens 30 dagen vooraf per e-mail weten wanneer we een subverwerker toevoegen of vervangen. De klant kan om redelijke redenen bezwaar maken. Vinden we geen oplossing, dan kan de klant de betrokken dienst kosteloos stopzetten.</p><h3 style='margin-left:0'><strong>7. Doorgifte buiten de EU</strong></h3><p style='margin-left:0'>We geven gegevens alleen door buiten de Europese Economische Ruimte als daar een geldige wettelijke grond voor is, zoals een adequaatheidsbesluit (waaronder het EU-VS Data Privacy Framework) of standaardcontractbepalingen.</p><h3 style='margin-left:0'><strong>8. Datalekken</strong></h3><p style='margin-left:0'>Ontdekken we een inbreuk in verband met persoonsgegevens die de gegevens van de klant raakt, dan brengen we de klant zonder onredelijke vertraging en uiterlijk binnen 48 uur op de hoogte, met de informatie die we op dat moment hebben. We helpen de klant om de inbreuk te melden bij de toezichthouder en de betrokkenen te informeren wanneer dat nodig is.</p><h3 style='margin-left:0'><strong>9. Audits</strong></h3><p style='margin-left:0'>Op verzoek geven we de klant de informatie die nodig is om aan te tonen dat we deze overeenkomst naleven. De klant mag eenmaal per jaar een audit laten uitvoeren, op eigen kosten, door een onafhankelijke auditor die aan geheimhouding gebonden is, met minstens 30 dagen vooraankondiging en zonder onze werking meer te storen dan nodig.</p><h3 style='margin-left:0'><strong>10. Einde van de overeenkomst</strong></h3><p style='margin-left:0'>Eindigt de overeenkomst, dan kan de klant zijn gegevens exporteren of ons vragen ze terug te geven. Binnen 30 dagen na het einde verwijderen we de persoonsgegevens van de klant uit onze systemen, tenzij de wet ons verplicht ze te bewaren. Kopieën in back-ups verdwijnen in de normale back-upcyclus.</p><h3 style='margin-left:0'><strong>11. Aansprakelijkheid en overige regels</strong></h3><p style='margin-left:0'>De aansprakelijkheidsregels uit onze <a href='/nl/terms'>algemene voorwaarden</a> gelden ook voor deze overeenkomst, voor zover de AVG dat toelaat. Verschillen deze overeenkomst en andere afspraken over gegevensbescherming, dan heeft deze overeenkomst voorrang. Het Belgisch recht is van toepassing.</p>"
+        }
+    ]
+}

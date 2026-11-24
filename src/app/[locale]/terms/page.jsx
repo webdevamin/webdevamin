@@ -1,0 +1,96 @@
+import { getSocialImageMetadata } from '../../../../utils/social-images';
+import Header from '../../../../components/Layouts/Header';
+import PageLayout from '../../../../components/Layouts/PageLayout';
+import Heading from '../../../../components/Heading';
+import Footer from '../../../../components/Layouts/Footer';
+import HeroOne from '../../../../components/Heroes/HeroOne';
+import BorderedSection from '../../../../components/Layouts/BorderedSection';
+
+async function getData(locale) {
+    const localesData = (await import(`../../../../messages/${locale}/locales.json`)).default;
+    const socialsData = (await import(`../../../../messages/${locale}/socials.json`)).default;
+    const blogsData = (await import(`../../../../messages/${locale}/blogs.json`)).default;
+    const pagesData = (await import(`../../../../messages/${locale}/pages.json`)).default;
+    const pageData = (await import(`../../../../messages/${locale}/pages/terms.json`)).default;
+
+    return {
+        localesData,
+        socialsData,
+        blogsData,
+        pagesData,
+        pageData,
+    };
+}
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+    const { pageData } = await getData(locale);
+    const { seo, alternates } = pageData;
+    const { title, description, canonical, ogTitle, ogDescription, keywords } = seo;
+    const socialImage = await getSocialImageMetadata(canonical);
+
+    return {
+        title: title,
+        description: description,
+        keywords: keywords,
+        canonical: canonical,
+        alternates: {
+            canonical: canonical,
+            languages: alternates.reduce((acc, alt) => {
+                acc[alt.hreflang] = alt.href;
+                return acc;
+            }, {}),
+        },
+        openGraph: {
+            title: ogTitle || title,
+            description: ogDescription || description,
+            url: canonical,
+            siteName: 'Webdevamin',
+            images: [socialImage],
+            locale: locale,
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: ogTitle || title,
+            description: ogDescription || description,
+            creator: '@Webdevamin',
+            images: [socialImage.url],
+        },
+    };
+}
+
+const Terms = async ({ params }) => {
+  const { locale } = await params;
+    const { localesData, socialsData, blogsData, pagesData, pageData } = await getData(locale);
+    const { alternateLangs, blocks } = pageData;
+    const { title, subtitle, slug, text } = blocks[1];
+
+    return (
+        <>
+            <Header pages={pagesData} alternateLangs={alternateLangs} locales={localesData} />
+            <HeroOne
+                content={blocks.find(block => block.slug === `hero`)}
+                socials={socialsData}
+                breadcrumbItems={[
+                    { label: 'Home', href: locale === 'nl' ? '/nl' : '/' },
+                    { label: pageData.title },
+                ]}
+                breadcrumbLocale={locale}
+            />
+            <PageLayout>
+                <BorderedSection>
+                    <div id={slug} className={`block_container`}>
+                        <Heading title={title} subtitle={subtitle} />
+                        <div className={`mt-3 sm:mt-8 md:mt-12 lg:w-10/12`}>
+                            <div dangerouslySetInnerHTML={{ __html: text }} className={`${text && `-mt-3 sm:-mt-5 md:-mt-7 lg:-mt-10`}`} />
+                        </div>
+                    </div>
+                </BorderedSection>
+                <Footer blogs={blogsData} socials={socialsData} pages={pagesData} />
+            </PageLayout>
+        </>
+    );
+}
+
+export default Terms;

@@ -18,6 +18,7 @@ import BorderedSection from '../../../../../components/Layouts/BorderedSection'
 import LineGrid from '../../../../../components/Layouts/LineGrid'
 import ProcessSteps from '../../../../../components/Blocks/ProcessSteps'
 import PricingGrid from '../../../../../components/Blocks/PricingGrid'
+import ConsentEmbed from '../../../../../components/ConsentEmbed'
 import Image from 'next/image'
 import BlockNormal from '../../../../../components/Blocks/BlockNormal'
 import HeroOne from '../../../../../components/Heroes/HeroOne'
@@ -162,13 +163,15 @@ const VideoDemoSection = ({ content }) => {
                 className="relative w-full overflow-hidden rounded-lg border border-gray-200 shadow-2xl"
                 style={{ paddingTop: '56.25%' }}
               >
-                <iframe
-                  src={`https://www.youtube.com/embed/${videoId}`}
-                  title={videoTitle || title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
+                <ConsentEmbed provider="YouTube" className="absolute inset-0 w-full h-full">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+                    title={videoTitle || title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </ConsentEmbed>
               </div>
             )}
 

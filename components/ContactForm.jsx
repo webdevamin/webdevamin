@@ -4,6 +4,8 @@ import { useEffect, useId, useRef, useState } from 'react';
 import ButtonOne from './Buttons/ButtonOne';
 import Alert from './Alert';
 import Turnstile from './Turnstile';
+import { useLocale } from 'next-intl';
+import { Link } from '../src/i18n/navigation';
 
 const getInitForm = (message = '') => {
     return {
@@ -24,6 +26,7 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
     const feedbackBox = useRef(null);
     const turnstile = useRef(null);
     const id = useId();
+    const locale = useLocale();
 
     // Keeps the result in view, also when the button sits at the bottom edge of the screen or popup.
     useEffect(() => {
@@ -145,6 +148,12 @@ const ContactForm = ({ content, formText, initialMessage = '', businessEnquiry =
                         )}
                     </div>
                     <ButtonOne input={{ value: sending ? (formText.sending || formText.send) : formText.send }} classes={businessEnquiry ? 'w-full mt-6 disabled:opacity-60 disabled:cursor-wait' : 'w-full sm:w-1/3 md:w-1/4 mt-10 sm:mt-12 sm:flex sm:justify-center'} />
+                    <p className="!mb-0 mt-4 text-sm">
+                        {locale === 'nl' ? 'Ik gebruik je gegevens alleen om je bericht te beantwoorden.' : 'I only use your details to answer your message.'}{' '}
+                        <Link href="/policy" target="_blank" className="text-sm font-semibold underline underline-offset-4">
+                            {locale === 'nl' ? 'Privacybeleid' : 'Privacy policy'}
+                        </Link>
+                    </p>
                 </fieldset>
             </form>
         </div>

@@ -125,7 +125,7 @@
                     "name": "Zijn de prijzen inclusief btw?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen."
+                        "text": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen. Bent u een particulier, dan ziet u bij elk pakket ook de prijs inclusief btw."
                     }
                 },
                 {
@@ -331,7 +331,7 @@
                 },
                 {
                     "title": "Zijn de prijzen inclusief btw?",
-                    "description": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen."
+                    "description": "Nee, alle prijzen op deze pagina zijn exclusief btw. In België komt daar 21% btw bij. Bent u btw-plichtig, dan kunt u die btw meestal terugvorderen. Bent u een particulier, dan ziet u bij elk pakket ook de prijs inclusief btw."
                 },
                 {
                     "title": "Kan ik later extra pagina's of functies laten toevoegen?",

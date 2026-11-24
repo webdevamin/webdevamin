@@ -1,0 +1,60 @@
+{
+    "seo": {
+        "title": "Processing agreement",
+        "description": "The data processing agreement (GDPR Article 28) between Webdevamin and its clients for websites and booking systems.",
+        "canonical": "https://webdevamin.com/processing-agreement",
+        "ogTitle": "Processing agreement",
+        "ogDescription": "The data processing agreement (GDPR Article 28) between Webdevamin and its clients for websites and booking systems."
+    },
+    "alternates": [
+        {
+            "href": "https://webdevamin.com/processing-agreement",
+            "hreflang": "x-default"
+        },
+        {
+            "href": "https://webdevamin.com/processing-agreement",
+            "hreflang": "en"
+        },
+        {
+            "href": "https://webdevamin.com/nl/processing-agreement",
+            "hreflang": "nl"
+        }
+    ],
+    "alternateLangs": [
+        {
+            "href": "/processing-agreement",
+            "locale": "nl"
+        }
+    ],
+    "title": "Processing agreement",
+    "slug": "processing-agreement",
+    "hide_link": false,
+    "blocks": [
+        {
+            "title": "Processing agreement",
+            "slug": "hero",
+            "text": "<p>How we handle the personal data of your visitors and customers when we build and host your website or booking system.</p>",
+            "button": [
+                {
+                    "href": "#processing-agreement",
+                    "text": "Read the agreement",
+                    "label": "To the agreement section",
+                    "external": false
+                }
+            ],
+            "image": {
+                "src": "/images/gdpr.svg",
+                "alt": "Person with a GDPR flag.",
+                "width": 485,
+                "height": 429,
+                "objectFit": "cover"
+            }
+        },
+        {
+            "title": "Processing agreement",
+            "slug": "processing-agreement",
+            "subtitle": "GDPR Article 28",
+            "text": "<p style='margin-left:0'><em>Last updated: 24 November 2026</em></p><p style='margin-left:0'>This processing agreement applies when Webdevamin processes personal data on behalf of a client, for example the contact form messages, bookings or customer details of the client's website. It forms part of our <a href='/terms'>terms and conditions</a> and of every contract with the client, as required by Article 28 of the General Data Protection Regulation (GDPR).</p><h3 style='margin-left:0'><strong>1. Parties and roles</strong></h3><ul><li><strong>The client</strong> is the controller: the client decides why and how personal data of its visitors and customers is processed.</li><li><strong>Webdevamin</strong> (sole proprietorship (eenmanszaak), VAT BE0798993057, Eigen-Haardstraat 39, 8400 Ostend, Belgium) is the processor: we only process this data to provide our services to the client.</li></ul><h3 style='margin-left:0'><strong>2. Subject, nature and duration</strong></h3><ul><li><strong>Subject:</strong> building, hosting and maintaining the client's website, booking system and related features in our platform (webdevamin.app).</li><li><strong>Nature of the processing:</strong> storing, hosting, sending emails and text messages, showing data in the client's dashboard, backups and deletion.</li><li><strong>Duration:</strong> as long as the contract with the client runs, plus the time needed to delete or return the data (article 10).</li></ul><h3 style='margin-left:0'><strong>3. Types of data and people concerned</strong></h3><ul><li><strong>People:</strong> visitors, customers, prospects and booking contacts of the client, users of the client's account and, for newsletters, subscribers.</li><li><strong>Data:</strong> names, email addresses, phone numbers, addresses (such as pickup and destination addresses for bookings), messages from forms, booking and appointment details, and technical data such as IP addresses.</li><li>The client does not ask its visitors for special categories of data (such as health data) through our systems, unless we agreed on this in writing.</li></ul><h3 style='margin-left:0'><strong>4. Our obligations</strong></h3><ul><li>We only process the data on the documented instructions of the client. The contract, these terms and the settings the client chooses in our platform count as such instructions. If an instruction breaks the GDPR, we tell the client.</li><li>We do not use the data for our own purposes and do not sell it.</li><li>Everyone who works with the data for us is bound to confidentiality.</li><li>We help the client, as far as reasonably possible, to answer requests from people who use their rights (access, correction, deletion and so on), and with data protection impact assessments and contacts with the supervisory authority.</li></ul><h3 style='margin-left:0'><strong>5. Security</strong></h3><p style='margin-left:0'>We take appropriate technical and organisational measures to protect the data, including:</p><ul><li>encrypted connections (HTTPS) for all traffic;</li><li>access to client data only for people who need it, with access rules per client in the database;</li><li>secrets and credentials kept in protected storage, not in the code;</li><li>regular backups and security updates;</li><li>carefully selected service providers with their own security certifications.</li></ul><h3 style='margin-left:0'><strong>6. Sub-processors</strong></h3><p style='margin-left:0'>The client gives general permission to use the following sub-processors. We impose the same data protection obligations on them as in this agreement.</p><ul><li><strong>Cloudflare</strong> (hosting, network, security and backups). Cloudflare, Inc., United States, under the EU-US Data Privacy Framework and Standard Contractual Clauses.</li><li><strong>Supabase</strong> (database, user accounts and file storage). Data stored in Ireland (EU).</li><li><strong>Amazon Web Services</strong> (sending emails and text messages, for example booking confirmations). Region Ireland (EU).</li><li><strong>OpenAI</strong> (AI features such as a website chat assistant, only when the client uses them). United States, under Standard Contractual Clauses.</li><li><strong>Google</strong> (travel time and address calculations for bookings, only when the client uses them). Google Ireland Limited, with possible transfers under the EU-US Data Privacy Framework.</li></ul><p style='margin-left:0'>We inform the client by email at least 30 days before we add or replace a sub-processor. The client can object for reasonable reasons. If we cannot find a solution, the client can end the affected service without costs.</p><h3 style='margin-left:0'><strong>7. Transfers outside the EU</strong></h3><p style='margin-left:0'>We only transfer data outside the European Economic Area when there is a valid legal ground, such as an adequacy decision (including the EU-US Data Privacy Framework) or Standard Contractual Clauses.</p><h3 style='margin-left:0'><strong>8. Data breaches</strong></h3><p style='margin-left:0'>If we discover a personal data breach that affects the client's data, we inform the client without undue delay and at the latest within 48 hours, with the information we have at that time. We help the client to report the breach to the supervisory authority and to inform the people concerned when needed.</p><h3 style='margin-left:0'><strong>9. Audits</strong></h3><p style='margin-left:0'>On request, we give the client the information needed to show that we comply with this agreement. The client may have an audit done once a year, at its own cost, by an independent auditor bound to confidentiality, with at least 30 days' notice and without disturbing our operations more than necessary.</p><h3 style='margin-left:0'><strong>10. End of the contract</strong></h3><p style='margin-left:0'>When the contract ends, the client can export its data or ask us to return it. Within 30 days after the end, we delete the client's personal data from our systems, unless the law requires us to keep it. Copies in backups are removed in the normal backup cycle.</p><h3 style='margin-left:0'><strong>11. Liability and other rules</strong></h3><p style='margin-left:0'>The liability rules of our <a href='/terms'>terms and conditions</a> also apply to this agreement, as far as the GDPR allows. If this agreement and other agreements differ on data protection, this agreement prevails. Belgian law applies.</p>"
+        }
+    ]
+}

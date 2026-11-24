@@ -5,6 +5,7 @@ import { useLocale } from 'next-intl';
 import { getIconComponent } from '../../utils/iconMapper';
 import ButtonThree from '../Buttons/ButtonThree';
 import TrustlocalWidget from '../TrustlocalWidget';
+import useStore from '../../utils/store';
 
 const industries = [
     { title: 'Taxibedrijven', slug: 'taxi-website-laten-maken' },
@@ -14,8 +15,22 @@ const industries = [
     { title: 'Aannemers & bouwbedrijven', slug: 'aannemer-website-laten-maken' },
 ];
 
+const legalLinks = {
+    en: [
+        { href: '/policy', title: 'Privacy policy' },
+        { href: '/terms', title: 'Terms and conditions' },
+        { href: '/processing-agreement', title: 'Processing agreement' },
+    ],
+    nl: [
+        { href: '/policy', title: 'Privacybeleid' },
+        { href: '/terms', title: 'Algemene voorwaarden' },
+        { href: '/processing-agreement', title: 'Verwerkersovereenkomst' },
+    ],
+};
+
 const Footer = ({ blogs, pages, socials }) => {
     const locale = useLocale();
+    const { setShowConsent } = useStore();
 
     return (
         <footer className={`bg-dark px-6 py-12 w-screen left-[calc(-50vw+50%)] 
@@ -133,15 +148,18 @@ const Footer = ({ blogs, pages, socials }) => {
                             {locale === `nl` ? `Overige` : `Misc`}
                         </h2>
                         <ul className={`flex flex-col gap-y-1 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8`}>
-                            {locale === 'nl' && (
-                                <li className={`py-1 text-sm lg:text-base min-h-8`}>
-                                    8310 Brugge
+                            {legalLinks[locale === 'nl' ? 'nl' : 'en'].map(({ href, title }) => (
+                                <li key={href}>
+                                    <Link href={href} className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>
+                                        {title}
+                                    </Link>
                                 </li>
-                            )}
+                            ))}
                             <li>
-                                <Link href={`/policy`} className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>
-                                    {locale === `nl` ? `Privacybeleid` : `Privacy policy`}
-                                </Link>
+                                <button type="button" onClick={() => setShowConsent(true)}
+                                    className={`inline-flex min-h-8 items-center py-1 lg:text-base transition-all hover:text-theme`}>
+                                    {locale === `nl` ? `Cookie-instellingen` : `Cookie settings`}
+                                </button>
                             </li>
                             <li>
                                 <div>
@@ -149,6 +167,9 @@ const Footer = ({ blogs, pages, socials }) => {
                                 </div>
                             </li>
                         </ul>
+                        <p className={`!mb-0 mt-4 text-sm text-light/80`}>
+                            Webdevamin · {locale === `nl` ? `btw` : `VAT`} BE0798993057 · Eigen-Haardstraat 39, 8400 {locale === `nl` ? `Oostende` : `Ostend`}, {locale === `nl` ? `België` : `Belgium`}
+                        </p>
                     </div>
                     {locale === 'nl' && <TrustlocalWidget />}
                 </div>

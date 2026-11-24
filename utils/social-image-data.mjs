@@ -2,13 +2,13 @@ export const SOCIAL_IMAGE_SIZE = { width: 1200, height: 630 };
 export const SOCIAL_IMAGE_DESIGN_VERSION = '2026-09-24-b';
 
 const labels = {
-    en: { home: 'Web design in Belgium', blogs: 'Insights & guides', article: 'Practical guide', contact: 'Let’s talk', projects: 'Selected work', policy: 'Privacy', industry: 'Business websites', local: 'Local web design', page: 'Webdevamin' },
-    nl: { home: 'Webdesign in België', blogs: 'Inzichten & gidsen', article: 'Praktische gids', contact: 'Even kennismaken', projects: 'Geselecteerd werk', policy: 'Privacy', industry: 'Zakelijke websites', local: 'Webdesign in Brugge', page: 'Webdevamin' },
+    en: { home: 'Web design in Belgium', blogs: 'Insights & guides', article: 'Practical guide', contact: 'Let’s talk', projects: 'Selected work', policy: 'Privacy', legal: 'Legal', industry: 'Business websites', local: 'Local web design', page: 'Webdevamin' },
+    nl: { home: 'Webdesign in België', blogs: 'Inzichten & gidsen', article: 'Praktische gids', contact: 'Even kennismaken', projects: 'Geselecteerd werk', policy: 'Privacy', legal: 'Juridisch', industry: 'Zakelijke websites', local: 'Webdesign in Brugge', page: 'Webdevamin' },
 };
 
 const actions = {
-    en: { home: 'Discover Webdevamin', blogs: 'Explore the blog', article: 'Read the guide', contact: 'Get in touch', projects: 'View projects', policy: 'Read the policy', industry: 'Explore websites', local: 'Discover more', page: 'Discover more' },
-    nl: { home: 'Ontdek Webdevamin', blogs: 'Bekijk de blogs', article: 'Lees de gids', contact: 'Neem contact op', projects: 'Bekijk projecten', policy: 'Lees het beleid', industry: 'Bekijk de mogelijkheden', local: 'Ontdek meer', page: 'Ontdek meer' },
+    en: { home: 'Discover Webdevamin', blogs: 'Explore the blog', article: 'Read the guide', contact: 'Get in touch', projects: 'View projects', policy: 'Read the policy', legal: 'Read the terms', industry: 'Explore websites', local: 'Discover more', page: 'Discover more' },
+    nl: { home: 'Ontdek Webdevamin', blogs: 'Bekijk de blogs', article: 'Lees de gids', contact: 'Neem contact op', projects: 'Bekijk projecten', policy: 'Lees het beleid', legal: 'Lees de voorwaarden', industry: 'Bekijk de mogelijkheden', local: 'Ontdek meer', page: 'Ontdek meer' },
 };
 
 export function getSocialImageKey(pathname) {

@@ -32,6 +32,11 @@ export function PricingCard({
     const locale = useLocale();
     const isDutch = locale === 'nl';
     const hasFeatureGrid = featureLayout === 'grid';
+    // Prices are for businesses (excl. VAT); private persons in Belgium must also see the price incl. VAT.
+    const amount = Number(price);
+    const showVatLine = isDutch && Number.isFinite(amount) && amount > 0;
+    const priceInclVat = (amount * 1.21).toLocaleString('nl-BE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const periodWithoutVat = (period || '').replace(/\s*excl\. btw/i, '');
 
     // plain: zonder kaartrand, schaduw en zijpadding; LineGrid geeft de vakken hun padding en lijnen.
     const frameClasses = plain
@@ -59,13 +64,18 @@ export function PricingCard({
                         {tagline}
                     </p>
                 )}
-                <div className="mb-5 flex flex-wrap items-end gap-1 text-slate-900">
+                <div className={`${showVatLine ? 'mb-2' : 'mb-5'} flex flex-wrap items-end gap-1 text-slate-900`}>
                     <span className="text-2xl font-semibold">{currency}</span>
                     <span className="text-5xl font-extrabold tracking-tight">{price}</span>
                     <span className="mb-1 ml-1 text-sm font-medium text-slate-500 sm:text-base">
                         {period}
                     </span>
                 </div>
+                {showVatLine && (
+                    <p className="mb-5 text-left text-xs leading-5 text-slate-500">
+                        {!/btw/i.test(period || '') && 'Excl. btw. '}Particulier? {currency}{priceInclVat}{periodWithoutVat} incl. btw
+                    </p>
+                )}
                 {limitLabel && (
                     <div className="mb-5 text-left">
                         <span className="inline-flex rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-2 sm:rounded-full sm:px-5 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">
